@@ -148,6 +148,47 @@ def main():
             "my_note": "",
         })
 
+    # New candidates from listing searches (find_*.json).
+    def nearest_area(lat, lng):
+        import math
+        best = min((a for a in areas if a.get("lat") is not None),
+                   key=lambda a: (a["lat"] - lat) ** 2 + ((a["lng"] - lng) * math.cos(math.radians(lat))) ** 2)
+        return best
+    seen = {b["name"].lower() for b in buildings}
+    for f in sorted(RESEARCH.glob("find_*.json")):
+        for c in json.loads(f.read_text()):
+            if c["name"].lower() in seen:
+                continue
+            seen.add(c["name"].lower())
+            area_name = norm_name(c.get("area") or "")
+            loc_note = c.get("geocode_note") or ""
+            if area_name not in area_ids and c.get("lat") is not None:
+                near = nearest_area(c["lat"], c["lng"])
+                loc_note = (f"{area_name.replace('NEW: ', '')} is not a scored neighborhood yet; "
+                            f"using the nearest one, {near['name']}. ") + loc_note
+                area_name = near["name"]
+            reqv = {
+                "wd": tri(c.get("washer_dryer")), "ac": tri(c.get("central_ac")), "dw": tri(c.get("dishwasher")),
+                "parking": tri(c.get("parking")), "packages": packages_tri(c.get("packages")),
+            }
+            buildings.append({
+                "id": slug(c["name"]), "name": c["name"], "address": c.get("address"),
+                "area_id": area_ids.get(area_name), "region": region_of(area_name),
+                "lat": c.get("lat"), "lng": c.get("lng"), "location_note": loc_note,
+                "sqft": num(c.get("sqft")), "base_rent": num(c.get("base_rent")),
+                "effective_rent": num(c.get("effective_rent")) or num(c.get("base_rent")),
+                "special": c.get("special"), "parking_fee": num(c.get("parking_fee")),
+                "year_built": c.get("year_built"), "req": reqv,
+                "packages_detail": c.get("packages_detail"), "ac_evidence": c.get("central_ac_evidence"),
+                "red_flags": c.get("red_flags") or "", "internet": None,
+                "notes": " ".join(x for x in [c.get("floor_plan") and "Plan " + c["floor_plan"] + ".", c.get("units_note"), c.get("seen_on") and "Seen on " + c["seen_on"] + "."] if x),
+                "listing_url": c.get("listing_url"), "sources": c.get("sources", []),
+                "reviews": {"reputation_score": None, "confidence": "low", "management_company": c.get("management_company"),
+                            "complaints": [], "praise": [], "dealbreakers": "", "recent_trend": "unknown",
+                            "management": {"score": None, "summary": c.get("reputation_gist") or ""}},
+                "checked_on": CHECKED_ON, "source": "claude", "batch": "new-oct15", "my_status": "new", "my_note": "",
+            })
+
     updates = RESEARCH / "updates.json"
     for u in json.loads(updates.read_text()) if updates.exists() else []:
         for b in buildings:
