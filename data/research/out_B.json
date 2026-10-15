@@ -1,0 +1,582 @@
+{
+ "neighborhoods": [
+  {
+   "neighborhood": "Silver Lake",
+   "lat": 34.087,
+   "lng": -118.27,
+   "freeway": {
+    "score": 6,
+    "nearest": [
+     "US-101 (Silver Lake Blvd / Alvarado St ramps, ~3-8 min depending on hill location)",
+     "I-5 (Glendale Blvd / Fletcher Dr, ~8-10 min)",
+     "SR-2 (Glendale Blvd, ~8 min)"
+    ],
+    "note": "Lower Silver Lake (incl. Solari at 505 N Silver Lake Blvd) is ~2-3 min from the 101; hillside/reservoir areas are 8-12 min on winding streets. I-10 is ~15 min. (Drive times are agent estimates from typical Google-Maps-style patterns; no live routing tool was reachable.)"
+   },
+   "traffic": {
+    "score": 4,
+    "note": "Sunset Blvd and Glendale Blvd back up at peak; the 101 through Echo Park/Hollywood and the I-5/SR-2 interchange are chronic congestion points. LA overall ranked 4th most congested US city (INRIX 2025, ~87 hrs lost/driver)."
+   },
+   "coffee": {
+    "score": 8,
+    "cafes": [
+     "Intelligentsia Silver Lake – Sunset Blvd (Sunset Junction); walkable from central SL, busy, patio; limited laptop space",
+     "Dinosaur Coffee – Sunset Blvd near Sunset Junction; tiny, not laptop-oriented",
+     "Dayglow (Silver Lake) – Sunset Blvd; multi-roaster, described as laptop-friendly",
+     "Cafe Stella – Sunset Junction; cafe/restaurant",
+     "Picnic Coffee – listed in 2025 Silver Lake roundup (details unverified)"
+    ],
+    "note": "Strong third-wave cluster along Sunset Blvd (Sunset Junction to Hyperion). 10-min-walk coverage depends on living within ~0.5 mi of Sunset; lower Silver Lake Blvd (Solari) is ~15-20 min walk to the Sunset Junction cluster."
+   },
+   "walk": {
+    "score": 7,
+    "walk_score": 81,
+    "note": "Walk Score neighborhood 81 (Solari's listing cites 82 for its address). Hills and stairs; very walkable along Sunset, car-dependent up in the hills."
+   },
+   "quiet": {
+    "score": 6,
+    "note": "Hillside and reservoir-adjacent streets are calm. Sunset Blvd has bars/venues; lower Silver Lake near the 101 (Solari) has freeway hum and more through-traffic. Moderate LAPD/news helicopter activity; not under an LAX flight path."
+   },
+   "safety": {
+    "score": 5,
+    "violent_per_1k": 8.05,
+    "property_per_1k": null,
+    "year": "modeled 'typical year' (Crime Grade, not 2025-specific)",
+    "source": "crimegrade.org (modeled from agency data)",
+    "note": "Crime Grade: violent ~8.05/1k (near the LA city avg ~7-8), vehicle theft 8.5/1k, burglary 4.0/1k (no single property total published). Car break-ins common near Sunset Junction nightlife. Official LAPD neighborhood-level 2025 per-capita data could not be retrieved."
+   },
+   "lax": {
+    "score": 5,
+    "minutes_offpeak": 32,
+    "minutes_peak": 60,
+    "note": "101 S -> I-110 S -> I-105 W, or surface via La Brea/La Cienega. Estimate."
+   },
+   "nightlife": {
+    "score": 10,
+    "nearest_district": "Sunset Junction / Echo Park / Los Feliz Village",
+    "drive_minutes": 5,
+    "note": "Bars and venues in-neighborhood; drive-to not even needed (and that proximity is the quiet trade-off)."
+   },
+   "gyms": {
+    "score": 7,
+    "examples": [
+     "Bouldering/climbing and boutique studios along Sunset/Hyperion",
+     "24 Hour Fitness / Equinox in Hollywood ~10 min (examples, verify current locations)"
+    ]
+   },
+   "services": {
+    "score": 7,
+    "note": "Trader Joe's (Hyperion Ave) and Gelson's (Silver Lake Blvd/Glendale Blvd area) are the main grocers; pharmacies on Sunset/Hyperion; Whole Foods ~10-15 min (Glendale/Los Feliz edge). Verify exact locations."
+   },
+   "rail": {
+    "score": 3,
+    "nearest_station": "Vermont/Sunset",
+    "line": "Metro B Line",
+    "note": "~1-2 mi from most of Silver Lake; not a 5-min walk."
+   },
+   "airports_other": "LGB ~35 min off-peak; SNA ~45 min off-peak (estimates)",
+   "summary": "Best-in-class coffee and nightlife culture with a good-not-great 101 connection; suits someone who values walkable cafes over freeway speed. For this client the main trade-off is chronic 101/I-5 congestion and nightlife spilling onto Sunset; pick a hillside side street for quiet.",
+   "sources": [
+    "https://www.point2homes.com/US/Apartment-Buildings/CA/Los-Angeles/Silver-Lake/Solari-Silver-Lake/139164306.html",
+    "https://crimegrade.org/violent-crime-silver-lake-los-angeles-ca/",
+    "https://www.curationsla.com/guides/best-coffee-spots-silver-lake",
+    "https://www.redfin.com/city/11203/CA/Los-Angeles/most-walkable-neighborhoods",
+    "https://inrix.com/blog/congestion-up-fatalities-down-what-the-2025-inrix-global-traffic-scorecard-reveals/"
+   ]
+  },
+  {
+   "neighborhood": "Koreatown",
+   "lat": 34.058,
+   "lng": -118.301,
+   "freeway": {
+    "score": 8,
+    "nearest": [
+     "I-10 (Normandie Ave / Western Ave / Vermont Ave ramps, ~3-7 min from south Ktown, ~8-10 from Wilshire)",
+     "US-101 (Vermont Ave / Alvarado St, ~8 min)",
+     "I-110 (via Olympic/8th St, ~8-10 min)"
+    ],
+    "note": "Three freeways within ~10 min; Fedora Flats (south of Olympic) is closest to I-10 (~3-4 min). Wilshire-corridor buildings are ~8-10 min through dense grid traffic. (Drive times are agent estimates from typical Google-Maps-style patterns; no live routing tool was reachable.)"
+   },
+   "traffic": {
+    "score": 3,
+    "note": "Wilshire, Olympic, 6th, Vermont and Western are slow at peak; I-10 east toward the I-110/I-5 interchanges and the 101 near DTLA are among the region's chronic bottlenecks. Off-peak it is very central."
+   },
+   "coffee": {
+    "score": 8,
+    "cafes": [
+     "Sharp Specialty Coffee – 3421 W 6th St; walkable, laptop-friendly (wide tables, outlets)",
+     "Alchemist Coffee Project – 698 S Vermont Ave; walkable, popular for work (dim lighting)",
+     "Document Coffee Bar – 3850 Wilshire Blvd; very laptop-friendly (outlets, parking)",
+     "Second Round – Koreatown; reliable WiFi, open late",
+     "Cafe Upper – Koreatown; work-friendly",
+     "About Time / Nothing But Coffee – late-night cafes (to 1-2am)"
+    ],
+    "note": "Exceptionally dense and laptop-friendly cafe scene with late hours; many are Korean-style dessert/coffee cafes rather than own-roaster third-wave, so 'serious specialty' count is ~3-5 within a 10-min walk of the Wilshire core. South of Olympic (Fedora Flats) has fewer within 10 min."
+   },
+   "walk": {
+    "score": 9,
+    "walk_score": 93,
+    "note": "Wilshire Center-Koreatown neighborhood Walk Score 93 (3rd most walkable in LA)."
+   },
+   "quiet": {
+    "score": 3,
+    "note": "Very dense; late-night bars, karaoke and restaurants (2am+), sirens, frequent LAPD helicopters, street noise. Quieter pockets on residential side streets (e.g. north of 6th, west of Western toward Norton/Wilton)."
+   },
+   "safety": {
+    "score": 4,
+    "violent_per_1k": null,
+    "property_per_1k": null,
+    "year": "modeled / rolling 12 months",
+    "source": "crimegrade.org; lucidrents.com (ZIP-level counts)",
+    "note": "No reliable 2025 per-capita violent/property rate found. Crime Grade murder rate ~0.10/1k (D+, 30th percentile). LucidRents 12-month ZIP counts: 90006 had the most violent incidents (18) vs 4 (90005) and 2 (90020) — i.e. south/east Ktown (Fedora Flats, 90006) runs hotter than the Wilshire/90005 core. Car break-ins and package theft are commonly reported. Score is a judgment of 'somewhat above LA average'."
+   },
+   "lax": {
+    "score": 7,
+    "minutes_offpeak": 25,
+    "minutes_peak": 50,
+    "note": "I-10 W -> I-405 S or La Cienega/La Brea south. Estimate."
+   },
+   "nightlife": {
+    "score": 10,
+    "nearest_district": "Koreatown (6th St / Wilshire / Western)",
+    "drive_minutes": 0,
+    "note": "Nightlife is in the neighborhood itself; WeHo ~15 min, Silver Lake ~10 min."
+   },
+   "gyms": {
+    "score": 9,
+    "examples": [
+     "Multiple 24-hour Korean-owned gyms and spas",
+     "24 Hour Fitness / LA Fitness on Wilshire corridor (verify)",
+     "Equinox Hollywood ~10-15 min"
+    ]
+   },
+   "services": {
+    "score": 9,
+    "note": "H Mart (Madang, 6th St), Zion/Galleria-style Korean markets, CVS/Walgreens, post offices; Trader Joe's/Whole Foods ~10 min drive (3rd & La Brea area). Amazon lockers common. Verify exact locations."
+   },
+   "rail": {
+    "score": 10,
+    "nearest_station": "Wilshire/Vermont, Wilshire/Normandie, Wilshire/Western",
+    "line": "Metro D Line (B Line also at Wilshire/Vermont)",
+    "note": "Wilshire Vermont building sits atop the Wilshire/Vermont station."
+   },
+   "airports_other": "LGB ~30 min off-peak; SNA ~45 min off-peak (estimates)",
+   "summary": "Most walkable, most laptop-cafe-friendly option with quick I-10 access and rail; suits a remote worker who lives at the cafe. Trade-offs for this client: it is loud (nightlife and helicopters on your doorstep) and safety is below LA average, especially south of Olympic.",
+   "sources": [
+    "https://www.walkscore.com/CA/Los_Angeles/Koreatown",
+    "https://blueprint.theblueground.com/la-coffee-shops/",
+    "https://www.tryperdiem.com/guide/koreatowns-best-coffee-shops-you-need-to-visit",
+    "https://www.discoverlosangeles.com/eat-drink/the-best-coffee-and-dessert-places-in-koreatown",
+    "https://crimegrade.org/murder-koreatown-los-angeles-ca/",
+    "https://lucidrents.com/CA/Los-Angeles/neighborhood/koreatown-90006",
+    "https://lucidrents.com/CA/Los-Angeles/neighborhood/koreatown-90005"
+   ]
+  },
+  {
+   "neighborhood": "Mid-City / Miracle Mile",
+   "lat": 34.059,
+   "lng": -118.35,
+   "freeway": {
+    "score": 7,
+    "nearest": [
+     "I-10 (La Brea Ave / Fairfax Ave / Washington Blvd ramps, ~4-6 min from south of Olympic)",
+     "I-10 (Crenshaw Blvd ramps, ~6 min)",
+     "I-405 via I-10 W (~12-15 min)"
+    ],
+    "note": "South-of-Olympic pockets (incl. 1365 Masselin Ave) reach I-10 in ~5 min; Wilshire/Miracle Mile is ~8-10 min. Only one freeway close by; 101 is ~15 min. (Drive times are agent estimates from typical Google-Maps-style patterns; no live routing tool was reachable.)"
+   },
+   "traffic": {
+    "score": 4,
+    "note": "La Brea, Fairfax and Wilshire are congested at peak (D Line subway construction disrupted Wilshire for years); I-10 between La Brea and the I-405 is heavily congested westbound AM/eastbound PM."
+   },
+   "coffee": {
+    "score": 5,
+    "cafes": [
+     "Groundwork Coffee – listed Mid-City location (verify which street)",
+     "Cafe/coffee bars along Wilshire in Miracle Mile (Museum Row) and 3rd St/La Brea (Beverly Grove) – walkable from Miracle Mile, not from Masselin",
+     "Pico Blvd independent cafes near Masselin – limited specialty options"
+    ],
+    "note": "Search budget ran out before a full Miracle Mile/Mid-City coffee inventory; this is an estimate. Miracle Mile (Wilshire) has a few specialty options and La Brea/3rd more; the residential grid south of Olympic (Masselin) likely has 0-1 serious specialty cafe within a 10-min walk."
+   },
+   "walk": {
+    "score": 7,
+    "walk_score": 78,
+    "note": "Walk Score: 'Mid City' 78; 'Mid-City West' 90. Miracle Mile proper not listed separately (individual Wilshire addresses ~90+). South of Olympic is lower."
+   },
+   "quiet": {
+    "score": 6,
+    "note": "Grid streets south of Olympic and around Masselin/Hauser are mostly residential; La Brea, Pico and Olympic carry heavy through-traffic. Not under LAX approach; moderate helicopter activity."
+   },
+   "safety": {
+    "score": 5,
+    "violent_per_1k": null,
+    "property_per_1k": null,
+    "year": "modeled 'typical year'",
+    "source": "crimegrade.org (Mid Wilshire); neighborhood guides",
+    "note": "No reliable per-capita totals found. Crime Grade Mid Wilshire: burglary 4.0/1k (C-), drug crime 2.1/1k. Guides describe Mid-City as above-average violent/average property and Mid-Wilshire as average violent/above-average property for LA. Scored about average; car break-ins around Museum Row/Grove."
+   },
+   "lax": {
+    "score": 8,
+    "minutes_offpeak": 20,
+    "minutes_peak": 40,
+    "note": "La Cienega Blvd south or I-10 W -> I-405 S. Estimate."
+   },
+   "nightlife": {
+    "score": 8,
+    "nearest_district": "Koreatown / Fairfax-Melrose / West Hollywood",
+    "drive_minutes": 12,
+    "note": "Ktown ~10 min, WeHo ~15 min, Culver City ~15 min."
+   },
+   "gyms": {
+    "score": 8,
+    "examples": [
+     "24 Hour Fitness / LA Fitness near La Brea/Wilshire (verify)",
+     "Equinox West Hollywood ~15 min",
+     "Boutique studios on La Brea"
+    ]
+   },
+   "services": {
+    "score": 8,
+    "note": "Trader Joe's at 3rd & La Brea, Whole Foods near 3rd/Fairfax, Ralphs and Target on La Brea (Mid-City), CVS/Walgreens. Verify exact locations."
+   },
+   "rail": {
+    "score": 5,
+    "nearest_station": "Wilshire/La Brea, Wilshire/Fairfax",
+    "line": "Metro D Line (extension Section 1; confirm opening status)",
+    "note": "Good from Miracle Mile; ~1.3 mi from 1365 Masselin Ave."
+   },
+   "airports_other": "LGB ~30 min off-peak; SNA ~45 min off-peak (estimates)",
+   "summary": "Central, reasonably quiet residential grid with ~5-min I-10 access and a short LAX run; suits someone who drives to most things. Trade-off for this client: specialty-coffee walkability is weak south of Olympic (fine on Wilshire/La Brea), and I-10 westbound is congested at peak.",
+   "sources": [
+    "https://www.redfin.com/city/11203/CA/Los-Angeles/most-walkable-neighborhoods",
+    "https://crimegrade.org/burglary-mid-wilshire-los-angeles-ca/",
+    "https://goodmigrations.com/?p=3813",
+    "https://www.westsiderentals.com/los-angeles-ca/1365-masselin-ave-8n6xb50",
+    "https://www.redfin.com/sitemap/11203/CA/Los-Angeles-County/Los-Angeles/street/Masselin+Ave"
+   ]
+  },
+  {
+   "neighborhood": "Hollywood",
+   "lat": 34.098,
+   "lng": -118.329,
+   "freeway": {
+    "score": 7,
+    "nearest": [
+     "US-101 (Highland Ave, Gower St, Western Ave, Vermont Ave ramps, ~3-5 min)",
+     "I-10 via La Brea (~15 min)",
+     "I-5 via 101/SR-134 (~15 min)"
+    ],
+    "note": "101 is very close but it is the only freeway nearby. (Drive times are agent estimates from typical Google-Maps-style patterns; no live routing tool was reachable.)"
+   },
+   "traffic": {
+    "score": 3,
+    "note": "101 through the Cahuenga Pass and into DTLA is chronically jammed; Highland, Sunset and Hollywood Blvd are slow, with event/tourist closures (Bowl, Walk of Fame)."
+   },
+   "coffee": {
+    "score": 7,
+    "cafes": [
+     "Blue Bottle Coffee – Hollywood; walkable from central Hollywood",
+     "Groundwork Coffee – Hollywood (Cahuenga area)",
+     "Blackwood Coffee Bar – Sunset Blvd near Runyon Canyon",
+     "Established Today – Melrose (coffee + listening bar, opened late 2024)",
+     "Alfred Coffee – Hollywood; trendy, mixed recent reviews"
+    ],
+    "note": "Several solid specialty cafes but spread out; within a 10-min walk of any one address expect ~2-4."
+   },
+   "walk": {
+    "score": 9,
+    "walk_score": 95,
+    "note": "Central Hollywood Walk Score 95 (#1 in LA)."
+   },
+   "quiet": {
+    "score": 2,
+    "note": "Clubs, tourists, events, sirens and frequent helicopters; side streets in the Franklin/foothill area and Spaulding Square are quieter."
+   },
+   "safety": {
+    "score": 3,
+    "violent_per_1k": null,
+    "property_per_1k": null,
+    "year": "modeled / 2026 index",
+    "source": "crimegrade.org; doorprofit.com (Aug 2026)",
+    "note": "No reliable per-capita totals found. Crime Grade burglary ~5.1/1k (D, 20th percentile); DoorProfit violent index 162 (62% above US avg); LucidRents gives ZIP 90028 an F. Citywide violent crime and homicides fell in 2025 (230 homicides, lowest since 1966), but Hollywood still has frequent shootings/robberies near the nightlife core. Car break-ins very common."
+   },
+   "lax": {
+    "score": 6,
+    "minutes_offpeak": 30,
+    "minutes_peak": 60,
+    "note": "La Brea/La Cienega south or 101 -> I-110 -> I-105. Estimate."
+   },
+   "nightlife": {
+    "score": 10,
+    "nearest_district": "Hollywood (Cahuenga/Sunset/Vine)",
+    "drive_minutes": 0,
+    "note": "In-neighborhood; WeHo ~10 min."
+   },
+   "gyms": {
+    "score": 10,
+    "examples": [
+     "Equinox Hollywood (Sunset & Vine area)",
+     "24 Hour Fitness Hollywood",
+     "Crunch / boutique studios"
+    ]
+   },
+   "services": {
+    "score": 9,
+    "note": "Trader Joe's and Gelson's (Franklin Ave) area, Ralphs, Target (Sunset & Western), CVS/Walgreens, Amazon lockers. Verify exact locations."
+   },
+   "rail": {
+    "score": 10,
+    "nearest_station": "Hollywood/Highland, Hollywood/Vine, Hollywood/Western",
+    "line": "Metro B Line",
+    "note": "Three stations across the neighborhood."
+   },
+   "airports_other": "LGB ~40 min off-peak; SNA ~55 min off-peak (estimates)",
+   "summary": "Maximum walkability, gyms and rail with fast 101 on-ramps, but the loudest and least safe of this group. For a remote worker who wants quiet at home and drive-to nightlife, the trade-off is poor: it is nightlife-adjacent and the 101 is one of LA's worst corridors.",
+   "sources": [
+    "https://www.walkscore.com/CA/Los_Angeles/Hollywood",
+    "https://discoverlosangeles.com/eat-drink/the-best-specialty-coffee-shops-in-hollywood",
+    "https://timeout.com/los-angeles/restaurants/the-best-coffee-shops-in-hollywood",
+    "https://crimegrade.org/burglary-hollywood-los-angeles-ca/",
+    "https://www.doorprofit.com/crime-statistics/city/Los_Angeles-CA/neighborhood/hollywood/",
+    "https://www.foxla.com/video/fmc-5yzlez1slwat2roz"
+   ]
+  },
+  {
+   "neighborhood": "Culver City / Palms",
+   "lat": 34.017,
+   "lng": -118.4,
+   "freeway": {
+    "score": 9,
+    "nearest": [
+     "I-10 (Overland Ave / National Blvd / Robertson Blvd ramps, ~3-5 min)",
+     "I-405 (Venice Blvd / Washington Blvd / Culver Blvd ramps, ~4-7 min)",
+     "SR-90 Marina Fwy (~8 min)"
+    ],
+    "note": "Two major freeways plus the 90 within ~8 min. Vista Apartments (11811 Washington Pl, Mar Vista) is ~2-3 min from the I-405 Venice/Washington ramps. (Drive times are agent estimates from typical Google-Maps-style patterns; no live routing tool was reachable.)"
+   },
+   "traffic": {
+    "score": 3,
+    "note": "Sits at the I-10/I-405 interchange; the 405 (Sepulveda Pass to the north, LAX to the south) is among the region's worst corridors. Venice, Washington, Overland and Sepulveda arterials jam at peak."
+   },
+   "coffee": {
+    "score": 7,
+    "cafes": [
+     "The Conservatory for Coffee, Tea & Cocoa – Washington Blvd, downtown Culver; roasts in-house (check weekend hours)",
+     "Cognoscenti Coffee – Culver City Arts District (Washington/La Cienega area)",
+     "Bar Nine – Culver City; espresso/pour-over focus",
+     "Zooies – Culver City; highly rated indie",
+     "The Boy & The Bear – coworking-friendly cafe"
+    ],
+    "note": "Good specialty density in downtown Culver City / Arts District; Palms proper and the Mar Vista address have fewer within a 10-min walk (estimate 1-3)."
+   },
+   "walk": {
+    "score": 8,
+    "walk_score": 90,
+    "note": "Palms neighborhood Walk Score 90; Culver City ~79 citywide (Washington Culver 92, Clarkdale 89)."
+   },
+   "quiet": {
+    "score": 5,
+    "note": "Mixed: dense apartment blocks in Palms, freeway noise near I-10/I-405, but low helicopter activity versus central LA and no venue cluster on most residential streets. Some LAX/SMO-area aircraft noise is minor."
+   },
+   "safety": {
+    "score": 5,
+    "violent_per_1k": 6.6,
+    "property_per_1k": 48.7,
+    "year": "2025",
+    "source": "Culver City figures via secondary consumer site citing 263 violent / 1,934 property reports (pop. 39,678); trend from Culver City PD via KFI/Fox LA",
+    "note": "Culver City crime fell 9.7% in 2024 and a further 6.1% in Q3 2025 (CCPD). Property rate is inflated by retail theft at commercial centers (Westfield Culver City, downtown). Palms (LAPD Pacific) rates not found; Crime Grade Palms burglary 4.6/1k (D+)."
+   },
+   "lax": {
+    "score": 9,
+    "minutes_offpeak": 15,
+    "minutes_peak": 35,
+    "note": "I-405 S or Sepulveda Blvd. Estimate."
+   },
+   "nightlife": {
+    "score": 9,
+    "nearest_district": "Downtown Culver City",
+    "drive_minutes": 7,
+    "note": "Also Venice/Abbot Kinney ~15 min, Santa Monica ~15 min."
+   },
+   "gyms": {
+    "score": 9,
+    "examples": [
+     "24 Hour Fitness Culver City (verify)",
+     "Equinox / boutique studios in Culver City and Santa Monica",
+     "Multiple climbing/CrossFit gyms"
+    ]
+   },
+   "services": {
+    "score": 9,
+    "note": "Trader Joe's (Culver City), Whole Foods, Ralphs, Sprouts, Target, Westfield Culver City; post offices and Amazon lockers. Verify exact locations."
+   },
+   "rail": {
+    "score": 8,
+    "nearest_station": "Culver City, Palms",
+    "line": "Metro E Line",
+    "note": "Good for Palms/downtown Culver; ~1.5 mi from the Mar Vista building."
+   },
+   "airports_other": "LGB ~30 min off-peak; SNA ~45 min off-peak (estimates)",
+   "summary": "Top freeway proximity (I-10 + I-405), short LAX run and good cafes in downtown Culver City; suits a driver who wants the Westside. Trade-off: the freeways it sits on are among LA's most congested at peak, and walkable specialty coffee depends on being near downtown Culver rather than in Palms/Mar Vista.",
+   "sources": [
+    "https://www.timeout.com/los-angeles/restaurants/the-best-coffee-shops-in-culver-city",
+    "https://roomiapp.com/blog/us/lifestyle/coffee-shops-in-culver-city",
+    "https://kfiam640.iheart.com/content/2026-02-13-ag-bondis-claim-of-culver-city-as-crime-haven-contradicted-by-data/",
+    "https://www.eufy.com/blogs/security-system/most-dangerous-cities-in-california",
+    "https://www.culvercitypd.gov/files/assets/police/v/1/2025-quarter-1-final.pdf",
+    "https://crimegrade.org/burglary-palms-los-angeles-ca/",
+    "https://www.redfin.com/city/11203/CA/Los-Angeles/most-walkable-neighborhoods"
+   ]
+  },
+  {
+   "neighborhood": "Westchester",
+   "lat": 33.96,
+   "lng": -118.4,
+   "freeway": {
+    "score": 7,
+    "nearest": [
+     "I-405 (Manchester Ave / La Tijera Blvd / Howard Hughes Pkwy ramps, ~4-6 min)",
+     "I-105 (Sepulveda Blvd / Imperial Hwy, ~6-8 min)",
+     "SR-90 (~8 min)"
+    ],
+    "note": "Northern Westchester (Kittyhawk Ave area) is ~4-5 min from the 405 at La Tijera/Howard Hughes. (Drive times are agent estimates from typical Google-Maps-style patterns; no live routing tool was reachable.)"
+   },
+   "traffic": {
+    "score": 5,
+    "note": "Local arterials (Sepulveda, Manchester, Lincoln) are busy near LAX but move better than central LA; the I-405 at LAX and through the Sepulveda Pass is a chronic bottleneck, but southbound/105 trips are easier."
+   },
+   "coffee": {
+    "score": 3,
+    "cafes": [
+     "The Coffee Company – 8751 S La Tijera Blvd; popular local cafe/restaurant, driveable",
+     "Chains along Sepulveda/Manchester; LMU-area cafes",
+     "Playa Vista (Runway) and Culver City specialty cafes ~10-15 min drive"
+    ],
+    "note": "Search found no genuine own-roaster specialty cafe in Westchester proper; expect at most one walkable option. Score is an estimate."
+   },
+   "walk": {
+    "score": 5,
+    "walk_score": 61,
+    "note": "Westchester-Playa del Rey neighborhood Walk Score 61; residential streets east of Sepulveda run lower (~40s-50s), Westchester Triangle/Sepulveda corridor higher."
+   },
+   "quiet": {
+    "score": 6,
+    "note": "Mostly single-family residential and calm, but LAX aircraft noise (especially south Westchester near Manchester/Century) and some LMU activity; north Westchester (Kittyhawk area) is further from runways."
+   },
+   "safety": {
+    "score": 7,
+    "violent_per_1k": 4.66,
+    "property_per_1k": 20.71,
+    "year": "modeled 'typical year' (Crime Grade, not 2025-specific)",
+    "source": "crimegrade.org (modeled from agency data)",
+    "note": "Violent 4.66/1k and property 20.7/1k vs LA city ~7 and ~25 — below city average. Car break-ins/catalytic converter theft near LAX lots and hotels."
+   },
+   "lax": {
+    "score": 10,
+    "minutes_offpeak": 8,
+    "minutes_peak": 15,
+    "note": "Sepulveda Blvd / Westchester Pkwy. Estimate."
+   },
+   "nightlife": {
+    "score": 6,
+    "nearest_district": "Playa Vista Runway / Culver City / Manhattan Beach",
+    "drive_minutes": 15,
+    "note": "Little nightlife in Westchester itself (a plus for quiet)."
+   },
+   "gyms": {
+    "score": 7,
+    "examples": [
+     "24 Hour Fitness / LA Fitness near Sepulveda (verify)",
+     "LMU-area and Playa Vista boutique studios"
+    ]
+   },
+   "services": {
+    "score": 8,
+    "note": "Trader Joe's (Sepulveda Blvd), Ralphs, Whole Foods in Playa Vista, Costco/Target at Howard Hughes Center/Hawthorne, CVS. Verify exact locations."
+   },
+   "rail": {
+    "score": 5,
+    "nearest_station": "Westchester/Veterans; LAX/Metro Transit Center",
+    "line": "Metro K Line / C Line",
+    "note": "~1.5-2 mi from most of Westchester."
+   },
+   "airports_other": "LGB ~25 min off-peak; SNA ~40 min off-peak (estimates)",
+   "summary": "Safest and quietest-feeling option here, with unbeatable LAX access and reasonable 405/105 access; suits someone who drives to cafes and nightlife. Trade-off for this client: weak walkable specialty coffee (30% of the score) and some airport noise.",
+   "sources": [
+    "https://crimegrade.org/violent-crime-westchester-los-angeles-ca/",
+    "https://crimegrade.org/property-crime-westchester-los-angeles-ca/",
+    "https://www.walkscore.com/CA/Los_Angeles/Westchester-Playa_Del_Rey/fireplace-apartments",
+    "https://magicpin.com/usa/Los-Angeles/Westchester/Restaurant/The-Coffee-Company/store/2643522",
+    "https://www.zillow.com/b/7122-kittyhawk-ave-los-angeles-ca-Chsrd9/"
+   ]
+  }
+ ],
+ "buildings": [
+  {
+   "name": "Fedora Flats",
+   "lat": 34.0512,
+   "lng": -118.2955,
+   "geocode_note": "Approximate: geocoding services (Census, Nominatim, Google) were blocked from this sandbox, so coordinates were placed from the LA street grid plus listing descriptions; expect ~100-300 m error. 1000 block S Fedora St is just south of Olympic Blvd between Vermont and Normandie (ZIP 90006; listings place Fedora near Normandie/Olympic)."
+  },
+  {
+   "name": "Wilshire Vermont",
+   "lat": 34.0618,
+   "lng": -118.2902,
+   "geocode_note": "Approximate: geocoding services (Census, Nominatim, Google) were blocked from this sandbox, so coordinates were placed from the LA street grid plus listing descriptions; expect ~100-300 m error. 3183 Wilshire Blvd = Wilshire Vermont Station mixed-use atop the Metro Wilshire/Vermont station (south side of Wilshire, east of Vermont)."
+  },
+  {
+   "name": "616 Kenmore",
+   "lat": 34.0627,
+   "lng": -118.2972,
+   "geocode_note": "Approximate: geocoding services (Census, Nominatim, Google) were blocked from this sandbox, so coordinates were placed from the LA street grid plus listing descriptions; expect ~100-300 m error. 600 block S Kenmore Ave, between 6th St and Wilshire Blvd. Address given as 'Kenmore St' — the street is Kenmore Ave."
+  },
+  {
+   "name": "Perinos Luxury Apartments",
+   "lat": 34.0622,
+   "lng": -118.3195,
+   "geocode_note": "Approximate: geocoding services (Census, Nominatim, Google) were blocked from this sandbox, so coordinates were placed from the LA street grid plus listing descriptions; expect ~100-300 m error. Former Perino's restaurant site (4101 Wilshire), NW corner Wilshire Blvd & Norton Ave. Note: this is west of Western in Wilshire Center/Windsor Village edge, not core Koreatown; ForRent calls it Miracle Mile."
+  },
+  {
+   "name": "Vista Apartments",
+   "lat": 34.004,
+   "lng": -118.429,
+   "geocode_note": "Approximate: geocoding services (Census, Nominatim, Google) were blocked from this sandbox, so coordinates were placed from the LA street grid plus listing descriptions; expect ~100-300 m error. 11800 block of Washington Pl, Mar Vista (90066), near the I-405 between Venice and Washington Blvds. Low confidence on exact block. Note: this is Mar Vista (City of LA), not Culver City or Palms."
+  },
+  {
+   "name": "Solari Silver Lake",
+   "lat": 34.0745,
+   "lng": -118.273,
+   "geocode_note": "Approximate: geocoding services (Census, Nominatim, Google) were blocked from this sandbox, so coordinates were placed from the LA street grid plus listing descriptions; expect ~100-300 m error. 505 N Silver Lake Blvd, lower Silver Lake Blvd just south of the US-101 near Bellevue Ave (ZIP 90026, Pilgrim School ~0.7 mi). Listings call it Silver Lake but the location is the Silver Lake/Echo Park/Historic Filipinotown edge, ~1 mi from the Sunset Junction cafe cluster."
+  },
+  {
+   "name": "Luna On Wilshire",
+   "lat": 34.0613,
+   "lng": -118.3035,
+   "geocode_note": "Approximate: geocoding services (Census, Nominatim, Google) were blocked from this sandbox, so coordinates were placed from the LA street grid plus listing descriptions; expect ~100-300 m error. 3600 block Wilshire Blvd (south side), between Normandie and Western near Kingsley/Harvard."
+  },
+  {
+   "name": "Kara",
+   "lat": 34.0568,
+   "lng": -118.303,
+   "geocode_note": "Approximate: geocoding services (Census, Nominatim, Google) were blocked from this sandbox, so coordinates were placed from the LA street grid plus listing descriptions; expect ~100-300 m error. 800 block S Kingsley Dr, just south of 8th St."
+  },
+  {
+   "name": "Hana",
+   "lat": 34.0574,
+   "lng": -118.2944,
+   "geocode_note": "Approximate: geocoding services (Census, Nominatim, Google) were blocked from this sandbox, so coordinates were placed from the LA street grid plus listing descriptions; expect ~100-300 m error. 801 S Berendo St, at 8th St & Berendo (corner)."
+  },
+  {
+   "name": "1365 Masselin Ave (townhome)",
+   "lat": 34.0505,
+   "lng": -118.3497,
+   "geocode_note": "Approximate: geocoding services (Census, Nominatim, Google) were blocked from this sandbox, so coordinates were placed from the LA street grid plus listing descriptions; expect ~100-300 m error. 1300 block S Masselin Ave, between Olympic and Pico near Hauser Blvd (Mid-City/Mid-Wilshire). Note: the only listing found for this address describes a 1BR apartment ($2,500), not a townhome."
+  },
+  {
+   "name": "7122 Kittyhawk Ave Unit 0",
+   "lat": 33.974,
+   "lng": -118.3895,
+   "geocode_note": "Approximate: geocoding services (Census, Nominatim, Google) were blocked from this sandbox, so coordinates were placed from the LA street grid plus listing descriptions; expect ~100-300 m error. 7100 block Kittyhawk Ave, north Westchester (90045) near W 71st/72nd St. Lowest-confidence placement (~500 m). Zillow/WestsideRentals confirm a furnished 1BR at this address in Westchester."
+  }
+ ]
+}

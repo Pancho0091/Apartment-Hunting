@@ -1,0 +1,771 @@
+[
+ {
+  "name": "Da Vinci",
+  "management_company": "G.H. Palmer Associates (GHP Management)",
+  "reputation_score": 6,
+  "confidence": "medium",
+  "ratings": [
+   {
+    "site": "Yelp",
+    "rating": 3.6,
+    "count": 482,
+    "as_of": "2026-10"
+   },
+   {
+    "site": "Birdeye (Google-aggregated)",
+    "rating": 4.1,
+    "count": 402,
+    "as_of": "2026"
+   },
+   {
+    "site": "RentCafe",
+    "rating": 4.0,
+    "count": 51,
+    "as_of": "2026"
+   },
+   {
+    "site": "VeryApt",
+    "rating": 8.0,
+    "count": 8,
+    "as_of": "2026 (10-pt scale)"
+   },
+   {
+    "site": "CorporateHousing/ForRent",
+    "rating": 3.8,
+    "count": 14,
+    "as_of": "2026"
+   }
+  ],
+  "management": {
+   "score": 6,
+   "summary": "Leasing staff frequently praised by name; some reports of rude staff and older (2017) very negative Yelp reviews. Palmer company-wide deposit-withholding lawsuit is a red flag for move-out. G.H. Palmer / GHP Management faced a 2019 class action alleging withheld security deposits via undocumented cleaning/repair charges; a proposed $10-12.5M settlement (2022) reportedly collapsed and headed toward trial (status unconfirmed)."
+  },
+  "maintenance": {
+   "score": 6,
+   "summary": "Several say work orders handled quickly; gym described as old with broken machines, dirty hot tub."
+  },
+  "cleanliness": {
+   "score": 6,
+   "summary": "Common areas generally described as kept clean; hot tub/gym upkeep complaints."
+  },
+  "noise": {
+   "score": 4,
+   "summary": "Most common complaint: thin walls, Temple/Fremont traffic, adjacent fire station, loud weekend nights, pool noise late at night; Apr 2026 review on early-morning leaf blowers; RentCafe noise sub-score 3.0."
+  },
+  "security": {
+   "score": 6,
+   "summary": "Gated parking and listed 24-hr doorman; some package-theft complaints; area near 110 freeway/Civic Center."
+  },
+  "pests": {
+   "score": 6,
+   "summary": "Isolated roach reports (undated); no 2025-26 pest complaints found."
+  },
+  "costs": {
+   "score": 5,
+   "summary": "Rent viewed as high for one person; tandem parking, limited guest parking and towing of unstickered cars. Deposit-return risk given Palmer lawsuit."
+  },
+  "reddit": [],
+  "praise": [
+   "three pools and gyms",
+   "responsive leasing staff",
+   "quieter part of downtown (some)",
+   "fast work orders"
+  ],
+  "complaints": [
+   "thin walls / traffic & fire-station noise",
+   "tandem & guest parking, towing",
+   "dated gym, broken machines",
+   "package theft",
+   "deposit practices of Palmer company"
+  ],
+  "dealbreakers": "Noise for units facing Temple/Fremont; landlord's alleged security-deposit withholding (class action).",
+  "recent_trend": "steady - 2025-26 reviews similar mix of staff praise and noise/parking complaints",
+  "sources": [
+   "https://www.yelp.com/biz/da-vinci-apartments-los-angeles",
+   "https://birdeye.com/da-vinci-apartments-158048910295453",
+   "https://www.rentcafe.com/apartments/ca/los-angeles/davinci/default.aspx",
+   "https://www.veryapt.com/ApartmentReview-a15905-da-vinci-los-angeles",
+   "https://www.apartmentratings.com/ca/los-angeles/da-vinci_9199332346275158559/",
+   "https://www.apartmenthomeliving.com/apartment-finder/Da-Vinci-Los-Angeles-CA-90012-1776150",
+   "https://www.forrent.com/ca/los-angeles/da-vinci/zj5n23w",
+   "https://www.cbs8.com/article/news/investigations/san-diego-apartment-developer-10-million-in-deposit-lawsuit/509-ae011670-b774-45f2-9e89-cf7488ee9914",
+   "https://www.aol.com/news/didnt-security-deposits-back-now-200924366.html"
+  ]
+ },
+ {
+  "name": "The Piero",
+  "management_company": "G.H. Palmer Associates (GHP Management)",
+  "reputation_score": 5,
+  "confidence": "medium",
+  "ratings": [
+   {
+    "site": "Yelp",
+    "rating": 3.4,
+    "count": 327,
+    "as_of": "2025-08"
+   },
+   {
+    "site": "Birdeye",
+    "rating": 3.7,
+    "count": 329,
+    "as_of": "2026"
+   },
+   {
+    "site": "Google (via SafeButler)",
+    "rating": 3.9,
+    "count": 376,
+    "as_of": "2026"
+   },
+   {
+    "site": "VeryApt",
+    "rating": 7.4,
+    "count": 5,
+    "as_of": "2026 (10-pt scale)"
+   },
+   {
+    "site": "CorporateHousing",
+    "rating": 2.8,
+    "count": 12,
+    "as_of": "2026"
+   }
+  ],
+  "management": {
+   "score": 4,
+   "summary": "Sharply split: leasing office called unreliable/inconsistent ('They lie, delay...') and 'worst property management' (Jul 2025), vs. 2025 student review calling management professional. G.H. Palmer / GHP Management faced a 2019 class action alleging withheld security deposits via undocumented cleaning/repair charges; a proposed $10-12.5M settlement (2022) reportedly collapsed and headed toward trial (status unconfirmed)."
+  },
+  "maintenance": {
+   "score": 5,
+   "summary": "Maintenance techs often praised by name; history of long pool/gym closures (2023-24), older elevator outage of six months (2017-18)."
+  },
+  "cleanliness": {
+   "score": 6,
+   "summary": "Some say gym/common areas kept clean; amenity upkeep inconsistent."
+  },
+  "noise": {
+   "score": 5,
+   "summary": "Little specific data; next to 110 freeway / downtown."
+  },
+  "security": {
+   "score": 4,
+   "summary": "24-hr guard and fob access to elevators/stairs, but Jul 2025 break-in report with unresponsive management; 2023 package theft because security covers only one side."
+  },
+  "pests": {
+   "score": 5,
+   "summary": "Older (2017-19) roach reports in many units; nothing recent found."
+  },
+  "costs": {
+   "score": 5,
+   "summary": "Cheaper than many DTLA options; 2.5x income requirement; deposit-return risk given Palmer lawsuit."
+  },
+  "reddit": [],
+  "praise": [
+   "relatively inexpensive for DTLA",
+   "multiple pools/hot tubs, 2 gyms",
+   "24-hr guard, fob access",
+   "helpful maintenance staff"
+  ],
+  "complaints": [
+   "pool/gym closed for long periods",
+   "inconsistent, unresponsive leasing office",
+   "break-in and package theft",
+   "elevator outages (older)",
+   "deposit practices of Palmer company"
+  ],
+  "dealbreakers": "Recurring amenity closures and management responsiveness; recent break-in report; landlord deposit-withholding lawsuit.",
+  "recent_trend": "declining - harshest complaints (break-in, unresponsive management) are from 2025",
+  "sources": [
+   "https://www.yelp.com/biz/piero-apartments-los-angeles?start=40",
+   "https://birdeye.com/the-piero-apartments-158048911610213",
+   "https://www.veryapt.com/ApartmentReview-a15948-the-piero-los-angeles",
+   "https://www.apartmentratings.com/ca/los-angeles/the-piero_213250808090017/",
+   "https://www.apartmenthomeliving.com/apartment-finder/The-Piero-Los-Angeles-CA-90017-1953873",
+   "https://www.safebutler.com/apartments/los-angeles-ca/the-piero-apartments",
+   "https://www.corporatehousing.com/ca/los-angeles/the-piero/m3pkwpk",
+   "https://www.veryapt.com/m1081-gh-palmer-associates",
+   "https://www.cbs8.com/article/news/investigations/san-diego-apartment-developer-10-million-in-deposit-lawsuit/509-ae011670-b774-45f2-9e89-cf7488ee9914"
+  ]
+ },
+ {
+  "name": "Onyx",
+  "management_company": "SRG Residential (Sares Regis); management changed Aug 2023 (previously Greystar per old Yelp listing)",
+  "reputation_score": 7,
+  "confidence": "medium",
+  "ratings": [
+   {
+    "site": "Apartments.com",
+    "rating": 4.2,
+    "count": 37,
+    "as_of": "2026"
+   },
+   {
+    "site": "Yelp",
+    "rating": 3.4,
+    "count": 27,
+    "as_of": "2026-09"
+   },
+   {
+    "site": "ApartmentRatings",
+    "rating": 4.0,
+    "count": 34,
+    "as_of": "2026 (mostly 2022 reviews)"
+   },
+   {
+    "site": "FindMyPlace",
+    "rating": 4.4,
+    "count": 5,
+    "as_of": "2026-02"
+   },
+   {
+    "site": "MapQuest aggregate",
+    "rating": 3.5,
+    "count": 27,
+    "as_of": "2026"
+   }
+  ],
+  "management": {
+   "score": 7,
+   "summary": "2025-26 reviews praise community manager and leasing agents; Dec 2025 complaint about unclear parking procedures/communication."
+  },
+  "maintenance": {
+   "score": 7,
+   "summary": "2026 reviewer: 'maintenance alone is a good reason to move'; pre-2023 reviews cite water shutoffs, ceiling leaks, broken AC, slow requests."
+  },
+  "cleanliness": {
+   "score": null,
+   "summary": "No specific data found."
+  },
+  "noise": {
+   "score": null,
+   "summary": "No specific data; on busy Pico Blvd near LA Live/convention center."
+  },
+  "security": {
+   "score": null,
+   "summary": "No specific reports found; South Park near LA Live."
+  },
+  "pests": {
+   "score": null,
+   "summary": "No reports found."
+  },
+  "costs": {
+   "score": 6,
+   "summary": "Frequent concessions (4-6 weeks free); third-party parking app; fees not detailed."
+  },
+  "reddit": [],
+  "praise": [
+   "responsive maintenance (recent)",
+   "friendly community manager/leasing",
+   "saltwater pool, rooftop deck",
+   "in-unit W/D, newer 2018 building"
+  ],
+  "complaints": [
+   "parking app/procedures unclear",
+   "older leaks, water shutoffs, AC outages (pre-2023)"
+  ],
+  "dealbreakers": "",
+  "recent_trend": "improving - reviews after Aug 2023 management change are noticeably more positive",
+  "sources": [
+   "https://www.apartments.com/onyx-los-angeles-ca/8ever23/",
+   "https://www.yelp.com/biz/onyx-apartments-los-angeles-2",
+   "https://www.yelp.com/biz/onyx-apartments-by-greystar-los-angeles",
+   "https://www.apartmentratings.com/ca/los-angeles/onyx-apartments_9199332346275177629/",
+   "https://findmyplace.co/student-housing/los-angeles-ca/onyx/",
+   "https://www.rentcafe.com/apartments/ca/los-angeles/onyx1/default.aspx",
+   "https://www.veryapt.com/ApartmentReview-a24154-onyx-apartments-los-angeles",
+   "https://www.mapquest.com/us/california/onyx-apartments-377540120"
+  ]
+ },
+ {
+  "name": "Sakura Crossing",
+  "management_company": "Equity Residential",
+  "reputation_score": 7,
+  "confidence": "low",
+  "ratings": [
+   {
+    "site": "Yelp",
+    "rating": 3.4,
+    "count": 98,
+    "as_of": "2026-02"
+   },
+   {
+    "site": "Equity Residential site (curated testimonials)",
+    "rating": 4.3,
+    "count": 1504,
+    "as_of": "2026"
+   },
+   {
+    "site": "ApartmentIQ",
+    "rating": 5.0,
+    "count": 5,
+    "as_of": "2026"
+   }
+  ],
+  "management": {
+   "score": 7,
+   "summary": "Recent testimonials praise leasing and staff; some ApartmentRatings reviewers call policies 'ridiculous' (undated). Equity company-wide pattern: renewal offers above market listing prices."
+  },
+  "maintenance": {
+   "score": 7,
+   "summary": "Yelp highlights quick maintenance; long-term resident says repairs handled quickly."
+  },
+  "cleanliness": {
+   "score": null,
+   "summary": "No specific data found."
+  },
+  "noise": {
+   "score": 5,
+   "summary": "Yelp excerpt: thin ceilings and floors."
+  },
+  "security": {
+   "score": 5,
+   "summary": "Little Tokyo location near Skid Row edge; no building-specific incidents found."
+  },
+  "pests": {
+   "score": null,
+   "summary": "No reports found."
+  },
+  "costs": {
+   "score": 5,
+   "summary": "Complaints of yearly rent increases; Equity renewals often priced above listed rents - compare before renewing; parking could be improved."
+  },
+  "reddit": [],
+  "praise": [
+   "great Little Tokyo location, near Metro",
+   "pool, theater room, rooftop lounge",
+   "quick maintenance",
+   "in-unit W/D"
+  ],
+  "complaints": [
+   "thin floors/ceilings",
+   "annual rent increases",
+   "parking"
+  ],
+  "dealbreakers": "",
+  "recent_trend": "steady - late 2025/early 2026 testimonials positive; few independent recent reviews",
+  "sources": [
+   "https://www.yelp.com/biz/sakura-crossing-apartments-los-angeles?start=80",
+   "https://www.equityapartments.com/los-angeles/little-tokyo/sakura-crossing-apartments-reviews",
+   "https://www.apartmentratings.com/ca/los-angeles/sakura-crossing_866915797690012/",
+   "https://edge.apartmentiq.io/los-angeles-ca/sakura-crossing",
+   "https://sakura-crossing-apartments.wheree.com/",
+   "https://nl.trustpilot.com/review/equityapartments.com",
+   "https://dineandpaint.wordpress.com/2016/10/29/sakura-crossing/"
+  ]
+ },
+ {
+  "name": "The Paramount Platinum Triangle",
+  "management_company": "Greystar (per Greystar site; VeryApt lists Cardinal Group - possibly outdated)",
+  "reputation_score": 5,
+  "confidence": "medium",
+  "ratings": [
+   {
+    "site": "Yelp",
+    "rating": 3.3,
+    "count": 286,
+    "as_of": "2026-09"
+   },
+   {
+    "site": "Google (via SafeButler)",
+    "rating": 3.6,
+    "count": 254,
+    "as_of": "2026"
+   },
+   {
+    "site": "RentCafe",
+    "rating": 4.0,
+    "count": 133,
+    "as_of": "2026"
+   },
+   {
+    "site": "Apartments.com/ForRent",
+    "rating": 3.7,
+    "count": 59,
+    "as_of": "2026"
+   },
+   {
+    "site": "ApartmentRatings",
+    "rating": 3.7,
+    "count": 33,
+    "as_of": "2026"
+   }
+  ],
+  "management": {
+   "score": 5,
+   "summary": "Leasing agents praised (Jun 2026 review); others say staff unfriendly, repairs blamed on tenant, no follow-up from manager."
+  },
+  "maintenance": {
+   "score": 4,
+   "summary": "Repeated long elevator outages (one 2024 outage tied to lapsed permits), unresolved dryer/fire-alarm issues, slow work orders."
+  },
+  "cleanliness": {
+   "score": 5,
+   "summary": "Amenities sometimes locked or dirty; others call it well kept."
+  },
+  "noise": {
+   "score": 5,
+   "summary": "Thin walls; early-morning construction noise in growing Platinum Triangle."
+  },
+  "security": {
+   "score": 5,
+   "summary": "Package theft mentioned in negative reviews."
+  },
+  "pests": {
+   "score": 4,
+   "summary": "Cockroach problems in several negative reviews."
+  },
+  "costs": {
+   "score": 4,
+   "summary": "Trash billed per-unit by usage (RUBS-style) and called high; only ~12 guest spots for 400 units, street parking full."
+  },
+  "reddit": [],
+  "praise": [
+   "modern units, rooftop views",
+   "lots of amenities",
+   "good location near Angel Stadium/Honda Center, ARTIC",
+   "helpful leasing agents"
+  ],
+  "complaints": [
+   "elevator outages",
+   "guest parking",
+   "roaches",
+   "slow/unhelpful maintenance",
+   "trash fees",
+   "construction noise"
+  ],
+  "dealbreakers": "Recurring elevator outages in a mid-rise; guest parking shortage.",
+  "recent_trend": "steady - mixed reviews persist through 2026",
+  "sources": [
+   "https://www.yelp.com/biz/the-paramount-platinum-triangle-anaheim",
+   "https://www.apartments.com/the-paramount-platinum-triangle-anaheim-ca/vde2hye/",
+   "https://www.rentcafe.com/apartments/ca/anaheim/jefferson-platinum-triangle0/default.aspx",
+   "https://www.apartmentratings.com/ca/anaheim/the-paramount-platinum-triangle_9199332346275165893/",
+   "https://modernmsg.com/the-paramount-platinum-triangle",
+   "https://www.safebutler.com/apartments/long-beach-ca/the-paramount-platinum-triangle",
+   "https://www.greystar.com/properties/anaheim-ca/the-paramount-platinum-triangle/floorplans",
+   "https://www.veryapt.com/ApartmentReview-a25306-the-paramount-platinum-triangle-anaheim"
+  ]
+ },
+ {
+  "name": "The Edward Apartments",
+  "management_company": "Self-branded 'The Edward Apartments' (reviewers mention AMC management); formerly Hollybrook per Yardi Matrix",
+  "reputation_score": 4,
+  "confidence": "low",
+  "ratings": [
+   {
+    "site": "Yelp",
+    "rating": 3.9,
+    "count": 17,
+    "as_of": "2026-03"
+   },
+   {
+    "site": "ApartmentRatings",
+    "rating": 2.3,
+    "count": 22,
+    "as_of": "2026"
+   },
+   {
+    "site": "Apartments.com",
+    "rating": 1.0,
+    "count": 1,
+    "as_of": "2025-09"
+   },
+   {
+    "site": "BBB",
+    "rating": "C+ (not accredited)",
+    "count": null,
+    "as_of": "2026"
+   }
+  ],
+  "management": {
+   "score": 4,
+   "summary": "Late-2025 reviews praise leasing staff; others report ignored pleas, mishandled rent-relief funds; BBB C+ for unanswered complaint."
+  },
+  "maintenance": {
+   "score": 3,
+   "summary": "ApartmentRatings maintenance 1/5; appliances failing quickly."
+  },
+  "cleanliness": {
+   "score": null,
+   "summary": "No specific data found."
+  },
+  "noise": {
+   "score": 5,
+   "summary": "Busy traffic area (Soundscore 63)."
+  },
+  "security": {
+   "score": 3,
+   "summary": "Car break-ins and vandalized windows in tenant parking; homeless encampment across street."
+  },
+  "pests": {
+   "score": 2,
+   "summary": "Severe roach infestation (Sept 2025) and termites reported."
+  },
+  "costs": {
+   "score": 4,
+   "summary": "10% rent increase after first year reported; disputed rent-relief debt."
+  },
+  "reddit": [],
+  "praise": [
+   "friendly, responsive leasing staff (late 2025)",
+   "renovated units",
+   "pet friendly"
+  ],
+  "complaints": [
+   "roaches/termites",
+   "car break-ins",
+   "slow maintenance",
+   "billing disputes",
+   "rent hikes"
+  ],
+  "dealbreakers": "Pest infestation reports and car break-ins; 1973 building.",
+  "recent_trend": "unknown - recent leasing-staff praise vs. Sept 2025 serious pest/billing complaint",
+  "sources": [
+   "https://www.yelp.com/biz/the-edward-apartments-westminster",
+   "https://www.apartments.com/the-edward-apartments-westminster-ca/5qnlpyq/",
+   "https://www.apartmentratings.com/ca/westminster/the-edward_714891018892683/",
+   "https://www.bbb.org/us/ca/westminster/profile/apartments/the-edward-apartments-1126-1000084498",
+   "https://www.mapquest.com/us/california/the-edward-apartments-11459138",
+   "https://www.apartmenthomeliving.com/apartment-finder/The-Edward-Apartments-Westminster-CA-92683-1991709",
+   "https://www.yardimatrix.com/property-types/multifamily/orangecounty/hollybrook-14221-edwards-street-ca-92683--7774"
+  ]
+ },
+ {
+  "name": "425 W 4th St, Unit E",
+  "management_company": "Win Home Services (per one rental listing for this address)",
+  "reputation_score": null,
+  "confidence": "low",
+  "ratings": [],
+  "management": {
+   "score": null,
+   "summary": "7-unit 1920 Class C building, listed for sale at $1.6M (broker pitches ~20% rent-increase potential) - possible ownership change during tenancy. No reviews of building or Win Home Services found."
+  },
+  "maintenance": {
+   "score": null,
+   "summary": "No reviews found."
+  },
+  "cleanliness": {
+   "score": null,
+   "summary": "No reviews found."
+  },
+  "noise": {
+   "score": null,
+   "summary": "Downtown Long Beach West End; no specific data."
+  },
+  "security": {
+   "score": null,
+   "summary": "No data found."
+  },
+  "pests": {
+   "score": null,
+   "summary": "No reviews found."
+  },
+  "costs": {
+   "score": null,
+   "summary": "No reviews found; confirm deposit/fees with owner."
+  },
+  "reddit": [],
+  "praise": [
+   "walkable West End location (Walk Score 92)"
+  ],
+  "complaints": [
+   "building for sale; new owner may raise rents/turn units",
+   "1920 building, older systems"
+  ],
+  "dealbreakers": "",
+  "recent_trend": "unknown - no resident reviews found",
+  "sources": [
+   "https://www.commercialcafe.com/commercial-property/us/ca/long-beach/425-w-4th-st/",
+   "https://www.commercialsearch.com/commercial-property/us/ca/long-beach/425-w-4th-st/",
+   "https://www.rentable.co/long-beach-ca/314"
+  ]
+ },
+ {
+  "name": "23 N Alboni Pl (townhome-style condo)",
+  "management_company": null,
+  "reputation_score": null,
+  "confidence": "low",
+  "ratings": [],
+  "management": {
+   "score": null,
+   "summary": "Individually owned condo; no HOA or landlord reviews found. Unconfirmed whether it is the 10-unit 'Martha Washington' building at Ocean & Alboni."
+  },
+  "maintenance": {
+   "score": null,
+   "summary": "No reviews found."
+  },
+  "cleanliness": {
+   "score": null,
+   "summary": "No reviews found."
+  },
+  "noise": {
+   "score": null,
+   "summary": "No data; near Ocean Blvd / Alamitos Beach."
+  },
+  "security": {
+   "score": null,
+   "summary": "No data found."
+  },
+  "pests": {
+   "score": null,
+   "summary": "No reviews found."
+  },
+  "costs": {
+   "score": null,
+   "summary": "No reviews found; confirm deposit/fees with owner."
+  },
+  "reddit": [],
+  "praise": [],
+  "complaints": [],
+  "dealbreakers": "",
+  "recent_trend": "unknown - no resident reviews found",
+  "sources": [
+   "https://www.redfin.com/sitemap/CA/90802/street/Alboni+Pl",
+   "https://www.furnishedfinder.com/property/1006110_1"
+  ]
+ },
+ {
+  "name": "1365 Masselin Ave (townhome)",
+  "management_company": null,
+  "reputation_score": null,
+  "confidence": "low",
+  "ratings": [],
+  "management": {
+   "score": null,
+   "summary": "Private landlord; no reviews found. Listing (WestsideRentals) describes it as a ~1,000 sq ft 1BR apartment, $2,500, in-unit laundry, parking, off Pico between La Cienega and La Brea - 'townhome' label not confirmed."
+  },
+  "maintenance": {
+   "score": null,
+   "summary": "No reviews found."
+  },
+  "cleanliness": {
+   "score": null,
+   "summary": "No reviews found."
+  },
+  "noise": {
+   "score": null,
+   "summary": "Just off Pico Blvd; no specific data."
+  },
+  "security": {
+   "score": null,
+   "summary": "No data found."
+  },
+  "pests": {
+   "score": null,
+   "summary": "No reviews found."
+  },
+  "costs": {
+   "score": null,
+   "summary": "No reviews found; confirm deposit/fees with owner."
+  },
+  "reddit": [],
+  "praise": [
+   "in-unit laundry, parking"
+  ],
+  "complaints": [],
+  "dealbreakers": "",
+  "recent_trend": "unknown - no resident reviews found",
+  "sources": [
+   "https://www.westsiderentals.com/los-angeles-ca/1365-masselin-ave-8n6xb50",
+   "https://www.apartments.com/1365-masselin-ave-los-angeles-ca/8n6xb50/"
+  ]
+ },
+ {
+  "name": "10541 Lakeside Dr S #146 (Lakeside community condo)",
+  "management_company": "Lakeside HOA (individual unit owner is landlord)",
+  "reputation_score": null,
+  "confidence": "low",
+  "ratings": [],
+  "management": {
+   "score": null,
+   "summary": "No resident or HOA reviews found. Gated mid-1980s condo community with pools, spas, clubhouse, streams/walking trails; HOA dues ~$300-390/mo cover water, trash, exterior, gate."
+  },
+  "maintenance": {
+   "score": null,
+   "summary": "No reviews found."
+  },
+  "cleanliness": {
+   "score": null,
+   "summary": "No reviews found."
+  },
+  "noise": {
+   "score": null,
+   "summary": "No data."
+  },
+  "security": {
+   "score": null,
+   "summary": "Gated controlled access per listings."
+  },
+  "pests": {
+   "score": null,
+   "summary": "No reviews found."
+  },
+  "costs": {
+   "score": null,
+   "summary": "No reviews found; confirm deposit/fees with owner."
+  },
+  "reddit": [],
+  "praise": [
+   "gated",
+   "pools, spas, clubhouse, walking trails"
+  ],
+  "complaints": [
+   "1 assigned carport space typical"
+  ],
+  "dealbreakers": "",
+  "recent_trend": "unknown - no resident reviews found",
+  "sources": [
+   "https://www.houzeo.com/buildings/10571-lakeside-dr-s-garden-grove-ca-92840/hzid_03f35b31",
+   "https://www.redfin.com/sitemap/CA/92840/street/Lakeside+Dr",
+   "https://4realestatehelp.com/listing1/crmls/PW26014809/Garden-Grove/10591-Lakeside-S-198"
+  ]
+ },
+ {
+  "name": "7122 Kittyhawk Ave Unit 0",
+  "management_company": null,
+  "reputation_score": null,
+  "confidence": "low",
+  "ratings": [],
+  "management": {
+   "score": null,
+   "summary": "Private landlord; no reviews found. Listing: single unit, gated, owner pays water and gas, furnished option, W/D, no pets."
+  },
+  "maintenance": {
+   "score": null,
+   "summary": "No reviews found."
+  },
+  "cleanliness": {
+   "score": null,
+   "summary": "No reviews found."
+  },
+  "noise": {
+   "score": null,
+   "summary": "Westchester, ~7 min from LAX; Soundscore 66 'Busy'. Check LAWA 65 dB CNEL noise contour for aircraft noise."
+  },
+  "security": {
+   "score": null,
+   "summary": "Gated property per listing; no other data."
+  },
+  "pests": {
+   "score": null,
+   "summary": "No reviews found."
+  },
+  "costs": {
+   "score": null,
+   "summary": "No reviews found; confirm deposit/fees with owner."
+  },
+  "reddit": [],
+  "praise": [
+   "gated",
+   "owner pays water/gas"
+  ],
+  "complaints": [
+   "possible LAX aircraft noise"
+  ],
+  "dealbreakers": "",
+  "recent_trend": "unknown - no resident reviews found",
+  "sources": [
+   "https://www.westsiderentals.com/los-angeles-ca/7122-kittyhawk-ave-unit-0-z8tfpyz",
+   "https://www.zillow.com/b/7122-kittyhawk-ave-los-angeles-ca-Chsrd9/",
+   "https://www.lawa.org/groups-and-divisions/residential-soundproofing"
+  ]
+ }
+]

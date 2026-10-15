@@ -790,6 +790,7 @@ td.best { background: var(--accent-soft); }
       h("header", { style: { display: "flex", justifyContent: "space-between", alignItems: "baseline", gap: "8px", flexWrap: "wrap" } },
         h("h3", { style: { fontSize: "1.1rem" }, text: "What residents say" }),
         h("span", { class: "muted", style: { fontSize: ".82rem" }, text: [r.management_company, r.confidence ? r.confidence + " confidence" : null, r.recent_trend].filter(Boolean).join(" · ") })),
+      r.note ? h("p", { class: "pill unclear", style: { whiteSpace: "normal", fontSize: ".84rem", padding: "6px 10px" }, text: r.note }) : null,
       r.dealbreakers ? h("p", { class: "pill no", style: { textDecoration: "none", whiteSpace: "normal", fontSize: ".84rem", padding: "6px 10px" }, text: "Dealbreaker risk: " + r.dealbreakers }) : null,
       r.ratings && r.ratings.length ? h("div", { class: "chips" }, ...r.ratings.map(x => h("span", { class: "pill status", text: `${x.site} ${x.rating ?? "?"}${x.count ? " (" + x.count + ")" : ""}` }))) : null,
       r.praise && r.praise.length ? h("div", null, h("span", { class: "label", text: "Praise" }), list(r.praise)) : null,

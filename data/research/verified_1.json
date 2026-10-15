@@ -1,0 +1,378 @@
+[
+ {
+  "name": "Avant",
+  "washer_dryer": "yes",
+  "dishwasher": "yes",
+  "central_ac": "yes",
+  "central_ac_evidence": "Essex/listing copy: 'central heating and air conditioning ... in-home washer and dryer' (essexapartmenthomes.com, silverdoor.com)",
+  "parking": "yes",
+  "parking_fee": 150.0,
+  "packages": "unclear",
+  "packages_detail": "Essex amenities list for Avant does not list package lockers (other Essex communities do); no package info found",
+  "red_flags": "",
+  "sources": [
+   "https://www.essexapartmenthomes.com/apartments/los-angeles/avant/amenities",
+   "https://silverdoor.com/avant-apartments-los-angeles-15244",
+   "https://hotpads.com/avant-los-angeles-ca-90015-wcz4mq/pad"
+  ]
+ },
+ {
+  "name": "Glo",
+  "washer_dryer": "yes",
+  "dishwasher": "yes",
+  "central_ac": "yes",
+  "central_ac_evidence": "ApartmentAdvisor lists 'central AC'; HotPads only says 'A/C'",
+  "parking": "yes",
+  "parking_fee": null,
+  "packages": "unclear",
+  "packages_detail": "'Package Service With Notifications' (listing); locker type/staffing not stated",
+  "red_flags": "VeryApt reviews (older): no guest parking; in-unit appliances 'shoddy'; rating 6.9/10",
+  "sources": [
+   "https://www.apartmentadvisor.com/details/1050-wilshire-blvd-los-angeles-ca-90017",
+   "https://hotpads.com/glo-los-angeles-ca-90017-skfrds/pad",
+   "https://www.veryapt.com/ApartmentReview-a2569-glo-los-angeles"
+  ]
+ },
+ {
+  "name": "Jia",
+  "washer_dryer": "yes",
+  "dishwasher": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "No source found mentioning AC of any kind for Jia (HotPads, ApartmentIQ, RentHop, Equity snippets silent); VeryApt 'Air Conditioning' attribution ambiguous",
+  "parking": "yes",
+  "parking_fee": null,
+  "packages": "unclear",
+  "packages_detail": "ApartmentIQ lists 'Package Receiving' only; no lockers confirmed",
+  "red_flags": "",
+  "sources": [
+   "https://edge.apartmentiq.io/los-angeles-ca/jia",
+   "https://hotpads.com/jia-los-angeles-ca-90012-249n450/pad",
+   "https://equityapartments.com/los-angeles/chinatown/jia-apartments-reviews"
+  ]
+ },
+ {
+  "name": "Urban Village Apartments",
+  "washer_dryer": "yes",
+  "dishwasher": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Zumper: 'Air conditioning' + Nest thermostats; type not stated",
+  "parking": "yes",
+  "parking_fee": null,
+  "packages": "lockers",
+  "packages_detail": "Zumper: '24/7 package lockers' (brand not stated)",
+  "red_flags": "",
+  "sources": [
+   "https://hotpads.com/urban-village-long-beach-ca-90813-ty3895/pad",
+   "https://www.zumper.com/apartment-buildings/1531637/park-avenue-traffic-circle-long-beach-ca",
+   "https://lbpost.com/news/place/design/urban-village-development-begins-on-long-beach-blvd"
+  ]
+ },
+ {
+  "name": "Bixel at Fifth",
+  "washer_dryer": "yes",
+  "dishwasher": "yes",
+  "central_ac": "yes",
+  "central_ac_evidence": "Zillow features list 'central air conditioning'",
+  "parking": "yes",
+  "parking_fee": null,
+  "packages": "unclear",
+  "packages_detail": "No package info found",
+  "red_flags": "No reviews found",
+  "sources": [
+   "https://zillow.com/apartments/los-angeles-ca/bixel-at-fifth/5XjPVB/"
+  ]
+ },
+ {
+  "name": "Arancia",
+  "washer_dryer": "yes",
+  "dishwasher": "yes",
+  "central_ac": "yes",
+  "central_ac_evidence": "Westside Rentals features include 'central air conditioning' (one snippet just 'air conditioning')",
+  "parking": "yes",
+  "parking_fee": null,
+  "packages": "unclear",
+  "packages_detail": "No package info found; parking described as garages/gated",
+  "red_flags": "No reviews found",
+  "sources": [
+   "https://www.westsiderentals.com/los-angeles-ca/arancia-lpjg67d",
+   "https://www.redfin.com/neighborhood/62693/CA/Los-Angeles/Historic-Filipinotown/apartments-under-2000-for-rent"
+  ]
+ },
+ {
+  "name": "Thurman Lofts",
+  "washer_dryer": "yes",
+  "dishwasher": "yes",
+  "central_ac": "yes",
+  "central_ac_evidence": "Point2Homes unit features: 'central air conditioning'",
+  "parking": "yes",
+  "parking_fee": 250.0,
+  "packages": "lockers",
+  "packages_detail": "Point2Homes: 'luxor package lockers' (likely Luxer One)",
+  "red_flags": "No reviews found",
+  "sources": [
+   "https://www.point2homes.com/US/Apartment-Buildings/CA/Los-Angeles/Thurman-Lofts1.html",
+   "https://www.westsiderentals.com/los-angeles-ca/thurman-lofts-397w5nf"
+  ]
+ },
+ {
+  "name": "Metro 417",
+  "washer_dryer": "yes",
+  "dishwasher": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Listings say only 'Air Conditioning' (historic 1925 Subway Terminal Building conversion); type not stated",
+  "parking": "yes",
+  "parking_fee": 175.0,
+  "packages": "front desk",
+  "packages_detail": "24-hour front desk listed, but review says concierge services were changed/cut (guest parking removed as a result)",
+  "red_flags": "Concierge services reduced; no guest parking; aggregator rating 6.8",
+  "sources": [
+   "https://www.westsiderentals.com/los-angeles-ca/metro-417-l1qysxg",
+   "https://nationalcorporatehousing.com/node/23453",
+   "https://www.after55.com/ca/los-angeles/metro-417/61qyyxv"
+  ]
+ },
+ {
+  "name": "Fedora Flats",
+  "washer_dryer": "unclear",
+  "dishwasher": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "No AC info found; only a unit-601 listing mentions washer/dryer (building 'coming July 2026')",
+  "parking": "yes",
+  "parking_fee": 145.0,
+  "packages": "unclear",
+  "packages_detail": "No package info found; ForRent promo up to 6 months free parking",
+  "red_flags": "New building, no reviews",
+  "sources": [
+   "https://www.forrent.com/ca/los-angeles/fedora-flats/38zdw1e",
+   "https://www.westsiderentals.com/los-angeles-ca/1047-fedora-st-unit-601-ddf35dk"
+  ]
+ },
+ {
+  "name": "Wilshire Vermont",
+  "washer_dryer": "yes",
+  "dishwasher": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Greystar highlights say only 'Air Conditioning'; type not stated",
+  "parking": "yes",
+  "parking_fee": 75.0,
+  "packages": "front desk",
+  "packages_detail": "Listing: '24-Hour Package and Delivery Assistance' (staffed); lockers not confirmed",
+  "red_flags": "No reviews found",
+  "sources": [
+   "https://www.greystar.com/wilshire-vermont-los-angeles-ca/p_12701",
+   "https://www.point2homes.com/US/Apartment-Buildings/CA/Los-Angeles/Wilshire-Vermont.html",
+   "https://www.zillow.com/b/-Ch2cPy"
+  ]
+ },
+ {
+  "name": "616 Kenmore",
+  "washer_dryer": "yes",
+  "dishwasher": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Westside Rentals mentions only 'smart thermostats'; no AC type stated",
+  "parking": "yes",
+  "parking_fee": 80.0,
+  "packages": "unclear",
+  "packages_detail": "No package info found; secure garage parking",
+  "red_flags": "",
+  "sources": [
+   "https://www.westsiderentals.com/los-angeles-ca/616-kenmore-cgs622f",
+   "https://www.apartments.com/kenmore-modern-apartments-los-angeles-ca/cgs622f/"
+  ]
+ },
+ {
+  "name": "104 Brookstone Apartments",
+  "washer_dryer": "unclear",
+  "dishwasher": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Westside Rentals: 'Air Conditioning' (type not stated); W/D conflicting: Westside lists 'Washer/Dryer' AND 'laundry facilities', ApartmentIQ lists 'On-site Laundry'",
+  "parking": "yes",
+  "parking_fee": null,
+  "packages": "unclear",
+  "packages_detail": "No package info found",
+  "red_flags": "",
+  "sources": [
+   "https://prod-release.westsiderentals.com/buena-park-ca/104-brookstone-apartments-tbxdjxb",
+   "https://edge.apartmentiq.io/buena-park-ca/7400-artesia-blvd"
+  ]
+ },
+ {
+  "name": "Latitude II",
+  "washer_dryer": "unclear",
+  "dishwasher": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "No AC info found; HotPads says 'in unit laundry' but Westside Rentals marks washer/dryer with asterisk (not all units); 1969 build",
+  "parking": "unclear",
+  "parking_fee": null,
+  "packages": "unclear",
+  "packages_detail": "No package info; HotPads: 'contact Latitude Ii for tenant parking details'",
+  "red_flags": "",
+  "sources": [
+   "https://hotpads.com/latitude-ii-santa-ana-ca-92705-sm49jt/pad",
+   "https://www.westsiderentals.com/santa-ana-ca/latitude-ii-bf40r79"
+  ]
+ },
+ {
+  "name": "Vista Apartments",
+  "washer_dryer": "unclear",
+  "dishwasher": "yes",
+  "central_ac": "yes",
+  "central_ac_evidence": "VeryApt (possibly stale): 'central air conditioning'",
+  "parking": "yes",
+  "parking_fee": null,
+  "packages": "unclear",
+  "packages_detail": "VeryApt lists 24-hour front desk (stale); W/D conflict: VeryApt says building laundry room, Westside lists in-unit W/D",
+  "red_flags": "",
+  "sources": [
+   "https://www.veryapt.com/ApartmentReview-a24395-vista-apartments-los-angeles",
+   "https://www.westsiderentals.com/mar-vista-ca/vista-apartments-s08hdt4"
+  ]
+ },
+ {
+  "name": "Garment Lofts",
+  "washer_dryer": "yes",
+  "dishwasher": "yes",
+  "central_ac": "yes",
+  "central_ac_evidence": "Point2Homes: 'central A/C heat'",
+  "parking": "unclear",
+  "parking_fee": null,
+  "packages": "lockers",
+  "packages_detail": "Point2Homes: 'package locker' for deliveries",
+  "red_flags": "No reviews found; no parking info found",
+  "sources": [
+   "https://www.point2homes.com/US/Apartment-Buildings/CA/Los-Angeles/Garment-Building-Residential.html",
+   "https://redfin.com/neighborhood/110858/CA/Los-Angeles/Fashion-District/studio-apartments-for-rent"
+  ]
+ },
+ {
+  "name": "Eleven Eleven Wilshire",
+  "washer_dryer": "yes",
+  "dishwasher": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Point2Homes: 'Air Conditioner and Electronic Thermostat' (wording suggests unit, type not stated); VeryApt 'air conditioning'",
+  "parking": "yes",
+  "parking_fee": null,
+  "packages": "unclear",
+  "packages_detail": "VeryApt: 'Package Receiving'; no lockers mentioned",
+  "red_flags": "Apartments.com review accuses mgmt of deposit 'scam'; reviewer wanted more security (safety 6.4/10); VeryApt also lists building laundry room",
+  "sources": [
+   "https://www.point2homes.com/US/Apartment-Buildings/CA/Los-Angeles-County/Los-Angeles/Westlake/1111-Wilshire/93058647.html",
+   "https://www.veryapt.com/ApartmentReview-a26210-1111-wilshire-los-angeles",
+   "https://www.corporatehousing.com/ca/los-angeles/eleven-eleven-wilshire/9jz5337"
+  ]
+ },
+ {
+  "name": "Pegasus",
+  "washer_dryer": "yes",
+  "dishwasher": "yes",
+  "central_ac": "yes",
+  "central_ac_evidence": "VeryApt: 'Central A/C'; PadMapper/ApartmentAdvisor: 'air conditioning'",
+  "parking": "yes",
+  "parking_fee": null,
+  "packages": "front desk",
+  "packages_detail": "24-hour front desk / package receiving",
+  "red_flags": "Renter reported 3-6 month waitlist for building parking",
+  "sources": [
+   "https://www.veryapt.com/ApartmentReview-a2597-pegasus-los-angeles",
+   "https://www.padmapper.com/buildings/p12886/pegasus-apartments-at-612-s-flower-st-los-angeles-ca-90017",
+   "https://hotpads.com/pegasus-los-angeles-ca-90017-skfw9x/pad"
+  ]
+ },
+ {
+  "name": "mResidences Olympic & Olive",
+  "washer_dryer": "yes",
+  "dishwasher": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Greystar: 'Air Conditioning' only; type not stated",
+  "parking": "yes",
+  "parking_fee": null,
+  "packages": "unclear",
+  "packages_detail": "No package info found; secure-access garage",
+  "red_flags": "",
+  "sources": [
+   "https://www.greystar.com/mresidences-olympic-olive-los-angeles-ca/p_20162",
+   "https://www.point2homes.com/US/Apartment-Buildings/CA/Los-Angeles/Mresidences-Olympic-Olive.html"
+  ]
+ },
+ {
+  "name": "Be DTLA",
+  "washer_dryer": "yes",
+  "dishwasher": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Greystar highlights: 'Air Conditioning' only; type not stated",
+  "parking": "yes",
+  "parking_fee": null,
+  "packages": "unclear",
+  "packages_detail": "No package system found",
+  "red_flags": "Oct 2025 resident review: packages get stolen, cockroaches in trash area, break-in concerns; parking 'expensive'; mgmt score 6.1/10",
+  "sources": [
+   "https://www.greystar.com/be-dtla-apartments-los-angeles-ca/p_16447",
+   "https://bedtla.test.jonahsystems.com/reviews/",
+   "https://www.veryapt.com/ApartmentReview-a24657-be-dtla-los-angeles"
+  ]
+ },
+ {
+  "name": "1400 FIG Apartments",
+  "washer_dryer": "yes",
+  "dishwasher": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "No AC info found (only appears on a Redfin AC-filtered page, no AC tag)",
+  "parking": "yes",
+  "parking_fee": 175.0,
+  "packages": "unclear",
+  "packages_detail": "Apartments.com 'Package service' (prior input); type not stated",
+  "red_flags": "",
+  "sources": [
+   "https://www.apartments.com/1400-fig-apartments-los-angeles-ca/838zj23/",
+   "https://urbanize.la/post/more-apartments-underway-south-park"
+  ]
+ },
+ {
+  "name": "Olympic by Windsor",
+  "washer_dryer": "yes",
+  "dishwasher": "yes",
+  "central_ac": "yes",
+  "central_ac_evidence": "VeryApt unit features: 'central air'",
+  "parking": "yes",
+  "parking_fee": null,
+  "packages": "unclear",
+  "packages_detail": "No package info found; controlled-access garage w/ EV charging",
+  "red_flags": "",
+  "sources": [
+   "https://www.veryapt.com/ApartmentReview-a15911-olympic-by-windsor-los-angeles",
+   "https://www.windsorcommunities.com/properties/olympic-by-windsor/"
+  ]
+ },
+ {
+  "name": "Las Fuentes",
+  "washer_dryer": "unclear",
+  "dishwasher": "unclear",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Westside Rentals: 'Air Conditioning' (type not stated); 'Washer and dryer in select units'; 'Dishwasher in selected units'; 'Refrigerator Not Provided'; 1971 build",
+  "parking": "yes",
+  "parking_fee": 0.0,
+  "packages": "unclear",
+  "packages_detail": "No package info found",
+  "red_flags": "Older listing (2019) said on-site laundry; refrigerator not provided",
+  "sources": [
+   "https://www.westsiderentals.com/santa-ana-ca/las-fuentes-75p2qrw",
+   "https://hoodline.com/2019/07/renting-in-santa-ana-what-will-1-600-get-you/"
+  ]
+ },
+ {
+  "name": "South Park by Windsor",
+  "washer_dryer": "yes",
+  "dishwasher": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "VeryApt: 'Air Conditioning' only; type not stated",
+  "parking": "yes",
+  "parking_fee": null,
+  "packages": "unclear",
+  "packages_detail": "No package info found; parking garage",
+  "red_flags": "",
+  "sources": [
+   "https://www.veryapt.com/ApartmentReview-a15959-south-park-by-windsor-los-angeles",
+   "https://www.point2homes.com/US/Apartment-Buildings/CA/Los-Angeles/Downtown-Los-Angeles/South-Park-by-Windsor/93060290.html"
+  ]
+ }
+]

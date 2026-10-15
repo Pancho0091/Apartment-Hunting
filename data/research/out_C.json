@@ -1,0 +1,688 @@
+{
+ "neighborhoods": [
+  {
+   "neighborhood": "Long Beach – Downtown / East Village",
+   "lat": 33.7705,
+   "lng": -118.1895,
+   "freeway": {
+    "score": 7,
+    "nearest": [
+     "I-710 (Shoreline Dr/6th St terminus, ~3-5 min)",
+     "I-405 (via I-710 N, ~10 min)",
+     "SR-1 PCH (surface, ~4 min)"
+    ],
+    "note": "Only I-710 is truly close; it is the port truck freeway. 405 is ~10 min. Estimates, not measured drive times."
+   },
+   "traffic": {
+    "score": 5,
+    "note": "Downtown arterials (Ocean, Broadway, Long Beach Blvd) generally move except during events (Grand Prix in April, convention/arena nights). I-710 runs LOS E/F much of the day with >30% heavy trucks on LB segments; I-405 through Long Beach is congested at peak (Express Lanes on the OC side since late 2023)."
+   },
+   "coffee": {
+    "score": 7,
+    "cafes": [
+     "Recreational Coffee – 237 Long Beach Blvd, walkable from East Village, pour-overs, small but laptop-tolerant",
+     "Rose Park Roasters – 800 Pine Ave (also 455 E Ocean), local roaster, walkable",
+     "Wide Eyes Open Palms – 416 Cherry Ave, third-wave, plant-filled patio (~15 min walk from Pine, closer from East Village)",
+     "Long Beach Coffee & Tea – 480 Pine Ave, casual",
+     "Arts District Coffee Co. – East Village, small 19-seat shop (current status unverified)"
+    ],
+    "note": "Solid 2-4 genuine specialty options within ~10 min of most downtown addresses; Long Beach ranked a top-3 US coffee city by WalletHub (2026). Portola (LB) closed; verify hours."
+   },
+   "walk": {
+    "score": 9,
+    "walk_score": 92,
+    "note": "Downtown Walk Score ~92 per Redfin agent quote (undated); 1081 Long Beach Blvd address-level listing shows 80 (north edge of downtown)."
+   },
+   "quiet": {
+    "score": 3,
+    "note": "Dense core with bars on Pine Ave/Promenade, convention/arena events, Grand Prix week, frequent police helicopters; Ocean Blvd and LB Blvd traffic noise. Quietest pockets are interior residential blocks west of Magnolia or north of 7th, but still urban."
+   },
+   "safety": {
+    "score": 3,
+    "violent_per_1k": 6.8,
+    "property_per_1k": 34.8,
+    "year": "2024 (citywide Long Beach; FBI); 2025 trend from LBPD",
+    "source": "FBI 2024 counts for Long Beach as summarized by eufy.com (37 murders, 200 rapes, 989 robberies, 1,779 agg assaults; 15,454 property crimes = 3,478.8/100k); LBPD mid-2025 release",
+    "note": "Figures are CITYWIDE Long Beach, computed from FBI 2024 counts (violent ~6.8/1k is my arithmetic). Downtown (LBPD West/South division) runs well above the city average with visitor/homelessness-inflated rates. Property crime ~35/1k is above the LA ~25/1k benchmark; LBPD reported property crime -23.6% and robbery -18.9% in H1 2025, shootings down 4th straight year, but agg assault +9% in 2025. Car break-ins and package theft are common downtown; use secured garages."
+   },
+   "lax": {
+    "score": 7,
+    "minutes_offpeak": 25,
+    "minutes_peak": 50,
+    "note": "I-710 N to I-405 N to I-105 W/Sepulveda (~22 mi). Estimates; forum/aggregator sources range 30-90 min at rush hour."
+   },
+   "nightlife": {
+    "score": 10,
+    "nearest_district": "Pine Ave / East Village / The Promenade (walkable)",
+    "drive_minutes": 0,
+    "note": "On top of it - which is the problem for quiet."
+   },
+   "gyms": {
+    "score": 8,
+    "examples": [
+     "24 Hour Fitness (Downtown LB, verify)",
+     "Several boutique/CrossFit/yoga studios in East Village",
+     "Building gyms common in new towers"
+    ]
+   },
+   "services": {
+    "score": 8,
+    "note": "Ralphs and Trader Joe's-type groceries within short drive; Target and CVS downtown; post office and Amazon lockers nearby (verify specific locations)."
+   },
+   "rail": {
+    "score": 10,
+    "nearest_station": "1st St / 5th St / Pacific Ave / Downtown LB / Anaheim St",
+    "line": "Metro A Line",
+    "note": "A Line loop runs through downtown; Urban Village is ~100 ft from a station."
+   },
+   "airports_other": "LGB ~12 min, SNA ~30 min (estimates, off-peak)",
+   "summary": "Best walkability and nightlife in group C with decent specialty coffee, but the noisiest and least safe of the Long Beach options, and freeway access is basically just the truck-heavy 710. Suits someone who wants an urban, car-optional base and doesn't mind street noise.",
+   "sources": [
+    "https://www.eufy.com/blogs/security-system/is-long-beach-safe",
+    "https://lbpost.com/news/crime/crime-stats-long-beach-shootings-2025-homicides",
+    "https://longbeach.gov/police/press-releases/lbpd-releases-4th-annual-year-in-review-and-accountability-report/",
+    "https://www.clrc.ca.gov/CRPC/Pub/Memos/CRPC25-14.pdf",
+    "https://www.visitlongbeach.com/blog/cuisine-scene-coffee-shops/",
+    "https://longbeachize.com/articles/essential-long-beach-coffee-shops/",
+    "https://longbeachize.com/articles/long-beach-named-third-best-coffee-city-in-the-country/",
+    "https://www.theinfatuation.com/los-angeles/reviews/recreational-coffee",
+    "https://www.lbbusinessjournal.com/where-to-go-downtown-for-a-cup-of-joe/",
+    "https://connected-corridors.berkeley.edu/sites/default/files/i-710_-_site_evaluation_summary.pdf",
+    "https://www.cityfeet.com/cont/listing/1081-long-beach-blvd-long-beach-ca-90813/cs40697288",
+    "https://theelmerteam.com/blog/most-walkable-long-beach-neighborhoods-for-families"
+   ]
+  },
+  {
+   "neighborhood": "Long Beach – Alamitos Beach",
+   "lat": 33.7685,
+   "lng": -118.1745,
+   "freeway": {
+    "score": 5,
+    "nearest": [
+     "I-710 (via Ocean Blvd/Shoreline, ~7 min)",
+     "I-405 (via Alamitos/Cherry or Redondo, ~10 min)"
+    ],
+    "note": "No freeway inside the neighborhood; every trip starts with 7-10 min of surface streets. Estimates."
+   },
+   "traffic": {
+    "score": 5,
+    "note": "Broadway/3rd/4th one-way couplets and Ocean Blvd move reasonably; 7th St and the route to the 405 slow at peak. Same 405/710 issues as downtown."
+   },
+   "coffee": {
+    "score": 7,
+    "cafes": [
+     "Wide Eyes Open Palms – 416 Cherry Ave (Retro Row west end), third-wave, patio, laptop-friendly",
+     "Rose Park Roasters – 455 E Ocean Blvd (west edge) and 3044 E 4th St (east of area), local roaster",
+     "Coffee Drunk – 4th St / Retro Row, local multi-location chain",
+     "Recreational Coffee – 237 Long Beach Blvd (~10-15 min walk from western Alamitos Beach)"
+    ],
+    "note": "2-3 genuine specialty cafes within ~10 min of most addresses; Portfolio Coffeehouse on Retro Row closed after 30 years."
+   },
+   "walk": {
+    "score": 9,
+    "walk_score": 90,
+    "note": "No neighborhood-wide score found; address-level Walk Scores from listings range 81-95 (e.g., 1001 E Broadway 95, 1414 E 4th 93, 1235 E Broadway 90, 1100 E Ocean 81). 90 is a representative midpoint, not an official figure."
+   },
+   "quiet": {
+    "score": 4,
+    "note": "Very dense apartment district; Broadway bar corridor and 4th St Retro Row generate evening noise, street parking circling, some helicopter activity. Streets closer to the bluff and the short N-S 'place' streets are calmer."
+   },
+   "safety": {
+    "score": 4,
+    "violent_per_1k": 6.8,
+    "property_per_1k": 34.8,
+    "year": "2024 (citywide Long Beach; FBI)",
+    "source": "FBI 2024 counts for Long Beach as summarized by eufy.com (37 murders, 200 rapes, 989 robberies, 1,779 agg assaults; 15,454 property crimes = 3,478.8/100k); LBPD mid-2025 release",
+    "note": "Citywide figures only; no neighborhood-level official rate found. Alamitos Beach is generally perceived as safer than the downtown core but car break-ins/catalytic-converter and bike theft are common given street parking. Property crime trending down in 2025."
+   },
+   "lax": {
+    "score": 7,
+    "minutes_offpeak": 27,
+    "minutes_peak": 55,
+    "note": "Ocean/Shoreline to I-710 N to I-405 N (~23 mi). Estimates."
+   },
+   "nightlife": {
+    "score": 10,
+    "nearest_district": "Broadway corridor / 4th St Retro Row / Downtown LB",
+    "drive_minutes": 5,
+    "note": "Walkable or a 5-min drive."
+   },
+   "gyms": {
+    "score": 8,
+    "examples": [
+     "Downtown LB gyms ~5 min",
+     "Boutique yoga/pilates/climbing studios along Broadway/4th (verify)"
+    ]
+   },
+   "services": {
+    "score": 7,
+    "note": "Smaller grocers locally; Ralphs/Trader Joe's/Whole Foods within ~5-10 min drive; CVS/Walgreens nearby (verify specifics)."
+   },
+   "rail": {
+    "score": 5,
+    "nearest_station": "1st St or 5th St station",
+    "line": "Metro A Line",
+    "note": "~15-20 min walk from the core of Alamitos Beach."
+   },
+   "airports_other": "LGB ~12 min, SNA ~30 min (estimates)",
+   "summary": "Walkable beach-adjacent district with good coffee and nightlife next door, somewhat calmer than downtown but still dense and parking-stressed. Main trade-off for this client: 7-10 min to any freeway and mediocre safety numbers.",
+   "sources": [
+    "https://www.eufy.com/blogs/security-system/is-long-beach-safe",
+    "https://lbpost.com/news/crime/crime-stats-long-beach-shootings-2025-homicides",
+    "https://longbeach.gov/police/press-releases/lbpd-releases-4th-annual-year-in-review-and-accountability-report/",
+    "https://www.clrc.ca.gov/CRPC/Pub/Memos/CRPC25-14.pdf",
+    "https://midbrow.org/friday_night_is_for_the_good_boys/",
+    "https://longbeachize.com/articles/essential-long-beach-coffee-shops/",
+    "https://www.zillow.com/b/1001-e-broadway-long-beach-ca-BpcWjv/",
+    "https://www.zillow.com/b/1100-e-ocean-blvd-long-beach-ca-5XpLjx/",
+    "https://www.zillow.com/b/1414-e-4th-st-long-beach-ca-C2BxBt/",
+    "https://redfin.com/blog/long-beach-ca-neighborhoods"
+   ]
+  },
+  {
+   "neighborhood": "Long Beach – Belmont Shore / Belmont Heights",
+   "lat": 33.7615,
+   "lng": -118.139,
+   "freeway": {
+    "score": 5,
+    "nearest": [
+     "I-405 (via 7th St/Studebaker or Bellflower, ~8-10 min)",
+     "SR-22 / I-605 (via 7th St, ~8-10 min)",
+     "I-710 (~12 min)"
+    ],
+    "note": "Multiple freeways but all 8-12 min of arterials away. Estimates."
+   },
+   "traffic": {
+    "score": 4,
+    "note": "2nd St, PCH and 7th St (SR-22 extension) jam at peak and on weekends; the 405/605/22 interchange near Seal Beach is a known regional bottleneck (carpool connectors added, Seal Beach Blvd ramp still a choke point)."
+   },
+   "coffee": {
+    "score": 8,
+    "cafes": [
+     "Stereoscope Coffee – 4925 E 2nd St, roaster, walkable",
+     "Sheldrake Coffee Roasting – 4506 E 2nd St, roaster",
+     "Belmont Shore Coffee Roasters – 2nd St, in-house roasting",
+     "Little Green Cup – Belmont Shore, pour-over/French press",
+     "Coffee Drunk – 4708 E 2nd St (announced; verify open)",
+     "Viento y Agua – 4007 E 4th St (Belmont Heights), laptop-friendly coffeehouse",
+     "Rose Park Roasters – 3044 E 4th St (western edge)"
+    ],
+    "note": "4-5 genuine specialty roasters/cafes along 2nd St plus 4th St/Broadway options in Belmont Heights."
+   },
+   "walk": {
+    "score": 8,
+    "walk_score": 86,
+    "note": "Belmont Heights 86 (Redfin 2024); Belmont Shore ranked 5th most walkable LB area by Redfin (no number in snippet; ~85-90 likely)."
+   },
+   "quiet": {
+    "score": 6,
+    "note": "2nd St bars/restaurants are loud on weekends and parking is a constant fight; blocks north of 3rd in Belmont Heights are quiet residential. Low aircraft noise."
+   },
+   "safety": {
+    "score": 6,
+    "violent_per_1k": 6.8,
+    "property_per_1k": 34.8,
+    "year": "2024 (citywide Long Beach; FBI)",
+    "source": "FBI 2024 counts for Long Beach as summarized by eufy.com (37 murders, 200 rapes, 989 robberies, 1,779 agg assaults; 15,454 property crimes = 3,478.8/100k); LBPD mid-2025 release",
+    "note": "Citywide figures shown; no official neighborhood rate found. East Long Beach/Belmont areas have markedly lower violent crime than the city average, but car break-ins and bike/package theft are the main issues (street parking)."
+   },
+   "lax": {
+    "score": 6,
+    "minutes_offpeak": 30,
+    "minutes_peak": 60,
+    "note": "7th St/Bellflower to I-405 N (~25 mi). Estimates."
+   },
+   "nightlife": {
+    "score": 10,
+    "nearest_district": "2nd St Belmont Shore (walkable); Downtown LB ~10 min",
+    "drive_minutes": 5,
+    "note": "Plenty within walk or short drive."
+   },
+   "gyms": {
+    "score": 7,
+    "examples": [
+     "Boutique fitness on 2nd St",
+     "24 Hour Fitness / other chain gyms within ~10 min (verify)"
+    ]
+   },
+   "services": {
+    "score": 8,
+    "note": "Ralphs and other groceries on 2nd St and Marina Pacifica area; Whole Foods/Trader Joe's in nearby east LB (verify); pharmacies on 2nd St."
+   },
+   "rail": {
+    "score": 1,
+    "nearest_station": "Downtown LB A Line",
+    "line": "Metro A Line",
+    "note": "No practical rail; ~10 min drive."
+   },
+   "airports_other": "LGB ~10 min, SNA ~25 min (estimates)",
+   "summary": "Best coffee-and-walk combination in Long Beach with a calmer, safer feel (especially Belmont Heights), but furthest LB option from freeways and LAX with congested peak arterials. Good fit if coffee/walk outweighs freeway speed.",
+   "sources": [
+    "https://www.eufy.com/blogs/security-system/is-long-beach-safe",
+    "https://lbpost.com/news/crime/crime-stats-long-beach-shootings-2025-homicides",
+    "https://longbeach.gov/police/press-releases/lbpd-releases-4th-annual-year-in-review-and-accountability-report/",
+    "https://www.clrc.ca.gov/CRPC/Pub/Memos/CRPC25-14.pdf",
+    "https://lbpost.com/esd/?p=19991",
+    "https://whatnow.com/?p=333674",
+    "https://www.redwagonteam.com/?p=471",
+    "https://redfin.com/blog/long-beach-ca-neighborhoods",
+    "https://sunnews.org/seal-beach-officials-seek-inpout-on-i-405-widening-project",
+    "https://caltrop.com/project-details/i-405-i-605-interchange/"
+   ]
+  },
+  {
+   "neighborhood": "Long Beach – Bixby Knolls / Cal Heights",
+   "lat": 33.833,
+   "lng": -118.18,
+   "freeway": {
+    "score": 9,
+    "nearest": [
+     "I-405 (Atlantic Ave or Long Beach Blvd ramps, ~2-4 min)",
+     "I-710 (via Del Amo/Wardlow, ~5-6 min)",
+     "SR-91 (via Atlantic or LB Blvd, ~6-8 min)"
+    ],
+    "note": "Best freeway position in group C's Long Beach areas. Estimates."
+   },
+   "traffic": {
+    "score": 5,
+    "note": "Atlantic and Long Beach Blvd flow OK; I-405 through Long Beach and I-710 trucks are congested at peak; 405/710 interchange slow."
+   },
+   "coffee": {
+    "score": 5,
+    "cafes": [
+     "Coffee Drunk – Cal Heights and Atlantic Ave Bixby Knolls locations, local chain",
+     "It's a Grind – 4245 Atlantic Ave, local coffeehouse (not specialty-grade)",
+     "The Merchant – 4121 Long Beach Blvd, bakery/cafe",
+     "Black Ring Coffee – 5373 Long Beach Blvd (North LB, drive)"
+    ],
+    "note": "1-2 decent cafes walkable along Atlantic/Cal Heights; not a third-wave hub."
+   },
+   "walk": {
+    "score": 7,
+    "walk_score": 72,
+    "note": "Bixby Knolls neighborhood Walk Score 72 (walkscore.com); Cal Heights similar, best near Atlantic Ave and Orange/Wardlow."
+   },
+   "quiet": {
+    "score": 6,
+    "note": "Leafy single-family streets; but Cal Heights and parts of Bixby sit under/near Long Beach Airport (LGB) departure/approach paths and close to I-405 - check specific block for aircraft noise."
+   },
+   "safety": {
+    "score": 6,
+    "violent_per_1k": 6.8,
+    "property_per_1k": 34.8,
+    "year": "2024 (citywide Long Beach; FBI)",
+    "source": "FBI 2024 counts for Long Beach as summarized by eufy.com (37 murders, 200 rapes, 989 robberies, 1,779 agg assaults; 15,454 property crimes = 3,478.8/100k); LBPD mid-2025 release",
+    "note": "Citywide figures shown; these north-central neighborhoods are generally below the city average for violent crime, with typical car break-in/package theft. No official neighborhood rate found."
+   },
+   "lax": {
+    "score": 8,
+    "minutes_offpeak": 22,
+    "minutes_peak": 45,
+    "note": "I-405 N direct (~18 mi). Estimates."
+   },
+   "nightlife": {
+    "score": 8,
+    "nearest_district": "Atlantic Ave Bixby Knolls bars; Downtown LB / 4th St",
+    "drive_minutes": 12,
+    "note": "Some local spots; full districts 12-15 min drive - matches client preference."
+   },
+   "gyms": {
+    "score": 7,
+    "examples": [
+     "Chain gyms along Atlantic/LB Blvd and Long Beach Towne Center (~10 min) (verify)"
+    ]
+   },
+   "services": {
+    "score": 7,
+    "note": "Groceries along Atlantic and Long Beach Blvd; Trader Joe's/Ralphs nearby (verify); Douglas Park/LB Towne Center big-box ~10 min."
+   },
+   "rail": {
+    "score": 6,
+    "nearest_station": "Wardlow / Del Amo",
+    "line": "Metro A Line",
+    "note": "Stations on Long Beach Blvd, 10-20 min walk depending on block."
+   },
+   "airports_other": "LGB ~5 min, SNA ~30 min (estimates)",
+   "summary": "Quiet residential feel with the best freeway/LAX position of the LB group, nightlife a short drive away - but coffee/walkability is middling and aircraft noise varies by block. Strong fit for the 30% freeway weight, weaker on the 30% coffee weight.",
+   "sources": [
+    "https://www.eufy.com/blogs/security-system/is-long-beach-safe",
+    "https://lbpost.com/news/crime/crime-stats-long-beach-shootings-2025-homicides",
+    "https://longbeach.gov/police/press-releases/lbpd-releases-4th-annual-year-in-review-and-accountability-report/",
+    "https://www.clrc.ca.gov/CRPC/Pub/Memos/CRPC25-14.pdf",
+    "https://lbpost.com/esd/?p=78271",
+    "https://sigtrib.com/?p=22313",
+    "https://www.visitlongbeach.com/neighborhoods/bixby-knolls/",
+    "https://theelmerteam.com/blog/most-walkable-long-beach-neighborhoods-for-families"
+   ]
+  },
+  {
+   "neighborhood": "Fullerton – Downtown",
+   "lat": 33.8705,
+   "lng": -117.9245,
+   "freeway": {
+    "score": 7,
+    "nearest": [
+     "SR-91 (Harbor Blvd ramps, ~5 min)",
+     "SR-57 (via Chapman/Orangethorpe, ~7 min)",
+     "I-5 (via Harbor or Commonwealth, ~7-8 min)"
+    ],
+    "note": "Three freeways within ~8 min but none adjacent. Estimates."
+   },
+   "traffic": {
+    "score": 3,
+    "note": "SR-91 is one of the most congested commuter corridors in SoCal (OCTA: 300k+ daily; State College-Lakeview segment chronic); I-5 in north OC heavy; SR-91 widening (La Palma-SR-55) under construction 2026+. Harbor Blvd arterial moderate."
+   },
+   "coffee": {
+    "score": 8,
+    "cafes": [
+     "Play Coffee – downtown shipping-container shop, specialty, walkable",
+     "Lovetta Coffee Roasters – downtown, roaster",
+     "MADE Coffee – W Amerige Ave, study-friendly",
+     "525 Coffee Co. – downtown",
+     "Dripp – N Harbor Blvd, student/laptop spot",
+     "Lion and Lamb Coffee Roasters – North Fullerton (drive)"
+    ],
+    "note": "5+ cafes within 10 min of the core, several roasters; Cal State/Fullerton College students make many laptop-friendly."
+   },
+   "walk": {
+    "score": 9,
+    "walk_score": 95,
+    "note": "Address-level Walk Scores near the Fullerton station 95-96 (walkscore.com points); city average 54. No district-level score."
+   },
+   "quiet": {
+    "score": 3,
+    "note": "Downtown Fullerton is a dense bar district (heavy weekend crowds, DUI enforcement) and the BNSF mainline/Metrolink/Amtrak station brings frequent trains with horns day and night. Quieter residential blocks lie north of Chapman/Commonwealth edges."
+   },
+   "safety": {
+    "score": 5,
+    "violent_per_1k": 4.1,
+    "property_per_1k": null,
+    "year": "modeled 'typical year' (CrimeGrade); FPD 2025 annual report lacks Part 1 totals",
+    "source": "CrimeGrade.org (violent 4.089/1k, overall 23.61/1k); Daily Titan on FPD 2025 report",
+    "note": "Citywide violent ~4.1/1k is below the LA ~7/1k benchmark, but downtown bar district concentrates assaults, DUIs, vehicle burglary (downtown vehicle theft ~4.4/1k per CrimeGrade). Property-only rate not found (overall 23.6/1k includes other offenses). FPD calls and arrests fell 2024->2025."
+   },
+   "lax": {
+    "score": 4,
+    "minutes_offpeak": 40,
+    "minutes_peak": 80,
+    "note": "SR-91 W to I-105 W or I-5 N/I-605 S/I-105 (~30 mi). Estimates."
+   },
+   "nightlife": {
+    "score": 10,
+    "nearest_district": "Downtown Fullerton (walkable)",
+    "drive_minutes": 0,
+    "note": "Bar scene is right there."
+   },
+   "gyms": {
+    "score": 7,
+    "examples": [
+     "24 Hour Fitness / LA Fitness along Harbor/Orangethorpe (verify)",
+     "Boutique studios downtown"
+    ]
+   },
+   "services": {
+    "score": 8,
+    "note": "Groceries/pharmacies along Harbor and Orangethorpe; Trader Joe's and Whole Foods in Fullerton/Brea area (verify)."
+   },
+   "rail": {
+    "score": 8,
+    "nearest_station": "Fullerton Transportation Center",
+    "line": "Metrolink OC/91-Perris Valley, Amtrak Pacific Surfliner",
+    "note": "Commuter rail, not Metro; useful for LA Union Station trips."
+   },
+   "airports_other": "LGB ~30 min, SNA ~25 min (estimates)",
+   "summary": "Excellent walkability and coffee for OC, but noisy (bars plus train horns) and tied to the SR-91/I-5 corridors that are among the region's worst, with a long LAX drive. Suits a coffee/walk-first renter willing to choose a block away from the station and bars.",
+   "sources": [
+    "https://mycoffeeexplorer.com/guides/fullerton",
+    "https://dailytitan.com/lifestyle/downtown-fullerton-coffee-shop-study-spots/article_f8fd54a2-12a8-11ec-944f-fbd33ec95261.html",
+    "https://business.fullerton.edu/news/story/somethings-brewing-6-coffee-shops-in-fullerton",
+    "https://www.walkscore.com/score/loc/lat=33.8711/lng=-117.9193/",
+    "https://crimegrade.org/safest-places-in-fullerton-ca/",
+    "https://crimegrade.org/violent-crime-fullerton-ca/",
+    "https://crimegrade.org/vehicle-theft-downtown-fullerton-fullerton-ca/",
+    "https://dailytitan.com/news/fullerton-police-departments-reveals-year-end-statistics-on-arrests-and-calls/article_c776420e-5f68-4960-bbc4-ff9af2ab21f0.html",
+    "https://octa.net/pdf/SR91-57-55-Project-I-FAQ.pdf?n=202412",
+    "https://hoodline.com/2026/07/jacobs-snags-mega-oc-freeway-fix-for-sr-91-and-i-5/"
+   ]
+  },
+  {
+   "neighborhood": "Anaheim – Platinum Triangle / Packing District area",
+   "lat": 33.804,
+   "lng": -117.884,
+   "freeway": {
+    "score": 10,
+    "nearest": [
+     "SR-57 (Katella/Orangewood ramps, ~2-3 min)",
+     "I-5 (Katella/State College, ~3-4 min)",
+     "SR-22 (via I-5/57 'Orange Crush', ~6-8 min)",
+     "SR-91 (via SR-57 N, ~8 min)"
+    ],
+    "note": "Best raw freeway access in group C. Estimates."
+   },
+   "traffic": {
+    "score": 4,
+    "note": "Sits at the I-5/SR-57/SR-22 'Orange Crush' interchange, a chronic OC bottleneck; Katella and State College gridlock on Angels/Ducks event nights; SR-91 to the north is among SoCal's worst."
+   },
+   "coffee": {
+    "score": 3,
+    "cafes": [
+     "LAMILL Coffee – Katella Ave coffee bar (roaster-owned; verify current status)",
+     "Chains in the Platinum Triangle (Starbucks etc.)",
+     "Packing District (Center St/Anaheim Packing House, ~10 min drive): Thank You Coffee, Okayama Kobo, Requiem Coffee"
+    ],
+    "note": "Little genuine specialty coffee within a 10-min walk of PT apartments; the downtown Anaheim/Packing District cluster is ~3 mi away."
+   },
+   "walk": {
+    "score": 4,
+    "walk_score": 46,
+    "note": "Walk Score neighborhood page = 46 (Somewhat Walkable); individual buildings 28-64 (Paramount ~62 on Zillow, 1818 Platinum Triangle 64). Packing District/Center St area is far more walkable."
+   },
+   "quiet": {
+    "score": 4,
+    "note": "Stadium/Honda Center/ Grove event traffic and crowd noise, SR-57/I-5 freeway hum, Metrolink/BNSF trains near ARTIC; Disneyland nightly fireworks audible from parts of the area. Inside newer mid-rise complexes it can be fine."
+   },
+   "safety": {
+    "score": 5,
+    "violent_per_1k": 5.1,
+    "property_per_1k": 21.0,
+    "year": "modeled 'typical year' (CrimeGrade violent) / NeighborhoodScout property (year unstated); APD 2025 annual report cites reduction in major crimes",
+    "source": "CrimeGrade.org; NeighborhoodScout; Anaheim PD 2023 crime presentation & 2025 annual report",
+    "note": "Citywide Anaheim; Anaheim PD reported violent crime -14% 2022->2023 (2,641->2,259). NeighborhoodScout notes very high motor-vehicle theft. PT itself is newer gated mid-rises; car break-ins in garages around event venues are the main risk."
+   },
+   "lax": {
+    "score": 4,
+    "minutes_offpeak": 42,
+    "minutes_peak": 85,
+    "note": "I-5 N to I-605 S to I-105 W, or SR-22 W/I-405 N (~33 mi). Forum estimates 30-40 min off-peak, ~1h+ at peak."
+   },
+   "nightlife": {
+    "score": 9,
+    "nearest_district": "Anaheim GardenWalk / Downtown Disney / Center St & Packing District; The Lot at Angel Stadium area",
+    "drive_minutes": 8,
+    "note": "Several districts within ~10 min drive; Orange Circle also ~10 min."
+   },
+   "gyms": {
+    "score": 8,
+    "examples": [
+     "Building gyms in most PT complexes",
+     "LA Fitness / 24 Hour Fitness / Crunch nearby on Katella/State College (verify)"
+    ]
+   },
+   "services": {
+    "score": 7,
+    "note": "Big-box and groceries along Katella/State College and The Outlets at Orange (~5 min); Trader Joe's/Whole Foods in Orange/Tustin (~10 min) (verify)."
+   },
+   "rail": {
+    "score": 6,
+    "nearest_station": "Anaheim ARTIC",
+    "line": "Metrolink OC Line, Amtrak",
+    "note": "~10-28 min walk from PT buildings (Walk Score: 1515 Wright Circle is a 28-min walk)."
+   },
+   "airports_other": "LGB ~25 min, SNA ~15 min (estimates)",
+   "summary": "Top-tier freeway access and a short hop to SNA, but car-dependent with almost no walkable specialty coffee and heavy event/Orange Crush congestion. Fits only if freeway speed matters far more than café life - and the 40+ min LAX drive is a drag.",
+   "sources": [
+    "https://www.walkscore.com/CA/Anaheim/Platinum_Triangle/fitness-apartments",
+    "https://mycoffeeexplorer.com/guides/anaheim",
+    "https://orangecoast.com/o-c-guides/hot-oc-neighborhood-downtown-anaheim/",
+    "https://crimegrade.org/violent-crime-anaheim-ca/",
+    "https://www.neighborhoodscout.com/ca/anaheim/crime",
+    "https://www.anaheim.net/DocumentCenter/View/56906/Presentation-on-2023-Crime-Stats",
+    "https://pd.anaheim.net/DocumentCenter/View/441/2025-Department-Annual-Report",
+    "https://www.fodors.com/community/united-states/how-far-from-lax-to-anaheim-696589/",
+    "https://hoodline.com/2019/10/the-cheapest-apartments-for-rent-in-the-platinum-triangle-anaheim/"
+   ]
+  },
+  {
+   "neighborhood": "Garden Grove",
+   "lat": 33.774,
+   "lng": -117.941,
+   "freeway": {
+    "score": 9,
+    "nearest": [
+     "SR-22 (Brookhurst/Euclid/Harbor ramps, ~2-4 min)",
+     "I-405 (via SR-22 W, ~8 min)",
+     "I-5 (via SR-22 E, ~8 min)"
+    ],
+    "note": "SR-22 runs through the city; 405 and 5 within ~8 min. Estimates; varies by address."
+   },
+   "traffic": {
+    "score": 5,
+    "note": "SR-22 heavy at peak but usually moves; I-405 (now with OC Express Lanes) and I-5 near the Orange Crush are congested; Brookhurst/Harbor arterials typical suburban OC."
+   },
+   "coffee": {
+    "score": 3,
+    "cafes": [
+     "Taty's Specialty Coffee and Tea – Garden Grove (matcha-focused)",
+     "Phin Smith – Vietnamese phin coffee, patio",
+     "iLanet Coffee – 13916 Brookhurst St, Vietnamese cafe, open late, laptop-possible",
+     "Golden Papaya – 9240 Garden Grove Blvd, Wi-Fi cafe/tea room"
+    ],
+    "note": "Strong Vietnamese cafe culture (Little Saigon on the west side) but few third-wave roasters, and most are a drive, not a walk."
+   },
+   "walk": {
+    "score": 4,
+    "walk_score": null,
+    "note": "No Garden Grove Walk Score found in searches; area is strip-mall suburban and largely car-dependent (estimate). Historic Main St/Civic Center is the most walkable pocket."
+   },
+   "quiet": {
+    "score": 7,
+    "note": "Mostly calm residential tracts and garden condos; noise mainly near SR-22 and major arterials. Disneyland fireworks faintly audible in the north/east."
+   },
+   "safety": {
+    "score": 7,
+    "violent_per_1k": 2.8,
+    "property_per_1k": 17.6,
+    "year": "Niche category rates (year unstated); CrimeGrade overall 16.39/1k 'typical year'",
+    "source": "Niche (summed category rates per 100k, my arithmetic); CrimeGrade.org",
+    "note": "Both below the LA ~7 violent / ~25 property benchmarks. Official 2025 GGPD Part I figures not retrieved (ggcity.org report unreachable). Vehicle theft (~2.8/1k) notable."
+   },
+   "lax": {
+    "score": 5,
+    "minutes_offpeak": 35,
+    "minutes_peak": 70,
+    "note": "SR-22 W to I-405 N (~28 mi). Estimates."
+   },
+   "nightlife": {
+    "score": 7,
+    "nearest_district": "Little Saigon (Bolsa Ave) / Downtown Disney & GardenWalk / Main St Garden Grove",
+    "drive_minutes": 12,
+    "note": "Downtown Long Beach / Belmont Shore ~20-25 min."
+   },
+   "gyms": {
+    "score": 7,
+    "examples": [
+     "LA Fitness / 24 Hour Fitness / Planet Fitness along Brookhurst, Harbor and Garden Grove Blvd (verify)"
+    ]
+   },
+   "services": {
+    "score": 8,
+    "note": "Abundant groceries (Vietnamese/Korean markets, Ralphs/Stater Bros), pharmacies and big-box on Brookhurst/Harbor; Trader Joe's/Whole Foods ~10 min (verify)."
+   },
+   "rail": {
+    "score": 1,
+    "nearest_station": "Anaheim ARTIC or Santa Ana (OC Streetcar under construction/opening)",
+    "line": "Metrolink",
+    "note": "No practical rail."
+   },
+   "airports_other": "LGB ~20 min, SNA ~20 min (estimates)",
+   "summary": "Quiet, comparatively safe, good-value suburb with fast SR-22 access, but weak on walkable third-wave coffee - the client's other 30% priority - and ~35+ min to LAX. Two of the three 'Garden Grove' buildings are actually in Westminster.",
+   "sources": [
+    "https://crimegrade.org/safest-places-in-garden-grove-ca/",
+    "https://www.niche.com/places-to-live/garden-grove-orange-ca/",
+    "https://joe.coffee/locations/ca/garden-grove/taty-s-specialty-coffee-and-tea-garden-grove-242e653a-9cb9-4a4c-a20f-30c0af5a983f/",
+    "https://frankiapp.com/business/ilanet-coffee-130748.md",
+    "https://frankiapp.com/business/phin-smith-garden-grove-37652.md",
+    "https://app.foursquare.com/user/4323000/list/oc-wifi-cafes",
+    "https://ggcity.org/sites/default/files/2024-2025-report-police_1.pdf"
+   ]
+  }
+ ],
+ "buildings": [
+  {
+   "name": "Urban Village Apartments",
+   "lat": 33.7808,
+   "lng": -118.1891,
+   "geocode_note": "Estimated: 1081 Long Beach Blvd lies between 10th & 11th St, east side; listings say ~100 ft from A Line station. North edge of downtown (St. Mary/Willmore area), not East Village proper. Geocoders (Census, Nominatim) and WebFetch were unreachable from this sandbox; coordinates estimated from street-grid knowledge plus listing text - verify on a map."
+  },
+  {
+   "name": "104 Brookstone Apartments",
+   "lat": 33.873,
+   "lng": -117.993,
+   "geocode_note": "LOW CONFIDENCE (+/-1 mi along Artesia Blvd). Address is in BUENA PARK (90621), ~4-5 mi west of Downtown Fullerton - does not match the 'Fullerton – Downtown' label. Geocoders (Census, Nominatim) and WebFetch were unreachable from this sandbox; coordinates estimated from street-grid knowledge plus listing text - verify on a map."
+  },
+  {
+   "name": "Courtyard Apartments at La Pat Place",
+   "lat": 33.76,
+   "lng": -117.993,
+   "geocode_note": "LOW CONFIDENCE. Address is in WESTMINSTER (92683), not Garden Grove; La Pat Pl runs 13400-14000 blocks, listing says walkable to Westminster Center and near 405/22/605. Sale listing gives 13812 La Pat Pl for the same complex. Geocoders (Census, Nominatim) and WebFetch were unreachable from this sandbox; coordinates estimated from street-grid knowledge plus listing text - verify on a map."
+  },
+  {
+   "name": "Palmera",
+   "lat": 33.799,
+   "lng": -117.903,
+   "geocode_note": "MEDIUM-LOW CONFIDENCE. 2104 S Lewis St, 92802 is in the Anaheim Resort/South Anaheim area WEST of I-5 near Katella/Haster, roughly 2 mi west of the Platinum Triangle - label mismatch. Geocoders (Census, Nominatim) and WebFetch were unreachable from this sandbox; coordinates estimated from street-grid knowledge plus listing text - verify on a map."
+  },
+  {
+   "name": "The Magnolia",
+   "lat": 33.7693,
+   "lng": -118.1998,
+   "geocode_note": "Estimated: NE/NW corner area of W Broadway & Magnolia Ave, west downtown LB. Geocoders (Census, Nominatim) and WebFetch were unreachable from this sandbox; coordinates estimated from street-grid knowledge plus listing text - verify on a map."
+  },
+  {
+   "name": "Volta on Pine",
+   "lat": 33.7752,
+   "lng": -118.1927,
+   "geocode_note": "Estimated: Pine Ave between 6th and 7th St, downtown LB. Geocoders (Census, Nominatim) and WebFetch were unreachable from this sandbox; coordinates estimated from street-grid knowledge plus listing text - verify on a map."
+  },
+  {
+   "name": "The Paramount Platinum Triangle",
+   "lat": 33.805,
+   "lng": -117.884,
+   "geocode_note": "Estimated: 1781 S Campton Ave in the Platinum Triangle near Katella/State College (Hoodline places it in PT; 400-unit JPI building). Geocoders (Census, Nominatim) and WebFetch were unreachable from this sandbox; coordinates estimated from street-grid knowledge plus listing text - verify on a map."
+  },
+  {
+   "name": "The Edward Apartments",
+   "lat": 33.7565,
+   "lng": -118.0058,
+   "geocode_note": "LOW-MEDIUM CONFIDENCE: Edwards St just south of Westminster Blvd. Address is in WESTMINSTER (92683), not Garden Grove. Geocoders (Census, Nominatim) and WebFetch were unreachable from this sandbox; coordinates estimated from street-grid knowledge plus listing text - verify on a map."
+  },
+  {
+   "name": "425 W 4th St, Unit E",
+   "lat": 33.7723,
+   "lng": -118.1975,
+   "geocode_note": "Estimated: 400 block of W 4th St between Pacific/Chestnut area, west downtown LB (Willmore). Geocoders (Census, Nominatim) and WebFetch were unreachable from this sandbox; coordinates estimated from street-grid knowledge plus listing text - verify on a map."
+  },
+  {
+   "name": "23 N Alboni Pl (townhome-style condo)",
+   "lat": 33.769,
+   "lng": -118.181,
+   "geocode_note": "LOW CONFIDENCE: a listing for 35 N Alboni says 'edge of Downtown, across the street from the beach', so Alboni Pl runs north from Ocean Blvd near the downtown/Alamitos Beach boundary; exact cross street not confirmed. Geocoders (Census, Nominatim) and WebFetch were unreachable from this sandbox; coordinates estimated from street-grid knowledge plus listing text - verify on a map."
+  },
+  {
+   "name": "10541 Lakeside Dr S #146 (Lakeside community condo)",
+   "lat": 33.772,
+   "lng": -117.957,
+   "geocode_note": "MEDIUM-LOW CONFIDENCE: gated Lakeside condo complex, entered from Garden Grove Blvd just west of Brookhurst St (per listing directions), 92840 Garden Grove. Geocoders (Census, Nominatim) and WebFetch were unreachable from this sandbox; coordinates estimated from street-grid knowledge plus listing text - verify on a map."
+  }
+ ]
+}

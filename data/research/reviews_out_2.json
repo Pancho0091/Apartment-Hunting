@@ -1,0 +1,380 @@
+[
+ {
+  "name": "Latitude II",
+  "management_company": null,
+  "reputation_score": 4,
+  "confidence": "low",
+  "ratings": [
+   {"site": "Yelp (as Latitude Apartment Homes)", "rating": 2.6, "count": 61, "as_of": "2026-05"},
+   {"site": "ApartmentRatings (as Latitude Apartment Homes)", "rating": 3.6, "count": 40, "as_of": "2026-10"},
+   {"site": "Apartments.com", "rating": 2.0, "count": 6, "as_of": "2026-10"}
+  ],
+  "management": {"score": 5, "summary": "Split: Yelp highlights praise leasing staff for working with residents through hard times; older ApartmentRatings reviews say office doesn't follow up and cancels maintenance requests without warning. Operator not named on listings (lists itself as manager)."},
+  "maintenance": {"score": 5, "summary": "Mixed: some say work orders handled quickly and praise a maintenance tech; others report cancelled/ignored requests."},
+  "cleanliness": {"score": 4, "summary": "Older reviews mention trash and pet waste left on sidewalks that never get cleaned."},
+  "noise": {"score": null, "summary": "No specific noise feedback found."},
+  "security": {"score": 4, "summary": "A 2018 review describes vehicle break-ins; no recent security data found."},
+  "pests": {"score": 3, "summary": "Several 2015-2018 reviews describe cockroach problems; no recent confirmation either way."},
+  "costs": {"score": null, "summary": "No fee/RUBS/renewal-specific feedback found. Units renovated (stainless appliances, laminate floors)."},
+  "reddit": [],
+  "praise": ["large units with lots of storage", "renovated interiors (stainless, laminate)", "helpful leasing staff (some reviews)", "pool"],
+  "complaints": ["severe parking shortage, essentially no guest parking", "cockroaches (older reviews)", "maintenance requests cancelled/ignored", "trash and pet waste on grounds", "car break-ins (2018)"],
+  "dealbreakers": "Parking is the dominant, consistent complaint: realistically one car per unit and no guest parking. Historic roach reports.",
+  "recent_trend": "unknown - most detailed reviews are 2014-2018; only a few 2025 reviews surfaced, and Yelp/Apartments.com averages remain low",
+  "sources": [
+   "https://www.yelp.com/biz/latitude-apartment-homes-santa-ana",
+   "https://www.apartmentratings.com/ca/santa-ana/latitude-apartment-homes_714547023992705/",
+   "https://www.apartments.com/latitude-ii-santa-ana-ca/bf40r79/",
+   "https://www.westsiderentals.com/santa-ana-ca/latitude-ii-bf40r79",
+   "https://hotpads.com/latitude-ii-santa-ana-ca-92705-sm49jt/pad"
+  ]
+ },
+ {
+  "name": "Vista Apartments",
+  "management_company": "Jones & Jones Communities (per ApartmentRatings 'who manages' field; unconfirmed)",
+  "reputation_score": 7,
+  "confidence": "low",
+  "ratings": [
+   {"site": "Yelp", "rating": 3.1, "count": 10, "as_of": "2026-08"},
+   {"site": "ApartmentRatings", "rating": 4.1, "count": 11, "as_of": "2026-10"},
+   {"site": "Apartments.com", "rating": 4.6, "count": 5, "as_of": "2026-10"}
+  ],
+  "management": {"score": 8, "summary": "Recent (2026) reviews praise on-site managers by name (Andrea on Yelp, Shireen on ApartmentRatings) as easy to reach and on top of requests; manager replies to reviews are courteous."},
+  "maintenance": {"score": 7, "summary": "2026 reviews call maintenance excellent and quick; 2003/2008 reviews cited slow response and leaking pipes."},
+  "cleanliness": {"score": 7, "summary": "Recent reviewers describe clean, quiet surroundings; little specific data on common areas."},
+  "noise": {"score": 6, "summary": "Older reviews mention thin walls and street noise on Washington Pl-facing side; 2026 reviews describe it as quiet."},
+  "security": {"score": 7, "summary": "Gated entry and package receiving; recent residents say it feels secure."},
+  "pests": {"score": null, "summary": "No pest reports found."},
+  "costs": {"score": null, "summary": "No fee data found. Note: 2015 reviews say no air conditioning."},
+  "reddit": [],
+  "praise": ["responsive on-site manager", "excellent maintenance team (2026)", "secure gated building", "quiet neighborhood"],
+  "complaints": ["no air conditioning (2015 reviews)", "street noise on front side", "thin walls (2008)", "leaky pipes (2008)"],
+  "dealbreakers": "",
+  "recent_trend": "improving - 2026 reviews are mostly positive while the critical ones date from 2008-2015",
+  "sources": [
+   "https://www.yelp.com/biz/vista-apartments-mar-vista-3",
+   "https://www.apartmentratings.com/ca/mar-vista/vista-apartments_310391645590066/",
+   "https://www.apartments.com/vista-apartments-mar-vista-ca/s08hdt4/",
+   "https://www.westsiderentals.com/mar-vista-ca/vista-apartments-s08hdt4",
+   "https://www.veryapt.com/ApartmentReview-a24395-vista-apartments-los-angeles"
+  ]
+ },
+ {
+  "name": "Garment Lofts",
+  "management_company": null,
+  "reputation_score": 5,
+  "confidence": "low",
+  "ratings": [
+   {"site": "Apartments.com", "rating": 3.4, "count": 5, "as_of": "2026-10"},
+   {"site": "RentCafe", "rating": 4.0, "count": 9, "as_of": "2026-10"},
+   {"site": "Yelp", "rating": 3.1, "count": 13, "as_of": "2026-10"},
+   {"site": "ApartmentRatings", "rating": null, "count": 0, "as_of": "2026-10"}
+  ],
+  "management": {"score": 5, "summary": "Split: staff called helpful and responsive in some reviews; others describe an uncooperative attitude and a disputed, late security deposit return with deductions (2023)."},
+  "maintenance": {"score": 6, "summary": "RentCafe maintenance score 4.5; one Apartments.com reviewer says maintenance is fast, others report slow repairs."},
+  "cleanliness": {"score": 5, "summary": "Complaints about graffiti in elevators and dogs walked through elevator/building."},
+  "noise": {"score": 6, "summary": "RentCafe noise sub-score 3.5/5; Fashion District street environment."},
+  "security": {"score": null, "summary": "Controlled access and package lockers listed; no resident security reports found."},
+  "pests": {"score": 3, "summary": "Aug 2023 one-star review describes cockroaches in common areas and units, with an extra/emergency charge for pest control. Single account, not recent."},
+  "costs": {"score": 4, "summary": "Parking is extra (~$220/mo unassigned, uncovered surface lot) and often full; pest-control fee charged; deposit deductions reported."},
+  "reddit": [],
+  "praise": ["loft character, 9-21 ft ceilings, big windows", "rooftop", "responsive maintenance (some reviews)", "central DTLA location"],
+  "complaints": ["cockroaches (2023)", "expensive, uncovered parking often full", "graffiti in elevators", "deposit deductions", "no pool"],
+  "dealbreakers": "Possible roach problem (one detailed 2023 review) and unreliable/expensive parking - ask about pest control and parking availability.",
+  "recent_trend": "unknown - small sample; most recent Apartments.com reviews (2026) are from a single reviewer",
+  "sources": [
+   "https://www.apartments.com/garment-lofts-los-angeles-ca/p4w3dxv/",
+   "https://www.rentcafe.com/apartments/ca/los-angeles/garment-building-residential/default.aspx",
+   "https://www.yelp.com/search?find_desc=Garment+Lofts&find_loc=Los+Angeles,+CA",
+   "https://www.apartmentratings.com/ca/los-angeles/garment-lofts_9199332346275158518/",
+   "https://www.point2homes.com/US/Apartment-Buildings/CA/Los-Angeles/Garment-Building-Residential.html"
+  ]
+ },
+ {
+  "name": "Eleven Eleven Wilshire",
+  "management_company": "Holland Residential (inferred from DRE license footer on leasing pages; not explicitly stated)",
+  "reputation_score": 6,
+  "confidence": "medium",
+  "ratings": [
+   {"site": "ApartmentRatings", "rating": 4.4, "count": 104, "as_of": "2026-10"},
+   {"site": "RentCafe", "rating": 4.0, "count": 83, "as_of": "2026-10"},
+   {"site": "Yelp", "rating": 4.2, "count": 202, "as_of": "2026-07"},
+   {"site": "Apartments.com", "rating": 1.0, "count": 3, "as_of": "2026-10"},
+   {"site": "VeryApt", "rating": 7.8, "count": 9, "as_of": "2026-10"},
+   {"site": "CorporateHousing.com", "rating": null, "count": 3, "as_of": "2025-09"}
+  ],
+  "management": {"score": 6, "summary": "Leasing staff widely praised on Yelp/RentCafe; but a Sept 2025 long-term resident review calls building and management 'disgusting' and questions authenticity of positive reviews; invoices called unclear."},
+  "maintenance": {"score": 4, "summary": "Recurring building-wide water shut-offs (described as weekly for years in 2022-23) and an elevator out for months; some say repairs are prompt."},
+  "cleanliness": {"score": null, "summary": "No specific feedback found."},
+  "noise": {"score": 4, "summary": "Construction/event noise; a 2025 reviewer describes weeks of nonstop jackhammering."},
+  "security": {"score": 5, "summary": "Garage security concerns raised; VeryApt safety sub-score 6.4/10; neighborhood called 'not so great' though central."},
+  "pests": {"score": 7, "summary": "One reviewer reports no pest problems; no infestation reports found."},
+  "costs": {"score": 4, "summary": "A 2023 move-out reviewer says $1,800 deposit largely withheld for carpet replacement; fees not clear on invoices. VeryApt value sub-score 8.1 (rent decent for area)."},
+  "reddit": [],
+  "praise": ["friendly leasing/maintenance staff", "good gym and amenities", "central location near freeways/campus", "rent good value for area"],
+  "complaints": ["recurring whole-building water shut-offs", "elevator outages lasting months", "construction jackhammering (2025)", "deposit withheld for carpet", "garage security"],
+  "dealbreakers": "Chronic whole-building water shut-offs and elevator outages are recurring themes.",
+  "recent_trend": "declining - aggregate scores still good but the most detailed 2025 reviews (CorporateHousing, ApartmentRatings) are strongly negative",
+  "sources": [
+   "https://www.apartmentratings.com/ca/los-angeles/1111-wilshire_2132509836900171/",
+   "https://www.rentcafe.com/apartments/ca/los-angeles/1111-wilshire/default.aspx",
+   "https://www.yelp.com/biz/1111-wilshire-los-angeles-3",
+   "https://www.apartments.com/eleven-eleven-wilshire-los-angeles-ca/wjz543l/",
+   "https://www.veryapt.com/ApartmentReview-a26210-1111-wilshire-los-angeles",
+   "https://www.corporatehousing.com/ca/los-angeles/eleven-eleven-wilshire/9jz5337",
+   "https://edge.apartmentiq.io/los-angeles-ca/1111-wilshire"
+  ]
+ },
+ {
+  "name": "Pegasus",
+  "management_company": "Equity Residential",
+  "reputation_score": 5,
+  "confidence": "medium",
+  "ratings": [
+   {"site": "Yelp", "rating": 3.7, "count": 173, "as_of": "2026-08"},
+   {"site": "ApartmentRatings", "rating": 3.3, "count": 77, "as_of": "2026-10"},
+   {"site": "Apartments.com", "rating": 3.0, "count": 3, "as_of": "2026-10"},
+   {"site": "VeryApt", "rating": 7.8, "count": 10, "as_of": "2026-10"},
+   {"site": "ApartmentIQ", "rating": 2.8, "count": 2, "as_of": "2026-10"}
+  ],
+  "management": {"score": 5, "summary": "Leasing staff often praised on Yelp; a July 2026 ApartmentRatings review says emergency maintenance calls went unanswered and multiple residents posted HVAC complaints on the portal."},
+  "maintenance": {"score": 4, "summary": "Recurring complaints: AC units that can't hold temperature (2026), window drafts, elevator outages (2022: 'only 3 of 8 working'), tiny in-unit washer/dryers taking hours per load."},
+  "cleanliness": {"score": 5, "summary": "Apartments.com one-star review cites poor upkeep; a 2026 reviewer mentions a sanitation incident."},
+  "noise": {"score": 5, "summary": "Loud nearby construction reported; Financial District location."},
+  "security": {"score": 7, "summary": "24-hour attended front desk; no notable break-in reports found."},
+  "pests": {"score": 3, "summary": "July 2026 reviewer reports a major roach infestation; Apartments.com review also cites pests; one 2024-era reviewer saw none."},
+  "costs": {"score": 4, "summary": "Steep annual rent increases reported. Parking for only ~half of 322 units; 3-6 month waitlist, residents rent spots 2 blocks away. Equity Residential lost a $43M CA class action over illegal percentage late fees and faces 2025 claims over separate pest/trash fees."},
+  "reddit": [],
+  "praise": ["across from 7th St/Metro Center", "rooftop pool and 24h gym", "historic Art Deco building, high ceilings, natural light", "friendly leasing staff"],
+  "complaints": ["AC failures (2026)", "roaches (2026)", "elevator outages", "parking waitlist of months", "small slow in-unit laundry", "steep renewal increases"],
+  "dealbreakers": "If you need parking: building parking covers only about half the units, with multi-month waitlists. Recent (2026) HVAC and roach complaints.",
+  "recent_trend": "declining - most recent ApartmentRatings reviews (2026) are the most negative (AC, roaches, unanswered emergency calls)",
+  "sources": [
+   "https://www.yelp.com/biz/pegasus-apartments-los-angeles-2",
+   "https://www.apartmentratings.com/ca/los-angeles/pegasus-apartments_213430911290017/",
+   "https://www.apartments.com/pegasus-los-angeles-ca/hdpmn63/",
+   "https://www.veryapt.com/ApartmentReview-a2597-pegasus-los-angeles",
+   "https://laist.com/news/apartments-we-love-the-pegasus",
+   "https://www.equityapartments.com/los-angeles/downtown-los-angeles-apartments",
+   "https://www.dailyjournal.com/articles/391216-tenants-win-43-million-against-equity-residential-after-11-year-fight-over-illegal-late-fees"
+  ]
+ },
+ {
+  "name": "mResidences Olympic & Olive",
+  "management_company": "Greystar",
+  "reputation_score": 6,
+  "confidence": "low",
+  "ratings": [
+   {"site": "Apartments.com", "rating": 3.8, "count": 29, "as_of": "2026-10"},
+   {"site": "RentCafe", "rating": 4.0, "count": 8, "as_of": "2026-10"},
+   {"site": "Yelp", "rating": 3.6, "count": 12, "as_of": "2026-08"},
+   {"site": "ApartmentRatings", "rating": 2.8, "count": 1, "as_of": "2021"},
+   {"site": "ApartmentList", "rating": 5.0, "count": 1, "as_of": "2024"}
+  ],
+  "management": {"score": 6, "summary": "Polarized: Apartments.com has 16 five-star and 6 one-star reviews. 2021 review criticized management for installing fixtures without notice."},
+  "maintenance": {"score": 8, "summary": "RentCafe reviewer calls maintenance 'probably my favorite part', efficient and timely."},
+  "cleanliness": {"score": 4, "summary": "A RentCafe reviewer says building not clean in general (unit, gym, parking, hallways); windows not cleaned (2021)."},
+  "noise": {"score": 5, "summary": "Early-morning trash truck noise reported."},
+  "security": {"score": null, "summary": "No specific feedback found."},
+  "pests": {"score": null, "summary": "No pest reports found."},
+  "costs": {"score": 5, "summary": "No building-specific fee complaints found; note Greystar paid a $24M FTC/Colorado settlement (Dec 2025) over hidden mandatory fees and faces a 2025 California junk-fee class action - expect add-on fees."},
+  "reddit": [],
+  "praise": ["responsive maintenance", "pool, sky lounge, co-working, dog park", "walk to Pico Metro, near 10/110"],
+  "complaints": ["common areas not clean", "early-morning trash truck noise", "management changes in unit without notice (2021)"],
+  "dealbreakers": "",
+  "recent_trend": "unknown - small samples spread across 2021-2026",
+  "sources": [
+   "https://www.apartments.com/mresidences-olympic-olive-los-angeles-ca/8pm7sc0/",
+   "https://www.rentcafe.com/apartments/ca/los-angeles/mresidences-olympic-olive/default.aspx",
+   "https://www.yelp.com/biz/mresidences-olympic-and-olive-los-angeles",
+   "https://www.apartmentratings.com/ca/los-angeles/mresidences-olympic-and-olive_9199332346275183783/",
+   "https://www.apartmentlist.com/ca/los-angeles/mresidences-olympic-olive",
+   "https://www.greystar.com/mresidences-olympic-olive-los-angeles-ca/p_20162",
+   "https://www.globalpolicywatch.com/2025/12/greystars-24-million-settlement-signals-ftc-crackdown-on-hidden-rental-fee/"
+  ]
+ },
+ {
+  "name": "Be DTLA",
+  "management_company": "Greystar (with The Souferian Group; took over Oct 2019)",
+  "reputation_score": 7,
+  "confidence": "medium",
+  "ratings": [
+   {"site": "Yelp", "rating": 4.1, "count": 226, "as_of": "2026-09"},
+   {"site": "RentCafe", "rating": 4.0, "count": 87, "as_of": "2026-10"},
+   {"site": "VeryApt", "rating": 7.8, "count": 8, "as_of": "2026-10"}
+  ],
+  "management": {"score": 8, "summary": "ApartmentRatings staff score ~4.7/5; managers reply to nearly all reviews within ~5 days; Yelp reviewer says new management significantly improved things. Older complaints attributed to pre-2019 management."},
+  "maintenance": {"score": 7, "summary": "Maintenance staff frequently praised; a 2026 reviewer mentions a disruptive water-leak repair."},
+  "cleanliness": {"score": 5, "summary": "Most frequent recent complaint: dog waste and urine smell on the 2nd-floor deck/common areas."},
+  "noise": {"score": 6, "summary": "Noise sub-score ~3.5-3.9/5; 2025-2026 reviews report hearing upstairs footsteps/furniture (top floors poorly insulated), though others call it quiet."},
+  "security": {"score": 6, "summary": "Safety score ~4.6 on ApartmentRatings, but a 2025 resident reports a garage car break-in and an apartment break-in, and no hallway cameras; package theft mentioned."},
+  "pests": {"score": null, "summary": "No pest reports found."},
+  "costs": {"score": 5, "summary": "Parking expensive; renewal increases mentioned; Greystar's $24M FTC hidden-fee settlement (Dec 2025) suggests checking mandatory fees."},
+  "reddit": [],
+  "praise": ["responsive staff and maintenance", "grocery store and coffee downstairs", "walkable, transit score 98", "pool, gym, rooftop gardens"],
+  "complaints": ["dog waste/urine on 2nd-floor deck", "upstairs neighbor noise", "garage and unit break-ins (2025)", "package theft", "expensive parking"],
+  "dealbreakers": "",
+  "recent_trend": "steady - reviews through mid-2026 remain mostly positive, with pet waste and noise as recurring gripes",
+  "sources": [
+   "https://www.yelp.com/biz/be-dtla-los-angeles",
+   "https://www.apartmentratings.com/ca/los-angeles/be-dtla_9199332346275170996/",
+   "https://www.rentcafe.com/apartments/ca/los-angeles/bedtla/default.aspx",
+   "https://www.veryapt.com/ApartmentReview-a24657-be-dtla-los-angeles",
+   "https://www.greystar.com/be-dtla-apartments-los-angeles-ca/p_16447"
+  ]
+ },
+ {
+  "name": "1400 FIG Apartments",
+  "management_company": null,
+  "reputation_score": 6,
+  "confidence": "low",
+  "ratings": [
+   {"site": "Yelp", "rating": 3.6, "count": 14, "as_of": "2026-07"},
+   {"site": "Apartments.com", "rating": 3.5, "count": 4, "as_of": "2026-10"},
+   {"site": "ApartmentRatings", "rating": null, "count": 0, "as_of": "2026-10"}
+  ],
+  "management": {"score": null, "summary": "No resident commentary found. On-site manager listed. A Yelp snippet mentions 'CTM Apartment Services' but this is unverified."},
+  "maintenance": {"score": null, "summary": "No resident commentary found; on-site maintenance listed."},
+  "cleanliness": {"score": null, "summary": "No data."},
+  "noise": {"score": null, "summary": "No resident comments; Apartments.com Sound Score 63/100. Across from Convention Center / Crypto.com Arena / LA Live - expect event traffic."},
+  "security": {"score": null, "summary": "No data."},
+  "pests": {"score": null, "summary": "No data."},
+  "costs": {"score": null, "summary": "No fee data; listings have shown large concessions (up to 8 weeks free)."},
+  "reddit": [],
+  "praise": ["rooftop lounge with fire pit and grills", "pool and gym", "in-unit washer", "next to LA Live / Convention Center"],
+  "complaints": ["one 1-star Apartments.com review (content not visible)"],
+  "dealbreakers": "",
+  "recent_trend": "unknown - too few reviews; beware confusion with City Lights on Fig (1300 S Figueroa) reviews",
+  "sources": [
+   "https://www.yelp.com/biz/1400-fig-los-angeles",
+   "https://www.apartments.com/1400-fig-apartments-los-angeles-ca/838zj23/",
+   "https://www.apartmentratings.com/ca/los-angeles/1400-fig_9199332346275204376/",
+   "https://www.zillow.com/apartments/los-angeles-ca/1400-fig-apartments/CkQ7Q7/"
+  ]
+ },
+ {
+  "name": "Olympic by Windsor",
+  "management_company": "Windsor Communities",
+  "reputation_score": 6,
+  "confidence": "low",
+  "ratings": [
+   {"site": "ApartmentRatings", "rating": 4.0, "count": 37, "as_of": "2026-10"},
+   {"site": "Yelp", "rating": null, "count": 124, "as_of": "2026-06"},
+   {"site": "Windsor property site (source unstated)", "rating": 3.6, "count": null, "as_of": "2026-10"},
+   {"site": "RentCafe (company-level Windsor rating)", "rating": 4.0, "count": 423, "as_of": "2026-10"}
+  ],
+  "management": {"score": 6, "summary": "Leasing staff described as responsive and knowing residents by name; others call management unresponsive and say corporate-controlled repairs drag on."},
+  "maintenance": {"score": 6, "summary": "Maintenance staff praised, but garage gate outages trapping cars and slow corporate-approved repairs reported."},
+  "cleanliness": {"score": 5, "summary": "Odors in common areas reported."},
+  "noise": {"score": null, "summary": "No specific feedback found."},
+  "security": {"score": 4, "summary": "Most negative theme: easy unauthorized entry, bike stolen from 'secure' storage, inattentive guard, false alarms; residents want 24h security."},
+  "pests": {"score": null, "summary": "No pest reports found."},
+  "costs": {"score": 4, "summary": "Nickel-and-dime fees: $75 lockout, $10/24h guest parking (separate garage around block), clubhouse $200/hr + $200 deposit; deposit withheld for cleaning/painting, photos only provided after lawyer involved. Parking not guaranteed."},
+  "reddit": [],
+  "praise": ["responsive leasing/maintenance staff", "walkable South Park location", "gym, pool, rooftop decks"],
+  "complaints": ["weak building security / bike theft", "garage gate breakdowns", "many add-on fees", "deposit deductions", "no cell reception (one review)"],
+  "dealbreakers": "",
+  "recent_trend": "unknown - newest detailed reviews found are from 2023",
+  "sources": [
+   "https://www.apartmentratings.com/ca/los-angeles/olympic-by-windsor_9199332346275161465/",
+   "https://www.yelp.com/biz/olympic-by-windsor-los-angeles",
+   "https://www.rentcafe.com/apartments/ca/los-angeles/olympic-by-windsor/default.aspx",
+   "https://www.apartmentlist.com/ca/los-angeles/olympic-by-windsor",
+   "https://www.windsorcommunities.com/properties/olympic-by-windsor/"
+  ]
+ },
+ {
+  "name": "Las Fuentes",
+  "management_company": "Unclear - formerly Greystar (Yelp 'Las Fuentes by Greystar' listing marked closed), current operator not confirmed",
+  "reputation_score": 3,
+  "confidence": "low",
+  "ratings": [
+   {"site": "ApartmentRatings", "rating": 1.3, "count": 2, "as_of": "2026-10"},
+   {"site": "ForRent", "rating": 1.0, "count": 1, "as_of": "2023"},
+   {"site": "Apartments.com", "rating": 1.0, "count": 1, "as_of": "2026-10"},
+   {"site": "Yelp", "rating": 2.6, "count": 5, "as_of": "2026-06"},
+   {"site": "Yelp (Las Fuentes by Greystar, closed listing)", "rating": 1.7, "count": 12, "as_of": "2026-05"}
+  ],
+  "management": {"score": 3, "summary": "Negative across sources; a 2016 review alleges a leasing agent stole rent money orders. Management appears to have changed from Greystar."},
+  "maintenance": {"score": 3, "summary": "Slow repairs reported in 2019 and 2023."},
+  "cleanliness": {"score": null, "summary": "No specific data."},
+  "noise": {"score": null, "summary": "No data."},
+  "security": {"score": null, "summary": "Gated access listed; no resident reports."},
+  "pests": {"score": 2, "summary": "2023 ForRent review and 2023 Yelp photo captions report a rat infestation; 2019 review cites pests."},
+  "costs": {"score": 3, "summary": "Non-refundable 'Deposit IQ' fee reportedly then charged against damages (2023). Santa Ana rent control applies."},
+  "reddit": [],
+  "praise": ["pool and spa", "gated", "Santa Ana rent control"],
+  "complaints": ["rats (2023)", "slow repairs", "deposit-alternative fee charged against damages", "alleged leasing agent theft (2016)"],
+  "dealbreakers": "Rat infestation reported in 2023 (review + Yelp photos). Verify current pest status and who manages before considering.",
+  "recent_trend": "unknown - most recent review is 2023; possible management change after Greystar",
+  "sources": [
+   "https://www.apartmentratings.com/ca/santa-ana/las-fuentes-apartments_714542777192705/",
+   "https://www.forrent.com/ca/santa-ana/las-fuentes/k5p2hr8",
+   "https://www.apartments.com/las-fuentes-santa-ana-ca/75p2qrw/",
+   "https://www.yelp.com/biz/las-fuentes-santa-ana-2",
+   "https://www.yelp.com/biz/las-fuentes-by-greystar-santa-ana"
+  ]
+ },
+ {
+  "name": "South Park by Windsor",
+  "management_company": "Windsor Communities",
+  "reputation_score": 6,
+  "confidence": "medium",
+  "ratings": [
+   {"site": "Yelp", "rating": 4.0, "count": 178, "as_of": "2026-09"},
+   {"site": "ApartmentRatings", "rating": 4.3, "count": 70, "as_of": "2026-10"},
+   {"site": "RentCafe (company-level Windsor rating)", "rating": 4.0, "count": 437, "as_of": "2026-10"}
+  ],
+  "management": {"score": 6, "summary": "Yelp reviewers praise staff and resident events; ApartmentRatings complaints about office responsiveness."},
+  "maintenance": {"score": 4, "summary": "Frequent elevator breakdowns (one reviewer trapped 3 times), hallway AC problems, maintenance delays."},
+  "cleanliness": {"score": null, "summary": "No specific feedback found."},
+  "noise": {"score": 7, "summary": "RentCafe noise sub-score 4.0; few noise complaints."},
+  "security": {"score": 3, "summary": "Package theft described as rampant in mailroom and garage; package lockers often broken (2025 review); packages found dumped in stairwell."},
+  "pests": {"score": null, "summary": "No pest reports found."},
+  "costs": {"score": null, "summary": "No building-specific fee feedback; listings show big concessions (up to 3 months free)."},
+  "reddit": [],
+  "praise": ["friendly staff, resident events", "pool, theater room, rooftop, conference room", "walkable South Park, transit score 100", "pet-friendly"],
+  "complaints": ["package theft / broken lockers", "elevator breakdowns and entrapments", "hallway AC", "slow office response"],
+  "dealbreakers": "Package theft and elevator reliability are recurring (including 2025 reviews).",
+  "recent_trend": "steady - complaints from 2022-2025 repeat the same package/elevator themes",
+  "sources": [
+   "https://www.yelp.com/biz/south-park-by-windsor-los-angeles",
+   "https://www.apartmentratings.com/ca/los-angeles/south-park-by-windsor_9199332346275156012/",
+   "https://www.rentcafe.com/apartments/ca/los-angeles/south-park-by-windsor/default.aspx",
+   "https://www.apartments.com/south-park-by-windsor-los-angeles-ca/eq14szn/"
+  ]
+ },
+ {
+  "name": "Lake Dianne",
+  "management_company": null,
+  "reputation_score": 7,
+  "confidence": "medium",
+  "ratings": [
+   {"site": "Yelp", "rating": 3.3, "count": 72, "as_of": "2026-07"},
+   {"site": "RentCafe", "rating": 4.0, "count": 16, "as_of": "2026-10"},
+   {"site": "Apartments.com", "rating": 4.3, "count": 6, "as_of": "2026-10"},
+   {"site": "ApartmentRatings (as Lake Diane)", "rating": 3.0, "count": 67, "as_of": "2022"},
+   {"site": "Zumper", "rating": 9.6, "count": null, "as_of": "2026-10"}
+  ],
+  "management": {"score": 8, "summary": "Recent reviews praise friendly, accommodating management and staff by name (e.g., Patrick); occasional confusion over charges mentioned."},
+  "maintenance": {"score": 6, "summary": "Staff described as quick to respond; some repair delays; an older review describes a makeshift mold fix."},
+  "cleanliness": {"score": 7, "summary": "Grounds and lake/water feature with ducks praised."},
+  "noise": {"score": 7, "summary": "Described as serene and quiet; some noise mentioned in RentCafe complaints."},
+  "security": {"score": 6, "summary": "Older reviews mention car break-ins."},
+  "pests": {"score": 5, "summary": "Cockroach reports in older (pre-2022) ApartmentRatings reviews."},
+  "costs": {"score": 5, "summary": "Older reviews complain of ~$101 water/trash bill allocated from a single master meter (RUBS-style). Rents above Santa Ana average."},
+  "reddit": [],
+  "praise": ["quiet, serene grounds with lake and ducks", "friendly management", "pool and jacuzzi", "near 5/55/22 freeways"],
+  "complaints": ["limited parking, sometimes street parking (Aug 2025)", "gym closed (2024)", "water/trash billing from master meter", "mold, roaches, break-ins (older reviews)", "strict rules"],
+  "dealbreakers": "",
+  "recent_trend": "improving - 2024-2025 reviews mostly positive while harsher reviews are older (2006-2022)",
+  "sources": [
+   "https://www.yelp.com/biz/lake-dianne-apartments-santa-ana-2",
+   "https://www.rentcafe.com/apartments/ca/santa-ana/lake-dianne/default.aspx",
+   "https://www.apartments.com/lake-dianne-santa-ana-ca/r4fe2t2/",
+   "https://www.apartmentratings.com/ca/santa-ana/lake-diane-apartments_714558717092705/",
+   "https://www.zumper.com/apartment-buildings/p36914/lake-dianne-cabrillo-park-santa-ana-ca",
+   "https://www.point2homes.com/US/Apartment-Buildings/CA/Santa-Ana/Saddleback-View-Mabury-Park/LAKE-DIANNE/80884088.html"
+  ]
+ }
+]

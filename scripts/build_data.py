@@ -20,6 +20,12 @@ NEIGHBORHOOD_FIX = {
     "7122 Kittyhawk Ave Unit 0": "Westchester",
 }
 CHECKED_ON = "2026-10-15"
+# Findings that contradict each other across research batches, shown on the building.
+REVIEW_NOTES = {
+    name: "G.H. Palmer (GHP Management) deposit class action: one search found a $12.5M settlement, another says it "
+          "fell apart and headed to trial. Status unconfirmed either way; ask how deposits and move-out charges are handled."
+    for name in ("The Orsini", "Da Vinci", "The Piero")
+}
 
 
 def slug(s):
@@ -135,7 +141,7 @@ def main():
             "notes": r.get("notes"),
             "listing_url": r.get("listing_url"),
             "sources": sources,
-            "reviews": reviews.get(r["name"]),
+            "reviews": ({**reviews[r["name"]], "note": REVIEW_NOTES.get(r["name"], "")} if r["name"] in reviews else None),
             "checked_on": CHECKED_ON if v else "2026-10-14",
             "source": "claude",
             "my_status": "new",

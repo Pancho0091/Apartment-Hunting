@@ -1,0 +1,746 @@
+{
+ "neighborhoods": [
+  {
+   "neighborhood": "Downtown LA – South Park",
+   "lat": 34.042,
+   "lng": -118.2615,
+   "freeway": {
+    "score": 10,
+    "nearest": [
+     "I-110 (Olympic/9th St or Pico ramps, ~2-3 min)",
+     "I-10 (via I-110 or Grand/Los Angeles St ramps, ~4-5 min)",
+     "US-101 (via I-110 north, ~6-8 min)"
+    ],
+    "note": "South Park sits on the I-110/I-10 interchange; best raw freeway access in the group. Drive times are estimates."
+   },
+   "traffic": {
+    "score": 3,
+    "note": "Estimate: I-110 through DTLA and the I-10/I-110 interchange are chronic peak bottlenecks (INRIX has flagged EB I-10 Washington–I-110). Figueroa/Olympic/Pico gridlock on Crypto.com Arena/Convention Center event nights; LA ranked 4th most congested US city in INRIX 2025."
+   },
+   "coffee": {
+    "score": 7,
+    "cafes": [
+     "Verve Coffee Roasters – S Spring St (edge of SP/Historic Core), walkable, laptop-OK",
+     "Go Get Em Tiger / G&B lineage shops – Historic Core, ~10-15 min walk from north SP",
+     "Dalian's / multi-roaster spots near Grand Hope Park (verify current)",
+     "Blue Bottle / Alfred – FIGat7th-area, ~10 min walk from north SP",
+     "Tierra Mia – DTLA, Latin-inspired espresso"
+    ],
+    "note": "North South Park (Olive/Hill near Olympic) reaches 3-4 serious shops in ~10 min; the southern end near Pico/Figueroa (Avant, 1400 Fig) has fewer and is closer to 15 min. Shop roster from Time Out/aggregator guides; confirm current status."
+   },
+   "walk": {
+    "score": 9,
+    "walk_score": 92,
+    "note": "Walk Score's 'Downtown' neighborhood is 93; South Park blocks are typically ~88-95 (estimate, not individually verified). Southern Figueroa/Pico corner is less pleasant to walk (convention-center superblocks)."
+   },
+   "quiet": {
+    "score": 3,
+    "note": "High-rise canyon with arena/convention-center event traffic, LA Live crowds, I-110 adjacency on the west edge, frequent LAPD/news helicopters over DTLA and rooftop helipads. Upper floors facing away from Figueroa/I-110 are the quietest pockets."
+   },
+   "safety": {
+    "score": 5,
+    "violent_per_1k": null,
+    "property_per_1k": null,
+    "year": "2025",
+    "source": "LAPD Central/Rampart/Northeast Divisions (via Crosstown) – qualitative",
+    "note": "Neighborhood-level per-capita 2025 rates could not be retrieved (WebFetch was unavailable in this session and search results gave no neighborhood figures); rates left null rather than invented. South Park is generally considered the calmer part of DTLA (LAPD Central Division); property crime (car break-ins, package theft) dominates. DTLA rates are visitor-inflated relative to residents. Citywide homicides fell 19% in 2025 (Crosstown/Spectrum). Score ~average."
+   },
+   "lax": {
+    "score": 8,
+    "minutes_offpeak": 20,
+    "minutes_peak": 45,
+    "note": "I-110 S to I-105 W (estimate)."
+   },
+   "nightlife": {
+    "score": 10,
+    "nearest_district": "LA Live / South Park / Historic Core",
+    "drive_minutes": 3,
+    "note": "Walkable even; client only needs drive access."
+   },
+   "gyms": {
+    "score": 9,
+    "examples": [
+     "Equinox (FIGat7th area / Bunker Hill)",
+     "Crunch DTLA",
+     "24 Hour Fitness (Bunker Hill/7th)",
+     "Many building gyms"
+    ]
+   },
+   "services": {
+    "score": 9,
+    "note": "Whole Foods (8th & Grand), Ralphs (9th & Flower), Target (FIGat7th), Trader Joe's (Spring St/Historic Core), CVS, USPS, Amazon lockers/Whole Foods returns."
+   },
+   "rail": {
+    "score": 9,
+    "nearest_station": "Pico or 7th St/Metro Center",
+    "line": "A/E (Pico), plus B/D at 7th/Metro",
+    "note": "Pico station within ~5 min of most South Park buildings."
+   },
+   "airports_other": "LGB ~25-30 min off-peak, SNA ~40-45 min off-peak (estimates)",
+   "summary": "Unbeatable freeway access and services, solid coffee on the north side, but the freeways it sits on are some of LA's worst at peak and quiet is poor near the arena. Suits a remote worker who drives off-peak and doesn't mind urban noise.",
+   "sources": [
+    "https://products.xtown.la/neighborhood",
+    "https://spectrumnews1.com/ca/la/public-safety/2026/02/17/los-angeles-homicides-neighborhoods",
+    "https://www.islands.com/2180995/vibrant-los-angeles-california-west-coast-hub-america-most-traffic-congested-city/",
+    "https://www.timeout.com/los-angeles/restaurants/the-best-coffee-shops-in-downtown",
+    "https://walkscore.com/score/loc/lat=34.0527/lng=-118.2609",
+    "https://urbanize.la/post/downtown-1400-figueroa-apartments-construction"
+   ]
+  },
+  {
+   "neighborhood": "Downtown LA – Arts District",
+   "lat": 34.041,
+   "lng": -118.2335,
+   "freeway": {
+    "score": 8,
+    "nearest": [
+     "US-101 (Alameda/4th St ramps, ~4 min)",
+     "I-10 (Santa Fe/Alameda ramps, ~4-5 min)",
+     "I-5 (via 4th St/6th St Viaduct, ~6 min)"
+    ],
+    "note": "Three freeways within ~6 min; ramps slightly less direct than South Park. Estimates."
+   },
+   "traffic": {
+    "score": 3,
+    "note": "Estimate: adjacent I-10/I-5/US-101 East LA interchange is among the region's worst corridors; Alameda and 4th/7th surface streets choke at peak with truck and commuter traffic."
+   },
+   "coffee": {
+    "score": 9,
+    "cafes": [
+     "Stumptown – 806 S Santa Fe Ave (roastery), walkable",
+     "Blue Bottle – Mateo St (first LA location), laptop-friendly",
+     "Verve Coffee Roasters – Arts District presence",
+     "Groundwork – Traction Ave",
+     "Eightfold/other independents on Traction/3rd"
+    ],
+    "note": "Strongest specialty-coffee cluster in DTLA (Sprudge Arts District guide; Time Out). Several are roasteries; confirm current hours/laptop policies."
+   },
+   "walk": {
+    "score": 8,
+    "walk_score": 82,
+    "note": "Estimate (Walk Score not retrieved): core around 3rd/Traction/Hewitt is pleasant; south (Mateo/Santa Fe) is industrial with longer blocks."
+   },
+   "quiet": {
+    "score": 4,
+    "note": "Bars/restaurants and weekend crowds on 3rd/Traction/Santa Fe; freight trains along the LA River (horns), trucks on Alameda, helicopters. Side streets east of Alameda can be calm at night outside the venue blocks."
+   },
+   "safety": {
+    "score": 4,
+    "violent_per_1k": null,
+    "property_per_1k": null,
+    "year": "2025",
+    "source": "LAPD Central/Rampart/Northeast Divisions (via Crosstown) – qualitative",
+    "note": "Neighborhood-level per-capita 2025 rates could not be retrieved (WebFetch was unavailable in this session and search results gave no neighborhood figures); rates left null rather than invented. LAPD Central Division; car break-ins are a well-known issue in the district along with homelessness on the edges near Skid Row/Little Tokyo. Likely above-average property crime."
+   },
+   "lax": {
+    "score": 7,
+    "minutes_offpeak": 25,
+    "minutes_peak": 50,
+    "note": "I-10 W to I-110 S to I-105 W (estimate)."
+   },
+   "nightlife": {
+    "score": 10,
+    "nearest_district": "Arts District itself / Little Tokyo",
+    "drive_minutes": 3,
+    "note": "Breweries, cocktail bars and restaurants on site."
+   },
+   "gyms": {
+    "score": 7,
+    "examples": [
+     "Arts District CrossFit/boutique studios",
+     "Equinox / Crunch in DTLA core (~8 min drive)",
+     "Building gyms"
+    ]
+   },
+   "services": {
+    "score": 7,
+    "note": "Urban Radish market, Little Tokyo Marketplace (Japanese grocery), Whole Foods/Trader Joe's in DTLA core ~8 min drive; CVS/USPS in Little Tokyo."
+   },
+   "rail": {
+    "score": 7,
+    "nearest_station": "Little Tokyo/Arts District",
+    "line": "A/E (Regional Connector)",
+    "note": "~5-12 min walk depending on block; Arts District/6th St station planned, not open."
+   },
+   "airports_other": "LGB ~25-30 min off-peak, SNA ~35-40 min off-peak (estimates)",
+   "summary": "Best coffee in the group and real neighborhood character, with three freeways close by, but traffic on those freeways is awful at peak and venue/train noise hurts quiet. Good fit if coffee walkability is the top priority.",
+   "sources": [
+    "https://products.xtown.la/neighborhood",
+    "https://spectrumnews1.com/ca/la/public-safety/2026/02/17/los-angeles-homicides-neighborhoods",
+    "https://www.islands.com/2180995/vibrant-los-angeles-california-west-coast-hub-america-most-traffic-congested-city/",
+    "https://sprudge.com/arts-district-coffee-guide-121824.html",
+    "https://showyourbadge.discoverlosangeles.com/blog/best-places-coffee-downtown-la-arts-district",
+    "https://www.timeout.com/los-angeles/restaurants/the-best-coffee-shops-in-downtown"
+   ]
+  },
+  {
+   "neighborhood": "Downtown LA – Historic Core / Financial District / Bunker Hill",
+   "lat": 34.05,
+   "lng": -118.2525,
+   "freeway": {
+    "score": 9,
+    "nearest": [
+     "I-110 (3rd/4th/6th St ramps, ~2-4 min)",
+     "US-101 (via Grand/Hill/Temple ramps, ~4-5 min)",
+     "I-10 (via I-110 S, ~6-8 min)"
+    ],
+    "note": "City West buildings (Bixel, Be DTLA, Piero, Glo, 1111 Wilshire) sit right on the I-110; Historic Core buildings are ~4-6 min. Estimates."
+   },
+   "traffic": {
+    "score": 3,
+    "note": "Estimate: I-110 through DTLA, the 101/110 four-level interchange and 101 approaches are chronic peak bottlenecks; downtown grid congested at rush hour, with frequent lane closures from construction/film shoots."
+   },
+   "coffee": {
+    "score": 9,
+    "cafes": [
+     "Verve – S Spring St, laptop-friendly",
+     "Go Get Em Tiger – Historic Core (Spring/Broadway area)",
+     "G&B Coffee – Grand Central Market (Broadway)",
+     "Blue Bottle – Bunker Hill/Bradbury area",
+     "Alfred – Bunker Hill/Historic Core",
+     "Dalian's Café – near The Broad (Bunker Hill)"
+    ],
+    "note": "5+ serious shops within 10 min walk of the Historic Core; Financial District/City West (Bixel/6th) is thinner, ~10-15 min to the cluster. Roster from Time Out / guides, confirm current status."
+   },
+   "walk": {
+    "score": 10,
+    "walk_score": 95,
+    "note": "Walk Score Downtown neighborhood ~93; individual Historic Core pages ~96, City West ~84 (Walk Score pages via search)."
+   },
+   "quiet": {
+    "score": 2,
+    "note": "Busiest, loudest DTLA area: buses, sirens, nightlife on Spring/Broadway, street activity, helicopters; City West buildings (Piero, Be DTLA, Bixel, Glo) are directly freeway-adjacent; Da Vinci sits beside the 101/110 interchange."
+   },
+   "safety": {
+    "score": 4,
+    "violent_per_1k": null,
+    "property_per_1k": null,
+    "year": "2025",
+    "source": "LAPD Central/Rampart/Northeast Divisions (via Crosstown) – qualitative",
+    "note": "Neighborhood-level per-capita 2025 rates could not be retrieved (WebFetch was unavailable in this session and search results gave no neighborhood figures); rates left null rather than invented. LAPD Central Division has among the highest raw crime counts in the city (visitor-inflated); Historic Core and Fashion District edge (Garment Lofts at 8th & Maple) are grittier, Bunker Hill calmer. Downtown recorded 17 homicides in a recent reporting period (Hoodline 2026). Car break-ins common."
+   },
+   "lax": {
+    "score": 7,
+    "minutes_offpeak": 22,
+    "minutes_peak": 50,
+    "note": "I-110 S to I-105 W (estimate)."
+   },
+   "nightlife": {
+    "score": 10,
+    "nearest_district": "Historic Core (Spring/Broadway)",
+    "drive_minutes": 2,
+    "note": "On site."
+   },
+   "gyms": {
+    "score": 10,
+    "examples": [
+     "Equinox Bunker Hill",
+     "Crunch DTLA",
+     "24 Hour Fitness DTLA",
+     "LA Athletic Club",
+     "Many boutique studios"
+    ]
+   },
+   "services": {
+    "score": 9,
+    "note": "Whole Foods (8th & Grand), Ralphs (9th & Flower), Trader Joe's (Spring St), Target FIGat7th, Grand Central Market, CVS, USPS, Amazon lockers."
+   },
+   "rail": {
+    "score": 10,
+    "nearest_station": "Pershing Square / 7th St-Metro Center / Grand Av Arts-Bunker Hill / Historic Broadway",
+    "line": "B/D, A/E",
+    "note": "Densest rail coverage in LA."
+   },
+   "airports_other": "LGB ~25-30 min off-peak, SNA ~40 min off-peak (estimates)",
+   "summary": "Maximum walkability, coffee, transit and services, with near-instant I-110 access, but it is the loudest and among the least safe-feeling areas here, and peak freeway traffic is bad. Choose upper floors on Bunker Hill/Financial District for a quieter compromise.",
+   "sources": [
+    "https://products.xtown.la/neighborhood",
+    "https://spectrumnews1.com/ca/la/public-safety/2026/02/17/los-angeles-homicides-neighborhoods",
+    "https://www.islands.com/2180995/vibrant-los-angeles-california-west-coast-hub-america-most-traffic-congested-city/",
+    "https://www.timeout.com/los-angeles/restaurants/the-best-coffee-shops-in-downtown",
+    "https://www.tryperdiem.com/guide/the-best-coffee-shops-near-the-broad-in-downtown-la",
+    "https://walkscore.com/score/loc/lat=34.0540/lng=-118.2512",
+    "https://hoodline.com/2026/08/woman-31-shot-dead-near-skid-row-gunman-flees-on-bicycle/",
+    "https://www.avisonyoung.us/properties/609--640-st-pual-avenue-los-angeles-piero-i--ii-lease"
+   ]
+  },
+  {
+   "neighborhood": "Chinatown",
+   "lat": 34.0625,
+   "lng": -118.2385,
+   "freeway": {
+    "score": 9,
+    "nearest": [
+     "I-110/SR-110 (Hill St / Broadway ramps, ~2-3 min)",
+     "US-101 (Broadway/Alameda ramps, ~3-4 min)",
+     "I-5 (via N Broadway/Pasadena Ave, ~5-6 min)"
+    ],
+    "note": "Sits between the 110 Pasadena Fwy, 101 and I-5. Estimates."
+   },
+   "traffic": {
+    "score": 4,
+    "note": "Estimate: 101/110 four-level interchange and the 5/110 junction are congested at peak, Dodger Stadium game days jam Broadway/Hill and Stadium Way. Local arterials otherwise move better than the DTLA core."
+   },
+   "coffee": {
+    "score": 6,
+    "cafes": [
+     "Endorffeine – Chinatown, serious multi-roaster, small (not laptop-friendly)",
+     "Steep / tea + coffee spots in Far East Plaza",
+     "Union Station area cafes (~10 min walk)",
+     "Little Tokyo cluster ~15 min walk"
+    ],
+    "note": "1-3 genuine specialty cafes within 10 min; more in Little Tokyo/Arts District a short drive away."
+   },
+   "walk": {
+    "score": 9,
+    "walk_score": 90,
+    "note": "Estimate (Walk Score not individually retrieved)."
+   },
+   "quiet": {
+    "score": 5,
+    "note": "Generally calmer than DTLA core; noise from Metro A Line on elevated tracks, Dodger Stadium crowds/fireworks, freeway hum near 110/101, and helicopters. Jia (N Broadway) faces a busy arterial; The Orsini abuts the 110/101 corridor."
+   },
+   "safety": {
+    "score": 5,
+    "violent_per_1k": null,
+    "property_per_1k": null,
+    "year": "2025",
+    "source": "LAPD Central/Rampart/Northeast Divisions (via Crosstown) – qualitative",
+    "note": "Neighborhood-level per-capita 2025 rates could not be retrieved (WebFetch was unavailable in this session and search results gave no neighborhood figures); rates left null rather than invented. LAPD Central Division; recurring car break-ins and a 2024 serial car-arson incident on Bunker Hill Ave/Bartlett St (NBC LA/Hoodline). Roughly city-average."
+   },
+   "lax": {
+    "score": 6,
+    "minutes_offpeak": 27,
+    "minutes_peak": 55,
+    "note": "110 S through DTLA to 105 W (estimate)."
+   },
+   "nightlife": {
+    "score": 10,
+    "nearest_district": "Chinatown (Chung King Rd) / Historic Core / Echo Park",
+    "drive_minutes": 5,
+    "note": ""
+   },
+   "gyms": {
+    "score": 7,
+    "examples": [
+     "Building gyms (Jia, Orsini)",
+     "Equinox/Crunch DTLA (~7 min drive)",
+     "Boutique studios in Chinatown"
+    ]
+   },
+   "services": {
+    "score": 7,
+    "note": "Ralphs/Whole Foods/TJ's in DTLA ~7 min drive; local Asian markets (Ai Hoa, etc.), CVS, USPS Chinatown station."
+   },
+   "rail": {
+    "score": 10,
+    "nearest_station": "Chinatown",
+    "line": "A Line",
+    "note": "Union Station (all lines, Metrolink) ~10 min walk."
+   },
+   "airports_other": "LGB ~30 min off-peak, SNA ~40 min off-peak (estimates)",
+   "summary": "Good freeway position and transit with a quieter, more residential feel than the DTLA core, but only a couple of true specialty cafes within walking distance. Decent balanced pick if coffee can be a short drive.",
+   "sources": [
+    "https://products.xtown.la/neighborhood",
+    "https://spectrumnews1.com/ca/la/public-safety/2026/02/17/los-angeles-homicides-neighborhoods",
+    "https://www.islands.com/2180995/vibrant-los-angeles-california-west-coast-hub-america-most-traffic-congested-city/",
+    "https://www.theinfatuation.com/los-angeles/guides/best-coffee-in-la",
+    "https://nbclosangeles.com/news/local/4-cars-torched-in-chinatown-vandal-remains-on-the-loose/3421668/?amp=1&os=0",
+    "https://spotcrime.com/CA/Los%20Angeles/Chinatown"
+   ]
+  },
+  {
+   "neighborhood": "Little Tokyo",
+   "lat": 34.05,
+   "lng": -118.24,
+   "freeway": {
+    "score": 9,
+    "nearest": [
+     "US-101 (Los Angeles St/Alameda ramps, ~3 min)",
+     "I-110 (via 4th St, ~5 min)",
+     "I-10/I-5 (via Alameda / 4th St, ~5-6 min)"
+    ],
+    "note": "Estimates."
+   },
+   "traffic": {
+    "score": 3,
+    "note": "Estimate: adjacent to the 101 and East LA interchange complex; Alameda/1st/2nd crawl at peak; event days at the Geffen/JANM add pressure."
+   },
+   "coffee": {
+    "score": 8,
+    "cafes": [
+     "Go Get Em Tiger – Little Tokyo, laptop-OK",
+     "Blue Bottle – Little Tokyo",
+     "Cafe Dulce – Japanese Village Plaza area",
+     "Arts District cluster (Stumptown, Blue Bottle Mateo, Groundwork) ~10 min walk"
+    ],
+    "note": "3 specialty cafes in-neighborhood plus the Arts District cluster within ~10 min walk."
+   },
+   "walk": {
+    "score": 10,
+    "walk_score": 95,
+    "note": "Estimate (Walk Score not individually retrieved); compact and lively."
+   },
+   "quiet": {
+    "score": 3,
+    "note": "Dense, active streets, bar/karaoke activity, proximity to Skid Row (east of San Pedro) and LAPD HQ/City Hall helicopter traffic. Sakura Crossing (San Pedro & 2nd/3rd) is on a busy block."
+   },
+   "safety": {
+    "score": 4,
+    "violent_per_1k": null,
+    "property_per_1k": null,
+    "year": "2025",
+    "source": "LAPD Central/Rampart/Northeast Divisions (via Crosstown) – qualitative",
+    "note": "Neighborhood-level per-capita 2025 rates could not be retrieved (WebFetch was unavailable in this session and search results gave no neighborhood figures); rates left null rather than invented. LAPD Central Division; adjacent to Skid Row so street disorder and property crime (car break-ins, theft) are elevated; Hoodline reports violent incidents near Skid Row in 2026."
+   },
+   "lax": {
+    "score": 7,
+    "minutes_offpeak": 25,
+    "minutes_peak": 50,
+    "note": "I-110 S to I-105 W (estimate)."
+   },
+   "nightlife": {
+    "score": 10,
+    "nearest_district": "Little Tokyo / Arts District",
+    "drive_minutes": 2,
+    "note": ""
+   },
+   "gyms": {
+    "score": 8,
+    "examples": [
+     "Little Tokyo boutique studios",
+     "Crunch / Equinox DTLA (~5 min drive)",
+     "Building gyms"
+    ]
+   },
+   "services": {
+    "score": 8,
+    "note": "Little Tokyo Marketplace (Tokyo Central / Marukai-type grocery), Whole Foods/TJ's/Ralphs in DTLA ~5 min drive, CVS, USPS Terminal Annex nearby."
+   },
+   "rail": {
+    "score": 10,
+    "nearest_station": "Little Tokyo/Arts District",
+    "line": "A/E (Regional Connector)",
+    "note": "Union Station ~10 min walk."
+   },
+   "airports_other": "LGB ~25-30 min off-peak, SNA ~40 min off-peak (estimates)",
+   "summary": "Excellent walkability, coffee and transit with quick 101 access, but it borders Skid Row and is noisy. Works for someone who values coffee/walkability above quiet and safety.",
+   "sources": [
+    "https://products.xtown.la/neighborhood",
+    "https://spectrumnews1.com/ca/la/public-safety/2026/02/17/los-angeles-homicides-neighborhoods",
+    "https://www.islands.com/2180995/vibrant-los-angeles-california-west-coast-hub-america-most-traffic-congested-city/",
+    "https://www.theinfatuation.com/los-angeles/guides/best-coffee-in-la",
+    "https://hoodline.com/2026/08/woman-31-shot-dead-near-skid-row-gunman-flees-on-bicycle/"
+   ]
+  },
+  {
+   "neighborhood": "Echo Park",
+   "lat": 34.078,
+   "lng": -118.2605,
+   "freeway": {
+    "score": 7,
+    "nearest": [
+     "US-101 (Glendale Blvd / Alvarado ramps, ~3-5 min)",
+     "SR-110 (via Stadium Way/Sunset, ~5-7 min)",
+     "I-5 (via Stadium Way, ~8-10 min)",
+     "I-2 (Glendale Fwy via Glendale Blvd, ~8 min)"
+    ],
+    "note": "Southern Echo Park (near Temple/101) is closest; hillside streets add a few minutes. Estimates."
+   },
+   "traffic": {
+    "score": 4,
+    "note": "Estimate: Sunset and Glendale Blvds back up at peak; 101 through Echo Park/Silver Lake is a well-known slow stretch (INRIX historically ranked the 101 near Vermont among LA's worst). Dodger game days jam Sunset/Stadium Way."
+   },
+   "coffee": {
+    "score": 8,
+    "cafes": [
+     "Stereoscope Coffee – Sunset Blvd, walkable",
+     "Eightfold Coffee – Echo Park Ave, laptop-friendly communal table + Wi-Fi",
+     "Canyon Coffee – Echo Park Ave, often crowded",
+     "Woodcat Coffee – Sunset Blvd",
+     "Valerie Echo Park / others"
+    ],
+    "note": "Strong cluster along Sunset and Echo Park Ave near the lake (Time Out, Infatuation, Perdiem)."
+   },
+   "walk": {
+    "score": 8,
+    "walk_score": 82,
+    "note": "Hoodline (2017 Walk Score data) gave Greater Echo Park ~82; hilly residential streets score lower."
+   },
+   "quiet": {
+    "score": 6,
+    "note": "Hillside residential streets are quiet; Sunset Blvd bars/venues (Echoplex), Dodger Stadium fireworks/crowds, 101 freeway hum near Temple, some helicopter activity."
+   },
+   "safety": {
+    "score": 6,
+    "violent_per_1k": null,
+    "property_per_1k": null,
+    "year": "2025",
+    "source": "CrimeGrade; Lucid Rents (ZIP 90026)",
+    "note": "No official 2025 per-capita rates found. CrimeGrade (year unclear) lists vehicle theft ~7.7/1k and burglary ~4.3/1k (above CA averages). Lucid Rents' rolling 12-month ZIP 90026 counts (9 violent, 560 property) look like an undercount; not used as rates. Treated as roughly at/below city average; car break-ins common near the lake."
+   },
+   "lax": {
+    "score": 6,
+    "minutes_offpeak": 28,
+    "minutes_peak": 55,
+    "note": "101 S to 110 S to 105 W, or surface via Vermont/Normandie (estimate)."
+   },
+   "nightlife": {
+    "score": 10,
+    "nearest_district": "Echo Park (Sunset Blvd) / Silver Lake",
+    "drive_minutes": 3,
+    "note": ""
+   },
+   "gyms": {
+    "score": 6,
+    "examples": [
+     "Echo Park boutique studios / yoga",
+     "Planet Fitness / 24 Hour in nearby areas",
+     "Equinox DTLA (~10 min drive)"
+    ]
+   },
+   "services": {
+    "score": 7,
+    "note": "Smart & Final, Gelson's (Silver Lake), Vons, Pharmaca/CVS on Sunset, Trader Joe's Silver Lake ~6 min drive, USPS Edendale."
+   },
+   "rail": {
+    "score": 3,
+    "nearest_station": "Westlake/MacArthur Park or Chinatown",
+    "line": "B/D or A",
+    "note": "~20-30 min walk; bus (Sunset/Glendale) more practical."
+   },
+   "airports_other": "LGB ~35 min off-peak, SNA ~45 min off-peak (estimates)",
+   "summary": "Best balance in the group for this client: genuine walkable third-wave coffee, quieter hillside streets and decent 101/110 access, at the cost of slower peak freeway traffic and less polished services. Pick a side street off Sunset rather than on it.",
+   "sources": [
+    "https://products.xtown.la/neighborhood",
+    "https://spectrumnews1.com/ca/la/public-safety/2026/02/17/los-angeles-homicides-neighborhoods",
+    "https://www.islands.com/2180995/vibrant-los-angeles-california-west-coast-hub-america-most-traffic-congested-city/",
+    "https://www.timeout.jp/los-angeles/restaurants/the-best-coffee-shops-in-echo-park",
+    "https://www.tryperdiem.com/guide/where-to-find-the-best-coffee-in-echo-park-a-locals-guide",
+    "https://crimegrade.org/vehicle-theft-echo-park-los-angeles-ca/",
+    "https://www.lucidrents.com/CA/Los-Angeles/neighborhood/echo-park-90026",
+    "https://hoodline.com/2018/08/l-a-s-biggest-walk-score-winners-and-losers/",
+    "https://www.nbclosangeles.com/news/local/Worst-of-the-Worst-101-and-Vermont.html"
+   ]
+  },
+  {
+   "neighborhood": "Historic Filipinotown / Westlake",
+   "lat": 34.063,
+   "lng": -118.272,
+   "freeway": {
+    "score": 8,
+    "nearest": [
+     "US-101 (Alvarado / Rampart / Benton Way ramps, ~3-4 min)",
+     "I-110 (via 3rd/6th/Wilshire, ~5-7 min)",
+     "I-10 (via I-110 S, ~10 min)"
+    ],
+    "note": "Estimates. Wilshire Valencia sits just west of the I-110."
+   },
+   "traffic": {
+    "score": 4,
+    "note": "Estimate: Alvarado, Wilshire and Beverly are slow at peak; adjacent 101 is a chronic bottleneck (101/Vermont historically INRIX's worst LA spot)."
+   },
+   "coffee": {
+    "score": 4,
+    "cafes": [
+     "Tierra Mia / local Latino cafes – Westlake",
+     "Few third-wave cafes in HiFi proper (verify current)",
+     "Echo Park cluster (Stereoscope, Eightfold) ~10-15 min walk from northern HiFi",
+     "Koreatown cafes ~5 min drive"
+    ],
+    "note": "Thin specialty coffee within a 10-min walk; better from the northern edge toward Echo Park."
+   },
+   "walk": {
+    "score": 8,
+    "walk_score": 88,
+    "note": "Estimate (Westlake is dense with high Walk Scores, HiFi ~80s); Arancia listing shows Transit Score 72."
+   },
+   "quiet": {
+    "score": 4,
+    "note": "Dense, busy arterials (Alvarado, Beverly, Temple, Wilshire), 101/110 freeway noise near edges, helicopters common around MacArthur Park; some quieter residential pockets in HiFi north of Temple."
+   },
+   "safety": {
+    "score": 3,
+    "violent_per_1k": null,
+    "property_per_1k": null,
+    "year": "2025",
+    "source": "LAPD Rampart Division via LAist/NBC LA – raw counts only",
+    "note": "Neighborhood-level per-capita 2025 rates could not be retrieved (WebFetch was unavailable in this session and search results gave no neighborhood figures); rates left null rather than invented. LAPD Rampart Division. MacArthur Park is a well-documented hotspot: 136 robberies/aggravated assaults at the park Jan-Aug 2026 (LAist) vs 20 at Lafayette Park; city interventions reported a 57% violent-crime drop in early 2025 (official claim). Above city average, especially near the park; HiFi north of Temple is calmer."
+   },
+   "lax": {
+    "score": 6,
+    "minutes_offpeak": 27,
+    "minutes_peak": 50,
+    "note": "110 S to 105 W, or surface via Normandie/Crenshaw (estimate)."
+   },
+   "nightlife": {
+    "score": 10,
+    "nearest_district": "Echo Park / Koreatown",
+    "drive_minutes": 5,
+    "note": ""
+   },
+   "gyms": {
+    "score": 6,
+    "examples": [
+     "24 Hour Fitness / LA Fitness Koreatown (~7 min drive)",
+     "Boutique studios Echo Park",
+     "Building gyms"
+    ]
+   },
+   "services": {
+    "score": 7,
+    "note": "Vallarta/Superior/Northgate-style markets, Smart & Final, CVS, Temple-Rampart shopping center; TJ's/Whole Foods in K-town/DTLA ~8 min drive."
+   },
+   "rail": {
+    "score": 7,
+    "nearest_station": "Westlake/MacArthur Park",
+    "line": "B/D",
+    "note": "Vermont/Beverly (B) for western HiFi; Arancia listing names Vermont/Beverly and Wilshire/Vermont."
+   },
+   "airports_other": "LGB ~32 min off-peak, SNA ~42 min off-peak (estimates)",
+   "summary": "Cheaper rents and good 101 access, but weak walkable specialty coffee and the lowest safety score in the group around MacArthur Park. Only worth it on the northern HiFi edge near Echo Park.",
+   "sources": [
+    "https://products.xtown.la/neighborhood",
+    "https://spectrumnews1.com/ca/la/public-safety/2026/02/17/los-angeles-homicides-neighborhoods",
+    "https://www.islands.com/2180995/vibrant-los-angeles-california-west-coast-hub-america-most-traffic-congested-city/",
+    "https://laist.com/news/la-will-start-building-a-fence-around-macarthur-park-in-november",
+    "https://kfiam640.iheart.com/content/2025-03-11-la-city-officials-tout-results-of-interventions-at-macarthur-park",
+    "https://www.westsiderentals.com/los-angeles-ca/arancia-lpjg67d"
+   ]
+  }
+ ],
+ "buildings": [
+  {
+   "name": "Avant",
+   "lat": 34.0396,
+   "lng": -118.2685,
+   "geocode_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. 1420 S Figueroa, east side of Fig opposite LA Convention Center between Pico and Venice; Avant spans two buildings (1360-1500 S Fig)."
+  },
+  {
+   "name": "Glo",
+   "lat": 34.0522,
+   "lng": -118.2632,
+   "geocode_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. 1050 Wilshire, between Figueroa and Bixel (City West, near I-110)."
+  },
+  {
+   "name": "Jia",
+   "lat": 34.0617,
+   "lng": -118.2393,
+   "geocode_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. 639 N Broadway, Chinatown core near Alpine St."
+  },
+  {
+   "name": "Bixel at Fifth",
+   "lat": 34.0548,
+   "lng": -118.2627,
+   "geocode_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. 5th & Bixel, City West just east of I-110 (technically Central City West, not Historic Core)."
+  },
+  {
+   "name": "Arancia",
+   "lat": 34.0695,
+   "lng": -118.2788,
+   "geocode_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. 3001 Beverly Blvd near Rampart/Coronado; Redfin places it in MacArthur Park/Westlake (90057), listing names Vermont/Beverly station as nearest."
+  },
+  {
+   "name": "Thurman Lofts",
+   "lat": 34.0464,
+   "lng": -118.2504,
+   "geocode_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. 6th & Spring corner, Historic Core."
+  },
+  {
+   "name": "Metro 417",
+   "lat": 34.0505,
+   "lng": -118.2503,
+   "geocode_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. Hill St between 4th and 5th, facing Pershing Square area."
+  },
+  {
+   "name": "Garment Lofts",
+   "lat": 34.0405,
+   "lng": -118.2513,
+   "geocode_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. E 8th between Los Angeles St and Maple Ave; actually Fashion District, near Skid Row edge, not Historic Core proper."
+  },
+  {
+   "name": "Eleven Eleven Wilshire",
+   "lat": 34.053,
+   "lng": -118.2645,
+   "geocode_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. Wilshire & Bixel, City West next to I-110."
+  },
+  {
+   "name": "Pegasus",
+   "lat": 34.0497,
+   "lng": -118.2565,
+   "geocode_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. Flower between 6th and Wilshire, Financial District."
+  },
+  {
+   "name": "mResidences Olympic & Olive",
+   "lat": 34.043,
+   "lng": -118.2596,
+   "geocode_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. NE-ish corner Olympic & Olive, South Park."
+  },
+  {
+   "name": "Be DTLA",
+   "lat": 34.0518,
+   "lng": -118.2622,
+   "geocode_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. 6th St between Bixel and Lucas, City West."
+  },
+  {
+   "name": "1400 FIG Apartments",
+   "lat": 34.04,
+   "lng": -118.2683,
+   "geocode_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. 1400 S Figueroa; Urbanize LA says it sits between Avant's two buildings."
+  },
+  {
+   "name": "Olympic by Windsor",
+   "lat": 34.0436,
+   "lng": -118.2591,
+   "geocode_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. Olive just north of Olympic, South Park."
+  },
+  {
+   "name": "South Park by Windsor",
+   "lat": 34.0428,
+   "lng": -118.2571,
+   "geocode_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. Hill just north of Olympic, South Park/Fashion District edge."
+  },
+  {
+   "name": "The Orsini",
+   "lat": 34.0627,
+   "lng": -118.2465,
+   "geocode_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. 550 N Figueroa near Cesar Chavez/Sunset, beside the 110/101 corridor; edge of Chinatown/Victor Heights rather than Chinatown core."
+  },
+  {
+   "name": "Wilshire Valencia",
+   "lat": 34.0563,
+   "lng": -118.27,
+   "geocode_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. Wilshire & Valencia, just west of I-110 (Westlake south / City West)."
+  },
+  {
+   "name": "The Rosenell",
+   "lat": 34.0718,
+   "lng": -118.2614,
+   "geocode_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. LOW CONFIDENCE: Rosenell Terrace is a short residential street in southern Echo Park (90026); listing cites 101/110 access, Echo Park Lake and Dodger Stadium nearby. Verify on a map."
+  },
+  {
+   "name": "Da Vinci",
+   "lat": 34.0618,
+   "lng": -118.249,
+   "geocode_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. Temple & Beaudry/Figueroa, directly beside the 101/110 four-level interchange (Central City West/Echo Park border, not Historic Core)."
+  },
+  {
+   "name": "The Piero",
+   "lat": 34.051,
+   "lng": -118.2648,
+   "geocode_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. St Paul Ave & W 6th St, adjacent to the Harbor Freeway (I-110), City West; addresses 609/616/640 St Paul used for different parts of the complex."
+  },
+  {
+   "name": "Onyx",
+   "lat": 34.0399,
+   "lng": -118.2604,
+   "geocode_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. Pico between Hill and Olive, south South Park near Pico station."
+  },
+  {
+   "name": "Sakura Crossing",
+   "lat": 34.0479,
+   "lng": -118.2406,
+   "geocode_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. San Pedro between 2nd and 3rd, Little Tokyo (east edge borders Skid Row)."
+  }
+ ]
+}

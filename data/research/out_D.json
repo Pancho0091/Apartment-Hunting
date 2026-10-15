@@ -1,0 +1,710 @@
+{
+ "neighborhoods": [
+  {
+   "neighborhood": "Santa Ana – Downtown (DTSA / Artists Village)",
+   "lat": 33.748,
+   "lng": -117.867,
+   "freeway": {
+    "score": 7,
+    "nearest": [
+     "I-5 (Main St / 1st St / Grand Ave ramps, ~4-6 min)",
+     "SR-22 (Main St / Bristol ramps, ~5 min)",
+     "SR-55 (4th St / Dyer area, ~8 min)"
+    ],
+    "note": "Three freeways within ~8 min but no on-ramp right at the door; surface streets through downtown are slow. estimate (no live routing available; drive times are typical-traffic estimates from map distance, not measured)"
+   },
+   "traffic": {
+    "score": 4,
+    "note": "Adjacent I-5 through Santa Ana and the 5/22/57 'Orange Crush' interchange are chronic OC bottlenecks; SR-55 (I-405 to I-5) carries ~295k vehicles/day and has been under widening construction (completion expected 2026, per OCTA). OC Streetcar construction has disrupted 4th St/Santa Ana Blvd."
+   },
+   "coffee": {
+    "score": 7,
+    "cafes": [
+     "Hopper & Burr – 202 W 4th St, walkable; multi-roaster bar run by an ex-Intelligentsia barista; laptop-friendly-ish (minimalist)",
+     "Cafe Cultura – 324 W 4th St, walkable; specialty coffee + panaderia; good for sitting",
+     "Coffee Muse – 310 E 4th St, walkable; casual, laptop-friendly"
+    ],
+    "note": "Best walkable coffee cluster in central OC besides Old Towne Orange; 3 solid options within a few blocks of 4th St. Only true if the apartment is actually downtown."
+   },
+   "walk": {
+    "score": 8,
+    "walk_score": 89,
+    "note": "Walk Score neighborhood rating for Downtown Santa Ana is 89 (highest in Santa Ana); individual addresses 88-98."
+   },
+   "quiet": {
+    "score": 4,
+    "note": "4th St/East End bars and weekend crowds, Civic Center/jail and frequent police helicopter activity, streetcar line. Quieter historic residential pockets (French Park, Washington Square) a few blocks north. SNA approach traffic generally east of here."
+   },
+   "safety": {
+    "score": 5,
+    "violent_per_1k": 4.9,
+    "property_per_1k": 17.0,
+    "year": "recent (aggregator, year not stated)",
+    "source": "AreaVibes / Autodesk-hosted Santa Ana stats page (city-wide; SAPD official report not retrieved)",
+    "note": "City-wide rates below the LA reference (~7/~25) but downtown core is visitor-inflated and has more street disorder, car break-ins and homelessness than the city average; scored 5 to reflect the core rather than the city-wide figure."
+   },
+   "lax": {
+    "score": 4,
+    "minutes_offpeak": 40,
+    "minutes_peak": 80,
+    "note": "I-5 N -> I-605 / I-405 N or SR-22 -> I-405 N (~36 mi). Estimate."
+   },
+   "nightlife": {
+    "score": 10,
+    "nearest_district": "DTSA 4th St / East End (walkable)",
+    "drive_minutes": 0,
+    "note": "Bars, breweries, food halls (4th St Market) on foot; Costa Mesa 17th St ~15 min."
+   },
+   "gyms": {
+    "score": 7,
+    "examples": [
+     "Crunch Fitness (Santa Ana)",
+     "24 Hour Fitness (Santa Ana)",
+     "LA Fitness (Santa Ana)"
+    ]
+   },
+   "services": {
+    "score": 6,
+    "note": "Mostly Northgate/Vallarta/Food 4 Less and independents downtown; Trader Joe's / Whole Foods / Ralphs are a 10-15 min drive (Tustin, Costa Mesa, Orange). Main Santa Ana post office and civic services nearby; Amazon lockers in CVS/Walgreens."
+   },
+   "rail": {
+    "score": 5,
+    "nearest_station": "Santa Ana Regional Transportation Center (Metrolink/Amtrak); OC Streetcar stops on 4th St",
+    "line": "Metrolink Orange County & IEOC lines, Amtrak Pacific Surfliner; OC Streetcar (opening 2026)",
+    "note": "No LA Metro rail; Metrolink to LA Union Station ~1 hr."
+   },
+   "airports_other": "SNA ~12 min; LGB ~25 min (estimates)",
+   "summary": "Most walkable, coffee-rich and lively option in central OC, with three freeways nearby. Trade-off for this client: a noisier core with bars, helicopters and weaker street-level safety, and the adjacent I-5/22/55 freeways are chronic bottlenecks.",
+   "sources": [
+    "https://mycoffeeexplorer.com/guides/santa-ana",
+    "https://www.afar.com/places/hopper-and-burr-santa-ana?p=14",
+    "https://octa.net/programs-projects/projects/rail-projects/oc-streetcar/deals/eat-drink/cafe-cultura",
+    "https://www.walkscore.com/score/-Santa Ana--CA",
+    "https://www.areavibes.com/santa+ana-ca/central+city/crime/",
+    "https://origin-exchange.autodesk.com/santa-ana-crime-statistics",
+    "https://www.octa.net/pdf/SR-55%20Improvement%20Project%20Update.pdf"
+   ]
+  },
+  {
+   "neighborhood": "Santa Ana – South Coast Metro / MacArthur area",
+   "lat": 33.695,
+   "lng": -117.883,
+   "freeway": {
+    "score": 10,
+    "nearest": [
+     "I-405 (Bristol St / Fairview / MacArthur ramps, ~2-3 min)",
+     "SR-55 (MacArthur / Dyer, ~4 min)",
+     "SR-73 (Bear St / Bristol, ~5 min)"
+    ],
+    "note": "Best freeway position in the group: 405, 55 and 73 all within ~5 min. estimate (no live routing available; drive times are typical-traffic estimates from map distance, not measured)"
+   },
+   "traffic": {
+    "score": 4,
+    "note": "Sits on the I-405/SR-55 interchange, which OCTA/Caltrans describe as congested with long peak delays (widening study for 405 from SR-55 to I-5). Bristol/Sunflower clog around South Coast Plaza, especially holidays/weekends."
+   },
+   "coffee": {
+    "score": 4,
+    "cafes": [
+     "Portola Coffee Lab – OC Mix/SoCo, 3313 Hyland Ave, Costa Mesa; serious roaster, but ~1.5 mi west of MacArthur (drive, not walk)",
+     "Nook Coffee Bar / In-sit Coffee – SoCo / The LAB area, Costa Mesa (short drive)"
+    ],
+    "note": "Inside the Santa Ana side of South Coast Metro there are few verified specialty cafes within a 10-min walk (mostly chains and mall cafes); best options are a 5-min drive into Costa Mesa. Could not verify a walkable third-wave cafe on the MacArthur side."
+   },
+   "walk": {
+    "score": 6,
+    "walk_score": 66,
+    "note": "Walk Score: South Coast neighborhood (Santa Ana) 66; 3400 Avenue of the Arts 72; 661 W Sunflower 65. Superblocks; walkable to South Coast Plaza but not a street-life area."
+   },
+   "quiet": {
+    "score": 5,
+    "note": "Mid-rise apartments near I-405/SR-55 have freeway hum; SNA is ~2-3 mi south (departures mostly head south over Newport, but airport operations audible). Few bars; quiet at night apart from freeway."
+   },
+   "safety": {
+    "score": 6,
+    "violent_per_1k": 4.9,
+    "property_per_1k": 17.0,
+    "year": "recent (aggregator, year not stated)",
+    "source": "AreaVibes / Autodesk-hosted Santa Ana stats (city-wide); CrimeGrade South Coast page exists but not parsed",
+    "note": "Commercial/office district; retail theft and car break-ins around South Coast Plaza parking are the main concern. City-wide figures used; no official neighborhood rate retrieved."
+   },
+   "lax": {
+    "score": 5,
+    "minutes_offpeak": 35,
+    "minutes_peak": 75,
+    "note": "I-405 N direct (~33 mi). Estimate."
+   },
+   "nightlife": {
+    "score": 9,
+    "nearest_district": "Costa Mesa 17th St / The LAB & CAMP / SoCo",
+    "drive_minutes": 7,
+    "note": "DTSA ~12 min; Irvine Spectrum ~15 min."
+   },
+   "gyms": {
+    "score": 9,
+    "examples": [
+     "24 Hour Fitness (Costa Mesa/Santa Ana)",
+     "LA Fitness",
+     "Equinox / boutique studios around South Coast Plaza & Newport Beach"
+    ]
+   },
+   "services": {
+    "score": 9,
+    "note": "Trader Joe's, Whole Foods, Ralphs, Target, CVS all within ~5 min drive (South Coast Plaza / Costa Mesa / Bristol corridor); Amazon lockers common."
+   },
+   "rail": {
+    "score": 2,
+    "nearest_station": "Santa Ana or Tustin Metrolink (~12 min drive)",
+    "line": "Metrolink",
+    "note": "No rail within walking distance."
+   },
+   "airports_other": "SNA ~6 min; LGB ~25 min (estimates)",
+   "summary": "The freeway-access winner: 405, 55 and 73 within five minutes and SNA next door, with every service close by. Trade-off for this client: almost no walkable specialty coffee or street life, and the 405/55 interchange itself is a chronic bottleneck.",
+   "sources": [
+    "https://walkscore.com/score/661.dash.669-w-sunflower-ave-santa-ana-ca-92707",
+    "https://walkscore.com/score/3400-avenue-of-the-arts-apartments-costa-mesa-2",
+    "https://www.travelcostamesa.com/eat/costa-mesa-restaurants/portola-coffee-lab",
+    "https://mycoffeeexplorer.com/guides/costa-mesa",
+    "https://www.permits.performance.gov/permitting-projects/rte-405-i-5-rte-55-increase-capacity-improve-traffic-ops",
+    "https://crimegrade.org/violent-crime-south-coast-santa-ana-ca/"
+   ]
+  },
+  {
+   "neighborhood": "Orange – Old Towne area",
+   "lat": 33.7879,
+   "lng": -117.8531,
+   "freeway": {
+    "score": 8,
+    "nearest": [
+     "SR-22 (Glassell St / Grand Ave, ~4 min)",
+     "SR-55 (Chapman Ave / Katella, ~5 min)",
+     "I-5 (Chapman / Main, ~6 min)",
+     "SR-57 (Chapman / Katella, ~6 min)"
+    ],
+    "note": "Four freeways within ~6 min. estimate (no live routing available; drive times are typical-traffic estimates from map distance, not measured)"
+   },
+   "traffic": {
+    "score": 4,
+    "note": "The I-5/SR-22/SR-57 'Orange Crush' interchange is one of OC's worst chokepoints; Chapman Ave and Tustin St clog at peak. Getting onto the network is easy, but the network itself is congested."
+   },
+   "coffee": {
+    "score": 8,
+    "cafes": [
+     "Contra Coffee & Tea – near the Plaza, walkable, laptop-friendly",
+     "Long Dog Coffee & Treats – near the Plaza, walkable",
+     "Play Coffee – near the Plaza, walkable",
+     "Hood Coffee – Plaza area, walkable",
+     "BLK dot Coffee / Philz – Plaza area, walkable",
+     "Bodhi Leaf Coffee Traders – own roaster, on Katella/Tustin corridor (short drive)"
+    ],
+    "note": "Strongest walkable café crawl in the group (Chapman University keeps laptop-friendly cafes busy). Several names are from local guides; verify current hours."
+   },
+   "walk": {
+    "score": 8,
+    "walk_score": 84,
+    "note": "Listing-level Walk Scores around the Plaza range 72-89; 84 is a representative core value (not an official neighborhood score). City of Orange average is 51."
+   },
+   "quiet": {
+    "score": 6,
+    "note": "Historic tree-lined residential streets are quiet a few blocks from the Plaza; Plaza bars and Chapman students on weekends, plus Metrolink horns near the tracks (Orange station is a block west of the Plaza)."
+   },
+   "safety": {
+    "score": 7,
+    "violent_per_1k": 2.0,
+    "property_per_1k": 18.0,
+    "year": "recent (NeighborhoodScout snapshot, ~2024 FBI data)",
+    "source": "NeighborhoodScout (Orange, CA, city-wide)",
+    "note": "Violent crime well below the LA reference; property crime moderately below. NeighborhoodScout flags high motor-vehicle theft rates city-wide."
+   },
+   "lax": {
+    "score": 4,
+    "minutes_offpeak": 42,
+    "minutes_peak": 85,
+    "note": "SR-22 W -> I-405 N or I-5 N -> I-605 -> I-405 (~38 mi). Estimate."
+   },
+   "nightlife": {
+    "score": 9,
+    "nearest_district": "Old Towne Orange Plaza (walkable); DTSA 4th St",
+    "drive_minutes": 10,
+    "note": "Plaza bars/restaurants on foot; DTSA ~10 min drive."
+   },
+   "gyms": {
+    "score": 7,
+    "examples": [
+     "24 Hour Fitness (Orange)",
+     "LA Fitness (Orange)",
+     "Crunch Fitness (Orange)"
+    ]
+   },
+   "services": {
+    "score": 7,
+    "note": "Trader Joe's, Ralphs, Stater Bros and Target within ~5-8 min drive (Tustin St / The Outlets at Orange area); post office near the Plaza."
+   },
+   "rail": {
+    "score": 6,
+    "nearest_station": "Orange Metrolink station (Chapman Ave & Lemon St)",
+    "line": "Metrolink Orange County & 91/Perris Valley lines",
+    "note": "Walkable from Old Towne; Metrolink only (no LA Metro rail)."
+   },
+   "airports_other": "SNA ~20 min; LGB ~28 min (estimates)",
+   "summary": "The best walkable coffee scene with historic, mostly quiet residential streets, good safety and four freeways close by. Trade-off for this client: those freeways converge at the Orange Crush, so peak trips are slow, and LAX is about 40+ minutes away.",
+   "sources": [
+    "https://mycoffeeexplorer.com/guides/orange-ca",
+    "https://lifecurrentsblog.com/best-coffee-in-old-towne-orange/",
+    "https://cort.neighborhoodscout.com/ca/orange/crime",
+    "https://www.apartmentlist.com/ca/orange/old-towne-orange-living-at-its-finest",
+    "https://www.malakaisparks.com/exploring-the-most-walkable-areas-in-orange-california-for-homebuyers/"
+   ]
+  },
+  {
+   "neighborhood": "Tustin – Tustin Legacy / Old Town",
+   "lat": 33.74,
+   "lng": -117.82,
+   "freeway": {
+    "score": 9,
+    "nearest": [
+     "I-5 (Newport Ave / Red Hill / Tustin Ranch Rd, ~2-4 min)",
+     "SR-55 (4th St / Edinger / Dyer, ~4-5 min)",
+     "I-405 (Jamboree / Culver, ~10 min from Legacy)",
+     "SR-261 toll (Jamboree, ~6 min)"
+    ],
+    "note": "I-5 and SR-55 both within ~5 min of Old Town. estimate (no live routing available; drive times are typical-traffic estimates from map distance, not measured)"
+   },
+   "traffic": {
+    "score": 4,
+    "note": "I-5 through Tustin and the I-5/SR-55 interchange are congested at peak; SR-55 under widening. Jamboree and Red Hill arterials move reasonably well off-peak."
+   },
+   "coffee": {
+    "score": 6,
+    "cafes": [
+     "White Sparrow Coffee – 100 W Main St, Old Town; walkable; popular, can be busy for laptops",
+     "Hola Adios Coffeeshop – 434 El Camino Real, Old Town; walkable",
+     "Tolima Coffee – Old Town Tustin; walkable",
+     "Kean Coffee – 13681 Newport Ave (own roaster, Martin Diedrich); ~1 mi, short drive"
+    ],
+    "note": "Old Town has a small walkable cluster (2-3 good cafes). Tustin Legacy itself has no verified specialty cafe (mostly chains at The District/Village at Tustin Legacy)."
+   },
+   "walk": {
+    "score": 6,
+    "walk_score": null,
+    "note": "Old Town Tustin Walk Score not retrieved (WalkScore site unreachable); estimate ~65-75 in Old Town, much lower (car-dependent) in Tustin Legacy."
+   },
+   "quiet": {
+    "score": 7,
+    "note": "Old Town residential streets are calm; some I-5 hum close to the freeway. SNA arrivals approach from the north over Tustin/Santa Ana (occasional jet noise). Tustin Legacy is newer, quiet and suburban."
+   },
+   "safety": {
+    "score": 6,
+    "violent_per_1k": 2.1,
+    "property_per_1k": 21.0,
+    "year": "recent (Niche, year not stated; converted from per-100k)",
+    "source": "Niche (Tustin); CrimeGrade gives ~33.8/1k combined",
+    "note": "Sources disagree. CrimeGrade says western Tustin (near Santa Ana) has the most incidents and the northeast the fewest. Violent rate is well below the LA reference."
+   },
+   "lax": {
+    "score": 4,
+    "minutes_offpeak": 45,
+    "minutes_peak": 90,
+    "note": "SR-55 S -> I-405 N (~40 mi). Estimate."
+   },
+   "nightlife": {
+    "score": 9,
+    "nearest_district": "DTSA 4th St; Old Town Tustin has a few bars",
+    "drive_minutes": 10,
+    "note": "Costa Mesa 17th St ~15 min."
+   },
+   "gyms": {
+    "score": 8,
+    "examples": [
+     "24 Hour Fitness (Tustin)",
+     "LA Fitness (Tustin)",
+     "Crunch Fitness (Tustin)"
+    ]
+   },
+   "services": {
+    "score": 8,
+    "note": "The District at Tustin Legacy and Tustin Market Place (Target, Costco-area, groceries) within ~5-8 min; Trader Joe's/Ralphs nearby. Estimate from general knowledge."
+   },
+   "rail": {
+    "score": 4,
+    "nearest_station": "Tustin Metrolink (Edinger Ave, Tustin Legacy)",
+    "line": "Metrolink Orange County & IEOC lines",
+    "note": "Walkable only from parts of Tustin Legacy; Metrolink only."
+   },
+   "airports_other": "SNA ~12 min; LGB ~32 min (estimates)",
+   "summary": "Small-town feel with a few good walkable cafes in Old Town, I-5 and SR-55 within minutes, and quiet streets. Trade-off for this client: the coffee and walkability are thinner than in DTSA or Old Towne Orange (Tustin Legacy is car-dependent), and both nearby freeways are congested at peak.",
+   "sources": [
+    "https://mycoffeeexplorer.com/guides/tustin-ca",
+    "https://overlookmaps.com/places/white-sparrow-coffee-tustin-6317921576457253",
+    "https://foodgps.com/kean-coffee-tustin/",
+    "https://crimegrade.org/safest-places-in-tustin-ca/",
+    "https://www.niche.com/places-to-live/tustin-orange-ca/",
+    "https://www.octa.net/pdf/SR-55%20Improvement%20Project%20Update.pdf"
+   ]
+  },
+  {
+   "neighborhood": "Costa Mesa",
+   "lat": 33.645,
+   "lng": -117.918,
+   "freeway": {
+    "score": 8,
+    "nearest": [
+     "SR-55 (ends at Newport Blvd / 19th St, ~3 min from Eastside)",
+     "I-405 (Harbor / Fairview / Bristol, ~5-7 min)",
+     "SR-73 (~6 min)"
+    ],
+    "note": "Eastside/17th St area estimate. estimate (no live routing available; drive times are typical-traffic estimates from map distance, not measured)"
+   },
+   "traffic": {
+    "score": 5,
+    "note": "SR-55 terminus on Newport Blvd backs up (especially summer beach traffic); I-405 through Costa Mesa is congested at peak. Local arterials (17th, 19th, Harbor) are typical OC suburban congestion."
+   },
+   "coffee": {
+    "score": 8,
+    "cafes": [
+     "Portola Coffee Lab – OC Mix/SoCo, 3313 Hyland Ave; serious roaster; walk only from SoCo area",
+     "Cafecito Organico – The LAB; small-batch roasted",
+     "The Lost Bean – The Hive; organic roaster cafe",
+     "Nook Coffee Bar – LAB/CAMP area",
+     "Hola Adios / Milligram / Coffee Dose – 17th St / Newport Blvd corridor; walkable from Eastside"
+    ],
+    "note": "Deepest specialty-coffee bench in OC overall, but spread across several pockets (SoCo, LAB/CAMP, 17th St); any one address realistically has 2-3 within a 10-min walk."
+   },
+   "walk": {
+    "score": 6,
+    "walk_score": 67,
+    "note": "Walk Score: Eastside Costa Mesa neighborhood 67; a downtown Orange Ave address 71."
+   },
+   "quiet": {
+    "score": 6,
+    "note": "Eastside residential streets are calm; some SNA departure noise toward the Back Bay side and Newport Blvd traffic. 17th St bars are a short walk/drive rather than next door."
+   },
+   "safety": {
+    "score": 4,
+    "violent_per_1k": 7.26,
+    "property_per_1k": 27.92,
+    "year": "recent (NeighborhoodScout, year not stated)",
+    "source": "NeighborhoodScout (Costa Mesa, city-wide); CrimeGrade gives 5.4 violent / 27.5 total per 1k",
+    "note": "Roughly at or slightly above the LA reference, driven by retail theft around South Coast Plaza/Harbor Blvd and one of the higher motor-vehicle-theft rates (per NeighborhoodScout). Eastside is notably calmer than the Westside/Harbor corridor."
+   },
+   "lax": {
+    "score": 5,
+    "minutes_offpeak": 35,
+    "minutes_peak": 75,
+    "note": "I-405 N (~33 mi). Estimate."
+   },
+   "nightlife": {
+    "score": 10,
+    "nearest_district": "17th St / The LAB & CAMP / Triangle Square",
+    "drive_minutes": 5,
+    "note": "Newport Beach (Balboa/Lido) ~10 min."
+   },
+   "gyms": {
+    "score": 9,
+    "examples": [
+     "24 Hour Fitness (Costa Mesa)",
+     "LA Fitness (Costa Mesa)",
+     "Many boutique studios (17th St / SoCo)"
+    ]
+   },
+   "services": {
+    "score": 9,
+    "note": "Trader Joe's (17th St), Mother's Market, Whole Foods (Newport), Ralphs, Target; CVS/Walgreens; post office; Amazon lockers. Within ~5 min."
+   },
+   "rail": {
+    "score": 1,
+    "nearest_station": "Santa Ana or Tustin Metrolink (~15 min drive)",
+    "line": "Metrolink",
+    "note": "No rail."
+   },
+   "airports_other": "SNA ~8 min; LGB ~25 min (estimates)",
+   "summary": "The most coffee-dense and lifestyle-rich area in OC, with fair freeway access (SR-55 terminus, I-405) and SNA nearby. Trade-off for this client: cafes are spread across several pockets, walkability is moderate, and city-wide property crime is the highest in the group.",
+   "sources": [
+    "https://www.travelcostamesa.com/eat/costa-mesa-restaurants/portola-coffee-lab",
+    "https://mycoffeeexplorer.com/guides/costa-mesa",
+    "https://www.ocweekly.com/?p=238710",
+    "https://www.neighborhoodscout.com/ca/costa-mesa/crime",
+    "https://crimegrade.org/violent-crime-costa-mesa-ca/",
+    "https://www.walkscore.com/score/loc/lat=33.6541/lng=-117.8999/"
+   ]
+  },
+  {
+   "neighborhood": "Irvine (Spectrum / Irvine Business Complex)",
+   "lat": 33.683,
+   "lng": -117.845,
+   "freeway": {
+    "score": 10,
+    "nearest": [
+     "IBC: I-405 (Jamboree / MacArthur, ~2-3 min)",
+     "IBC: SR-55 (~4 min), SR-261 toll (~4 min), SR-73 (~5 min)",
+     "Spectrum: I-5 / I-405 / SR-133 all ~2-4 min"
+    ],
+    "note": "Both sub-areas have multiple freeways within ~5 min. Coordinates are the IBC (Jamboree/Main); Irvine Spectrum is ~33.650, -117.743. estimate (no live routing available; drive times are typical-traffic estimates from map distance, not measured)"
+   },
+   "traffic": {
+    "score": 5,
+    "note": "Arterials (Jamboree, MacArthur) are wide and well-timed and mostly flow; but I-405 at the 55 and the I-5/I-405 'El Toro Y' near Spectrum are peak bottlenecks. Toll roads (73/133/241/261) offer paid bypasses."
+   },
+   "coffee": {
+    "score": 4,
+    "cafes": [
+     "BLK dot Coffee – Irvine Spectrum Center and The Market Place (Jamboree); drive or mall-walk",
+     "Greenhouse Coffee Bar – Pacific Arts Plaza (MoonGoat beans), Costa Mesa edge of IBC",
+     "Krisp Fresh Living – Spectrum Court; cafe"
+    ],
+    "note": "A few good cafes exist, but superblocks and office parks mean few are a pleasant 10-min walk from a given apartment; mostly drive-to."
+   },
+   "walk": {
+    "score": 5,
+    "walk_score": null,
+    "note": "Irvine city average Walk Score 43; Irvine Center neighborhood (Spectrum) 67, but 27201 Spectrum address scores 44 (car-dependent). IBC not retrieved; estimate ~55-65 for newer Jamboree/Main mixed-use towers."
+   },
+   "quiet": {
+    "score": 6,
+    "note": "Newer, well-insulated mid-rises; IBC sits next to SNA (jet noise, especially near the runway end) and I-405. Spectrum area near I-5/I-405 has freeway hum. No bar noise."
+   },
+   "safety": {
+    "score": 9,
+    "violent_per_1k": 0.8,
+    "property_per_1k": 14.0,
+    "year": "recent (NeighborhoodScout/FBI; sources vary 0.4-1.0 violent, 4.8-17 property)",
+    "source": "NeighborhoodScout (Irvine, city-wide), Wikipedia FBI table",
+    "note": "Among the safest large cities in the US. Main issues are vehicle break-ins at shopping centers and package theft."
+   },
+   "lax": {
+    "score": 4,
+    "minutes_offpeak": 42,
+    "minutes_peak": 90,
+    "note": "I-405 N (~38 mi from IBC; Spectrum ~45 mi / ~50 min off-peak). A source says Irvine to LAX takes at least 45 minutes in normal traffic."
+   },
+   "nightlife": {
+    "score": 8,
+    "nearest_district": "Costa Mesa 17th St / The LAB (from IBC); Irvine Spectrum Center",
+    "drive_minutes": 10,
+    "note": "Irvine itself is light on bars; Costa Mesa and Newport (from IBC) are better."
+   },
+   "gyms": {
+    "score": 9,
+    "examples": [
+     "Life Time (Irvine)",
+     "24 Hour Fitness (Irvine)",
+     "LA Fitness (Irvine)",
+     "Equinox (Irvine/Newport area)"
+    ]
+   },
+   "services": {
+    "score": 9,
+    "note": "Trader Joe's, Whole Foods, Ralphs, Target, H Mart and others within ~5 min; Amazon lockers everywhere."
+   },
+   "rail": {
+    "score": 4,
+    "nearest_station": "Irvine Metrolink (Spectrum area) / Tustin Metrolink (IBC)",
+    "line": "Metrolink Orange County & IEOC lines; Amtrak at Irvine",
+    "note": "Metrolink only."
+   },
+   "airports_other": "SNA ~6 min from IBC (~15 from Spectrum); LGB ~30-35 min (estimates)",
+   "summary": "Top freeway access and safety, modern quiet buildings, and every service close by. Trade-off for this client: specialty coffee and walkability are weak (mostly drive-to), and LAX is about 45 minutes away.",
+   "sources": [
+    "https://www.irvinecompanyretail.com/the-dish/must-try/7-must-try-coffee-shops-in-orange-county/",
+    "https://frankiapp.com/business/blk-dot-coffee-127981.md",
+    "https://locationinc.neighborhoodscout.com/ca/irvine/crime",
+    "https://en.wikipedia.org/wiki/California_locations_by_crime_rate",
+    "https://www.walkscore.com/score/-92616",
+    "https://origin-exchange.autodesk.com/irvine-ca-to-los-angeles"
+   ]
+  },
+  {
+   "neighborhood": "Huntington Beach",
+   "lat": 33.6595,
+   "lng": -117.9988,
+   "freeway": {
+    "score": 4,
+    "nearest": [
+     "I-405 (Beach Blvd / Goldenwest / Brookhurst, ~10-12 min from downtown)",
+     "SR-22 (~15 min)",
+     "SR-55/SR-73 (~15 min via Costa Mesa)"
+    ],
+    "note": "Coordinates are downtown HB (Main St/PCH). North HB near the 405 is better (~5 min). estimate (no live routing available; drive times are typical-traffic estimates from map distance, not measured)"
+   },
+   "traffic": {
+    "score": 4,
+    "note": "I-405 through HB/Westminster is one of OC's worst corridors (frequent choke points near Bolsa Chica/Beach Blvd), partly eased by the 405 Express Lanes (opened Dec 2023, tolled). Beach Blvd and PCH are slow in summer and on weekends."
+   },
+   "coffee": {
+    "score": 7,
+    "cafes": [
+     "Sur Coffee Roasters – downtown HB; roasts in San Clemente; direct-trade pour-overs; popular hangout",
+     "602 Coffee House – PCH across from the pier; roaster; 2025 Surf City USA best-coffee winner",
+     "Milk & Honey – Main St; cafe",
+     "INC Coffee Roasters – own roaster, residential area (drive)"
+    ],
+    "note": "Downtown has 2-3 serious options within a short walk; outside downtown HB is mostly strip-mall chains."
+   },
+   "walk": {
+    "score": 7,
+    "walk_score": null,
+    "note": "Downtown HB Walk Score not retrieved; HB city average is 56; nearby neighborhoods range 64-84 by address. Downtown core estimated ~80."
+   },
+   "quiet": {
+    "score": 5,
+    "note": "Downtown Main St has bar crowds, summer/holiday events and frequent HBPD helicopter flights (HB has its own police air unit). Quieter residential areas a few blocks inland; ocean breeze and no freeway noise."
+   },
+   "safety": {
+    "score": 6,
+    "violent_per_1k": 2.5,
+    "property_per_1k": 23.0,
+    "year": "recent (NeighborhoodScout-derived odds; FBI 2024 via Proximitii says violent 3.9/1k)",
+    "source": "NeighborhoodScout via local real estate site; Proximitii (FBI 2024)",
+    "note": "Sources disagree (violent 2.5-3.9/1k). Property crime is near the LA reference; downtown has more disorder on summer weekends."
+   },
+   "lax": {
+    "score": 5,
+    "minutes_offpeak": 35,
+    "minutes_peak": 75,
+    "note": "I-405 N (~30 mi). Estimate."
+   },
+   "nightlife": {
+    "score": 10,
+    "nearest_district": "Downtown HB Main St / Pacific City",
+    "drive_minutes": 3,
+    "note": "Costa Mesa 17th St ~15 min."
+   },
+   "gyms": {
+    "score": 8,
+    "examples": [
+     "24 Hour Fitness (Huntington Beach)",
+     "LA Fitness (Huntington Beach)",
+     "Crunch Fitness (Huntington Beach)"
+    ]
+   },
+   "services": {
+    "score": 8,
+    "note": "Trader Joe's, Whole Foods (Pacific City area), Ralphs, Target within ~5-10 min."
+   },
+   "rail": {
+    "score": 1,
+    "nearest_station": "None practical (Santa Ana Metrolink ~25 min drive)",
+    "line": "none",
+    "note": "No rail."
+   },
+   "airports_other": "SNA ~18 min; LGB ~22 min (estimates)",
+   "summary": "A beach lifestyle with a walkable downtown and decent coffee, and LGB/LAX are relatively close. Trade-off for this client: it is the farthest from freeways (I-405 is 10+ min away and is itself a top OC bottleneck), and downtown gets noisy with bar crowds and helicopters.",
+   "sources": [
+    "https://mycoffeeexplorer.com/guides/huntington-beach",
+    "https://www.surfcityusa.com/blog/stories/post/2025-surf-city-usa-foodie-awards-best-coffee/",
+    "https://justinpluslauren.com/huntington-beach-coffee-shops/",
+    "https://www.proximitii.com/usa/ca/huntington+beach/",
+    "https://www.malakaisparks.com/homes-in-huntington-beach-ca/",
+    "https://crimegrade.org/safest-places-in-huntington-beach-ca/"
+   ]
+  },
+  {
+   "neighborhood": "Rancho Santa Margarita",
+   "lat": 33.6409,
+   "lng": -117.6031,
+   "freeway": {
+    "score": 4,
+    "nearest": [
+     "SR-241 toll (Santa Margarita Pkwy / Antonio, ~5 min)",
+     "I-5 (via Santa Margarita Pkwy / Oso Pkwy, ~12-15 min)",
+     "I-405 (via I-5 or 241/133, ~18 min)"
+    ],
+    "note": "Only freeway-like access within 5 min is the tolled SR-241. estimate (no live routing available; drive times are typical-traffic estimates from map distance, not measured)"
+   },
+   "traffic": {
+    "score": 6,
+    "note": "Local arterials flow well; the 241 toll road is rarely congested. Free routes funnel into I-5 near the El Toro Y / Mission Viejo, which is heavily congested at peak (rush ~7:30-9 am, 4:30-6 pm)."
+   },
+   "coffee": {
+    "score": 3,
+    "cafes": [
+     "Haute Cafe & Market – RSM; Copenhagen-style cafe (address not verified)",
+     "Starbucks – 30602 Santa Margarita Pkwy (Town Center); chain"
+    ],
+    "note": "No verified third-wave cafe within a 10-min walk of the Town Center; specialty coffee is a drive to Mission Viejo, Irvine or Laguna."
+   },
+   "walk": {
+    "score": 4,
+    "walk_score": null,
+    "note": "Walk Score not retrieved; RSM is a planned suburb; walkability is moderate only around the Town Center/El Paseo (est. ~45-55)."
+   },
+   "quiet": {
+    "score": 9,
+    "note": "Quiet master-planned foothill suburb; no flight paths or nightlife; some noise on Santa Margarita Pkwy and from the 241."
+   },
+   "safety": {
+    "score": 10,
+    "violent_per_1k": 0.6,
+    "property_per_1k": 5.0,
+    "year": "2024-2026 SafeWise/NeighborhoodScout (sources range 0.4-0.8 violent, 4.3-5.2 property)",
+    "source": "SafeWise (via Patch, GetSafeandSound), NeighborhoodScout; policed by OC Sheriff",
+    "note": "Ranked the #1 safest city in California by SafeWise in 2024 (#2 in 2026)."
+   },
+   "lax": {
+    "score": 1,
+    "minutes_offpeak": 60,
+    "minutes_peak": 110,
+    "note": "SR-241/I-5 -> I-405 N (~55 mi). Estimate; RSM to downtown LA is ~58 min / 53 mi per Rome2Rio."
+   },
+   "nightlife": {
+    "score": 4,
+    "nearest_district": "Irvine Spectrum / Mission Viejo (Kaleidoscope); RSM Town Center restaurants",
+    "drive_minutes": 22,
+    "note": "Few bars locally; Costa Mesa ~30 min."
+   },
+   "gyms": {
+    "score": 6,
+    "examples": [
+     "24 Hour Fitness (RSM)",
+     "Local boutique studios",
+     "LA Fitness (Mission Viejo, ~10 min)"
+    ]
+   },
+   "services": {
+    "score": 7,
+    "note": "RSM Town Center has Trader Joe's, Target, Walgreens, ULTA and a cinema; Santa Margarita Marketplace nearby."
+   },
+   "rail": {
+    "score": 1,
+    "nearest_station": "Mission Viejo/Laguna Niguel Metrolink (~15-20 min drive)",
+    "line": "Metrolink Orange County line",
+    "note": "No practical rail."
+   },
+   "airports_other": "SNA ~22 min; LGB ~45 min (estimates)",
+   "summary": "The safest and quietest option in the set, with the 241 toll road as an escape valve. Trade-off for this client: very weak walkable coffee, a long drive to LAX (about an hour), and nightlife 20+ minutes away, so it fails the core coffee and walkability priority.",
+   "sources": [
+    "https://www.neighborhoodscout.com/ca/rancho-santa-margarita/crime",
+    "https://patch.com/california/across-ca/20-safest-cities-ca-2024-report",
+    "https://getsafeandsound.com/blog/safest-cities-in-california/",
+    "https://www.cbre.com/properties/properties-for-lease/retail/details/US-SMPL-130422/rancho-santa-margarita-town-center-30602-30616-santa-margarita-pky-rancho-santa-margarita-ca-92688",
+    "https://www.mylocalservices.com/Coffee+Shops-Rancho+Santa+Margarita-California.html",
+    "https://www.rome2rio.com/s/Rancho-Santa-Margarita/Crypto-com-Arena"
+   ]
+  }
+ ],
+ "buildings": [
+  {
+   "name": "Latitude II",
+   "lat": 33.7671,
+   "lng": -117.835,
+   "geocode_note": "ESTIMATED. Online geocoders were unreachable. Interpolated along E Santa Clara Ave from a published geocode for 1845-1885 E Santa Clara Ave (33.7671, -117.8418), placing it near N Tustin Ave. WARNING: this is ~2.5 mi NE of Downtown Santa Ana (north of 17th St by the SR-55, Santa Ana/North Tustin/Orange border; Redfin tags it 'McPherson'), not in DTSA/Artists Village. Use the DTSA scores with caution; freeway access here is better (SR-55 ~3 min), but walkable coffee is much worse."
+  },
+  {
+   "name": "Las Fuentes",
+   "lat": 33.7375,
+   "lng": -117.8445,
+   "geocode_note": "ESTIMATED. Online geocoders were unreachable. Lyon St longitude from published geocodes of N Lyon St (-117.8446); latitude interpolated from Santa Ana's address grid (1816 E 1st St is at 33.7454), so 727 S is ~7 blocks south of 1st St, near I-5. Search did not confirm the building name at this address (a 2019 listing shows 727 S Lyon; Warwick Square is at 780 S Lyon). NOTE: this is in Santa Ana city (92705), ~1.2 mi west of Old Town Tustin, not in Tustin/Tustin Legacy."
+  },
+  {
+   "name": "Lake Dianne",
+   "lat": 33.7505,
+   "lng": -117.8365,
+   "geocode_note": "ESTIMATED. Address confirmed (750 Park Center/Parkcenter Dr, 284 units, built 1975). Per Santa Ana Resolution 76-39, Parkcenter Dr runs from 4th St to Fruit St near N Tustin Ave (Saddleback View/Mabury Park area). Point placed just north of 4th St, west of Tustin Ave, +/- ~300 m. NOTE: this is in Santa Ana city, ~1 mi NW of Old Town Tustin, not Tustin proper."
+  },
+  {
+   "name": "Avila at Rancho Santa Margarita",
+   "lat": 33.637,
+   "lng": -117.599,
+   "geocode_note": "ESTIMATED. Address confirmed (Greystar: 22751 El Prado, RSM 92688). Online geocoders were unreachable, so the point is placed near the RSM Town Center/Santa Margarita Pkwy (city center 33.6409, -117.6031), +/- ~500 m."
+  }
+ ]
+}
