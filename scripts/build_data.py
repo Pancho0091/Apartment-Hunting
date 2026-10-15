@@ -148,6 +148,18 @@ def main():
             "my_note": "",
         })
 
+    updates = RESEARCH / "updates.json"
+    for u in json.loads(updates.read_text()) if updates.exists() else []:
+        for b in buildings:
+            if b["name"] != u["name"]:
+                continue
+            b["req"].update(u.get("req", {}))
+            if u.get("packages_detail"):
+                b["packages_detail"] = u["packages_detail"]
+            if u.get("note"):
+                b["notes"] = u["note"] + "\n\n" + (b["notes"] or "")
+            b["checked_on"] = u.get("source", b["checked_on"])
+
     (ROOT / "data/buildings.json").write_text(json.dumps(buildings, indent=1, ensure_ascii=False))
     (ROOT / "data/neighborhoods.json").write_text(json.dumps(areas, indent=1, ensure_ascii=False))
     print(f"{len(buildings)} buildings, {len(areas)} neighborhoods")
