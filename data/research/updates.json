@@ -68,5 +68,25 @@
   "name": "3415 London Street Apartments",
   "source": "Landlord type, 2026-10-15",
   "landlord": "private"
+ },
+ {
+  "name": "Condo – 1541 S Pomona Ave #A33 (Fullerton)",
+  "source": "Private search 2026-10-15",
+  "note": "Size not on this listing: 881 sq ft is a 1BR in the same complex (1621 S Pomona #D19, a sale listing). Confirm the unit is 700+ sq ft."
+ },
+ {
+  "name": "Condo – Savoy, 100 S Alameda St #318",
+  "source": "Private search 2026-10-15",
+  "note": "Same unit was listed at $2,500 in Sep 2025 and is also for sale at $499k, so it may have sold or the price may be stale. Central air is from the sale listing."
+ },
+ {
+  "name": "Condo – Cornell Building, 746 S Los Angeles St #402",
+  "source": "Private search 2026-10-15",
+  "note": "Listing data conflicts: the same page also shows #402 as a 2BR, 810 sq ft at $2,300. Other units in this 1922 conversion have central air and in-unit W/D; confirm for #402."
+ },
+ {
+  "name": "1834 S Bentley Ave",
+  "source": "Private search 2026-10-15",
+  "landlord": "company"
  }
 ]
