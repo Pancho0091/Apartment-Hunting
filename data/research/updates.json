@@ -1,7 +1,27 @@
 [
- {"name": "The Rosenell",
+ {
+  "name": "The Rosenell",
   "source": "Listing screenshot shared by Daniel, 2026-10-15",
-  "req": {"packages": "yes"},
+  "req": {
+   "packages": "yes"
+  },
   "packages_detail": "Amazon Lockers (listing amenities); also 24-hr video surveillance and fitness center.",
-  "note": "Oct 15: unit 210 is listed at $2,025 but is only 630 sq ft, under the 700 sq ft minimum. Ask for the 715 sq ft plan (unit 116 was $2,257 net on Oct 14). Deposit = one month; $45 application fee; cats and dogs allowed."}
+  "note": "Oct 15: unit 210 is listed at $2,025 but is only 630 sq ft, under the 700 sq ft minimum. Ask for the 715 sq ft plan (unit 116 was $2,257 net on Oct 14). Deposit = one month; $45 application fee; cats and dogs allowed."
+ },
+ {
+  "name": "The Aspens South Coast",
+  "source": "Listing search 2026-10-15",
+  "req": {
+   "wd": "no"
+  },
+  "note": "Listings show shared on-site laundry, not in-unit. Fails the washer/dryer requirement unless a renovated unit has one; ask."
+ },
+ {
+  "name": "Saddleback Ranch Apartments",
+  "source": "Listing search 2026-10-15",
+  "req": {
+   "wd": "no"
+  },
+  "note": "Listings show shared on-site laundry, not in-unit. Fails the washer/dryer requirement unless a renovated unit has one; ask."
+ }
 ]
