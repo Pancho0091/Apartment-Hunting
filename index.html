@@ -175,6 +175,7 @@ details.box:not([open]) > summary::after { content: "+"; }
 .pill.yes { background: var(--ok-bg); color: var(--ok); }
 .pill.unclear { background: var(--warn-bg); color: var(--warn); }
 .pill.no { background: var(--bad-bg); color: var(--bad); text-decoration: line-through; }
+.pill.rep { text-decoration: none; }
 .pill.status { background: var(--accent-soft); color: var(--fg); }
 .pill.you { border-color: var(--line); color: var(--muted); }
 .verdict { font-size: .72rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; padding: 2px 8px; border-radius: 4px; }
@@ -316,6 +317,12 @@ td.best { background: var(--accent-soft); }
     { key: "lax",    name: "LAX access",            parts: ["lax"],                             def: 5,  hint: "Off-peak drive to LAX" },
     { key: "extras", name: "Nightlife, gyms, errands", parts: ["nightlife", "gyms", "services"], def: 5,  hint: "Drive to a nightlife district; gyms and groceries nearby" },
   ];
+  /* Building-level factor: resident reviews (management, maintenance, cleanliness, noise, security, pests, fees). */
+  const REP = { key: "rep", name: "Building reputation", def: 20, hint: "Resident reviews and Reddit: management, repairs, cleanliness, security" };
+  const REVIEW_PARTS = [
+    ["management", "Management"], ["maintenance", "Maintenance"], ["cleanliness", "Cleanliness"],
+    ["noise", "Noise"], ["security", "Security & packages"], ["pests", "Pests"], ["costs", "Fees & renewals"],
+  ];
   const REQS = [
     { key: "wd", short: "W/D", name: "In-unit washer/dryer" },
     { key: "ac", short: "Central AC", name: "Central AC" },
@@ -337,7 +344,7 @@ td.best { background: var(--accent-soft); }
     get(k, d) { try { const v = localStorage.getItem("aps27:" + k); return v == null ? d : JSON.parse(v); } catch { return d; } },
     set(k, v) { try { localStorage.setItem("aps27:" + k, JSON.stringify(v)); } catch {} },
   };
-  const defaultWeights = Object.fromEntries(FACTORS.map(f => [f.key, f.def]));
+  const defaultWeights = Object.fromEntries(FACTORS.concat(REP).map(f => [f.key, f.def]));
   const state = {
     buildings: [], areas: [], areaById: new Map(),
     weights: Object.assign({}, defaultWeights, store.get("weights", {})),
@@ -385,6 +392,16 @@ td.best { background: var(--accent-soft); }
     }
     return wsum ? tot / wsum : null;
   }
+  function repScore(b) { const r = b.reviews; return r && typeof r.reputation_score === "number" ? r.reputation_score : null; }
+  function buildingScore(b) {
+    const a = areaScore(state.areaById.get(b.area_id));
+    const r = repScore(b);
+    const wa = FACTORS.reduce((t, f) => t + (Number(state.weights[f.key]) || 0), 0);
+    const wr = Number(state.weights.rep) || 0;
+    if (a == null) return r;
+    if (r == null || !wr) return a;
+    return (a * wa + r * wr) / (wa + wr);
+  }
   function factorScore(area, f) {
     const vals = f.parts.map(p => area[p] && Number(area[p].score)).filter(v => typeof v === "number" && !isNaN(v));
     return vals.length ? vals.reduce((a, b) => a + b, 0) / vals.length : null;
@@ -410,7 +427,7 @@ td.best { background: var(--accent-soft); }
     );
   }
   function ranked(list) {
-    const withScore = list.map(b => ({ b, s: areaScore(state.areaById.get(b.area_id)) }));
+    const withScore = list.map(b => ({ b, s: buildingScore(b) }));
     const by = {
       score: (x, y) => (y.s ?? -1) - (x.s ?? -1) || (rentOf(x.b) ?? 9e9) - (rentOf(y.b) ?? 9e9),
       rent: (x, y) => (rentOf(x.b) ?? 9e9) - (rentOf(y.b) ?? 9e9),
@@ -448,8 +465,8 @@ td.best { background: var(--accent-soft); }
 
   /* ---------------- Sidebar ---------------- */
   function renderWeights() {
-    const total = FACTORS.reduce((a, f) => a + (Number(state.weights[f.key]) || 0), 0) || 1;
-    $("weights").replaceChildren(...FACTORS.map(f => {
+    const total = FACTORS.concat(REP).reduce((a, f) => a + (Number(state.weights[f.key]) || 0), 0) || 1;
+    $("weights").replaceChildren(...FACTORS.concat(REP).map(f => {
       const id = "w-" + f.key;
       const out = h("output", { for: id, text: Math.round((state.weights[f.key] || 0) / total * 100) + "%" });
       const input = h("input", { type: "range", id, min: 0, max: 50, step: 1, value: state.weights[f.key] || 0,
@@ -492,8 +509,14 @@ td.best { background: var(--accent-soft); }
   function reqPills(b) {
     return REQS.map(r => { const v = reqVal(b, r.key); return h("span", { class: "pill " + v, title: `${r.name}: ${v === "unclear" ? "not confirmed yet" : v}`, text: r.short + (v === "unclear" ? "?" : "") }); });
   }
+  function repPill(b) {
+    const r = repScore(b);
+    if (r == null) return h("span", { class: "muted", title: "No resident reviews gathered yet", text: "Reviews: —" });
+    const cls = r >= 7 ? "yes" : r >= 5 ? "unclear" : "no rep";
+    return h("span", { class: "pill " + cls, title: `Building reputation ${r}/10 (${b.reviews.confidence || "?"} confidence)`, text: "Reviews " + r + "/10" });
+  }
   function scoreBar(s) {
-    return h("span", { class: "scorebar", title: "Neighborhood score out of 10 with your weights" },
+    return h("span", { class: "scorebar", title: "Overall score out of 10: neighborhood plus building reputation, with your weights" },
       h("i", { style: { "--w": s == null ? "0%" : (s * 10) + "%" } }), s == null ? "—" : fixed1(s));
   }
 
@@ -520,7 +543,7 @@ td.best { background: var(--accent-soft); }
           h("div", { class: "title" }, h("h3", { text: b.name }), h("span", { class: "verdict " + v, text: VERDICT_TXT[v] }),
             b.my_status && b.my_status !== "new" ? h("span", { class: "pill status", text: STATUSES.find(s => s.key === b.my_status)?.name }) : null,
             b.source === "you" ? h("span", { class: "pill you", text: "Added by you" }) : null),
-          h("div", { class: "meta" }, h("span", { text: area ? area.name : (b.area_label || "") }), b.sqft ? h("span", { class: "num", text: b.sqft + " sq ft" }) : null, b.year_built ? h("span", { text: "Built " + b.year_built }) : null, scoreBar(s))),
+          h("div", { class: "meta" }, h("span", { text: area ? area.name : (b.area_label || "") }), repPill(b), b.sqft ? h("span", { class: "num", text: b.sqft + " sq ft" }) : null, b.year_built ? h("span", { text: "Built " + b.year_built }) : null, scoreBar(s))),
         h("div", { class: "right" },
           h("span", { class: "price", text: money(rentOf(b)) + "/mo" }),
           b.base_rent && b.effective_rent && b.effective_rent < b.base_rent ? h("span", { class: "muted num", style: { fontSize: ".76rem" }, text: `list ${money(b.base_rent)}` }) : null,
@@ -650,7 +673,11 @@ td.best { background: var(--accent-soft); }
     if (!picks.length) { root.append(h("div", { class: "empty", text: "Nothing to compare yet. Open a building and choose “Add to compare.”" })); return; }
     const rows = [
       ["Neighborhood", b => (state.areaById.get(b.area_id) || {}).name || "—"],
+      ["Overall score", b => fixed1(buildingScore(b)), buildingScore, "max"],
       ["Area score", b => fixed1(areaScore(state.areaById.get(b.area_id))), b => areaScore(state.areaById.get(b.area_id)), "max"],
+      ["Reputation", b => repScore(b) == null ? "—" : repScore(b) + "/10", repScore, "max"],
+      ...REVIEW_PARTS.map(([k, label]) => [label, b => { const x = b.reviews && b.reviews[k]; return x && x.score != null ? x.score + "/10" : "—"; }, b => { const x = b.reviews && b.reviews[k]; return x ? x.score : null; }, "max"]),
+      ["Dealbreakers", b => (b.reviews && b.reviews.dealbreakers) || "—"],
       ["Rent after specials", b => money(rentOf(b)), rentOf, "min"],
       ["List rent", b => money(b.base_rent)],
       ["Parking", b => b.parking_fee ? money(b.parking_fee) + "/mo" : (reqVal(b, "parking") === "yes" ? "Included or unknown" : "—")],
@@ -753,6 +780,25 @@ td.best { background: var(--accent-soft); }
       h("header", null, h("h3", { text: name }), h("span", { class: "num", style: { fontWeight: 600, color: scoreColor(x.score) }, text: x.score != null ? x.score + "/10" : "—" })),
       ...(extra ? extra(x) : []), x.note ? h("p", { text: x.note }) : null));
   }
+  function reviewSection(b) {
+    const r = b.reviews;
+    if (!r) return h("section", { class: "factor" }, h("h3", { text: "What residents say" }), h("p", { class: "muted", text: "No reviews gathered for this building yet." }));
+    const blocks = REVIEW_PARTS.filter(([k]) => r[k] && (r[k].summary || r[k].score != null)).map(([k, label]) => h("div", { class: "factor" },
+      h("header", null, h("h3", { style: { fontSize: ".92rem" }, text: label }), h("span", { class: "num", style: { fontWeight: 600, color: scoreColor(r[k].score) }, text: r[k].score != null ? r[k].score + "/10" : "—" })),
+      r[k].summary ? h("p", { text: r[k].summary }) : null));
+    return h("section", { style: { display: "grid", gap: "8px" } },
+      h("header", { style: { display: "flex", justifyContent: "space-between", alignItems: "baseline", gap: "8px", flexWrap: "wrap" } },
+        h("h3", { style: { fontSize: "1.1rem" }, text: "What residents say" }),
+        h("span", { class: "muted", style: { fontSize: ".82rem" }, text: [r.management_company, r.confidence ? r.confidence + " confidence" : null, r.recent_trend].filter(Boolean).join(" · ") })),
+      r.dealbreakers ? h("p", { class: "pill no", style: { textDecoration: "none", whiteSpace: "normal", fontSize: ".84rem", padding: "6px 10px" }, text: "Dealbreaker risk: " + r.dealbreakers }) : null,
+      r.ratings && r.ratings.length ? h("div", { class: "chips" }, ...r.ratings.map(x => h("span", { class: "pill status", text: `${x.site} ${x.rating ?? "?"}${x.count ? " (" + x.count + ")" : ""}` }))) : null,
+      r.praise && r.praise.length ? h("div", null, h("span", { class: "label", text: "Praise" }), list(r.praise)) : null,
+      r.complaints && r.complaints.length ? h("div", null, h("span", { class: "label", text: "Complaints" }), list(r.complaints)) : null,
+      ...blocks,
+      r.reddit && r.reddit.length ? h("div", null, h("span", { class: "label", text: "Reddit" }),
+        h("ul", null, ...r.reddit.map(x => h("li", null, `${x.subreddit || "Reddit"}${x.date ? " · " + x.date : ""}: ${x.gist} `, x.url ? linkOut(x.url, "thread") : null)))) : null,
+      r.sources && r.sources.length ? h("details", { class: "srcs" }, h("summary", { text: `Review sources (${r.sources.length})` }), h("ul", null, ...r.sources.map(u => h("li", null, linkOut(u))))) : null);
+  }
   function openArea(a) {
     const sc = areaScore(a);
     const bs = state.buildings.filter(b => b.area_id === a.id);
@@ -805,6 +851,7 @@ td.best { background: var(--accent-soft); }
           h("button", { class: "btn ghost", type: "button", disabled: !inCompare && state.compare.size >= 4, text: inCompare ? "Remove from compare" : "Add to compare",
             onclick: e => { inCompare ? state.compare.delete(b.id) : state.compare.add(b.id); store.set("compare", [...state.compare]); renderAll(); e.target.textContent = state.compare.has(b.id) ? "Remove from compare" : "Add to compare"; } }),
           a ? h("button", { class: "btn ghost", type: "button", onclick: () => openArea(a), text: "Neighborhood report" }) : null)),
+      reviewSection(b),
       a ? h("h3", { text: "Neighborhood at a glance" }) : null,
       a ? h("div", { class: "minis" }, ...FACTORS.flatMap(f => { const x = factorScore(a, f); return [h("span", { text: f.name }), h("i", { style: { "--w": x == null ? "0%" : x * 10 + "%" } }), h("span", { class: "num", text: fixed1(x) })]; })) : null,
       b.sources && b.sources.length ? h("details", { class: "srcs" }, h("summary", { text: `Sources (${b.sources.length})` }), h("ul", null, ...b.sources.map(u => h("li", null, linkOut(u))))) : null,

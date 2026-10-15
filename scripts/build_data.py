@@ -74,6 +74,10 @@ def main():
             research[norm_name(a["neighborhood"])] = a
         for b in d.get("buildings", []):
             coords[b["name"]] = b
+    reviews = {}
+    for f in sorted(RESEARCH.glob("reviews_out_*.json")):
+        for v in json.loads(f.read_text()):
+            reviews[v["name"]] = v
     verified = {}
     for f in sorted(RESEARCH.glob("verified_*.json")):
         for v in json.loads(f.read_text()):
@@ -131,6 +135,7 @@ def main():
             "notes": r.get("notes"),
             "listing_url": r.get("listing_url"),
             "sources": sources,
+            "reviews": reviews.get(r["name"]),
             "checked_on": CHECKED_ON if v else "2026-10-14",
             "source": "claude",
             "my_status": "new",
