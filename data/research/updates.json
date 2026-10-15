@@ -23,5 +23,50 @@
    "wd": "no"
   },
   "note": "Listings show shared on-site laundry, not in-unit. Fails the washer/dryer requirement unless a renovated unit has one; ask."
+ },
+ {
+  "name": "702 S St Andrews Pl, Unit 1",
+  "source": "Landlord type, 2026-10-15",
+  "landlord": "private"
+ },
+ {
+  "name": "4138 Perlita Ave, Unit D",
+  "source": "Landlord type, 2026-10-15",
+  "landlord": "private"
+ },
+ {
+  "name": "9819 Regent St (small Palms building), Unit 07",
+  "source": "Landlord type, 2026-10-15",
+  "landlord": "private"
+ },
+ {
+  "name": "1720 N Taft Ave (Taft apartments)",
+  "source": "Landlord type, 2026-10-15",
+  "landlord": "private"
+ },
+ {
+  "name": "1246 N Sweetzer Ave (small WeHo building)",
+  "source": "Landlord type, 2026-10-15",
+  "landlord": "private"
+ },
+ {
+  "name": "Stadium Lofts (individually owned condo rental)",
+  "source": "Landlord type, 2026-10-15",
+  "landlord": "private"
+ },
+ {
+  "name": "1360 Shadow Ln (condo, unit # not confirmed)",
+  "source": "Landlord type, 2026-10-15",
+  "landlord": "private"
+ },
+ {
+  "name": "Channel Point (condo/unit rental)",
+  "source": "Landlord type, 2026-10-15",
+  "landlord": "private"
+ },
+ {
+  "name": "3415 London Street Apartments",
+  "source": "Landlord type, 2026-10-15",
+  "landlord": "private"
  }
 ]

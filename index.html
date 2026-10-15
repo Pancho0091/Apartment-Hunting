@@ -282,6 +282,10 @@ td.best { background: var(--accent-soft); }
           <div class="chips" id="verdictChips"></div>
         </div>
         <div class="field">
+          <span class="label">Landlord</span>
+          <div class="chips" id="landlordChips"></div>
+        </div>
+        <div class="field">
           <span class="label">My status</span>
           <div class="chips" id="statusChips"></div>
         </div>
@@ -352,6 +356,7 @@ td.best { background: var(--accent-soft); }
     maxRent: store.get("maxRent", RENT_CAP),
     verdicts: new Set(store.get("verdicts", ["all", "check"])),
     statuses: new Set(store.get("statuses", STATUSES.filter(s => s.key !== "pass").map(s => s.key))),
+    landlords: new Set(store.get("landlords", ["company", "private"])),
     tab: (location.hash || "").replace("#", "") || "ranked",
     sort: store.get("sort", "score"),
     compare: new Set(store.get("compare", [])),
@@ -423,6 +428,7 @@ td.best { background: var(--accent-soft); }
       state.regions.has(regionOf(b)) &&
       state.verdicts.has(verdict(b)) &&
       state.statuses.has(b.my_status || "new") &&
+      state.landlords.has(b.landlord || "company") &&
       (rentOf(b) == null || rentOf(b) <= state.maxRent)
     );
   }
@@ -485,6 +491,7 @@ td.best { background: var(--accent-soft); }
     chipGroup("regionChips", REGIONS.map(r => ({ key: r, name: r })), state.regions, "regions");
     chipGroup("verdictChips", Object.entries(VERDICT_TXT).map(([key, name]) => ({ key, name })), state.verdicts, "verdicts");
     chipGroup("statusChips", STATUSES, state.statuses, "statuses");
+    chipGroup("landlordChips", [{ key: "company", name: "Management company" }, { key: "private", name: "Private owner" }], state.landlords, "landlords");
     $("maxRent").value = state.maxRent; $("maxRentOut").textContent = money(state.maxRent);
   }
   $("maxRent").addEventListener("input", e => { state.maxRent = Number(e.target.value); store.set("maxRent", state.maxRent); $("maxRentOut").textContent = money(state.maxRent); renderAll(); });
@@ -543,7 +550,9 @@ td.best { background: var(--accent-soft); }
           h("div", { class: "title" }, h("h3", { text: b.name }), h("span", { class: "verdict " + v, text: VERDICT_TXT[v] }),
             b.my_status && b.my_status !== "new" ? h("span", { class: "pill status", text: STATUSES.find(s => s.key === b.my_status)?.name }) : null,
             b.source === "you" ? h("span", { class: "pill you", text: "Added by you" }) : null,
-            b.batch === "new-oct15" ? h("span", { class: "pill you", title: "Found in the Oct 15 listing search; less verified than the original list", text: "New find" }) : null),
+            b.batch === "new-oct15" ? h("span", { class: "pill you", title: "Found in the Oct 15 listing search; less verified than the original list", text: "New find" }) : null,
+            b.landlord === "private" ? h("span", { class: "pill you", title: b.owner_type || "Rented by an individual owner or small landlord", text: "Private owner" }) : null,
+            b.scam_flags ? h("span", { class: "pill no rep", title: b.scam_flags, text: "Scam risk" }) : null),
           h("div", { class: "meta" }, h("span", { text: area ? area.name : (b.area_label || "") }), repPill(b), b.sqft ? h("span", { class: "num", text: b.sqft + " sq ft" }) : null, b.year_built ? h("span", { text: "Built " + b.year_built }) : null, scoreBar(s))),
         h("div", { class: "right" },
           h("span", { class: "price", text: money(rentOf(b)) + "/mo" }),
@@ -839,6 +848,10 @@ td.best { background: var(--accent-soft); }
         b.packages_detail ? h("dt", { text: "Packages" }) : null, b.packages_detail ? h("dd", { text: b.packages_detail }) : null,
         b.ac_evidence ? h("dt", { text: "AC evidence" }) : null, b.ac_evidence ? h("dd", { text: b.ac_evidence }) : null,
         b.internet ? h("dt", { text: "Internet" }) : null, b.internet ? h("dd", { text: b.internet }) : null,
+        b.landlord === "private" ? h("dt", { text: "Landlord" }) : null, b.landlord === "private" ? h("dd", { text: [b.owner_type || "Private owner", b.platform ? "listed on " + b.platform : null].filter(Boolean).join(", ") }) : null,
+        b.scam_flags ? h("dt", { text: "Scam warning" }) : null, b.scam_flags ? h("dd", { style: { color: "var(--bad)" }, text: b.scam_flags }) : null,
+        b.rent_control ? h("dt", { text: "Rent control" }) : null, b.rent_control ? h("dd", { text: b.rent_control }) : null,
+        b.hoa_amenities ? h("dt", { text: "Complex amenities" }) : null, b.hoa_amenities ? h("dd", { text: b.hoa_amenities }) : null,
         b.location_note ? h("dt", { text: "Location" }) : null, b.location_note ? h("dd", { text: b.location_note }) : null,
         b.red_flags ? h("dt", { text: "Watch out for" }) : null, b.red_flags ? h("dd", { text: b.red_flags }) : null,
         b.checked_on ? h("dt", { text: "Last checked" }) : null, b.checked_on ? h("dd", { text: b.checked_on }) : null,

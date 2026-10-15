@@ -144,6 +144,7 @@ def main():
             "reviews": ({**reviews[r["name"]], "note": REVIEW_NOTES.get(r["name"], "")} if r["name"] in reviews else None),
             "checked_on": CHECKED_ON if v else "2026-10-14",
             "source": "claude",
+            "landlord": "private" if r.get("tier") == "Single-unit benchmark" else "company",
             "my_status": "new",
             "my_note": "",
         })
@@ -186,7 +187,12 @@ def main():
                 "reviews": {"reputation_score": None, "confidence": "low", "management_company": c.get("management_company"),
                             "complaints": [], "praise": [], "dealbreakers": "", "recent_trend": "unknown",
                             "management": {"score": None, "summary": c.get("reputation_gist") or ""}},
-                "checked_on": CHECKED_ON, "source": "claude", "batch": "new-oct15", "my_status": "new", "my_note": "",
+                "checked_on": CHECKED_ON, "source": "claude", "my_status": "new", "my_note": "",
+                "batch": "private-oct15" if f.name.startswith("find_p") else "new-oct15",
+                "landlord": "private" if f.name.startswith("find_p") else "company",
+                "owner_type": c.get("owner_type"), "platform": c.get("platform"),
+                "hoa_amenities": c.get("hoa_amenities"), "rent_control": c.get("rent_control"),
+                "scam_flags": c.get("scam_flags") or "",
             })
 
     updates = RESEARCH / "updates.json"
@@ -195,11 +201,14 @@ def main():
             if b["name"] != u["name"]:
                 continue
             b["req"].update(u.get("req", {}))
+            if u.get("landlord"):
+                b["landlord"] = u["landlord"]
             if u.get("packages_detail"):
                 b["packages_detail"] = u["packages_detail"]
             if u.get("note"):
                 b["notes"] = u["note"] + "\n\n" + (b["notes"] or "")
-            b["checked_on"] = u.get("source", b["checked_on"])
+            if u.get("note") or u.get("req"):
+                b["checked_on"] = u.get("source", b["checked_on"])
 
     (ROOT / "data/buildings.json").write_text(json.dumps(buildings, indent=1, ensure_ascii=False))
     (ROOT / "data/neighborhoods.json").write_text(json.dumps(areas, indent=1, ensure_ascii=False))
