@@ -144,9 +144,56 @@ def main():
             "reviews": ({**reviews[r["name"]], "note": REVIEW_NOTES.get(r["name"], "")} if r["name"] in reviews else None),
             "checked_on": CHECKED_ON if v else "2026-10-14",
             "source": "claude",
+            "landlord": "private" if r.get("tier") == "Single-unit benchmark" else "company",
             "my_status": "new",
             "my_note": "",
         })
+
+    # New candidates from listing searches (find_*.json).
+    def nearest_area(lat, lng):
+        import math
+        best = min((a for a in areas if a.get("lat") is not None),
+                   key=lambda a: (a["lat"] - lat) ** 2 + ((a["lng"] - lng) * math.cos(math.radians(lat))) ** 2)
+        return best
+    seen = {b["name"].lower() for b in buildings}
+    for f in sorted(RESEARCH.glob("find_*.json")):
+        for c in json.loads(f.read_text()):
+            if c["name"].lower() in seen:
+                continue
+            seen.add(c["name"].lower())
+            area_name = norm_name(c.get("area") or "")
+            loc_note = c.get("geocode_note") or ""
+            if area_name not in area_ids and c.get("lat") is not None:
+                near = nearest_area(c["lat"], c["lng"])
+                loc_note = (f"{area_name.replace('NEW: ', '')} is not a scored neighborhood yet; "
+                            f"using the nearest one, {near['name']}. ") + loc_note
+                area_name = near["name"]
+            reqv = {
+                "wd": tri(c.get("washer_dryer")), "ac": tri(c.get("central_ac")), "dw": tri(c.get("dishwasher")),
+                "parking": tri(c.get("parking")), "packages": packages_tri(c.get("packages")),
+            }
+            buildings.append({
+                "id": slug(c["name"]), "name": c["name"], "address": c.get("address"),
+                "area_id": area_ids.get(area_name), "region": region_of(area_name),
+                "lat": c.get("lat"), "lng": c.get("lng"), "location_note": loc_note,
+                "sqft": num(c.get("sqft")), "base_rent": num(c.get("base_rent")),
+                "effective_rent": num(c.get("effective_rent")) or num(c.get("base_rent")),
+                "special": c.get("special"), "parking_fee": num(c.get("parking_fee")),
+                "year_built": c.get("year_built"), "req": reqv,
+                "packages_detail": c.get("packages_detail"), "ac_evidence": c.get("central_ac_evidence"),
+                "red_flags": c.get("red_flags") or "", "internet": None,
+                "notes": " ".join(x for x in [c.get("floor_plan") and "Plan " + c["floor_plan"] + ".", c.get("units_note"), c.get("seen_on") and "Seen on " + c["seen_on"] + "."] if x),
+                "listing_url": c.get("listing_url"), "sources": c.get("sources", []),
+                "reviews": {"reputation_score": None, "confidence": "low", "management_company": c.get("management_company"),
+                            "complaints": [], "praise": [], "dealbreakers": "", "recent_trend": "unknown",
+                            "management": {"score": None, "summary": c.get("reputation_gist") or ""}},
+                "checked_on": CHECKED_ON, "source": "claude", "my_status": "new", "my_note": "",
+                "batch": "private-oct15" if f.name.startswith("find_p") else "new-oct15",
+                "landlord": "private" if f.name.startswith("find_p") else "company",
+                "owner_type": c.get("owner_type"), "platform": c.get("platform"),
+                "hoa_amenities": c.get("hoa_amenities"), "rent_control": c.get("rent_control"),
+                "scam_flags": c.get("scam_flags") or "",
+            })
 
     updates = RESEARCH / "updates.json"
     for u in json.loads(updates.read_text()) if updates.exists() else []:
@@ -154,11 +201,14 @@ def main():
             if b["name"] != u["name"]:
                 continue
             b["req"].update(u.get("req", {}))
+            if u.get("landlord"):
+                b["landlord"] = u["landlord"]
             if u.get("packages_detail"):
                 b["packages_detail"] = u["packages_detail"]
             if u.get("note"):
                 b["notes"] = u["note"] + "\n\n" + (b["notes"] or "")
-            b["checked_on"] = u.get("source", b["checked_on"])
+            if u.get("note") or u.get("req"):
+                b["checked_on"] = u.get("source", b["checked_on"])
 
     (ROOT / "data/buildings.json").write_text(json.dumps(buildings, indent=1, ensure_ascii=False))
     (ROOT / "data/neighborhoods.json").write_text(json.dumps(areas, indent=1, ensure_ascii=False))
