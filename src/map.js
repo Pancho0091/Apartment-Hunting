@@ -115,7 +115,7 @@ position:relative;height:clamp(440px,78vh,760px);background:#ece6d8;border:1px s
 .mv-scale{position:absolute;right:14px;bottom:26px;z-index:2;pointer-events:none;background:rgba(251,249,244,.86);padding:3px 8px 2px 10px;border-radius:2px}
 .mv-scale svg{display:block;overflow:visible}
 .mv-scale text{font:400 9px/1 var(--mv-mono);letter-spacing:.06em;fill:#1f1d1a}
-.mv-credit{position:absolute;left:auto;right:14px;max-width:calc(100% - 28px);bottom:9px;background:rgba(251,249,244,.86);padding:2px 6px;border-radius:2px;z-index:2;font:400 8.5px/1.2 var(--mv-mono);letter-spacing:.02em;color:#7b7468;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;pointer-events:auto}
+.mv-credit{position:absolute;left:auto;right:14px;max-width:calc(100% - 28px);bottom:9px;background:rgba(251,249,244,.86);padding:2px 6px;border-radius:2px;z-index:2;font:400 8.5px/1.2 var(--mv-mono);letter-spacing:.02em;color:#6b655c;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;pointer-events:auto}
 .mv-legend{left:14px;bottom:24px;padding:8px 12px 10px;width:250px}
 .mv-lh{margin:9px 0 4px;font:500 9px/1.2 var(--mv-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--mv-muted)}
 .mv-lh span{letter-spacing:.04em;text-transform:none}
@@ -157,13 +157,16 @@ position:relative;height:clamp(440px,78vh,760px);background:#ece6d8;border:1px s
  .mv-cart .mv-layers{margin-top:6px;padding-top:5px}
  .mv-compass{width:56px;height:56px;right:9px;top:9px}
  .mv-ctl{right:10px;top:72px}
- .mv-ctl button{width:36px;height:36px}
+ .mv-ctl button{width:40px;height:40px}
+ .mv-layers summary,.mv-legend summary{min-height:34px}
+ .mv-tog{min-height:32px;margin-top:2px}
  .mv-legend{left:10px;bottom:24px;width:auto;max-width:calc(100% - 20px);padding:7px 10px}
  .mv-legend[open]{width:250px}
  .mv-scale{right:10px;bottom:30px}
  .mv-credit{right:10px;bottom:10px;max-width:calc(100% - 20px)}
  .mv-tip{width:220px}
 }
+@media (pointer:coarse){.mv-hit{r:20px}}
 @media (prefers-reduced-motion:reduce){.mv-mk .mv-mk-in,.mv-tip,.mv-tog input,.mv-tog input::after{transition:none}}
 `;
   function injectCSS() {
@@ -587,7 +590,7 @@ position:relative;height:clamp(440px,78vh,760px);background:#ece6d8;border:1px s
         if (c.mem.length === 1) {
           const p = c.mem[0];
           g.innerHTML = markerMarkup(p.v);
-          g.setAttribute("aria-label", `${p.b.name}. ${VLABEL[p.v]}. Rent ${ctx.money(p.rent)}. ${p.b.sqft ? p.b.sqft + " square feet" : "Size not confirmed"}. Open details.`);
+          g.setAttribute("aria-label", `${p.b.name}. ${VLABEL[p.v]}. Rent ${p.rent == null ? "not listed" : ctx.money(p.rent)}. ${p.b.sqft ? p.b.sqft + " square feet" : "Size not confirmed"}. Open details.`);
           g.setAttribute("data-listing-pin", p.id);
         } else {
           const counts = { all: 0, check: 0, fail: 0 };
@@ -601,6 +604,8 @@ position:relative;height:clamp(440px,78vh,760px);background:#ece6d8;border:1px s
           g.setAttribute("data-cluster", c.mem.length);
         }
       }
+      // invisible hit area: a finger-sized target around every marker (larger on touch screens, see .mv-hit)
+      for (const g of mkG.querySelectorAll(".mv-mk")) g.insertAdjacentHTML("afterbegin", '<circle class="mv-hit" r="13" fill="transparent"/>');
       if (activeKey) { const back = mkG.querySelector(`[data-key="${CSS.escape(activeKey)}"]`); if (back) back.focus({ preventScroll: true }); }
     }
     function buildSpider(c) {
@@ -616,7 +621,7 @@ position:relative;height:clamp(440px,78vh,760px);background:#ece6d8;border:1px s
       for (const s of c.spider) {
         const g = S("g", { class: "mv-mk", tabindex: "0", role: "button", "data-key": s.m.id, "data-listing-pin": s.m.id }, mkG);
         g.innerHTML = markerMarkup(s.m.v);
-        g.setAttribute("aria-label", `${s.m.b.name}. ${VLABEL[s.m.v]}. Rent ${ctx.money(s.m.rent)}. Open details.`);
+        g.setAttribute("aria-label", `${s.m.b.name}. ${VLABEL[s.m.v]}. Rent ${s.m.rent == null ? "not listed" : ctx.money(s.m.rent)}. Open details.`);
         s.el = g;
       }
     }
@@ -1064,7 +1069,7 @@ position:relative;height:clamp(440px,78vh,760px);background:#ece6d8;border:1px s
       // Heat rings and area labels
       heatG.textContent = "";
       areaInfo.length = 0;
-      for (let i = labels.length - 1; i >= 0; i--) if (labels[i].kind === "area") { labels[i].el.remove(); labels.splice(i, 1); }
+      for (let i = labels.length - 1; i >= 0; i--) if (labels[i].kind === "area") { const e = labels[i].el, wrap = e.parentNode; (wrap && wrap.classList && wrap.classList.contains("mv-l-heat-lab") ? wrap : e).remove(); labels.splice(i, 1); }
       const scores = areas.map(a => c.areaScore ? c.areaScore(a) : null).filter(v => v != null && !isNaN(v));
       const lo = scores.length ? Math.min(...scores) : 0, hi = scores.length ? Math.max(...scores) : 10;
       const counts = new Map();

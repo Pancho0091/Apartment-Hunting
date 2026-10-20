@@ -32,7 +32,7 @@
   const REVIEW_PARTS = [["management", "Management"], ["maintenance", "Maintenance"], ["cleanliness", "Cleanliness"], ["noise", "Noise"], ["security", "Security"], ["pests", "Pests"], ["costs", "Fees and renewals"]];
   const STATUSES = [{ key: "new", name: "Not reviewed" }, { key: "watch", name: "Watching" }, { key: "tour", name: "Tour" }, { key: "applied", name: "Applied" }, { key: "pass", name: "Passed on" }];
   const REGIONS = ["Los Angeles", "Long Beach", "Orange County"];
-  const VERDICTS = { all: "Meets everything", check: "Needs checks", fail: "Fails something" };
+  const VERDICTS = { all: "Meets everything", check: "Needs checks", fail: "Fails a requirement" };
   const LANDLORDS = { company: "Management company", private: "Private owner" };
   const SORTS = [["score", "Best match"], ["value", "Best match per dollar"], ["rent", "Lowest rent"], ["sqft", "Largest"], ["ppsf", "Lowest $/sq ft"], ["reviews", "Best reviewed"], ["name", "Name"]];
   const VIEWS = [["list", "Specimens"], ["table", "Table"], ["map", "Map"], ["areas", "Neighborhoods"], ["compare", "Compare"], ["add", "Add"]];
@@ -198,6 +198,8 @@
   }
   const regionOf = b => { const a = S.areaById.get(b.area_id); return (a && a.region) || b.region || "Los Angeles"; };
   const areaName = b => { const a = S.areaById.get(b.area_id); return a ? a.name : ""; };
+  /* Shown place name; never guesses a region the listing does not have (regionOf defaults for filtering only). */
+  const whereText = b => areaName(b) || b.region || "Neighborhood not set";
   const isNew = b => b.batch === "new-oct15" || b.batch === "private-oct15";
   const statusName = k => (STATUSES.find(s => s.key === (k || "new")) || STATUSES[0]).name;
   const savingsOf = b => { const c = allIn(b); return c == null ? null : JAYNE.allIn - c; };
@@ -280,7 +282,7 @@
     if (S.loaded) tween(ledger.inView, list.length, int, 620); else ledger.inView.textContent = "—";
     ledger.inViewSub.textContent = S.loaded ? `of ${S.buildings.length} listings` : "";
     tween(ledger.meet, meet, int, 620);
-    if (med == null) { ledger.med._tv = null; ledger.med.textContent = "—"; } else tween(ledger.med, Math.round(med), money, 620);
+    if (med == null) { cancelAnimationFrame(ledger.med._raf); ledger.med._tv = null; ledger.med.textContent = "—"; } else tween(ledger.med, Math.round(med), money, 620);
     const topId = top ? top.id + "|" + f1(score(top)) : "";
     if (ledger.topId !== topId) {
       const first = ledger.topId == null;
@@ -462,7 +464,8 @@
     }
     $("toggleFilters").setAttribute("aria-label", n ? `Filters, ${n} active` : "Filters");
   }
-  function clearAll() { S.f = freshFilters(); S.q = ""; $("q").value = ""; saveF(); syncFilters(); renderResults(); toast("Filters cleared"); }
+  function clearAll() { Object.assign(S.f, freshFilters()); // in place: filter controls hold a reference to S.f
+    S.q = ""; $("q").value = ""; saveF(); syncFilters(); renderResults(); toast("Filters cleared"); }
 
   /* Mobile filter sheet */
   const sheetMQ = matchMedia("(max-width: 920px)");
@@ -471,13 +474,16 @@
     document.documentElement.classList.toggle("sheet-open", open);
     sb.classList.toggle("open", open);
     $("toggleFilters").setAttribute("aria-expanded", open ? "true" : "false");
+    // the open sheet is modal: keep keyboard and screen-reader focus inside it
+    document.querySelectorAll(".skip, .mast, .searchband, #results, .colophon").forEach(el => { el.inert = open; });
+    if (open) { sb.setAttribute("role", "dialog"); sb.setAttribute("aria-modal", "true"); } else { sb.removeAttribute("role"); sb.removeAttribute("aria-modal"); }
     if (open) { scrim.hidden = false; requestAnimationFrame(() => scrim.classList.add("in")); setTimeout(() => $("closeFilters").focus(), 30); }
     else { scrim.classList.remove("in"); setTimeout(() => { if (!sb.classList.contains("open")) scrim.hidden = true; }, 320); }
   }
   $("toggleFilters").addEventListener("click", () => setSheet(!$("sidebar").classList.contains("open")));
   $("closeFilters").addEventListener("click", () => { setSheet(false); $("toggleFilters").focus(); });
   $("applyFilters").addEventListener("click", () => { setSheet(false); $("results").scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); });
-  $("sheetScrim").addEventListener("click", () => setSheet(false));
+  $("sheetScrim").addEventListener("click", () => { setSheet(false); $("toggleFilters").focus({ preventScroll: true }); });
   sheetMQ.addEventListener("change", () => { if (!sheetMQ.matches) setSheet(false); });
   $("sidebar").addEventListener("keydown", e => { if (e.key === "Escape" && $("sidebar").classList.contains("open")) { setSheet(false); $("toggleFilters").focus(); } });
   /* Drag the sheet's head down to dismiss it. Follows the finger, then either
@@ -571,8 +577,9 @@
     });
     tb.densBtns.forEach(btn => btn.setAttribute("aria-pressed", S.density === btn.dataset.density ? "true" : "false"));
     $("sort").value = S.sort;
-    $("sort").disabled = !["list", "table"].includes(S.view);
-    $("sort").closest(".sortctl").hidden = !["list", "table"].includes(S.view);
+    // the table sorts by its own column headings, so the Sort menu only applies to the specimen list
+    $("sort").disabled = S.view !== "list";
+    $("sort").closest(".sortctl").hidden = S.view !== "list";
     tb.dens.hidden = S.view !== "list";
     placeIndicator(tb.views, tb.segInd, true);
     placeIndicator(tb.dens, tb.densInd, true);
@@ -589,6 +596,8 @@
     new IntersectionObserver(([e]) => bar.classList.toggle("stuck", !e.isIntersecting && e.boundingClientRect.top < 0), { threshold: 0 }).observe(sentinel);
   })();
   $("sort").addEventListener("change", e => { S.sort = e.target.value; ls.set("sort", S.sort); renderResults(); });
+  /* The full placeholder is cut mid-word on phones; use a shorter one there. */
+  (() => { const q = $("q"), long = q.placeholder, mq = matchMedia("(max-width: 900px)"); const set = () => { q.placeholder = mq.matches ? "Search name, street, neighborhood" : long; }; set(); mq.addEventListener("change", set); })();
   let qTimer; $("q").addEventListener("input", e => { clearTimeout(qTimer); qTimer = setTimeout(() => { S.q = e.target.value.trim().toLowerCase(); renderResults(); renderChips(); updateBadge(); }, 120); });
   $("q").addEventListener("keydown", e => { if (e.key === "Escape" && e.target.value) { e.stopPropagation(); e.target.value = ""; S.q = ""; renderResults(); renderChips(); } });
   document.addEventListener("keydown", e => {
@@ -628,8 +637,10 @@
       withStatus && b.my_status && b.my_status !== "new" ? h("span", { class: "tag ink status-" + b.my_status, text: statusName(b.my_status) }) : null,
     ].filter(Boolean);
   }
-  const listingAttrs = b => ({ "data-listing": b.id, tabindex: 0, role: "button", "aria-label": "Open " + b.name,
-    onclick: () => openBuilding(b), onkeydown: e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openBuilding(b); } } });
+  /* The whole card is clickable with a pointer; keyboard and screen readers get a
+     real button inside the heading (its click bubbles to the card handler). */
+  const listingAttrs = b => ({ "data-listing": b.id, onclick: () => openBuilding(b) });
+  const openBtn = (text, label) => h("button", { type: "button", class: "card-open", "aria-label": label || null, text });
 
   /* ==========================================================================
      Views: specimens (cards / rows)
@@ -663,7 +674,7 @@
     const fresh = !box;
     if (fresh) {
       box = mode === "cards" ? h("div", { class: "specimens" })
-        : h("div", { class: "rows", role: "list" }, h("div", { class: "rows-head", "aria-hidden": "true" }, ...["No.", "Specimen", "Requirements", "Rent", "Size", "Match", "vs. Jayne"].map(t => h("span", { text: t }))));
+        : h("div", { class: "rows" }, h("div", { class: "rows-head", "aria-hidden": "true" }, ...["No.", "Specimen", "Requirements", "Rent", "Size", "Match", "vs. Jayne"].map(t => h("span", { text: t }))));
       root.replaceChildren(box);
     }
     const els = list.map((b, i) => keyedListing(mode, b, i));
@@ -694,10 +705,10 @@
       h("div", { class: "specimen-frame" },
         h("header", { class: "specimen-head" },
           h("span", { class: "specimen-no" }, h("span", { class: "k", text: "No." }), h("span", { class: "specimen-no-n", text: pad2(i + 1) })),
-          h("span", { class: "specimen-where" }, regionEmblem(regionOf(b), "sm"), h("span", { text: areaName(b) || regionOf(b) }))),
+          h("span", { class: "specimen-where" }, regionEmblem(regionOf(b), "sm"), h("span", { text: whereText(b) }))),
         v === "all" ? (seal() || h("span", { class: "seal-fallback", text: "Meets everything" })) : null,
         h("div", { class: "specimen-title" },
-          h("h3", { class: "specimen-name", text: b.name }),
+          h("h3", { class: "specimen-name" }, openBtn(b.name)),
           h("p", { class: "specimen-addr", text: b.address || "Address not listed" })),
         h("div", { class: "specimen-figures" },
           h("div", { class: "fig fig-rent" },
@@ -718,8 +729,8 @@
     return h("article", { class: "rowitem v-" + v, ...listingAttrs(b) },
       h("span", { class: "rowitem-no", text: pad2(i + 1) }),
       h("div", { class: "rowitem-main" },
-        h("h3", { class: "rowitem-name" }, b.name, v === "all" ? h("span", { class: "tick", title: "Meets everything", text: " ●" }) : null),
-        h("p", { class: "rowitem-sub", text: [areaName(b), regionOf(b)].filter(Boolean).join(" · ") }),
+        h("h3", { class: "rowitem-name" }, openBtn(b.name), v === "all" ? h("span", { class: "tick", title: "Meets everything", text: " ●" }) : null),
+        h("p", { class: "rowitem-sub", text: [areaName(b), S.areaById.get(b.area_id) ? regionOf(b) : b.region].filter(Boolean).join(" · ") || "Neighborhood not set" }),
         (() => { const t = flagTags(b, true); return t.length ? h("div", { class: "tags sm" }, ...t) : null; })()),
       reqRow(b, "compact"),
       h("span", { class: "rowitem-rent", text: money(rentOf(b)) }),
@@ -732,12 +743,12 @@
      Views: table
      ========================================================================== */
   const TCOLS = [
-    { k: "name", t: "Building", v: b => b.name.toLowerCase(), cell: b => h("td", { class: "t-name" }, h("span", { class: "t-title", text: b.name }), h("span", { class: "t-sub", text: areaName(b) || regionOf(b) })) },
+    { k: "name", t: "Building", v: b => b.name.toLowerCase(), cell: b => h("td", { class: "t-name" }, h("span", { class: "t-title" }, openBtn(b.name)), h("span", { class: "t-sub", text: whereText(b) })) },
     { k: "rent", t: "Rent", num: true, v: rentOf, cell: b => h("td", { class: "num strong", text: money(rentOf(b)) }) },
     { k: "sqft", t: "Sq ft", num: true, v: b => b.sqft, cell: b => h("td", { class: "num", text: b.sqft != null ? Math.round(b.sqft) : "—" }) },
     { k: "ppsf", t: "$/sq ft", num: true, v: ppsf, cell: b => h("td", { class: "num", text: ppsf(b) ? ppsf(b).toFixed(2) : "—" }) },
     { k: "save", t: "vs. Jayne", num: true, v: savingsOf, cell: b => { const d = savingsOf(b); return h("td", { class: "num " + (d == null ? "" : d >= 0 ? "pos" : "neg"), text: d == null ? "—" : (d >= 0 ? "+" : "−") + money(Math.abs(d)) }); } },
-    { k: "score", t: "Match", num: true, v: score, cell: b => h("td", { class: "num" }, h("span", { class: "t-match" }, h("span", { class: "meter xs", "aria-hidden": "true" }, h("i", { style: { "--w": (score(b) || 0) * 10 + "%" } })), f1(score(b)))) },
+    { k: "score", t: "Match", num: true, v: score, cell: b => h("td", { class: "num" }, h("span", { class: "t-match" }, score(b) == null ? null : h("span", { class: "meter xs", "aria-hidden": "true" }, h("i", { style: { "--w": score(b) * 10 + "%" } })), f1(score(b)))) },
     { k: "rep", t: "Reviews", num: true, v: repScore, cell: b => h("td", { class: "num", text: repScore(b) ?? "—" }) },
     { k: "req", t: "Requirements", v: b => REQS.filter(r => reqVal(b, r.key) === "yes").length, cell: b => h("td", null, h("span", { class: "dots" }, ...REQS.map(r => h("i", { class: reqVal(b, r.key), title: r.name + ": " + REQ_WORD[reqVal(b, r.key)].toLowerCase() })))) },
     { k: "landlord", t: "Landlord", v: b => b.landlord || "company", cell: b => h("td", { class: "t-text", text: b.landlord === "private" ? "Private" : "Company" }) },
@@ -756,7 +767,7 @@
           const again = document.querySelector(`.th-btn[data-col="${c.k}"]`); if (again) again.focus({ preventScroll: true });
         } },
         c.t, h("span", { class: "th-arrow", "aria-hidden": "true", text: S.tsort.key === c.k ? (S.tsort.dir > 0 ? "↑" : "↓") : "↕" }))))));
-    const trs = rows.map((b, i) => h("tr", { class: "v-" + verdict(b), tabindex: 0, "data-listing": b.id, "aria-label": "Open " + b.name, onclick: () => openBuilding(b), onkeydown: e => { if (e.key === "Enter") openBuilding(b); } },
+    const trs = rows.map((b, i) => h("tr", { class: "v-" + verdict(b), "data-listing": b.id, onclick: () => openBuilding(b) },
       h("td", { class: "num t-no", text: pad2(i + 1) }), ...TCOLS.map(c => c.cell(b))));
     const cap = h("caption", { class: "sr", text: `${rows.length} listings. Select a column heading to sort.` });
     const table = root.querySelector(":scope > .tablewrap > table");
@@ -834,7 +845,7 @@
     root.append(wrap, h("div", { class: "legend" },
       h("span", null, h("i", { style: { background: "var(--ok)" } }), "Meets everything"),
       h("span", null, h("i", { style: { background: "var(--warn)" } }), "Needs checks"),
-      h("span", null, h("i", { style: { background: "var(--bad)" } }), "Fails something"),
+      h("span", null, h("i", { style: { background: "var(--bad)" } }), "Fails a requirement"),
       h("span", { class: "legend-note", text: `${plural(list.length, "listing")} in view. Coast and freeways are approximate.` })));
   }
 
@@ -846,7 +857,7 @@
       const v = factorScore(a, f);
       return h("li", { class: "factorbar", style: { "--bi": i } },
         factorIcon(f.key) || h("span", { class: "ico-fallback", "aria-hidden": "true" }),
-        h("span", { class: "factorbar-name", text: f.name }),
+        h("span", { class: "factorbar-name", title: f.name, text: f.name }),
         h("span", { class: "factorbar-track", "aria-hidden": "true" }, h("i", { style: { "--w": v == null ? "0%" : v * 10 + "%" } })),
         h("span", { class: "factorbar-v", text: f1(v) }));
     }));
@@ -858,13 +869,13 @@
     for (const b of S.buildings) if (matches(b)) inView.set(b.area_id, (inView.get(b.area_id) || 0) + 1);
     const plates = list.map(({ a, sc }, i) => {
         const n = inView.get(a.id) || 0;
-        return h("article", { class: "plate", "data-key": a.id, tabindex: 0, role: "button", "aria-label": `Open ${a.name} neighborhood report`, style: { "--i": Math.min(i, 24) }, onclick: () => openArea(a), onkeydown: e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openArea(a); } } },
+        return h("article", { class: "plate", "data-key": a.id, style: { "--i": Math.min(i, 24) }, onclick: () => openArea(a) },
           h("header", { class: "plate-head" },
             h("span", { class: "plate-no", text: "Plate " + pad2(i + 1) }),
             h("span", { class: "plate-region", text: a.region })),
           h("div", { class: "plate-title" },
             regionEmblem(a.region, "md") || h("span", { class: "emblem-fallback", "aria-hidden": "true", text: a.region.split(" ").map(w => w[0]).join("") }),
-            h("div", null, h("h3", { class: "plate-name", text: a.name }), h("p", { class: "plate-count", text: n ? plural(n, "listing") + " in view" : "No listings in view" })),
+            h("div", null, h("h3", { class: "plate-name" }, openBtn(a.name, a.name + ", neighborhood report")), h("p", { class: "plate-count", text: n ? plural(n, "listing") + " in view" : "No listings in view" })),
             h("div", { class: "plate-score" }, h("b", { text: f1(sc) }), h("span", { text: "/ 10" }))),
           factorBars(a));
     });
@@ -893,7 +904,7 @@
     const picks = S.buildings.filter(b => S.compare.has(b.id));
     if (!picks.length) return root.append(emptyState("Open any listing and choose Compare to line up to four side by side.", "Nothing on the bench yet", true));
     const rows = [
-      ["Neighborhood", areaName],
+      ["Neighborhood", b => areaName(b) || "—"],
       ["Best match", b => f1(score(b)), score, 1],
       ["Rent", b => money(rentOf(b)), rentOf, -1],
       ["Size", b => b.sqft ? Math.round(b.sqft) + " sq ft" : "—", b => b.sqft, 1],
@@ -913,17 +924,25 @@
       h("div", { class: "tablewrap compare-wrap" }, h("table", { class: "compare", style: { "--cols": picks.length } },
         h("thead", null, h("tr", null, h("th", { class: "compare-corner", scope: "col" }, h("span", { class: "sr", text: "Attribute" })), ...picks.map(b => h("th", { scope: "col" },
           h("div", { class: "compare-head" },
-            h("span", { class: "mono-label", text: areaName(b) || regionOf(b) }),
+            h("span", { class: "mono-label", text: whereText(b) }),
             h("button", { class: "compare-name", type: "button", text: b.name, onclick: () => openBuilding(b) }),
             verdict(b) === "all" ? h("span", { class: "tag ok", text: "Meets everything" }) : null,
             h("button", { class: "linkbtn sm", type: "button", "aria-label": "Remove " + b.name, text: "Remove", onclick: () => { S.compare.delete(b.id); ls.set("compare", [...S.compare]); renderToolbar(); renderResults(); } })))))),
         h("tbody", null, ...rows.map(([label, fmt, val, dir, reqKey]) => {
-          let best = -1;
-          if (val && picks.length > 1) { const vs = picks.map(val), ok = vs.filter(x => x != null); if (ok.length) best = vs.indexOf(dir > 0 ? Math.max(...ok) : Math.min(...ok)); }
+          // mark the best value (all ties, judged on the shown value); no mark when every column shows the same
+          const bestSet = new Set();
+          if (val && picks.length > 1) {
+            const vs = picks.map(val), ok = vs.filter(x => x != null);
+            if (ok.length >= 2) {               // a lone known value is not "best"
+              const shown = picks.map(b => String(fmt(b))), top = shown[vs.indexOf(dir > 0 ? Math.max(...ok) : Math.min(...ok))];
+              const tied = shown.map((t, i) => vs[i] != null && t === top);
+              if (tied.filter(Boolean).length < picks.length) tied.forEach((t, i) => t && bestSet.add(i));
+            }
+          }
           return h("tr", null, h("th", { scope: "row", class: "compare-k" }, reqKey ? reqIcon(reqKey) : null, label), ...picks.map((b, i) => {
             const t = String(fmt(b));
             if (reqKey) return h("td", null, h("span", { class: "reqword " + t }, h("i", { "aria-hidden": "true" }), REQ_WORD[t]));
-            return h("td", { class: i === best ? "best" : null }, t, i === best ? h("span", { class: "sr", text: " (best)" }) : null);
+            return h("td", { class: bestSet.has(i) ? "best" : null }, t, bestSet.has(i) ? h("span", { class: "sr", text: " (best)" }) : null);
           }));
         })))));
   }
@@ -977,7 +996,9 @@
         lat: area ? area.lat + j() : null, lng: area ? area.lng + j() : null, base_rent: n("a-base"), effective_rent: n("a-eff") ?? n("a-base"),
         sqft: n("a-sqft"), parking_fee: n("a-park"), req: Object.fromEntries(REQS.map(r => [r.key, radio("a-" + r.key)])), landlord: v("a-landlord"),
         listing_url: v("a-url") || null, notes: v("a-note"), source: "you", my_status: "watch", added_at: new Date().toISOString() };
-      if (await saveBuilding(b, true)) { form.reset(); S.view = "list"; ls.set("view", "list"); renderToolbar(); renderResults(); openBuilding(b); toast("Listing added"); }
+      const saved = await saveBuilding(b, true);
+      form.reset(); S.view = "list"; ls.set("view", "list"); renderToolbar(); renderResults(); openBuilding(b);
+      if (saved) toast("Listing added");
     });
     root.append(form);
   }
@@ -1020,7 +1041,7 @@
     const first = new Map();
     if (animate) for (const el of kids) first.set(keyOf(el), { el, r: el.getBoundingClientRect() });
     for (const el of kids) { if (el._flip) { el._flip.cancel(); el._flip = null; } if (el.classList.contains("is-leaving")) unghost(el); }
-    const active = document.activeElement;
+    const active = document.activeElement, hadFocus = active && active !== document.body && box.contains(active);
     const keep = new Set(els), have = new Set();
     for (const el of kids) { if (!keep.has(el)) el.remove(); else have.add(el); }
     const base = o.after ? 1 : 0;
@@ -1034,7 +1055,7 @@
       let ref = o.after ? o.after.nextSibling : box.firstChild;
       for (const el of els) { if (el !== ref) box.insertBefore(el, ref); else ref = ref.nextSibling; }
     }
-    if (active && keep.has(active) && document.activeElement !== active) active.focus({ preventScroll: true });
+    if (hadFocus && active.isConnected && document.activeElement !== active) active.focus({ preventScroll: true });
     if (useOrder) {
       // anything that landed on screen renders now; the rest waits for idle time
       const lazy = els.filter(el => el.classList.contains("cv-lazy"));
@@ -1207,9 +1228,10 @@
     const onKey = e => {
       if (e.key === "Escape") { e.preventDefault(); close(); }
       else if (e.key === "Tab") {
-        const f = [...panel.querySelectorAll('a[href],button:not([disabled]),input:not([disabled]),select:not([disabled]),textarea:not([disabled]),summary,[tabindex="0"]')].filter(x => x.offsetParent !== null);
+        const f = [...panel.querySelectorAll('a[href],button:not([disabled]),input:not([disabled]),select:not([disabled]),textarea:not([disabled]),summary,[tabindex="0"]')].filter(x => x.offsetParent !== null && !(x.tagName !== "SUMMARY" ? x.closest("details:not([open])") : x.parentElement.closest("details:not([open])")) && !x.closest("[inert]"));
         if (!f.length) return;
-        if (e.shiftKey && document.activeElement === f[0]) { e.preventDefault(); f[f.length - 1].focus(); }
+        if (!panel.contains(document.activeElement)) { e.preventDefault(); f[0].focus(); }
+        else if (e.shiftKey && document.activeElement === f[0]) { e.preventDefault(); f[f.length - 1].focus(); }
         else if (!e.shiftKey && document.activeElement === f[f.length - 1]) { e.preventDefault(); f[0].focus(); }
       }
     };
@@ -1276,8 +1298,8 @@
       text: S.compare.has(b.id) ? "Remove from compare" : "Add to compare",
       onclick: e => { S.compare.has(b.id) ? S.compare.delete(b.id) : S.compare.add(b.id); ls.set("compare", [...S.compare]); e.currentTarget.textContent = S.compare.has(b.id) ? "Remove from compare" : "Add to compare"; renderToolbar(); renderResults(); } });
     drawer(rank ? `Specimen No. ${pad2(rank)} of ${S.rank.size}` : "Specimen",
-      h("header", { class: "dossier-head" + (v === "all" && ill("seal", "Meets everything") ? " has-seal" : "") },
-        h("div", { class: "dossier-kicker" }, regionEmblem(regionOf(b), "sm"), h("span", { text: [a && a.name, regionOf(b)].filter(Boolean).join(" · ") })),
+      h("div", { class: "dossier-head" + (v === "all" && ill("seal", "Meets everything") ? " has-seal" : "") },
+        h("div", { class: "dossier-kicker" }, regionEmblem(regionOf(b), "sm"), h("span", { text: [a && a.name, a ? regionOf(b) : b.region].filter(Boolean).join(" · ") || "Neighborhood not set" })),
         h("h2", { class: "dossier-name", id: "drawerTitle", text: b.name }),
         b.address ? h("p", { class: "dossier-addr", text: b.address }) : null,
         h("div", { class: "dossier-verdict" },
@@ -1336,7 +1358,7 @@
     ].filter(([, x]) => x);
     const sc = areaScore(a);
     drawer("Atlas · " + a.region,
-      h("header", { class: "dossier-head area-head" },
+      h("div", { class: "dossier-head area-head" },
         regionEmblem(a.region, "lg"),
         h("div", { class: "dossier-kicker" }, h("span", { text: a.region })),
         h("h2", { class: "dossier-name", id: "drawerTitle", text: a.name })),
@@ -1360,14 +1382,16 @@
      Data (embedded; personal edits live in this browser)
      ========================================================================== */
   const DATA = JSON.parse(document.getElementById("data").textContent);
+  let EDITS = {};
   async function saveBuilding(b, isNew) {
     const i = S.buildings.findIndex(x => x.id === b.id);
     if (i >= 0) S.buildings[i] = b; else S.buildings.push(b);
-    const local = ls.get("edits", {});
-    local[b.id] = isNew ? b : { ...(local[b.id] || {}), my_status: b.my_status, my_note: b.my_note };
-    if (!ls.set("edits", local)) { toast("Couldn't save in this browser. Use Export to keep a copy."); }
+    // EDITS mirrors storage in memory, so Export still works when this browser blocks storage
+    EDITS[b.id] = isNew ? b : { ...(EDITS[b.id] || {}), my_status: b.my_status, my_note: b.my_note };
+    const ok = ls.set("edits", EDITS);
+    if (!ok) toast("This browser isn't saving changes. Use Export notes to keep a copy.");
     renderResults(); renderChips();
-    return true;
+    return ok;
   }
   function applyEdits(edits) {
     for (const [id, p] of Object.entries(edits || {})) {
@@ -1376,13 +1400,25 @@
       else if (p && p.name) S.buildings.push(p);
     }
   }
+  /* Research notes sometimes describe the research tooling rather than the place.
+     Reword those caveats for the reader; the facts and the gaps stay the same. */
+  const NOTE_FIXES = [
+    [/Neighborhood-level per-capita (\d{4}) rates could not be retrieved \(WebFetch was unavailable in this session and search results gave no neighborhood figures\); rates left null rather than invented\./g, "No neighborhood-level per-capita $1 crime rates were found, so none are shown."],
+    [/\(Drive times are agent estimates from typical Google-Maps-style patterns; no live routing tool was reachable\.\)/g, "(Drive times are estimates, not live routing.)"],
+  ];
+  const tidyNote = t => typeof t === "string" ? NOTE_FIXES.reduce((x, [re, to]) => x.replace(re, to), t) : t;
+  const tidyArea = a => { const o = { ...a }; for (const [k, v] of Object.entries(o)) if (v && typeof v === "object" && !Array.isArray(v) && typeof v.note === "string") o[k] = { ...v, note: tidyNote(v.note) }; return o; };
+  /* The build drops tooling remarks from location notes, which can orphan "expect ~100-200 m error." */
+  const tidyLoc = t => { if (typeof t !== "string" || !t) return t; t = t.replace(/^expect (~[\d-]+ m) error\.\s*/, "Map position is estimated (expect $1 error). ").replace(/\s+coordinates estimated from/g, " Coordinates estimated from"); return t.charAt(0).toUpperCase() + t.slice(1); };
   function setData(buildings, areas) {
+    areas = areas.map(tidyArea);
+    buildings = buildings.map(b => b.location_note ? { ...b, location_note: tidyLoc(b.location_note) } : b);
     S.areas = areas.slice().sort((a, b) => a.name.localeCompare(b.name));
     S.areaById = new Map(S.areas.map(a => [a.id, a]));
     S.buildings = buildings.map(b => ({ ...b })); S.loaded = true;
   }
   function exportEdits() {
-    const blob = new Blob([JSON.stringify({ app: "apartment-search-2027", exported: new Date().toISOString(), edits: ls.get("edits", {}), compare: [...S.compare] }, null, 1)], { type: "application/json" });
+    const blob = new Blob([JSON.stringify({ app: "apartment-search-2027", exported: new Date().toISOString(), edits: EDITS, compare: [...S.compare] }, null, 1)], { type: "application/json" });
     const a = h("a", { href: URL.createObjectURL(blob), download: "apartment-search-notes-" + new Date().toISOString().slice(0, 10) + ".json" });
     document.body.append(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 500);
     toast("Notes exported");
@@ -1393,7 +1429,7 @@
       try {
         const d = JSON.parse(r.result);
         if (!d || typeof d.edits !== "object") throw new Error("bad file");
-        const merged = Object.assign(ls.get("edits", {}), d.edits);
+        const merged = Object.assign(EDITS, d.edits);
         ls.set("edits", merged);
         setData(DATA.buildings, DATA.neighborhoods); applyEdits(merged);
         if (Array.isArray(d.compare)) { S.compare = new Set(d.compare); ls.set("compare", d.compare); }
@@ -1403,6 +1439,7 @@
     r.readAsText(file);
   }
   $("exportBtn").addEventListener("click", exportEdits);
+  $("importBtn").addEventListener("click", () => $("importFile").click());
   $("importFile").addEventListener("change", e => { if (e.target.files[0]) importEdits(e.target.files[0]); e.target.value = ""; });
 
   /* The masthead engraving draws itself once (~1.2s), then stays still.
@@ -1447,7 +1484,8 @@
     renderArt();
     renderDates();
     setData(DATA.buildings, DATA.neighborhoods);
-    applyEdits(ls.get("edits", {}));
+    EDITS = ls.get("edits", {}) || {};
+    applyEdits(EDITS);
     S.canWrite = true;
     $("dataDate").textContent = "Data updated " + DATA.updated;
     $("mastDate").textContent = "Updated " + DATA.updated;

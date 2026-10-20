@@ -18,7 +18,11 @@ browser; use Export / Import at the bottom of the page to back them up or move t
 
 ## Files
 - `Apartment-Search-2027.html` — the standalone tool (generated; do not edit by hand).
-- `app.template.html` — the tool's source; `scripts/build_html.py` embeds the data into it.
+- `src/` — the tool's source (`index.html`, `styles.css`, `app.js`, `map.js`, `illustrations.js`);
+  `scripts/build_html.py` inlines it with `data/*.json`. Design direction: `DESIGN_BRIEF.md`.
+- `data/geo.json` — map layers, built by `scripts/build_geo.py` (OSM coastline, L.A. Times neighborhoods,
+  Natural Earth freeways/rail). `scripts/check.mjs` screenshots and checks the built file.
+- `screenshots/` — current look of every view.
 - `data/buildings.json`, `data/neighborhoods.json` — merged data the app loads.
 - `data/prior/` — the Oct 14 2026 search from the earlier chat.
 - `data/research/` — raw research: neighborhood reports (`out_*`), requirement checks (`verified_*`),

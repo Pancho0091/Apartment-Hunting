@@ -60,6 +60,7 @@
   <div class="sheet-scrim" id="sheetScrim" hidden></div>
 
   <main class="main" id="results">
+    <h2 class="sr" id="resultsTitle">Listings</h2>
     <div class="toolbar-sentinel" id="toolbarSentinel" aria-hidden="true"></div>
     <div class="toolbar">
       <div class="seg" role="group" aria-label="View" id="views"></div>
@@ -70,11 +71,11 @@
         </button>
         <div class="density" id="density" role="group" aria-label="Layout"></div>
         <label class="sortctl"><span class="mono-label">Sort</span>
-          <select class="select" id="sort"></select>
+          <select class="select" id="sort" aria-label="Sort"></select>
         </label>
       </div>
     </div>
-    <section id="view" class="view" aria-live="polite"></section>
+    <section id="view" class="view" aria-labelledby="resultsTitle"></section>
   </main>
 </div>
 
@@ -86,7 +87,7 @@
       <p class="colophon-note">Your statuses, notes and added listings are saved in this browser.</p>
       <div class="colophon-actions">
         <button class="btn ghost sm" id="exportBtn" type="button">Export notes</button>
-        <label class="btn ghost sm" for="importFile">Import notes</label>
+        <button class="btn ghost sm" id="importBtn" type="button">Import notes</button>
         <input id="importFile" type="file" accept="application/json,.json" hidden>
       </div>
     </div>
