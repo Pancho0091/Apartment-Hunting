@@ -1,5 +1,7 @@
 (() => {
-  /* ---------------- Facts from the renewal letter ---------------- */
+  /* ==========================================================================
+     Facts from the renewal letter
+     ========================================================================== */
   const JAYNE = { allIn: 2726.83 };
   const DATES = [
     { label: "Renewal offer expires", date: "2026-11-13" },
@@ -8,7 +10,9 @@
   ];
   const RENT_CAP = 2300, MIN_SQFT = 700;
 
-  /* ---------------- Scoring model ---------------- */
+  /* ==========================================================================
+     Scoring model
+     ========================================================================== */
   const FACTORS = [
     { key: "drive",  name: "Freeway and traffic",  parts: ["freeway", "traffic"], def: 30 },
     { key: "coffee", name: "Coffee and walking",   parts: ["coffee", "walk"], def: 30 },
@@ -20,10 +24,10 @@
   const REP = { key: "rep", name: "Building reviews", def: 20 };
   const REQS = [
     { key: "wd", short: "W/D", name: "In-unit washer/dryer" },
-    { key: "ac", short: "Central AC", name: "Central AC" },
-    { key: "dw", short: "Dishwasher", name: "Dishwasher" },
+    { key: "ac", short: "AC", name: "Central AC" },
+    { key: "dw", short: "DW", name: "Dishwasher" },
     { key: "parking", short: "Parking", name: "Parking" },
-    { key: "packages", short: "Packages", name: "Package handling" },
+    { key: "packages", short: "Pkgs", name: "Package handling" },
   ];
   const REVIEW_PARTS = [["management", "Management"], ["maintenance", "Maintenance"], ["cleanliness", "Cleanliness"], ["noise", "Noise"], ["security", "Security"], ["pests", "Pests"], ["costs", "Fees and renewals"]];
   const STATUSES = [{ key: "new", name: "Not reviewed" }, { key: "watch", name: "Watching" }, { key: "tour", name: "Tour" }, { key: "applied", name: "Applied" }, { key: "pass", name: "Passed on" }];
@@ -31,9 +35,12 @@
   const VERDICTS = { all: "Meets everything", check: "Needs checks", fail: "Fails something" };
   const LANDLORDS = { company: "Management company", private: "Private owner" };
   const SORTS = [["score", "Best match"], ["value", "Best match per dollar"], ["rent", "Lowest rent"], ["sqft", "Largest"], ["ppsf", "Lowest $/sq ft"], ["reviews", "Best reviewed"], ["name", "Name"]];
-  const VIEWS = [["list", "List"], ["table", "Table"], ["map", "Map"], ["areas", "Neighborhoods"], ["compare", "Compare"], ["add", "Add"]];
+  const VIEWS = [["list", "Specimens"], ["table", "Table"], ["map", "Map"], ["areas", "Neighborhoods"], ["compare", "Compare"], ["add", "Add"]];
+  const ROMAN = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"];
 
-  /* ---------------- Persistence for filters ---------------- */
+  /* ==========================================================================
+     Persistence
+     ========================================================================== */
   const ls = {
     get(k, d) { try { const v = localStorage.getItem("aps27b:" + k); return v == null ? d : JSON.parse(v); } catch { return d; } },
     set(k, v) { try { localStorage.setItem("aps27b:" + k, JSON.stringify(v)); return true; } catch { return false; } },
@@ -43,27 +50,34 @@
     regions: REGIONS.slice(), verdicts: ["all", "check"], landlords: ["company", "private"],
     statuses: ["new", "watch", "tour", "applied"], mustHave: [], hideScam: true, newOnly: false,
   };
+  const freshFilters = () => JSON.parse(JSON.stringify(DEFAULT_FILTERS));
   const defaultWeights = Object.fromEntries(FACTORS.concat(REP).map(f => [f.key, f.def]));
   const S = {
     buildings: [], areas: [], areaById: new Map(),
-    f: Object.assign({}, DEFAULT_FILTERS, ls.get("filters", {})),
+    f: Object.assign(freshFilters(), ls.get("filters", {})),
     weights: Object.assign({}, defaultWeights, ls.get("weights", {})),
     q: "", view: ls.get("view", "list"), sort: ls.get("sort", "score"),
+    density: ls.get("density", "cards"),
     tsort: ls.get("tsort", { key: "score", dir: -1 }),
     compare: new Set(ls.get("compare", [])),
+    rank: new Map(),
     db: null, canWrite: false, loaded: false,
   };
+  if (!VIEWS.some(([k]) => k === S.view)) S.view = "list";
   const saveF = () => ls.set("filters", S.f);
 
-  /* ---------------- Helpers ---------------- */
+  /* ==========================================================================
+     Helpers
+     ========================================================================== */
   function h(tag, attrs, ...kids) {
     const el = document.createElement(tag);
     if (attrs) for (const [k, v] of Object.entries(attrs)) {
       if (v == null || v === false) continue;
       if (k === "class") el.className = v;
-      else if (k === "style" && typeof v === "object") Object.assign(el.style, v);
+      else if (k === "style" && typeof v === "object") { for (const [sk, sv] of Object.entries(v)) sk.startsWith("--") ? el.style.setProperty(sk, sv) : (el.style[sk] = sv); }
       else if (k.startsWith("on")) el.addEventListener(k.slice(2), v);
       else if (k === "text") el.textContent = v;
+      else if (k === "html") el.innerHTML = v;
       else el.setAttribute(k, v === true ? "" : v);
     }
     for (const kid of kids.flat()) if (kid != null && kid !== false) el.append(kid instanceof Node ? kid : document.createTextNode(String(kid)));
@@ -72,11 +86,44 @@
   const $ = id => document.getElementById(id);
   const money = n => n == null || isNaN(n) ? "—" : "$" + Math.round(n).toLocaleString("en-US");
   const f1 = n => n == null || isNaN(n) ? "—" : (Math.round(n * 10) / 10).toFixed(1);
-  const toast = msg => { const t = h("div", { class: "toast", role: "status", text: msg }); document.body.append(t); setTimeout(() => t.remove(), 2400); };
-  const linkOut = (url, text) => url ? h("a", { href: url, target: "_blank", rel: "noopener", text: text || url }) : null;
-  const ul = items => items && items.length ? h("ul", null, ...items.map(t => h("li", { text: t }))) : null;
+  const pad2 = n => String(n).padStart(2, "0");
+  const plural = (n, one, many) => `${n} ${n === 1 ? one : (many || one + "s")}`;
+  const linkOut = (url, text) => url ? h("a", { href: url, target: "_blank", rel: "noopener", text: text || prettyUrl(url) }) : null;
+  const prettyUrl = u => { try { const x = new URL(u); return x.hostname.replace(/^www\./, "") + (x.pathname.length > 1 ? x.pathname.replace(/\/$/, "") : ""); } catch { return u; } };
+  const ul = (items, cls) => items && items.length ? h("ul", { class: cls || "plainlist" }, ...items.map(t => h("li", { text: t }))) : null;
+  const reduceMotion = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function toast(msg) {
+    const t = h("div", { class: "toast", role: "status", text: msg });
+    document.body.append(t);
+    requestAnimationFrame(() => t.classList.add("in"));
+    setTimeout(() => { t.classList.remove("in"); setTimeout(() => t.remove(), 300); }, 2400);
+  }
 
-  /* ---------------- Derived values ---------------- */
+  /* Illustrations: window.Illus is owned by the illustration pass. Every call is defensive and memoized. */
+  const illCache = new Map();
+  function ill(fn, ...args) {
+    const key = fn + "|" + JSON.stringify(args);
+    if (illCache.has(key)) return illCache.get(key);
+    let out = "";
+    try { const I = window.Illus; if (I && typeof I[fn] === "function") out = String(I[fn](...args) || ""); } catch (e) { out = ""; }
+    if (out && !/<svg[\s>]/i.test(out)) out = "";
+    illCache.set(key, out);
+    return out;
+  }
+  const art = (cls, markup) => markup ? h("span", { class: "art " + cls, "aria-hidden": "true", html: markup }) : null;
+  const reqIcon = key => art("ico-req", ill("req", key));
+  const factorIcon = key => art("ico-factor", ill("factor", key));
+  const regionEmblem = (name, cls) => art("emblem " + (cls || ""), ill("region", name));
+  function jar(s, cls) {
+    const v = s == null ? 0 : Math.max(0, Math.min(1, s / 10));
+    const m = ill("jar", Math.round(v * 20) / 20, { tint: "green" });
+    return m ? art("jar " + (cls || ""), m) : h("span", { class: "meter " + (cls || ""), "aria-hidden": "true" }, h("i", { style: { "--w": v * 100 + "%" } }));
+  }
+  const seal = () => art("seal", ill("seal", "Meets everything"));
+
+  /* ==========================================================================
+     Derived values
+     ========================================================================== */
   const factorScore = (a, f) => { const v = f.parts.map(p => a && a[p] && Number(a[p].score)).filter(x => typeof x === "number" && !isNaN(x)); return v.length ? v.reduce((s, x) => s + x, 0) / v.length : null; };
   function areaScore(a) {
     if (!a) return null; let t = 0, w = 0;
@@ -99,9 +146,18 @@
     if ((b.sqft != null && b.sqft < MIN_SQFT) || (rent != null && rent > RENT_CAP) || v.includes("no")) return "fail";
     return v.every(x => x === "yes") ? "all" : "check";
   }
+  function failReasons(b) {
+    const out = [], rent = rentOf(b);
+    if (b.sqft != null && b.sqft < MIN_SQFT) out.push(`Under ${MIN_SQFT} sq ft`);
+    if (rent != null && rent > RENT_CAP) out.push(`Over ${money(RENT_CAP)}`);
+    for (const r of REQS) if (reqVal(b, r.key) === "no") out.push("No " + r.name.charAt(0).toLowerCase() + r.name.slice(1));
+    return out;
+  }
   const regionOf = b => { const a = S.areaById.get(b.area_id); return (a && a.region) || b.region || "Los Angeles"; };
   const areaName = b => { const a = S.areaById.get(b.area_id); return a ? a.name : ""; };
   const isNew = b => b.batch === "new-oct15" || b.batch === "private-oct15";
+  const statusName = k => (STATUSES.find(s => s.key === (k || "new")) || STATUSES[0]).name;
+  const savingsOf = b => { const c = allIn(b); return c == null ? null : JAYNE.allIn - c; };
 
   function haystack(b) {
     const r = b.reviews || {};
@@ -109,8 +165,8 @@
       r.management_company, b.landlord === "private" ? "private owner condo" : "management company", b.hoa_amenities, b.my_note]
       .filter(Boolean).join(" ").toLowerCase();
   }
-  function matches(b) {
-    const f = S.f, rent = rentOf(b);
+  function matchesWith(b, f, q) {
+    const rent = rentOf(b);
     if (!f.regions.includes(regionOf(b))) return false;
     if (!f.verdicts.includes(verdict(b))) return false;
     if (!f.landlords.includes(b.landlord || "company")) return false;
@@ -121,9 +177,10 @@
     if (f.hideScam && b.scam_flags) return false;
     if (f.newOnly && !isNew(b)) return false;
     for (const k of f.mustHave) if (reqVal(b, k) !== "yes") return false;
-    if (S.q) { const hs = haystack(b); for (const t of S.q.split(/\s+/)) if (t && !hs.includes(t)) return false; }
+    if (q) { const hs = haystack(b); for (const t of q.split(/\s+/)) if (t && !hs.includes(t)) return false; }
     return true;
   }
+  const matches = b => matchesWith(b, S.f, S.q);
   function sorted(list) {
     const k = S.sort;
     const key = {
@@ -133,148 +190,325 @@
     return list.slice().sort((a, b) => { const x = key(a), y = key(b); return x < y ? -1 : x > y ? 1 : (rentOf(a) ?? 0) - (rentOf(b) ?? 0); });
   }
   const visible = () => sorted(S.buildings.filter(matches));
+  const median = xs => { const v = xs.filter(x => x != null).sort((a, b) => a - b); if (!v.length) return null; const m = v.length >> 1; return v.length % 2 ? v[m] : (v[m - 1] + v[m]) / 2; };
 
-  /* ---------------- Header ---------------- */
+  /* ==========================================================================
+     Masthead: deadlines + summary ledger
+     ========================================================================== */
   function renderDates() {
     const today = new Date(); today.setHours(0, 0, 0, 0);
-    $("dates").replaceChildren(...DATES.map(d => {
+    $("dates").replaceChildren(...DATES.map((d, i) => {
       const dt = new Date(d.date + "T00:00:00"), days = Math.round((dt - today) / 864e5);
-      return h("div", { class: "date" + (days >= 0 && days <= 21 ? " soon" : "") },
-        h("b", { text: days >= 0 ? days + " days" : "Passed" }),
-        h("span", { text: d.label + " · " + dt.toLocaleDateString("en-US", { month: "short", day: "numeric" }) }));
+      const tone = days < 0 ? "past" : days <= 14 ? "urgent" : days <= 30 ? "soon" : "calm";
+      const span = Math.max(0, Math.min(1, days / 120));
+      return h("li", { class: "deadline " + tone },
+        h("div", { class: "deadline-top" }, h("span", { class: "deadline-no", text: "No. " + ROMAN[i] }), h("span", { class: "deadline-date", text: dt.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }) })),
+        h("p", { class: "deadline-days" }, days >= 0 ? h("b", { text: days }) : h("b", { text: "—" }), h("span", { text: days >= 0 ? (days === 1 ? " day" : " days") : " passed" })),
+        h("p", { class: "deadline-label", text: d.label }),
+        h("span", { class: "measure", "aria-hidden": "true", style: { "--p": (span * 100).toFixed(1) + "%" } }));
     }));
-    $("baseline").textContent = `Renewing at The Jayne costs ${money(JAYNE.allIn)}/mo all-in`;
+  }
+  function renderStats(list) {
+    const meet = list.filter(b => verdict(b) === "all").length;
+    const med = median(list.map(rentOf));
+    const top = list.find(b => verdict(b) !== "fail") || list[0];
+    const cell = (label, value, sub, extra) => h("div", { class: "ledger-cell" + (extra ? " " + extra : "") }, h("dt", { text: label }), h("dd", null, value, sub ? h("small", { text: sub }) : null));
+    $("stats").replaceChildren(
+      cell("In view", h("b", { text: S.loaded ? list.length : "—" }), S.loaded ? `of ${S.buildings.length} listings` : ""),
+      cell("Meet everything", h("b", { text: meet }), "all five confirmed"),
+      cell("Median rent", h("b", { text: money(med) }), "per month, in view"),
+      cell("Renewal baseline", h("b", { text: "$" + JAYNE.allIn.toLocaleString("en-US", { minimumFractionDigits: 2 }) }), "The Jayne, all-in"),
+      cell("Top pick", top ? h("button", { class: "toppick", type: "button", onclick: () => openBuilding(top) }, h("b", { text: top.name }), h("span", { class: "arrow", "aria-hidden": "true", text: "→" })) : h("b", { text: "—" }),
+        top ? [areaName(top), money(rentOf(top)), "match " + f1(score(top))].filter(Boolean).join(" · ") : "", "wide"));
   }
 
-  /* ---------------- Filters ---------------- */
-  function counts(keyFn) { const m = {}; for (const b of S.buildings) { const k = keyFn(b); m[k] = (m[k] || 0) + 1; } return m; }
-  function checkList(id, items, arr, onChange, countMap) {
-    return h("div", { class: "checks" }, ...items.map(([key, name]) => {
-      const cid = id + "-" + key;
-      return h("label", { class: "check", for: cid },
-        h("input", { type: "checkbox", id: cid, checked: arr.includes(key), onchange: e => { onChange(key, e.target.checked); } }),
-        name, countMap ? h("small", { text: countMap[key] || 0 }) : null);
+  /* ==========================================================================
+     Quick filter chips
+     ========================================================================== */
+  const sameSet = (a, b) => a.length === b.length && a.every(x => b.includes(x));
+  const CHIPS = [
+    { k: "all", t: "Meets everything", on: f => sameSet(f.verdicts, ["all"]), set: (f, on) => { f.verdicts = on ? ["all"] : DEFAULT_FILTERS.verdicts.slice(); } },
+    { k: "ac", t: "Central AC confirmed", on: f => f.mustHave.includes("ac"), set: (f, on) => toggleIn(f.mustHave, "ac", on) },
+    { k: "wd", t: "Washer/dryer confirmed", on: f => f.mustHave.includes("wd"), set: (f, on) => toggleIn(f.mustHave, "wd", on) },
+    { k: "private", t: "Private owner", on: f => sameSet(f.landlords, ["private"]), set: (f, on) => { f.landlords = on ? ["private"] : ["company", "private"]; } },
+    { k: "cheap", t: "Under $2,100", on: f => f.maxRent <= 2100, set: (f, on) => { f.maxRent = on ? 2100 : RENT_CAP; } },
+    { k: "rep", t: "Best reviewed", note: "7+", on: f => f.minRep >= 7, set: (f, on) => { f.minRep = on ? 7 : 0; } },
+    { k: "new", t: "Recent finds", on: f => f.newOnly, set: (f, on) => { f.newOnly = on; } },
+  ];
+  function renderChips() {
+    $("chips").replaceChildren(...CHIPS.map(c => {
+      const on = c.on(S.f);
+      const trial = JSON.parse(JSON.stringify(S.f)); c.set(trial, !on);
+      const n = S.buildings.filter(b => matchesWith(b, trial, S.q)).length;
+      return h("button", { type: "button", class: "chip" + (on ? " on" : ""), "aria-pressed": on ? "true" : "false",
+        title: on ? "Remove this filter" : `Show ${n} listing${n === 1 ? "" : "s"}`,
+        onclick: () => { c.set(S.f, !on); saveF(); renderFilters(); renderResults(); } },
+        h("span", { class: "chip-mark", "aria-hidden": "true" }),
+        c.t, c.note ? h("span", { class: "chip-note", text: c.note }) : null,
+        h("span", { class: "chip-n", text: on ? "×" : n, "aria-hidden": "true" }));
     }));
   }
+
+  /* ==========================================================================
+     Filters sidebar
+     ========================================================================== */
+  function counts(keyFn) { const m = {}; for (const b of S.buildings) { const k = keyFn(b); m[k] = (m[k] || 0) + 1; } return m; }
   function toggleIn(arr, key, on) { const i = arr.indexOf(key); if (on && i < 0) arr.push(key); if (!on && i >= 0) arr.splice(i, 1); }
-  function group(title, open, ...body) {
-    return h("details", { class: "fgroup", open: open || null }, h("summary", null, h("span", { class: "label", text: title })), ...body);
+  function activeFilterCount() {
+    const f = S.f, d = DEFAULT_FILTERS; let n = 0;
+    if (f.maxRent !== d.maxRent) n++; if (f.minSqft !== d.minSqft) n++; if (f.minRep !== d.minRep) n++;
+    for (const k of ["regions", "verdicts", "landlords", "statuses"]) if (!sameSet(f[k], d[k])) n++;
+    n += f.mustHave.length; if (f.hideScam !== d.hideScam) n++; if (f.newOnly) n++;
+    return n;
   }
+  function tagList(id, items, arr, onChange, countMap, iconFn) {
+    return h("div", { class: "tagchecks" }, ...items.map(([key, name]) => {
+      const cid = id + "-" + key;
+      return h("label", { class: "tagcheck", for: cid },
+        h("input", { type: "checkbox", id: cid, checked: arr.includes(key), onchange: e => onChange(key, e.target.checked) }),
+        iconFn ? iconFn(key) : null,
+        h("span", { class: "tagcheck-name", text: name }),
+        countMap ? h("span", { class: "tagcheck-n", text: countMap[key] || 0 }) : null);
+    }));
+  }
+  function toggleRow(id, label, checked, n, onChange) {
+    return h("label", { class: "switch", for: id },
+      h("input", { type: "checkbox", role: "switch", id, checked, onchange: e => onChange(e.target.checked) }),
+      h("span", { class: "switch-track", "aria-hidden": "true" }),
+      h("span", { class: "switch-name", text: label }), h("span", { class: "tagcheck-n", text: n }));
+  }
+  function range(id, label, min, max, step, value, fmt, onInput, ends) {
+    const out = h("output", { for: id, text: fmt(value) });
+    const pct = v => ((v - min) / (max - min) * 100).toFixed(2) + "%";
+    const input = h("input", { type: "range", class: "range", id, min, max, step, value, style: { "--p": pct(value) },
+      oninput: e => { const v = +e.target.value; e.target.style.setProperty("--p", pct(v)); out.textContent = fmt(v); onInput(v); } });
+    return h("div", { class: "rangefield" },
+      h("div", { class: "rangefield-head" }, h("label", { for: id, text: label }), out),
+      input,
+      ends ? h("div", { class: "rangefield-ends", "aria-hidden": "true" }, h("span", { text: ends[0] }), h("span", { text: ends[1] })) : null);
+  }
+  function group(title, open, ...body) {
+    return h("details", { class: "fgroup", open: open || null },
+      h("summary", null, h("span", { class: "fgroup-title", text: title }), h("span", { class: "fgroup-caret", "aria-hidden": "true" })),
+      h("div", { class: "fgroup-body" }, ...body));
+  }
+  let lightRefresh = 0;
+  function refreshFromRange() { saveF(); cancelAnimationFrame(lightRefresh); lightRefresh = requestAnimationFrame(() => { renderResults(); renderChips(); updateBadge(); }); }
   function renderFilters() {
     const f = S.f;
     const rerender = () => { saveF(); renderFilters(); renderResults(); };
-    const rentOut = h("output", { for: "f-rent", text: money(f.maxRent) });
-    const sqOut = h("output", { for: "f-sqft", text: f.minSqft + " sq ft" });
-    const repOut = h("output", { for: "f-rep", text: f.minRep ? f.minRep + "+ / 10" : "Any" });
     const totalW = FACTORS.concat(REP).reduce((t, x) => t + (Number(S.weights[x.key]) || 0), 0) || 1;
+    const nActive = activeFilterCount();
+    const openState = id => { const el = document.querySelector(`#filters details[data-g="${id}"]`); return el ? el.open : null; };
+    const g = (id, title, defOpen, ...body) => { const st = openState(id); const d = group(title, st == null ? defOpen : st, ...body); d.dataset.g = id; return d; };
     $("filters").replaceChildren(
-      h("div", { class: "fgroup" },
-        h("div", { class: "fhead" }, h("label", { class: "label", for: "f-rent", text: "Max rent" }), rentOut),
-        h("input", { type: "range", id: "f-rent", min: 1500, max: 2600, step: 25, value: f.maxRent, oninput: e => { f.maxRent = +e.target.value; rentOut.textContent = money(f.maxRent); saveF(); renderResults(); } }),
-        h("div", { class: "fhead" }, h("label", { class: "label", for: "f-sqft", text: "Min size" }), sqOut),
-        h("input", { type: "range", id: "f-sqft", min: 600, max: 1000, step: 10, value: f.minSqft, oninput: e => { f.minSqft = +e.target.value; sqOut.textContent = f.minSqft + " sq ft"; saveF(); renderResults(); } }),
-        h("div", { class: "fhead" }, h("label", { class: "label", for: "f-rep", text: "Min review score" }), repOut),
-        h("input", { type: "range", id: "f-rep", min: 0, max: 9, step: 1, value: f.minRep, oninput: e => { f.minRep = +e.target.value; repOut.textContent = f.minRep ? f.minRep + "+ / 10" : "Any"; saveF(); renderResults(); } }),
-      ),
-      group("Must be confirmed", true,
-        checkList("mh", REQS.map(r => [r.key, r.name]), f.mustHave, (k, on) => { toggleIn(f.mustHave, k, on); rerender(); }, Object.fromEntries(REQS.map(r => [r.key, S.buildings.filter(b => reqVal(b, r.key) === "yes").length])))),
-      group("Region", true,
-        checkList("rg", REGIONS.map(r => [r, r]), f.regions, (k, on) => { toggleIn(f.regions, k, on); rerender(); }, counts(regionOf))),
-      group("Requirements", true,
-        checkList("vd", Object.entries(VERDICTS), f.verdicts, (k, on) => { toggleIn(f.verdicts, k, on); rerender(); }, counts(verdict))),
-      group("Landlord", true,
-        checkList("ll", Object.entries(LANDLORDS), f.landlords, (k, on) => { toggleIn(f.landlords, k, on); rerender(); }, counts(b => b.landlord || "company")),
-        h("label", { class: "check", for: "f-scam" }, h("input", { type: "checkbox", id: "f-scam", checked: f.hideScam, onchange: e => { f.hideScam = e.target.checked; rerender(); } }), "Hide likely scams", h("small", { text: S.buildings.filter(b => b.scam_flags).length })),
-        h("label", { class: "check", for: "f-new" }, h("input", { type: "checkbox", id: "f-new", checked: f.newOnly, onchange: e => { f.newOnly = e.target.checked; rerender(); } }), "Only recent finds", h("small", { text: S.buildings.filter(isNew).length }))),
-      group("My status", false,
-        checkList("st", STATUSES.map(s => [s.key, s.name]), f.statuses, (k, on) => { toggleIn(f.statuses, k, on); rerender(); }, counts(b => b.my_status || "new"))),
-      group("Ranking weights", false,
-        h("p", { class: "muted", style: { fontSize: ".84rem" }, text: "How much each factor counts toward Best match." }),
-        ...FACTORS.concat(REP).map(x => {
-          const id = "w-" + x.key, out = h("output", { for: id, text: Math.round((S.weights[x.key] || 0) / totalW * 100) + "%" });
-          return h("div", { style: { display: "grid", gap: "2px" } },
-            h("div", { class: "fhead" }, h("label", { for: id, style: { fontSize: ".9rem" }, text: x.name }), out),
-            h("input", { type: "range", id, min: 0, max: 50, value: S.weights[x.key] || 0, oninput: e => { S.weights[x.key] = +e.target.value; ls.set("weights", S.weights); renderFilters(); renderResults(); } }));
-        }),
+      h("div", { class: "filters-head" },
+        h("p", { class: "mono-label" }, "Refine", h("span", { class: "filters-active", id: "filtersActive", text: nActive ? ` · ${nActive} active` : "" })),
+        h("button", { class: "linkbtn", id: "clearAll", type: "button", disabled: !nActive && !S.q, text: "Clear all", onclick: clearAll })),
+      h("div", { class: "fgroup fgroup-flat" },
+        range("f-rent", "Max rent", 1500, 2600, 25, f.maxRent, money, v => { f.maxRent = v; refreshFromRange(); }, ["$1,500", "$2,600"]),
+        range("f-sqft", "Min size", 600, 1000, 10, f.minSqft, v => v + " sq ft", v => { f.minSqft = v; refreshFromRange(); }, ["600", "1,000 sq ft"]),
+        range("f-rep", "Min review score", 0, 9, 1, f.minRep, v => v ? v + "+ / 10" : "Any", v => { f.minRep = v; refreshFromRange(); }, ["Any", "9 / 10"])),
+      g("must", "Must be confirmed", true,
+        tagList("mh", REQS.map(r => [r.key, r.name]), f.mustHave, (k, on) => { toggleIn(f.mustHave, k, on); rerender(); },
+          Object.fromEntries(REQS.map(r => [r.key, S.buildings.filter(b => reqVal(b, r.key) === "yes").length])), k => reqIcon(k) || h("span", { class: "ico-fallback", "aria-hidden": "true" }))),
+      g("region", "Region", true,
+        tagList("rg", REGIONS.map(r => [r, r]), f.regions, (k, on) => { toggleIn(f.regions, k, on); rerender(); }, counts(regionOf))),
+      g("verdict", "Requirements", true,
+        tagList("vd", Object.entries(VERDICTS), f.verdicts, (k, on) => { toggleIn(f.verdicts, k, on); rerender(); }, counts(verdict), k => h("span", { class: "vdot " + k, "aria-hidden": "true" }))),
+      g("landlord", "Landlord", true,
+        tagList("ll", Object.entries(LANDLORDS), f.landlords, (k, on) => { toggleIn(f.landlords, k, on); rerender(); }, counts(b => b.landlord || "company")),
+        h("div", { class: "switches" },
+          toggleRow("f-scam", "Hide likely scams", f.hideScam, S.buildings.filter(b => b.scam_flags).length, on => { f.hideScam = on; rerender(); }),
+          toggleRow("f-new", "Only recent finds", f.newOnly, S.buildings.filter(isNew).length, on => { f.newOnly = on; rerender(); }))),
+      g("status", "My status", false,
+        tagList("st", STATUSES.map(s => [s.key, s.name]), f.statuses, (k, on) => { toggleIn(f.statuses, k, on); rerender(); }, counts(b => b.my_status || "new"))),
+      g("weights", "Ranking weights", false,
+        h("p", { class: "hint", text: "How much each factor counts toward Best match." }),
+        h("div", { class: "weights" }, ...FACTORS.concat(REP).map(x => {
+          const id = "w-" + x.key, share = Math.round((S.weights[x.key] || 0) / totalW * 100);
+          return h("div", { class: "weight" },
+            h("div", { class: "rangefield-head" }, h("label", { for: id }, factorIcon(x.key), h("span", { text: x.name })), h("output", { for: id, "data-w": x.key, text: share + "%" })),
+            h("input", { type: "range", class: "range thin", id, min: 0, max: 50, value: S.weights[x.key] || 0, style: { "--p": ((S.weights[x.key] || 0) / 50 * 100) + "%" },
+              oninput: e => {
+                S.weights[x.key] = +e.target.value; e.target.style.setProperty("--p", (+e.target.value / 50 * 100) + "%"); ls.set("weights", S.weights);
+                const tw = FACTORS.concat(REP).reduce((t, y) => t + (Number(S.weights[y.key]) || 0), 0) || 1;
+                document.querySelectorAll("#filters output[data-w]").forEach(o => { o.textContent = Math.round((S.weights[o.dataset.w] || 0) / tw * 100) + "%"; });
+                cancelAnimationFrame(lightRefresh); lightRefresh = requestAnimationFrame(() => renderResults());
+              } }));
+        })),
         h("button", { class: "linkbtn", type: "button", text: "Reset weights", onclick: () => { S.weights = Object.assign({}, defaultWeights); ls.set("weights", S.weights); renderFilters(); renderResults(); } })),
-      h("div", { class: "fgroup" }, h("button", { class: "linkbtn", type: "button", text: "Clear all filters", onclick: () => { S.f = JSON.parse(JSON.stringify(DEFAULT_FILTERS)); S.q = ""; $("q").value = ""; rerender(); } })),
     );
+    renderChips();
+    updateBadge();
   }
+  function updateBadge() {
+    const n = activeFilterCount(), b = $("filterBadge");
+    if ($("filtersActive")) { $("filtersActive").textContent = n ? ` · ${n} active` : ""; $("clearAll").disabled = !n && !S.q; }
+    b.hidden = !n; b.textContent = n;
+    $("toggleFilters").setAttribute("aria-label", n ? `Filters, ${n} active` : "Filters");
+  }
+  function clearAll() { S.f = freshFilters(); S.q = ""; $("q").value = ""; saveF(); renderFilters(); renderResults(); toast("Filters cleared"); }
 
-  /* ---------------- Toolbar ---------------- */
+  /* Mobile filter sheet */
+  const sheetMQ = matchMedia("(max-width: 920px)");
+  function setSheet(open) {
+    const sb = $("sidebar"), scrim = $("sheetScrim");
+    document.documentElement.classList.toggle("sheet-open", open);
+    sb.classList.toggle("open", open);
+    $("toggleFilters").setAttribute("aria-expanded", open ? "true" : "false");
+    if (open) { scrim.hidden = false; requestAnimationFrame(() => scrim.classList.add("in")); setTimeout(() => $("closeFilters").focus(), 30); }
+    else { scrim.classList.remove("in"); setTimeout(() => { if (!sb.classList.contains("open")) scrim.hidden = true; }, 320); }
+  }
+  $("toggleFilters").addEventListener("click", () => setSheet(!$("sidebar").classList.contains("open")));
+  $("closeFilters").addEventListener("click", () => { setSheet(false); $("toggleFilters").focus(); });
+  $("applyFilters").addEventListener("click", () => { setSheet(false); $("results").scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); });
+  $("sheetScrim").addEventListener("click", () => setSheet(false));
+  sheetMQ.addEventListener("change", () => { if (!sheetMQ.matches) setSheet(false); });
+
+  /* ==========================================================================
+     Toolbar + search
+     ========================================================================== */
   function renderToolbar() {
-    $("views").replaceChildren(...VIEWS.map(([k, name]) => h("button", { type: "button", "data-view": k, "aria-pressed": S.view === k ? "true" : "false", text: name + (k === "compare" && S.compare.size ? ` (${S.compare.size})` : ""),
-      onclick: () => { S.view = k; ls.set("view", k); renderToolbar(); renderResults(); } })));
+    $("views").replaceChildren(...VIEWS.map(([k, name]) => h("button", { type: "button", class: "seg-btn", "data-view": k, "aria-pressed": S.view === k ? "true" : "false",
+      onclick: () => { S.view = k; ls.set("view", k); renderToolbar(); renderResults(); } },
+      name, k === "compare" && S.compare.size ? h("span", { class: "seg-n", text: S.compare.size }) : null)));
     $("sort").replaceChildren(...SORTS.map(([v, t]) => h("option", { value: v, selected: S.sort === v, text: t })));
     $("sort").disabled = !["list", "table"].includes(S.view);
+    $("sort").closest(".sortctl").hidden = !["list", "table"].includes(S.view);
+    const dens = $("density");
+    dens.hidden = S.view !== "list";
+    dens.replaceChildren(...[["cards", "Cards", "M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z"], ["rows", "Rows", "M4 6h16M4 12h16M4 18h16"]].map(([k, t, d]) =>
+      h("button", { type: "button", class: "iconbtn", "aria-pressed": S.density === k ? "true" : "false", "aria-label": t + " layout", title: t,
+        html: `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="${d}"/></svg>`,
+        onclick: () => { S.density = k; ls.set("density", k); renderToolbar(); renderResults(); } })));
   }
   $("sort").addEventListener("change", e => { S.sort = e.target.value; ls.set("sort", S.sort); renderResults(); });
-  let qTimer; $("q").addEventListener("input", e => { clearTimeout(qTimer); qTimer = setTimeout(() => { S.q = e.target.value.trim().toLowerCase(); renderResults(); }, 120); });
-  $("toggleFilters").addEventListener("click", e => {
-    const fl = $("filters"), open = fl.dataset.collapsed === "true";
-    fl.dataset.collapsed = open ? "false" : "true"; e.target.setAttribute("aria-expanded", open); e.target.textContent = open ? "Hide filters" : "Show filters";
+  let qTimer; $("q").addEventListener("input", e => { clearTimeout(qTimer); qTimer = setTimeout(() => { S.q = e.target.value.trim().toLowerCase(); renderResults(); renderChips(); updateBadge(); }, 120); });
+  $("q").addEventListener("keydown", e => { if (e.key === "Escape" && e.target.value) { e.stopPropagation(); e.target.value = ""; S.q = ""; renderResults(); renderChips(); } });
+  document.addEventListener("keydown", e => {
+    if (e.key !== "/" || e.metaKey || e.ctrlKey || e.altKey) return;
+    const t = e.target, tag = t && t.tagName;
+    if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT" || (t && t.isContentEditable)) return;
+    if ($("drawerRoot").childElementCount) return;
+    e.preventDefault();
+    const q = $("q"); q.focus({ preventScroll: true }); q.select();
+    q.closest(".searchband").scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" });
   });
 
-  /* ---------------- Shared bits ---------------- */
-  const reqTags = b => REQS.map(r => { const v = reqVal(b, r.key); return h("span", { class: "tag " + v, title: `${r.name}: ${v === "unclear" ? "not confirmed" : v}`, text: r.short + (v === "unclear" ? "?" : v === "no" ? " ✕" : "") }); });
-  const scoreBar = s => h("span", { class: "score", title: "Best-match score out of 10, using your ranking weights" }, "Match", h("i", { style: { "--w": s == null ? "0%" : s * 10 + "%" } }), h("b", { text: f1(s) }));
-  function savings(b) { const c = allIn(b); if (c == null) return null; const d = JAYNE.allIn - c; return h("span", { class: "save " + (d >= 0 ? "pos" : "neg"), text: (d >= 0 ? "Saves " : "Costs ") + money(Math.abs(d)) + "/mo" }); }
+  /* ==========================================================================
+     Shared listing bits
+     ========================================================================== */
+  const REQ_WORD = { yes: "Confirmed", no: "Missing", unclear: "Not confirmed" };
+  function reqRow(b, cls) {
+    return h("ul", { class: "reqs " + (cls || ""), "aria-label": "Requirements" }, ...REQS.map(r => {
+      const v = reqVal(b, r.key);
+      return h("li", { class: "req " + v, title: `${r.name}: ${REQ_WORD[v].toLowerCase()}` },
+        reqIcon(r.key) || h("span", { class: "req-glyph", "aria-hidden": "true", text: v === "yes" ? "✓" : v === "no" ? "✕" : "?" }),
+        h("span", { class: "req-name", text: r.short }),
+        h("span", { class: "sr", text: ": " + REQ_WORD[v].toLowerCase() }));
+    }));
+  }
+  function savingsEl(b, cls) {
+    const d = savingsOf(b); if (d == null) return null;
+    return h("span", { class: "save " + (d >= 0 ? "pos" : "neg") + (cls ? " " + cls : ""), title: "Rent plus parking, compared with renewing at The Jayne" },
+      h("span", { class: "save-k", text: d >= 0 ? "Saves" : "Costs" }), h("b", { text: money(Math.abs(d)) }), h("span", { class: "save-k", text: "/mo" }));
+  }
+  function flagTags(b, withStatus) {
+    return [
+      b.landlord === "private" ? h("span", { class: "tag", text: "Private owner" }) : null,
+      isNew(b) ? h("span", { class: "tag amber", text: "Recent find" }) : null,
+      b.scam_flags ? h("span", { class: "tag bad", title: b.scam_flags, text: "Scam risk" }) : null,
+      b.reviews && b.reviews.dealbreakers ? h("span", { class: "tag bad", title: b.reviews.dealbreakers, text: "Review red flags" }) : null,
+      withStatus && b.my_status && b.my_status !== "new" ? h("span", { class: "tag ink status-" + b.my_status, text: statusName(b.my_status) }) : null,
+    ].filter(Boolean);
+  }
+  const listingAttrs = b => ({ "data-listing": b.id, tabindex: 0, role: "button", "aria-label": "Open " + b.name,
+    onclick: () => openBuilding(b), onkeydown: e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openBuilding(b); } } });
 
-  /* ---------------- Views ---------------- */
+  /* ==========================================================================
+     Views: specimens (cards / rows)
+     ========================================================================== */
   function renderList(root, list) {
     if (!list.length) return root.append(emptyState());
-    root.append(h("div", { class: "list" }, ...list.map((b, i) => {
-      const v = verdict(b), rep = repScore(b);
-      return h("article", { class: "row" + (v === "fail" ? " fails" : ""), "data-listing": b.id, tabindex: 0, role: "button", "aria-label": "Open " + b.name,
-        onclick: () => openBuilding(b), onkeydown: e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openBuilding(b); } } },
-        h("span", { class: "rank", text: i + 1 }),
-        h("div", { style: { minWidth: 0 } },
-          h("h3", { text: b.name }),
-          h("p", { class: "where", text: [areaName(b), b.address].filter(Boolean).join(" · ") }),
-          h("div", { class: "facts" },
-            b.sqft ? h("span", null, h("b", { text: b.sqft }), " sq ft") : null,
-            ppsf(b) ? h("span", null, h("b", { text: "$" + ppsf(b).toFixed(2) }), " / sq ft") : null,
-            b.year_built ? h("span", null, "Built ", h("b", { text: b.year_built })) : null,
-            h("span", null, "Reviews ", h("b", { text: rep == null ? "—" : rep + "/10" })),
-            scoreBar(score(b))),
-          h("div", { class: "tags" },
-            v === "all" ? h("span", { class: "tag dark", text: "Meets everything" }) : null,
-            ...reqTags(b),
-            b.landlord === "private" ? h("span", { class: "tag", text: "Private owner" }) : null,
-            isNew(b) ? h("span", { class: "tag blue", text: "Recent find" }) : null,
-            b.scam_flags ? h("span", { class: "tag no", title: b.scam_flags, text: "Scam risk" }) : null,
-            b.reviews && b.reviews.dealbreakers ? h("span", { class: "tag no", title: b.reviews.dealbreakers, text: "Review red flags" }) : null,
-            b.my_status && b.my_status !== "new" ? h("span", { class: "tag blue", text: STATUSES.find(s => s.key === b.my_status).name }) : null)),
-        h("div", { class: "price" },
-          h("b", { text: money(rentOf(b)) }),
-          b.base_rent && rentOf(b) < b.base_rent ? h("s", { text: money(b.base_rent) + " list" }) : null,
-          savings(b)));
-    })));
+    if (S.density === "rows") return renderRows(root, list);
+    root.append(h("div", { class: "specimens" }, ...list.map((b, i) => specimenCard(b, i))));
+  }
+  function specimenCard(b, i) {
+    const v = verdict(b), rep = repScore(b), sc = score(b), p = ppsf(b), fails = v === "fail" ? failReasons(b) : [];
+    return h("article", { class: "specimen v-" + v, ...listingAttrs(b), style: { "--i": Math.min(i, 24) } },
+      h("div", { class: "specimen-frame" },
+        h("header", { class: "specimen-head" },
+          h("span", { class: "specimen-no" }, h("span", { class: "k", text: "No." }), pad2(i + 1)),
+          h("span", { class: "specimen-where" }, regionEmblem(regionOf(b), "sm"), h("span", { text: areaName(b) || regionOf(b) }))),
+        v === "all" ? (seal() || h("span", { class: "seal-fallback", text: "Meets everything" })) : null,
+        h("div", { class: "specimen-title" },
+          h("h3", { class: "specimen-name", text: b.name }),
+          h("p", { class: "specimen-addr", text: b.address || "Address not listed" })),
+        h("div", { class: "specimen-figures" },
+          h("div", { class: "fig fig-rent" },
+            h("span", { class: "fig-k" }, "Rent", b.base_rent && rentOf(b) < b.base_rent ? h("s", { title: "List rent before specials", text: money(b.base_rent) }) : null),
+            h("span", { class: "fig-v serif", text: money(rentOf(b)) })),
+          h("div", { class: "fig" }, h("span", { class: "fig-k", text: "Sq ft" }), h("span", { class: "fig-v", text: b.sqft ? Math.round(b.sqft) : "—" })),
+          h("div", { class: "fig" }, h("span", { class: "fig-k", text: "$/sq ft" }), h("span", { class: "fig-v", text: p ? p.toFixed(2) : "—" })),
+          h("div", { class: "fig" }, h("span", { class: "fig-k", text: "Reviews" }), h("span", { class: "fig-v", text: rep == null ? "—" : rep + "/10" }))),
+        reqRow(b),
+        fails.length ? h("p", { class: "specimen-fails", text: fails.join(" · ") }) : null,
+        h("footer", { class: "specimen-foot" },
+          h("div", { class: "match", title: "Best-match score out of 10, using your ranking weights" }, jar(sc), h("span", { class: "match-k", text: "Match" }), h("b", { class: "match-v", text: f1(sc) })),
+          savingsEl(b)),
+        (() => { const t = flagTags(b, true); return t.length ? h("div", { class: "tags" }, ...t) : null; })()));
+  }
+  function renderRows(root, list) {
+    root.append(h("div", { class: "rows", role: "list" },
+      h("div", { class: "rows-head", "aria-hidden": "true" }, ...["No.", "Specimen", "Requirements", "Rent", "Size", "Match", "vs. Jayne"].map(t => h("span", { text: t }))),
+      ...list.map((b, i) => {
+        const v = verdict(b), sc = score(b);
+        return h("article", { class: "rowitem v-" + v, ...listingAttrs(b) },
+          h("span", { class: "rowitem-no", text: pad2(i + 1) }),
+          h("div", { class: "rowitem-main" },
+            h("h3", { class: "rowitem-name" }, b.name, v === "all" ? h("span", { class: "tick", title: "Meets everything", text: " ●" }) : null),
+            h("p", { class: "rowitem-sub", text: [areaName(b), regionOf(b)].filter(Boolean).join(" · ") }),
+            (() => { const t = flagTags(b, true); return t.length ? h("div", { class: "tags sm" }, ...t) : null; })()),
+          reqRow(b, "compact"),
+          h("span", { class: "rowitem-rent", text: money(rentOf(b)) }),
+          h("span", { class: "rowitem-num rowitem-size", text: b.sqft ? Math.round(b.sqft) + " ft²" : "—" }),
+          h("span", { class: "rowitem-match" }, jar(sc, "xs"), h("b", { text: f1(sc) })),
+          savingsEl(b, "rowitem-save") || h("span", { class: "rowitem-num", text: "—" }));
+      })));
   }
 
+  /* ==========================================================================
+     Views: table
+     ========================================================================== */
   const TCOLS = [
-    { k: "name", t: "Building", v: b => b.name.toLowerCase(), cell: b => h("td", { class: "wrap" }, h("div", { style: { fontWeight: 500 }, text: b.name }), h("div", { class: "muted", style: { fontSize: ".8rem" }, text: areaName(b) })) },
-    { k: "rent", t: "Rent", num: true, v: rentOf, cell: b => h("td", { class: "num", text: money(rentOf(b)) }) },
-    { k: "sqft", t: "Sq ft", num: true, v: b => b.sqft, cell: b => h("td", { class: "num", text: b.sqft ?? "—" }) },
+    { k: "name", t: "Building", v: b => b.name.toLowerCase(), cell: b => h("td", { class: "t-name" }, h("span", { class: "t-title", text: b.name }), h("span", { class: "t-sub", text: areaName(b) || regionOf(b) })) },
+    { k: "rent", t: "Rent", num: true, v: rentOf, cell: b => h("td", { class: "num strong", text: money(rentOf(b)) }) },
+    { k: "sqft", t: "Sq ft", num: true, v: b => b.sqft, cell: b => h("td", { class: "num", text: b.sqft != null ? Math.round(b.sqft) : "—" }) },
     { k: "ppsf", t: "$/sq ft", num: true, v: ppsf, cell: b => h("td", { class: "num", text: ppsf(b) ? ppsf(b).toFixed(2) : "—" }) },
-    { k: "score", t: "Match", num: true, v: score, cell: b => h("td", { class: "num", text: f1(score(b)) }) },
+    { k: "save", t: "vs. Jayne", num: true, v: savingsOf, cell: b => { const d = savingsOf(b); return h("td", { class: "num " + (d == null ? "" : d >= 0 ? "pos" : "neg"), text: d == null ? "—" : (d >= 0 ? "+" : "−") + money(Math.abs(d)) }); } },
+    { k: "score", t: "Match", num: true, v: score, cell: b => h("td", { class: "num" }, h("span", { class: "t-match" }, h("span", { class: "meter xs", "aria-hidden": "true" }, h("i", { style: { "--w": (score(b) || 0) * 10 + "%" } })), f1(score(b)))) },
     { k: "rep", t: "Reviews", num: true, v: repScore, cell: b => h("td", { class: "num", text: repScore(b) ?? "—" }) },
-    { k: "req", t: "W/D · AC · DW · P · Pkg", v: b => REQS.filter(r => reqVal(b, r.key) === "yes").length, cell: b => h("td", null, h("span", { class: "dots" }, ...REQS.map(r => h("i", { class: reqVal(b, r.key), title: r.name + ": " + reqVal(b, r.key) })))) },
-    { k: "landlord", t: "Landlord", v: b => b.landlord || "company", cell: b => h("td", { text: b.landlord === "private" ? "Private" : "Company" }) },
-    { k: "status", t: "Status", v: b => b.my_status || "new", cell: b => h("td", { text: (STATUSES.find(s => s.key === (b.my_status || "new")) || {}).name }) },
+    { k: "req", t: "Requirements", v: b => REQS.filter(r => reqVal(b, r.key) === "yes").length, cell: b => h("td", null, h("span", { class: "dots" }, ...REQS.map(r => h("i", { class: reqVal(b, r.key), title: r.name + ": " + REQ_WORD[reqVal(b, r.key)].toLowerCase() })))) },
+    { k: "landlord", t: "Landlord", v: b => b.landlord || "company", cell: b => h("td", { class: "t-text", text: b.landlord === "private" ? "Private" : "Company" }) },
+    { k: "status", t: "Status", v: b => b.my_status || "new", cell: b => h("td", { class: "t-text", text: statusName(b.my_status) }) },
   ];
   function renderTable(root, list) {
     if (!list.length) return root.append(emptyState());
-    const col = TCOLS.find(c => c.k === S.tsort.key) || TCOLS[4];
+    const col = TCOLS.find(c => c.k === S.tsort.key) || TCOLS.find(c => c.k === "score");
     const rows = list.slice().sort((a, b) => { const x = col.v(a), y = col.v(b); if (x == null) return 1; if (y == null) return -1; return (x < y ? -1 : x > y ? 1 : 0) * S.tsort.dir; });
-    root.append(h("div", { class: "tablewrap" }, h("table", null,
-      h("thead", null, h("tr", null, ...TCOLS.map(c => h("th", { class: c.num ? "num" : null, scope: "col", "aria-sort": S.tsort.key === c.k ? (S.tsort.dir > 0 ? "ascending" : "descending") : null },
-        h("button", { type: "button", onclick: () => { S.tsort = { key: c.k, dir: S.tsort.key === c.k ? -S.tsort.dir : (c.num && c.k !== "rent" && c.k !== "ppsf" ? -1 : 1) }; ls.set("tsort", S.tsort); renderResults(); } },
-          c.t + (S.tsort.key === c.k ? (S.tsort.dir > 0 ? " ↑" : " ↓") : "")))))),
-      h("tbody", null, ...rows.map(b => h("tr", { tabindex: 0, onclick: () => openBuilding(b), onkeydown: e => { if (e.key === "Enter") openBuilding(b); } }, ...TCOLS.map(c => c.cell(b))))))));
+    root.append(h("div", { class: "tablewrap" }, h("table", { class: "ledger-table" },
+      h("caption", { class: "sr", text: `${rows.length} listings. Select a column heading to sort.` }),
+      h("thead", null, h("tr", null, h("th", { class: "num t-no", scope: "col", text: "No." }), ...TCOLS.map(c => h("th", { class: c.num ? "num" : null, scope: "col", "aria-sort": S.tsort.key === c.k ? (S.tsort.dir > 0 ? "ascending" : "descending") : null },
+        h("button", { type: "button", class: "th-btn" + (S.tsort.key === c.k ? " on" : ""), onclick: () => { S.tsort = { key: c.k, dir: S.tsort.key === c.k ? -S.tsort.dir : (c.num && !["rent", "ppsf"].includes(c.k) ? -1 : 1) }; ls.set("tsort", S.tsort); renderResults(); } },
+          c.t, h("span", { class: "th-arrow", "aria-hidden": "true", text: S.tsort.key === c.k ? (S.tsort.dir > 0 ? "↑" : "↓") : "↕" })))))),
+      h("tbody", null, ...rows.map((b, i) => h("tr", { class: "v-" + verdict(b), tabindex: 0, "data-listing": b.id, "aria-label": "Open " + b.name, onclick: () => openBuilding(b), onkeydown: e => { if (e.key === "Enter") openBuilding(b); } },
+        h("td", { class: "num t-no", text: pad2(i + 1) }), ...TCOLS.map(c => c.cell(b))))))));
   }
 
-  /* Map: schematic coast, freeways and airports drawn from approximate coordinates. */
+  /* ==========================================================================
+     Views: map (MapView contract owned by the map pass; schematic fallback below)
+     ========================================================================== */
   const BOUNDS = { w: -118.62, e: -117.55, s: 33.42, n: 34.17 };
   const KX = Math.cos(33.8 * Math.PI / 180);
   const MW = 1000, MH = Math.round(MW * (BOUNDS.n - BOUNDS.s) / ((BOUNDS.e - BOUNDS.w) * KX));
@@ -298,7 +532,7 @@
   const AIRPORTS = [["LAX", -118.408, 33.942], ["LGB", -118.152, 33.818], ["SNA", -117.868, 33.676]];
   const NS = "http://www.w3.org/2000/svg";
   const s = (tag, attrs, ...kids) => { const el = document.createElementNS(NS, tag); for (const [k, v] of Object.entries(attrs || {})) if (v != null) el.setAttribute(k, v); for (const c of kids) el.append(c instanceof Node ? c : document.createTextNode(String(c))); return el; };
-  const dotColor = v => v === "all" ? "var(--ok)" : v === "check" ? "var(--accent)" : "var(--bad)";
+  const dotColor = v => v === "all" ? "var(--ok)" : v === "check" ? "var(--warn)" : "var(--bad)";
   function renderMap(root, list) {
     if (window.MapView && typeof window.MapView.render === "function") {
       try {
@@ -307,184 +541,342 @@
     }
     const wrap = h("div", { class: "mapwrap" }), tip = h("div", { class: "tip", hidden: true });
     const svg = s("svg", { viewBox: `0 0 ${MW} ${MH}`, role: "img", "aria-label": "Map of matching listings" });
-    svg.append(s("rect", { x: 0, y: 0, width: MW, height: MH, fill: "var(--land)" }));
+    svg.append(s("rect", { x: 0, y: 0, width: MW, height: MH, fill: "var(--panel)" }));
     const ocean = COAST.map(c => px(...c)).concat([px(-117.55, 33.40), px(-118.65, 33.40), px(-118.65, 34.035)]);
-    svg.append(s("polygon", { points: ocean.map(p => p.join(",")).join(" "), fill: "var(--water)" }));
+    svg.append(s("polygon", { points: ocean.map(p => p.join(",")).join(" "), fill: "var(--water)", stroke: "var(--hairline-strong)", "stroke-width": 1 }));
     for (const [n, pts] of FREEWAYS) {
       const p = pts.map(c => px(...c));
-      svg.append(s("polyline", { points: p.map(q => q.join(",")).join(" "), fill: "none", stroke: "var(--road)", "stroke-width": 2.5, "stroke-linejoin": "round", "stroke-linecap": "round" }));
+      svg.append(s("polyline", { points: p.map(q => q.join(",")).join(" "), fill: "none", stroke: "var(--hairline-strong)", "stroke-width": 1.5, "stroke-linejoin": "round", "stroke-linecap": "round" }));
       const m = p[Math.floor(p.length / 2)];
-      svg.append(s("text", { x: m[0] + 6, y: m[1] - 6, "font-size": 12, fill: "var(--faint)", "font-family": "var(--font)" }, n));
+      svg.append(s("text", { x: m[0] + 6, y: m[1] - 6, "font-size": 11, fill: "var(--muted)", "font-family": "var(--font-mono)" }, n));
     }
-    for (const [code, lng, lat] of AIRPORTS) { const [x, y] = px(lng, lat); svg.append(s("text", { x, y, "text-anchor": "middle", "font-size": 12, "font-weight": 600, "letter-spacing": "1", fill: "var(--muted)", "font-family": "var(--font)" }, "✈ " + code)); }
+    for (const [code, lng, lat] of AIRPORTS) { const [x, y] = px(lng, lat); svg.append(s("text", { x, y, "text-anchor": "middle", "font-size": 11, "letter-spacing": "1.2", fill: "var(--muted)", "font-family": "var(--font-mono)" }, code)); }
     const show = (e, text) => { const r = wrap.getBoundingClientRect(); tip.textContent = text; tip.hidden = false; tip.style.left = Math.max(4, Math.min(e.clientX - r.left + 12, r.width - 250)) + "px"; tip.style.top = (e.clientY - r.top + 12) + "px"; };
     for (const b of list) {
       if (b.lat == null) continue;
       const [x, y] = px(b.lng, b.lat), v = verdict(b);
-      const c = s("circle", { cx: x, cy: y, r: 6, fill: dotColor(v), stroke: "var(--surface)", "stroke-width": 2, style: "cursor:pointer", tabindex: 0 });
+      const c = s("circle", { cx: x, cy: y, r: 5.5, fill: dotColor(v), stroke: "var(--panel)", "stroke-width": 1.5, style: "cursor:pointer", tabindex: 0, "aria-label": b.name });
       c.addEventListener("mousemove", e => show(e, `${b.name} · ${money(rentOf(b))} · ${b.sqft || "?"} sq ft`));
       c.addEventListener("mouseleave", () => tip.hidden = true);
       c.addEventListener("click", () => openBuilding(b));
       c.addEventListener("keydown", e => { if (e.key === "Enter") openBuilding(b); });
       svg.append(c);
     }
-    wrap.append(h("div", { style: { overflowX: "auto" } }, svg), tip);
-    root.append(wrap, h("div", { class: "legend", style: { marginTop: "10px" } },
+    wrap.append(h("div", { class: "mapscroll" }, svg), tip);
+    root.append(wrap, h("div", { class: "legend" },
       h("span", null, h("i", { style: { background: "var(--ok)" } }), "Meets everything"),
-      h("span", null, h("i", { style: { background: "var(--accent)" } }), "Needs checks"),
+      h("span", null, h("i", { style: { background: "var(--warn)" } }), "Needs checks"),
       h("span", null, h("i", { style: { background: "var(--bad)" } }), "Fails something"),
-      h("span", { text: `Showing ${list.length} filtered listings. Coast and freeways are approximate.` })));
+      h("span", { class: "legend-note", text: `${plural(list.length, "listing")} in view. Coast and freeways are approximate.` })));
   }
 
+  /* ==========================================================================
+     Views: neighborhoods (atlas index)
+     ========================================================================== */
+  function factorBars(a, cls) {
+    return h("ul", { class: "factors " + (cls || "") }, ...FACTORS.map(f => {
+      const v = factorScore(a, f);
+      return h("li", { class: "factorbar" },
+        factorIcon(f.key) || h("span", { class: "ico-fallback", "aria-hidden": "true" }),
+        h("span", { class: "factorbar-name", text: f.name }),
+        h("span", { class: "factorbar-track", "aria-hidden": "true" }, h("i", { style: { "--w": v == null ? "0%" : v * 10 + "%" } })),
+        h("span", { class: "factorbar-v", text: f1(v) }));
+    }));
+  }
   function renderAreas(root) {
     const list = S.areas.filter(a => S.f.regions.includes(a.region)).map(a => ({ a, sc: areaScore(a) })).sort((x, y) => (y.sc ?? -1) - (x.sc ?? -1));
-    if (!list.length) return root.append(h("div", { class: "empty", text: S.loaded ? "No neighborhoods in the selected regions." : "Loading…" }));
-    root.append(h("div", { class: "areas" }, ...list.map(({ a, sc }) => {
-      const n = S.buildings.filter(b => b.area_id === a.id && matches(b)).length;
-      return h("article", { class: "area", tabindex: 0, role: "button", onclick: () => openArea(a), onkeydown: e => { if (e.key === "Enter") openArea(a); } },
-        h("header", null, h("div", null, h("h3", { text: a.name }), h("p", { class: "muted", style: { fontSize: ".82rem" }, text: `${a.region} · ${n} listing${n === 1 ? "" : "s"}` })), h("span", { class: "big", text: f1(sc) })),
-        h("div", { class: "bars" }, ...FACTORS.flatMap(f => { const v = factorScore(a, f); return [h("span", { text: f.name }), h("i", { style: { "--w": v == null ? "0%" : v * 10 + "%" } }), h("span", { text: f1(v) })]; })));
-    })));
+    if (!list.length) return root.append(emptyState(S.loaded ? "No neighborhoods in the selected regions." : "Loading…"));
+    root.append(
+      h("div", { class: "viewhead" },
+        h("h2", { class: "viewhead-title" }, "Atlas of neighborhoods"),
+        h("p", { class: "viewhead-sub", text: `${plural(list.length, "region")} of the atlas, ranked by your weights. Listing counts follow the current filters.` })),
+      h("div", { class: "atlas" }, ...list.map(({ a, sc }, i) => {
+        const n = S.buildings.filter(b => b.area_id === a.id && matches(b)).length;
+        return h("article", { class: "plate", tabindex: 0, role: "button", "aria-label": `Open ${a.name} neighborhood report`, style: { "--i": Math.min(i, 24) }, onclick: () => openArea(a), onkeydown: e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openArea(a); } } },
+          h("header", { class: "plate-head" },
+            h("span", { class: "plate-no", text: "Plate " + pad2(i + 1) }),
+            h("span", { class: "plate-region", text: a.region })),
+          h("div", { class: "plate-title" },
+            regionEmblem(a.region, "md") || h("span", { class: "emblem-fallback", "aria-hidden": "true", text: a.region.split(" ").map(w => w[0]).join("") }),
+            h("div", null, h("h3", { class: "plate-name", text: a.name }), h("p", { class: "plate-count", text: n ? plural(n, "listing") + " in view" : "No listings in view" })),
+            h("div", { class: "plate-score" }, h("b", { text: f1(sc) }), h("span", { text: "/ 10" }))),
+          factorBars(a));
+      })));
   }
 
+  /* ==========================================================================
+     Views: compare
+     ========================================================================== */
   function renderCompare(root) {
     const picks = S.buildings.filter(b => S.compare.has(b.id));
-    if (!picks.length) return root.append(h("div", { class: "empty", text: "Open any listing and choose “Compare” to line up to four side by side." }));
+    if (!picks.length) return root.append(emptyState("Open any listing and choose Compare to line up to four side by side.", "Nothing on the bench yet", true));
     const rows = [
       ["Neighborhood", areaName],
       ["Best match", b => f1(score(b)), score, 1],
       ["Rent", b => money(rentOf(b)), rentOf, -1],
-      ["Size", b => b.sqft ? b.sqft + " sq ft" : "—", b => b.sqft, 1],
+      ["Size", b => b.sqft ? Math.round(b.sqft) + " sq ft" : "—", b => b.sqft, 1],
       ["$ per sq ft", b => ppsf(b) ? "$" + ppsf(b).toFixed(2) : "—", ppsf, -1],
       ["Saves vs. The Jayne", b => allIn(b) == null ? "—" : money(JAYNE.allIn - allIn(b)) + "/mo", b => allIn(b) == null ? null : JAYNE.allIn - allIn(b), 1],
       ["Reviews", b => repScore(b) == null ? "—" : repScore(b) + "/10", repScore, 1],
-      ...REQS.map(r => [r.name, b => reqVal(b, r.key)]),
+      ...REQS.map(r => [r.name, b => reqVal(b, r.key), null, 0, r.key]),
       ...FACTORS.map(f => [f.name, b => f1(factorScore(S.areaById.get(b.area_id), f)), b => factorScore(S.areaById.get(b.area_id), f), 1]),
       ["Landlord", b => b.landlord === "private" ? "Private owner" : ((b.reviews && b.reviews.management_company) || "Company")],
       ["Special", b => b.special || "—"],
       ["Red flags", b => (b.reviews && b.reviews.dealbreakers) || b.red_flags || "—"],
     ];
-    root.append(h("div", { class: "tablewrap" }, h("table", { class: "compare" },
-      h("thead", null, h("tr", null, h("th", null), ...picks.map(b => h("th", { style: { whiteSpace: "normal" } }, b.name, " ",
-        h("button", { class: "linkbtn", type: "button", "aria-label": "Remove " + b.name, text: "remove", onclick: () => { S.compare.delete(b.id); ls.set("compare", [...S.compare]); renderToolbar(); renderResults(); } }))))),
-      h("tbody", null, ...rows.map(([label, fmt, val, dir]) => {
-        let best = -1;
-        if (val && picks.length > 1) { const vs = picks.map(val), ok = vs.filter(x => x != null); if (ok.length) best = vs.indexOf(dir > 0 ? Math.max(...ok) : Math.min(...ok)); }
-        return h("tr", { style: { cursor: "default" } }, h("td", { class: "muted", text: label }), ...picks.map((b, i) => {
-          const t = String(fmt(b)), isReq = ["yes", "no", "unclear"].includes(t);
-          return h("td", { class: (i === best ? "best " : "") + "wrap" }, isReq ? h("span", { class: "tag " + t, text: t === "unclear" ? "not confirmed" : t }) : t);
-        }));
-      })))));
+    root.append(
+      h("div", { class: "viewhead" },
+        h("h2", { class: "viewhead-title" }, "On the bench"),
+        h("p", { class: "viewhead-sub", text: `${plural(picks.length, "specimen")} side by side${picks.length < 4 ? ` · room for ${4 - picks.length} more` : ""}. The best value in each row is marked.` })),
+      h("div", { class: "tablewrap compare-wrap" }, h("table", { class: "compare", style: { "--cols": picks.length } },
+        h("thead", null, h("tr", null, h("th", { class: "compare-corner", scope: "col" }, h("span", { class: "sr", text: "Attribute" })), ...picks.map(b => h("th", { scope: "col" },
+          h("div", { class: "compare-head" },
+            h("span", { class: "mono-label", text: areaName(b) || regionOf(b) }),
+            h("button", { class: "compare-name", type: "button", text: b.name, onclick: () => openBuilding(b) }),
+            verdict(b) === "all" ? h("span", { class: "tag ok", text: "Meets everything" }) : null,
+            h("button", { class: "linkbtn sm", type: "button", "aria-label": "Remove " + b.name, text: "Remove", onclick: () => { S.compare.delete(b.id); ls.set("compare", [...S.compare]); renderToolbar(); renderResults(); } })))))),
+        h("tbody", null, ...rows.map(([label, fmt, val, dir, reqKey]) => {
+          let best = -1;
+          if (val && picks.length > 1) { const vs = picks.map(val), ok = vs.filter(x => x != null); if (ok.length) best = vs.indexOf(dir > 0 ? Math.max(...ok) : Math.min(...ok)); }
+          return h("tr", null, h("th", { scope: "row", class: "compare-k" }, reqKey ? reqIcon(reqKey) : null, label), ...picks.map((b, i) => {
+            const t = String(fmt(b));
+            if (reqKey) return h("td", null, h("span", { class: "reqword " + t }, h("i", { "aria-hidden": "true" }), REQ_WORD[t]));
+            return h("td", { class: i === best ? "best" : null }, t, i === best ? h("span", { class: "sr", text: " (best)" }) : null);
+          }));
+        })))));
   }
 
+  /* ==========================================================================
+     Views: add a listing
+     ========================================================================== */
   function renderAdd(root) {
-    const tri = key => h("select", { id: "a-" + key }, ...[["unclear", "Not sure"], ["yes", "Yes"], ["no", "No"]].map(([v, t]) => h("option", { value: v, text: t })));
-    const form = h("form", { style: { display: "grid", gap: "16px", maxWidth: "620px" } },
-      h("p", { class: "muted", text: "Found something on Zillow, Craigslist or a walk around the block? Add it and it will be scored with its neighborhood." }),
-      h("div", { class: "field" }, h("label", { for: "a-name", text: "Building or address" }), h("input", { id: "a-name", required: true })),
-      h("div", { class: "field" }, h("label", { for: "a-area", text: "Neighborhood" }), h("select", { id: "a-area", required: true }, h("option", { value: "", text: "Choose…" }),
-        ...REGIONS.map(r => h("optgroup", { label: r }, ...S.areas.filter(a => a.region === r).map(a => h("option", { value: a.id, text: a.name })))))),
-      h("div", { class: "grid2" },
-        h("div", { class: "field" }, h("label", { for: "a-base", text: "List rent" }), h("input", { id: "a-base", type: "number", min: 0, inputmode: "numeric" })),
-        h("div", { class: "field" }, h("label", { for: "a-eff", text: "Rent after specials" }), h("input", { id: "a-eff", type: "number", min: 0, inputmode: "numeric" })),
-        h("div", { class: "field" }, h("label", { for: "a-sqft", text: "Size (sq ft)" }), h("input", { id: "a-sqft", type: "number", min: 0, inputmode: "numeric" })),
-        h("div", { class: "field" }, h("label", { for: "a-park", text: "Parking ($/mo)" }), h("input", { id: "a-park", type: "number", min: 0, inputmode: "numeric" })),
-        ...REQS.map(r => h("div", { class: "field" }, h("label", { for: "a-" + r.key, text: r.name }), tri(r.key))),
-        h("div", { class: "field" }, h("label", { for: "a-landlord", text: "Landlord" }), h("select", { id: "a-landlord" }, h("option", { value: "company", text: "Management company" }), h("option", { value: "private", text: "Private owner" })))),
-      h("div", { class: "field" }, h("label", { for: "a-url", text: "Listing link" }), h("input", { id: "a-url", type: "url", placeholder: "https://" })),
-      h("div", { class: "field" }, h("label", { for: "a-note", text: "Notes" }), h("textarea", { id: "a-note", rows: 3 })),
-      h("div", null, h("button", { class: "btn", type: "submit", disabled: !S.loaded, text: "Add listing" })));
+    const tri = r => h("fieldset", { class: "tri" },
+      h("legend", null, reqIcon(r.key), r.name),
+      h("div", { class: "tri-opts" }, ...[["unclear", "Not sure"], ["yes", "Yes"], ["no", "No"]].map(([v, t], i) =>
+        h("label", { class: "tri-opt " + v }, h("input", { type: "radio", name: "a-" + r.key, value: v, checked: i === 0 }), h("span", { text: t })))));
+    const field = (id, label, input, hint) => h("div", { class: "field" }, h("label", { for: id, text: label }), input, hint ? h("p", { class: "hint", text: hint }) : null);
+    const num = (id, ph) => h("input", { id, type: "number", min: 0, inputmode: "numeric", placeholder: ph || "" });
+    const form = h("form", { class: "accession" },
+      h("header", { class: "accession-head" },
+        h("p", { class: "mono-label", text: "Accession form" }),
+        h("h2", { class: "accession-title", text: "Add a specimen" }),
+        h("p", { class: "accession-lede", text: "Found something on Zillow, Craigslist or a walk around the block? Add it and it will be scored with its neighborhood." })),
+      h("div", { class: "accession-section" },
+        h("p", { class: "section-k" }, h("span", { text: "I" }), "Where"),
+        field("a-name", "Building or address", h("input", { id: "a-name", required: true, autocomplete: "off" })),
+        field("a-area", "Neighborhood", h("select", { id: "a-area", class: "select", required: true }, h("option", { value: "", text: "Choose…" }),
+          ...REGIONS.map(r => h("optgroup", { label: r }, ...S.areas.filter(a => a.region === r).map(a => h("option", { value: a.id, text: a.name }))))))),
+      h("div", { class: "accession-section" },
+        h("p", { class: "section-k" }, h("span", { text: "II" }), "Measures"),
+        h("div", { class: "grid2" },
+          field("a-base", "List rent ($/mo)", num("a-base")),
+          field("a-eff", "Rent after specials", num("a-eff", "Same as list"), "Leave blank if there is no special."),
+          field("a-sqft", "Size (sq ft)", num("a-sqft")),
+          field("a-park", "Parking ($/mo)", num("a-park", "0 if included")))),
+      h("div", { class: "accession-section" },
+        h("p", { class: "section-k" }, h("span", { text: "III" }), "Requirements"),
+        h("div", { class: "tris" }, ...REQS.map(tri)),
+        field("a-landlord", "Landlord", h("select", { id: "a-landlord", class: "select" }, h("option", { value: "company", text: "Management company" }), h("option", { value: "private", text: "Private owner" })))),
+      h("div", { class: "accession-section" },
+        h("p", { class: "section-k" }, h("span", { text: "IV" }), "Notes"),
+        field("a-url", "Listing link", h("input", { id: "a-url", type: "url", placeholder: "https://" })),
+        field("a-note", "Notes", h("textarea", { id: "a-note", rows: 3 }))),
+      h("div", { class: "accession-foot" },
+        h("button", { class: "btn", type: "submit", disabled: !S.loaded, text: "Add listing" }),
+        h("p", { class: "hint", text: "Saved in this browser only. Export notes to back it up." })));
     form.addEventListener("submit", async e => {
       e.preventDefault();
       const v = id => form.querySelector("#" + id).value.trim(), n = id => v(id) === "" ? null : Number(v(id));
+      const radio = name => { const r = form.querySelector(`input[name="${name}"]:checked`); return r ? r.value : "unclear"; };
       const area = S.areaById.get(v("a-area")), j = () => (Math.random() - .5) * .01;
       const b = { id: "you-" + Date.now().toString(36), name: v("a-name"), area_id: area ? area.id : null, region: area ? area.region : null,
         lat: area ? area.lat + j() : null, lng: area ? area.lng + j() : null, base_rent: n("a-base"), effective_rent: n("a-eff") ?? n("a-base"),
-        sqft: n("a-sqft"), parking_fee: n("a-park"), req: Object.fromEntries(REQS.map(r => [r.key, v("a-" + r.key)])), landlord: v("a-landlord"),
+        sqft: n("a-sqft"), parking_fee: n("a-park"), req: Object.fromEntries(REQS.map(r => [r.key, radio("a-" + r.key)])), landlord: v("a-landlord"),
         listing_url: v("a-url") || null, notes: v("a-note"), source: "you", my_status: "watch", added_at: new Date().toISOString() };
       if (await saveBuilding(b, true)) { form.reset(); S.view = "list"; ls.set("view", "list"); renderToolbar(); renderResults(); openBuilding(b); toast("Listing added"); }
     });
     root.append(form);
   }
 
-  function emptyState() {
-    return h("div", { class: "empty" }, S.loaded ? "Nothing matches. Try a broader search or " : "Loading listings…",
-      S.loaded ? h("button", { class: "linkbtn", type: "button", text: "clear all filters", onclick: () => { S.f = JSON.parse(JSON.stringify(DEFAULT_FILTERS)); S.q = ""; $("q").value = ""; saveF(); renderFilters(); renderResults(); } }) : null,
-      S.loaded ? "." : null);
+  /* ==========================================================================
+     Empty state
+     ========================================================================== */
+  function emptyState(msg, title, noClear) {
+    const loading = !S.loaded;
+    return h("div", { class: "empty" },
+      art("empty-art", ill("empty")) || h("span", { class: "empty-art empty-fallback", "aria-hidden": "true" }),
+      h("p", { class: "empty-title", text: loading ? "Loading listings…" : title || "Nothing in the cabinet" }),
+      loading ? null : h("p", { class: "empty-text", text: msg || "No listing matches this search and these filters. Try a broader search, or start over." }),
+      loading || noClear ? null : h("button", { class: "btn ghost", type: "button", text: "Clear all filters", onclick: clearAll }));
   }
 
+  /* ==========================================================================
+     Render loop
+     ========================================================================== */
   function renderResults() {
     const list = visible();
-    const live = S.buildings.filter(b => verdict(b) !== "fail");
-    $("count").replaceChildren(S.loaded ? h("span", null, h("b", { text: list.length }), ` of ${S.buildings.length} listings`, S.q ? ` matching “${S.q}”` : "", ` · ${live.filter(b => verdict(b) === "all").length} meet everything`) : "Loading…");
-    const root = $("view"); root.replaceChildren();
+    S.rank = new Map(list.map((b, i) => [b.id, i + 1]));
+    const meet = list.filter(b => verdict(b) === "all").length;
+    $("count").replaceChildren(S.loaded
+      ? h("span", { class: "count-inner" }, h("b", { text: list.length }), h("span", { class: "count-of", text: ` of ${S.buildings.length} listings` }), S.q ? h("span", { class: "count-q", text: ` matching “${S.q}”` }) : null, h("span", { class: "count-meet", text: ` · ${meet} meet everything` }))
+      : "Loading…");
+    renderStats(list);
+    const root = $("view");
+    root.replaceChildren();
+    root.dataset.view = S.view;
+    root.classList.remove("enter"); void root.offsetWidth; root.classList.add("enter");
     ({ list: renderList, table: renderTable, map: renderMap, areas: renderAreas, compare: renderCompare, add: renderAdd }[S.view] || renderList)(root, list);
   }
 
-  /* ---------------- Drawers ---------------- */
-  function drawer(...content) {
+  /* ==========================================================================
+     Drawer (dossier)
+     ========================================================================== */
+  let drawerState = null;
+  function drawer(title, ...content) {
     const root = $("drawerRoot");
-    const close = () => { root.replaceChildren(); document.removeEventListener("keydown", onKey); };
-    const onKey = e => { if (e.key === "Escape") close(); };
+    const body = h("div", { class: "drawer-body" }, ...content);
+    if (drawerState) { // already open: swap contents in place
+      drawerState.panel.querySelector(".drawer-body").replaceWith(body);
+      drawerState.panel.querySelector(".drawer-bar-title").textContent = title;
+      drawerState.panel.scrollTop = 0;
+      body.classList.add("swap");
+      drawerState.panel.querySelector(".drawer-close").focus();
+      return;
+    }
+    const prevFocus = document.activeElement;
+    const closeBtn = h("button", { class: "iconbtn drawer-close", type: "button", "aria-label": "Close", html: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>' });
+    const panel = h("div", { class: "drawer", role: "dialog", "aria-modal": "true", "aria-labelledby": "drawerTitle", tabindex: -1 },
+      h("div", { class: "drawer-bar" }, h("p", { class: "drawer-bar-title mono-label", text: title }), closeBtn), body);
+    const scrim = h("div", { class: "scrim" });
+    const close = () => {
+      if (!drawerState) return;
+      document.removeEventListener("keydown", onKey);
+      root.classList.remove("is-open");
+      document.documentElement.classList.remove("drawer-open");
+      drawerState = null;
+      const done = () => { if (!drawerState) root.replaceChildren(); };
+      reduceMotion() ? done() : setTimeout(done, 380);
+      if (prevFocus && prevFocus.isConnected) prevFocus.focus({ preventScroll: true });
+    };
+    const onKey = e => {
+      if (e.key === "Escape") { e.preventDefault(); close(); }
+      else if (e.key === "Tab") {
+        const f = [...panel.querySelectorAll('a[href],button:not([disabled]),input:not([disabled]),select:not([disabled]),textarea:not([disabled]),summary,[tabindex="0"]')].filter(x => x.offsetParent !== null);
+        if (!f.length) return;
+        if (e.shiftKey && document.activeElement === f[0]) { e.preventDefault(); f[f.length - 1].focus(); }
+        else if (!e.shiftKey && document.activeElement === f[f.length - 1]) { e.preventDefault(); f[0].focus(); }
+      }
+    };
+    closeBtn.addEventListener("click", close);
+    scrim.addEventListener("click", close);
     document.addEventListener("keydown", onKey);
-    const panel = h("div", { class: "drawer", role: "dialog", "aria-modal": "true" }, h("button", { class: "btn ghost close", type: "button", text: "Close", onclick: close }), ...content);
-    root.replaceChildren(h("div", { class: "scrim", onclick: close }), panel);
-    panel.querySelector(".close").focus();
+    root.replaceChildren(scrim, panel);
+    document.documentElement.classList.add("drawer-open");
+    drawerState = { panel, close };
+    void panel.offsetWidth;
+    requestAnimationFrame(() => root.classList.add("is-open"));
+    closeBtn.focus({ preventScroll: true });
   }
-  function kv(pairs) { return h("dl", { class: "kv" }, ...pairs.filter(([, v]) => v != null && v !== "" && v !== false).flatMap(([k, v]) => [h("dt", { text: k }), v instanceof Node ? h("dd", null, v) : h("dd", { text: String(v) })])); }
+  function kv(pairs) {
+    const rows = pairs.filter(([, v]) => v != null && v !== "" && v !== false);
+    return rows.length ? h("dl", { class: "kv" }, ...rows.flatMap(([k, v]) => [h("dt", { text: k }), v instanceof Node ? h("dd", null, v) : h("dd", { text: String(v) })])) : null;
+  }
+  const section = (title, ...body) => h("section", { class: "dsec" }, h("h3", { class: "dsec-title" }, h("span", { text: title })), ...body);
+  function sources(list, label) {
+    if (!list || !list.length) return null;
+    return h("details", { class: "srcs" }, h("summary", null, h("span", { text: `${label || "Sources"} (${list.length})` })), h("ol", null, ...list.map(u => h("li", null, linkOut(u)))));
+  }
   function reviewSection(b) {
     const r = b.reviews;
     if (!r || (r.reputation_score == null && !(r.complaints || []).length && !(r.praise || []).length && !(r.management && r.management.summary)))
-      return h("section", { class: "section" }, h("h3", { text: "What residents say" }), h("p", { class: "muted", text: "No resident reviews found yet." }));
-    return h("section", { class: "section" },
-      h("h3", { text: "What residents say" }),
-      h("p", null, h("span", { class: "big", text: r.reputation_score != null ? r.reputation_score + "/10" : "—" }), " ",
-        h("span", { class: "muted", text: [r.management_company, r.confidence && r.confidence + " confidence", r.recent_trend].filter(Boolean).join(" · ") })),
-      r.note ? h("p", { class: "note warn", text: r.note }) : null,
-      r.dealbreakers ? h("p", { class: "note bad", text: r.dealbreakers }) : null,
-      r.ratings && r.ratings.length ? h("div", { class: "tags", style: { display: "flex", flexWrap: "wrap", gap: "5px" } }, ...r.ratings.map(x => h("span", { class: "tag", text: `${x.site} ${x.rating ?? "?"}${x.count ? " · " + x.count : ""}` }))) : null,
-      r.praise && r.praise.length ? h("div", null, h("p", { class: "label", text: "Praise" }), ul(r.praise)) : null,
-      r.complaints && r.complaints.length ? h("div", null, h("p", { class: "label", text: "Complaints" }), ul(r.complaints)) : null,
-      h("div", null, ...REVIEW_PARTS.filter(([k]) => r[k] && (r[k].summary || r[k].score != null)).map(([k, label]) =>
-        h("div", { class: "factor" }, h("header", null, h("span", { text: label }), h("span", { text: r[k].score != null ? r[k].score + "/10" : "" })), r[k].summary ? h("p", { text: r[k].summary }) : null))),
-      r.sources && r.sources.length ? h("details", { class: "srcs" }, h("summary", { text: `Review sources (${r.sources.length})` }), h("ul", null, ...r.sources.map(u => h("li", null, linkOut(u))))) : null);
+      return section("What residents say", h("p", { class: "muted", text: "No resident reviews found yet." }));
+    const parts = REVIEW_PARTS.filter(([k]) => r[k] && (r[k].summary || r[k].score != null));
+    return section("What residents say",
+      h("div", { class: "rev-head" },
+        h("div", { class: "rev-score" }, h("b", { text: r.reputation_score != null ? r.reputation_score : "—" }), h("span", { text: "/ 10" })),
+        h("div", { class: "rev-meta" },
+          r.management_company ? h("p", { class: "rev-co", text: r.management_company }) : null,
+          h("p", { class: "muted small", text: [r.confidence && r.confidence + " confidence", r.recent_trend].filter(Boolean).join(" · ") }))),
+      r.ratings && r.ratings.length ? h("ul", { class: "ratings" }, ...r.ratings.map(x => h("li", null, h("span", { class: "ratings-site", text: x.site }), h("b", { text: x.rating ?? "—" }), x.count ? h("span", { class: "ratings-n", text: x.count + " reviews" }) : null))) : null,
+      r.note ? h("p", { class: "callout warn", text: r.note }) : null,
+      r.dealbreakers ? h("p", { class: "callout bad" }, h("b", { text: "Red flags. " }), r.dealbreakers) : null,
+      (r.praise && r.praise.length) || (r.complaints && r.complaints.length) ? h("div", { class: "procon" },
+        r.praise && r.praise.length ? h("div", null, h("p", { class: "mono-label ok-ink", text: "Praise" }), ul(r.praise, "ticklist pro")) : null,
+        r.complaints && r.complaints.length ? h("div", null, h("p", { class: "mono-label bad-ink", text: "Complaints" }), ul(r.complaints, "ticklist con")) : null) : null,
+      parts.length ? h("div", { class: "subscores" }, ...parts.map(([k, label]) =>
+        h("div", { class: "subscore" },
+          h("div", { class: "subscore-head" }, h("span", { text: label }), h("span", { class: "subscore-v" }, r[k].score != null ? h("span", { class: "meter xs", "aria-hidden": "true" }, h("i", { style: { "--w": r[k].score * 10 + "%" } })) : null, r[k].score != null ? r[k].score + "/10" : "")),
+          r[k].summary ? h("p", { text: r[k].summary }) : null))) : null,
+      sources(r.sources, "Review sources"));
   }
+  const REQ_DETAIL = {
+    wd: b => null,
+    ac: b => b.ac_evidence,
+    dw: b => null,
+    parking: b => b.parking_fee ? money(b.parking_fee) + "/mo" : reqVal(b, "parking") === "yes" ? "Available, fee unknown" : null,
+    packages: b => b.packages_detail,
+  };
   function openBuilding(b) {
-    const a = S.areaById.get(b.area_id), v = verdict(b), c = allIn(b), inCmp = S.compare.has(b.id);
-    const status = h("select", { id: "d-status", disabled: !S.canWrite }, ...STATUSES.map(st => h("option", { value: st.key, selected: (b.my_status || "new") === st.key, text: st.name })));
-    const note = h("textarea", { id: "d-note", rows: 3, disabled: !S.canWrite }, b.my_note || "");
-    status.addEventListener("change", () => saveBuilding({ ...b, my_status: status.value }).then(ok => ok && toast("Saved")));
-    let t; note.addEventListener("input", () => { clearTimeout(t); t = setTimeout(() => saveBuilding({ ...b, my_note: note.value }).then(ok => ok && toast("Note saved")), 900); });
-    drawer(
-      h("div", { style: { display: "grid", gap: "6px" } }, h("p", { class: "label", text: a ? `${a.name} · ${a.region}` : "" }), h("h2", { text: b.name }), h("p", { class: "muted", text: b.address || "" })),
-      h("div", { style: { display: "flex", flexWrap: "wrap", gap: "5px" } }, h("span", { class: "tag " + (v === "all" ? "dark" : v === "fail" ? "no" : "unclear"), text: VERDICTS[v] }), ...reqTags(b)),
-      h("div", { style: { display: "flex", flexWrap: "wrap", gap: "28px" } },
-        h("div", null, h("p", { class: "label", text: "Rent" }), h("p", { class: "big", text: money(rentOf(b)) })),
-        h("div", null, h("p", { class: "label", text: "Size" }), h("p", { class: "big", text: b.sqft ? b.sqft + " sq ft" : "—" })),
-        h("div", null, h("p", { class: "label", text: "Match" }), h("p", { class: "big", text: f1(score(b)) }))),
-      b.scam_flags ? h("p", { class: "note bad", text: "Scam warning: " + b.scam_flags }) : null,
-      kv([
-        ["List rent", b.base_rent ? money(b.base_rent) : null], ["Special", b.special || "None listed"],
-        ["Parking", b.parking_fee ? money(b.parking_fee) + "/mo" : reqVal(b, "parking") === "yes" ? "Available, fee unknown" : "Not confirmed"],
-        ["vs. The Jayne", c == null ? null : `${money(JAYNE.allIn - c)}/mo less, about ${money((JAYNE.allIn - c) * 12)} a year`],
-        ["Built", b.year_built], ["Landlord", b.landlord === "private" ? [b.owner_type || "Private owner", b.platform && "on " + b.platform].filter(Boolean).join(", ") : (b.reviews && b.reviews.management_company) || "Management company"],
-        ["Packages", b.packages_detail], ["AC evidence", b.ac_evidence], ["Rent control", b.rent_control], ["Complex", b.hoa_amenities],
-        ["Internet", b.internet], ["Location", b.location_note], ["Watch out for", b.red_flags], ["Last checked", b.checked_on],
-        ["Listing", b.listing_url ? linkOut(b.listing_url, "Open listing ↗") : null],
-      ]),
-      b.notes ? h("p", { style: { fontSize: ".9rem", color: "var(--muted)", whiteSpace: "pre-line" }, text: b.notes }) : null,
-      h("section", { class: "section" }, h("h3", { text: "My notes" }),
-        h("div", { class: "field" }, h("label", { for: "d-status", text: "Status" }), status),
-        h("div", { class: "field" }, h("label", { for: "d-note", text: "Notes" }), note),
-        h("p", { class: "muted", style: { fontSize: ".82rem" }, text: "Saved in this browser. Use Export at the bottom of the page to back up." }),
-        h("div", { style: { display: "flex", gap: "10px", flexWrap: "wrap" } },
-          h("button", { class: "btn ghost", type: "button", disabled: !inCmp && S.compare.size >= 4, text: inCmp ? "Remove from compare" : "Compare",
-            onclick: e => { S.compare.has(b.id) ? S.compare.delete(b.id) : S.compare.add(b.id); ls.set("compare", [...S.compare]); e.target.textContent = S.compare.has(b.id) ? "Remove from compare" : "Compare"; renderToolbar(); renderResults(); } }),
-          a ? h("button", { class: "btn ghost", type: "button", text: "Neighborhood report", onclick: () => openArea(a) }) : null)),
+    const a = S.areaById.get(b.area_id), v = verdict(b), c = allIn(b), d = savingsOf(b), sc = score(b), rank = S.rank.get(b.id), p = ppsf(b);
+    const statusGroup = h("div", { class: "statuses", role: "radiogroup", "aria-label": "Status" }, ...STATUSES.map(st =>
+      h("label", { class: "status-opt" },
+        h("input", { type: "radio", name: "d-status", value: st.key, checked: (b.my_status || "new") === st.key, disabled: !S.canWrite,
+          onchange: e => { b = { ...b, my_status: e.target.value }; saveBuilding(b).then(ok => ok && toast("Saved")); } }),
+        h("span", { text: st.name }))));
+    const note = h("textarea", { id: "d-note", rows: 4, disabled: !S.canWrite, placeholder: "Tour impressions, questions for the leasing office…" }, b.my_note || "");
+    let t; note.addEventListener("input", () => { clearTimeout(t); t = setTimeout(() => { b = { ...b, my_note: note.value }; saveBuilding(b).then(ok => ok && toast("Note saved")); }, 900); });
+    const cmpBtn = h("button", { class: "btn ghost sm", type: "button", disabled: !S.compare.has(b.id) && S.compare.size >= 4,
+      text: S.compare.has(b.id) ? "Remove from compare" : "Add to compare",
+      onclick: e => { S.compare.has(b.id) ? S.compare.delete(b.id) : S.compare.add(b.id); ls.set("compare", [...S.compare]); e.currentTarget.textContent = S.compare.has(b.id) ? "Remove from compare" : "Add to compare"; renderToolbar(); renderResults(); } });
+    drawer(rank ? `Specimen No. ${pad2(rank)} of ${S.rank.size}` : "Specimen",
+      h("header", { class: "dossier-head" + (v === "all" && ill("seal", "Meets everything") ? " has-seal" : "") },
+        h("div", { class: "dossier-kicker" }, regionEmblem(regionOf(b), "sm"), h("span", { text: [a && a.name, regionOf(b)].filter(Boolean).join(" · ") })),
+        h("h2", { class: "dossier-name", id: "drawerTitle", text: b.name }),
+        b.address ? h("p", { class: "dossier-addr", text: b.address }) : null,
+        h("div", { class: "dossier-verdict" },
+          h("span", { class: "tag " + (v === "all" ? "ok" : v === "fail" ? "bad" : "amber"), text: VERDICTS[v] }),
+          ...flagTags(b, false),
+          v === "fail" ? h("span", { class: "muted small", text: failReasons(b).join(" · ") }) : null),
+        v === "all" ? seal() : null),
+      h("div", { class: "hero-figs" },
+        h("div", { class: "hero-fig" }, h("span", { class: "fig-k", text: "Rent" }), h("b", { class: "serif", text: money(rentOf(b)) }), h("span", { class: "hero-sub", text: b.base_rent && rentOf(b) < b.base_rent ? money(b.base_rent) + " list" : "per month" })),
+        h("div", { class: "hero-fig" }, h("span", { class: "fig-k", text: "Size" }), h("b", { class: "serif", text: b.sqft ? Math.round(b.sqft) : "—" }), h("span", { class: "hero-sub", text: p ? "sq ft · $" + p.toFixed(2) + "/ft²" : "sq ft" })),
+        h("div", { class: "hero-fig" }, h("span", { class: "fig-k", text: "Match" }), h("b", { class: "serif" }, f1(sc)), h("span", { class: "hero-sub" }, jar(sc, "xs"), "of 10, your weights")),
+        h("div", { class: "hero-fig " + (d == null ? "" : d >= 0 ? "pos" : "neg") }, h("span", { class: "fig-k", text: d == null || d >= 0 ? "Saves vs. The Jayne" : "Costs vs. The Jayne" }), h("b", { class: "serif", text: d == null ? "—" : money(Math.abs(d)) }), h("span", { class: "hero-sub", text: d == null ? "rent unknown" : `a month · ${money(Math.abs(d) * 12)} a year, with parking` }))),
+      b.scam_flags ? h("p", { class: "callout bad" }, h("b", { text: "Scam warning. " }), b.scam_flags) : null,
+      h("div", { class: "dossier-actions" }, cmpBtn,
+        b.listing_url ? h("a", { class: "btn ghost sm", href: b.listing_url, target: "_blank", rel: "noopener" }, "Open listing", h("span", { "aria-hidden": "true", text: " ↗" })) : null,
+        a ? h("button", { class: "btn ghost sm", type: "button", text: "Neighborhood report", onclick: () => openArea(a) }) : null),
+      section("Requirements",
+        h("ul", { class: "checklist" }, ...REQS.map(r => {
+          const x = reqVal(b, r.key), det = REQ_DETAIL[r.key](b);
+          return h("li", { class: "check-row " + x },
+            h("span", { class: "check-ico" }, reqIcon(r.key) || h("span", { class: "req-glyph", "aria-hidden": "true", text: x === "yes" ? "✓" : x === "no" ? "✕" : "?" })),
+            h("div", { class: "check-main" }, h("p", { class: "check-name", text: r.name }), det ? h("p", { class: "check-det", text: det }) : null),
+            h("span", { class: "reqword " + x }, h("i", { "aria-hidden": "true" }), REQ_WORD[x]));
+        }))),
+      section("My notes",
+        h("div", { class: "notes-card" },
+          h("p", { class: "mono-label", id: "d-status-l", text: "Status" }), statusGroup,
+          h("label", { class: "mono-label", for: "d-note", text: "Notes" }), note,
+          h("p", { class: "hint", text: "Saved in this browser. Use Export notes at the bottom of the page to back up." }))),
+      section("Particulars",
+        kv([
+          ["List rent", b.base_rent ? money(b.base_rent) : null], ["Special", b.special || "None listed"],
+          ["All-in", c == null ? null : money(c) + "/mo with parking"],
+          ["Built", b.year_built], ["Landlord", b.landlord === "private" ? [b.owner_type || "Private owner", b.platform && "on " + b.platform].filter(Boolean).join(", ") : (b.reviews && b.reviews.management_company) || "Management company"],
+          ["Rent control", b.rent_control], ["Complex", b.hoa_amenities],
+          ["Internet", b.internet], ["Location", b.location_note], ["Watch out for", b.red_flags], ["Last checked", b.checked_on],
+        ]),
+        b.notes ? h("p", { class: "research-note", text: b.notes }) : null),
       reviewSection(b),
-      a ? h("section", { class: "section" }, h("h3", { text: "Neighborhood" }), h("div", { class: "bars" }, ...FACTORS.flatMap(f => { const x = factorScore(a, f); return [h("span", { text: f.name }), h("i", { style: { "--w": x == null ? "0%" : x * 10 + "%" } }), h("span", { text: f1(x) })]; }))) : null,
-      b.sources && b.sources.length ? h("details", { class: "srcs" }, h("summary", { text: `Sources (${b.sources.length})` }), h("ul", null, ...b.sources.map(u => h("li", null, linkOut(u))))) : null);
+      a ? section("Neighborhood",
+        h("div", { class: "nb-head" }, h("p", null, h("b", { class: "serif nb-name", text: a.name }), h("span", { class: "muted small", text: " · score " + f1(areaScore(a)) + " / 10" }))),
+        factorBars(a, "in-drawer"),
+        h("button", { class: "linkbtn", type: "button", text: "Open the full neighborhood report →", onclick: () => openArea(a) })) : null,
+      sources(b.sources));
   }
+  const AREA_ICON = { Freeways: "drive", Traffic: "drive", "Specialty coffee": "coffee", Walkability: "coffee", Quiet: "quiet", Safety: "safety", LAX: "lax", Nightlife: "extras", Gyms: "extras", Errands: "extras", Rail: "drive" };
   function openArea(a) {
     const bs = S.buildings.filter(b => b.area_id === a.id);
     const blocks = [
@@ -495,21 +887,31 @@
       ["Nightlife", a.nightlife, x => h("p", { text: [x.nearest_district, x.drive_minutes != null && x.drive_minutes + " min drive"].filter(Boolean).join(" · ") })],
       ["Gyms", a.gyms, x => ul(x.examples)], ["Errands", a.services], ["Rail", a.rail, x => h("p", { text: [x.nearest_station, x.line].filter(Boolean).join(" · ") })],
     ].filter(([, x]) => x);
-    drawer(
-      h("div", { style: { display: "grid", gap: "6px" } }, h("p", { class: "label", text: a.region }), h("h2", { text: a.name })),
-      h("p", null, h("span", { class: "big", text: f1(areaScore(a)) }), h("span", { class: "muted", text: "  neighborhood score with your weights" })),
-      a.summary ? h("p", { text: a.summary }) : null,
-      a.airports_other ? h("p", { class: "muted", text: "Other airports: " + a.airports_other }) : null,
-      bs.length ? h("section", { class: "section" }, h("h3", { text: `Listings here (${bs.length})` }),
-        h("div", { style: { display: "flex", flexWrap: "wrap", gap: "6px" } }, ...bs.map(b => h("button", { class: "btn ghost", type: "button", style: { fontSize: ".84rem", padding: "5px 10px" }, text: `${b.name} · ${money(rentOf(b))}`, onclick: () => openBuilding(b) })))) : null,
-      h("section", { class: "section" }, h("h3", { text: "Details" }),
-        h("div", null, ...blocks.map(([name, x, extra]) => h("div", { class: "factor" },
-          h("header", null, h("span", { text: name }), h("span", { text: x.score != null ? x.score + "/10" : "—" })),
-          extra ? extra(x) : null, x.note ? h("p", { text: x.note }) : null)))),
-      a.sources && a.sources.length ? h("details", { class: "srcs" }, h("summary", { text: `Sources (${a.sources.length})` }), h("ul", null, ...a.sources.map(u => h("li", null, linkOut(u))))) : null);
+    const sc = areaScore(a);
+    drawer("Atlas · " + a.region,
+      h("header", { class: "dossier-head area-head" },
+        regionEmblem(a.region, "lg"),
+        h("div", { class: "dossier-kicker" }, h("span", { text: a.region })),
+        h("h2", { class: "dossier-name", id: "drawerTitle", text: a.name })),
+      h("div", { class: "hero-figs two" },
+        h("div", { class: "hero-fig" }, h("span", { class: "fig-k", text: "Neighborhood score" }), h("b", { class: "serif", text: f1(sc) }), h("span", { class: "hero-sub" }, jar(sc, "xs"), "of 10, your weights")),
+        h("div", { class: "hero-fig" }, h("span", { class: "fig-k", text: "Listings here" }), h("b", { class: "serif", text: bs.length }), h("span", { class: "hero-sub", text: bs.filter(matches).length + " in view" }))),
+      a.summary ? h("p", { class: "dossier-summary", text: a.summary }) : null,
+      factorBars(a, "in-drawer"),
+      a.airports_other ? h("p", { class: "muted small", text: "Other airports: " + a.airports_other }) : null,
+      bs.length ? section(`Listings here`,
+        h("ul", { class: "minilist" }, ...bs.map(b => h("li", null, h("button", { type: "button", class: "minilist-btn v-" + verdict(b), onclick: () => openBuilding(b) },
+          h("span", { class: "minilist-name", text: b.name }), h("span", { class: "minilist-rent", text: money(rentOf(b)) }), h("span", { class: "minilist-arrow", "aria-hidden": "true", text: "→" })))))) : null,
+      section("Field notes",
+        h("div", { class: "fieldnotes" }, ...blocks.map(([name, x, extra]) => h("div", { class: "fieldnote" },
+          h("header", { class: "fieldnote-head" }, factorIcon(AREA_ICON[name]), h("span", { class: "fieldnote-name", text: name }), h("span", { class: "fieldnote-v" }, x.score != null ? h("span", { class: "meter xs", "aria-hidden": "true" }, h("i", { style: { "--w": x.score * 10 + "%" } })) : null, x.score != null ? x.score + "/10" : "—")),
+          extra ? extra(x) : null, x.note ? h("p", { class: "fieldnote-note", text: x.note }) : null)))),
+      sources(a.sources));
   }
 
-  /* ---------------- Data (embedded; personal edits live in this browser) ---------------- */
+  /* ==========================================================================
+     Data (embedded; personal edits live in this browser)
+     ========================================================================== */
   const DATA = JSON.parse(document.getElementById("data").textContent);
   async function saveBuilding(b, isNew) {
     const i = S.buildings.findIndex(x => x.id === b.id);
@@ -517,7 +919,7 @@
     const local = ls.get("edits", {});
     local[b.id] = isNew ? b : { ...(local[b.id] || {}), my_status: b.my_status, my_note: b.my_note };
     if (!ls.set("edits", local)) { toast("Couldn't save in this browser. Use Export to keep a copy."); }
-    renderResults();
+    renderResults(); renderChips();
     return true;
   }
   function applyEdits(edits) {
@@ -555,12 +957,21 @@
   }
   $("exportBtn").addEventListener("click", exportEdits);
   $("importFile").addEventListener("change", e => { if (e.target.files[0]) importEdits(e.target.files[0]); e.target.value = ""; });
+
+  function renderArt() {
+    const hero = ill("hero");
+    if (hero) { $("heroArt").innerHTML = hero; document.body.classList.add("has-hero"); }
+    const orn = ill("ornament");
+    if (orn) $("ornament").innerHTML = orn;
+  }
   function boot() {
+    renderArt();
     renderDates();
     setData(DATA.buildings, DATA.neighborhoods);
     applyEdits(ls.get("edits", {}));
     S.canWrite = true;
     $("dataDate").textContent = "Data updated " + DATA.updated;
+    $("mastDate").textContent = "Updated " + DATA.updated;
     renderAll();
   }
   function renderAll() { renderFilters(); renderToolbar(); renderResults(); }

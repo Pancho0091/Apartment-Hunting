@@ -3,58 +3,92 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light only">
+<meta name="theme-color" content="#f3efe6">
 <title>Apartment Search 2027</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap">
 <style>
 /*__CSS__*/
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header class="top">
-    <div>
-      <h1>Apartment Search 2027</h1>
-      <p class="sub">Los Angeles, Long Beach and Orange County · one bedroom, 700 sq ft or more</p>
-    </div>
-    <div class="dates" id="dates"></div>
-  </header>
+<a class="skip" href="#results">Skip to listings</a>
 
-  <section class="search" aria-label="Search">
+<header class="mast" id="top">
+  <div class="mast-art" id="heroArt" aria-hidden="true"></div>
+  <div class="shell mast-inner">
+    <div class="mast-rule" aria-hidden="true">
+      <span id="mastDate">Field guide</span>
+      <span class="mast-rule-line"></span>
+      <span>Los Angeles · Long Beach · Orange County</span>
+    </div>
+    <div class="mast-title">
+      <p class="eyebrow">A field guide to the next lease</p>
+      <h1>Apartment Search <em>2027</em></h1>
+      <p class="lede">One bedroom, 700 sq ft or more, under $2,300 a month, with in-unit laundry, central AC, a dishwasher, parking and package handling. The lease at The Jayne ends January 29, 2027.</p>
+    </div>
+    <ol class="deadlines" id="dates" aria-label="Deadlines"></ol>
+    <dl class="ledger" id="stats" aria-label="Summary"></dl>
+  </div>
+</header>
+
+<section class="searchband" aria-label="Search">
+  <div class="shell">
     <div class="searchbox">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
-      <input id="q" type="search" placeholder="Search by building, street, neighborhood, landlord, feature…" aria-label="Search listings" autocomplete="off">
+      <svg class="searchbox-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m20 20-4.6-4.6"></path></svg>
+      <input id="q" type="search" placeholder="Search building, street, neighborhood, landlord, feature" aria-label="Search listings" aria-describedby="count" autocomplete="off" spellcheck="false">
+      <kbd class="searchbox-kbd" aria-hidden="true">/</kbd>
+      <p class="count" id="count" aria-live="polite">Loading…</p>
     </div>
-    <div class="resultbar">
-      <p class="count" id="count">Loading…</p>
-      <p class="muted" id="baseline" style="font-size:.88rem"></p>
-    </div>
-  </section>
+    <div class="chips" id="chips" role="group" aria-label="Quick filters"></div>
+  </div>
+</section>
 
-  <div class="layout">
-    <aside>
-      <button class="btn ghost mobile-filters" id="toggleFilters" type="button" aria-expanded="false" aria-controls="filters">Show filters</button>
-      <div class="filters" id="filters" data-collapsed="true"></div>
-    </aside>
-    <main class="main">
-      <div class="toolbar">
-        <div class="seg" role="group" aria-label="View" id="views"></div>
-        <label class="muted" style="display:flex;gap:8px;align-items:center;font-size:.9rem">Sort
-          <select class="plain" id="sort"></select>
+<div class="shell layout">
+  <aside class="sidebar" id="sidebar" aria-label="Filters">
+    <div class="sheet-head">
+      <p class="sheet-title">Filters</p>
+      <button class="iconbtn" type="button" id="closeFilters" aria-label="Close filters">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+    <div class="filters" id="filters"></div>
+    <div class="sheet-foot"><button class="btn block" type="button" id="applyFilters">Show results</button></div>
+  </aside>
+  <div class="sheet-scrim" id="sheetScrim" hidden></div>
+
+  <main class="main" id="results">
+    <div class="toolbar">
+      <div class="seg" role="group" aria-label="View" id="views"></div>
+      <div class="toolbar-right">
+        <button class="btn ghost filters-btn" id="toggleFilters" type="button" aria-expanded="false" aria-controls="sidebar">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg>
+          Filters <span class="badge" id="filterBadge" hidden></span>
+        </button>
+        <div class="density" id="density" role="group" aria-label="Layout"></div>
+        <label class="sortctl"><span class="mono-label">Sort</span>
+          <select class="select" id="sort"></select>
         </label>
       </div>
-      <section id="view" aria-live="polite"></section>
-    </main>
-  </div>
+    </div>
+    <section id="view" class="view" aria-live="polite"></section>
+  </main>
 </div>
-<footer class="wrap foot">
-  <p class="muted" id="dataDate"></p>
-  <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center">
-    <span class="muted" style="font-size:.88rem">Your statuses, notes and added listings are saved in this browser.</span>
-    <button class="btn ghost" id="exportBtn" type="button">Export notes</button>
-    <label class="btn ghost" for="importFile" style="cursor:pointer">Import notes</label>
-    <input id="importFile" type="file" accept="application/json,.json" hidden>
+
+<footer class="colophon">
+  <div class="shell colophon-inner">
+    <div class="colophon-mark" id="ornament" aria-hidden="true"></div>
+    <div class="colophon-row">
+      <p class="mono-label" id="dataDate"></p>
+      <p class="colophon-note">Your statuses, notes and added listings are saved in this browser.</p>
+      <div class="colophon-actions">
+        <button class="btn ghost sm" id="exportBtn" type="button">Export notes</button>
+        <label class="btn ghost sm" for="importFile">Import notes</label>
+        <input id="importFile" type="file" accept="application/json,.json" hidden>
+      </div>
+    </div>
   </div>
 </footer>
 <div id="drawerRoot"></div>
