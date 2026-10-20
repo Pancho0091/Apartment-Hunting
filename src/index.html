@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Apartment Search 2027</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700&display=swap">
+<style>
+/*__CSS__*/
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>Apartment Search 2027</h1>
+      <p class="sub">Los Angeles, Long Beach and Orange County · one bedroom, 700 sq ft or more</p>
+    </div>
+    <div class="dates" id="dates"></div>
+  </header>
+
+  <section class="search" aria-label="Search">
+    <div class="searchbox">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+      <input id="q" type="search" placeholder="Search by building, street, neighborhood, landlord, feature…" aria-label="Search listings" autocomplete="off">
+    </div>
+    <div class="resultbar">
+      <p class="count" id="count">Loading…</p>
+      <p class="muted" id="baseline" style="font-size:.88rem"></p>
+    </div>
+  </section>
+
+  <div class="layout">
+    <aside>
+      <button class="btn ghost mobile-filters" id="toggleFilters" type="button" aria-expanded="false" aria-controls="filters">Show filters</button>
+      <div class="filters" id="filters" data-collapsed="true"></div>
+    </aside>
+    <main class="main">
+      <div class="toolbar">
+        <div class="seg" role="group" aria-label="View" id="views"></div>
+        <label class="muted" style="display:flex;gap:8px;align-items:center;font-size:.9rem">Sort
+          <select class="plain" id="sort"></select>
+        </label>
+      </div>
+      <section id="view" aria-live="polite"></section>
+    </main>
+  </div>
+</div>
+<footer class="wrap foot">
+  <p class="muted" id="dataDate"></p>
+  <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+    <span class="muted" style="font-size:.88rem">Your statuses, notes and added listings are saved in this browser.</span>
+    <button class="btn ghost" id="exportBtn" type="button">Export notes</button>
+    <label class="btn ghost" for="importFile" style="cursor:pointer">Import notes</label>
+    <input id="importFile" type="file" accept="application/json,.json" hidden>
+  </div>
+</footer>
+<div id="drawerRoot"></div>
+<script id="data" type="application/json">/*__DATA__*/</script>
+
+<script>
+/*__ILLUS__*/
+</script>
+<script>
+/*__MAP__*/
+</script>
+<script>
+/*__APP__*/
+</script>
+
+</body>
+</html>
