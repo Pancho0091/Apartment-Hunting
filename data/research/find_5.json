@@ -1,0 +1,22 @@
+[
+ {"name": "Ascent Apartment Homes", "address": "11152 Wallingsford Rd, Los Alamitos, CA 90720", "area": "NEW: Los Alamitos / Rossmoor", "lat": 33.7905, "lng": -118.0735,
+  "geocode_note": "Placed by hand from the street address (Rossmoor side of Los Alamitos, near Rossmoor Center); not geocoded, likely error 300-600 m", "year_built": null, "management_company": null,
+  "floor_plan": "1x1 (smallest plan, 745 sq ft; name not captured)", "sqft": 745, "base_rent": 2495, "effective_rent": 2287, "special": "1 month free per Redfin snapshot; net assumes a 12-month lease (2495*11/12). Property's own listing showed 1BR $2,550-$2,675 with no special, and another Redfin snapshot showed $2,550, so price depends on date",
+  "parking_fee": null, "seen_on": "Redfin search snippets (Los Alamitos / Rossmoor 1BR pages) + Westside Rentals property page snippet, seen 2026-10-15", "units_note": "Redfin lists 12-26 units available across 1-3BR, 745-1,320 sq ft",
+  "washer_dryer": "unclear", "central_ac": "unclear", "central_ac_evidence": "Listing says 'air conditioning' in fully renovated units; type not stated",
+  "dishwasher": "yes", "parking": "unclear", "packages": "lockers", "packages_detail": "Listing advertises automated package lockers",
+  "reputation_gist": "No resident reviews surfaced in the search. Listing describes it as fully renovated, with a 24-hour gym, pool, lounge and pet wash.", 
+  "red_flags": "Older complex that was renovated (year not found). In-unit laundry is only in 'select floor plans', so the 745 sq ft plan may lack it. AC type unknown. Budget only works with the 1-month-free special.",
+  "listing_url": "https://jsonapi.westsiderentals.com/los-alamitos-ca/ascent-apartment-homes-f3zp3cr",
+  "sources": ["https://www.redfin.com/city/10997/CA/Los-Alamitos/luxury-1-bedroom-apartment", "https://www.redfin.com/neighborhood/66084/CA/Los-Alamitos/Armed-Forces-Reserve-Center/1-bedroom-apartments-for-rent", "https://jsonapi.westsiderentals.com/los-alamitos-ca/ascent-apartment-homes-f3zp3cr"]},
+ {"name": "The Montville", "address": "3701 Montclair St, Los Angeles, CA 90018", "area": "NEW: Jefferson Park / West Adams", "lat": 34.0245, "lng": -118.3262,
+  "geocode_note": "Placed by hand from the street address (Montclair St near Jefferson Blvd); not geocoded, likely error 300-500 m", "year_built": null, "management_company": null,
+  "floor_plan": "1x1", "sqft": 800, "base_rent": 1875, "effective_rent": null, "special": null,
+  "parking_fee": null, "seen_on": "Redfin search snippets (Jefferson Park 'apartments under 2000' pages), seen 2026-10-15; other snapshots show $1,829-$1,875", "units_note": "Redfin: 2 units available",
+  "washer_dryer": "unclear", "central_ac": "unclear", "central_ac_evidence": "Redfin tags 'A/C' only; type not stated",
+  "dishwasher": "unclear", "parking": "unclear", "packages": "unclear", "packages_detail": "Nothing found",
+  "reputation_gist": "No reviews found; no reputation search run because the search budget ran out.",
+  "red_flags": "Low-confidence lead. At $1,875 for 800 sq ft this is most likely an older building without in-unit W/D or central AC. Only one Redfin snippet supports the sq ft figure. Needs a phone call before anyone spends time on it.",
+  "listing_url": "https://www.redfin.com/neighborhood/3958/CA/Los-Angeles/Jefferson-Park/apartments-under-2000-for-rent",
+  "sources": ["https://www.redfin.com/neighborhood/3958/CA/Los-Angeles/Jefferson-Park/apartments-under-2000-for-rent", "https://www.redfin.com/neighborhood/10584/CA/Los-Angeles/Jefferson/apartments-under-2000-for-rent"]}
+]
