@@ -1,0 +1,1909 @@
+[
+ {
+  "neighborhood": "Upper West Side / Morningside Heights",
+  "region": "Manhattan",
+  "lat": 40.799,
+  "lng": -73.968,
+  "freeway": {
+   "score": 7,
+   "nearest": [
+    "Henry Hudson Pkwy / West Side Hwy (79th, 96th or 125th St ramps, ~3-6 min)",
+    "GW Bridge / I-95 & Cross Bronx via Henry Hudson north (~10-15 min)"
+   ],
+   "note": "Henry Hudson Pkwy runs along the whole west edge; cars-only parkway. Interstates (I-95, I-87) are 10+ min north. Estimate."
+  },
+  "traffic": {
+   "score": 5,
+   "note": "Henry Hudson/West Side Hwy slows at peak, Broadway/Amsterdam/Columbus are slow signal-heavy avenues. Outside the congestion-pricing zone (north of 60th St). INRIX 2025: NYC 102 hrs lost/driver (2nd in US); only one NYC corridor (I-278 BQE) remained in INRIX's top-25 worst; congestion pricing (below 60th St, Manhattan) cited as keeping NYC congestion flat."
+  },
+  "coffee": {
+   "score": 6,
+   "cafes": [
+    "Oren's Coffee - 2882 Broadway (Morningside), long-running specialty roaster",
+    "Hungarian Pastry Shop - 1030 Amsterdam Ave, iconic, laptop culture (Columbia)",
+    "Solid State - UWS, rotating house blends",
+    "Samad's Gourmet - 2686 Broadway, specialty beans since 1971",
+    "Typhoon Cafe - 947 Columbus Ave (opened 2025)",
+    "Birch Coffee - UWS locations (multi-roaster/own roast)"
+   ],
+   "note": "Fewer third-wave roasters than downtown/Brooklyn, but several solid walkable options, esp. near Columbia. Names from West Side Rag (Nov 2025) and Columbia News lists; verify current hours."
+  },
+  "walk": {
+   "score": 9,
+   "walk_score": null,
+   "note": "Walk Score not retrieved this round; dense grid with groceries every few blocks - expected 90+ (estimate)."
+  },
+  "quiet": {
+   "score": 7,
+   "note": "Side streets (W 70s-100s between avenues, Riverside Dr) are among Manhattan's calmest; avenues carry buses/trucks; some Henry Hudson hum near Riverside Park. Little nightlife noise."
+  },
+  "safety": {
+   "score": 5,
+   "violent_per_1k": null,
+   "property_per_1k": null,
+   "year": "2023",
+   "source": "Furman Center CoreData (Manhattan borough row only)",
+   "note": "MN 07 (UWS) row not retrievable via search; Manhattan borough 2023: violent 5.5, property 14.0 per 1k vs NYC 5.3/9.0. UWS (20th/24th Pcts) generally reads below borough average; Morningside (26th Pct) similar. Scored ~average pending CD data. Furman Center CoreData 2023 community-district rates (columns property_crime_rate, violent_crime_rate; read as per 1,000 residents). NYC average used for comparison: violent 5.3, property 9.0 (Furman 2023). Citywide index crime fell ~3% in 2025 and murders/shootings hit record lows (Vital City / NYPD), so 2025-26 levels are likely a bit lower."
+  },
+  "lax": {
+   "score": 7,
+   "minutes_offpeak": 25,
+   "minutes_peak": 45,
+   "note": "LGA via 125th St / Triborough (RFK) Bridge / Grand Central Pkwy. Drive times are rough estimates from typical NYC off-peak/peak conditions, not measured this round."
+  },
+  "nightlife": {
+   "score": 8,
+   "nearest_district": "UWS Amsterdam/Columbus bar strip; Lincoln Center; Harlem (Frederick Douglass Blvd)",
+   "drive_minutes": 8,
+   "note": "Plenty in-neighborhood; Midtown/downtown ~15-25 min drive (estimate)."
+  },
+  "gyms": {
+   "score": 9,
+   "examples": [
+    "Equinox (several UWS clubs)",
+    "Crunch / Blink / Planet Fitness (Broadway corridor)",
+    "Boutique studios (SoulCycle, Barry's) - verify locations"
+   ]
+  },
+  "services": {
+   "score": 9,
+   "note": "Trader Joe's (72nd & Broadway), Whole Foods (97th & Columbus), Zabar's, Fairway; dense pharmacies, post offices, Amazon lockers. From general knowledge; verify."
+  },
+  "rail": {
+   "score": 10,
+   "nearest_station": "72nd St / 96th St / 116th St-Columbia",
+   "line": "1/2/3 (Broadway), B/C (CPW)",
+   "note": "Subway within 5 min almost everywhere."
+  },
+  "airports_other": "JFK ~35-45 min, EWR ~35-45 min off-peak (estimate).",
+  "summary": "Calm, leafy, extremely walkable Manhattan with decent (not cutting-edge) coffee and quick Henry Hudson Pkwy access. Trade-off: rents run far above the $2,300 budget and in-unit W/D + central AC + parking are rare in the prewar stock.",
+  "sources": [
+   "https://www.furmancenter.org/wp-content/uploads/data/crime_rate_data.csv",
+   "https://www.westsiderag.com/2025/11/13/perk-up-the-buzz-on-upper-west-side-coffee-spots",
+   "https://news.columbia.edu/node/10561",
+   "https://inrix.com/press-releases/2025-global-traffic-scorecard-us/",
+   "https://www.weather.gov/media/okx/Climate/CentralPark/DailyMaxTNormals.pdf",
+   "https://www.skybriz.com/?p=7861"
+  ],
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "No reliable 2026 1BR median found; Skybriz undated guide lists UWS ~$6,000/mo (unit mix unclear); Manhattan-wide 1BR median ~$4,390 (Skybriz 2026)",
+   "rent_trend": null,
+   "summer_high_f": 83,
+   "marine_layer": "little - no marine-layer/June-gloom pattern; harbor/ocean sea breeze gives slight afternoon relief near the water, but summers are humid and central AC matters",
+   "fire_hazard": "CAL FIRE FHSZ: none (not applicable - outside California; no meaningful wildfire hazard)",
+   "flood_zone": "Mostly upland; only the Riverside Park / Hudson edge low-lying. Check FloodHelpNY per address (not verified this round).",
+   "airport_noise": "none notable (occasional LGA/Hudson corridor traffic; helicopter tours along Hudson)",
+   "parks": [
+    "Central Park",
+    "Riverside Park",
+    "Morningside Park"
+   ],
+   "farmers_markets": [
+    "79th Street Greenmarket (Columbus Ave 77th-81st, Sundays)",
+    "Columbia Greenmarket (Broadway at 114th-116th - verify days)"
+   ],
+   "fiber": "Verizon Fios available in many NYC buildings but building-by-building (a city settlement required Verizon to extend Fios to 500k more households); Spectrum cable is the usual alternative. Check the specific address - not verified per building this round.",
+   "vibe": "Residential, bookish and calm, with cafes and Central/Riverside Parks at hand - quiet Manhattan, but expensive."
+  },
+  "name": "Upper West Side / Morningside Heights",
+  "id": "nyc-upper-west-side-morningside-heights",
+  "market": "nyc"
+ },
+ {
+  "neighborhood": "Harlem / Washington Heights",
+  "region": "Manhattan",
+  "lat": 40.83,
+  "lng": -73.943,
+  "freeway": {
+   "score": 9,
+   "nearest": [
+    "Harlem River Dr (~3-5 min)",
+    "Henry Hudson Pkwy (~5 min)",
+    "I-95 / GW Bridge / Cross Bronx (Wash Hts, ~3-5 min)",
+    "I-87 Major Deegan & I-278 via RFK/Triborough (~5-8 min)"
+   ],
+   "note": "Best highway network position in Manhattan: GWB, Harlem River Dr, Henry Hudson and RFK Bridge all close. Estimate."
+  },
+  "traffic": {
+   "score": 3,
+   "note": "Cross Bronx/GWB approaches (I-95) are chronically among the region's worst bottlenecks; Harlem River Dr and 125th St jam at peak. INRIX 2025: NYC 102 hrs lost/driver (2nd in US); only one NYC corridor (I-278 BQE) remained in INRIX's top-25 worst; congestion pricing (below 60th St, Manhattan) cited as keeping NYC congestion flat."
+  },
+  "coffee": {
+   "score": 5,
+   "cafes": [
+    "Picky Barista - 431 W 121st St (Harlem), strong espresso",
+    "Patisserie Les Ambassades - 2200 Frederick Douglass Blvd",
+    "Uptown independent cafes in Wash Hts - no reliable 2025-26 list found"
+   ],
+   "note": "Specialty options exist but thinner and spread out; Washington Heights coverage not verified this round."
+  },
+  "walk": {
+   "score": 9,
+   "walk_score": null,
+   "note": "Walk Score not retrieved; dense grid, groceries/bodegas everywhere (estimate 90+). Hilly in Wash Hts."
+  },
+  "quiet": {
+   "score": 5,
+   "note": "Brownstone blocks (Hamilton Hts, Sugar Hill, Mount Morris Park) can be calm; avenues, Broadway in Wash Hts and GWB/Cross Bronx-adjacent blocks are loud; summer street noise."
+  },
+  "safety": {
+   "score": 4,
+   "violent_per_1k": null,
+   "property_per_1k": null,
+   "year": "2023",
+   "source": "Furman Center CoreData (borough row only)",
+   "note": "Central Harlem (MN 10) and Wash Hts/Inwood (MN 12) rows not retrievable via search. Manhattan borough 2023 violent 5.5/property 14.0 vs NYC 5.3/9.0; Central/East Harlem historically above the city violent average, Wash Hts/Hudson Hts near or below. Score is a judgment pending CD data. Furman Center CoreData 2023 community-district rates (columns property_crime_rate, violent_crime_rate; read as per 1,000 residents). NYC average used for comparison: violent 5.3, property 9.0 (Furman 2023). Citywide index crime fell ~3% in 2025 and murders/shootings hit record lows (Vital City / NYPD), so 2025-26 levels are likely a bit lower."
+  },
+  "lax": {
+   "score": 8,
+   "minutes_offpeak": 20,
+   "minutes_peak": 40,
+   "note": "LGA via RFK/Triborough Bridge + Grand Central Pkwy. Drive times are rough estimates from typical NYC off-peak/peak conditions, not measured this round."
+  },
+  "nightlife": {
+   "score": 8,
+   "nearest_district": "Frederick Douglass Blvd / 125th St (Harlem); Dyckman St (Inwood)",
+   "drive_minutes": 8,
+   "note": "Estimate."
+  },
+  "gyms": {
+   "score": 7,
+   "examples": [
+    "Planet Fitness / Blink (125th St area)",
+    "Harlem YMCA",
+    "Crunch - verify"
+   ]
+  },
+  "services": {
+   "score": 8,
+   "note": "Whole Foods 125th St, Trader Joe's (Harlem - verify), Target East Harlem; abundant pharmacies. From general knowledge."
+  },
+  "rail": {
+   "score": 10,
+   "nearest_station": "125th St / 145th St / 168th St / 181st St",
+   "line": "A/B/C/D, 1, 2/3, 4/5/6; Metro-North at 125th",
+   "note": "Excellent subway; A express to Midtown in ~15 min."
+  },
+  "airports_other": "EWR ~30-40 min, JFK ~30-40 min off-peak (estimate).",
+  "summary": "The most budget-plausible Manhattan option, with superb highway and LGA access, good subway and a growing cafe scene. Trade-off: GWB/Cross Bronx congestion, busier/noisier streets, and safety that is block-by-block.",
+  "sources": [
+   "https://www.renthop.com/average-rent-in/harlem-new-york-ny",
+   "https://www.skybriz.com/?p=7861",
+   "https://www.furmancenter.org/wp-content/uploads/data/crime_rate_data.csv",
+   "https://inrix.com/press-releases/2025-global-traffic-scorecard-us/",
+   "https://www.weather.gov/media/okx/Climate/CentralPark/DailyMaxTNormals.pdf"
+  ],
+  "extras": {
+   "median_1br_rent": 3100,
+   "rent_source": "RentHop Harlem, Sep 2026 (Wash Hts/Inwood/Hamilton Hts 1BR asking ~$2,250-2,700 per Skybriz 2026 guide)",
+   "rent_trend": "-2.5% YoY (RentHop Harlem, Sep 2026)",
+   "summer_high_f": 83,
+   "marine_layer": "little - no marine-layer/June-gloom pattern; harbor/ocean sea breeze gives slight afternoon relief near the water, but summers are humid and central AC matters",
+   "fire_hazard": "CAL FIRE FHSZ: none (not applicable - outside California; no meaningful wildfire hazard)",
+   "flood_zone": "Low-lying edges near Harlem River / East Harlem and Hudson waterfront; most of Hamilton/Wash Hts is high ground. Not verified per address.",
+   "airport_noise": "none notable (some LGA departure turns over the Harlem River area - unverified)",
+   "parks": [
+    "Morningside Park",
+    "St. Nicholas Park",
+    "Marcus Garvey Park",
+    "Fort Tryon Park",
+    "Highbridge Park"
+   ],
+   "farmers_markets": [
+    "No Greenmarket verified this round (check grownyc.org)"
+   ],
+   "fiber": "Verizon Fios available in many NYC buildings but building-by-building (a city settlement required Verizon to extend Fios to 500k more households); Spectrum cable is the usual alternative. Check the specific address - not verified per building this round.",
+   "vibe": "Brownstone-and-prewar uptown with real character and the best highway position in Manhattan, but livelier streets and spottier coffee."
+  },
+  "name": "Harlem / Washington Heights",
+  "id": "nyc-harlem-washington-heights",
+  "market": "nyc"
+ },
+ {
+  "neighborhood": "Midtown / Hell's Kitchen",
+  "region": "Manhattan",
+  "lat": 40.763,
+  "lng": -73.991,
+  "freeway": {
+   "score": 8,
+   "nearest": [
+    "West Side Hwy / Route 9A (~3-5 min)",
+    "Lincoln Tunnel / NJ Route 495 to NJ Turnpike (~3-5 min)",
+    "FDR Dr (cross-town, ~10-15 min)"
+   ],
+   "note": "Lincoln Tunnel and West Side Hwy are adjacent, but reaching them means sitting in tunnel queues. Estimate."
+  },
+  "traffic": {
+   "score": 2,
+   "note": "Lincoln Tunnel approach, 42nd St and the avenues are among the most congested streets in NYC; inside the congestion-pricing zone (south of 60th St) so driving in/out incurs the toll. INRIX 2025: NYC 102 hrs lost/driver (2nd in US); only one NYC corridor (I-278 BQE) remained in INRIX's top-25 worst; congestion pricing (below 60th St, Manhattan) cited as keeping NYC congestion flat."
+  },
+  "coffee": {
+   "score": 7,
+   "cafes": [
+    "The Jolly Goat - 515 W 47th St (Stumptown; tiny, 3 seats)",
+    "Black Fox Coffee - W 45th St (takeaway-focused)",
+    "Culture Espresso - 72 W 38th St",
+    "La Colombe - 1045 Sixth Ave (Bryant Park)",
+    "Bar Lola - coffee-to-cocktails"
+   ],
+   "note": "Several specialty spots, but blog sources are 2018-2022; few laptop-friendly seats in HK. Verify."
+  },
+  "walk": {
+   "score": 10,
+   "walk_score": null,
+   "note": "Walk Score not retrieved; among the most walkable places in the US (estimate 98+)."
+  },
+  "quiet": {
+   "score": 2,
+   "note": "Theater district, 9th/10th Ave bar strip, tunnel traffic, sirens, West 30th St heliport and Hudson tour helicopters. Quiet blocks are rare."
+  },
+  "safety": {
+   "score": 4,
+   "violent_per_1k": null,
+   "property_per_1k": null,
+   "year": "2023",
+   "source": "Furman Center CoreData (borough row only)",
+   "note": "Clinton/Chelsea (MN 04) and Midtown (MN 05) rows not retrievable; Manhattan borough 2023 violent 5.5/property 14.0 vs NYC 5.3/9.0. Midtown per-resident rates are heavily commuter/tourist-inflated (low residential population). Furman Center CoreData 2023 community-district rates (columns property_crime_rate, violent_crime_rate; read as per 1,000 residents). NYC average used for comparison: violent 5.3, property 9.0 (Furman 2023). Citywide index crime fell ~3% in 2025 and murders/shootings hit record lows (Vital City / NYPD), so 2025-26 levels are likely a bit lower."
+  },
+  "lax": {
+   "score": 7,
+   "minutes_offpeak": 25,
+   "minutes_peak": 50,
+   "note": "LGA via Queens-Midtown Tunnel/LIE+BQE or Queensboro Bridge; EWR via Lincoln Tunnel similar (~25-35 off-peak). Drive times are rough estimates from typical NYC off-peak/peak conditions, not measured this round."
+  },
+  "nightlife": {
+   "score": 10,
+   "nearest_district": "Hell's Kitchen 9th Ave / Theater District",
+   "drive_minutes": 0,
+   "note": "On the doorstep - the opposite of what this client wants for quiet."
+  },
+  "gyms": {
+   "score": 10,
+   "examples": [
+    "Equinox (multiple Midtown)",
+    "Crunch",
+    "Planet Fitness",
+    "Chelsea Piers (nearby)"
+   ]
+  },
+  "services": {
+   "score": 10,
+   "note": "Whole Foods Columbus Circle, Trader Joe's (Chelsea/Union Sq area), Target, endless pharmacies; Amazon lockers everywhere."
+  },
+  "rail": {
+   "score": 10,
+   "nearest_station": "50th St / 42nd St-Port Authority / Times Sq",
+   "line": "A/C/E, 1/2/3, N/Q/R/W, 7, S; Port Authority buses; Penn Station nearby",
+   "note": "Hub of the system."
+  },
+  "airports_other": "EWR ~25-35 min via Lincoln Tunnel, JFK ~40-50 min off-peak (estimate).",
+  "summary": "Maximum convenience and transit, but noisy, congestion-priced and the least car-friendly area on the list. Poor fit for a remote worker prioritizing quiet and fast highway exits.",
+  "sources": [
+   "https://www.furmancenter.org/wp-content/uploads/data/crime_rate_data.csv",
+   "https://www.doubleskinnymacchiato.com/2018/05/best-specialty-coffee-shops-midtown-manhattan-nyc-map-guide.html",
+   "https://www.doubleskinnymacchiato.com/2022/06/new-york-specialty-coffee-shops-update-summer-2022.html",
+   "https://inrix.com/press-releases/2025-global-traffic-scorecard-us/",
+   "https://www.weather.gov/media/okx/Climate/CentralPark/DailyMaxTNormals.pdf",
+   "https://www.skybriz.com/?p=1635"
+  ],
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "No reliable 2026 1BR median found; Skybriz undated lists Hell's Kitchen ~$5,300/mo (unit mix unclear)",
+   "rent_trend": null,
+   "summer_high_f": 83,
+   "marine_layer": "little - no marine-layer/June-gloom pattern; harbor/ocean sea breeze gives slight afternoon relief near the water, but summers are humid and central AC matters",
+   "fire_hazard": "CAL FIRE FHSZ: none (not applicable - outside California; no meaningful wildfire hazard)",
+   "flood_zone": "Far-west blocks near the Hudson (11th-12th Ave) low-lying; most of Midtown outside flood zones. Not verified per address.",
+   "airport_noise": "No jet noise; frequent helicopter noise (West 30th St heliport, Hudson tour routes)",
+   "parks": [
+    "Hudson River Park",
+    "DeWitt Clinton Park",
+    "Bryant Park",
+    "Central Park (south end)"
+   ],
+   "farmers_markets": [
+    "57th Street Greenmarket (W 57th & 9th/10th Ave - verify days)"
+   ],
+   "fiber": "Verizon Fios available in many NYC buildings but building-by-building (a city settlement required Verizon to extend Fios to 500k more households); Spectrum cable is the usual alternative. Check the specific address - not verified per building this round.",
+   "vibe": "Loud, 24-hour Manhattan with everything on the block - great for errands, bad for quiet and driving."
+  },
+  "name": "Midtown / Hell's Kitchen",
+  "id": "nyc-midtown-hell-s-kitchen",
+  "market": "nyc"
+ },
+ {
+  "neighborhood": "Lower Manhattan / Financial District",
+  "region": "Manhattan",
+  "lat": 40.7075,
+  "lng": -74.009,
+  "freeway": {
+   "score": 8,
+   "nearest": [
+    "FDR Dr (~3 min)",
+    "West Side Hwy / 9A (~3 min)",
+    "Brooklyn Bridge/BQE & Hugh L. Carey (Battery) Tunnel to I-278/I-478 (~3-5 min)",
+    "Holland Tunnel (~8 min)"
+   ],
+   "note": "Several on-ramps nearby; all are congested at peak. Estimate."
+  },
+  "traffic": {
+   "score": 3,
+   "note": "Inside congestion-pricing zone; FDR and BQE approaches clog at peak; BQE was NYC's only INRIX 2025 top-25 corridor. INRIX 2025: NYC 102 hrs lost/driver (2nd in US); only one NYC corridor (I-278 BQE) remained in INRIX's top-25 worst; congestion pricing (below 60th St, Manhattan) cited as keeping NYC congestion flat."
+  },
+  "coffee": {
+   "score": 8,
+   "cafes": [
+    "Black Fox Coffee - Pine St (flagship)",
+    "Devocion - FiDi location (single-origin Colombian)",
+    "Suited NYC - 45 John St (rotating pour-overs)",
+    "Blue Spoon Coffee Co. (Intelligentsia)",
+    "Variety Coffee Roasters - FiDi"
+   ],
+   "note": "Strong specialty density, mostly weekday-oriented. Sources include blogs/listicles; verify hours (weekend closures common)."
+  },
+  "walk": {
+   "score": 10,
+   "walk_score": null,
+   "note": "Walk Score not retrieved; extremely walkable (estimate 95+)."
+  },
+  "quiet": {
+   "score": 5,
+   "note": "Very quiet nights/weekends in core FiDi; construction, Downtown Manhattan Heliport (Pier 6) and tour helicopters, Stone St bar noise in pockets."
+  },
+  "safety": {
+   "score": 5,
+   "violent_per_1k": null,
+   "property_per_1k": null,
+   "year": "2023",
+   "source": "Furman Center CoreData (borough row only)",
+   "note": "MN 01 row not retrievable; Manhattan borough 2023 violent 5.5/property 14.0 vs NYC 5.3/9.0. FiDi per-resident rates are commuter-inflated (large daytime population); residential streets generally feel safe. Furman Center CoreData 2023 community-district rates (columns property_crime_rate, violent_crime_rate; read as per 1,000 residents). NYC average used for comparison: violent 5.3, property 9.0 (Furman 2023). Citywide index crime fell ~3% in 2025 and murders/shootings hit record lows (Vital City / NYPD), so 2025-26 levels are likely a bit lower."
+  },
+  "lax": {
+   "score": 7,
+   "minutes_offpeak": 25,
+   "minutes_peak": 45,
+   "note": "EWR via Holland Tunnel/NJ Tpke ~25-30; LGA via BQE/FDR ~25-30; JFK via Battery Tunnel+Belt ~30-40. Drive times are rough estimates from typical NYC off-peak/peak conditions, not measured this round."
+  },
+  "nightlife": {
+   "score": 9,
+   "nearest_district": "Stone St / Seaport; Tribeca; LES",
+   "drive_minutes": 5,
+   "note": "Estimate."
+  },
+  "gyms": {
+   "score": 9,
+   "examples": [
+    "Equinox (Wall St, Brookfield Place)",
+    "Crunch",
+    "Blink",
+    "Asphalt Green Battery Park"
+   ]
+  },
+  "services": {
+   "score": 8,
+   "note": "Whole Foods (Brookfield Place/Tribeca), Trader Joe's (Court St Bklyn - nearby, verify), Target (Tribeca), pharmacies, Amazon lockers; some services close weekends."
+  },
+  "rail": {
+   "score": 10,
+   "nearest_station": "Fulton St / WTC / Wall St",
+   "line": "2/3, 4/5, A/C, J/Z, R/W, 1, E; PATH; Staten Island/NYC Ferry",
+   "note": "Major hub."
+  },
+  "airports_other": "EWR ~25-30 min, JFK ~30-40 min off-peak (estimate).",
+  "summary": "Excellent coffee, transit and an evening-quiet residential core with many modern full-service buildings (in-unit W/D and central air more common than uptown). Trade-off: rents well above budget, congestion-pricing zone, helicopter/construction noise.",
+  "sources": [
+   "https://www.furmancenter.org/wp-content/uploads/data/crime_rate_data.csv",
+   "https://www.placemakr.com/blog/wall-street-coffee-shops",
+   "https://www.doubleskinnymacchiato.com/2022/06/new-york-specialty-coffee-shops-update-summer-2022.html",
+   "https://inrix.com/press-releases/2025-global-traffic-scorecard-us/",
+   "https://www.weather.gov/media/okx/Climate/CentralPark/DailyMaxTNormals.pdf"
+  ],
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "No reliable 2026 1BR median found; Skybriz undated lists FiDi ~$5,300/mo (unit mix unclear)",
+   "rent_trend": null,
+   "summer_high_f": 83,
+   "marine_layer": "little - no marine-layer/June-gloom pattern; harbor/ocean sea breeze gives slight afternoon relief near the water, but summers are humid and central AC matters",
+   "fire_hazard": "CAL FIRE FHSZ: none (not applicable - outside California; no meaningful wildfire hazard)",
+   "flood_zone": "Significant FEMA coastal flood zones along the Seaport, Battery Park City edges and South St (flooded in Sandy 2012). Check FloodHelpNY/building's flood history (not verified per address).",
+   "airport_noise": "No jet noise; helicopter noise from Downtown Manhattan Heliport and harbor tour flights",
+   "parks": [
+    "The Battery",
+    "Battery Park City esplanade / Rockefeller Park",
+    "Hudson River Park",
+    "Brooklyn Bridge Park (across river)"
+   ],
+   "farmers_markets": [
+    "Bowling Green Greenmarket (verify days)",
+    "Tribeca Greenmarket (Greenwich St - verify days)"
+   ],
+   "fiber": "Verizon Fios available in many NYC buildings but building-by-building (a city settlement required Verizon to extend Fios to 500k more households); Spectrum cable is the usual alternative. Check the specific address - not verified per building this round.",
+   "vibe": "Office-district-by-day, quiet-by-night waterfront Manhattan with top coffee, but priced well above budget."
+  },
+  "name": "Lower Manhattan / Financial District",
+  "id": "nyc-lower-manhattan-financial-district",
+  "market": "nyc"
+ },
+ {
+  "neighborhood": "Williamsburg / Greenpoint",
+  "region": "Brooklyn",
+  "lat": 40.7175,
+  "lng": -73.955,
+  "freeway": {
+   "score": 9,
+   "nearest": [
+    "I-278 BQE (Metropolitan Ave / Meeker Ave ramps, ~3-5 min)",
+    "Williamsburg Bridge to FDR (~5 min)",
+    "I-495 LIE via Kosciuszko Br/BQE (~8-10 min)"
+   ],
+   "note": "Estimate."
+  },
+  "traffic": {
+   "score": 3,
+   "note": "BQE (I-278) is NYC's one INRIX 2025 top-25 congested corridor; Kosciuszko/Meeker Ave and Williamsburg Bridge approaches jam at peak. INRIX 2025: NYC 102 hrs lost/driver (2nd in US); only one NYC corridor (I-278 BQE) remained in INRIX's top-25 worst; congestion pricing (below 60th St, Manhattan) cited as keeping NYC congestion flat."
+  },
+  "coffee": {
+   "score": 10,
+   "cafes": [
+    "Sey Coffee - roastery cafe (Bushwick/E. Williamsburg border)",
+    "Variety Coffee Roasters - E. Williamsburg roastery + cafes",
+    "Devocion - Grand St, Williamsburg (big, laptop-friendly)",
+    "Partners Coffee - Williamsburg",
+    "Sweatshop / Konditori (Williamsburg)",
+    "Five Leaves, Oslo Coffee Roasters (Greenpoint)"
+   ],
+   "note": "One of the densest specialty-coffee corridors in the US (roasters.app Brooklyn scene report, May 2026)."
+  },
+  "walk": {
+   "score": 9,
+   "walk_score": null,
+   "note": "Walk Score not retrieved; very walkable (estimate 90+)."
+  },
+  "quiet": {
+   "score": 5,
+   "note": "Bedford Ave/N 6th-N 11th and Grand St bar/venue scenes are loud on weekends; Greenpoint's side streets (Milton, Noble, etc.) are notably calmer. BQE trench noise near Meeker Ave."
+  },
+  "safety": {
+   "score": 7,
+   "violent_per_1k": 3.5,
+   "property_per_1k": 10.8,
+   "year": "2023",
+   "source": "Furman Center CoreData, BK 01 Greenpoint/Williamsburg",
+   "note": "Violent well below NYC 5.3; property slightly above NYC 9.0 (bike/package theft, car break-ins). Furman Center CoreData 2023 community-district rates (columns property_crime_rate, violent_crime_rate; read as per 1,000 residents). NYC average used for comparison: violent 5.3, property 9.0 (Furman 2023). Citywide index crime fell ~3% in 2025 and murders/shootings hit record lows (Vital City / NYPD), so 2025-26 levels are likely a bit lower."
+  },
+  "lax": {
+   "score": 8,
+   "minutes_offpeak": 20,
+   "minutes_peak": 40,
+   "note": "LGA via BQE east ~15-20 off-peak; JFK ~30-35. Drive times are rough estimates from typical NYC off-peak/peak conditions, not measured this round."
+  },
+  "nightlife": {
+   "score": 10,
+   "nearest_district": "Williamsburg (Bedford/N 6th/Grand St)",
+   "drive_minutes": 0,
+   "note": "Walkable - pick a Greenpoint side street to keep it at arm's length."
+  },
+  "gyms": {
+   "score": 9,
+   "examples": [
+    "Equinox Williamsburg",
+    "Crunch",
+    "Blink",
+    "Brooklyn Boulders / climbing - verify"
+   ]
+  },
+  "services": {
+   "score": 9,
+   "note": "Whole Foods (Williamsburg), Trader Joe's (Williamsburg), Target, pharmacies; heavy Amazon locker coverage."
+  },
+  "rail": {
+   "score": 9,
+   "nearest_station": "Bedford Av / Nassau Av / Marcy Av",
+   "line": "L, G, J/M/Z; NYC Ferry",
+   "note": "L is one stop to Manhattan."
+  },
+  "airports_other": "JFK ~30-35 min, EWR ~35-45 min off-peak (estimate).",
+  "summary": "The best coffee in the region plus new-construction rentals (in-unit W/D, central air more common), quick BQE access and below-average violent crime. Trade-off: BQE congestion, weekend noise near Bedford/Grand, and 1BR rents typically above budget.",
+  "sources": [
+   "https://www.furmancenter.org/wp-content/uploads/data/crime_rate_data.csv",
+   "https://roasters.app/journal/brooklyn-specialty-coffee",
+   "https://inrix.com/press-releases/2025-global-traffic-scorecard-us/",
+   "https://www.renthop.com/research/?p=18901",
+   "https://www.weather.gov/media/okx/Climate/CentralPark/DailyMaxTNormals.pdf",
+   "https://www.nyctourism.com/articles/best-farmers-markets-new-york-city/"
+  ],
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "No neighborhood 1BR median found; RentHop Jul 2026 says Williamsburg/Greenpoint are 'catching up' to Manhattan (citywide 1BR median $4,428); zip 11206 (E. Williamsburg/Bushwick) 1BR ~$3,395 (RentHop, Jul 2026)",
+   "rent_trend": null,
+   "summer_high_f": 83,
+   "marine_layer": "little - no marine-layer/June-gloom pattern; harbor/ocean sea breeze gives slight afternoon relief near the water, but summers are humid and central AC matters",
+   "fire_hazard": "CAL FIRE FHSZ: none (not applicable - outside California; no meaningful wildfire hazard)",
+   "flood_zone": "East River waterfront (Kent Ave, Greenpoint waterfront) and Newtown Creek edges are in FEMA flood zones; inland blocks mostly not. Check per address (not verified).",
+   "airport_noise": "Some LGA arrival/departure traffic overhead depending on runway config (unverified); generally modest",
+   "parks": [
+    "McCarren Park",
+    "Domino Park",
+    "Transmitter Park",
+    "Marsha P. Johnson State Park",
+    "Bushwick Inlet Park"
+   ],
+   "farmers_markets": [
+    "McCarren Park Greenmarket (N 12th St & Union Ave, Saturdays, year-round)"
+   ],
+   "fiber": "Verizon Fios available in many NYC buildings but building-by-building (a city settlement required Verizon to extend Fios to 500k more households); Spectrum cable is the usual alternative. Check the specific address - not verified per building this round.",
+   "vibe": "Coffee capital of NYC with lively bars; Greenpoint side streets offer the quieter version."
+  },
+  "name": "Williamsburg / Greenpoint",
+  "id": "nyc-williamsburg-greenpoint",
+  "market": "nyc"
+ },
+ {
+  "neighborhood": "Downtown Brooklyn / Fort Greene",
+  "region": "Brooklyn",
+  "lat": 40.69,
+  "lng": -73.978,
+  "freeway": {
+   "score": 9,
+   "nearest": [
+    "I-278 BQE (Tillary St / Cadman Plaza ramps, ~3-5 min)",
+    "Manhattan & Brooklyn Bridges to FDR (~5 min)",
+    "Flatbush Ave Ext (~3 min)"
+   ],
+   "note": "Estimate."
+  },
+  "traffic": {
+   "score": 3,
+   "note": "Flatbush Ave, Atlantic Ave and bridge approaches are chronically jammed; BQE triple-cantilever segment is a known bottleneck. INRIX 2025: NYC 102 hrs lost/driver (2nd in US); only one NYC corridor (I-278 BQE) remained in INRIX's top-25 worst; congestion pricing (below 60th St, Manhattan) cited as keeping NYC congestion flat."
+  },
+  "coffee": {
+   "score": 7,
+   "cafes": [
+    "Hungry Ghost - Fort Greene/Downtown/Prospect Hts locations (Stumptown)",
+    "Devocion / Black Fox / others in nearby DUMBO-Brooklyn Heights - verify",
+    "Independent Fort Greene cafes - not verified this round"
+   ],
+   "note": "Search found limited Fort Greene-specific specialty listings; area likely better than this reflects but scored conservatively."
+  },
+  "walk": {
+   "score": 10,
+   "walk_score": null,
+   "note": "Walk Score not retrieved; estimate 95+."
+  },
+  "quiet": {
+   "score": 5,
+   "note": "Fort Greene/Clinton Hill brownstone blocks are calm; Downtown towers face Flatbush/Atlantic traffic, Barclays Center event crowds, sirens."
+  },
+  "safety": {
+   "score": 5,
+   "violent_per_1k": 5.9,
+   "property_per_1k": 12.7,
+   "year": "2023",
+   "source": "Furman Center CoreData, BK 02 Fort Greene/Brooklyn Heights",
+   "note": "Violent ~at NYC average (5.3), property above (9.0) - Downtown retail/transit hub inflates per-resident rates. Furman Center CoreData 2023 community-district rates (columns property_crime_rate, violent_crime_rate; read as per 1,000 residents). NYC average used for comparison: violent 5.3, property 9.0 (Furman 2023). Citywide index crime fell ~3% in 2025 and murders/shootings hit record lows (Vital City / NYPD), so 2025-26 levels are likely a bit lower."
+  },
+  "lax": {
+   "score": 7,
+   "minutes_offpeak": 25,
+   "minutes_peak": 45,
+   "note": "LGA via BQE ~20-25; JFK via Atlantic/Belt ~30-35. Drive times are rough estimates from typical NYC off-peak/peak conditions, not measured this round."
+  },
+  "nightlife": {
+   "score": 9,
+   "nearest_district": "Fort Greene/DeKalb Ave, Barclays/Atlantic, Smith St",
+   "drive_minutes": 5,
+   "note": "Estimate."
+  },
+  "gyms": {
+   "score": 9,
+   "examples": [
+    "Equinox Brooklyn Heights",
+    "Crunch",
+    "Blink",
+    "Planet Fitness (Fulton St area)"
+   ]
+  },
+  "services": {
+   "score": 10,
+   "note": "Whole Foods (Gowanus, nearby), Trader Joe's (Court St / Atlantic Terminal - verify), Target (Atlantic Terminal), Macy's, pharmacies, Amazon lockers."
+  },
+  "rail": {
+   "score": 10,
+   "nearest_station": "Atlantic Av-Barclays Ctr / Jay St-MetroTech / DeKalb Av",
+   "line": "2/3, 4/5, B/D, N/Q/R, A/C/F, G; LIRR Atlantic Terminal",
+   "note": "Best transit hub in Brooklyn."
+  },
+  "airports_other": "JFK ~30-35 min, EWR ~30-40 min off-peak (estimate).",
+  "summary": "Downtown towers bring the modern amenity package (in-unit W/D, central air, garages) with Fort Greene's leafy calm next door and top-tier transit. Trade-off: heavy local congestion and rents mostly above budget.",
+  "sources": [
+   "https://www.furmancenter.org/wp-content/uploads/data/crime_rate_data.csv",
+   "https://yourbrooklynguide.com/brooklyn-coffee-shops/",
+   "https://inrix.com/press-releases/2025-global-traffic-scorecard-us/",
+   "https://www.renthop.com/research/?p=18901",
+   "https://www.renthop.com/blog/?p=21949",
+   "https://www.weather.gov/media/okx/Climate/CentralPark/DailyMaxTNormals.pdf",
+   "https://www.nyctourism.com/articles/best-farmers-markets-new-york-city/"
+  ],
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "No neighborhood median found; York St (F) subway-stop 1BR median $4,840 (RentHop, Jul 2026 - DUMBO edge); a Downtown Brooklyn 1BR listed at $4,115 (RentHop blog, Oct 2026 - single listing)",
+   "rent_trend": null,
+   "summer_high_f": 83,
+   "marine_layer": "little - no marine-layer/June-gloom pattern; harbor/ocean sea breeze gives slight afternoon relief near the water, but summers are humid and central AC matters",
+   "fire_hazard": "CAL FIRE FHSZ: none (not applicable - outside California; no meaningful wildfire hazard)",
+   "flood_zone": "Inland Downtown/Fort Greene mostly outside FEMA zones; DUMBO/Brooklyn Bridge Park waterfront is in flood zones. Not verified per address.",
+   "airport_noise": "none notable",
+   "parks": [
+    "Fort Greene Park",
+    "Brooklyn Bridge Park",
+    "Commodore Barry Park"
+   ],
+   "farmers_markets": [
+    "Fort Greene Park Greenmarket (Washington Park & DeKalb Ave, Saturdays)",
+    "Borough Hall Greenmarket (verify days)"
+   ],
+   "fiber": "Verizon Fios available in many NYC buildings but building-by-building (a city settlement required Verizon to extend Fios to 500k more households); Spectrum cable is the usual alternative. Check the specific address - not verified per building this round.",
+   "vibe": "Brownstone calm meets high-rise convenience; superb transit, busy streets."
+  },
+  "name": "Downtown Brooklyn / Fort Greene",
+  "id": "nyc-downtown-brooklyn-fort-greene",
+  "market": "nyc"
+ },
+ {
+  "neighborhood": "Park Slope / Prospect Heights",
+  "region": "Brooklyn",
+  "lat": 40.674,
+  "lng": -73.977,
+  "freeway": {
+   "score": 6,
+   "nearest": [
+    "I-278 Gowanus Expwy (Prospect Expwy / 3rd Ave, ~5-8 min)",
+    "Prospect Expwy (NY-27) (~5 min from south Slope)",
+    "BQE via Atlantic Ave (~8-10 min)"
+   ],
+   "note": "Estimate."
+  },
+  "traffic": {
+   "score": 4,
+   "note": "Flatbush/4th Ave/Atlantic slow at peak; Gowanus Expwy (I-278) is a chronic bottleneck. INRIX 2025: NYC 102 hrs lost/driver (2nd in US); only one NYC corridor (I-278 BQE) remained in INRIX's top-25 worst; congestion pricing (below 60th St, Manhattan) cited as keeping NYC congestion flat."
+  },
+  "coffee": {
+   "score": 9,
+   "cafes": [
+    "Cafe Regular - 11th St (Parisian-style)",
+    "Konditori - 3 Park Slope locations (5th Ave/7th Ave)",
+    "Gorilla Coffee - roasts own beans",
+    "Hungry Ghost - Prospect Hts (original) & Park Slope (Stumptown)",
+    "The Coffee Table",
+    "Kos Kaffe Roasting House"
+   ],
+   "note": "Many walkable cafes, a few roasting in-house."
+  },
+  "walk": {
+   "score": 9,
+   "walk_score": null,
+   "note": "Walk Score not retrieved; estimate 90+."
+  },
+  "quiet": {
+   "score": 8,
+   "note": "Brownstone side streets near Prospect Park are among Brooklyn's quietest; 4th Ave and Flatbush are loud; 5th/7th Ave moderate."
+  },
+  "safety": {
+   "score": 8,
+   "violent_per_1k": 3.1,
+   "property_per_1k": 7.8,
+   "year": "2023",
+   "source": "Furman Center CoreData, BK 06 Park Slope/Carroll Gardens",
+   "note": "Both well below NYC 5.3/9.0. Prospect Heights falls in BK 08 (Crown Heights North), not retrieved - likely somewhat higher. Furman Center CoreData 2023 community-district rates (columns property_crime_rate, violent_crime_rate; read as per 1,000 residents). NYC average used for comparison: violent 5.3, property 9.0 (Furman 2023). Citywide index crime fell ~3% in 2025 and murders/shootings hit record lows (Vital City / NYPD), so 2025-26 levels are likely a bit lower."
+  },
+  "lax": {
+   "score": 6,
+   "minutes_offpeak": 30,
+   "minutes_peak": 50,
+   "note": "JFK via Belt Pkwy or Atlantic ~25-35; LGA via BQE ~25-30. Drive times are rough estimates from typical NYC off-peak/peak conditions, not measured this round."
+  },
+  "nightlife": {
+   "score": 8,
+   "nearest_district": "5th Ave Park Slope; Vanderbilt Ave (Prospect Hts)",
+   "drive_minutes": 5,
+   "note": "Estimate; mostly walkable but low-key."
+  },
+  "gyms": {
+   "score": 8,
+   "examples": [
+    "Blink (Park Slope)",
+    "Crunch",
+    "Planet Fitness",
+    "Park Slope Food Coop area boutique studios - verify"
+   ]
+  },
+  "services": {
+   "score": 9,
+   "note": "Whole Foods (Gowanus), Trader Joe's (Atlantic Ave, verify), Park Slope Food Coop, Key Food, pharmacies."
+  },
+  "rail": {
+   "score": 9,
+   "nearest_station": "7th Av / Grand Army Plaza / 4th Av-9th St",
+   "line": "F/G, B/Q, 2/3, R",
+   "note": "Good, but some blocks are 8-10 min from a station."
+  },
+  "airports_other": "EWR ~35-45 min off-peak via Verrazzano/Bayonne or tunnels (estimate).",
+  "summary": "Quiet, safe, park-adjacent brownstone Brooklyn with excellent coffee. Trade-off: rents near $3,700 for a 1BR, mostly prewar walk-ups (W/D and central AC rare), and street parking is tough.",
+  "sources": [
+   "https://www.furmancenter.org/wp-content/uploads/data/crime_rate_data.csv",
+   "https://patch.com/new-york/parkslope/park-slope-s-average-one-bedroom-rent-hits-3-706-study-finds",
+   "https://yourbrooklynguide.com/brooklyn-coffee-shops/",
+   "https://www.theculturetrip.com/north-america/usa/new-york/articles/park-slope-top-10-coffee-shops",
+   "https://inrix.com/press-releases/2025-global-traffic-scorecard-us/",
+   "https://www.weather.gov/media/okx/Climate/CentralPark/DailyMaxTNormals.pdf",
+   "https://www.nyctourism.com/articles/best-farmers-markets-new-york-city/"
+  ],
+  "extras": {
+   "median_1br_rent": 3706,
+   "rent_source": "Zumper via Patch, ~Mar 2026 (average 1BR)",
+   "rent_trend": "-6% YoY (Zumper via Patch, ~Mar 2026)",
+   "summer_high_f": 83,
+   "marine_layer": "little - no marine-layer/June-gloom pattern; harbor/ocean sea breeze gives slight afternoon relief near the water, but summers are humid and central AC matters",
+   "fire_hazard": "CAL FIRE FHSZ: none (not applicable - outside California; no meaningful wildfire hazard)",
+   "flood_zone": "Upland; the Gowanus Canal edge (west of 4th Ave) is in a FEMA flood zone. Not verified per address.",
+   "airport_noise": "none notable",
+   "parks": [
+    "Prospect Park",
+    "Brooklyn Botanic Garden",
+    "Grand Army Plaza"
+   ],
+   "farmers_markets": [
+    "Grand Army Plaza Greenmarket (Saturdays - verify)"
+   ],
+   "fiber": "Verizon Fios available in many NYC buildings but building-by-building (a city settlement required Verizon to extend Fios to 500k more households); Spectrum cable is the usual alternative. Check the specific address - not verified per building this round.",
+   "vibe": "Leafy, quiet, family-heavy brownstone Brooklyn beside Prospect Park, with lots of good cafes."
+  },
+  "name": "Park Slope / Prospect Heights",
+  "id": "nyc-park-slope-prospect-heights",
+  "market": "nyc"
+ },
+ {
+  "neighborhood": "Bushwick / Bed-Stuy",
+  "region": "Brooklyn",
+  "lat": 40.693,
+  "lng": -73.93,
+  "freeway": {
+   "score": 6,
+   "nearest": [
+    "I-278 BQE (Flushing Ave / Kent Ave area, ~8-10 min)",
+    "Jackie Robinson Pkwy (cars only, ~5-10 min from east Bushwick)",
+    "Williamsburg Bridge (~10 min)"
+   ],
+   "note": "No interstate runs through; estimate."
+  },
+  "traffic": {
+   "score": 5,
+   "note": "Broadway (under the J), Flushing Ave and Atlantic Ave slow at peak; BQE approaches congested. INRIX 2025: NYC 102 hrs lost/driver (2nd in US); only one NYC corridor (I-278 BQE) remained in INRIX's top-25 worst; congestion pricing (below 60th St, Manhattan) cited as keeping NYC congestion flat."
+  },
+  "coffee": {
+   "score": 8,
+   "cafes": [
+    "Sey Coffee - 18 Grattan St (Bushwick), roastery cafe",
+    "Variety Coffee - Bushwick/E. Williamsburg",
+    "Black Brick (Bed-Stuy/Williamsburg)",
+    "Cafe Erzulie (Bed-Stuy)",
+    "Bed-Stuy Coffee"
+   ],
+   "note": "Bushwick near Morgan Av is excellent; Bed-Stuy has good independents but spread out."
+  },
+  "walk": {
+   "score": 9,
+   "walk_score": null,
+   "note": "Walk Score not retrieved; estimate high 80s-90s."
+  },
+  "quiet": {
+   "score": 5,
+   "note": "Bed-Stuy brownstone blocks can be quiet; Bushwick's Morgan/Jefferson area has venues and warehouse parties; J/M elevated train noise along Broadway."
+  },
+  "safety": {
+   "score": 4,
+   "violent_per_1k": 7.0,
+   "property_per_1k": 9.7,
+   "year": "2023",
+   "source": "Furman Center CoreData, BK 04 Bushwick (BK 03 Bed-Stuy: violent 6.3, property 7.9)",
+   "note": "Violent above NYC 5.3 in both districts; property near NYC 9.0. Varies a lot block to block. Furman Center CoreData 2023 community-district rates (columns property_crime_rate, violent_crime_rate; read as per 1,000 residents). NYC average used for comparison: violent 5.3, property 9.0 (Furman 2023). Citywide index crime fell ~3% in 2025 and murders/shootings hit record lows (Vital City / NYPD), so 2025-26 levels are likely a bit lower."
+  },
+  "lax": {
+   "score": 7,
+   "minutes_offpeak": 25,
+   "minutes_peak": 45,
+   "note": "JFK via Atlantic Ave/Conduit or Jackie Robinson ~25-30; LGA via BQE ~20-25. Drive times are rough estimates from typical NYC off-peak/peak conditions, not measured this round."
+  },
+  "nightlife": {
+   "score": 10,
+   "nearest_district": "Bushwick (Jefferson St/Morgan Ave)",
+   "drive_minutes": 5,
+   "note": "Estimate."
+  },
+  "gyms": {
+   "score": 7,
+   "examples": [
+    "Blink",
+    "Planet Fitness",
+    "Crunch - verify locations"
+   ]
+  },
+  "services": {
+   "score": 7,
+   "note": "Key Food, Food Bazaar, Target (Atlantic Terminal ~10-15 min), pharmacies; fewer Whole Foods/TJ's nearby."
+  },
+  "rail": {
+   "score": 9,
+   "nearest_station": "Morgan Av / Myrtle-Wyckoff / Bedford-Nostrand / Utica Av",
+   "line": "L, J/M/Z, G, A/C",
+   "note": "Good coverage; 20-35 min to Midtown."
+  },
+  "airports_other": "EWR ~40-50 min off-peak (estimate).",
+  "summary": "Strong coffee (Sey, Variety) and some of the most attainable Brooklyn rents, with newer buildings along Broadway/Bushwick. Trade-off: above-average violent crime, venue noise in Bushwick, slower highway access.",
+  "sources": [
+   "https://www.furmancenter.org/wp-content/uploads/data/crime_rate_data.csv",
+   "https://www.renthop.com/average-rent-in/bushwick-new-york-ny",
+   "https://roasters.app/journal/brooklyn-specialty-coffee",
+   "https://inrix.com/press-releases/2025-global-traffic-scorecard-us/",
+   "https://www.weather.gov/media/okx/Climate/CentralPark/DailyMaxTNormals.pdf"
+  ],
+  "extras": {
+   "median_1br_rent": 3348,
+   "rent_source": "RentHop Bushwick, Jun 2026 (a Bed-Stuy 1BR listed at $2,700, RentHop blog Apr 2026 - single listing)",
+   "rent_trend": "+8.0% YoY (RentHop Bushwick, Jun 2026)",
+   "summer_high_f": 83,
+   "marine_layer": "little - no marine-layer/June-gloom pattern; harbor/ocean sea breeze gives slight afternoon relief near the water, but summers are humid and central AC matters",
+   "fire_hazard": "CAL FIRE FHSZ: none (not applicable - outside California; no meaningful wildfire hazard)",
+   "flood_zone": "Inland; generally outside FEMA coastal zones (street flooding in heavy rain occurs citywide). Not verified per address.",
+   "airport_noise": "Some LGA/JFK traffic overhead depending on runway use (unverified); modest",
+   "parks": [
+    "Maria Hernandez Park",
+    "Irving Square Park",
+    "Herbert Von King Park",
+    "Fulton Park"
+   ],
+   "farmers_markets": [
+    "No Greenmarket verified this round (check grownyc.org)"
+   ],
+   "fiber": "Verizon Fios available in many NYC buildings but building-by-building (a city settlement required Verizon to extend Fios to 500k more households); Spectrum cable is the usual alternative. Check the specific address - not verified per building this round.",
+   "vibe": "Creative, lively, value-ish Brooklyn with standout roasters; quieter on Bed-Stuy brownstone blocks."
+  },
+  "name": "Bushwick / Bed-Stuy",
+  "id": "nyc-bushwick-bed-stuy",
+  "market": "nyc"
+ },
+ {
+  "neighborhood": "Bay Ridge / Sunset Park",
+  "region": "Brooklyn",
+  "lat": 40.635,
+  "lng": -74.023,
+  "freeway": {
+   "score": 10,
+   "nearest": [
+    "I-278 Gowanus Expwy (~2-4 min)",
+    "Belt Pkwy (~3-5 min)",
+    "Verrazzano Bridge / I-278 to Staten Island & NJ (~5 min)"
+   ],
+   "note": "Best highway access in Brooklyn; estimate."
+  },
+  "traffic": {
+   "score": 4,
+   "note": "Gowanus Expwy (I-278) is a well-known chronic bottleneck; Verrazzano approaches back up at peak; local avenues (3rd/5th/4th) moderate. INRIX 2025: NYC 102 hrs lost/driver (2nd in US); only one NYC corridor (I-278 BQE) remained in INRIX's top-25 worst; congestion pricing (below 60th St, Manhattan) cited as keeping NYC congestion flat."
+  },
+  "coffee": {
+   "score": 4,
+   "cafes": [
+    "Yafa Cafe - 4415 4th Ave, Sunset Park (roasts in-house; on Eater list)",
+    "PEP Bakehouse & Coffee - 9413 3rd Ave, Bay Ridge",
+    "Green Fig Bakery Cafe - 462 36th St (work-friendly)",
+    "Boca de Cielo (ex-Cocoa Grinder) - 8511 3rd Ave"
+   ],
+   "note": "Few genuine third-wave cafes; Parkette (Sunset Park) reportedly permanently closed."
+  },
+  "walk": {
+   "score": 8,
+   "walk_score": null,
+   "note": "Walk Score not retrieved; 3rd/5th Ave corridors very walkable (estimate 85-95)."
+  },
+  "quiet": {
+   "score": 7,
+   "note": "Bay Ridge side streets (Shore Rd, Colonial Rd) are quiet and suburban-feeling; blocks near the Gowanus Expwy/4th Ave and 3rd Ave bar strip are noisier."
+  },
+  "safety": {
+   "score": 9,
+   "violent_per_1k": 1.6,
+   "property_per_1k": 4.7,
+   "year": "2023",
+   "source": "Furman Center CoreData, BK 10 Bay Ridge/Dyker Heights (BK 07 Sunset Park: violent 3.3, property 6.6)",
+   "note": "Among the lowest rates in the city vs NYC 5.3/9.0; Sunset Park also below average. Furman Center CoreData 2023 community-district rates (columns property_crime_rate, violent_crime_rate; read as per 1,000 residents). NYC average used for comparison: violent 5.3, property 9.0 (Furman 2023). Citywide index crime fell ~3% in 2025 and murders/shootings hit record lows (Vital City / NYPD), so 2025-26 levels are likely a bit lower."
+  },
+  "lax": {
+   "score": 6,
+   "minutes_offpeak": 30,
+   "minutes_peak": 55,
+   "note": "JFK via Belt Pkwy ~25-35; EWR via Verrazzano+Goethals ~30-40. Drive times are rough estimates from typical NYC off-peak/peak conditions, not measured this round."
+  },
+  "nightlife": {
+   "score": 6,
+   "nearest_district": "3rd Ave Bay Ridge; Park Slope/Gowanus (~15-20 min drive)",
+   "drive_minutes": 15,
+   "note": "Estimate."
+  },
+  "gyms": {
+   "score": 7,
+   "examples": [
+    "Blink",
+    "Planet Fitness",
+    "Crunch Bay Ridge - verify"
+   ]
+  },
+  "services": {
+   "score": 8,
+   "note": "Key Food, Food Bazaar, Costco (Sunset Park), Target (Bay Ridge/Sunset Park), Home Depot, pharmacies. From general knowledge."
+  },
+  "rail": {
+   "score": 7,
+   "nearest_station": "86th St / Bay Ridge Av / 59th St",
+   "line": "R (Bay Ridge), N/R/D (Sunset Park 59th St)",
+   "note": "R is slow; ~45 min to Midtown. NYC Ferry at Bay Ridge."
+  },
+  "airports_other": "EWR ~30-40 min; LGA ~35-45 min off-peak (estimate).",
+  "summary": "Safest and most car-friendly Brooklyn option, with budget-plausible rents and quiet side streets. Trade-off: thin specialty-coffee scene and chronic Gowanus Expwy traffic.",
+  "sources": [
+   "https://www.furmancenter.org/wp-content/uploads/data/crime_rate_data.csv",
+   "https://www.zumper.com/rent-research/new-york-ny/sunset-park",
+   "https://yourbrooklynguide.com/bay-ridge-coffee-shops/",
+   "https://patch.com/new-york/brooklyn/6-brooklyn-coffee-shops-among-nycs-best-ranking",
+   "https://inrix.com/press-releases/2025-global-traffic-scorecard-us/",
+   "https://www.weather.gov/media/okx/Climate/CentralPark/DailyMaxTNormals.pdf",
+   "https://www.nyctourism.com/articles/best-farmers-markets-new-york-city/",
+   "https://pix11.com/news/local-news/study-reveals-the-cheapest-neighborhoods-to-live-in-nyc-zumper/amp/"
+  ],
+  "extras": {
+   "median_1br_rent": 2367,
+   "rent_source": "Zumper Sunset Park, Jul 2026 (page text; its table shows $2,177 for last 30 days). Bay Ridge 1BR not found; Zumper lists Bay Ridge overall median $2,375 (all unit types, undated)",
+   "rent_trend": null,
+   "summer_high_f": 83,
+   "marine_layer": "little - no marine-layer/June-gloom pattern; harbor/ocean sea breeze gives slight afternoon relief near the water, but summers are humid and central AC matters (Bay Ridge sits on the Narrows - a bit breezier)",
+   "fire_hazard": "CAL FIRE FHSZ: none (not applicable - outside California; no meaningful wildfire hazard)",
+   "flood_zone": "Shore Rd/Belt Pkwy edge and Sunset Park industrial waterfront are in FEMA zones; most residential blocks upland. Not verified per address.",
+   "airport_noise": "none notable",
+   "parks": [
+    "Shore Road Park",
+    "Owl's Head Park",
+    "Sunset Park",
+    "Bay Ridge Pier / Narrows promenade"
+   ],
+   "farmers_markets": [
+    "Bay Ridge Greenmarket (3rd Ave & 95th St, Saturdays, seasonal)",
+    "Sunset Park Greenmarket (7th Ave & 44th St, Saturdays)"
+   ],
+   "fiber": "Verizon Fios available in many NYC buildings but building-by-building (a city settlement required Verizon to extend Fios to 500k more households); Spectrum cable is the usual alternative. Check the specific address - not verified per building this round.",
+   "vibe": "Quiet, safe, car-friendly Brooklyn by the Narrows - a good home base if you'll drive for great coffee."
+  },
+  "name": "Bay Ridge / Sunset Park",
+  "id": "nyc-bay-ridge-sunset-park",
+  "market": "nyc"
+ },
+ {
+  "neighborhood": "Long Island City / Astoria",
+  "region": "Queens",
+  "lat": 40.755,
+  "lng": -73.93,
+  "freeway": {
+   "score": 10,
+   "nearest": [
+    "I-495 LIE / Queens-Midtown Tunnel (~3 min from LIC)",
+    "I-278 BQE (~3-5 min)",
+    "Grand Central Pkwy & RFK/Triborough (Astoria, ~3-5 min)",
+    "Queensboro Bridge (~3 min)"
+   ],
+   "note": "Estimate."
+  },
+  "traffic": {
+   "score": 4,
+   "note": "LIE/Queens-Midtown approaches and BQE back up at peak; Queens Plaza congestion. INRIX 2025: NYC 102 hrs lost/driver (2nd in US); only one NYC corridor (I-278 BQE) remained in INRIX's top-25 worst; congestion pricing (below 60th St, Manhattan) cited as keeping NYC congestion flat."
+  },
+  "coffee": {
+   "score": 7,
+   "cafes": [
+    "Coffee Project New York - LIC roastery/cafe (single origins)",
+    "Clever Blend - LIC near Queensboro Plaza",
+    "Astoria Coffee - small-batch, own roasting",
+    "Birch Coffee - Astoria",
+    "Sweetleaf - LIC (general knowledge, verify)"
+   ],
+   "note": "Ninth Street Espresso, Joe, Coffee Project and Gregorys roast in LIC (Sprudge). Listings partly from low-quality pages - verify."
+  },
+  "walk": {
+   "score": 9,
+   "walk_score": null,
+   "note": "Walk Score not retrieved; estimate 90+."
+  },
+  "quiet": {
+   "score": 5,
+   "note": "Astoria's side streets are quiet-ish but under LGA approach/departure paths; LIC towers face 7/N/W elevated trains, Queensboro Plaza traffic and construction."
+  },
+  "safety": {
+   "score": 6,
+   "violent_per_1k": null,
+   "property_per_1k": null,
+   "year": "2023",
+   "source": "Furman Center CoreData (Queens borough row only)",
+   "note": "QN 01 (Astoria/LIC) row not retrievable; Queens borough violent 3.9/1k vs NYC 5.3 (property not shown). Area is generally considered around-to-below the city average. Furman Center CoreData 2023 community-district rates (columns property_crime_rate, violent_crime_rate; read as per 1,000 residents). NYC average used for comparison: violent 5.3, property 9.0 (Furman 2023). Citywide index crime fell ~3% in 2025 and murders/shootings hit record lows (Vital City / NYPD), so 2025-26 levels are likely a bit lower."
+  },
+  "lax": {
+   "score": 10,
+   "minutes_offpeak": 12,
+   "minutes_peak": 25,
+   "note": "LGA via Grand Central Pkwy/BQE - one of the closest areas to LGA. Drive times are rough estimates from typical NYC off-peak/peak conditions, not measured this round."
+  },
+  "nightlife": {
+   "score": 9,
+   "nearest_district": "Astoria (Ditmars/30th Ave/Steinway); LIC Vernon Blvd",
+   "drive_minutes": 5,
+   "note": "Estimate."
+  },
+  "gyms": {
+   "score": 9,
+   "examples": [
+    "Equinox LIC (verify)",
+    "Blink",
+    "Planet Fitness",
+    "Crunch"
+   ]
+  },
+  "services": {
+   "score": 9,
+   "note": "Trader Joe's (Astoria), Whole Foods (LIC - verify), Costco (LIC), Food Bazaar, pharmacies, Amazon lockers in LIC towers."
+  },
+  "rail": {
+   "score": 10,
+   "nearest_station": "Court Sq / Queensboro Plaza / Astoria-Ditmars / 30th Av",
+   "line": "7, E/M, G, N/W, R; LIRR Hunterspoint; NYC Ferry",
+   "note": "One stop to Midtown from LIC."
+  },
+  "airports_other": "JFK ~25-30 min, EWR ~35-45 min off-peak (estimate).",
+  "summary": "Great highway and LGA access plus good coffee; LIC's new towers routinely offer in-unit W/D, central air and garages. Trade-off: LIC rents ~$4.3-4.4k, LGA flight-path noise in Astoria.",
+  "sources": [
+   "https://www.renthop.com/average-rent-in/astoria-new-york-ny",
+   "https://www.zumper.com/rent-research/new-york-ny/long-island-city",
+   "https://qns.com/2026/06/rental-prices-up-queens-may-2026-report/",
+   "https://sprudge.com/?p=260396",
+   "https://coupletraveltheworld.com/?p=171573",
+   "https://www.furmancenter.org/wp-content/uploads/data/crime_rate_data.csv",
+   "https://inrix.com/press-releases/2025-global-traffic-scorecard-us/",
+   "https://www.weather.gov/media/okx/Climate/CentralPark/DailyMaxTNormals.pdf"
+  ],
+  "extras": {
+   "median_1br_rent": 3399,
+   "rent_source": "RentHop Astoria, Jun 2026 (median). LIC is pricier: 1BR avg $4,410 (QNS, May 2026) / ~$4,333-4,379 (Zumper, Jul 2026)",
+   "rent_trend": "+7.9% YoY Astoria (RentHop, Jun 2026)",
+   "summer_high_f": 83,
+   "marine_layer": "little - no marine-layer/June-gloom pattern; harbor/ocean sea breeze gives slight afternoon relief near the water, but summers are humid and central AC matters",
+   "fire_hazard": "CAL FIRE FHSZ: none (not applicable - outside California; no meaningful wildfire hazard)",
+   "flood_zone": "LIC waterfront (Hunters Point) and Newtown Creek edges are in FEMA flood zones; Astoria inland mostly not. Not verified per address.",
+   "airport_noise": "LGA: Astoria and parts of LIC sit under LGA approach/departure routes depending on runway configuration - noticeable jet noise (general knowledge, unverified)",
+   "parks": [
+    "Astoria Park",
+    "Gantry Plaza State Park",
+    "Hunter's Point South Park",
+    "Socrates Sculpture Park",
+    "Rainey Park"
+   ],
+   "farmers_markets": [
+    "Astoria/Socrates Sculpture Park Greenmarket (verify days - not confirmed this round)"
+   ],
+   "fiber": "Verizon Fios available in many NYC buildings but building-by-building (a city settlement required Verizon to extend Fios to 500k more households); Spectrum cable is the usual alternative. Check the specific address - not verified per building this round.",
+   "vibe": "Convenient, diverse and driving-friendly Queens with solid cafes; pick a street off the flight path."
+  },
+  "name": "Long Island City / Astoria",
+  "id": "nyc-long-island-city-astoria",
+  "market": "nyc"
+ },
+ {
+  "neighborhood": "Forest Hills / Rego Park",
+  "region": "Queens",
+  "lat": 40.721,
+  "lng": -73.85,
+  "freeway": {
+   "score": 10,
+   "nearest": [
+    "I-495 LIE (~2-4 min)",
+    "Grand Central Pkwy (~3-5 min)",
+    "Jackie Robinson Pkwy (~5 min)",
+    "Van Wyck I-678 (~8 min)"
+   ],
+   "note": "Estimate."
+  },
+  "traffic": {
+   "score": 5,
+   "note": "Queens Blvd and Woodhaven Blvd slow at peak; LIE westbound into the city congested in AM. INRIX 2025: NYC 102 hrs lost/driver (2nd in US); only one NYC corridor (I-278 BQE) remained in INRIX's top-25 worst; congestion pricing (below 60th St, Manhattan) cited as keeping NYC congestion flat."
+  },
+  "coffee": {
+   "score": 4,
+   "cafes": [
+    "Roast n Co - Forest Hills (laid-back)",
+    "Martha's Country Bakery - Austin St (bakery-cafe)",
+    "Eddie's Sweet Shop - Metropolitan Ave (sweet shop, not specialty)"
+   ],
+   "note": "A Joe Coffee directory counts just one independent coffee shop in Forest Hills; specialty scene is thin."
+  },
+  "walk": {
+   "score": 8,
+   "walk_score": null,
+   "note": "Walk Score not retrieved; Austin St / Queens Blvd / 63rd Dr corridors very walkable (estimate 85-95)."
+  },
+  "quiet": {
+   "score": 7,
+   "note": "Forest Hills Gardens and side streets are very quiet; Queens Blvd and LIE-adjacent blocks noisy; LGA Runway 4 approach passes over parts of central Queens (unverified)."
+  },
+  "safety": {
+   "score": 8,
+   "violent_per_1k": null,
+   "property_per_1k": null,
+   "year": "2023",
+   "source": "Furman Center CoreData (Queens borough row only)",
+   "note": "QN 06 row not retrievable; Queens borough violent 3.9/1k vs NYC 5.3. 112th Pct (Forest Hills/Rego Park) is widely regarded as one of NYC's safer precincts, though it saw a car-theft (GLA) jump in late 2023 (Forest Hills Post). Score is a judgment. Furman Center CoreData 2023 community-district rates (columns property_crime_rate, violent_crime_rate; read as per 1,000 residents). NYC average used for comparison: violent 5.3, property 9.0 (Furman 2023). Citywide index crime fell ~3% in 2025 and murders/shootings hit record lows (Vital City / NYPD), so 2025-26 levels are likely a bit lower."
+  },
+  "lax": {
+   "score": 9,
+   "minutes_offpeak": 15,
+   "minutes_peak": 30,
+   "note": "LGA via Grand Central Pkwy ~12-15; JFK via Van Wyck ~15-20. Drive times are rough estimates from typical NYC off-peak/peak conditions, not measured this round."
+  },
+  "nightlife": {
+   "score": 6,
+   "nearest_district": "Austin St (low-key); Astoria/LIC (~15-20 min drive)",
+   "drive_minutes": 15,
+   "note": "Estimate."
+  },
+  "gyms": {
+   "score": 8,
+   "examples": [
+    "Planet Fitness (Rego Park)",
+    "Blink",
+    "Crunch / NYSC - verify"
+   ]
+  },
+  "services": {
+   "score": 9,
+   "note": "Rego Center/Queens Center malls (Costco, Target, etc.), Trader Joe's (Rego Park - verify), pharmacies."
+  },
+  "rail": {
+   "score": 9,
+   "nearest_station": "Forest Hills-71st Av / 67th Av / 63rd Dr-Rego Park",
+   "line": "E/F express, M/R local; LIRR Forest Hills (~20 min to Penn)",
+   "note": "Express E/F ~25-30 min to Midtown."
+  },
+  "airports_other": "JFK ~15-20 min, EWR ~45-55 min off-peak (estimate).",
+  "summary": "Quiet, safe, highway-hub Queens with both NYC airports within ~20 minutes and many elevator buildings with garages. Trade-off: weak walkable specialty-coffee scene and low-key nightlife.",
+  "sources": [
+   "https://joe.coffee/locations/ny/flushing/neighborhoods/forest-hills-queens",
+   "https://www.tryperdiem.com/guide/where-to-find-the-best-coffee-in-forest-hills",
+   "https://qns.com/2026/06/rental-prices-up-queens-may-2026-report/",
+   "https://foresthillspost.com/crunching-the-queens-crime-numbers-murder-rate-drastically-decreased-year-to-date-in-2023",
+   "https://www.furmancenter.org/wp-content/uploads/data/crime_rate_data.csv",
+   "https://inrix.com/press-releases/2025-global-traffic-scorecard-us/",
+   "https://www.weather.gov/media/okx/Climate/CentralPark/DailyMaxTNormals.pdf",
+   "https://www.grownyc.org/files/gmkt/map.pdf"
+  ],
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "No clean 2026 1BR figure: QNS May 2026 report shows Forest Hills average rising $2,659->$3,101 YoY but the unit type is unclear; Zumper Q2 2023 1BR $2,180 (stale)",
+   "rent_trend": "Possibly +17% YoY (QNS May 2026; unit type unclear)",
+   "summer_high_f": 83,
+   "marine_layer": "little - no marine-layer/June-gloom pattern; harbor/ocean sea breeze gives slight afternoon relief near the water, but summers are humid and central AC matters",
+   "fire_hazard": "CAL FIRE FHSZ: none (not applicable - outside California; no meaningful wildfire hazard)",
+   "flood_zone": "Inland; outside FEMA coastal zones. Not verified per address.",
+   "airport_noise": "LGA approaches (Runway 4/22 patterns) and some JFK traffic over central Queens - intermittent (general knowledge, unverified)",
+   "parks": [
+    "Forest Park",
+    "Flushing Meadows Corona Park",
+    "MacDonald Park"
+   ],
+   "farmers_markets": [
+    "Forest Hills Greenmarket (Queens Blvd at 70th Ave, Sundays)"
+   ],
+   "fiber": "Verizon Fios available in many NYC buildings but building-by-building (a city settlement required Verizon to extend Fios to 500k more households); Spectrum cable is the usual alternative. Check the specific address - not verified per building this round.",
+   "vibe": "Tudor-and-co-op calm with superb highway/airport access; you'll drive or train for great coffee."
+  },
+  "name": "Forest Hills / Rego Park",
+  "id": "nyc-forest-hills-rego-park",
+  "market": "nyc"
+ },
+ {
+  "neighborhood": "Flushing / Jamaica",
+  "region": "Queens",
+  "lat": 40.73,
+  "lng": -73.81,
+  "freeway": {
+   "score": 9,
+   "nearest": [
+    "Van Wyck I-678 (~3-5 min)",
+    "I-495 LIE (~3-5 min)",
+    "Grand Central Pkwy (~5 min)",
+    "Whitestone Expwy (Flushing, ~5 min)"
+   ],
+   "note": "Two distinct areas ~4 mi apart; center point is between them. Estimate."
+  },
+  "traffic": {
+   "score": 3,
+   "note": "Van Wyck (I-678) is notoriously congested (JFK traffic); Main St Flushing is one of the most crowded streets in Queens; Jamaica Ave/Hillside slow. INRIX 2025: NYC 102 hrs lost/driver (2nd in US); only one NYC corridor (I-278 BQE) remained in INRIX's top-25 worst; congestion pricing (below 60th St, Manhattan) cited as keeping NYC congestion flat."
+  },
+  "coffee": {
+   "score": 5,
+   "cafes": [
+    "Presso - downtown Flushing (first specialty shop there; Stumptown, pour-over)",
+    "Cafe 1 of a Kind - Flushing (Stumptown, backyard, parking)",
+    "Bean & Bean - Flushing (big, Wi-Fi)",
+    "Kinship Coffee - near Flushing Meadows",
+    "Jamaica - no specialty cafes found this round"
+   ],
+   "note": "Flushing list is a user-written Foursquare list (may be dated). Jamaica coverage absent."
+  },
+  "walk": {
+   "score": 8,
+   "walk_score": null,
+   "note": "Walk Score not retrieved; downtown Flushing and Jamaica Ave very walkable, residential edges less so (estimate)."
+  },
+  "quiet": {
+   "score": 4,
+   "note": "Downtown Flushing is dense and loud; LGA approaches pass over Flushing; Jamaica has JFK traffic, LIRR/AirTrain and busy commercial streets. Quieter in Jamaica Estates / Murray Hill (Flushing)."
+  },
+  "safety": {
+   "score": 5,
+   "violent_per_1k": null,
+   "property_per_1k": null,
+   "year": "2023",
+   "source": "Furman Center CoreData (Queens borough row only)",
+   "note": "QN 07 (Flushing) and QN 12 (Jamaica) rows not retrievable; Queens borough violent 3.9/1k vs NYC 5.3. Flushing generally below city average; Jamaica (103rd/113th Pcts) higher. Score is a blended judgment. Furman Center CoreData 2023 community-district rates (columns property_crime_rate, violent_crime_rate; read as per 1,000 residents). NYC average used for comparison: violent 5.3, property 9.0 (Furman 2023). Citywide index crime fell ~3% in 2025 and murders/shootings hit record lows (Vital City / NYPD), so 2025-26 levels are likely a bit lower."
+  },
+  "lax": {
+   "score": 10,
+   "minutes_offpeak": 12,
+   "minutes_peak": 25,
+   "note": "JFK via Van Wyck ~10-15 from Jamaica; LGA ~10-15 from Flushing; AirTrain at Jamaica. Drive times are rough estimates from typical NYC off-peak/peak conditions, not measured this round."
+  },
+  "nightlife": {
+   "score": 6,
+   "nearest_district": "Downtown Flushing (food, karaoke); Astoria/LIC ~20 min",
+   "drive_minutes": 15,
+   "note": "Estimate."
+  },
+  "gyms": {
+   "score": 7,
+   "examples": [
+    "Planet Fitness",
+    "Blink",
+    "Crunch - verify"
+   ]
+  },
+  "services": {
+   "score": 8,
+   "note": "Huge Asian supermarkets (H Mart, etc.), Target/Costco nearby, pharmacies; Jamaica Ave retail."
+  },
+  "rail": {
+   "score": 8,
+   "nearest_station": "Flushing-Main St / Jamaica Center / Sutphin-Archer",
+   "line": "7 (Flushing); E/J/Z (Jamaica); LIRR at both; AirTrain JFK",
+   "note": "Jamaica LIRR is ~20 min to Penn/Grand Central."
+  },
+  "airports_other": "EWR ~50-60 min off-peak (estimate).",
+  "summary": "Unbeatable airport access and highway connections at relatively attainable rents (~$2.9-3k 1BR). Trade-off: congested Van Wyck/Main St, aircraft noise and a limited specialty-coffee scene (Jamaica especially).",
+  "sources": [
+   "https://www.renthop.com/average-rent-in/flushing-new-york-ny",
+   "https://www.renthop.com/average-rent-in/jamaica-new-york-ny",
+   "https://qns.com/2026/06/rental-prices-up-queens-may-2026-report/",
+   "https://es.foursquare.com/projectlatte/list/nyc-best-cafes-in-flushing-queens",
+   "https://www.tryperdiem.com/guide/best-coffee-shops-near-flushing-meadows-corona-park",
+   "https://www.furmancenter.org/wp-content/uploads/data/crime_rate_data.csv",
+   "https://inrix.com/press-releases/2025-global-traffic-scorecard-us/",
+   "https://www.weather.gov/media/okx/Climate/CentralPark/DailyMaxTNormals.pdf"
+  ],
+  "extras": {
+   "median_1br_rent": 3000,
+   "rent_source": "RentHop Flushing, Jul 2026 (Jamaica 1BR ~$2,866, RentHop, date not shown)",
+   "rent_trend": "-1.1% YoY Flushing (RentHop, Jul 2026); Jamaica all-unit avg -6.5% YoY to $2,766 (QNS, May 2026)",
+   "summer_high_f": 83,
+   "marine_layer": "little - no marine-layer/June-gloom pattern; harbor/ocean sea breeze gives slight afternoon relief near the water, but summers are humid and central AC matters",
+   "fire_hazard": "CAL FIRE FHSZ: none (not applicable - outside California; no meaningful wildfire hazard)",
+   "flood_zone": "Flushing Creek/Flushing Bay edges low-lying; Jamaica mostly inland (southern Queens toward Jamaica Bay has flood zones). Not verified per address.",
+   "airport_noise": "Significant: Flushing under LGA approach/departure paths; Jamaica near JFK arrival/departure corridors (general knowledge, unverified)",
+   "parks": [
+    "Flushing Meadows Corona Park",
+    "Kissena Park",
+    "Queens Botanical Garden",
+    "Rufus King Park (Jamaica)",
+    "Cunningham Park"
+   ],
+   "farmers_markets": [
+    "Jamaica Farmers Market (160th St - verify)",
+    "Flushing Greenmarket (verify - not confirmed this round)"
+   ],
+   "fiber": "Verizon Fios available in many NYC buildings but building-by-building (a city settlement required Verizon to extend Fios to 500k more households); Spectrum cable is the usual alternative. Check the specific address - not verified per building this round.",
+   "vibe": "Busy, food-rich transit-and-airport hubs; practical and affordable but not quiet."
+  },
+  "name": "Flushing / Jamaica",
+  "id": "nyc-flushing-jamaica",
+  "market": "nyc"
+ },
+ {
+  "neighborhood": "Riverdale / Kingsbridge",
+  "region": "Bronx",
+  "lat": 40.885,
+  "lng": -73.908,
+  "freeway": {
+   "score": 9,
+   "nearest": [
+    "Henry Hudson Pkwy (~2-4 min)",
+    "I-87 Major Deegan (~3-5 min)",
+    "Saw Mill River Pkwy (~5 min)",
+    "Cross Bronx I-95 (~10 min)"
+   ],
+   "note": "Estimate."
+  },
+  "traffic": {
+   "score": 5,
+   "note": "Major Deegan and Henry Hudson slow at peak (Deegan/Cross Bronx interchange a bottleneck); local streets calm. INRIX 2025: NYC 102 hrs lost/driver (2nd in US); only one NYC corridor (I-278 BQE) remained in INRIX's top-25 worst; congestion pricing (below 60th St, Manhattan) cited as keeping NYC congestion flat."
+  },
+  "coffee": {
+   "score": 3,
+   "cafes": [
+    "Moss Cafe - Riverdale (2018 list; verify)",
+    "Mon Amour Coffee & Wine - Riverdale (2018 list; verify)",
+    "Corner Cafe & Bakery - Riverdale (2018 list; verify)"
+   ],
+   "note": "Only a 2018 Manhattan College guide found; no recent specialty-roaster listings. Likely the weakest coffee scene among Manhattan-adjacent options."
+  },
+  "walk": {
+   "score": 6,
+   "walk_score": null,
+   "note": "Walk Score not retrieved; Kingsbridge/Johnson Ave walkable, hilly Riverdale estates car-oriented (estimate 60-85)."
+  },
+  "quiet": {
+   "score": 9,
+   "note": "Leafy, hilly, low through-traffic in Riverdale proper; Kingsbridge near Broadway/1 train el and Deegan is busier."
+  },
+  "safety": {
+   "score": 7,
+   "violent_per_1k": 3.1,
+   "property_per_1k": 10.6,
+   "year": "2023",
+   "source": "Furman Center CoreData, BX 08 Riverdale/Fieldston",
+   "note": "Violent well below NYC 5.3; property slightly above 9.0 (car break-ins/thefts). Furman Center CoreData 2023 community-district rates (columns property_crime_rate, violent_crime_rate; read as per 1,000 residents). NYC average used for comparison: violent 5.3, property 9.0 (Furman 2023). Citywide index crime fell ~3% in 2025 and murders/shootings hit record lows (Vital City / NYPD), so 2025-26 levels are likely a bit lower."
+  },
+  "lax": {
+   "score": 7,
+   "minutes_offpeak": 25,
+   "minutes_peak": 45,
+   "note": "LGA via Deegan/RFK or Whitestone ~20-25. Drive times are rough estimates from typical NYC off-peak/peak conditions, not measured this round."
+  },
+  "nightlife": {
+   "score": 4,
+   "nearest_district": "Inwood/Dyckman St; UWS/Harlem ~20-25 min",
+   "drive_minutes": 12,
+   "note": "Estimate."
+  },
+  "gyms": {
+   "score": 6,
+   "examples": [
+    "Riverdale YM-YWHA",
+    "Planet Fitness (Kingsbridge - verify)",
+    "Blink - verify"
+   ]
+  },
+  "services": {
+   "score": 7,
+   "note": "Stop & Shop, Target (Riverdale/Kingsbridge - verify), Costco (Yonkers ~10 min), pharmacies."
+  },
+  "rail": {
+   "score": 6,
+   "nearest_station": "231st St / 238th St",
+   "line": "1; Metro-North Hudson Line (Riverdale, Spuyten Duyvil)",
+   "note": "Riverdale proper is a bus/drive to the 1 train; Metro-North ~25 min to Grand Central."
+  },
+  "airports_other": "JFK ~35-45 min, EWR ~35-45 min off-peak (estimate).",
+  "summary": "Suburban-quiet, safe and car-friendly with fast parkway/Deegan access and garage co-ops/rentals. Trade-off: essentially no walkable specialty coffee and a long trip to nightlife.",
+  "sources": [
+   "https://www.furmancenter.org/wp-content/uploads/data/crime_rate_data.csv",
+   "https://manhattan.edu/news/archive/2018/05/riverdales-best-coffee-college-students-on-budget.php",
+   "https://latination.com/cheap-safe-neighborhoods-ny-where-renters-can-find-the-best-balance-between/",
+   "https://pix11.com/news/local-news/study-reveals-the-cheapest-neighborhoods-to-live-in-nyc-zumper/amp/",
+   "https://inrix.com/press-releases/2025-global-traffic-scorecard-us/",
+   "https://www.weather.gov/media/okx/Climate/CentralPark/DailyMaxTNormals.pdf",
+   "https://www.nyctourism.com/articles/best-farmers-markets-new-york-city/"
+  ],
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "Only weak-source figure found: latination.com (machine-like, source unclear) cites ~$2,778 avg 1BR in 2026; Zumper lists Riverdale overall median ~$2,040 (all unit types, undated)",
+   "rent_trend": null,
+   "summer_high_f": 83,
+   "marine_layer": "little - no marine-layer/June-gloom pattern; harbor/ocean sea breeze gives slight afternoon relief near the water, but summers are humid and central AC matters",
+   "fire_hazard": "CAL FIRE FHSZ: none (not applicable - outside California; no meaningful wildfire hazard)",
+   "flood_zone": "Hilltop/inland; Hudson/Spuyten Duyvil shoreline only. Not verified per address.",
+   "airport_noise": "none notable",
+   "parks": [
+    "Wave Hill",
+    "Van Cortlandt Park",
+    "Riverdale Park",
+    "Seton Park"
+   ],
+   "farmers_markets": [
+    "Riverdale Y Sunday Market (4545 Independence Ave, Sundays, year-round)"
+   ],
+   "fiber": "Verizon Fios available in many NYC buildings but building-by-building (a city settlement required Verizon to extend Fios to 500k more households); Spectrum cable is the usual alternative. Check the specific address - not verified per building this round.",
+   "vibe": "Leafy, quiet, almost suburban - great for focus and driving, poor for walk-to coffee."
+  },
+  "name": "Riverdale / Kingsbridge",
+  "id": "nyc-riverdale-kingsbridge",
+  "market": "nyc"
+ },
+ {
+  "neighborhood": "Mott Haven / South Bronx",
+  "region": "Bronx",
+  "lat": 40.809,
+  "lng": -73.923,
+  "freeway": {
+   "score": 10,
+   "nearest": [
+    "I-87 Major Deegan (~2-3 min)",
+    "I-278 Bruckner Expwy (~2-3 min)",
+    "RFK/Triborough Bridge (~3 min)",
+    "Harlem River Dr via bridges (~5 min)"
+   ],
+   "note": "Estimate."
+  },
+  "traffic": {
+   "score": 3,
+   "note": "Bruckner/Deegan/RFK interchange and Third Ave Bridge are chronic bottlenecks; heavy truck traffic. INRIX 2025: NYC 102 hrs lost/driver (2nd in US); only one NYC corridor (I-278 BQE) remained in INRIX's top-25 worst; congestion pricing (below 60th St, Manhattan) cited as keeping NYC congestion flat."
+  },
+  "coffee": {
+   "score": 3,
+   "cafes": [
+    "Mottley Kitchen - 402 E 140th St (good coffee, seating + Wi-Fi; Infatuation)",
+    "787 Coffee - 2430 Third Ave (own Puerto Rico farm)",
+    "Boogie Down Grind - Hunts Point Ave (farther)"
+   ],
+   "note": "A couple of solid options; not a specialty cluster."
+  },
+  "walk": {
+   "score": 8,
+   "walk_score": null,
+   "note": "Walk Score not retrieved; dense grid near 3rd Ave/138th St (estimate 85-95)."
+  },
+  "quiet": {
+   "score": 3,
+   "note": "Bruckner/Deegan traffic, trucks, elevated rail, sirens; some quieter rowhouse blocks (Mott Haven Historic District)."
+  },
+  "safety": {
+   "score": 1,
+   "violent_per_1k": 16.8,
+   "property_per_1k": 14.0,
+   "year": "2023",
+   "source": "Furman Center CoreData, BX 01 Mott Haven/Melrose",
+   "note": "Violent ~3x NYC 5.3; property above 9.0. 40th Pct had the most robbery complaints of any NYC precinct through late Jul 2026 (210 YTD, down 17% vs 2025, per Hoodline/CompStat). Furman Center CoreData 2023 community-district rates (columns property_crime_rate, violent_crime_rate; read as per 1,000 residents). NYC average used for comparison: violent 5.3, property 9.0 (Furman 2023). Citywide index crime fell ~3% in 2025 and murders/shootings hit record lows (Vital City / NYPD), so 2025-26 levels are likely a bit lower."
+  },
+  "lax": {
+   "score": 9,
+   "minutes_offpeak": 15,
+   "minutes_peak": 30,
+   "note": "LGA via RFK Bridge + Grand Central ~12-15. Drive times are rough estimates from typical NYC off-peak/peak conditions, not measured this round."
+  },
+  "nightlife": {
+   "score": 7,
+   "nearest_district": "Bruckner Blvd bars (Port Morris); Harlem ~10 min",
+   "drive_minutes": 8,
+   "note": "Estimate."
+  },
+  "gyms": {
+   "score": 6,
+   "examples": [
+    "Planet Fitness (The Hub - verify)",
+    "Blink - verify"
+   ]
+  },
+  "services": {
+   "score": 7,
+   "note": "The Hub (3rd Ave/149th) retail, Gateway Center (Target, BJ's, Costco nearby - verify), pharmacies."
+  },
+  "rail": {
+   "score": 9,
+   "nearest_station": "3rd Av-138th St / 149th St-Grand Concourse / Brook Av",
+   "line": "6, 2/5, 4; Metro-North Harlem-125th nearby",
+   "note": "~15-20 min to Midtown East."
+  },
+  "airports_other": "JFK ~25-35 min, EWR ~35-45 min off-peak (estimate).",
+  "summary": "Exceptional highway and LGA access and lots of new-construction rentals with modern amenities near the budget. Trade-off: the highest violent-crime rate on this list and heavy traffic/truck noise.",
+  "sources": [
+   "https://www.furmancenter.org/wp-content/uploads/data/crime_rate_data.csv",
+   "https://hoodline.com/2026/09/mott-haven-deli-shooting-leaves-man-31-wounded-no-arrests-yet/",
+   "https://www.nyc.gov/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-040pct.pdf",
+   "https://helpnewyork.com/the-bronx-rent-reality-check-2026-mott-haven-fordham-and-riverdale-by-the-numbers/",
+   "https://www.bxtimes.com/?p=131023",
+   "https://www.theinfatuation.com/new-york/reviews/mottley-kitchen",
+   "https://inrix.com/press-releases/2025-global-traffic-scorecard-us/",
+   "https://www.weather.gov/media/okx/Climate/CentralPark/DailyMaxTNormals.pdf",
+   "https://www.nyctourism.com/articles/best-farmers-markets-new-york-city/"
+  ],
+  "extras": {
+   "median_1br_rent": 2960,
+   "rent_source": "MNS data late 2025 via helpnewyork.com (Mott Haven 1BR avg)",
+   "rent_trend": "~flat vs Jun 2025 ($2,952, Bronx Times/MNS)",
+   "summer_high_f": 83,
+   "marine_layer": "little - no marine-layer/June-gloom pattern; harbor/ocean sea breeze gives slight afternoon relief near the water, but summers are humid and central AC matters",
+   "fire_hazard": "CAL FIRE FHSZ: none (not applicable - outside California; no meaningful wildfire hazard)",
+   "flood_zone": "Harlem River / Port Morris waterfront in FEMA flood zones; inland blocks mostly not. Not verified per address.",
+   "airport_noise": "Some LGA approaches/departures over the South Bronx depending on runway use (unverified)",
+   "parks": [
+    "St. Mary's Park",
+    "Randall's Island (via bridge)",
+    "Mill Pond Park / Harlem River waterfront"
+   ],
+   "farmers_markets": [
+    "Lincoln Hospital Greenmarket (149th St & Park Ave area, Tue & Fri, seasonal Jun-Nov)"
+   ],
+   "fiber": "Verizon Fios available in many NYC buildings but building-by-building (a city settlement required Verizon to extend Fios to 500k more households); Spectrum cable is the usual alternative. Check the specific address - not verified per building this round.",
+   "vibe": "Gritty, fast-changing and highway-central; good value and access, but not quiet or low-crime."
+  },
+  "name": "Mott Haven / South Bronx",
+  "id": "nyc-mott-haven-south-bronx",
+  "market": "nyc"
+ },
+ {
+  "neighborhood": "St. George / North Shore",
+  "region": "Staten Island",
+  "lat": 40.643,
+  "lng": -74.077,
+  "freeway": {
+   "score": 6,
+   "nearest": [
+    "I-278 Staten Island Expwy (~5-8 min)",
+    "Verrazzano Bridge to Brooklyn (~10 min)",
+    "Goethals/Bayonne Bridges to NJ (~15 min)"
+   ],
+   "note": "Estimate."
+  },
+  "traffic": {
+   "score": 5,
+   "note": "SIE (I-278) and Verrazzano approaches congested at peak; local roads moderate. Verrazzano toll is steep for non-residents. INRIX 2025: NYC 102 hrs lost/driver (2nd in US); only one NYC corridor (I-278 BQE) remained in INRIX's top-25 worst; congestion pricing (below 60th St, Manhattan) cited as keeping NYC congestion flat."
+  },
+  "coffee": {
+   "score": 2,
+   "cafes": [
+    "No St. George specialty cafes confirmed this round",
+    "Fab Cup (Staten Island, 2016 article - location/status unverified)"
+   ],
+   "note": "Search found nothing current; treat as weak."
+  },
+  "walk": {
+   "score": 6,
+   "walk_score": null,
+   "note": "Walk Score not retrieved; ferry terminal area/Bay St walkable, hills beyond are car-oriented (estimate 60-80)."
+  },
+  "quiet": {
+   "score": 7,
+   "note": "Hillside residential streets quiet; ferry horns, Bay St traffic and ballpark/Empire Outlets events near the terminal."
+  },
+  "safety": {
+   "score": 7,
+   "violent_per_1k": null,
+   "property_per_1k": null,
+   "year": "2023",
+   "source": "Furman Center CoreData (Staten Island borough row only)",
+   "note": "SI 01 row not retrievable; Staten Island borough violent 2.7/1k vs NYC 5.3. North Shore (120th Pct) is higher than the rest of SI - likely near city average. Judgment score. Furman Center CoreData 2023 community-district rates (columns property_crime_rate, violent_crime_rate; read as per 1,000 residents). NYC average used for comparison: violent 5.3, property 9.0 (Furman 2023). Citywide index crime fell ~3% in 2025 and murders/shootings hit record lows (Vital City / NYPD), so 2025-26 levels are likely a bit lower."
+  },
+  "lax": {
+   "score": 6,
+   "minutes_offpeak": 25,
+   "minutes_peak": 45,
+   "note": "EWR via Goethals Bridge / I-278 ~25-30 off-peak (nearest major airport). Drive times are rough estimates from typical NYC off-peak/peak conditions, not measured this round."
+  },
+  "nightlife": {
+   "score": 5,
+   "nearest_district": "Bay St / St. George; Brooklyn (Bay Ridge) ~15-20 min",
+   "drive_minutes": 15,
+   "note": "Estimate."
+  },
+  "gyms": {
+   "score": 5,
+   "examples": [
+    "Planet Fitness - verify",
+    "Richmond County YMCA - verify"
+   ]
+  },
+  "services": {
+   "score": 6,
+   "note": "Empire Outlets, supermarkets, pharmacies; bigger boxes on the SIE corridor."
+  },
+  "rail": {
+   "score": 5,
+   "nearest_station": "St. George Terminal",
+   "line": "Staten Island Railway; free Staten Island Ferry to Whitehall (~25 min)",
+   "note": "No subway connection; ferry is the commute tool."
+  },
+  "airports_other": "JFK ~35-45 min, LGA ~40-50 min off-peak (estimate).",
+  "summary": "Cheapest-feeling NYC option with views, the free ferry and EWR access, plus more parking. Trade-off: practically no walkable specialty coffee and isolation from the rest of the city.",
+  "sources": [
+   "https://www.furmancenter.org/wp-content/uploads/data/crime_rate_data.csv",
+   "https://www.nyc.gov/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-120pct.pdf",
+   "https://www.dnainfo.com/new-york/20160929/williamsburg/coffee-shop-independent-nyc",
+   "https://inrix.com/press-releases/2025-global-traffic-scorecard-us/",
+   "https://www.weather.gov/media/okx/Climate/CentralPark/DailyMaxTNormals.pdf",
+   "https://www.grownyc.org/files/gmkt/map.pdf"
+  ],
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "No 2026 St. George 1BR figure found",
+   "rent_trend": null,
+   "summer_high_f": 83,
+   "marine_layer": "little - no marine-layer/June-gloom pattern; harbor/ocean sea breeze gives slight afternoon relief near the water, but summers are humid and central AC matters (harbor-front, breezy)",
+   "fire_hazard": "CAL FIRE FHSZ: none (not applicable - outside California; no meaningful wildfire hazard)",
+   "flood_zone": "Waterfront (Bay St, Stapleton) in FEMA flood zones - Staten Island's East Shore was hard-hit by Sandy; hillside St. George is upland. Not verified per address.",
+   "airport_noise": "Some EWR arrival/departure traffic overhead (unverified)",
+   "parks": [
+    "Snug Harbor Cultural Center & Botanical Garden",
+    "Silver Lake Park",
+    "Lighthouse Point / St. George esplanade",
+    "Clove Lakes Park"
+   ],
+   "farmers_markets": [
+    "St. George Greenmarket (St. Mark's Pl & Hyatt St, Saturdays 8am-1pm, year-round)"
+   ],
+   "fiber": "Verizon Fios available in many NYC buildings but building-by-building (a city settlement required Verizon to extend Fios to 500k more households); Spectrum cable is the usual alternative. Check the specific address - not verified per building this round.",
+   "vibe": "Harbor-view, slower-paced NYC with ferry access; quiet but thin on coffee and city energy."
+  },
+  "name": "St. George / North Shore",
+  "id": "nyc-st-george-north-shore",
+  "market": "nyc"
+ },
+ {
+  "neighborhood": "Jersey City",
+  "region": "New Jersey",
+  "lat": 40.718,
+  "lng": -74.047,
+  "freeway": {
+   "score": 9,
+   "nearest": [
+    "NJ Turnpike Extension I-78 / Newark Bay Extension (~3-5 min)",
+    "Holland Tunnel / NJ-139 (~3-5 min)",
+    "NJ Turnpike I-95 (~8-10 min)",
+    "Route 440 / US-1&9"
+   ],
+   "note": "Coordinates = Downtown JC; estimate."
+  },
+  "traffic": {
+   "score": 3,
+   "note": "Holland Tunnel approaches (NJ-139, Columbus Dr) and the Turnpike Extension are chronic bottlenecks at peak; Pulaski Skyway corridor slow."
+  },
+  "coffee": {
+   "score": 7,
+   "cafes": [
+    "Bwe Kafe - JC/Hoboken (roasts own beans)",
+    "WORD Bookstore cafe - Newark Ave (Stumptown, open late)",
+    "The Grind JC - Bergen-Lafayette (La Colombe)",
+    "Downtown JC independents along Newark/Grove - verify"
+   ],
+   "note": "Downtown JC (Grove St/Newark Ave) has a decent cluster; lists are partly affiliate/undated."
+  },
+  "walk": {
+   "score": 9,
+   "walk_score": null,
+   "note": "Walk Score not retrieved; Downtown/Paulus Hook very walkable (estimate 90+); Journal Sq/Heights less so."
+  },
+  "quiet": {
+   "score": 6,
+   "note": "Van Vorst Park/Hamilton Park brownstone blocks calm; Grove St/Newark Ave bar scene, Holland Tunnel traffic, Hudson helicopter tours."
+  },
+  "safety": {
+   "score": 5,
+   "violent_per_1k": 5.6,
+   "property_per_1k": 20.3,
+   "year": "2024",
+   "source": "FBI UCR via AreaVibes (562 violent, 2,029 property per 100k)",
+   "note": "Compared to NJ statewide violent ~2.2/1k (FBI 2024 via Patch), JC is well above; vs NYC it's roughly comparable on violent (NYC uses different counting - not strictly comparable). Homicides/shootings down, thefts/assaults up (Hudson County View). Varies sharply by ward: Downtown much safer than Greenville/Bergen-Lafayette."
+  },
+  "lax": {
+   "score": 9,
+   "minutes_offpeak": 15,
+   "minutes_peak": 30,
+   "note": "EWR via NJ Turnpike Ext / I-78 ~15-20 off-peak. Drive times are rough estimates from typical NYC off-peak/peak conditions, not measured this round."
+  },
+  "nightlife": {
+   "score": 9,
+   "nearest_district": "Grove St / Newark Ave (Downtown JC); Hoboken Washington St",
+   "drive_minutes": 5,
+   "note": "Estimate."
+  },
+  "gyms": {
+   "score": 8,
+   "examples": [
+    "Crunch Jersey City",
+    "Planet Fitness",
+    "Equinox (Newport - verify)"
+   ]
+  },
+  "services": {
+   "score": 9,
+   "note": "Whole Foods (Newport/Harborside - verify), ShopRite, Target (Newport mall area), pharmacies; Amazon lockers common in towers."
+  },
+  "rail": {
+   "score": 8,
+   "nearest_station": "Grove St / Exchange Pl / Newport / Journal Sq",
+   "line": "PATH (to WTC & 33rd St), Hudson-Bergen Light Rail, NY Waterway ferries",
+   "note": "PATH ~10 min to WTC."
+  },
+  "airports_other": "LGA ~35-45 min, JFK ~45-55 min off-peak (estimate).",
+  "summary": "Strong car/airport fit (EWR ~15-20 min, Turnpike at the door) with walkable Downtown cafes and many modern towers offering in-unit W/D, central air and garages, at rents nearer budget than Manhattan. Trade-off: Holland Tunnel congestion and safety that varies sharply by neighborhood.",
+  "sources": [
+   "https://www.padmapper.com/rentals/29569731p/1-bedroom-1-bath-apartment-at-31-orient-ave-jersey-city-nj-07305",
+   "https://renthop.com/average-rent-in/jersey-city-nj",
+   "https://www.rentometer.com/average-rent-in/nj/jersey-city-nj",
+   "https://www.areavibes.com/jersey+city-nj/the+waterfront/crime/",
+   "https://hudsoncountyview.com/jersey-city-officials-tout-declining-homicides-thefts-assaults-up",
+   "https://www.patch.com/new-jersey/across-nj/violent-crime-nj-see-where-your-neighborhood-ranks",
+   "https://www.villagevoice.com/?p=374337",
+   "https://www.hobokengirl.com/best-jersey-city-coffee-shops/",
+   "https://www.weather.gov/media/okx/Climate/Almanacs/EWR/ewraug.pdf"
+  ],
+  "extras": {
+   "median_1br_rent": 2750,
+   "rent_source": "PadMapper citywide 1BR median, Oct 2026 (Rentometer Mar 2026: $2,940; RentHop Jun 2026: $3,109; Downtown/waterfront typically $2,600-3,100 per Rentometer)",
+   "rent_trend": "+1.85% MoM (PadMapper, Oct 2026); RentHop reports +22.8% YoY (Jun 2026) - sources disagree",
+   "summer_high_f": 85,
+   "marine_layer": "little - no marine layer; humid summers (Newark Aug normal 85.1F; the waterfront runs a bit cooler)",
+   "fire_hazard": "CAL FIRE FHSZ: none (not applicable - outside California; no meaningful wildfire hazard)",
+   "flood_zone": "Significant FEMA flood zones along the Hudson waterfront (Paulus Hook, Newport, Liberty State Park edge) and the Hackensack side; check FEMA map per address (not verified).",
+   "airport_noise": "Some EWR arrival traffic over Hudson County and Hudson River helicopter tours (unverified)",
+   "parks": [
+    "Liberty State Park",
+    "Hamilton Park",
+    "Van Vorst Park",
+    "Lincoln Park"
+   ],
+   "farmers_markets": [
+    "Downtown/Grove St farmers market (verify days - not confirmed this round)"
+   ],
+   "fiber": "Not verified this round; Optimum cable is the incumbent in Hudson County and Verizon Fios availability is building-specific - check the address.",
+   "vibe": "Manhattan-adjacent with a real Downtown cafe scene and easy car/EWR access; pick the neighborhood carefully."
+  },
+  "name": "Jersey City",
+  "id": "nyc-jersey-city",
+  "market": "nyc"
+ },
+ {
+  "neighborhood": "Hoboken",
+  "region": "New Jersey",
+  "lat": 40.744,
+  "lng": -74.032,
+  "freeway": {
+   "score": 6,
+   "nearest": [
+    "Lincoln Tunnel / NJ-495 (~5-8 min)",
+    "NJ Turnpike via NJ-495 or 14th St viaduct (~8-10 min)",
+    "Holland Tunnel (~8-10 min)"
+   ],
+   "note": "Hoboken is boxed in by the Palisades; estimate."
+  },
+  "traffic": {
+   "score": 3,
+   "note": "Few exits from the mile-square city; Lincoln Tunnel helix/NJ-495 and Holland approaches jam at peak; Observer Hwy and 14th St slow."
+  },
+  "coffee": {
+   "score": 6,
+   "cafes": [
+    "Bwe Kafe - Hoboken (roasts own beans)",
+    "Bean Vault Coffee - takeout espresso (Toby's Estate)",
+    "Hidden Grounds - Garden St & Hudson St",
+    "The Hive - Kobrick's coffee",
+    "Empire Coffee / Black Rail Coffee (low-quality source; verify)"
+   ],
+   "note": "Several walkable independents; few serious roasters."
+  },
+  "walk": {
+   "score": 10,
+   "walk_score": null,
+   "note": "Walk Score not retrieved; compact, very walkable grid (estimate 95+)."
+  },
+  "quiet": {
+   "score": 6,
+   "note": "Uptown/west-side residential blocks fairly quiet; Washington St bar crowds on weekends, NJ Transit terminal and Hudson helicopter tours."
+  },
+  "safety": {
+   "score": 8,
+   "violent_per_1k": 1.9,
+   "property_per_1k": null,
+   "year": "2024",
+   "source": "FBI data via OpenCrime (108 violent, 188.5 per 100k)",
+   "note": "Below NJ statewide violent ~2.2/1k and far below NYC 5.3 (definitions differ). Crimes against persons -14% in 2024 vs 2023; property and quality-of-life offenses rose (Hoboken Public Safety). Property per-capita figure not found."
+  },
+  "lax": {
+   "score": 8,
+   "minutes_offpeak": 20,
+   "minutes_peak": 35,
+   "note": "EWR via NJ Turnpike / I-78 ~20 off-peak. Drive times are rough estimates from typical NYC off-peak/peak conditions, not measured this round."
+  },
+  "nightlife": {
+   "score": 10,
+   "nearest_district": "Washington St / 1st St Hoboken",
+   "drive_minutes": 0,
+   "note": "Walkable - choose uptown/west to keep it at a distance."
+  },
+  "gyms": {
+   "score": 9,
+   "examples": [
+    "Crunch Hoboken",
+    "Planet Fitness",
+    "Blink - verify"
+   ]
+  },
+  "services": {
+   "score": 9,
+   "note": "ShopRite, Trader Joe's (Hoboken - verify), Whole Foods (Edgewater/Newport nearby - verify), pharmacies, Amazon lockers."
+  },
+  "rail": {
+   "score": 8,
+   "nearest_station": "Hoboken Terminal / 14th St / 9th St",
+   "line": "PATH (33rd St & WTC), NJ Transit rail, HBLR, NY Waterway ferry",
+   "note": "PATH ~15 min to Midtown."
+  },
+  "airports_other": "LGA ~35-45 min, JFK ~45-55 min off-peak (estimate).",
+  "summary": "Safe, compact and very walkable with lots of cafes and gyms and many newer elevator buildings with modern amenities. Trade-off: rents (~$3.2-3.6k) above budget, constrained car exits/parking, and most of the city sits in the FEMA flood zone.",
+  "sources": [
+   "https://www.renthop.com/average-rent-in/07030-hoboken-nj",
+   "https://www.zumper.com/address/56-monroe-st-hoboken-nj-07030-usa",
+   "https://www.hobokengirl.com/hoboken-nj-crime-stats-updates-july-2025/",
+   "https://www.patch.com/new-jersey/across-nj/violent-crime-nj-see-where-your-neighborhood-ranks",
+   "https://jerseydigs.com/best-coffee-hoboken/",
+   "https://www.villagevoice.com/?p=374337",
+   "https://digital.stormh2o.com/june-2020/page-22",
+   "https://www.dvrpc.org/Resiliency/HMP/pdf/2016-04-25_Stephen_Marks_Presentation.pdf",
+   "https://www.weather.gov/media/okx/Climate/Almanacs/EWR/ewraug.pdf"
+  ],
+  "extras": {
+   "median_1br_rent": 3200,
+   "rent_source": "RentHop zip 07030, Jun 2026 (Zumper series is higher: $3,565 Aug 2026)",
+   "rent_trend": "+1.9% YoY (RentHop, Jun 2026)",
+   "summer_high_f": 85,
+   "marine_layer": "little - no marine layer; humid summers (Newark Aug normal 85.1F; riverfront slightly cooler)",
+   "fire_hazard": "CAL FIRE FHSZ: none (not applicable - outside California; no meaningful wildfire hazard)",
+   "flood_zone": "Roughly 70-80% of Hoboken lies in FEMA flood zones (city presentation 2016: ~64% A + ~7% V zone; sewer authority 2020: ~75% in 100-yr floodplain); Rebuild by Design resiliency project underway. Ask about building flood history/insurance; avoid ground-floor/basement units.",
+   "airport_noise": "Hudson River helicopter tour noise; some EWR traffic (unverified)",
+   "parks": [
+    "Pier A Park",
+    "Elysian Park",
+    "Hoboken Cove / Pier C Park",
+    "Stevens campus / Castle Point"
+   ],
+   "farmers_markets": [
+    "Hoboken farmers market (verify location/days - not confirmed this round)"
+   ],
+   "fiber": "Not verified this round; Optimum cable is the incumbent in Hudson County and Verizon Fios availability is building-specific - check the address.",
+   "vibe": "Walkable, safe, social mile-square town with plenty of cafes; flood risk and car access are the catches."
+  },
+  "name": "Hoboken",
+  "id": "nyc-hoboken",
+  "market": "nyc"
+ }
+]
