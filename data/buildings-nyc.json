@@ -9,10 +9,10 @@
   "lat": 40.8066,
   "lng": -73.9155,
   "location_note": "Approximate lat/lng estimated from the street address/cross streets (not geocoded by a service). Near E 138th St & St Ann's/Cypress Ave.",
-  "sqft": 700.0,
-  "base_rent": 2495.0,
-  "effective_rent": 2183.0,
-  "special": "StreetEasy: $2,183 net effective with 3 months free on 24-month lease. Broker fee not stated (NYC FARE Act: tenant not charged fee unless they hired the broker). 'Price may not include required fees.'",
+  "sqft": 700,
+  "base_rent": 2495,
+  "effective_rent": 2183,
+  "special": "3 months free on a 24-month lease (net effective ~$2,183)",
   "parking_fee": null,
   "year_built": 2019,
   "req": {
@@ -22,8 +22,8 @@
    "parking": "unclear",
    "packages": "unclear"
   },
-  "packages_detail": null,
-  "ac_evidence": "StreetEasy home features 'Central air'; Trulia 'Cooling System: Central Air'.",
+  "packages_detail": "No package room/lockers mentioned; amenities: bike storage lockers, green space, rooftop terrace, security cameras.",
+  "ac_evidence": "Trulia: 'Cooling System: Central Air'; StreetEasy lists central air. 2021 YIMBY lottery notice only says 'air conditioning'.",
   "red_flags": [
    "Building appeared in a 2021 affordable-housing lottery and on a LIHTC list - some units may be income-restricted",
    "Availability conflicting/possibly off market",
@@ -55,7 +55,7 @@
   "landlord": "company",
   "owner_type": "managed rental building (2019 new construction; 2021 NYC housing-lottery building, LIHTC-listed)",
   "platform": "StreetEasy / Trulia",
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "batch": "recent-oct26",
   "my_status": "new",
@@ -132,9 +132,10 @@
     "website": null,
     "leasing_phone": null
    },
-   "evidence": "Search snippets only; Trulia rent estimate $2,419. Lottery closed March 2021."
+   "evidence": "Verified StreetEasy + Trulia (search snippets) 2026-10-26. StreetEasy listing posted 2026-07-08 at $2,495 gross with 3 months free/24-mo lease; Trulia says rental listing REMOVED July 2026, unit now off market. Building: 2019, 5 stories, 8 units (YIMBY said 6). Small building — parking unlikely on site (not stated). Re-check for new vacancies in the building. Search snippets only; Trulia rent estimate $2,419. Lottery closed March 2021."
   },
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "over 2 mi",
   "area_walk_score": null
  },
@@ -148,9 +149,9 @@
   "lat": 40.7303,
   "lng": -74.0612,
   "location_note": "Approximate lat/lng estimated from the street address/cross streets (not geocoded by a service). Journal Square area, a few blocks from Journal Sq PATH.",
-  "sqft": 800.0,
-  "base_rent": 2600.0,
-  "effective_rent": 2600.0,
+  "sqft": 800,
+  "base_rent": 2600,
+  "effective_rent": 2600,
   "special": "None seen. Base rent only - 'price may not include required fees'. Broker fee unknown (Compass NJ listed another unit in building).",
   "parking_fee": null,
   "year_built": null,
@@ -161,8 +162,8 @@
    "parking": "yes",
    "packages": "unclear"
   },
-  "packages_detail": null,
-  "ac_evidence": "StreetEasy #204 lists 'central air'. Madison Adams (#606) lists heating/cooling 'electric, heat pump, hot air' (ducted heat pump = central).",
+  "packages_detail": "No source mentions a package room/lockers for 211 Baldwin.",
+  "ac_evidence": "StreetEasy unit 204 page lists 'Central air' (search snippet). A Madison Adams listing for unit 606 of the same building ('The Helix'/HelixJC) describes a heat pump for heating and cooling; ducted vs. individual not stated.",
   "red_flags": [
    "$2,600 is $300 over target",
    "Listing may be stale (long days on market, price history)",
@@ -175,7 +176,10 @@
    "https://streeteasy.com/building/211-baldwin-avenue-jersey_city/204",
    "https://www.madisonadams.com/listings/24036964-211--baldwin-avenue-606-jersey city-nj-07306",
    "https://www.redfin.com/neighborhood/77662/NJ/Jersey-City/Journal-Square/1-bedroom-apartments-for-rent/page-2",
-   "https://edge.apartmentiq.io/jersey-city-nj/211-baldwin-ave"
+   "https://edge.apartmentiq.io/jersey-city-nj/211-baldwin-ave",
+   "https://streeteasy.com/building/211-baldwin-avenue-jersey_city/507",
+   "https://streeteasy.com/building/211-baldwin-avenue-jersey_city/606",
+   "https://www.skybriz.com/property/nj-jersey-city-helixjc-1br-1392810/"
   ],
   "reviews": {
    "reputation_score": null,
@@ -193,7 +197,7 @@
   "landlord": "company",
   "owner_type": "managed rental building (also has city affordable units, 'HelixJC')",
   "platform": "StreetEasy / Redfin / Madison Adams",
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "batch": "recent-oct26",
   "my_status": "new",
@@ -201,7 +205,7 @@
   "detail": {
    "costs": {
     "required_fees": [],
-    "utilities": null,
+    "utilities": "One listing states tenants pay their own utilities.",
     "deposit": null,
     "application_fee": null,
     "admin_fee": null,
@@ -270,9 +274,10 @@
     "website": null,
     "leasing_phone": null
    },
-   "evidence": "Snippets only. Dishwasher from Redfin tags on other units in same building."
+   "evidence": "Verified StreetEasy (via search snippets) 2026-10-26. StreetEasy unit 204 shows ~675 days on market => listing very likely STALE; 211 Baldwin (HelixJC) is a newer elevator building with gym, lounge, game/theater room, pet wash; garage/assigned parking 'additional fee' (amount not found). Other 2026 units: #507 $2,795 (3/9/2026), #606 1BR $2,550 (Madison Adams), #603 showed a $1,895 price (history inconsistent). Building also has affordable units marketed through AffordableHousingJC (availability 2026-08-31). Unknown: dishwasher (likely but not stated), parking fee, packages, deposit, fees. Snippets only. Dishwasher from Redfin tags on other units in same building."
   },
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 87
  },
@@ -286,9 +291,9 @@
   "lat": 40.7303,
   "lng": -74.0612,
   "location_note": "Approximate lat/lng estimated from the street address/cross streets (not geocoded by a service).",
-  "sqft": 739.0,
-  "base_rent": 2200.0,
-  "effective_rent": 2200.0,
+  "sqft": 739,
+  "base_rent": 2200,
+  "effective_rent": 2200,
   "special": "None stated; fee status unknown.",
   "parking_fee": null,
   "year_built": null,
@@ -299,8 +304,8 @@
    "parking": "yes",
    "packages": "unclear"
   },
-  "packages_detail": null,
-  "ac_evidence": "Building-level only: StreetEasy #204 lists central air; Madison Adams #606 lists heat pump/hot air. Not confirmed for this unit.",
+  "packages_detail": "Not stated.",
+  "ac_evidence": "Building-level: StreetEasy unit pages at 211 Baldwin list central air and a unit-606 listing cites a heat pump for heating/cooling; nothing specific to this 739 sq ft unit.",
   "red_flags": [
    "Unit number unknown; may be an outdated/affordable-unit record"
   ],
@@ -311,7 +316,8 @@
   "listing_url": "https://edge.apartmentiq.io/jersey-city-nj/211-baldwin-ave",
   "sources": [
    "https://edge.apartmentiq.io/jersey-city-nj/211-baldwin-ave",
-   "https://streeteasy.com/building/211-baldwin-avenue-jersey_city/204"
+   "https://streeteasy.com/building/211-baldwin-avenue-jersey_city/204",
+   "https://streeteasy.com/building/211-baldwin-avenue-jersey_city/603"
   ],
   "reviews": {
    "reputation_score": null,
@@ -329,7 +335,7 @@
   "landlord": "company",
   "owner_type": "managed rental building",
   "platform": "ApartmentIQ",
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "batch": "recent-oct26",
   "my_status": "new",
@@ -337,7 +343,7 @@
   "detail": {
    "costs": {
     "required_fees": [],
-    "utilities": null,
+    "utilities": "Tenants pay own utilities (per one building listing).",
     "deposit": null,
     "application_fee": null,
     "admin_fee": null,
@@ -402,9 +408,10 @@
     "website": null,
     "leasing_phone": null
    },
-   "evidence": "Possibly the best price lead at 211 Baldwin but single-source."
+   "evidence": "Verified edge.apartmentiq.io (search snippet) 2026-10-26. Aggregator shows availability 'Ask' and no unit number. $2,200 is well below the building's market-rate 1BRs ($2,550-2,795 in 2026) — possibly an affordable (income-restricted) unit via AffordableHousingJC.com, or stale data. Treat as unconfirmed; may require income eligibility. W/D in unit reported for other units in the building. Possibly the best price lead at 211 Baldwin but single-source."
   },
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 87
  },
@@ -418,21 +425,21 @@
   "lat": 40.736,
   "lng": -74.059,
   "location_note": "Approximate lat/lng estimated from the street address/cross streets (not geocoded by a service). Newark Ave between Journal Square and the Heights.",
-  "sqft": 750.0,
-  "base_rent": 2500.0,
-  "effective_rent": 2500.0,
+  "sqft": 750,
+  "base_rent": 2500,
+  "effective_rent": 2500,
   "special": "None seen. Broker-listed; NJ broker fee possible - confirm.",
   "parking_fee": null,
   "year_built": null,
   "req": {
    "wd": "yes",
    "ac": "yes",
-   "dw": "unclear",
+   "dw": "yes",
    "parking": "unclear",
    "packages": "unclear"
   },
-  "packages_detail": null,
-  "ac_evidence": "StreetEasy snippet lists central air + in-unit W/D; Redfin tag only says 'A/C'.",
+  "packages_detail": "Not stated.",
+  "ac_evidence": "Redfin tags only say 'A/C' (no type) — could be central, split or through-wall.",
   "red_flags": [
    "Listed ~4 months ago - may be rented",
    "No parking listed",
@@ -443,7 +450,9 @@
   "listing_url": "https://streeteasy.com/building/651-newark-avenue-jersey_city/1",
   "sources": [
    "https://streeteasy.com/building/651-newark-avenue-jersey_city/1",
-   "https://www.redfin.com/city/9168/NJ/Jersey-City/apartments-with-laundry-for-rent"
+   "https://www.redfin.com/city/9168/NJ/Jersey-City/apartments-with-laundry-for-rent",
+   "https://www.redfin.com/city/9168/NJ/Jersey-City/apartments-with-air-conditioning-for-rent/page-6",
+   "https://www.redfin.com/zipcode/07306/apartments-for-rent/page-4"
   ],
   "reviews": {
    "reputation_score": null,
@@ -461,7 +470,7 @@
   "landlord": "private",
   "owner_type": "small multifamily / private owner via broker (inferred from unit '#1'; not confirmed)",
   "platform": "StreetEasy / Redfin (Hudson MLS)",
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "batch": "recent-oct26",
   "my_status": "new",
@@ -534,9 +543,10 @@
     "website": null,
     "leasing_phone": null
    },
-   "evidence": "Snippets only."
+   "evidence": "Verified Redfin (search snippet) 2026-10-26. Redfin: 2 bed / 1 bath, 750 sq ft, $2,500, 'Laundry in unit • A/C • Dishwasher'. Listing date/active status not shown; may be stale. AC type and parking unknown. Snippets only."
   },
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 87
  },
@@ -550,9 +560,9 @@
   "lat": 40.7295,
   "lng": -74.079,
   "location_note": "Approximate lat/lng estimated from the street address/cross streets (not geocoded by a service). West Side Ave near Lincoln Park / McGinley Sq.",
-  "sqft": 750.0,
-  "base_rent": 1800.0,
-  "effective_rent": 1800.0,
+  "sqft": 750,
+  "base_rent": 1800,
+  "effective_rent": 1800,
   "special": "Unknown; NJ MLS rentals often carry a broker fee - confirm.",
   "parking_fee": null,
   "year_built": null,
@@ -563,8 +573,8 @@
    "parking": "yes",
    "packages": "unclear"
   },
-  "packages_detail": null,
-  "ac_evidence": "Redfin tags: 'Pets welcome, Laundry in unit, Parking' - no A/C tag.",
+  "packages_detail": "Not stated.",
+  "ac_evidence": "No AC info in the Redfin snippet.",
   "red_flags": [
    "Central air not confirmed",
    "Undated listing"
@@ -591,7 +601,7 @@
   "landlord": "private",
   "owner_type": "unclear (MLS rental)",
   "platform": "Redfin (Hudson County MLS)",
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "batch": "recent-oct26",
   "my_status": "new",
@@ -664,9 +674,10 @@
     "website": null,
     "leasing_phone": null
    },
-   "evidence": "Single Redfin snippet."
+   "evidence": "Verified Redfin McGinley Square rentals page (search snippet) 2026-10-26. Redfin: 1 bed/1 bath ~750 sq ft, $1,800, pets welcome, in-unit laundry, parking. No posting date; page copyright 2025 => possibly STALE. Price is low for the area but plausible for an older 2-family house; no scam signals beyond lack of date. AC type unknown. Single Redfin snippet."
   },
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 87
  },
@@ -680,9 +691,9 @@
   "lat": 40.6,
   "lng": -74.169,
   "location_note": "Approximate lat/lng estimated from the street address/cross streets (not geocoded by a service). Actually mid-island (10314, Bulls Head/Heartland area) - area list has only one Staten Island option.",
-  "sqft": 737.0,
-  "base_rent": 2200.0,
-  "effective_rent": 2200.0,
+  "sqft": 737,
+  "base_rent": 2200,
+  "effective_rent": 2200,
   "special": "Unknown",
   "parking_fee": null,
   "year_built": null,
@@ -693,8 +704,8 @@
    "parking": "yes",
    "packages": "unclear"
   },
-  "packages_detail": null,
-  "ac_evidence": "Listing does not mention A/C type.",
+  "packages_detail": "Not stated.",
+  "ac_evidence": "Prodigy listing doesn't mention AC; a for-sale condo in the same complex (10 Windham Loop) mentions a 'new A/C unit' (type unknown).",
   "red_flags": [
    "Leased July 2025 - not currently available",
    "Central air unconfirmed"
@@ -721,7 +732,7 @@
   "landlord": "private",
   "owner_type": "condo unit rented via broker",
   "platform": "Prodigy Real Estate",
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "batch": "recent-oct26",
   "my_status": "new",
@@ -799,9 +810,10 @@
     "website": null,
     "leasing_phone": null
    },
-   "evidence": "Complex has pool and playground per listing."
+   "evidence": "Verified Prodigy Real Estate (search snippet) 2026-10-26. NOT AVAILABLE: Prodigy marks it LEASED on 2025-07-27. Washer and dryer included per listing. Could reappear but currently off market. Complex has pool and playground per listing."
   },
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": null
  },
@@ -815,9 +827,9 @@
   "lat": 40.589,
   "lng": -74.164,
   "location_note": "Approximate lat/lng estimated from the street address/cross streets (not geocoded by a service). New Springville area (mid-island), not North Shore.",
-  "sqft": 750.0,
-  "base_rent": 1310.0,
-  "effective_rent": 1310.0,
+  "sqft": 750,
+  "base_rent": 1310,
+  "effective_rent": 1310,
   "special": "Range $1,310-$1,478 (2 units) per aggregator.",
   "parking_fee": null,
   "year_built": null,
@@ -828,8 +840,8 @@
    "parking": "unclear",
    "packages": "unclear"
   },
-  "packages_detail": null,
-  "ac_evidence": "Description mentions 'central heating/cooling system' (aggregator text).",
+  "packages_detail": "Not stated.",
+  "ac_evidence": "Rentable lists 'air conditioning' only, no type.",
   "red_flags": [
    "Aggregator data, likely outdated",
    "Nearby 121 Wellington Ct building listing says no in-unit laundry/AC - verify building"
@@ -858,7 +870,7 @@
   "landlord": "company",
   "owner_type": "rental via property manager",
   "platform": "Rentable.co (aggregator)",
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "batch": "recent-oct26",
   "my_status": "new",
@@ -931,9 +943,10 @@
     "website": null,
     "leasing_phone": null
    },
-   "evidence": "Fitness center listed. Single aggregator source."
+   "evidence": "Verified Rentable (search snippet) 2026-10-26. Rentable: 1BR/1BA ~750 sq ft, two units listed at $1,310 and $1,478, manager C M C Properties, LLC; in-unit laundry, AC, fitness center, disposal, dishwasher; no pet policy. 'Updated 5 minutes ago' label is generic. Price ~half of Staten Island market for a 1BR with in-unit W/D => likely stale/feed artifact; verify with CMC Properties directly. No other platform corroborates. Fitness center listed. Single aggregator source."
   },
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "1–2 mi",
   "area_walk_score": null
  },
@@ -947,9 +960,9 @@
   "lat": 40.7505,
   "lng": -74.0285,
   "location_note": "Approximate lat/lng estimated from the street address/cross streets (not geocoded by a service). 11th St between Bloomfield & Washington.",
-  "sqft": 750.0,
-  "base_rent": 1550.0,
-  "effective_rent": 1550.0,
+  "sqft": 750,
+  "base_rent": 1550,
+  "effective_rent": 1550,
   "special": "Unknown",
   "parking_fee": null,
   "year_built": null,
@@ -960,8 +973,8 @@
    "parking": "unclear",
    "packages": "unclear"
   },
-  "packages_detail": null,
-  "ac_evidence": "Rentable text: central A/C and in-unit washer/dryer.",
+  "packages_detail": "Not stated.",
+  "ac_evidence": "Rentable listing text says 'central A/C' (only source).",
   "red_flags": [
    "Price conflict",
    "Hoboken parking typically scarce/expensive"
@@ -974,7 +987,8 @@
   "sources": [
    "https://www.rentable.co/hoboken-nj/bright-and-sunny-1-bedroom-apartment-in-a-brick-building",
    "https://www.forrent.com/nj/hoboken/105-11th-st/t28nds9",
-   "https://apartmentlist.com/nj/hoboken/105-11th-st"
+   "https://apartmentlist.com/nj/hoboken/105-11th-st",
+   "https://hotpads.com/105-11th-st-hoboken-nj-07030-snuru1/2f/pad"
   ],
   "reviews": {
    "reputation_score": null,
@@ -992,7 +1006,7 @@
   "landlord": "company",
   "owner_type": "small brick building, managed",
   "platform": "Rentable.co (aggregator)",
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "batch": "recent-oct26",
   "my_status": "new",
@@ -1065,9 +1079,10 @@
     "website": null,
     "leasing_phone": null
    },
-   "evidence": "Likely real at a much higher price."
+   "evidence": "Verified Rentable (search snippet) 2026-10-26. LIKELY STALE/MISPRICED, possible scam bait: $1,550 is 56% below Hoboken's 1BR average (per the page itself), availability 'Ask'. Every other listing at 105 11th St is a 2BR (#2F) at $4,000-4,250 (ApartmentList Apr 2025, ForRent, HotPads, Redfin; agent Corcoran Sawyer Smith; HotPads says no pets). Rentable names 'Eli Real Estate' as manager. Do not send money without verifying via the management company directly. Likely real at a much higher price."
   },
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "1–2 mi",
   "area_walk_score": 97
  },
@@ -1081,9 +1096,9 @@
   "lat": 40.7625,
   "lng": -73.8235,
   "location_note": "Approximate lat/lng estimated from the street address/cross streets (not geocoded by a service). Parsons Blvd near 38th Ave.",
-  "sqft": 950.0,
-  "base_rent": 1400.0,
-  "effective_rent": 1400.0,
+  "sqft": 950,
+  "base_rent": 1400,
+  "effective_rent": 1400,
   "special": "Unknown",
   "parking_fee": null,
   "year_built": null,
@@ -1094,8 +1109,8 @@
    "parking": "yes",
    "packages": "unclear"
   },
-  "packages_detail": null,
-  "ac_evidence": "Aggregator lists 'central cooling'.",
+  "packages_detail": "Not stated.",
+  "ac_evidence": "No AC type found.",
   "red_flags": [
    "In-unit W/D not confirmed",
    "Data likely years old"
@@ -1106,7 +1121,9 @@
   "notes": "Plan 1BR/1BA. 1 unit, availability 'Ask'; page cites 2020 FCC data - likely stale. Seen on 2026-10-26 (web search snippets; page fetch failed DNS).",
   "listing_url": "https://www.rentable.co/queens-ny/3820-parsons-blvd",
   "sources": [
-   "https://www.rentable.co/queens-ny/3820-parsons-blvd"
+   "https://www.rentable.co/queens-ny/3820-parsons-blvd",
+   "https://www.zumper.com/address/3820-parsons-blvd-flushing-ny-11354-usa",
+   "https://newyorkyimby.com/?p=1884734"
   ],
   "reviews": {
    "reputation_score": null,
@@ -1124,7 +1141,7 @@
   "landlord": "private",
   "owner_type": "unclear (aggregator; manager is an individual - name omitted)",
   "platform": "Rentable.co (aggregator)",
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "batch": "recent-oct26",
   "my_status": "new",
@@ -1197,9 +1214,10 @@
     "website": null,
     "leasing_phone": null
    },
-   "evidence": "Single aggregator."
+   "evidence": "Verified Rentable / Zumper (search snippets) 2026-10-26. Building is Eastone Plaza, new 2025 mid-rise (~175 residences) where condo 1BRs sell for ~$727,500 (Unit 508, Apr 2026). Zumper shows 1BRs at $1,750 (~8 months ago, one 238 days on market). $1,400 for 950 sq ft new-construction is implausibly low => STALE or SCAM-RISK; 950 sq ft for a 1BR also unverified. Conflicting prices. Single aggregator."
   },
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 89
  },
@@ -1226,8 +1244,8 @@
    "parking": "unclear",
    "packages": "unclear"
   },
-  "packages_detail": null,
-  "ac_evidence": "Not stated in snippet.",
+  "packages_detail": "Not stated.",
+  "ac_evidence": "Nothing found.",
   "red_flags": [
    "Central air, dishwasher, parking unconfirmed"
   ],
@@ -1237,7 +1255,9 @@
   "notes": "Plan 1BR/1BA. Aggregator price, date unknown. Seen on 2026-10-26 (web search snippets; page fetch failed DNS).",
   "listing_url": "https://www.rentable.co/queens-ny/4373-union-st",
   "sources": [
-   "https://www.rentable.co/queens-ny/4373-union-st"
+   "https://www.rentable.co/queens-ny/4373-union-st",
+   "https://compass.com/building/43-73-union-st-queens-ny-11355/293530681273788549",
+   "https://estately.com/listings/info/4373-union-st-flushing-ny"
   ],
   "reviews": {
    "reputation_score": null,
@@ -1255,7 +1275,7 @@
   "landlord": "private",
   "owner_type": "unclear (aggregator)",
   "platform": "Rentable.co (aggregator)",
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "batch": "recent-oct26",
   "my_status": "new",
@@ -1328,9 +1348,10 @@
     "website": null,
     "leasing_phone": null
    },
-   "evidence": "Single aggregator."
+   "evidence": "Verified Compass / Estately (search snippets) 2026-10-26. Could not corroborate the Rentable 1BR/750 sq ft/$1,200 listing anywhere. The building (7 stories, built 2000, 27 units, Compass) shows only a condo sale (Unit 7B 2BR duplex PH ~993 sq ft, $728,000). $1,200 for a Flushing 1BR is far below market => treat as STALE/SCAM-RISK; recommend dropping. Single aggregator."
   },
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 89
  },
@@ -1344,9 +1365,9 @@
   "lat": 40.8165,
   "lng": -73.8165,
   "location_note": "Approximate lat/lng estimated from the street address/cross streets (not geocoded by a service). Actually Throggs Neck/Silver Beach (East Bronx); AREAS list has no East Bronx entry, nearest Bronx bucket used.",
-  "sqft": 1050.0,
-  "base_rent": 2450.0,
-  "effective_rent": 2450.0,
+  "sqft": 1050,
+  "base_rent": 2450,
+  "effective_rent": 2450,
   "special": "'Starting at $2,450+' for 2BR/2BA; fee unknown.",
   "parking_fee": null,
   "year_built": null,
@@ -1357,8 +1378,8 @@
    "parking": "yes",
    "packages": "unclear"
   },
-  "packages_detail": null,
-  "ac_evidence": "VeryApt lists central air; sale listing #305/#209 'central AC'.",
+  "packages_detail": "Not stated.",
+  "ac_evidence": "Condo sale listings for units at 1 Patricia Lane state 'Cooling: Yes - Central Air'; VeryApt rental page only lists 'Air Conditioning'.",
   "red_flags": [
    "Rental price stale; sqft from sale listings, not a rental",
    "Far from subway (bus/express bus area)"
@@ -1369,7 +1390,8 @@
   "sources": [
    "https://www.veryapt.com/Apartments-L3837-new-york-throggs-neck",
    "https://www.bhsusa.com/for-sale/new-york/bronx/1-patricia-lane-305-bronx-ny-10465/1050287-6288203",
-   "https://wp.wps.neutrinoinc.com/search/real-estate-sales/1-patricia-lane-209-bronx-ny-10465-914146-42822351"
+   "https://wp.wps.neutrinoinc.com/search/real-estate-sales/1-patricia-lane-209-bronx-ny-10465-914146-42822351",
+   "https://streeteasy.com/building/50-patricia-lane-bronx/411"
   ],
   "reviews": {
    "reputation_score": null,
@@ -1387,7 +1409,7 @@
   "landlord": "company",
   "owner_type": "condo complex with rental units",
   "platform": "VeryApt (aggregator); size from BHS/sale listings",
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "batch": "recent-oct26",
   "my_status": "new",
@@ -1460,7 +1482,407 @@
     "website": null,
     "leasing_phone": null
    },
-   "evidence": "Private community beach per #209 listing. Best path: ask condo owners/brokers for a rental."
+   "evidence": "Verified VeryApt + BHS sale listing (search snippets) 2026-10-26. VeryApt 'from $2,450+' is a building-level estimate and VeryApt says it is NOT accepting inquiries for Lagoon Development => STALE. Building is a condo complex (units sell ~$520k); rentals would be individual owner sublets. Nearby 50 Patricia Lane rented a unit with central air + W/D at $3,499 (July 2026), so $2,450 for 1,050 sq ft is likely outdated. Private community beach per #209 listing. Best path: ask condo owners/brokers for a rental."
+  },
+  "required_fees_total": null,
+  "verified": true,
+  "freeway_band": "1–2 mi",
+  "area_walk_score": null
+ },
+ {
+  "id": "nyc-27-graham-street-rear-1br-duplex-700-sq-ft",
+  "market": "nyc",
+  "name": "27 Graham Street (Rear, 1BR duplex, 700 sq ft)",
+  "address": "27 Graham St (Rear 3), Jersey City, NJ 07307",
+  "area_id": "nyc-jersey-city",
+  "region": "New Jersey",
+  "lat": 40.7505,
+  "lng": -74.0495,
+  "location_note": "Approximate, estimated from street location in The Heights (StreetEasy neighborhood tag); ZIP 07307 assumed (one sale listing URL shows 07306).",
+  "sqft": 700.0,
+  "base_rent": 2495.0,
+  "effective_rent": 2495.0,
+  "special": null,
+  "parking_fee": null,
+  "year_built": null,
+  "req": {
+   "wd": "yes",
+   "ac": "yes",
+   "dw": "unclear",
+   "parking": "unclear",
+   "packages": "unclear"
+  },
+  "packages_detail": "Small house; no package room/lockers mentioned.",
+  "ac_evidence": "StreetEasy feature list: 'Central air' (search snippet). Ducted vs. ductless not specified; verify.",
+  "red_flags": "Listing has been up since at least Apr 2026 (possibly stale by Jan 2027); parking not mentioned; exactly 700 sq ft (minimum).",
+  "scam_flags": "None obvious; price is consistent across 4 platforms (Apartments.com $2,295 vs others $2,495).",
+  "notes": "Plan 1BR/1BA duplex over two levels (bedroom upstairs). Rear unit #3; StreetEasy history: price increase 4/30/2026, $2,695 and $2,495 entries on 7/14/2026; ForRent 'available now' $2,495; Apartments.com shows $2,295 total monthly price (conflict). Seen on StreetEasy + ForRent (search snippets) 2026-10-26.",
+  "listing_url": "https://streeteasy.com/building/27-graham-street-jersey_city/rear-3",
+  "sources": [
+   "https://streeteasy.com/building/27-graham-street-jersey_city/rear-3",
+   "https://www.forrent.com/nj/jersey-city/27-graham-st/0p9dhq0",
+   "https://www.apartments.com/27-graham-st-jersey-city-nj/np7eczn/",
+   "https://www.corporatehousing.com/nj/jersey-city/27-graham-st/04kwy00",
+   "https://www.madisonadams.com/listings/250016812-27--graham-st-jersey city-nj-07306"
+  ],
+  "reviews": {
+   "reputation_score": null,
+   "confidence": "low",
+   "management_company": null,
+   "complaints": [],
+   "praise": [],
+   "dealbreakers": "",
+   "recent_trend": "unknown",
+   "management": {
+    "score": null,
+    "summary": "No reviews found (small private building)."
+   }
+  },
+  "landlord": "private",
+  "owner_type": "small owner (2-4 family house; building also appeared as a 2-4 family for-sale listing)",
+  "platform": "StreetEasy / ForRent / Apartments.com / CorporateHousing.com",
+  "checked_on": "2026-10-26",
+  "source": "claude",
+  "batch": "recent-oct26",
+  "my_status": "new",
+  "my_note": "",
+  "detail": {
+   "costs": {
+    "required_fees": [],
+    "utilities": null,
+    "deposit": null,
+    "application_fee": null,
+    "admin_fee": null,
+    "parking_fee": null,
+    "lease_terms": null
+   },
+   "pets": {
+    "cats": "yes",
+    "dogs": "yes",
+    "pet_rent": null,
+    "pet_deposit": null,
+    "limits": null
+   },
+   "parking": {
+    "type": "unclear",
+    "ev_charging": "unclear",
+    "guest_parking": "unclear"
+   },
+   "building": {
+    "units": null,
+    "stories": null,
+    "year_built": null,
+    "renovated": null,
+    "elevator": "unclear",
+    "gym": "unclear",
+    "pool": "unclear",
+    "coworking": "unclear",
+    "rooftop_or_courtyard": "unclear",
+    "controlled_access": "unclear",
+    "onsite_management": "unclear",
+    "smoke_free": "unclear"
+   },
+   "unit": {
+    "balcony": "unclear",
+    "storage": "unclear",
+    "floors_available": null,
+    "features": [
+     "duplex layout",
+     "in-unit laundry"
+    ]
+   },
+   "internet": {
+    "fiber": "unclear",
+    "providers": []
+   },
+   "location": {
+    "walk_score": null,
+    "transit_score": null,
+    "bike_score": null,
+    "nearest_onramp": null,
+    "onramp_miles": null,
+    "freeway_within_500ft": "unclear",
+    "nearest_specialty_cafe": null,
+    "cafe_walk_min": null,
+    "nearest_grocery": null,
+    "grocery_walk_min": null,
+    "nearest_metro": null,
+    "metro_walk_min": null,
+    "nearest_gym": null,
+    "gym_minutes": null,
+    "lax_drive_min_offpeak": null
+   },
+   "availability": {
+    "units_note": "Rear 3, 1BR 700 sq ft, $2,495 'available now' on ForRent; StreetEasy base-rent entry 7/14/2026 (seen 2026-10-26).",
+    "website": "https://streeteasy.com/building/27-graham-street-jersey_city/rear-3",
+    "leasing_phone": null
+   }
+  },
+  "required_fees_total": null,
+  "freeway_band": "1–2 mi",
+  "area_walk_score": 87
+ },
+ {
+  "id": "nyc-the-shoreline-1br-756-sq-ft-unit-not-given",
+  "market": "nyc",
+  "name": "The Shoreline - 1BR 756 sq ft (unit # not given)",
+  "address": "2230 Cropsey Ave, Brooklyn, NY 11214",
+  "area_id": "nyc-bay-ridge-sunset-park",
+  "region": "Brooklyn",
+  "lat": 40.5958,
+  "lng": -73.999,
+  "location_note": "Approximate. Building is in Bath Beach/Gravesend waterfront (~3 mi SE of Bay Ridge); 'Bay Ridge / Sunset Park' is the closest area in AREAS_nyc.txt.",
+  "sqft": 756.0,
+  "base_rent": 2250.0,
+  "effective_rent": 2250.0,
+  "special": "Other units advertised 1-3 months free on 13-15 month leases (e.g. $3,220 base -> $2,576 net with 3 months free/15 mo).",
+  "parking_fee": null,
+  "year_built": 2024,
+  "req": {
+   "wd": "yes",
+   "ac": "yes",
+   "dw": "yes",
+   "parking": "yes",
+   "packages": "yes"
+  },
+  "packages_detail": "Developer/StreetEasy: attended lobby, package room.",
+  "ac_evidence": "StreetEasy unit pages list 'central air' (search snippet). Type of system (ducted vs. VRF/PTAC) not stated - verify; new NYC towers often label PTAC/VRF as central.",
+  "red_flags": "Price far below building's market; next to Belt Parkway (Shore Pkwy) - possible freeway noise/air-quality concern; outside client's named neighborhoods.",
+  "scam_flags": "$2,250 for 756 sq ft is ~$550-850 below every other StreetEasy price in this building - likely stale/feed error or mislabeled net-effective price; verify directly with leasing.",
+  "notes": "Plan 1BR/1BA. 248 units, 31 stories; StreetEasy base rents seen ~$2,800-$5,100; the $2,250/756 sq ft Redfin row has no unit number or date. Seen on Redfin + StreetEasy (search snippets) 2026-10-26.",
+  "listing_url": "https://www.redfin.com/neighborhood/224204/NY/New-York/Midwood/1-bedroom-apartments-for-rent",
+  "sources": [
+   "https://www.redfin.com/neighborhood/224204/NY/New-York/Midwood/1-bedroom-apartments-for-rent",
+   "https://www.redfin.com/neighborhood/224207/NY/New-York/Bensonhurst/1-bedroom-apartments-for-rent",
+   "https://www.streeteasy.com/building/the-shoreline",
+   "https://streeteasy.com/building/the-shoreline/1904",
+   "https://newyorkyimby.com/?p=1947553"
+  ],
+  "reviews": {
+   "reputation_score": null,
+   "confidence": "low",
+   "management_company": "EXR (leasing team, per search snippet)",
+   "complaints": [],
+   "praise": [],
+   "dealbreakers": "",
+   "recent_trend": "unknown",
+   "management": {
+    "score": null,
+    "summary": "New 2024 tower; no review data found."
+   }
+  },
+  "landlord": "company",
+  "owner_type": "institutional developer (new-construction market-rate tower)",
+  "platform": "Redfin (price/size); StreetEasy (building)",
+  "checked_on": "2026-10-26",
+  "source": "claude",
+  "batch": "recent-oct26",
+  "my_status": "new",
+  "my_note": "",
+  "detail": {
+   "costs": {
+    "required_fees": [],
+    "utilities": null,
+    "deposit": null,
+    "application_fee": null,
+    "admin_fee": null,
+    "parking_fee": null,
+    "lease_terms": "13-15 month leases with concessions advertised on StreetEasy"
+   },
+   "pets": {
+    "cats": "unclear",
+    "dogs": "unclear",
+    "pet_rent": null,
+    "pet_deposit": null,
+    "limits": null
+   },
+   "parking": {
+    "type": "garage",
+    "ev_charging": "unclear",
+    "guest_parking": "unclear"
+   },
+   "building": {
+    "units": 248,
+    "stories": 31,
+    "year_built": 2024,
+    "renovated": null,
+    "elevator": "yes",
+    "gym": "yes",
+    "pool": "yes",
+    "coworking": "unclear",
+    "rooftop_or_courtyard": "yes",
+    "controlled_access": "yes",
+    "onsite_management": "unclear",
+    "smoke_free": "unclear"
+   },
+   "unit": {
+    "balcony": "unclear",
+    "storage": "yes",
+    "floors_available": null,
+    "features": [
+     "hardwood floors",
+     "in-unit washer/dryer",
+     "dishwasher",
+     "resident storage lockers"
+    ]
+   },
+   "internet": {
+    "fiber": "unclear",
+    "providers": []
+   },
+   "location": {
+    "walk_score": null,
+    "transit_score": null,
+    "bike_score": null,
+    "nearest_onramp": "Belt Parkway (Shore Pkwy) at Bay Pkwy/Cropsey area",
+    "onramp_miles": null,
+    "freeway_within_500ft": "unclear",
+    "nearest_specialty_cafe": null,
+    "cafe_walk_min": null,
+    "nearest_grocery": null,
+    "grocery_walk_min": null,
+    "nearest_metro": null,
+    "metro_walk_min": null,
+    "nearest_gym": null,
+    "gym_minutes": null,
+    "lax_drive_min_offpeak": null
+   },
+   "availability": {
+    "units_note": "Redfin row: 1BR 756 sq ft $2,250 (undated, no unit #), seen 2026-10-26; StreetEasy units ~$2,800+ with concessions.",
+    "website": "https://www.streeteasy.com/building/the-shoreline",
+    "leasing_phone": "(718) 355-8187"
+   }
+  },
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 94
+ },
+ {
+  "id": "nyc-20-tappen-court-1br-2ba-townhouse-1-150-sq-ft",
+  "market": "nyc",
+  "name": "20 Tappen Court (1BR/2BA townhouse, 1,150 sq ft)",
+  "address": "20 Tappen Ct, Staten Island, NY 10304",
+  "area_id": "nyc-st-george-north-shore",
+  "region": "Staten Island",
+  "lat": 40.6235,
+  "lng": -74.079,
+  "location_note": "Approximate, Stapleton near Tappen Park (Redfin tags it Stapleton).",
+  "sqft": 1150.0,
+  "base_rent": 2200.0,
+  "effective_rent": 2200.0,
+  "special": null,
+  "parking_fee": null,
+  "year_built": 1989,
+  "req": {
+   "wd": "yes",
+   "ac": "unclear",
+   "dw": "unclear",
+   "parking": "yes",
+   "packages": "unclear"
+  },
+  "packages_detail": "Townhouse - deliveries to door; nothing stated.",
+  "ac_evidence": "Rental snippet doesn't state AC; a for-sale listing (DeFalco Realty, $465,000) for 20 Tappen Court says 'central air' - but it describes 2BR/2BA, 1,720 sq ft, so the rental may be a portion of the house; verify.",
+  "red_flags": "Sale/rental conflict; Staten Island commute (ferry/SIR); AC type unknown.",
+  "scam_flags": "Same address simultaneously listed FOR SALE ($465,000) - possible stale or duplicated listing; size/bedroom counts conflict between sale (2BR, 1,720 sq ft) and rental (1BR, 1,150 sq ft). Never wire deposits before seeing the unit.",
+  "notes": "Plan 1BR/2BA townhouse. Redfin: 'new renovated 1 bedroom 2 bathroom townhouse', $2,200/mo, 1,150 sq ft, in-unit W/D, front-yard parking space. Undated. Seen on Redfin (search snippet) 2026-10-26.",
+  "listing_url": "https://www.redfin.com/neighborhood/34009/NY/New-York/Staten-Island/houses-for-rent",
+  "sources": [
+   "https://www.redfin.com/neighborhood/34009/NY/New-York/Staten-Island/houses-for-rent",
+   "https://defalcorealty.statenweb.com/property/2503191-20-tappen-court-staten-island-ny-10304"
+  ],
+  "reviews": {
+   "reputation_score": null,
+   "confidence": "low",
+   "management_company": null,
+   "complaints": [],
+   "praise": [],
+   "dealbreakers": "",
+   "recent_trend": "unknown",
+   "management": {
+    "score": null,
+    "summary": "Private owner; no reviews."
+   }
+  },
+  "landlord": "private",
+  "owner_type": "individual owner (attached single-family townhouse)",
+  "platform": "Redfin",
+  "checked_on": "2026-10-26",
+  "source": "claude",
+  "batch": "recent-oct26",
+  "my_status": "new",
+  "my_note": "",
+  "detail": {
+   "costs": {
+    "required_fees": [],
+    "utilities": null,
+    "deposit": null,
+    "application_fee": null,
+    "admin_fee": null,
+    "parking_fee": null,
+    "lease_terms": null
+   },
+   "pets": {
+    "cats": "unclear",
+    "dogs": "unclear",
+    "pet_rent": null,
+    "pet_deposit": null,
+    "limits": null
+   },
+   "parking": {
+    "type": "surface",
+    "ev_charging": "unclear",
+    "guest_parking": "unclear"
+   },
+   "building": {
+    "units": null,
+    "stories": null,
+    "year_built": 1989,
+    "renovated": null,
+    "elevator": "no",
+    "gym": "unclear",
+    "pool": "unclear",
+    "coworking": "unclear",
+    "rooftop_or_courtyard": "unclear",
+    "controlled_access": "unclear",
+    "onsite_management": "unclear",
+    "smoke_free": "unclear"
+   },
+   "unit": {
+    "balcony": "unclear",
+    "storage": "unclear",
+    "floors_available": null,
+    "features": [
+     "renovated",
+     "front-yard parking space",
+     "in-unit washer/dryer"
+    ]
+   },
+   "internet": {
+    "fiber": "unclear",
+    "providers": []
+   },
+   "location": {
+    "walk_score": null,
+    "transit_score": null,
+    "bike_score": null,
+    "nearest_onramp": null,
+    "onramp_miles": null,
+    "freeway_within_500ft": "unclear",
+    "nearest_specialty_cafe": null,
+    "cafe_walk_min": null,
+    "nearest_grocery": null,
+    "grocery_walk_min": null,
+    "nearest_metro": "Stapleton (Staten Island Railway)",
+    "metro_walk_min": null,
+    "nearest_gym": null,
+    "gym_minutes": null,
+    "lax_drive_min_offpeak": null
+   },
+   "availability": {
+    "units_note": "Redfin rental row (undated) seen 2026-10-26; a sale listing for same address also active.",
+    "website": null,
+    "leasing_phone": null
+   }
   },
   "required_fees_total": null,
   "freeway_band": "1–2 mi",
