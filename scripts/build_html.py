@@ -7,6 +7,10 @@ field count as "la"). Seattle and New York data are optional (data/buildings-sea
 data/neighborhoods-seattle.json, data/buildings-nyc.json, data/neighborhoods-nyc.json); the build
 works without them. A record whose `market` field names another market is filed under that market.
 Embedded as DATA.markets = { la: {label, buildings, neighborhoods, geo}, seattle: {...}, nyc: {...} }.
+
+Rent timing research (optional): data/timing-la.json is embedded as DATA.markets.la.timing; its `areas`
+entries with an `area_id` are attached to LA neighborhoods as `a.concessions`. data/concessions-la.json
+({listing id: {pattern, seen, ...}}) is attached to LA listings as `b.concessions`.
 """
 import datetime
 import json
@@ -68,6 +72,23 @@ for key, label, bfile, nfile, gfile in MARKETS:
     if geo is not None:
         geo.setdefault("market", key)
         markets[key]["geo"] = geo
+
+# Rent timing + concessions research (LA). Both files are optional; any key may be missing or null.
+timing = load("timing-la.json", None)
+concessions = load("concessions-la.json", {})
+if isinstance(concessions, dict):
+    for b in markets["la"]["buildings"]:
+        c = concessions.get(b.get("id"))
+        if isinstance(c, dict):
+            b["concessions"] = c
+if isinstance(timing, dict):
+    by_area = {x["area_id"]: x for x in (timing.get("areas") or []) if isinstance(x, dict) and x.get("area_id")}
+    for a in markets["la"]["neighborhoods"]:
+        if a.get("id") in by_area:
+            a["concessions"] = {k: v for k, v in by_area[a["id"]].items() if k not in ("area_id", "name", "region")}
+    timing = prune(timing)
+    if timing:
+        markets["la"]["timing"] = timing
 
 counts = {}
 for key, m in markets.items():

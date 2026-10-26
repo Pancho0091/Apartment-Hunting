@@ -1,0 +1,1646 @@
+{
+ "updated": "2026-10-26",
+ "seasonality": {
+  "months": [
+   {
+    "m": 1,
+    "rent_vs_avg_pct": null,
+    "concessions": "high",
+    "note": "Winter trough. RentHop LA (2016 data, old): Nov-Jan are best months. Zillow national: Jan 2024 concession share 31.9%, just off the winter high. Apartment List LA metro hit a four-year low of $2,167 in Dec 2025 (data published Jan 2026). Apartment Advisor: LA rents dipped month-over-month in Jan 2025 and an uptick was expected in Feb.",
+    "sources": [
+     "https://www.renthop.com/research/best-time-of-year-to-rent/",
+     "https://zillow.mediaroom.com/2024-03-20-Concessions-cool-as-spring-rental-season-approaches",
+     "https://kidder.com/news/2026/01/la-rent-prices-fall-to-four-year-low-apartment-list/",
+     "https://www.apartmentadvisor.com/owners/post/report-january-2025-rent-trends"
+    ]
+   },
+   {
+    "m": 2,
+    "rent_vs_avg_pct": null,
+    "concessions": "high",
+    "note": "Still off-season. Rents begin to rise: the national seasonal upswing runs Feb-Jul (Apartment List). Zillow national concession share was 32.2% in Feb 2024. RentHop's top-10-city study puts the cheapest months at Dec-Mar.",
+    "sources": [
+     "https://www.apartmentlist.com/rentonomics/october-2018-rent-report/",
+     "https://zillow.mediaroom.com/2024-03-20-Concessions-cool-as-spring-rental-season-approaches",
+     "https://www.renthop.com/research/best-time-of-year-to-rent/"
+    ]
+   },
+   {
+    "m": 3,
+    "rent_vs_avg_pct": null,
+    "concessions": "medium",
+    "note": "Apartment List (secondary summary) says that in 2023-2025 national month-over-month growth peaked in March at about +0.6%, earlier than the pre-pandemic May peak. Apartment List reported +0.6% in Mar 2024. RealPage national concession usage was 16.9% in Mar 2026.",
+    "sources": [
+     "https://evernest.beehiiv.com/p/peak-rental-season-is-shifting",
+     "https://www.calculatedriskblog.com/2024/05/asking-rents-mostly-unchanged-year-over.html",
+     "https://www.realpage.com/analytics/us-concessions-may-2026/"
+    ]
+   },
+   {
+    "m": 4,
+    "rent_vs_avg_pct": null,
+    "concessions": "medium",
+    "note": "RentHop LA (2016): peak season starts around April. Zillow's national concession share peaked at 33.6% in Apr 2024, a spring peak. Apartment List: +0.5% month-over-month in Apr 2024.",
+    "sources": [
+     "https://renthop.com/research/?p=43",
+     "https://www.floridarealtors.org/news-media/news-articles/2024/08/rental-marketing-cooling-concessions-offered",
+     "https://www.calculatedriskblog.com/2024/05/asking-rents-mostly-unchanged-year-over.html"
+    ]
+   },
+   {
+    "m": 5,
+    "rent_vs_avg_pct": null,
+    "concessions": "medium",
+    "note": "Peak leasing season. Pre-pandemic (2017-19) national rent growth peaked in May (Apartment List). A newsletter citing Zillow says concessions fell to 35% in May 2025 from about 41% in winter (unverified). RealPage national usage was 16.9% in May 2026.",
+    "sources": [
+     "https://evernest.beehiiv.com/p/peak-rental-season-is-shifting",
+     "https://evernest.beehiiv.com/p/rent-concessions-retreat-summer-2025",
+     "https://www.realpage.com/analytics/us-concessions-may-2026/"
+    ]
+   },
+   {
+    "m": 6,
+    "rent_vs_avg_pct": null,
+    "concessions": "medium",
+    "note": "Inman/RentHop (2016 data): June and September are LA's most expensive months. The national median peaks in Jun-Jul (Apartment List via a 2026 secondary source). RealPage national usage was 16.5% in Jun 2026, with a record discount depth of 11.1%. Zillow LA concession share was 32.5% in Jun 2026.",
+    "sources": [
+     "https://www.inman.com/2016/05/17/seasonal-impact-of-rent-in-los-angeles/",
+     "https://www.realpage.com/analytics/us-concessions-june-2026/",
+     "https://www.zillow.com/research/june-2026-rent-report/"
+    ]
+   },
+   {
+    "m": 7,
+    "rent_vs_avg_pct": null,
+    "concessions": "low",
+    "note": "Summer peak. Apartment List: searches peak in July, and summer renters face 20-30% more competition than winter renters. RealPage national usage fell to 15.8% in Jul 2026. Zillow LA concession share was 31.2% in Jul 2026. Apartment List (Charleston, 2023): a December start was about 4.5% cheaper than a July start.",
+    "sources": [
+     "https://www.apartmentlist.com/rentonomics/rental-market-seasonality/",
+     "https://draperandkramer.com/news-and-insights/what-is-the-best-time-of-year-to-rent-an-apartment/",
+     "https://www.realpage.com/analytics/us-concessions-july-2026/",
+     "https://www.webull.com/news/15423731538109440",
+     "https://ca.news.yahoo.com/best-time-sign-lease-according-222900514.html"
+    ]
+   },
+   {
+    "m": 8,
+    "rent_vs_avg_pct": null,
+    "concessions": "low",
+    "note": "Moves peak in August (Apartment List). CoStar: LA asking rents inched up in Aug 2026 on seasonal leasing. RealPage national usage was 15.4% in Aug 2026, the lowest reading of 2026.",
+    "sources": [
+     "https://www.apartmentlist.com/rentonomics/rental-market-seasonality/",
+     "https://www.costar.com/article/1851230744/los-angeles-apartment-rents-edge-higher-in-august",
+     "https://www.credaily.com/?p=223151"
+    ]
+   },
+   {
+    "m": 9,
+    "rent_vs_avg_pct": null,
+    "concessions": "medium",
+    "note": "RentHop/Inman LA (2016): a September spike, possibly from lease turnover. LA city median rent was flat in Sep 2026 at $2,075 (Apartment List). The national median fell 0.1% in Sep 2026, which Apartment List called seasonal softening. StreetEasy (NYC) says the biggest discounting runs from September through November.",
+    "sources": [
+     "https://www.inman.com/2016/05/17/seasonal-impact-of-rent-in-los-angeles/",
+     "https://www.apartmentlist.com/rent-report/ca/los-angeles",
+     "https://streeteasy.com/blog/best-time-to-rent-in-nyc/amp/"
+    ]
+   },
+   {
+    "m": 10,
+    "rent_vs_avg_pct": null,
+    "concessions": "medium",
+    "note": "Off-season begins. RentHop LA: peak season ends in October. Apartment List (2018): the national index turned negative in October. Zillow national concession share rose for seven straight months through end-2023.",
+    "sources": [
+     "https://renthop.com/research/?p=43",
+     "https://www.apartmentlist.com/rentonomics/october-2018-rent-report/",
+     "https://zillow.mediaroom.com/2024-03-20-Concessions-cool-as-spring-rental-season-approaches"
+    ]
+   },
+   {
+    "m": 11,
+    "rent_vs_avg_pct": null,
+    "concessions": "high",
+    "note": "One of the cheapest months. The Real Deal (2018 data) puts Nov-Dec 4-4.1% below LA's peak months. Apartment List: the national median is about 1.6% below the Jun-Jul peak by its November low. RentReboot (NYC): 31% of November leases closed below asking price vs 15% in May.",
+    "sources": [
+     "https://therealdeal.com/miami/2018/01/30/rents-in-major-us-cities-fluctuate-as-much-as-5-8-during-the-year/",
+     "https://draperandkramer.com/news-and-insights/what-is-the-best-time-of-year-to-rent-an-apartment/",
+     "https://www.timeout.com/newyork/news/when-is-the-best-time-to-rent-an-apartment-in-nyc-a-new-study-has-the-surprising-answer-082826"
+    ]
+   },
+   {
+    "m": 12,
+    "rent_vs_avg_pct": null,
+    "concessions": "high",
+    "note": "Cheapest or near-cheapest month. Inman/RentHop (2016): renting in December instead of September saves about 4% in LA. RealPage: December concession activity is stable to slightly elevated because there are fewer moves. Apartment List LA metro hit a four-year low of $2,167 in Dec 2025. The trade-off is the smallest inventory (StreetEasy, NYC).",
+    "sources": [
+     "https://www.inman.com/2016/05/17/seasonal-impact-of-rent-in-los-angeles/",
+     "https://www.realpage.com/analytics/us-concessions-december-2025/",
+     "https://kidder.com/news/2026/01/la-rent-prices-fall-to-four-year-low-apartment-list/",
+     "https://streeteasy.com/blog/best-time-to-rent-in-nyc/amp/"
+    ]
+   }
+  ],
+  "summary": "In LA, asking rents are lowest from November to January (or into March) and highest from June to September. The peak-to-trough gap is small, about 4% in LA by RentHop (2016-2018 data), versus a national seasonal swing of about 1.6% (Apartment List) and 2-4.7% for 1BRs across the top 10 metros (RentHop). Since 2023, the national rent upswing has started earlier and peaked in March (about +0.6% month-over-month). Concessions are highest in fall and winter, but in 2024 Zillow's national share also peaked in April. In 2026 the structural level of concessions matters more than the season: RealPage national usage is 15-17% of units with an average discount of about 11% (about 5.7-6 weeks free), and Zillow LA shows 31-32.5% of listings with a concession. No monthly ZORI rent index was found for 2023-2026, so rent_vs_avg_pct is null for every month rather than estimated.",
+  "best_window": "Mid-November to end of January. December and January are the lowest-competition, highest-concession months, with the caveat of thinner inventory. Your plan to sign in late December for a late-January move fits this window. Shopping new lease-up buildings, which offer the deepest concessions, adds more value than the month itself.",
+  "evidence": "LA-specific evidence is old: RentHop/Inman (2016) and The Real Deal (2018) found about 4% between the Dec/Nov trough and the Jun/Sep peak. National evidence is recent: Apartment List 2023-2025 seasonal summaries, RealPage monthly concession series for 2025-2026, and Zillow concession shares for 2024-2026. The direction is consistent across sources (winter cheapest), but recent LA magnitudes were not found. RealPage tracks stabilized units, while Zillow counts listings, which explains its higher concession percentages.",
+  "sources": [
+   "https://www.renthop.com/research/best-time-of-year-to-rent/",
+   "https://www.inman.com/2016/05/17/seasonal-impact-of-rent-in-los-angeles/",
+   "https://therealdeal.com/miami/2018/01/30/rents-in-major-us-cities-fluctuate-as-much-as-5-8-during-the-year/",
+   "https://evernest.beehiiv.com/p/peak-rental-season-is-shifting",
+   "https://www.realpage.com/analytics/us-concessions-july-2026/",
+   "https://www.webull.com/news/15423731538109440"
+  ]
+ },
+ "timing_effects": [
+  {
+   "title": "Winter vs summer season",
+   "finding": "Winter signing is cheaper: about 4% in LA (2016-18 data), about 3.4% averaged across the top 10 metros, and 4.2-4.5% in NYC and Charleston studies. Summer renters face 20-30% more competition (Apartment List).",
+   "strength": "strong",
+   "sources": [
+    "https://www.renthop.com/research/best-time-of-year-to-rent/",
+    "https://www.timeout.com/newyork/news/when-is-the-best-time-to-rent-an-apartment-in-nyc-a-new-study-has-the-surprising-answer-082826",
+    "https://draperandkramer.com/news-and-insights/what-is-the-best-time-of-year-to-rent-an-apartment/"
+   ]
+  },
+  {
+   "title": "Fall discounting window (Sep-Nov)",
+   "finding": "StreetEasy (NYC) finds the biggest discounting runs from September through November. Zillow national concession shares rose for seven straight months through Dec 2023. December concession use is typically stable or slightly elevated (RealPage).",
+   "strength": "moderate",
+   "sources": [
+    "https://streeteasy.com/blog/best-time-to-rent-in-nyc/amp/",
+    "https://zillow.mediaroom.com/2024-03-20-Concessions-cool-as-spring-rental-season-approaches",
+    "https://www.realpage.com/analytics/us-concessions-december-2025/"
+   ]
+  },
+  {
+   "title": "Earlier spring peak since 2023",
+   "finding": "Apartment List (secondary summary) says national rent growth now peaks in March (about +0.6% month-over-month) instead of May. Waiting until spring to sign therefore costs more than it did before the pandemic.",
+   "strength": "moderate",
+   "sources": [
+    "https://evernest.beehiiv.com/p/peak-rental-season-is-shifting",
+    "https://www.credaily.com/?p=213590"
+   ]
+  },
+  {
+   "title": "End of month / leasing-agent quotas",
+   "finding": "No data found showing better deals in the last week of the month or tied to agent quotas. The idea is folk wisdom only. Monthly concession data cannot test intra-month timing.",
+   "strength": "anecdotal",
+   "sources": []
+  },
+  {
+   "title": "End of quarter / end of year",
+   "finding": "No direct evidence found. December's slow traffic, with stable to elevated concessions (RealPage), is the only support for the idea, and it is a seasonal effect rather than a reporting-period effect.",
+   "strength": "weak",
+   "sources": [
+    "https://www.realpage.com/analytics/us-concessions-december-2025/"
+   ]
+  },
+  {
+   "title": "Lease-term / lease-expiration management",
+   "finding": "Revenue-management systems stagger lease expirations to avoid winter turnover, so a lease that would end in winter may be priced higher. No RealPage documentation was found to confirm this. RentHop suggests asking for a lease (for example 18 months) that ends in an off-peak window. Note that the Nov 2025 DOJ settlement restricts RealPage's use of real-time nonpublic data.",
+   "strength": "anecdotal",
+   "sources": [
+    "https://storeys.com/lease-expiration-management-meaning-definition-real-estate/",
+    "https://ca.news.yahoo.com/best-time-sign-lease-according-222900514.html",
+    "https://minnlawyer.com/2025/11/26/doj-realpage-rent-pricing-algorithm-antitrust-settlement/"
+   ]
+  },
+  {
+   "title": "Inventory trade-off",
+   "finding": "Winter has fewer listings. One source says February had 43% fewer new listings than July, and StreetEasy finds inventory lowest in December. Selection is thinner, but competition is too.",
+   "strength": "moderate",
+   "sources": [
+    "https://ca.news.yahoo.com/best-time-sign-lease-according-222900514.html",
+    "https://streeteasy.com/blog/best-time-to-rent-in-nyc/amp/"
+   ]
+  },
+  {
+   "title": "New lease-up buildings",
+   "finding": "Concessions concentrate in new and luxury lease-ups. CoStar (Sep 2026) says new LA developments often use free rent amid elevated vacancy. LA high-end vacancy was 9.9% in Q4 2025 (Matthews), and Downtown LA vacancy was 10.9% in Q3 2025. TenantBase Q3 2026 names Downtown and Mid-Wilshire as the areas with the most renter leverage.",
+   "strength": "strong",
+   "sources": [
+    "https://www.matthews.com/market_insights/los-angeles-ca-multifamily-market-report-q4-2025",
+    "https://www.matthews.com/insights/los-angeles-ca-multifamily-market-report-q3-2025",
+    "https://www.tenantbase.com/los-angeles/q3-2026/"
+   ]
+  }
+ ],
+ "market_now": [
+  {
+   "geo": "Los Angeles",
+   "metric": "Median rent, city (Apartment List)",
+   "value": "$2,075 overall; 1BR $1,856; 2BR $2,367; flat month-over-month; -1.3% YoY",
+   "as_of": "2026-09",
+   "source": "https://www.apartmentlist.com/rent-report/ca/los-angeles"
+  },
+  {
+   "geo": "LA metro",
+   "metric": "Median rent, metro (Apartment List)",
+   "value": "$2,200; -1.0% YoY",
+   "as_of": "2026-09",
+   "source": "https://www.apartmentlist.com/rent-report/ca/los-angeles"
+  },
+  {
+   "geo": "LA metro",
+   "metric": "Zillow Observed Rent Index (typical asking rent)",
+   "value": "$2,944; +1.5% YoY",
+   "as_of": "2026-07",
+   "source": "https://www.webull.com/news/15423731538109440"
+  },
+  {
+   "geo": "LA metro",
+   "metric": "Share of Zillow rentals with a concession",
+   "value": "31.2% (national 39.8%)",
+   "as_of": "2026-07",
+   "source": "https://www.webull.com/news/15423731538109440"
+  },
+  {
+   "geo": "LA metro",
+   "metric": "Share of Zillow rentals with a concession",
+   "value": "32.5%, +2.9 pts YoY",
+   "as_of": "2026-06",
+   "source": "https://www.zillow.com/research/june-2026-rent-report/"
+  },
+  {
+   "geo": "Los Angeles",
+   "metric": "Multifamily vacancy, LA County (Lee & Associates)",
+   "value": "5.7%, flat; >18,000 units under construction",
+   "as_of": "2026-Q2",
+   "source": "https://www.lee-associates.com/wp-content/uploads/2026/07/2026-Q2-Los-Angeles-CA-Multifamily.pdf"
+  },
+  {
+   "geo": "Los Angeles",
+   "metric": "Asking rent and annual growth (CoStar)",
+   "value": "$3.02/sq ft; YoY about -0.01%; asking rents inched up in Aug 2026",
+   "as_of": "2026-07/08",
+   "source": "https://www.costar.com/article/1851230744/los-angeles-apartment-rents-edge-higher-in-august"
+  },
+  {
+   "geo": "Los Angeles",
+   "metric": "Median asking rent, LA County (Realtor.com)",
+   "value": "$2,520; -3.7% YoY",
+   "as_of": "2026-Q1",
+   "source": "https://spectrumlocalnews.com/ca/california/housing/2026/04/29/los-angeles-rent-unaffordable"
+  },
+  {
+   "geo": "Los Angeles",
+   "metric": "Concessions, national benchmark (RealPage, stabilized units)",
+   "value": "15.4% of units; average discount 11% of rent, about 5.7 weeks free",
+   "as_of": "2026-08",
+   "source": "https://www.credaily.com/?p=223151"
+  },
+  {
+   "geo": "Long Beach",
+   "metric": "Median rent (Apartment List)",
+   "value": "$1,752; +0.5% YoY",
+   "as_of": "2026-01",
+   "source": "https://www.apartmentlist.com/ca/long-beach"
+  },
+  {
+   "geo": "Long Beach",
+   "metric": "Average rent (Trulia)",
+   "value": "Apartments about $2,079; 1BR about $1,895; 1,814 listings",
+   "as_of": "2026-06",
+   "source": "https://www.trulia.com/for_rent/Long_Beach,CA/"
+  },
+  {
+   "geo": "Long Beach",
+   "metric": "Median 1BR (PadMapper)",
+   "value": "$1,850, flat",
+   "as_of": "2026-07",
+   "source": "https://www.padmapper.com/apartments/long-beach-ca/bryant-school"
+  },
+  {
+   "geo": "Orange County",
+   "metric": "Vacancy and average asking rent (Kidder Mathews)",
+   "value": "4.3% vacancy (3.8% a year earlier); $2,727/unit",
+   "as_of": "2026-Q2",
+   "source": "https://kidder.com/wp-content/uploads/market_report/multifamily-market-research-orange-county-2026-2q.pdf"
+  },
+  {
+   "geo": "Orange County",
+   "metric": "Vacancy and average rent (Matthews)",
+   "value": "3.64% vacancy; $2,886, +1.71% YoY; conflicts with the Kidder figures",
+   "as_of": "2026-Q2",
+   "source": "https://www.matthews.com/insights/orange-county-multifamily-market-report"
+  },
+  {
+   "geo": "Orange County",
+   "metric": "Median rent, Irvine (Apartment List)",
+   "value": "$3,057; +0.8% YoY",
+   "as_of": "2026-05",
+   "source": "https://apartmentlist.com/rent-report/ca/irvine"
+  },
+  {
+   "geo": "Orange County",
+   "metric": "New supply",
+   "value": "1,287 units delivered in early 2026, the largest quarterly total this decade; more than 3,000 more expected by year-end (M&M). About 4,800 units in metro Anaheim in 2026, about 75% in Irvine (RealPage). New supply means lease-up concessions.",
+   "as_of": "2026",
+   "source": "https://www.marcusmillichap.com/research/market-report/orange-county/orange-county-2q26-multifamily-market-report"
+  }
+ ],
+ "forecast": [
+  {
+   "geo": "Los Angeles",
+   "finding": "USC Casden (Dec 2025): LA County average rent $2,336 and vacancy 5.37% (Oct 2025). Forecast of about +0.64% a year, reaching $2,350 by Oct 2027. LA is the slowest-growing market in SoCal.",
+   "as_of": "2025-12",
+   "source": "https://spectrumnews1.com/ca/la/housing/2025/12/04/rent-in-socal"
+  },
+  {
+   "geo": "Orange County",
+   "finding": "USC Casden (Dec 2025): OC average rent $2,776 and vacancy 3.84% (Oct 2025). Forecast of about +2.52% a year, reaching $2,859 with vacancy rising to 4.21% by Oct 2027.",
+   "as_of": "2025-12",
+   "source": "https://lusk.usc.edu/node/12399"
+  },
+  {
+   "geo": "LA metro",
+   "finding": "Zillow expects concession rates to ease gradually as the supply pipeline narrows. This implies 2027 deals may be somewhat thinner than in winter 2026-27.",
+   "as_of": "2026-08",
+   "source": "https://zillow.mediaroom.com/2026-07-23-Rent-is-ticking-up,-but-so-are-the-deals"
+  },
+  {
+   "geo": "LA metro",
+   "finding": "CoStar national forecast (Feb 2026, not LA-specific): vacancy 8.5% through end-2026, easing to 8.1% by end-2027.",
+   "as_of": "2026-02",
+   "source": "https://secure.businesswire.com/news/home/20260210452135/en/Apartments.com-and-CoStar-raise-near-term-U.S.-multifamily-rent-growth-forecast-vacancy-to-remain-steady-through-2026"
+  },
+  {
+   "geo": "Los Angeles",
+   "finding": "Supply runway: more than 18,000 units were under construction in Q2 2026, but permits fell 21% in 2023 and 40% in 2024 from the 2022 peak (UCLA/RAND, partly attributed to ULA). This points to continued lease-up concessions into 2027 and a tighter market later in the decade.",
+   "as_of": "2026-Q2",
+   "source": "https://www.lewis.ucla.edu/research/taxing-tomorrow-measure-ulas-impact-on-multifamily-housing-production-and-potential-reforms/"
+  },
+  {
+   "geo": "Los Angeles",
+   "finding": "Seasonal expectation for winter 2026-27: national rents were already softening in Sep 2026 (Apartment List, -0.1% month-over-month; vacancy 7%; 34 days on market). By analogy with Dec 2025, when LA hit a four-year low, Dec 2026-Jan 2027 is likely the year's low point. This is an inference, not a published forecast.",
+   "as_of": "2026-09",
+   "source": "https://kidder.com/news/2026/01/la-rent-prices-fall-to-four-year-low-apartment-list/"
+  }
+ ],
+ "history": [
+  {
+   "period": "2015-2019",
+   "geo": "LA metro",
+   "event": "Pre-pandemic tight market with normal seasonality",
+   "effect": "LA peak-to-trough about 4% (Dec vs Sep). National pre-pandemic growth peaked in May. Data is old (pre-2023).",
+   "sources": [
+    "https://www.inman.com/2016/05/17/seasonal-impact-of-rent-in-los-angeles/",
+    "https://evernest.beehiiv.com/p/peak-rental-season-is-shifting"
+   ]
+  },
+  {
+   "period": "2020-01",
+   "geo": "California",
+   "event": "AB 1482 statewide rent cap takes effect (5% + CPI, max 10%)",
+   "effect": "Caps renewals for most non-RSO units built more than 15 years ago. The 2025-26 cap is 8%; sources conflict on 2026-27 (8.0% vs 8.7%). Credited with helping flatten rents (Crosstown 2023).",
+   "sources": [
+    "https://nourmand.com/blog/ab-1482-rent-increases-in-2026-what-la-landlords-can-actually-charge",
+    "https://xtown.la/2023/04/10/rents-los-angeles-pomona/"
+   ]
+  },
+  {
+   "period": "2020",
+   "geo": "Los Angeles",
+   "event": "COVID-19 pandemic",
+   "effect": "LA County median hit a record low of $1,722 in Dec 2020 (Crosstown). Declines concentrated in LA city, West Hollywood and Santa Monica. DTLA vacancy reached 14% in mid-2020 and concessions cut effective rents. Rental Beast (Oct 2020): more than 50% of LA managers offering significant concessions (interview-based). Zillow national concession share rose from 16.2% (Feb 2020) to 30.4% (Jul 2020).",
+   "sources": [
+    "https://xtown.la/2023/04/10/rents-los-angeles-pomona/",
+    "https://xtown.la/2021/07/29/the-pandemic-pushed-la-rents-even-higher/",
+    "https://www.bisnow.com/los-angeles/news/multifamily/downtown-los-angeles-multifamily-rents-rebound-pandemic-111438",
+    "https://go.rentalbeast.com/rs/954-YON-047/images/Rental%20Beast%20Market%20Report%20-%20October%202020.pdf",
+    "https://zillow.mediaroom.com/2020-09-01-Rental-Concessions-on-the-Rise-as-Rental-Market-Softens"
+   ]
+  },
+  {
+   "period": "2021",
+   "geo": "Los Angeles",
+   "event": "Recovery and concessions withdrawn",
+   "effect": "LA County median was $1,776 in mid-2021, still 2.7% below Feb 2020. From summer 2021, DTLA landlords cut or removed concessions. DTLA later hit a record $2,701 effective rent (+16%), with vacancy falling to 6.2% from 14%.",
+   "sources": [
+    "https://therealdeal.com/la/2021/06/16/rents-in-la-are-climbing-from-their-pandemic-lows",
+    "https://www.bisnow.com/los-angeles/news/multifamily/downtown-los-angeles-multifamily-rents-rebound-pandemic-111438"
+   ]
+  },
+  {
+   "period": "2022",
+   "geo": "Los Angeles",
+   "event": "Rent surge",
+   "effect": "Northmarq: LA County average asking rents up 15% YoY as of Q4 2022. National concessions hit a decade low of 5% in mid-2022 (RealPage). Zillow national YoY peaked at 17% in Feb 2022.",
+   "sources": [
+    "https://www.northmarq.com/los-angeles-q4-multifamily-market-report-developers-to-increase-activity-levels-in-2023/",
+    "https://www.realpage.com/analytics/us-concessions-july-2026/",
+    "https://www.calculatedriskblog.com/2023/03/year-over-year-rent-growth-continues-to_29.html"
+   ]
+  },
+  {
+   "period": "2023-04",
+   "geo": "Los Angeles",
+   "event": "Measure ULA transfer tax (4% above $5M, 5.5% above $10M) takes effect",
+   "effect": "UCLA/RAND (Apr 2025): multifamily production down at least 1,910 units a year (-18% vs 2020-22), with LA multifamily permits down 21% in 2023 and 40% in 2024 from the 2022 peak. The causal link is disputed by an Occidental UEPI reanalysis (Apr 2026). A repeal campaign targeted the Nov 2026 ballot (status unverified).",
+   "sources": [
+    "https://www.lewis.ucla.edu/research/taxing-tomorrow-measure-ulas-impact-on-multifamily-housing-production-and-potential-reforms/",
+    "https://www.oxy.edu/about-oxy/community-engagement/uepi/ula-report-2026",
+    "https://www.bisnow.com/news/los-angeles/construction-development/measure-ula-investors-looking-outside-la-132128"
+   ]
+  },
+  {
+   "period": "2023",
+   "geo": "Los Angeles",
+   "event": "Rents roll over",
+   "effect": "Apartment List LA: -1.6% YoY in May 2023 and -2.8% YoY in Oct 2023. 1BR down about 3% for the year (Statista: nearly -4% by Dec). Rent.com showed +4% (different methodology).",
+   "sources": [
+    "https://therealdeal.com/la/2023/06/09/las-rental-rates-dip-1-6-in-the-last-year/",
+    "https://www.audacy.com/knxnews/news/local/average-l-a-rent-drops-by-3-report"
+   ]
+  },
+  {
+   "period": "2024",
+   "geo": "Los Angeles",
+   "event": "Supply wave and elevated concessions",
+   "effect": "CoStar: 27% of LA properties with 25+ units offered incentives in Feb 2024. By June 2024 CoStar said concessions were moderating. Zillow LA concession share was 27.6% around late 2024.",
+   "sources": [
+    "https://www.costar.com/article/1566200138/elevated-apartment-concessions-in-greater-los-angeles-prevail-in-early-2024/",
+    "https://www.costar.com/article/281641436/apartment-concessions-in-greater-los-angeles-moderate",
+    "https://www.barchart.com/story/news/35523079/rental-affordability-reaches-four-year-high"
+   ]
+  },
+  {
+   "period": "2025-01",
+   "geo": "Los Angeles (Westside, Pasadena/Altadena)",
+   "event": "Palisades and Eaton wildfires",
+   "effect": "Westside Zillow asking rents up 15-64% within days (NYT review). State price-gouging cap of 10% applied, the AG investigated, and the emergency was extended to July 2025. County rent growth rose from 2.9% (Dec 2024) to 4.0% (Mar 2025) and fell back to about 2.4% by Nov 2025 (First American). Within 5 miles of the burn zones, list rents were +3.4% Dec 2024 to Dec 2025 (Zillow). The countywide effect was temporary, the local effect more persistent.",
+   "sources": [
+    "https://pbssocal.org/news-community/asking-rents-skyrocket-as-la-fires-destroy-homes",
+    "https://blog.firstam.com/cre-insights/one-year-after-the-los-angeles-fires-how-have-rents-shifted-in-nearby-areas",
+    "https://zillow.mediaroom.com/2025-12-30-46-billion-in-housing-was-within-the-2025-Los-Angeles-wildfire-zones",
+    "https://commercialobserver.com/2025/05/la-rent-gouging-fires-housing-calif/"
+   ]
+  },
+  {
+   "period": "2025",
+   "geo": "Los Angeles",
+   "event": "Record completions and population decline",
+   "effect": "15,095 new units completed (+18%, CoStar), with the county population down about 28,000. LA metro rents fell to a four-year low of $2,167 in Dec 2025 (Apartment List) and vacancy reached 5.3-5.7%. LA high-end vacancy was 9.9% and DTLA 10.9%.",
+   "sources": [
+    "https://kidder.com/news/2026/01/la-rent-prices-fall-to-four-year-low-apartment-list/",
+    "https://www.matthews.com/market_insights/los-angeles-ca-multifamily-market-report-q4-2025"
+   ]
+  },
+  {
+   "period": "2025-08/11",
+   "geo": "US / California",
+   "event": "RealPage antitrust: Greystar DOJ settlement (Aug 2025); RealPage DOJ settlement (Nov 2025); CA AB 325 signed Oct 6, 2025 (effective 2026)",
+   "effect": "RealPage may no longer use real-time nonpublic competitor data, and training data must be at least one year old. Auto-accept features and sub-state geographic models are limited, a court monitor is appointed, and there is no monetary penalty. AB 325 bars using a common pricing algorithm as part of collusion. Effects on rents are not yet measurable.",
+   "sources": [
+    "https://minnlawyer.com/2025/11/26/doj-realpage-rent-pricing-algorithm-antitrust-settlement/",
+    "https://www.davispolk.com/insights/client-update/new-laws-regulating-algorithmic-pricing-enacted-new-york-and-california"
+   ]
+  },
+  {
+   "period": "2026",
+   "geo": "Los Angeles",
+   "event": "LA RSO formula cut",
+   "effect": "New formula is 90% of CPI with a 1% floor and 4% ceiling (formerly 3-8%). The utility and dependent surcharges were eliminated. The RSO cap stays at 3% through Jun 2027. Sources conflict on the effective date (Jan 24 vs Feb 2, 2026).",
+   "sources": [
+    "https://cd4.lacity.gov/initiative/renters-rights/",
+    "https://members.aagla.org/news/news-alert-la-city-passes-severely-reduced-rso-formula-ordinance"
+   ]
+  },
+  {
+   "period": "2026",
+   "geo": "LA metro / OC",
+   "event": "Concessions near decade highs while rents are flat",
+   "effect": "RealPage national usage was 16.9% (Mar and May 2026), the highest since 2014, with a record discount depth of 11.1% in June. Zillow LA share was 30.9-32.5%. OC vacancy is 3.6-4.3% with record deliveries in Irvine and Santa Ana.",
+   "sources": [
+    "https://www.realpage.com/analytics/us-concessions-june-2026/",
+    "https://zillow.mediaroom.com/2026-05-27-Its-a-renters-market-2-in-5-listings-come-with-a-deal-this-spring",
+    "https://kidder.com/wp-content/uploads/market_report/multifamily-market-research-orange-county-2026-2q.pdf"
+   ]
+  }
+ ],
+ "concession_share_history": [
+  {
+   "period": "2020-02",
+   "geo": "US (Zillow listings)",
+   "share_pct": 16.2,
+   "source": "https://zillow.mediaroom.com/2020-09-01-Rental-Concessions-on-the-Rise-as-Rental-Market-Softens"
+  },
+  {
+   "period": "2020-07",
+   "geo": "US (Zillow listings)",
+   "share_pct": 30.4,
+   "source": "https://zillow.mediaroom.com/2020-09-01-Rental-Concessions-on-the-Rise-as-Rental-Market-Softens"
+  },
+  {
+   "period": "2020-05",
+   "geo": "US (RealPage units)",
+   "share_pct": 16,
+   "source": "https://fanniemae.com/media/36236/display"
+  },
+  {
+   "period": "2022-06",
+   "geo": "US (RealPage units, decade low, mid-2022)",
+   "share_pct": 5,
+   "source": "https://www.realpage.com/analytics/us-concessions-july-2026/"
+  },
+  {
+   "period": "2024-01",
+   "geo": "US (Zillow listings)",
+   "share_pct": 31.9,
+   "source": "https://zillow.mediaroom.com/2024-03-20-Concessions-cool-as-spring-rental-season-approaches"
+  },
+  {
+   "period": "2024-02",
+   "geo": "US (Zillow listings)",
+   "share_pct": 32.2,
+   "source": "https://zillow.mediaroom.com/2024-03-20-Concessions-cool-as-spring-rental-season-approaches"
+  },
+  {
+   "period": "2024-02",
+   "geo": "Los Angeles (CoStar, properties 25+ units)",
+   "share_pct": 27,
+   "source": "https://www.costar.com/article/1566200138/elevated-apartment-concessions-in-greater-los-angeles-prevail-in-early-2024/"
+  },
+  {
+   "period": "2024-04",
+   "geo": "US (Zillow listings, 2024 peak)",
+   "share_pct": 33.6,
+   "source": "https://www.floridarealtors.org/news-media/news-articles/2024/08/rental-marketing-cooling-concessions-offered"
+  },
+  {
+   "period": "2024-late (inferred date)",
+   "geo": "Los Angeles (Zillow listings)",
+   "share_pct": 27.6,
+   "source": "https://www.barchart.com/story/news/35523079/rental-affordability-reaches-four-year-high"
+  },
+  {
+   "period": "2025-04 (derived: 30.9 minus 3.9 pts)",
+   "geo": "Los Angeles (Zillow listings)",
+   "share_pct": 27.0,
+   "source": "https://zillow.mediaroom.com/2026-05-27-Its-a-renters-market-2-in-5-listings-come-with-a-deal-this-spring"
+  },
+  {
+   "period": "2025-06 (derived: 32.5 minus 2.9 pts)",
+   "geo": "Los Angeles (Zillow listings)",
+   "share_pct": 29.6,
+   "source": "https://www.zillow.com/research/june-2026-rent-report/"
+  },
+  {
+   "period": "2025-07",
+   "geo": "US (Zillow listings)",
+   "share_pct": 35.9,
+   "source": "https://www.webull.com/news/15423731538109440"
+  },
+  {
+   "period": "2026-04 (May 2026 release)",
+   "geo": "Los Angeles (Zillow listings)",
+   "share_pct": 30.9,
+   "source": "https://zillow.mediaroom.com/2026-05-27-Its-a-renters-market-2-in-5-listings-come-with-a-deal-this-spring"
+  },
+  {
+   "period": "2026-03",
+   "geo": "US (RealPage stabilized units)",
+   "share_pct": 16.9,
+   "source": "https://www.realpage.com/analytics/us-concessions-may-2026/"
+  },
+  {
+   "period": "2026-05",
+   "geo": "US (RealPage stabilized units)",
+   "share_pct": 16.9,
+   "source": "https://www.realpage.com/analytics/us-concessions-may-2026/"
+  },
+  {
+   "period": "2026-06",
+   "geo": "Los Angeles (Zillow listings)",
+   "share_pct": 32.5,
+   "source": "https://www.zillow.com/research/june-2026-rent-report/"
+  },
+  {
+   "period": "2026-06",
+   "geo": "US (Zillow listings)",
+   "share_pct": 39.7,
+   "source": "https://www.zillow.com/research/june-2026-rent-report/"
+  },
+  {
+   "period": "2026-06",
+   "geo": "US (RealPage stabilized units)",
+   "share_pct": 16.5,
+   "source": "https://www.realpage.com/analytics/us-concessions-june-2026/"
+  },
+  {
+   "period": "2026-07",
+   "geo": "Los Angeles (Zillow listings)",
+   "share_pct": 31.2,
+   "source": "https://www.webull.com/news/15423731538109440"
+  },
+  {
+   "period": "2026-07",
+   "geo": "Riverside (Zillow listings)",
+   "share_pct": 30.1,
+   "source": "https://www.webull.com/news/15423731538109440"
+  },
+  {
+   "period": "2026-07",
+   "geo": "US (Zillow listings)",
+   "share_pct": 39.8,
+   "source": "https://www.webull.com/news/15423731538109440"
+  },
+  {
+   "period": "2026-07",
+   "geo": "US (RealPage stabilized units)",
+   "share_pct": 15.8,
+   "source": "https://www.realpage.com/analytics/us-concessions-july-2026/"
+  },
+  {
+   "period": "2026-08",
+   "geo": "US (RealPage stabilized units)",
+   "share_pct": 15.4,
+   "source": "https://www.credaily.com/?p=223151"
+  }
+ ],
+ "areas": [
+  {
+   "area_id": "long-beach-downtown-east-village",
+   "name": "Long Beach – Downtown / East Village",
+   "region": "Long Beach",
+   "level": "high",
+   "typical_offer": "6–8 weeks free at Pine Ave buildings: Volta on Pine 8 weeks free; Griffis Pine Avenue 6 weeks free (Redfin DTLB pages). Smaller buildings: 1st month free + $500 deposit (321 Chestnut), up to $500 off first 3 months (44 Alamitos), 3 months free parking (229 W 6th).",
+   "driver": "Downtown Long Beach's recent wave of mid/high-rise deliveries plus Alexan West End (~600 units) arriving fall 2026–2027.",
+   "vacancy": "Long Beach city rental vacancy 3.9% (Point2, may lag); no downtown-specific figure found.",
+   "pipeline": "Alexan West End, 600 W Broadway, ~600 units (Trammell Crow Residential): marketing site says opening Fall 2026; earlier target initial occupancy May 2026, final completion March 2027; Hoodline (Jul 2026) says delivery pushing to next year.",
+   "evidence": "Redfin Downtown Long Beach listing banners (undated) and Alexan West End coverage.",
+   "as_of": "Listings ~2026 (undated); Alexan status July 2026",
+   "sources": [
+    "https://www.redfin.com/neighborhood/9754/CA/Long-Beach/Downtown-Long-Beach/studio-apartments-for-rent",
+    "https://www.rentler.com/places-for-rent/ca/long-beach/321-chestnut-ave/13328513",
+    "https://www.padmapper.com/address/44-alamitos-ave-long-beach-ca-90802-usa",
+    "https://hoodline.com/2026/07/600-new-rentals-set-to-flip-a-downtown-long-beach-superblock-7073083/",
+    "https://longbeachize.com/articles/alexan-west-end-long-beachs-largest-residential-projects-scores-funds-to-finally-break-ground/",
+    "https://www.point2homes.com/US/Average-Rent/CA/Long-Beach.html"
+   ]
+  },
+  {
+   "area_id": "downtown-la-arts-district",
+   "name": "Downtown LA – Arts District",
+   "region": "Los Angeles",
+   "level": "high",
+   "typical_offer": "1–10 weeks free; Redfin banners: Alloy (525 S Santa Fe Ave) 10 weeks free on studios/1BR/2BR; AVA Arts District (1540 Industrial St) 1.5–2 months free; Garey Building (905 E 2nd St) 6 weeks free; Aliso (950 E 3rd St) 4 weeks free; One Santa Fe 1 month free; Walnut Building and RiverFront Lofts 2–6 weeks free.",
+   "driver": "Large stock of 2015–2025 luxury deliveries competing with South Park/DTLA high-rises; Downtown vacancy elevated (10.9% Q3 2025, Matthews).",
+   "vacancy": "Downtown LA 10.9% in Q3 2025 (Matthews); no Arts-District-specific figure found.",
+   "pipeline": "Large proposals (e.g., ~1,000-unit 787 S Alameda St) are not near-term; no specific Dec 2026–Feb 2027 Arts District opening found.",
+   "evidence": "Redfin Arts District neighborhood pages with 'NEW 9–29 HRS AGO' tags; amounts differ between pages for the same building.",
+   "as_of": "Listing snapshots ~Oct 2026 (undated)",
+   "sources": [
+    "https://www.redfin.com/neighborhood/91/CA/Los-Angeles/Arts-District/luxury-apartments-for-rent",
+    "https://www.redfin.com/neighborhood/91/CA/Los-Angeles/Arts-District/1-bedroom-apartments-for-rent",
+    "https://www.redfin.com/neighborhood/91/CA/Los-Angeles/Arts-District/apartments-for-rent",
+    "https://www.redfin.com/zipcode/90021/cheap-apartments-for-rent",
+    "https://www.matthews.com/insights/los-angeles-ca-multifamily-market-report-q3-2025"
+   ]
+  },
+  {
+   "area_id": "downtown-la-historic-core-financial-district-bunker-hill",
+   "name": "Downtown LA – Historic Core / Financial District / Bunker Hill",
+   "region": "Los Angeles",
+   "level": "high",
+   "typical_offer": "~1 month to 6 weeks free: Red Oak 620 Main St #502 1BR loft $2,950 with 1 month free (applied month 3 of 13-month lease) + $500 credit if apply within 24h; Essex TENTEN (1010 Wilshire) up to 6 weeks free (expired 3/14/26); Pacific Electric Lofts special expired 4/19/25.",
+   "driver": "Same Downtown oversupply/elevated vacancy as South Park; older converted lofts compete with new towers.",
+   "vacancy": "Downtown LA 10.9% (Q3 2025, Matthews).",
+   "pipeline": null,
+   "evidence": "Westside Rentals listing for 620 Main St (current-looking, undated); Essex listing pages with dated (expired) specials show the operator's recurring pattern of 6-week offers.",
+   "as_of": "2025–Oct 2026 (listing dates vary)",
+   "sources": [
+    "https://www.westsiderentals.com/los-angeles-ca/620-main-st-unit-502-pr8gxts",
+    "https://prd0.essexapartmenthomes.com/apartments/los-angeles/tenten-downtown",
+    "https://essexapartmenthomes.com/apartments/los-angeles/pacific-electric-lofts",
+    "https://www.matthews.com/insights/los-angeles-ca-multifamily-market-report-q3-2025"
+   ]
+  },
+  {
+   "area_id": "downtown-la-south-park",
+   "name": "Downtown LA – South Park",
+   "region": "Los Angeles",
+   "level": "high",
+   "typical_offer": "4–10 weeks free is widely advertised; Redfin listing banners showed JosephineDTLA 10 weeks free (2BR from $3,480+), G12 (1200 S Grand) 10 weeks free on one page vs 4 weeks free on its own listing (studios ~ $2,089, page updated 10/13), Olympic by Windsor 3 months free, Onyx (424 W Pico) 8 weeks free (studio $2,195), Alina (700 W 9th St) 8 weeks free, Wren up to 4 weeks free if move in within 30 days (page updated 10/08), E on Grand and Packard Lofts 1 month free.",
+   "driver": "Concentration of recently delivered high-rise lease-ups (Olympic, Josephine, Wren, G12, Circa etc.) plus continued Downtown deliveries; Matthews ranks Downtown LA among the most active construction submarkets (2.5% of inventory under construction, Q2 2026). Downtown has a long history of elevated vacancy (12% in 2019; 10.9% in Q3 2025 per Matthews).",
+   "vacancy": "Downtown LA 10.9% in Q3 2025 (Matthews); metro LA 4.5–5.7% in Q2 2026 depending on source (Matthews 4.52%, CBRE 4.6%, Lee & Associates 5.7%).",
+   "pipeline": "Downtown LA ~2.5% of inventory under construction (Matthews Q2 2026). CIM's 34-story, 525-unit 888 S Hope St under construction (no completion date found). South Park Towers (1600 S Flower) status unclear. The Bloc residential tower not before ~2030.",
+   "evidence": "Redfin South Park neighborhood listing pages (snapshots, mostly undated; some listing pages show 'updated 10/13' and '10/08', presumably Oct 2026). Matthews Q3 2025 report: landlords increasingly offered concessions, particularly in Downtown LA where vacancy reached 10.9%. Essex TENTEN Downtown advertised up to 6 weeks free for lease starts by 3/14/26 (expired).",
+   "as_of": "Listing snapshots ~Oct 2026 (undated, verify live); vacancy Q3 2025; pipeline Q2 2026",
+   "sources": [
+    "https://www.redfin.com/neighborhood/116776/CA/Los-Angeles/South-Park/2-bedroom-apartments-for-rent",
+    "https://www.redfin.com/neighborhood/116776/CA/Los-Angeles/South-Park/studio-apartments-for-rent",
+    "https://www.redfin.com/CA/Los-Angeles/G12/apartment/79041754",
+    "https://www.redfin.com/CA/Los-Angeles/WREN/apartment/177354779",
+    "https://www.matthews.com/insights/los-angeles-ca-multifamily-market-report-q3-2025",
+    "https://www.matthews.com/insights/los-angeles-multifamily-q2-2026",
+    "https://prd0.essexapartmenthomes.com/apartments/los-angeles/tenten-downtown",
+    "https://www.multihousingnews.com/cim-starts-building-downtown-la-apartment-tower/"
+   ]
+  },
+  {
+   "area_id": "hollywood",
+   "name": "Hollywood",
+   "region": "Los Angeles",
+   "level": "high",
+   "typical_offer": "2–8 weeks free: 1600 Vine up to 6 weeks free + $1,000 look-and-lease (studios from $2,899); Sunset Vine Tower (1480 Vine) up to 4 weeks free; Whitley Courtyard (1861 Whitley) 8 weeks (from $1,549+); Cherokee Villas 3 weeks (1BR $2,486); 1746 N Cherokee 2 weeks (1BR $1,820); Modera Hollywood (6775 Selma) 2 weeks (1BR from $3,011); Bleu (6565 Fountain) 1 month (1BR $1,895+). Redfin Central Hollywood pages carry '1 MONTH FREE' banners.",
+   "driver": "RealPage: Hollywood is LA's #2 supply submarket in 2026 with 1,398 units scheduled.",
+   "vacancy": null,
+   "pipeline": "1,398 units in 2026 (RealPage). Later: 7441 Sunset (15 stories, planning), 6336 Sunset (153 units, Sares-Regis, planning), 6800 Sunset 42-story tower approved, 1833 N Wilton (48 affordable units).",
+   "evidence": "Redfin 90028 listing pages, Point2Homes and HotPads listings (undated snapshots) plus RealPage supply data.",
+   "as_of": "2026 forecast; listing snapshots undated (~2026)",
+   "sources": [
+    "https://www.realpage.com/analytics/los-angeles-peak-supply-2025/",
+    "https://hotpads.com/1600-vine-los-angeles-ca-90028-24pbwwh/pad",
+    "https://www.point2homes.com/US/Apartment-Buildings/CA/Los-Angeles/Sunset-Vine-Tower-0.html",
+    "https://www.redfin.com/neighborhood/547464/CA/Los-Angeles/Central-Hollywood/studio-apartments-for-rent",
+    "https://www.redfin.com/neighborhood/11017/CA/Los-Angeles/Hollywood/studio-apartments-for-rent/page-2",
+    "https://urbanize.la/post/153-apartments-retail-planned-sunset-vine"
+   ]
+  },
+  {
+   "area_id": "koreatown",
+   "name": "Koreatown",
+   "region": "Los Angeles",
+   "level": "high",
+   "typical_offer": "1 month to 8 weeks free. The Boutique (707 S Berendo St, built 2026): 8 weeks free on 15-month lease, base rent $2,575–$2,725. Fedora Flats (1047 Fedora St, 'coming July 2026'): 1 month free on 12-month lease, base $2,695. Nova on Wilshire: 1 month free on 13-month lease if start within two weeks. 501 S Kingsley Dr: 2nd month free on 12 months, 1BR $1,738–$1,920 net. Nari Koreatown (3150 Wilshire): 8 weeks free on 12–14 months, 1BR ~$2,113–$2,455 (offer ended 6/1, year unclear).",
+   "driver": "RealPage: Mid-Wilshire (incl. Koreatown) has LA's largest 2026 delivery load, nearly 3,000 units (~2.4% inventory growth), part of a record ~12,300-unit LA year. Matthews Q2 2026: Mid-Wilshire 2.6% of inventory under construction.",
+   "vacancy": "No Koreatown-specific figure found; metro LA 4.5–5.7% (Q2 2026).",
+   "pipeline": "2026: ~3,000 units in Mid-Wilshire (RealPage). Near-term: Hudson (640 S St Andrews Pl, 230 units, finishing mid-2026), ~250 units above retail at 3016–3020 W Wilshire (built 2026). Later: 638 S Berendo (343 units, planning), 3800 W 6th St (219 units, application).",
+   "evidence": "Listing pages (Boutique RE PDFs, Westside Rentals, Redfin, PadMapper, Tripalink) plus RealPage supply analysis.",
+   "as_of": "RealPage forecast for 2026 (published 2025); listings mid–late 2026",
+   "sources": [
+    "https://www.realpage.com/analytics/los-angeles-peak-supply-2025/",
+    "https://www.theboutiquere.com/properties/retsPdf/26662213/707-S-Berendo-Street",
+    "https://www.theboutiquere.com/properties/retsPdf/26662187/707-S-Berendo-Street",
+    "https://www.westsiderentals.com/los-angeles-ca/1047-fedora-st-unit-601-ddf35dk",
+    "https://www.redfin.com/neighborhood/10732/CA/Los-Angeles/Wilshire-Center-Koreatown/apartments-under-1500-for-rent",
+    "https://www.padmapper.com/buildings/p1320974/welcome-home-apply-now-newly-remodeled-apartments-at-515-s-kingsley-dr-los-angeles-ca-90020",
+    "https://tripalink.com/apartments/los-angeles/koreatown/50000207",
+    "https://hoodline.com/2026/06/koreatown-s-new-230-unit-hudson-steps-into-view-by-wilshire-western/",
+    "https://www.matthews.com/insights/los-angeles-multifamily-q2-2026"
+   ]
+  },
+  {
+   "area_id": "irvine-spectrum-irvine-business-complex",
+   "name": "Irvine (Spectrum / Irvine Business Complex)",
+   "region": "Orange County",
+   "level": "high",
+   "typical_offer": "1–2 months free at new IBC luxury buildings: Broadstone Edition (1100 Steely) 2-month concession on a 1BR; Aurum (2055 Main St) 1 month free, 1BR ~$4,050–$5,565 (above your budget). Irvine Company specials typically reduced deposits/waived app fees (move-ins by 8/31/2026, expired).",
+   "driver": "OC's 2026 delivery wave (~4,400 units, most in a decade, Northmarq) is concentrated in Irvine; Kidder Mathews: IBC and Santa Ana are the most active construction submarkets; Matthews Q1 2026: new deliveries introduce competitive lease-up concessions; CoStar Q2 2026: new completions pushed overall vacancy higher.",
+   "vacancy": "OC overall Q2 2026: 4.3% (Kidder Mathews), 3.64% (Matthews), 96.4% occupancy (CBRE). Older OCBJ reporting cited Irvine vacancy up to 8% (date unclear).",
+   "pipeline": "Berkadia: ~5,100 units in 9 Irvine communities to deliver by YE2026; Kidder: 3,258 OC units delivered 1H 2026, led by two large Irvine Company projects; CBRE: North Irvine absorbed 1,316 units in Q2 2026.",
+   "evidence": "Broker reports (Kidder, Matthews, Northmarq, CBRE, Berkadia) + ApartmentFinder listings (undated).",
+   "as_of": "Q2 2026 reports; listings undated",
+   "sources": [
+    "https://kidder.com/wp-content/uploads/market_report/multifamily-market-research-orange-county-2026-2q.pdf",
+    "https://www.matthews.com/insights/orange-county-multifamily-q1-2026",
+    "https://www.northmarq.com/insights/insights/new-supply-jumps-rents-continue-rise-orange-countys-multifamily-market-q1-2026",
+    "https://www.cbre.com/insights/figures/orange-county-multifamily-figures-q2-2026",
+    "https://www.costar.com/article/916281638/orange-county-apartment-demand-rises-but-new-supply-lifts-overall-vacancy",
+    "https://www.berkadia.com/wp-content/uploads/2024/12/Berkadia-2025-Forecast-Orange-County-CA.pdf",
+    "https://www.apartmentfinder.com/California/Irvine/Irvine-Business-Complex-Neighborhood-Apartments/1-Bedroom",
+    "https://www.irvinecompanyoffice.com/locations/orange-county/airport-area/2712-mcgaw/customer.html"
+   ]
+  },
+  {
+   "area_id": "long-beach-alamitos-beach",
+   "name": "Long Beach – Alamitos Beach",
+   "region": "Long Beach",
+   "level": "medium",
+   "typical_offer": "44 Alamitos Ave: up to $500 off first three months; Shoreline Gateway (777 E Ocean) listed but no special seen.",
+   "driver": "Adjacent to downtown lease-up competition (inferred).",
+   "vacancy": null,
+   "pipeline": null,
+   "evidence": "Small listing-level evidence only.",
+   "as_of": "Undated (~2026)",
+   "sources": [
+    "https://www.padmapper.com/address/44-alamitos-ave-long-beach-ca-90802-usa"
+   ]
+  },
+  {
+   "area_id": "chinatown",
+   "name": "Chinatown",
+   "region": "Los Angeles",
+   "level": "medium",
+   "typical_offer": "The Orsini (550 N Figueroa St) advertised 3 months free on a Redfin Arts District page.",
+   "driver": "Large Downtown-adjacent luxury complexes competing with DTLA lease-ups.",
+   "vacancy": null,
+   "pipeline": null,
+   "evidence": "Single Redfin listing banner; no submarket data found.",
+   "as_of": "Listing snapshot ~Oct 2026 (undated)",
+   "sources": [
+    "https://www.redfin.com/neighborhood/91/CA/Los-Angeles/Arts-District/luxury-apartments-for-rent"
+   ]
+  },
+  {
+   "area_id": null,
+   "name": "Los Angeles metro (context)",
+   "region": "Los Angeles",
+   "level": "medium",
+   "typical_offer": "Zillow: 32.5% of LA listings offered a concession in June 2026 (31.2% in spring); national 39.7%. RealPage national: 16.9% of stabilized units offer concessions, avg ~10.9% discount (May 2026). CoStar (Sep 2026): new LA developments often lean on free rent amid elevated vacancy and luxury openings.",
+   "driver": "Record ~12,300 completions scheduled in 2026 (RealPage); pipeline 'falls off a cliff' after 2026 (Colliers) — concessions likely to fade later in 2027 as lease-ups finish.",
+   "vacancy": "Q2 2026: 4.52% (Matthews), 4.6% (CBRE), 5.7% (Lee & Associates); Q1 2026 5.6% (Registry headline).",
+   "pipeline": "~18,000 units under construction (Lee & Associates Q2 2026); Matthews forecasts trailing-12-month completions moderating to ~7,280 by YE2026.",
+   "evidence": "Zillow June 2026 rent report; broker Q2 2026 reports; RealPage.",
+   "as_of": "Q2 2026 / June 2026",
+   "sources": [
+    "https://www.zillow.com/research/june-2026-rent-report/",
+    "https://zillow.mediaroom.com/2026-05-27-Its-a-renters-market-2-in-5-listings-come-with-a-deal-this-spring",
+    "https://www.lee-associates.com/wp-content/uploads/2026/07/2026-Q2-Los-Angeles-CA-Multifamily.pdf",
+    "https://www.matthews.com/insights/los-angeles-multifamily-q2-2026",
+    "https://mktgdocs.cbre.com/2299/075383d6-3fda-4c74-85e8-78fa4ab3e142-1177531437/Los_Angeles_Multifamily_Snapsh.pdf",
+    "https://rebusinessonline.com/multifamily-resets-for-a-high-velocity-recovery-in-los-angeles/",
+    "https://www.realpage.com/analytics/los-angeles-peak-supply-2025/"
+   ]
+  },
+  {
+   "area_id": "los-feliz",
+   "name": "Los Feliz",
+   "region": "Los Angeles",
+   "level": "medium",
+   "typical_offer": "Redfin Griffith Park/Los Feliz 'apartments under $2,000' page showed a '6 WEEKS FREE' banner (building not identified in snippet).",
+   "driver": "Spillover from Hollywood/East Hollywood lease-ups (e.g., new 5420 Sunset community) — inferred.",
+   "vacancy": null,
+   "pipeline": null,
+   "evidence": "Single undated listing banner; weak evidence.",
+   "as_of": "Undated snapshot (~2026)",
+   "sources": [
+    "https://www.redfin.com/neighborhood/1167/CA/Los-Angeles/Griffith-Park-Los-Feliz/apartments-under-2000-for-rent",
+    "https://www.apartmentlist.com/ca/los-angeles/5420-sunset"
+   ]
+  },
+  {
+   "area_id": "mid-city-miracle-mile",
+   "name": "Mid-City / Miracle Mile",
+   "region": "Los Angeles",
+   "level": "medium",
+   "typical_offer": null,
+   "driver": "Likely within RealPage's Mid-Wilshire submarket (nearly 3,000 units delivering in 2026) — inferred; submarket boundary not confirmed in sources.",
+   "vacancy": null,
+   "pipeline": "Part of Mid-Wilshire 2026 supply peak (RealPage).",
+   "evidence": "No neighborhood-level concession listings found; rating is inferred from submarket supply only.",
+   "as_of": "2026 forecast",
+   "sources": [
+    "https://www.realpage.com/analytics/los-angeles-peak-supply-2025/"
+   ]
+  },
+  {
+   "area_id": null,
+   "name": "Southeast Los Angeles submarket",
+   "region": "Los Angeles",
+   "level": "medium",
+   "typical_offer": null,
+   "driver": "RealPage: #3 LA supply submarket in 2026 with 1,372 units.",
+   "vacancy": null,
+   "pipeline": "1,372 units in 2026.",
+   "evidence": "Supply data only; outside your target list (context).",
+   "as_of": "2026 forecast",
+   "sources": [
+    "https://www.realpage.com/analytics/los-angeles-peak-supply-2025/"
+   ]
+  },
+  {
+   "area_id": "anaheim-platinum-triangle-packing-district-area",
+   "name": "Anaheim – Platinum Triangle / Packing District area",
+   "region": "Orange County",
+   "level": "medium",
+   "typical_offer": "~1 month free: 1818 Platinum Triangle (built 2009) up to 1 month free on base rent + $500 look-and-lease on select 2x2s; Citron (901 E South St, Anaheim, new) 1 month free.",
+   "driver": "Nearly 2,000 apartments opened in the Platinum Triangle in recent years; ongoing build-out.",
+   "vacancy": null,
+   "pipeline": "More apartments proposed (OCBJ); no confirmed Dec 2026–Feb 2027 opening found.",
+   "evidence": "Point2/Zillow/Redfin listings (undated) and OCBJ coverage (dates unreliable).",
+   "as_of": "Undated (~2026)",
+   "sources": [
+    "https://www.point2homes.com/US/Apartment-Buildings/CA/Anaheim/Platinum-Triangle/1818-Platinum-Triangle/115580702.html",
+    "https://www.zillow.com/b/-5XkCqC",
+    "https://www.redfin.com/neighborhood/110631/CA/Anaheim/Platinum-Triangle/1-bedroom-apartments-for-rent",
+    "https://www.ocbj.com/real-estate/more-apartments-eyed-platinum-triangle/"
+   ]
+  },
+  {
+   "area_id": null,
+   "name": "Orange County (context) / North Irvine",
+   "region": "Orange County",
+   "level": "medium",
+   "typical_offer": null,
+   "driver": "2026 deliveries ~4,400 units, highest in 10+ years, nearly all significant ones in Irvine (Northmarq); owners favor occupancy over rent hikes as lease-ups offer concessions (Matthews Q1 2026).",
+   "vacancy": "Q2 2026: 4.3% (Kidder), 3.64% (Matthews), 96.4% occupancy (CBRE); asking rent $2,727 (Kidder) / $2,944 (CBRE).",
+   "pipeline": "Construction pipeline reportedly down about half YoY (BiggerPockets note citing Kidder/CoStar — secondhand).",
+   "evidence": "Broker reports.",
+   "as_of": "Q1–Q2 2026",
+   "sources": [
+    "https://www.northmarq.com/insights/insights/new-supply-jumps-rents-continue-rise-orange-countys-multifamily-market-q1-2026",
+    "https://www.matthews.com/insights/orange-county-multifamily-q1-2026",
+    "https://kidder.com/wp-content/uploads/market_report/multifamily-market-research-orange-county-2026-2q.pdf",
+    "https://www.cbre.com/insights/figures/orange-county-multifamily-figures-q2-2026",
+    "https://www.biggerpockets.com/posts/7281694"
+   ]
+  },
+  {
+   "area_id": "santa-ana-south-coast-metro-macarthur-area",
+   "name": "Santa Ana – South Coast Metro / MacArthur area",
+   "region": "Orange County",
+   "level": "medium",
+   "typical_offer": null,
+   "driver": "Kidder Mathews (Q2 2026): Santa Ana is one of the two most active OC construction submarkets. Conflicting: an investor article describes the South Coast Metro submarket as relatively supply-constrained.",
+   "vacancy": "OC 3.6–4.3% (Q2 2026).",
+   "pipeline": "Park & Paseo (Red Hill/Barranca, Alliance Residential, 1,221 units total; Broadstone Atlas 483 units – Urbanize reports final phase wrapped, so likely past lease-up); Met at South Coast 284 units proposed (no start date).",
+   "evidence": "Broker report statements; no unit-level specials found.",
+   "as_of": "Q2 2026",
+   "sources": [
+    "https://kidder.com/wp-content/uploads/market_report/multifamily-market-research-orange-county-2026-2q.pdf",
+    "https://www.sdbj.com/?p=104673",
+    "https://urbanize.la/post/final-phase-park-paseo-wraps-work-2590-s-red-hill-avenue-santa-ana",
+    "https://www.ocbj.com/?p=30863"
+   ]
+  },
+  {
+   "area_id": "culver-city-palms",
+   "name": "Culver City / Palms",
+   "region": "Los Angeles",
+   "level": "low",
+   "typical_offer": null,
+   "driver": "Supply-constrained: a broker said only 338 apartments are scheduled for delivery in Culver City over the next three years (IPA, Feb 2026).",
+   "vacancy": null,
+   "pipeline": "338 units in Culver City over ~3 years; NMS@Culver City (121 units) under construction; 86-unit Dunn Dr project planned (Palms).",
+   "evidence": "No concession listings found for new buildings; low supply implies limited landlord pressure (inference).",
+   "as_of": "Feb 2026",
+   "sources": [
+    "https://www.institutionalpropertyadvisors.com/news-events/2026/02/institutional-property-advisors-closes-multifamily-asset-sale-in-west-los-angeles",
+    "https://urbanize.la/post/more-multi-family-action-palmsculver-city-border"
+   ]
+  },
+  {
+   "area_id": "fullerton-east-non-downtown",
+   "name": "Fullerton (east, non-downtown)",
+   "region": "Orange County",
+   "level": "low",
+   "typical_offer": null,
+   "driver": "No current lease-up found; Fullerton Town Center conversion (329 units) slated for 2027.",
+   "vacancy": null,
+   "pipeline": "329 units at Fullerton Town Center (Orangethorpe/Lemon), completion 2027.",
+   "evidence": "OCBJ.",
+   "as_of": "2026 (article date uncertain)",
+   "sources": [
+    "https://www.ocbj.com/oc-homepage/apartment-conversion-begins-at-fullerton-town-center/"
+   ]
+  },
+  {
+   "area_id": "tustin-tustin-legacy-old-town",
+   "name": "Tustin – Tustin Legacy / Old Town",
+   "region": "Orange County",
+   "level": "low",
+   "typical_offer": null,
+   "driver": "No near-term lease-ups found; next big project (Terracina, 338 affordable units) leases 2H 2028.",
+   "vacancy": null,
+   "pipeline": "Terracina at Tustin Legacy 338 units, leasing 2H 2028; Irvine Co. land for ~1,336 apts and Legacy Village 1,208 units (no dates).",
+   "evidence": "OCBJ / Bisnow / Traded.",
+   "as_of": "2026",
+   "sources": [
+    "https://www.ocbj.com/?p=154153",
+    "https://traded.co/blog/irvine-co-usa-properties-break-ground-on-175m-terracina-at-tustin-legacy/"
+   ]
+  },
+  {
+   "area_id": "west-hollywood",
+   "name": "West Hollywood",
+   "region": "Los Angeles",
+   "level": "unknown",
+   "typical_offer": "Rae on Sunset advertised up to 6 weeks free for move-in by 5/15/2025 (expired).",
+   "driver": null,
+   "vacancy": null,
+   "pipeline": null,
+   "evidence": "Only an expired 2025 special found.",
+   "as_of": "2025",
+   "sources": [
+    "https://prod-release.westsiderentals.com/los-angeles-ca/rae-on-sunset-p4y4m1v"
+   ]
+  },
+  {
+   "area_id": "costa-mesa",
+   "name": "Costa Mesa",
+   "region": "Orange County",
+   "level": "unknown",
+   "typical_offer": "Historic: The Enclave advertised up to 6 weeks free on 14+ month leases during its lease-up (old article, likely pre-2023).",
+   "driver": null,
+   "vacancy": null,
+   "pipeline": null,
+   "evidence": "Only old data found.",
+   "as_of": "Old (pre-2023, date uncertain)",
+   "sources": [
+    "https://www.ocbj.com/news/apartment-owners-offer-free-rent-to-attract/"
+   ]
+  }
+ ],
+ "area_summary": "Best winter-2026/27 deal hunting grounds, in order: (1) Downtown LA – South Park and Arts District: the deepest, most widespread specials seen anywhere (6–10 weeks free, some 2–3 months, e.g., Josephine/G12/Alloy 10 weeks, Olympic by Windsor 3 months, Onyx 8 weeks with studios ~ $2,195), driven by a glut of lease-up towers and Downtown vacancy that hit 10.9% in Q3 2025; Historic Core/FiDi and Chinatown (Orsini 3 months) also show 1 month+. (2) Koreatown/Mid-Wilshire: RealPage puts ~3,000 units delivering in 2026 (LA's largest), with new buildings offering 1 month to 8 weeks free (The Boutique 8 wks on 15 months, Fedora Flats 1 month), plus Hudson (230 units) and ~250 units at 3016 Wilshire likely in lease-up this winter; net 1BRs near your $2,300 cap are plausible here. (3) Hollywood: 1,398 units delivering in 2026; specials of 2–8 weeks (1600 Vine up to 6 wks + $1,000; Whitley Courtyard 8 wks; Bleu 1 month with 1BR from ~$1,895). (4) Downtown Long Beach: Pine Ave buildings at 6–8 weeks free (Volta on Pine, Griffis Pine Ave), and Alexan West End (~600 units) should be in early lease-up Dec–Feb, the prime target for opening specials. (5) Irvine IBC/North Irvine: OC's record 2026 delivery wave (~4,400 units, mostly Irvine) produces 1–2 months free at new luxury buildings, but rents (e.g., Aurum 1BR ~ $4,050+) mostly exceed your budget even after concessions. Anaheim Platinum Triangle shows ~1 month free. Low-concession areas: Culver City/Palms (only ~338 units due over 3 years), Tustin (next big project 2028), Fullerton (2027), and most small-building neighborhoods (Silver Lake, Echo Park, Highland Park, Belmont Shore, etc.), where no evidence of meaningful specials turned up. Caveats: most specials come from undated listing snapshots (verify live); no 2026 submarket-level concession percentages (CoStar/RealPage) were accessible; LA metro concession share was 32.5% of Zillow listings in June 2026, and supply falls sharply after 2026, so lease-up-driven deals are likely to be at or near peak this winter and to thin out through 2027.",
+ "lease_ups": [
+  {
+   "name": "Alexan West End",
+   "address": "600 W Broadway, Long Beach, CA",
+   "area": "Long Beach – Downtown / East Village",
+   "region": "Long Beach",
+   "operator": "Trammell Crow Residential (developer)",
+   "opening": "Marketing site: 'Opening Fall 2026'; developer earlier targeted initial occupancy May 2026 and final completion March 2027; Hoodline (Jul 2026) says delivery is pushing to next year — likely in initial lease-up during Dec 2026–Feb 2027.",
+   "units": 600,
+   "special_seen": null,
+   "studio_1br_rent": null,
+   "sources": [
+    "https://hoodline.com/2026/07/600-new-rentals-set-to-flip-a-downtown-long-beach-superblock-7073083/",
+    "https://longbeachize.com/articles/alexan-west-end-long-beachs-largest-residential-projects-scores-funds-to-finally-break-ground/",
+    "https://www.apartments.com/alexan-west-end-long-beach-ca/3btcmcd/",
+    "https://www.cbre.com/press-releases/cbre-secures-200-million-in-financing-for-multifamily-project-in-long-beach"
+   ]
+  },
+  {
+   "name": "Hudson",
+   "address": "640 S St Andrews Pl, Los Angeles, CA 90005 (Wilshire/Western)",
+   "area": "Koreatown",
+   "region": "Los Angeles",
+   "operator": "Jamison",
+   "opening": "Units in finishing phase as of June 2026; leasing site up; no move-in date confirmed.",
+   "units": 230,
+   "special_seen": null,
+   "studio_1br_rent": null,
+   "sources": [
+    "https://hoodline.com/2026/06/koreatown-s-new-230-unit-hudson-steps-into-view-by-wilshire-western/"
+   ]
+  },
+  {
+   "name": "3016–3020 W Wilshire Blvd (residential above retail)",
+   "address": "3016–3020 W Wilshire Blvd, Los Angeles, CA 90010",
+   "area": "Koreatown",
+   "region": "Los Angeles",
+   "operator": null,
+   "opening": "Year built 2026 (retail listing); apartment leasing status unconfirmed.",
+   "units": 250,
+   "special_seen": null,
+   "studio_1br_rent": null,
+   "sources": [
+    "https://www.cityfeet.com/cont/listing/3016-3020-w-wilshire-blvd-los-angeles-ca-90010/cs40805640"
+   ]
+  },
+  {
+   "name": "The Boutique",
+   "address": "707 S Berendo St, Los Angeles, CA 90005",
+   "area": "Koreatown",
+   "region": "Los Angeles",
+   "operator": null,
+   "opening": "New building, built 2026, currently leasing.",
+   "units": null,
+   "special_seen": "8 weeks free on a 15-month lease (advertised price is prorated net).",
+   "studio_1br_rent": "Base rents seen $2,575 and $2,725 (unit types not specified in snippet).",
+   "sources": [
+    "https://www.theboutiquere.com/properties/retsPdf/26662213/707-S-Berendo-Street",
+    "https://www.theboutiquere.com/properties/retsPdf/26662187/707-S-Berendo-Street"
+   ]
+  },
+  {
+   "name": "Fedora Flats",
+   "address": "1047 Fedora St, Los Angeles, CA 90006",
+   "area": "Koreatown",
+   "region": "Los Angeles",
+   "operator": null,
+   "opening": "Listed as 'coming July 2026'.",
+   "units": null,
+   "special_seen": "1 month free on a 12-month lease.",
+   "studio_1br_rent": "Unit 601 base $2,695/mo (unit type not given in snippet).",
+   "sources": [
+    "https://www.westsiderentals.com/los-angeles-ca/1047-fedora-st-unit-601-ddf35dk"
+   ]
+  },
+  {
+   "name": "888 S Hope St tower",
+   "address": "888 S Hope St, Los Angeles, CA 90017",
+   "area": "Downtown LA – South Park",
+   "region": "Los Angeles",
+   "operator": "CIM Group",
+   "opening": "Under construction; completion date not found (article date unclear) — probably not leasing by Feb 2027.",
+   "units": 525,
+   "special_seen": null,
+   "studio_1br_rent": null,
+   "sources": [
+    "https://www.multihousingnews.com/cim-starts-building-downtown-la-apartment-tower/"
+   ]
+  },
+  {
+   "name": "Avella (new phase), Cypress Village",
+   "address": "Cypress Village, Irvine, CA",
+   "area": "Irvine (North Irvine, near Spectrum)",
+   "region": "Orange County",
+   "operator": "Irvine Company",
+   "opening": "Now leasing as of Feb 2, 2026; move-ins from spring 2026 (may still have lease-up inventory in winter).",
+   "units": null,
+   "special_seen": null,
+   "studio_1br_rent": null,
+   "sources": [
+    "https://www.irvinecompanyapartments.com/rental-living/more-room-to-roam-discover-brand-new-apartments-homes-in-irvine/"
+   ]
+  },
+  {
+   "name": "Broadstone Edition",
+   "address": "1100 Steely, Irvine, CA (Irvine Business Complex)",
+   "area": "Irvine (Spectrum / Irvine Business Complex)",
+   "region": "Orange County",
+   "operator": "Alliance Residential (Broadstone brand)",
+   "opening": "Recently delivered/leasing (date not confirmed).",
+   "units": null,
+   "special_seen": "2-month concession on a 1BR (ApartmentFinder, undated).",
+   "studio_1br_rent": null,
+   "sources": [
+    "https://www.apartmentfinder.com/California/Irvine/Irvine-Business-Complex-Neighborhood-Apartments/1-Bedroom"
+   ]
+  },
+  {
+   "name": "Fullerton Town Center apartment conversion",
+   "address": "Near Orangethorpe Ave & Lemon St, Fullerton, CA",
+   "area": "Fullerton",
+   "region": "Orange County",
+   "operator": null,
+   "opening": "Completion slated for 2027 (likely after client's window).",
+   "units": 329,
+   "special_seen": null,
+   "studio_1br_rent": null,
+   "sources": [
+    "https://www.ocbj.com/oc-homepage/apartment-conversion-begins-at-fullerton-town-center/"
+   ]
+  }
+ ],
+ "operators": [
+  {
+   "name": "Greystar",
+   "pricing": "Revenue-management software user. Named in the DOJ RealPage case; settled with DOJ Aug 8, 2025 and agreed to stop using rent-pricing software that uses competitors' nonpublic data, stop sharing data or coordinating prices with other landlords, and stop attending RealPage-hosted landlord meetings. Paid $50M in the first batch of the private class-action settlements (M.D. Tenn.). Greystar Irvine listings show lease terms of 12-18 months, with 'total monthly price' that adds mandatory fees to base rent.",
+   "concession_style": "No Greystar-specific LA/OC 2026 concession terms found. In LA, operators commonly run 'X weeks free on a 15-18 month lease' plus look-and-lease bonuses (see 738 Normandie / The Gemma examples under tactics; these are not confirmed as Greystar).",
+   "negotiable": "somewhat",
+   "note": "Pricing comes from software and changes daily. Leasing agents usually can't change base rent, but they can quote different lease terms and move-in dates. 'Somewhat' is a judgment from general sources, not a Greystar-specific source.",
+   "sources": [
+    "https://www.yahoo.com/news/articles/doj-forcing-greystar-stop-sharing-205951647.html",
+    "https://www.propublica.org/article/greystar-realpage-doj-settlement-landlords-apartments-software",
+    "https://www.bisnow.com/news/national/multifamily/27-firms-strike-deal-in-rent-fixing-class-action-as-realpage-and-others-fight-on-131230",
+    "https://www.greystar.com/s/irvine-ca"
+   ]
+  },
+  {
+   "name": "Irvine Company (Irvine Apartment Communities)",
+   "pricing": "No source confirmed its pricing software. It was not in the RealPage defendant or settlement lists I saw. One TalkIrvine renter was quoted month-to-month at rent plus 30%. Another got a 10-month lease, which moved the date of their renewal increase.",
+   "concession_style": "Apartments.com listings for some Irvine-area units showed '2 Months Free' on some 2BRs (date unclear; may not be Irvine Company buildings). Forum posters report negotiating renewals, not up-front rent.",
+   "negotiable": "somewhat",
+   "note": "Anecdotal only. One renter cut a proposed 7% renewal increase to 4% over two cycles; another said the company 'sets prices where it sees fit'. Ask for the full lease-term price matrix (e.g. 10-18 months). The OC caveat: one forum post says no 6-month lease was offered.",
+   "sources": [
+    "https://www.talkirvine.com/threads/iac-apartment-rates.5178",
+    "https://www.talkirvine.com/threads/rental-market-in-irvine.14565/page-7",
+    "https://talkirvine.com/threads/short-ish-term-lease.16830/",
+    "https://offcampus.housing.uci.edu/housing/property/stanford-court-apartments/bcfb9eb",
+    "https://offcampushousing.chapman.edu/housing/property/stanford-court-apartments/bcfb9eb",
+    "https://offcampus.housing.uci.edu/housing/property/harvard-cornell-apartment-homes/t21zxc8",
+    "https://www.forrentuniversity.com/ca/irvine/park-place-apartment-homes/592dzvq",
+    "https://prod-release.westsiderentals.com/irvine-ca/portola-court-apartment-homes-spr6pl4",
+    "https://www.ocbj.com/news/apartment-owners-offer-free-rent-to-attract/",
+    "https://www.talkirvine.com/threads/iac-apartment-rates.5178/latest",
+    "https://www.talkirvine.com/threads/iac-lease-negotiation.89",
+    "https://www.talkirvine.com/threads/should-i-relocate-to-another-iac-complex.5950/latest",
+    "https://reddit.sudovanilla.org/r/irvine",
+    "https://www.talkirvine.com/threads/short-ish-term-lease.16830/latest",
+    "https://www.yardi.com/news/legal-news/how-revenue-iq-apartment-unit-pricing-works/"
+   ]
+  },
+  {
+   "name": "Equity Residential (EQR)",
+   "pricing": "Public REIT using revenue management. A 2020-era Southern California tenant suit against RealPage clients named it. In the second batch of private class settlements (May 2026, M.D. Tenn.) it agreed to pay $56M; the batch got final approval Oct 2026. It announced a merger of equals with AvalonBay and will not hold a Q2 2026 earnings call.",
+   "concession_style": "In Q2 2025, management said elevated concessions continued in parts of LA, more than expected on a cash basis, and expected continued use in affected submarkets. LA underperformed, which management tied to the weak entertainment sector. An unverified aggregator says same-store concessions fell 21% YoY in early 2026.",
+   "negotiable": "somewhat",
+   "note": "A concession-heavy LA submarket is where to push. Ask for the net-effective price and the gross rent in writing.",
+   "sources": [
+    "https://fintool.com/app/research/companies/EQR/earnings/Q2 2025",
+    "https://finance.yahoo.com/sectors/technology/articles/apartment-owners-pay-218m-second-155200575.html",
+    "https://www.housingisahumanright.org/?p=3282",
+    "https://investors.equityapartments.com/news-events/press-releases-news/news-details/2026/Equity-Residential-Announces-Second-Quarter-2026-Earnings-Release-Date/default.aspx"
+   ]
+  },
+  {
+   "name": "Essex Property Trust",
+   "pricing": "A 2020-era Southern California tenant antitrust suit against RealPage and its clients named Essex (per Housing Is A Human Right, citing Bloomberg Law). I did not confirm Essex's current settlement status or pricing tool.",
+   "concession_style": "No source found on Essex LA/OC concession style.",
+   "negotiable": "unknown",
+   "note": "Gap: no 2025-26 Essex-specific concession data found.",
+   "sources": [
+    "https://www.housingisahumanright.org/california-tenants-slap-lawsuits-against-realpage-and-corporate-landlords/"
+   ]
+  },
+  {
+   "name": "AvalonBay",
+   "pricing": "Public REIT using revenue management. Announced a merger of equals with Equity Residential (2026).",
+   "concession_style": "No LA-specific AvalonBay concession data found.",
+   "negotiable": "unknown",
+   "note": "Gap.",
+   "sources": [
+    "https://investors.equityapartments.com/news-events/press-releases-news/news-details/2026/Equity-Residential-Announces-Second-Quarter-2026-Earnings-Release-Date/default.aspx"
+   ]
+  },
+  {
+   "name": "UDR",
+   "pricing": "Listed as a 'Lessor Defendant' in the federal RealPage class action (Hausfeld). Still fighting a separate D.C. case (Law360, May 2026).",
+   "concession_style": "No source found.",
+   "negotiable": "unknown",
+   "note": "Gap.",
+   "sources": [
+    "https://www.hausfeld.com/en-us/what-we-do/current-claims/realpage-federal-antitrust-class-action/",
+    "https://www.law360.com/articles/2482368"
+   ]
+  },
+  {
+   "name": "Mid-America Apartment Communities (MAA)",
+   "pricing": "Revenue-management user. Agreed to pay $53M in the second batch of RealPage class settlements (May 2026). Its 2026 10-Q says some state AGs appealed to the 6th Circuit.",
+   "concession_style": "No source found. Small LA presence.",
+   "negotiable": "unknown",
+   "note": "",
+   "sources": [
+    "https://finance.yahoo.com/sectors/technology/articles/apartment-owners-pay-218m-second-155200575.html",
+    "https://www.sec.gov/Archives/edgar/data/0000912595/000119312526326153/maa-20260630.htm"
+   ]
+  },
+  {
+   "name": "Camden",
+   "pricing": "Revenue-management user. Earlier said it would fight the allegations, then agreed to $53M in the second batch of class settlements (May 2026).",
+   "concession_style": "No source found for its SoCal properties.",
+   "negotiable": "unknown",
+   "note": "",
+   "sources": [
+    "https://www.bisnow.com/news/national/multifamily/camden-others-reach-218m-settlement-in-realpage-antitrust-case-134622",
+    "https://masslandlords.net/realpage-greystar-other-landlords-agree-to-settlement-in-doj-antitrust-lawsuit/"
+   ]
+  },
+  {
+   "name": "Sares Regis",
+   "pricing": "Sares Regis Management Co. settled the RealPage class action for $3M (second batch), which suggests it used RealPage pricing.",
+   "concession_style": "Only old data. In 2016 its Wakaba LA building (Little Tokyo) offered a free month during lease-up. Pre-2023, too old to say anything about current offers.",
+   "negotiable": "unknown",
+   "note": "",
+   "sources": [
+    "https://www.bisnow.com/news/national/multifamily/camden-others-reach-218m-settlement-in-realpage-antitrust-case-134622",
+    "https://pressreader.com/usa/los-angeles-times/20160804/281479275794861"
+   ]
+  },
+  {
+   "name": "Lincoln Property Co. (incl. Alliance-type third-party managers)",
+   "pricing": "Lincoln Property Co. settled the RealPage class action for $12M (second batch).",
+   "concession_style": "No source found.",
+   "negotiable": "unknown",
+   "note": "",
+   "sources": [
+    "https://www.bisnow.com/news/national/multifamily/camden-others-reach-218m-settlement-in-realpage-antitrust-case-134622"
+   ]
+  },
+  {
+   "name": "Cortland / LivCor (Blackstone) / Related / Trammell Crow Residential",
+   "pricing": "Cortland settled with DOJ (Jan 2025) and the class action ($18M). LivCor settled with DOJ (Dec 2025) and with nine state AGs ($7M, consent judgment June 2026). Related ($5M) and TCR/Crow Holdings ($2.1M) settled the class action.",
+   "concession_style": "No LA-specific source.",
+   "negotiable": "unknown",
+   "note": "Smaller LA presence. Listed for completeness.",
+   "sources": [
+    "https://masslandlords.net/realpage-greystar-other-landlords-agree-to-settlement-in-doj-antitrust-lawsuit/",
+    "https://www.mlex.com/mlex/articles/2494616",
+    "https://www.bisnow.com/news/national/multifamily/camden-others-reach-218m-settlement-in-realpage-antitrust-case-134622"
+   ]
+  },
+  {
+   "name": "Holland, Western National, Mill Creek, Carmel, Wood Partners, Avenue/Fifteen Group, AMLI, Windsor, Bozzuto, FPI, Prime, Decron, G&K, Barry, Pustilnikov-linked landlords",
+   "pricing": "I found no source on these operators' pricing tools or concession policies. A search for Holland, Western National and Irvine as RealPage defendants returned nothing.",
+   "concession_style": "Unknown. Only general LA patterns apply: lease-up buildings lean on free rent (CoStar, Sep 29 2026, paywalled), and 6 weeks free on 15-18 month leases plus a $1,000 same-day look-and-lease bonus shows up on LA listings.",
+   "negotiable": "unknown",
+   "note": "Gap: get each property's quote in writing and compare net-effective prices.",
+   "sources": [
+    "https://www.costar.com/article/817168921/apartment-developer-says-service-not-concessions-wins-renters"
+   ]
+  },
+  {
+   "name": "Small LA landlords (mom-and-pop, often RSO or AB 1482 units)",
+   "pricing": "Usually no algorithmic pricing (no source quantifies this). On renewal, RSO units are capped at 3% for Jul 1 2025-Jun 30 2027. AB 1482-covered units are capped at 8.7% for increases from Aug 1 2026 (LA metro).",
+   "concession_style": "Rarely advertise weeks free. Waived or lower deposit and negotiable rent are typical asks (general sources, not LA-specific data).",
+   "negotiable": "somewhat",
+   "note": "With rent caps, the starting rent matters most because every later increase is limited. A small landlord (natural person with no more than 2 properties and 4 units) may still charge a 2-month deposit.",
+   "sources": [
+    "https://cd4.lacity.gov/initiative/renters-rights/",
+    "https://dcba.lacounty.gov/news/understanding-rent-increases/",
+    "https://www.bhfs.com/insights/alerts-articles/2024/california-security-deposit-limits-effective-july-1-2024"
+   ]
+  }
+ ],
+ "tactics": [
+  {
+   "title": "Ask for the full lease-term price matrix, not just the 12-month price",
+   "how": "Ask the leasing office for prices on every term they offer (for example 10, 12, 13, 14, 15, 18 months) for the exact unit and move-in date, in writing. Then compare the total cost of each term divided by the months you pay.",
+   "why": "Large operators' software produces a different monthly price for each term. In one example, a 1BR's rent dropped by more than $150 when the lease was one month longer or shorter than 12 months ($2,301 at 12 months). Operators use terms to steer when leases expire.",
+   "strength": "moderate",
+   "sources": [
+    "https://www.postandcourier.com/business/lease-on-the-right-day-and-an-apartments-rent-could-be-lower-for-a-year/article_6a971ba4-03a1-11ed-b89a-53dbb3be5edb.html",
+    "https://yochicago.com/money-saving-tips-re-the-length-of-your-lease/",
+    "https://realpage.com/videos/yieldstar-optimizes-rent-pricing"
+   ]
+  },
+  {
+   "title": "Choose a lease end month on purpose (this cuts both ways)",
+   "how": "For a late-January move-in, compare a 12-month term (ends in winter) with a 14-17 month term (ends in spring or summer). Pick the lowest total cost, keeping in mind that you will be shopping for your next place in that season.",
+   "why": "Expiration management tries to bunch expirations in spring/summer and avoid winter. One operator SOP bans leases expiring Nov-Feb. YieldStar weighs upcoming expirations when it sets prices. So a term that ends in winter may be priced HIGHER, not lower. This contradicts the brief's assumption. One blog says renters can request a winter end date because landlords are 'eager to avoid vacancies' then, so the sources disagree. Check with real quotes.",
+   "strength": "moderate",
+   "sources": [
+    "https://realpage.com/videos/yieldstar-optimizes-rent-pricing",
+    "https://ideas.repec.org/a/eee/ejores/v238y2014i1p233-244.html",
+    "https://docs.google.com/document/d/12fUR4mAwU3cRBAf8JQjShT-k8o2D_kwx/export?format=pdf",
+    "https://www.apartmentiq.io/why-are-renewals-and-expirations-an-afterthought-revenue-management/",
+    "https://engineerfix.com/when-is-it-cheapest-to-rent-an-apartment/"
+   ]
+  },
+  {
+   "title": "Compare net-effective rent, and budget on gross rent",
+   "how": "Net effective = (gross rent x months - total concession) / months. Use it to rank options, and make sure you can afford the gross rent plus a raise at renewal.",
+   "why": "Concessions are one-time. Renewal increases are applied to the gross rent. Example: $3,000 gross with one month free on 12 months is $2,750 net effective. StreetEasy example: $2,377 net effective on 13 months with one month free is about $2,575 on a 12-month basis.",
+   "strength": "strong",
+   "sources": [
+    "https://www.steadily.com/blog/net-effective-rent-vs-gross-rent",
+    "https://www.brickunderground.com/rent/how-to-negotiate-lease-renewal-with-concessions-net-effective-rent-landlord-nyc",
+    "https://streeteasy.com/blog/net-effective-rent-what-does-it-mean-nyc-actual-rent/"
+   ]
+  },
+  {
+   "title": "Ask for a lower gross rent instead of free weeks",
+   "how": "When a building offers X weeks free, ask whether they will turn it into a lower base rent, or split the difference (a smaller concession plus a lower gross).",
+   "why": "A lower gross rent lowers your renewal base. AB 1482 caps increases on the lowest gross rate charged in the prior 12 months, so a lower starting gross keeps paying off at renewal. Operators often refuse because they keep gross rent high so renewal increases are based on it.",
+   "strength": "moderate",
+   "sources": [
+    "https://www.steadily.com/blog/net-effective-rent-vs-gross-rent",
+    "https://dcba.lacounty.gov/news/understanding-rent-increases/"
+   ]
+  },
+  {
+   "title": "Use same-day look-and-lease bonuses, after you have done your homework",
+   "how": "Tour with your documents ready. Ask whether there is a same-day or 24-hour bonus and whether it stacks with the advertised weeks free. Get it in writing before you apply.",
+   "why": "LA examples on ApartmentFinder: 738 Normandie offered up to 6 weeks free on a 15-month lease plus a $1,000 look-and-lease bonus for applying the same day and signing within 24 hours. The Gemma offered 6 weeks free on an 18-month lease plus the same $1,000 bonus. Look-and-lease perks can include lower fees, a discount or a lower deposit.",
+   "strength": "moderate",
+   "sources": [
+    "https://www.apartmentfinder.com/California/Los-Angeles-Apartments/738-Normandie-Apartments-87573y1",
+    "https://www.apartmentfinder.com/California/Los-Angeles-Apartments/The-Gemma-Apartments-hrldck3",
+    "https://baymgmtgroup.com/blog/what-is-a-look-and-lease-special/"
+   ]
+  },
+  {
+   "title": "Target lease-up and new buildings in LA",
+   "how": "Shortlist buildings delivered in 2025-26 that are still leasing up. Ask how many units are left and how long the special runs.",
+   "why": "RealPage projected a record ~12,300 LA completions in 2026. CoStar (Sep 29, 2026) says new LA buildings rely on free rent and incentives as vacancy rises. Nationally, the average concession in June 2026 was 11.1% of lease value (about 6 weeks free on 12 months), and 16.5% of stabilized units had one.",
+   "strength": "strong",
+   "sources": [
+    "https://www.realpage.com/analytics/los-angeles-peak-supply-2025/",
+    "https://www.costar.com/article/817168921/apartment-developer-says-service-not-concessions-wins-renters",
+    "https://www.credaily.com/briefs/apartment-concession-discounts-hit-record-depth-in-june-2026/"
+   ]
+  },
+  {
+   "title": "Ask for non-rent items: parking, fees, deposit",
+   "how": "Ask to waive the application or admin fee, get free or discounted parking for some months, lower the deposit, or upgrade the unit.",
+   "why": "General guides say these are common winter asks. In older DTLA coverage (2016-17, pre-2023), lease-up buildings gave up to 12 months of free parking alongside 4-5 weeks free. Zumper says winter is a good time for free months and free parking.",
+   "strength": "moderate",
+   "sources": [
+    "https://www.apartmenttherapy.com/best-time-to-move-36709139",
+    "https://www.foxbusiness.com/real-estate/best-time-rent-apartment",
+    "https://pressreader.com/usa/los-angeles-times/20160804/281479275794861",
+    "https://cangress.org/2017/09/as-dtla-vacancies-rise-landlords-increase-breaks-on-rent-parking/"
+   ]
+  },
+  {
+   "title": "Sign in the winter off-season",
+   "how": "Shop in Nov-Feb. Your late-December signing for a late-January move-in fits this.",
+   "why": "A RentHop-based piece says LA 1BR rents fall more than 2.5% in November on average. RentHop puts the summer-to-winter drop in Irvine Business Complex at 3.4%. Experts quoted by Fox Business say winter improves your odds when negotiating. The tradeoff is fewer listings to choose from.",
+   "strength": "moderate",
+   "sources": [
+    "https://www.marketapts.com/apartment-living/apartment-renting-hacks-to-save-you-money",
+    "https://www.renthop.com/average-rent-in/irvine-business-complex-irvine-ca",
+    "https://www.foxbusiness.com/real-estate/best-time-rent-apartment",
+    "https://www.apartmentlist.com/rentonomics/best-time-of-year-to-rent/"
+   ]
+  },
+  {
+   "title": "Time the signing near month-end",
+   "how": "Make your final offer in the last days of a month, when a unit is about to sit empty for another month.",
+   "why": "Property-management blogs say landlords are more eager to fill units at month-end. I found no hard data on month-end or quarter-end quotas, and no weekday effect.",
+   "strength": "anecdotal",
+   "sources": [
+    "https://www.springsapartments.com/blog/time-is-on-your-side-5-timely-tips-for-planning-an-apartment-search",
+    "https://engineerfix.com/when-is-it-cheapest-to-rent-an-apartment/"
+   ]
+  },
+  {
+   "title": "Use competing written quotes",
+   "how": "Get written net-effective quotes from 2-3 comparable nearby buildings, then ask your top choice to match the concession or fees.",
+   "why": "Software pricing weighs competitor prices. After the RealPage settlements the inputs are supposed to be public or older data, so matching visible competing offers is the lever left. LA's concession share was about 31-32.5% of Zillow listings in spring/June 2026, so there are offers to compare.",
+   "strength": "moderate",
+   "sources": [
+    "https://realpage.com/videos/yieldstar-optimizes-rent-pricing",
+    "https://www.zillow.com/research/june-2026-rent-report/",
+    "https://www.renthop.com/blog/how-to-negotiate-rent-concessions/"
+   ]
+  },
+  {
+   "title": "Negotiate renewals too (from the same forum)",
+   "how": "At renewal, ask for a smaller increase, a different term, or a match to the new-lease price.",
+   "why": "Irvine forum anecdotes describe getting a 7% renewal down to 4%. A 2026 Realtor.com report says concessions give renters more leverage.",
+   "strength": "anecdotal",
+   "sources": [
+    "https://www.talkirvine.com/threads/iac-apartment-rates.5178",
+    "https://www.placera.se/pressmeddelanden/realtor-com-monthly-rent-report-rents-fall-for-37th-straight-month-as-concessions-give-renters-more-leverage-20260917"
+   ]
+  }
+ ],
+ "pitfalls": [
+  {
+   "title": "Renewal is priced off gross rent",
+   "detail": "Concessions don't carry over. The renewal increase is applied to gross rent, so the jump from what you actually paid (net effective) can be large. During the pandemic, some renewals came with 30-60% hikes. A cap still limits the increase over gross: 8.7% for AB 1482 units from Aug 2026 in LA, 3% for RSO.",
+   "sources": [
+    "https://www.steadily.com/blog/net-effective-rent-vs-gross-rent",
+    "https://www.brickunderground.com/blog/why_you_should_read_the_fine_print_the_downsides_of_rental_concessions?amp"
+   ]
+  },
+  {
+   "title": "Concession clawback if you break the lease",
+   "detail": "Many concession addenda require repaying the free rent if you leave early. One forum example: a 13-month lease with one month free, where breaking it meant two months' rent plus repaying the concession. Under CA Civil Code 1951.2 the landlord has to try to re-rent. Whether a clawback is enforceable as liquidated damages (Civ. Code 1671) is unconfirmed; I found no source.",
+   "sources": [
+    "https://www.teamblind.com/post/apartment-early-lease-termination-penalty-pggbjt7y",
+    "https://terms.law/FAQ/landlord-tenant/lease-terms-faq.html"
+   ]
+  },
+  {
+   "title": "Free month vs prorated concession, and long terms",
+   "detail": "Specials are often tied to 15-18 month terms (for example 6 weeks free on 15 or 18 months), so the per-month discount is smaller than it looks. Find out whether the free rent comes up front, at the end, or spread across months. Spreading it lowers each payment; up-front or end-loaded free months can be lost if you leave early.",
+   "sources": [
+    "https://www.apartmentfinder.com/California/Los-Angeles-Apartments/738-Normandie-Apartments-87573y1",
+    "https://www.apartmentfinder.com/California/Los-Angeles-Apartments/The-Gemma-Apartments-hrldck3",
+    "https://streeteasy.com/blog/net-effective-rent-what-does-it-mean-nyc-actual-rent/"
+   ]
+  },
+  {
+   "title": "Advertised price may exclude mandatory fees",
+   "detail": "Some operators list a 'total monthly price' that adds mandatory fees to base rent (Greystar Irvine listings). LA special listings say 'other costs and fees excluded'. Compare all-in prices.",
+   "sources": [
+    "https://www.greystar.com/s/irvine-ca",
+    "https://www.apartmentfinder.com/California/Los-Angeles-Apartments/The-Gemma-Apartments-hrldck3"
+   ]
+  },
+  {
+   "title": "Month-to-month and short-term premiums",
+   "detail": "One Irvine forum report: month-to-month at rent plus 30%. A blog claims short terms carry a 10-20% premium (single source, unverified).",
+   "sources": [
+    "https://talkirvine.com/threads/short-ish-term-lease.16830/",
+    "https://precisionapplianceleasing.com/?p=24058"
+   ]
+  },
+  {
+   "title": "Look-and-lease pressure",
+   "detail": "Same-day bonuses require applying the same day and signing within 24 hours. Go in with your comparison already done, and read the concession addendum (clawback, term) before you sign.",
+   "sources": [
+    "https://www.apartmentfinder.com/California/Los-Angeles-Apartments/738-Normandie-Apartments-87573y1"
+   ]
+  },
+  {
+   "title": "Brand-new buildings are usually not rent-capped",
+   "detail": "AB 1482 exempts units with a certificate of occupancy issued within the last 15 years, and the LA RSO covers pre-Oct-1978 units. So a lease-up special in a new building has no cap on the renewal increase. This exemption comes from general knowledge of AB 1482 and was not re-verified in this search round. Confirm it.",
+   "sources": [
+    "https://dcba.lacounty.gov/news/understanding-rent-increases/"
+   ]
+  }
+ ],
+ "rules": [
+  {
+   "name": "RealPage DOJ consent decree + private class settlements",
+   "applies": "RealPage and settling landlords nationwide, including Greystar, Cortland, LivCor, EQR, Camden, MAA, Lincoln, Sares Regis and others",
+   "detail": "DOJ settlement (M.D.N.C.) bars RealPage from using nonpublic, current lease data in its rent recommendations. A report says a NC judge approved it (date not found). Greystar's DOJ deal: no software that uses competitor nonpublic data, no data-sharing or coordination. Private class (M.D. Tenn.): 41 landlords, $359,925,000, final approval about Oct 15-16, 2026. RealPage itself did not settle the class case. Some state AGs appealed to the 6th Circuit. Renter impact for 2026-27: settling landlords' software should use only public or older data, so pricing may react more to visible vacancies and concessions. Renters in the settlement class may qualify for payouts.",
+   "effective": "Greystar DOJ Aug 2025; class final approval Oct 2026",
+   "sources": [
+    "https://masslandlords.net/realpage-greystar-other-landlords-agree-to-settlement-in-doj-antitrust-lawsuit/",
+    "https://www.wsoctv.com/news/local/realpage-settles-with-doj-over-rent-pricing-scheme-nc-case-still-active/AKJI2ZH7R5GOHIK3JGVIPKM4HM/",
+    "https://www.mlex.com/mlex/data-privacy-security/articles/2539080/landlords-us-realpage-plaintiffs-get-final-approval-for-359m-settlement-package",
+    "https://www.sec.gov/Archives/edgar/data/0000912595/000119312526326153/maa-20260630.htm",
+    "https://boisedev.com/news/2026/01/30/idaho-tenants-of-national-property-management-company-eligible-for-settlement-funds-after-price-fixing-lawsuits/"
+   ]
+  },
+  {
+   "name": "AB 325 (common pricing algorithms, Cartwright Act)",
+   "applies": "All industries in California, rentals included",
+   "detail": "Makes it illegal to use or distribute a common pricing algorithm as part of a conspiracy, or to coerce others to adopt its recommended prices. Lowers the bar for plaintiffs to bring a case. A ban on algorithms using nonpublic competitor data was dropped from the final bill. Law firms say its practical reach beyond the existing Cartwright Act may be limited. SB 763 (signed two days later) raises Cartwright Act penalties.",
+   "effective": "Signed Oct 6, 2025; effective Jan 1, 2026",
+   "sources": [
+    "https://consumerlaw.berkeley.edu/news/california-slams-door-algorithmic-collusion-signing-ab325",
+    "https://pillsburylaw.com/en/news-and-insights/ab-325-shared-pricing-algorithms-liability-california.html",
+    "https://www.bakermckenzie.com/en/insight/publications/alerts/2025/10/united-states-california-modernizes-antitrust-law"
+   ]
+  },
+  {
+   "name": "SB 52 (End AI Rent Hikes Act)",
+   "applies": "Would have restricted rental-pricing algorithms in California",
+   "detail": "Held in Assembly Appropriations on Aug 29, 2025 (under submission), so not enacted as of the latest found status. It is a 2025-26 session bill; any 2026 revival is unconfirmed.",
+   "effective": "Not enacted (as of last found status)",
+   "sources": [
+    "https://legiscan.com/CA/text/SB52/2025",
+    "https://techequity.us/end-ai-rent-hikes-act-sb-52"
+   ]
+  },
+  {
+   "name": "Local algorithmic-rent bans (LA area)",
+   "applies": "Santa Monica (enacted ban on sale and use); West Hollywood (Aug 4, 2025 item to draft a ban); City of LA (Sept 2024 motion asking LAHD to study a ban, no ordinance found); LA County (DCBA April 2025 report; Board directed DCBA to look at limits, no ordinance found)",
+   "detail": "Santa Monica's ban targets tools like YieldStar and lets tenants raise a violation as an eviction defense. I found no City of LA or LA County ordinance as of Oct 2026.",
+   "effective": "Santa Monica 2025 (exact date not captured); others pending or unknown",
+   "sources": [
+    "https://smdp.com/santa-monica-bans-algorithmic-rental-pricing-software-after-wildfire-crisis/",
+    "https://weho.granicusideas.com/meetings/1660-regular-city-council-meeting/agenda_items/688a574e4425380bc701e13e-f-dot-7-prohibiting-sale-and-use-of-algorithmic-devic",
+    "https://cityclerk.lacity.org/onlinedocs/2024/24-1031_misc_9-03-24.pdf",
+    "https://dcba.lacounty.gov/wp-content/uploads/2025/12/2025-04-16-Combating-LA-Countys-Price-Gouging-Crisis_rc_.pdf"
+   ]
+  },
+  {
+   "name": "AB 1482 (Tenant Protection Act) rent cap",
+   "applies": "Most CA multifamily units over 15 years old that aren't under stricter local rent control (newer buildings exempt; exemption details not re-verified here)",
+   "detail": "Cap is 5% + regional CPI or 10%, whichever is lower, measured against the lowest gross rent charged in the prior 12 months. LA metro April 2026 CPI was 3.7%, so increases from Aug 1, 2026 are capped at 8.7%. The cap provision sunsets Jan 1, 2030 unless extended.",
+   "effective": "Aug 1, 2026 - Jul 31, 2027 cap year",
+   "sources": [
+    "https://dcba.lacounty.gov/news/understanding-rent-increases/",
+    "https://members.aagla.org/news/cpi-update-2026-new-allowable-increases-go-into-effect-under-state-law-ab-1482-as-of-august-1st",
+    "https://www.steadily.com/blog/how-much-can-a-landlord-raise-rent-in-california"
+   ]
+  },
+  {
+   "name": "LA City RSO",
+   "applies": "City of LA rental units built before Oct 1978 (generally)",
+   "detail": "The annual allowable increase stays at 3% from Jul 1, 2025 to Jun 30, 2027. A 2026 amendment sets the formula range at 1-4% tied to CPI, removes the utility add-on, and ends the extra 10% for an added dependent. 30 days' written notice is required.",
+   "effective": "Jul 1 2025 - Jun 30 2027",
+   "sources": [
+    "https://cd4.lacity.gov/initiative/renters-rights/",
+    "https://members.aagla.org/news/news-alert-la-city-passes-severely-reduced-rso-formula-ordinance",
+    "https://hoodline.com/2026/08/los-angeles-rent-revolt-caps-hikes-at-4-scraps-family-kid-tax/"
+   ]
+  },
+  {
+   "name": "AB 12 security deposit cap",
+   "applies": "Most CA residential landlords",
+   "detail": "Deposit is capped at one month's rent, furnished or unfurnished. Exception: a natural person (or LLC of natural persons, or family trust) owning no more than 2 properties with no more than 4 units total may charge 2 months, but not to service members. Civil Code 1950.5.",
+   "effective": "Jul 1, 2024",
+   "sources": [
+    "https://www.bhfs.com/insights/alerts-articles/2024/california-security-deposit-limits-effective-july-1-2024",
+    "https://www.cbsnews.com/amp/sacramento/news/california-security-deposit-cap-1-month-rent-ab12-haney-signed-by-newsom",
+    "https://caanet.org/legislation-limiting-security-deposits-signed-into-law-by-gov-newsom/"
+   ]
+  },
+  {
+   "name": "Deposit return (Civ. Code 1950.5) + AB 2801",
+   "applies": "All CA residential tenancies",
+   "detail": "The deposit must be refunded with an itemized statement within 21 days after move-out. AB 2801 (Ch. 280, 2024) limits deductions to amounts reasonably needed. For tenancies starting on or after Jul 1, 2025, landlords must photograph the unit at move-in. Bad-faith withholding can cost up to 2x the deposit (forum claim, verify).",
+   "effective": "AB 2801 signed Sep 19, 2024; photo rules Jul 1, 2025 (move-in) / Apr 1, 2025 (move-out, per general knowledge, not verified here)",
+   "sources": [
+    "https://sf.gov/reports/august-2023/security-deposits",
+    "https://static.votesmart.org/static/billtext/103978.pdf",
+    "https://www.timemark.com/blog/california-ab2801-photo-documentation-guide"
+   ]
+  },
+  {
+   "name": "AB 2493 screening/application fees",
+   "applies": "CA landlords charging screening fees (Civ. Code 1950.6)",
+   "detail": "No screening fee for applicants not selected, unless the landlord processes applications in order received and approves the first qualified applicant. Refund window is within 7 days of selecting a tenant or 30 days of application, whichever comes first (per a management guide). Landlords must refund unused portions, give a copy of the report and an itemized receipt, and can't charge when no unit is available unless the applicant agrees. The fee cap is inflation-indexed (current dollar figure not retrieved).",
+   "effective": "Jan 1, 2025",
+   "sources": [
+    "https://smdp.com/news/government-politics/bills-passed-protecting-renters-on-screening-fees-security-deposits/",
+    "https://www.goodlifemgmt.com/wp-content/uploads/2025/01/A-Short-Guide-to-AB2493​.pdf",
+    "https://tenant.checkr.com/resources/application-screening-fee/state/california"
+   ]
+  },
+  {
+   "name": "SB 611 rental junk fees / fee disclosure",
+   "applies": "CA residential rentals",
+   "detail": "Ads must disclose one-time and recurring charges. Bans fees for serving notices, for paying rent or deposit by check, and similar charges. Note: SB 611 was signed in 2024 (not 2025); sources conflict on Jan 1 vs Apr 1, 2025 for the advertising rule.",
+   "effective": "Jan 1, 2025 (advertising piece possibly Apr 1, 2025; sources conflict)",
+   "sources": [
+    "https://nlihc.org/resource/several-new-tenant-protections-went-effect-renters-california-month",
+    "https://journal.firsttuesday.us/new-law-takes-aim-at-junk-fees-from-california-landlords/95905/",
+    "https://caanet.org/caa-points-to-overreach-in-anti-junk-fee-legislation/"
+   ]
+  }
+ ],
+ "anecdotes": [
+  {
+   "summary": "Irvine renter (TalkIrvine): negotiated a proposed 7% renewal increase down to 4% over two renewal cycles. Another poster said renewal talks went smoothly after building rapport with the manager. A third said IAC 'sets prices where it sees fit'.",
+   "source": "https://www.talkirvine.com/threads/iac-apartment-rates.5178"
+  },
+  {
+   "summary": "Irvine renter (TalkIrvine): negotiated a 10-month lease instead of 12, which moved when the increase took effect.",
+   "source": "https://www.talkirvine.com/threads/rental-market-in-irvine.14565/page-7"
+  },
+  {
+   "summary": "Irvine renter (TalkIrvine): offered month-to-month at rent plus 30%. Advice was to sign the 12-month extension and find someone to assume the lease; no 6-month option was offered.",
+   "source": "https://talkirvine.com/threads/short-ish-term-lease.16830/"
+  },
+  {
+   "summary": "DTLA renter in 2016 (LA Times, pre-2023): got one month free plus six months of free parking on a 12-month lease, and later a year of free parking when switching units in a lease-up building.",
+   "source": "https://pressreader.com/usa/los-angeles-times/20160804/281479275794861"
+  },
+  {
+   "summary": "Forum post (Blind): a 13-month lease with one month free required two months' rent plus repaying the concession to break early. Commenters said a 2-month fee is normal in CA.",
+   "source": "https://www.teamblind.com/post/apartment-early-lease-termination-penalty-pggbjt7y"
+  }
+ ]
+}
