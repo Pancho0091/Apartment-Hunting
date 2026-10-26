@@ -23,15 +23,53 @@
   const VLABEL = { all: "Meets everything", check: "Needs checks", fail: "Fails a requirement" };
   const LAYERS = [
     ["heat", "Neighborhood scores"], ["hoods", "Neighborhood lines"], ["freeways", "Freeways"],
-    ["rail", "Rail"], ["excluded", "Ruled-out South Bay"], ["labels", "Place names"],
+    ["rail", "Rail"], ["excluded", "Ruled-out zone"], ["labels", "Place names"],
   ];
-  const WATER = [ // label anchors for water bodies and regions (cartographic furniture, not data)
-    { t: "Pacific Ocean", lng: -118.33, lat: 33.5, cls: "water big" },
-    { t: "Santa Monica Bay", lng: -118.555, lat: 33.885, cls: "water" },
-    { t: "San Pedro Bay", lng: -118.175, lat: 33.712, cls: "water" },
-    { t: "Los Angeles County", lng: -117.99, lat: 34.115, cls: "region", maxZ: 1.7 },
-    { t: "Orange County", lng: -117.72, lat: 33.79, cls: "region", maxZ: 1.7 },
-  ];
+  /* Per-market cartographic furniture (label anchors for water and regions, titles). Not data:
+     the geography itself always comes from the geo object. Keyed by geo.market ("la" when absent). */
+  const MARKET_CFG = {
+    la: {
+      plate: "Plate I", title: "Los Angeles <em>to</em> Orange County", line: "County line", excl: "Ruled out · South Bay", exclLegend: "South Bay · ruled out",
+      major: ["Downtown", "Long Beach", "Santa Ana", "Irvine", "Pasadena", "Santa Monica", "Anaheim", "Hollywood"],
+      water: [
+        { t: "Pacific Ocean", lng: -118.33, lat: 33.5, cls: "water big" },
+        { t: "Santa Monica Bay", lng: -118.555, lat: 33.885, cls: "water" },
+        { t: "San Pedro Bay", lng: -118.175, lat: 33.712, cls: "water" },
+        { t: "Los Angeles County", lng: -117.99, lat: 34.115, cls: "region", maxZ: 1.7 },
+        { t: "Orange County", lng: -117.72, lat: 33.79, cls: "region", maxZ: 1.7 },
+      ],
+    },
+    seattle: {
+      plate: "Plate II", title: "Seattle <em>and the</em> Eastside", line: "Seattle city limit", excl: "Ruled out", exclLegend: "Ruled out",
+      major: ["Downtown", "Bellevue", "Capitol Hill", "Ballard", "Redmond", "Renton"],
+      water: [
+        { t: "Puget Sound", lng: -122.435, lat: 47.70, cls: "water big" },
+        { t: "Elliott Bay", lng: -122.375, lat: 47.603, cls: "water" },
+        { t: "Lake Washington", lng: -122.258, lat: 47.655, cls: "water" },
+        { t: "Lake Sammamish", lng: -122.09, lat: 47.59, cls: "water" },
+        { t: "East Passage", lng: -122.385, lat: 47.425, cls: "water" },
+        { t: "Eastside", lng: -122.12, lat: 47.75, cls: "region", maxZ: 1.7 },
+        { t: "South King County", lng: -122.18, lat: 47.42, cls: "region", maxZ: 1.7 },
+      ],
+    },
+    nyc: {
+      plate: "Plate III", title: "New York <em>and</em> the Hudson shore", line: "Borough line", excl: "Ruled out", exclLegend: "Ruled out",
+      major: ["Midtown", "Lower Manhattan", "Williamsburg", "Jersey City", "Astoria", "Flushing", "Harlem"],
+      water: [
+        { t: "Atlantic Ocean", lng: -73.9, lat: 40.535, cls: "water big" },
+        { t: "Upper New York Bay", lng: -74.05, lat: 40.665, cls: "water" },
+        { t: "Lower New York Bay", lng: -74.04, lat: 40.54, cls: "water" },
+        { t: "Jamaica Bay", lng: -73.84, lat: 40.615, cls: "water" },
+        { t: "Long Island Sound", lng: -73.745, lat: 40.845, cls: "water" },
+        { t: "Newark Bay", lng: -74.135, lat: 40.672, cls: "water" },
+        { t: "Brooklyn", lng: -73.945, lat: 40.645, cls: "region", maxZ: 1.7 },
+        { t: "Queens", lng: -73.80, lat: 40.725, cls: "region", maxZ: 1.7 },
+        { t: "The Bronx", lng: -73.865, lat: 40.85, cls: "region", maxZ: 1.7 },
+        { t: "Staten Island", lng: -74.155, lat: 40.58, cls: "region", maxZ: 1.7 },
+        { t: "New Jersey", lng: -74.19, lat: 40.79, cls: "region", maxZ: 1.7 },
+      ],
+    },
+  };
   const reduced = () => { try { return matchMedia("(prefers-reduced-motion: reduce)").matches; } catch { return false; } };
   const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
   const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
@@ -310,11 +348,14 @@ position:relative;height:clamp(440px,78vh,760px);background:#ece6d8;border:1px s
     const kx = geo.kx || Math.cos(33.8 * Math.PI / 180);
     const MPU = (E - W) * 69.172 * kx / MW; // miles per map unit
     const proj = (lng, lat) => [(lng - W) / (E - W) * MW, (N - lat) / (N - Sb) * MH];
+    const M = MARKET_CFG[geo.market || "la"] || MARKET_CFG.la;
+    const hasExcl = !!(geo.excluded && geo.excluded.length);
+    const LAYERS_HERE = LAYERS.filter(([k]) => k !== "excluded" || hasExcl);
     const layersOn = Object.assign({ heat: true, hoods: true, freeways: true, rail: true, excluded: true, labels: true }, lsGet("mv-layers-v1", {}));
 
     const el = H("div", "mv");
     el.setAttribute("role", "region");
-    el.setAttribute("aria-label", "Atlas of matching listings");
+    el.setAttribute("aria-label", "Atlas of matching listings, " + (geo.label || M.title.replace(/<[^>]+>/g, "")));
     const base = S("svg", { class: "mv-base", "aria-hidden": "true", focusable: "false" }, el);
     const svg = S("svg", { class: "mv-svg", tabindex: "0", role: "group", "aria-label": "Map. Drag or use arrow keys to pan, plus and minus to zoom, 0 to reset. Tab to reach listing markers." }, el);
     const defs = S("defs", null, base);
@@ -443,7 +484,7 @@ position:relative;height:clamp(440px,78vh,760px);background:#ece6d8;border:1px s
     // Labels
     const labels = [];
     const mkText = (cls, txt, g) => { const t = S("text", { class: cls + " mv-halo", "text-anchor": "middle" }, g || labG); t.textContent = txt; return t; };
-    const MAJOR = new Set(["Downtown", "Long Beach", "Santa Ana", "Irvine", "Pasadena", "Santa Monica", "Anaheim", "Hollywood"]);
+    const MAJOR = new Set(M.major);
     for (const p of geo.places || []) {
       if (p.xy[0] < 0 || p.xy[1] < 0 || p.xy[0] > MW || p.xy[1] > MH) continue;
       const major = MAJOR.has(p.name);
@@ -453,7 +494,7 @@ position:relative;height:clamp(440px,78vh,760px);background:#ece6d8;border:1px s
     }
     const dotsG = S("g", null, labG);
     for (const l of labels) l.dotEl = S("circle", { r: 1.9, fill: C.ink, stroke: "#f8f5ec", "stroke-width": "1.2" }, dotsG);
-    for (const w of WATER) {
+    for (const w of M.water) {
       const [x, y] = proj(w.lng, w.lat), big = /big/.test(w.cls), reg = /region/.test(w.cls);
       const fs = big ? 17 : reg ? 15 : 13, lsp = big ? 0.6 : reg ? 0.55 : 0.32;
       labels.push({ kind: reg ? "region" : "water", wx: x, wy: y, dy: 0, pri: reg ? 9 : 6, maxZ: w.maxZ, el: mkText("mv-" + w.cls, reg ? w.t.toUpperCase() : w.t),
@@ -466,7 +507,7 @@ position:relative;height:clamp(440px,78vh,760px);background:#ece6d8;border:1px s
       for (const r of rings) { let a = 0; for (let i = 1; i < r.length; i++) a += r[i - 1][0] * r[i][1] - r[i][0] * r[i - 1][1]; if (Math.abs(a) > ba) { ba = Math.abs(a); best = r; } }
       if (best) {
         let sx = 0, sy = 0; for (const p of best) { sx += p[0]; sy += p[1]; }
-        const t = "Ruled out · South Bay";
+        const t = M.excl;
         labels.push({ kind: "excl", wx: sx / best.length, wy: sy / best.length + 40, dy: 0, pri: 2.5, el: mkText("mv-excl", t, S("g", { class: "mv-l-excluded" }, labG)), w: t.length * 9.5 * 0.75 + 8, h: 13 });
       }
     }
@@ -1032,7 +1073,7 @@ position:relative;height:clamp(440px,78vh,760px);background:#ece6d8;border:1px s
     bReset.addEventListener("click", () => { spider = null; animateTo(homeView(), 600); });
 
     // Layer toggles
-    function applyLayers() { for (const [k] of LAYERS) el.classList.toggle("no-" + k, !layersOn[k]); }
+    function applyLayers() { for (const [k] of LAYERS) el.classList.toggle("no-" + k, k === "excluded" ? !hasExcl || !layersOn[k] : !layersOn[k]); }
     applyLayers();
 
     // Resize
@@ -1090,15 +1131,16 @@ position:relative;height:clamp(440px,78vh,760px);background:#ece6d8;border:1px s
       });
 
       // Cartouche
-      cart.innerHTML = `<p class="mv-kicker">Plate I · The search atlas</p><h3>Los Angeles <em>to</em> Orange County</h3>` +
-        `<p class="mv-sub"><b>${pts.length}</b> specimen${pts.length === 1 ? "" : "s"} mapped${unmapped ? ` · <b>${unmapped}</b> without coordinates` : ""}</p>`;
+      cart.innerHTML = `<p class="mv-kicker">${M.plate} · The search atlas</p><h3>${M.title}</h3>` +
+        (c.surveyed === false ? `<p class="mv-sub">No listings gathered yet</p>` :
+        `<p class="mv-sub"><b>${pts.length}</b> specimen${pts.length === 1 ? "" : "s"} mapped${unmapped ? ` · <b>${unmapped}</b> without coordinates` : ""}</p>`);
       const det = H("details", "mv-layers", cart);
       det.open = !isSmall() && lsGet("mv-layers-open", false);
       det.addEventListener("toggle", () => { lsSet("mv-layers-open", det.open); frame(); });
       const sum = H("summary", null, det);
-      const sumTxt = () => { sum.innerHTML = `Layers <span style="color:var(--mv-muted);letter-spacing:.08em">· ${LAYERS.filter(([k]) => layersOn[k]).length} of ${LAYERS.length} on</span>`; };
+      const sumTxt = () => { sum.innerHTML = `Layers <span style="color:var(--mv-muted);letter-spacing:.08em">· ${LAYERS_HERE.filter(([k]) => layersOn[k]).length} of ${LAYERS_HERE.length} on</span>`; };
       sumTxt();
-      for (const [k, label] of LAYERS) {
+      for (const [k, label] of LAYERS_HERE) {
         const lab = H("label", "mv-tog", det);
         const inp = H("input", null, lab); inp.type = "checkbox"; inp.checked = !!layersOn[k];
         H("span", null, lab).textContent = label;
@@ -1114,16 +1156,16 @@ position:relative;height:clamp(440px,78vh,760px);background:#ece6d8;border:1px s
         `<p class="mv-lh">Listings</p><div class="mv-lrow">${item(mk("all"), "Meets everything")}${item(mk("check"), "Needs checks")}${item(mk("fail"), "Fails a requirement")}` +
         item(`<svg width="24" height="24" viewBox="-12 -12 24 24"><g transform="scale(.56)">${cl.svg.replace('class="mv-ring"', 'opacity="0"')}</g></svg>`, "Group · click to zoom") + `</div>` +
         `<p class="mv-lh">Neighborhood score <span>(your weights)</span></p><div class="mv-ramp" aria-hidden="true"></div><div class="mv-ramp-l"><span>${scores.length ? lo.toFixed(1) : "—"} lower</span><span>higher ${scores.length ? hi.toFixed(1) : "—"}</span></div>` +
-        `<div class="mv-lrow" style="margin-top:6px">${item(`<svg width="24" height="14" viewBox="0 0 24 14"><defs><pattern id="mv-lg-hatch" patternUnits="userSpaceOnUse" width="4" height="4" patternTransform="rotate(45)"><path d="M0 0V4" stroke="${C.verm}" stroke-width=".9" stroke-opacity=".6"/></pattern></defs><path d="M.5 .5H23.5V13.5H.5Z" fill="url(#mv-lg-hatch)" stroke="${C.verm}" stroke-dasharray="3 2"/></svg>`, "South Bay · ruled out")}</div>` +
+        (hasExcl ? `<div class="mv-lrow" style="margin-top:6px">${item(`<svg width="24" height="14" viewBox="0 0 24 14"><defs><pattern id="mv-lg-hatch" patternUnits="userSpaceOnUse" width="4" height="4" patternTransform="rotate(45)"><path d="M0 0V4" stroke="${C.verm}" stroke-width=".9" stroke-opacity=".6"/></pattern></defs><path d="M.5 .5H23.5V13.5H.5Z" fill="url(#mv-lg-hatch)" stroke="${C.verm}" stroke-dasharray="3 2"/></svg>`, M.exclLegend)}</div>` : "") +
         `<p class="mv-lh">Symbols</p><div class="mv-lrow two">` +
         item(sh("i", "5"), "Interstate") + item(sh("us", "101"), "US route") + item(sh("ca", "91"), "State route") +
         item(`<svg width="24" height="22" viewBox="-12 -11 24 22"><circle r="9.5" fill="#fbf9f4" stroke="${C.ink}" stroke-width=".9"/><path d="${PLANE}" fill="${C.ink}" transform="translate(-6.6 -6.6) scale(.55)"/></svg>`, "Airport") +
         item(`<svg width="24" height="8" viewBox="0 0 24 8"><path d="M0 4H24" stroke="#3b3630" stroke-width="1.1"/><path d="M1 4H24" stroke="#3b3630" stroke-width="4" stroke-dasharray="1 5"/></svg>`, "Rail") +
-        item(`<svg width="24" height="8" viewBox="0 0 24 8"><path d="M0 4H24" stroke="#4a4339" stroke-width="1.3" stroke-dasharray="7 3 1.5 3"/></svg>`, "County line") + `</div>`;
+        item(`<svg width="24" height="8" viewBox="0 0 24 8"><path d="M0 4H24" stroke="#4a4339" stroke-width="1.3" stroke-dasharray="7 3 1.5 3"/></svg>`, M.line) + `</div>`;
       legend.querySelectorAll("summary").forEach(s => s.setAttribute("aria-label", "Legend"));
 
       empty.hidden = pts.length > 0;
-      empty.textContent = list && list.length ? "None of the matching listings have map coordinates." : "No listings match the current filters.";
+      empty.textContent = c.emptyNote || (list && list.length ? "None of the matching listings have map coordinates." : "No listings match the current filters.");
 
       measureBox();
       if (!legendInit && cw) { legend.open = !isSmall() && lsGet("mv-legend-open", true); legendInit = true; }
@@ -1137,11 +1179,14 @@ position:relative;height:clamp(440px,78vh,760px);background:#ece6d8;border:1px s
     return { el, update, geo, home: () => animateTo(homeView(), 0), _state: () => ({ ...V, kFit, kMin, kMax, cw, ch, clusters: clusters.map(c => c.mem.length) }) };
   }
 
+  /* One instance per geo (market), kept alive so switching markets back keeps each map's view. */
+  const insts = new Map();
   let inst = null;
   window.MapView = {
     render(root, list, ctx) {
       injectCSS();
-      if (!inst || inst.geo !== ctx.geo) inst = create(ctx.geo);
+      inst = insts.get(ctx.geo);
+      if (!inst) { inst = create(ctx.geo); insts.set(ctx.geo, inst); }
       root.appendChild(inst.el);
       inst.update(list, ctx);
       return inst.el;
