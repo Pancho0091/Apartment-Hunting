@@ -76,6 +76,44 @@ def num(v):
         return None
 
 
+def add_freeway_distance(buildings, areas):
+    """Approximate straight-line miles to the nearest freeway, from the map's (generalized) freeway lines."""
+    import math, re
+    geo_f = ROOT / "data/geo.json"
+    if not geo_f.exists():
+        return
+    geo = json.loads(geo_f.read_text())
+    W, E, S, N = geo["bounds"]
+    MW, MH = geo["size"]
+    segs = []
+    for fw in geo["freeways"]:
+        for part in re.split(r"(?=M)", fw["d"]):
+            pts = [tuple(map(float, xy.split(","))) for xy in re.findall(r"-?[\d.]+,-?[\d.]+", part)]
+            ll = [(W + x / MW * (E - W), N - y / MH * (N - S)) for x, y in pts]
+            segs += [(fw["kind"], fw["ref"], ll[i], ll[i + 1]) for i in range(len(ll) - 1)]
+    kx = math.cos(math.radians(33.8)) * 69.17  # miles per degree lng
+    ky = 69.0                                    # miles per degree lat
+
+    def dist(lng, lat, a, b):
+        ax, ay, bx, by = a[0] * kx, a[1] * ky, b[0] * kx, b[1] * ky
+        px, py = lng * kx, lat * ky
+        dx, dy = bx - ax, by - ay
+        t = max(0, min(1, ((px - ax) * dx + (py - ay) * dy) / (dx * dx + dy * dy or 1)))
+        return math.hypot(px - ax - t * dx, py - ay - t * dy)
+
+    label = {"i": "I-", "us": "US-", "ca": "SR-"}
+    for b in buildings:
+        if b.get("lat") is None:
+            continue
+        best = min(segs, key=lambda sg: dist(b["lng"], b["lat"], sg[2], sg[3]))
+        # Generalized freeway lines + estimated coordinates: only a coarse band is honest.
+        d = dist(b["lng"], b["lat"], best[2], best[3])
+        b["freeway_band"] = "under 1 mi" if d < 1 else "1–2 mi" if d < 2 else "over 2 mi"
+    walk = {a["id"]: (a.get("walk") or {}).get("walk_score") for a in areas}
+    for b in buildings:
+        b["area_walk_score"] = walk.get(b.get("area_id"))
+
+
 def main():
     prior = json.loads((ROOT / "data/prior/apartments.json").read_text())
     prior_areas = {norm_name(a["neighborhood"]): a for a in json.loads((ROOT / "data/prior/neighborhoods.json").read_text())}
@@ -243,6 +281,8 @@ def main():
             b["year_built"] = int(bld["year_built"])
         if b.get("checked_on") and b["checked_on"] < "2026-10-26":
             b["checked_on"] = "2026-10-26"
+
+    add_freeway_distance(buildings, areas)
 
     updates = RESEARCH / "updates.json"
     for u in json.loads(updates.read_text()) if updates.exists() else []:

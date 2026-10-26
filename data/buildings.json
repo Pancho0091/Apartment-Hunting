@@ -209,7 +209,9 @@
    "https://essexapartmenthomes.com/apartments/los-angeles/avant",
    "https://nationalcorporatehousing.com/node/131900"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 92
  },
  {
   "id": "glo",
@@ -399,7 +401,9 @@
    "https://edge.apartmentiq.io/los-angeles-ca/glo",
    "https://rebusinessonline.com/201-unit-multifamily-community-fetches-47-5-million/"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 95
  },
  {
   "id": "jia",
@@ -608,7 +612,9 @@
    "https://ampam.com/project/jia-apartments/",
    "https://www.renthop.com/listings/639-n-broadway/one-f/76276786"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 90
  },
  {
   "id": "urban-village-apartments",
@@ -812,7 +818,9 @@
   "detail_sources": [
    "https://www.redfin.com/neighborhood/764734/CA/Long-Beach/Sunrise/1-bedroom-apartments-for-rent"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "1–2 mi",
+  "area_walk_score": 92
  },
  {
   "id": "bixel-at-fifth",
@@ -1001,7 +1009,9 @@
   "detail_sources": [
    "https://www.redfin.com/zipcode/90017/1-bedroom-apartments-for-rent"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 95
  },
  {
   "id": "arancia",
@@ -1181,7 +1191,9 @@
   "detail_sources": [
    "https://www.redfin.com/neighborhood/60167/CA/Los-Angeles/McArthur-Park/apartments-for-rent/page-4"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 88
  },
  {
   "id": "thurman-lofts",
@@ -1367,7 +1379,9 @@
   "detail_sources": [
    "https://redfin.com/neighborhood/1279/CA/Los-Angeles/Historic-Core/1-bedroom-apartments-for-rent"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 95
  },
  {
   "id": "metro-417",
@@ -1558,7 +1572,9 @@
   "detail_sources": [
    "https://en.uhomes.com/us/los-angeles/detail-apartments-1686373"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 95
  },
  {
   "id": "fedora-flats",
@@ -1723,7 +1739,9 @@
   "detail_sources": [
    "https://www.westsiderentals.com/los-angeles-ca/fedora-flats-p8zdv1s"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 93
  },
  {
   "id": "wilshire-vermont",
@@ -1931,7 +1949,9 @@
    "https://www.greystar.com/properties/los-angeles-ca/wilshire-vermont/floorplans",
    "https://klein-financial.com/?p=111"
   ],
-  "required_fees_total": 1.5
+  "required_fees_total": 1.5,
+  "freeway_band": "1–2 mi",
+  "area_walk_score": 93
  },
  {
   "id": "616-kenmore",
@@ -2128,7 +2148,9 @@
   "detail_sources": [
    "https://www.veryapt.com/Apartments-L7611-los-angeles-90005"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "1–2 mi",
+  "area_walk_score": 93
  },
  {
   "id": "104-brookstone-apartments",
@@ -2320,7 +2342,9 @@
    "https://www.apartmentadvisor.com/details/7400-artesia-blvd-buena-park-ca-90621",
    "https://www.westsiderentals.com/buena-park-ca/brookstone-tbxdjxb"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 95
  },
  {
   "id": "latitude-ii",
@@ -2513,7 +2537,9 @@
    "evidence": "WebFetch failed for every page (DNS/proxy errors), so this comes from search-result summaries only (searched 2026-10-26). HotPads: $40 app fee, $0 admin, in-unit laundry, $600 deposit for 2BR (1BR deposit unknown). Westside Rentals: 1969, 262 units, 2 stories, pool, common-area WiFi; W/D marked with asterisk (select units). Pets and parking not found."
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 89
  },
  {
   "id": "vista-apartments",
@@ -2705,7 +2731,9 @@
    "evidence": "WebFetch failed for every page (DNS/proxy errors), so this comes from search-result summaries only (searched 2026-10-26). VeryApt: garage, gym, elevator, gated, 24-hr front desk, cat+dog friendly. Westside Rentals: 1972, studios/1BRs, EV charger, on-site manager, in-unit W/D listed but also 'laundry facilities'. Laundry conflict is a key thing to confirm."
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 90
  },
  {
   "id": "garment-lofts",
@@ -2907,7 +2935,9 @@
   "detail_sources": [
    "https://redfin.com/neighborhood/110858/CA/Los-Angeles/Fashion-District/apartments-for-rent"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 95
  },
  {
   "id": "eleven-eleven-wilshire",
@@ -3116,7 +3146,9 @@
    "evidence": "Not researched: the shared web-search budget ran out (200 calls per turn) before this listing, and page fetches fail, so every field is null/unclear. Needs another pass."
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 95
  },
  {
   "id": "pegasus",
@@ -3321,7 +3353,9 @@
    "evidence": "Not researched: the shared web-search budget ran out (200 calls per turn) before this listing, and page fetches fail, so every field is null/unclear. Needs another pass."
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 95
  },
  {
   "id": "mresidences-olympic-olive",
@@ -3521,7 +3555,9 @@
    "evidence": "Not researched: the shared web-search budget ran out (200 calls per turn) before this listing, and page fetches fail, so every field is null/unclear. Needs another pass."
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 92
  },
  {
   "id": "be-dtla",
@@ -3711,7 +3747,9 @@
    "evidence": "Not researched: the shared web-search budget ran out (200 calls per turn) before this listing, and page fetches fail, so every field is null/unclear. Needs another pass."
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 95
  },
  {
   "id": "1400-fig-apartments",
@@ -3894,7 +3932,9 @@
    "evidence": "Not researched: the shared web-search budget ran out (200 calls per turn) before this listing, and page fetches fail, so every field is null/unclear. Needs another pass."
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 92
  },
  {
   "id": "olympic-by-windsor",
@@ -4088,7 +4128,9 @@
    "evidence": "Not researched: the shared web-search budget ran out (200 calls per turn) before this listing, and page fetches fail, so every field is null/unclear. Needs another pass."
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 92
  },
  {
   "id": "las-fuentes",
@@ -4294,7 +4336,9 @@
   "detail_sources": [
    "https://hoodline.com/2019/09/apartments-for-rent-in-santa-ana-what-will-1-600-get-you/"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": null
  },
  {
   "id": "south-park-by-windsor",
@@ -4494,7 +4538,9 @@
    "https://edge.apartmentiq.io/los-angeles-ca/939-s-broadway",
    "https://www.veryapt.com/Apartments-L2198-los-angeles-90015"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 92
  },
  {
   "id": "lake-dianne",
@@ -4704,7 +4750,9 @@
   "detail_sources": [
    "https://edge.apartmentiq.io/santa-ana-ca/lake-dianne"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": null
  },
  {
   "id": "the-orsini",
@@ -4922,7 +4970,9 @@
    "https://apartmentlist.com/ca/los-angeles/orsini--1",
    "https://www.redfin.com/neighborhood/483/CA/Los-Angeles/Chinatown/1-bedroom-apartments-for-rent"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 90
  },
  {
   "id": "courtyard-apartments-at-la-pat-place",
@@ -5108,7 +5158,9 @@
   "detail_sources": [
    "https://www.forrentuniversity.com/ca/westminster/la-pat-courtyard-apartments/f8ks0vr"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": null
  },
  {
   "id": "palmera",
@@ -5281,7 +5333,9 @@
   "detail_sources": [
    "https://hotpads.com/palmera-anaheim-ca-92802-skfn1j/pad"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 46
  },
  {
   "id": "wilshire-valencia",
@@ -5485,7 +5539,9 @@
    "evidence": "One search for fees/parking/pets returned no listing that could be tied to 1515 Wilshire Blvd (a RealPage 'Wilshire' page had no address so was not used). Nothing else researched before the search budget ran out. Research cut short: the session-wide WebSearch budget (200) ran out partway through this batch and WebFetch failed (DNS ENOTFOUND for apartments.com/westsiderentals.com), so everything here comes from search-result snippets dated 2026-10-26. Fiber, Walk Score, cafe/grocery/metro distances and LAX times were not researched unless stated."
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 88
  },
  {
   "id": "avila-at-rancho-santa-margarita",
@@ -5700,7 +5756,9 @@
   "detail_sources": [
    "https://www.apartmentfinder.com/California/Rancho-Santa-Margarita-Apartments-With-Parking"
   ],
-  "required_fees_total": 128
+  "required_fees_total": 128,
+  "freeway_band": "over 2 mi",
+  "area_walk_score": null
  },
  {
   "id": "solari-silver-lake",
@@ -5889,7 +5947,9 @@
    "evidence": "Point2Homes / VeryApt: built 2022, 60 units, 4-5 floors (stories set to 5), app fee $55, garage parking, EV charging, elevator, key-fob controlled access, sundeck/roof terrace/courtyard, fitness center (VeryApt), on-site mgmt. A Westside Rentals listing at the same address is a furnished corporate rental by another operator - its terms not used. Research cut short: the session-wide WebSearch budget (200) ran out partway through this batch and WebFetch failed (DNS ENOTFOUND for apartments.com/westsiderentals.com), so everything here comes from search-result snippets dated 2026-10-26. Fiber, Walk Score, cafe/grocery/metro distances and LAX times were not researched unless stated."
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 81
  },
  {
   "id": "the-magnolia",
@@ -6081,7 +6141,9 @@
    "https://lbbusinessjournal.com/news/the-magnolia-a-new-142-unit-residential-project-in-downtown-is-46-leased",
    "https://www.zumper.com/apartment-buildings/p772935/the-magnolia-downtown-long-beach-long-beach-ca"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "1–2 mi",
+  "area_walk_score": 92
  },
  {
   "id": "volta-on-pine",
@@ -6281,7 +6343,9 @@
   "detail_sources": [
    "https://www.multihousingnews.com/holland-partner-group-opens-long-beach-community/"
   ],
-  "required_fees_total": 5.78
+  "required_fees_total": 5.78,
+  "freeway_band": "1–2 mi",
+  "area_walk_score": 92
  },
  {
   "id": "luna-on-wilshire",
@@ -6477,7 +6541,9 @@
    "https://www.westsiderentals.com/los-angeles-ca/luna-0lslp30",
    "https://kfalosangeles.com/announcing-the-grand-opening-of-luna-in-koreatown/"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "1–2 mi",
+  "area_walk_score": 93
  },
  {
   "id": "the-rosenell",
@@ -6652,7 +6718,9 @@
   "detail_sources": [
    "https://www.apartmentadvisor.com/details/433-rosenell-terrace-los-angeles-ca-90026"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 82
  },
  {
   "id": "kara",
@@ -6857,7 +6925,9 @@
   "detail_sources": [
    "https://urbanize.la/post/kara-apartments-topped-out-815-s-kingsley-drive-koreatown"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "1–2 mi",
+  "area_walk_score": 93
  },
  {
   "id": "hana",
@@ -7057,7 +7127,9 @@
   "detail_sources": [
    "https://tripalink.com/apartments/los-angeles/koreatown-housing/10000107"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "1–2 mi",
+  "area_walk_score": 93
  },
  {
   "id": "da-vinci",
@@ -7262,7 +7334,9 @@
    "evidence": "NOT RESEARCHED: the session-wide WebSearch budget ran out before this listing was reached, and WebFetch failed (DNS). All fields are null/unclear. Re-run enrichment for this listing. Freeway flag is from general knowledge only: the Da Vinci (909 W Temple) is adjacent to the I-110/US-101 interchange (its 2014 construction fire closed both freeways). Verify. Research cut short: the session-wide WebSearch budget (200) ran out partway through this batch and WebFetch failed (DNS ENOTFOUND for apartments.com/westsiderentals.com), so everything here comes from search-result snippets dated 2026-10-26. Fiber, Walk Score, cafe/grocery/metro distances and LAX times were not researched unless stated."
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 95
  },
  {
   "id": "the-piero",
@@ -7468,7 +7542,9 @@
    "evidence": "NOT RESEARCHED: the session-wide WebSearch budget ran out before this listing was reached, and WebFetch failed (DNS). All fields are null/unclear. Re-run enrichment for this listing. Research cut short: the session-wide WebSearch budget (200) ran out partway through this batch and WebFetch failed (DNS ENOTFOUND for apartments.com/westsiderentals.com), so everything here comes from search-result snippets dated 2026-10-26. Fiber, Walk Score, cafe/grocery/metro distances and LAX times were not researched unless stated."
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 95
  },
  {
   "id": "onyx",
@@ -7669,7 +7745,9 @@
    "evidence": "NOT RESEARCHED: the session-wide WebSearch budget ran out before this listing was reached, and WebFetch failed (DNS). All fields are null/unclear. Re-run enrichment for this listing. Research cut short: the session-wide WebSearch budget (200) ran out partway through this batch and WebFetch failed (DNS ENOTFOUND for apartments.com/westsiderentals.com), so everything here comes from search-result snippets dated 2026-10-26. Fiber, Walk Score, cafe/grocery/metro distances and LAX times were not researched unless stated."
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 92
  },
  {
   "id": "sakura-crossing",
@@ -7860,7 +7938,9 @@
    "evidence": "NOT RESEARCHED: the session-wide WebSearch budget ran out before this listing was reached, and WebFetch failed (DNS). All fields are null/unclear. Re-run enrichment for this listing. Research cut short: the session-wide WebSearch budget (200) ran out partway through this batch and WebFetch failed (DNS ENOTFOUND for apartments.com/westsiderentals.com), so everything here comes from search-result snippets dated 2026-10-26. Fiber, Walk Score, cafe/grocery/metro distances and LAX times were not researched unless stated."
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 95
  },
  {
   "id": "the-paramount-platinum-triangle",
@@ -8065,7 +8145,9 @@
    "evidence": "NOT RESEARCHED: the session-wide WebSearch budget ran out before this listing was reached, and WebFetch failed (DNS). All fields are null/unclear. Re-run enrichment for this listing. Research cut short: the session-wide WebSearch budget (200) ran out partway through this batch and WebFetch failed (DNS ENOTFOUND for apartments.com/westsiderentals.com), so everything here comes from search-result snippets dated 2026-10-26. Fiber, Walk Score, cafe/grocery/metro distances and LAX times were not researched unless stated."
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 46
  },
  {
   "id": "the-edward-apartments",
@@ -8262,7 +8344,9 @@
    "evidence": "NOT RESEARCHED: the session-wide WebSearch budget ran out before this listing was reached, and WebFetch failed (DNS). All fields are null/unclear. Re-run enrichment for this listing. Research cut short: the session-wide WebSearch budget (200) ran out partway through this batch and WebFetch failed (DNS ENOTFOUND for apartments.com/westsiderentals.com), so everything here comes from search-result snippets dated 2026-10-26. Fiber, Walk Score, cafe/grocery/metro distances and LAX times were not researched unless stated."
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": null
  },
  {
   "id": "425-w-4th-st-unit-e",
@@ -8426,7 +8510,9 @@
    "https://www.rentable.co/long-beach-ca/314",
    "https://www.commercialcafe.com/commercial-property/us/ca/long-beach/425-w-4th-st/"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "1–2 mi",
+  "area_walk_score": 92
  },
  {
   "id": "23-n-alboni-pl-townhome-style-condo",
@@ -8583,7 +8669,9 @@
    "https://www.redfin.com/sitemap/CA/90802/street/Alboni+Pl",
    "https://edge.apartmentiq.io/long-beach-ca/35-n-alboni-pl"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "over 2 mi",
+  "area_walk_score": 90
  },
  {
   "id": "1365-masselin-ave-townhome",
@@ -8743,7 +8831,9 @@
    "evidence": "Listing snippet mentions in-unit laundry and parking (type not stated). No pets/AC/fees info found. Search-only enrichment: all WebFetch page loads failed (DNS ENOTFOUND) and the shared WebSearch budget ran out partway (~2 searches/listing), so location fields (cafe, grocery, metro, gym, LAX time, onramp distance) were not researched and are null; fiber not checked."
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "1–2 mi",
+  "area_walk_score": 78
  },
  {
   "id": "10541-lakeside-dr-s-146-lakeside-community-condo",
@@ -8912,7 +9002,9 @@
    "https://www.weichert.com/137284100/",
    "https://www.westsiderentals.com/garden-grove-ca/10590-lakeside-dr-n-3hv0qhg"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": null
  },
  {
   "id": "7122-kittyhawk-ave-unit-0",
@@ -9079,7 +9171,9 @@
   "detail_sources": [
    "https://www.zillow.com/b/7122-kittyhawk-ave-los-angeles-ca-Chsrd9/"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 61
  },
  {
   "id": "hikari",
@@ -9215,7 +9309,9 @@
    }
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 95
  },
  {
   "id": "the-visconti",
@@ -9353,7 +9449,9 @@
    }
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 88
  },
  {
   "id": "sixty-1-eighty",
@@ -9489,7 +9587,9 @@
    }
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 77
  },
  {
   "id": "one-santa-fe",
@@ -9619,7 +9719,9 @@
    }
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 82
  },
  {
   "id": "6633-yucca-st-unit-203",
@@ -9757,7 +9859,9 @@
    }
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 95
  },
  {
   "id": "surf-house-apartments",
@@ -9891,7 +9995,9 @@
    }
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "over 2 mi",
+  "area_walk_score": null
  },
  {
   "id": "the-vivere-flats",
@@ -10027,7 +10133,9 @@
    }
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 46
  },
  {
   "id": "revo-formerly-griffis-platinum-triangle",
@@ -10157,7 +10265,9 @@
    }
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "1–2 mi",
+  "area_walk_score": 46
  },
  {
   "id": "5117-e-the-toledo-unit-03",
@@ -10286,7 +10396,9 @@
    }
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "over 2 mi",
+  "area_walk_score": 86
  },
  {
   "id": "315-cherry-ave",
@@ -10411,7 +10523,9 @@
    }
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "over 2 mi",
+  "area_walk_score": 90
  },
  {
   "id": "eaves-south-coast",
@@ -10538,7 +10652,9 @@
    }
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "over 2 mi",
+  "area_walk_score": 67
  },
  {
   "id": "pointe-mesa-365-w-wilson-st",
@@ -10667,7 +10783,9 @@
    }
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "over 2 mi",
+  "area_walk_score": 67
  },
  {
   "id": "excelsior-apartments",
@@ -10795,7 +10913,9 @@
    }
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "1–2 mi",
+  "area_walk_score": 89
  },
  {
   "id": "the-arbors-santa-ana",
@@ -10922,7 +11042,9 @@
    }
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 75
  },
  {
   "id": "axiom-tustin",
@@ -11053,7 +11175,9 @@
    }
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": null
  },
  {
   "id": "pine-and-9th-executive-suites",
@@ -11180,7 +11304,9 @@
    }
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "1–2 mi",
+  "area_walk_score": 92
  },
  {
   "id": "17372-dairyview-cir-upstairs-1br",
@@ -11308,7 +11434,9 @@
    }
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "over 2 mi",
+  "area_walk_score": null
  },
  {
   "id": "30sixty",
@@ -11452,7 +11580,9 @@
    "https://ktgy.com/work/30sixty",
    "https://rebusinessonline.com/?p=189881"
   ],
-  "required_fees_total": 35
+  "required_fees_total": 35,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 93
  },
  {
   "id": "broadway-palace",
@@ -11590,7 +11720,9 @@
    "https://amberstudent.com/es/places/broadway-palace-los-angeles-2403275323517",
    "https://www.cityfeet.com/cont/listing/1026-s-broadway-los-angeles-ca-90015/cs38554844"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 92
  },
  {
   "id": "702-s-st-andrews-pl-unit-1",
@@ -11720,7 +11852,9 @@
   "detail_sources": [
    "https://www.forrent.com/ca/los-angeles/722-s-st-andrews-pl/gnzh8zx"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "1–2 mi",
+  "area_walk_score": 93
  },
  {
   "id": "3415-london-street-apartments",
@@ -11857,7 +11991,9 @@
    "https://www.padmapper.com/address/3415-london-st-los-angeles-ca-90026-usa",
    "https://prod-release.westsiderentals.com/los-angeles-ca/3415-london-street-1588vb4"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 81
  },
  {
   "id": "4138-perlita-ave-unit-d",
@@ -11995,7 +12131,9 @@
   "detail_sources": [
    "https://www.forrentuniversity.com/ca/los-angeles/4138-perlita-ave/19chjz4"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "1–2 mi",
+  "area_walk_score": 73
  },
  {
   "id": "9819-regent-st-small-palms-building-unit-07",
@@ -12130,7 +12268,9 @@
    "evidence": "LucidRents says building is rent-stabilized (RSO) with 10 stabilized units — implies ~10 units. AC not mentioned. Search-only enrichment: all WebFetch page loads failed (DNS ENOTFOUND) and the shared WebSearch budget ran out partway (~2 searches/listing), so location fields (cafe, grocery, metro, gym, LAX time, onramp distance) were not researched and are null; fiber not checked."
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 90
  },
  {
   "id": "1720-n-taft-ave-taft-apartments",
@@ -12263,7 +12403,9 @@
    "evidence": "LucidRents: built 2000, not RSO, 79 housing violations / 48 complaints on record but overall grade A. No amenity list found. Search-only enrichment: all WebFetch page loads failed (DNS ENOTFOUND) and the shared WebSearch budget ran out partway (~2 searches/listing), so location fields (cafe, grocery, metro, gym, LAX time, onramp distance) were not researched and are null; fiber not checked."
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 95
  },
  {
   "id": "1246-n-sweetzer-ave-small-weho-building",
@@ -12392,7 +12534,9 @@
    "evidence": "No unit details found. West Hollywood RSO likely applies to older buildings (unverified). Search-only enrichment: all WebFetch page loads failed (DNS ENOTFOUND) and the shared WebSearch budget ran out partway (~2 searches/listing), so location fields (cafe, grocery, metro, gym, LAX time, onramp distance) were not researched and are null; fiber not checked."
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "over 2 mi",
+  "area_walk_score": null
  },
  {
   "id": "the-village-at-heritage-place",
@@ -12529,7 +12673,9 @@
   "detail_sources": [
    "https://redfin.com/neighborhood/11262/CA/Anaheim/The-Colony/1-bedroom-apartments-for-rent"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "1–2 mi",
+  "area_walk_score": 46
  },
  {
   "id": "stadium-lofts-individually-owned-condo-rental",
@@ -12667,7 +12813,9 @@
   "detail_sources": [
    "https://affiliated21085617.c21.com/property/1801-e-katella-avenue-4045-anaheim-ca-92805-REN031162506"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 46
  },
  {
   "id": "parallel",
@@ -12803,7 +12951,9 @@
    "evidence": "Deposit $600-800 depending on screening; year built 2017 vs 2018 (point2homes). Parking fee not found. Greystar properties usually have additional mandatory fees — not confirmed. Search-only enrichment: all WebFetch page loads failed (DNS ENOTFOUND) and the shared WebSearch budget ran out partway (~2 searches/listing), so location fields (cafe, grocery, metro, gym, LAX time, onramp distance) were not researched and are null; fiber not checked."
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 46
  },
  {
   "id": "brookhurst-place-i",
@@ -12939,7 +13089,9 @@
   "detail_sources": [
    "https://www.redfin.com/neighborhood/556542/CA/Garden-Grove/Brookhurst-Triangle/luxury-apartments-for-rent"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": null
  },
  {
   "id": "1360-shadow-ln-condo-unit-not-confirmed",
@@ -13077,7 +13229,9 @@
   "detail_sources": [
    "https://www.westsiderentals.com/fullerton-ca/1360-shadow-ln-yx7fbfv"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 54
  },
  {
   "id": "channel-point-condo-unit-rental",
@@ -13215,7 +13369,9 @@
   "detail_sources": [
    "https://www.redfin.com/neighborhood/10145/CA/Long-Beach/University-Park-Estates/apartments-for-rent"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "1–2 mi",
+  "area_walk_score": 86
  },
  {
   "id": "nineteen01",
@@ -13357,7 +13513,9 @@
   "detail_sources": [
    "https://offcampushousing.chapman.edu/housing/property/nineteen01/200z0mb"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 89
  },
  {
   "id": "terra-at-tustin",
@@ -13503,7 +13661,9 @@
    "https://www.rentable.co/tustin-ca/1151-walnut-ave",
    "https://costar.com/article/471543575/pacific-urban-residential-sells-terra-at-tustin-apartments"
   ],
-  "required_fees_total": 75
+  "required_fees_total": 75,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": null
  },
  {
   "id": "the-imperial-apartments",
@@ -13637,7 +13797,9 @@
   "detail_sources": [
    "https://www.yardimatrix.com/property-types/multifamily/orange-county/imperial-1722-north-bush-street-ca-92706--7931/"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 89
  },
  {
   "id": "the-aspens-south-coast",
@@ -13777,7 +13939,9 @@
   "detail_sources": [
    "https://www.redfin.com/neighborhood/115548/CA/Santa-Ana/South-Coast/apartments-for-rent"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "1–2 mi",
+  "area_walk_score": 66
  },
  {
   "id": "saddleback-ranch-apartments",
@@ -13917,7 +14081,9 @@
    "https://www.point2homes.com/US/Apartment-Buildings/CA/Mission-Viejo/Saddleback-Ranch.html",
    "https://redfin.com/neighborhood/42039/CA/Mission-Viejo/La-Paz/apartments-for-rent"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "1–2 mi",
+  "area_walk_score": 36
  },
  {
   "id": "casa-cortez-apartments",
@@ -14051,7 +14217,9 @@
   "detail_sources": [
    "https://www.redfin.com/neighborhood/497664/CA/Tustin/Peppertree/apartments-for-rent"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": null
  },
  {
   "id": "ascent-apartment-homes",
@@ -14185,7 +14353,9 @@
    "evidence": "Aggregator-only data; no official website, fee schedule, year built, or parking details found. In-unit laundry is only in some floorplans, so confirm for any specific unit. Freeway/transit/cafe fields not researched (search budget exhausted); left null/unclear. Page fetches failed (DNS/proxy refusal) and the shared web-search budget ran out mid-batch; all data from search-result snippets seen 2026-10-26."
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": null
  },
  {
   "id": "the-montville",
@@ -14317,7 +14487,9 @@
    "https://prod-release.westsiderentals.com/los-angeles-ca/3701-montclair-st-mxvqjll",
    "https://www.forrentuniversity.com/ca/los-angeles/the-montville/1xvqpl7"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 76
  },
  {
   "id": "condo-savoy-100-s-alameda-st-318",
@@ -14454,7 +14626,9 @@
    "https://hotpads.com/los-angeles-ca-90012-24d981k/244/pad",
    "https://theboutiquere.com/properties/retsPdf/25533351/100-S-Alameda-Street"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 95
  },
  {
   "id": "condo-cornell-building-746-s-los-angeles-st-402",
@@ -14587,7 +14761,9 @@
   "detail_sources": [
    "https://compass.com/building/the-cornell-los-angeles-ca/842979973568605413"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 95
  },
  {
   "id": "graystone-manor-1425-n-sierra-bonita-ave-207",
@@ -14722,7 +14898,9 @@
    "https://www.forrent.com/ca/los-angeles/graystone-manor/x6qzf8m",
    "https://www.padmapper.com/address/1425-n-sierra-bonita-ave-los-angeles-ca-90046-usa"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "1–2 mi",
+  "area_walk_score": 95
  },
  {
   "id": "1206-hayworth-ave-units-3-14",
@@ -14857,7 +15035,9 @@
    "https://www.rentable.co/west-hollywood-ca/1206-n-hayworth-ave",
    "https://www.westsiderentals.com/west-hollywood-ca/1206-hayworth-ave-unit-11-6l0b5kv"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "over 2 mi",
+  "area_walk_score": null
  },
  {
   "id": "1834-s-bentley-ave",
@@ -14986,7 +15166,9 @@
    "evidence": "Only rent/size snippets found. Amenities, W/D, parking, pets and fees unknown; follow-up search blocked by the search budget. 508-996 sq ft range means some 1BRs may be under 700 sq ft. Freeway/transit/cafe fields not researched (search budget exhausted); left null/unclear. Page fetches failed (DNS/proxy refusal) and the shared web-search budget ran out mid-batch; all data from search-result snippets seen 2026-10-26."
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 87
  },
  {
   "id": "hayworth-apartments-924-944-n-hayworth-ave",
@@ -15125,7 +15307,9 @@
    "https://www.westsiderentals.com/west-hollywood-ca/hayworth-apartments-v5ltgkg",
    "https://www.point2homes.com/US/Apartment-Buildings/CA/West-Hollywood/Hayworth-Apartments-F76.html"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "over 2 mi",
+  "area_walk_score": null
  },
  {
   "id": "condo-229-oahu-way-placentia-lakes-1br-loft",
@@ -15266,7 +15450,9 @@
    "evidence": "Gated Placentia Lakes community (pools, saunas, hot tubs, tennis per nearby listings). AC type and parking not stated. Freeway/transit/cafe fields not researched (search budget exhausted); left null/unclear. Page fetches failed (DNS/proxy refusal) and the shared web-search budget ran out mid-batch; all data from search-result snippets seen 2026-10-26."
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "1–2 mi",
+  "area_walk_score": 50
  },
  {
   "id": "condo-221-oahu-way-placentia-lakes",
@@ -15404,7 +15590,9 @@
   "detail_sources": [
    "https://theboutiquere.com/properties/retsPdf/PW25103857/237-Oahu-Way"
   ],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "1–2 mi",
+  "area_walk_score": 50
  },
  {
   "id": "condo-1541-s-pomona-ave-a33-fullerton",
@@ -15543,7 +15731,9 @@
    "evidence": "One assigned space in a shared garage. Square footage, lease term and deposit not shown. 'stories: 1' refers to the unit being single-story per the listing. Freeway/transit/cafe fields not researched (search budget exhausted); left null/unclear. Page fetches failed (DNS/proxy refusal) and the shared web-search budget ran out mid-batch; all data from search-result snippets seen 2026-10-26."
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 95
  },
  {
   "id": "condo-919-n-minter-st-unit-m",
@@ -15676,7 +15866,9 @@
    "evidence": "Only Redfin neighborhood-page snippets found. W/D, parking, fees unknown. Freeway/transit/cafe fields not researched (search budget exhausted); left null/unclear. Page fetches failed (DNS/proxy refusal) and the shared web-search budget ran out mid-batch; all data from search-result snippets seen 2026-10-26."
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 89
  },
  {
   "id": "small-building-unit-2240-franzen-ave-unit-d",
@@ -15808,7 +16000,9 @@
    "evidence": "Apartments.com: second-floor unit in a fourplex, 1 garage, street parking first come (guest parking marked no because only street parking exists). Shared coin laundry fails the in-unit W/D requirement. The contact number appears to be a private landlord's, so it was omitted. 2-story stories value is inferred from the unit being on the second floor of a fourplex. Freeway/transit/cafe fields not researched (search budget exhausted); left null/unclear. Page fetches failed (DNS/proxy refusal) and the shared web-search budget ran out mid-batch; all data from search-result snippets seen 2026-10-26."
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "under 1 mi",
+  "area_walk_score": 75
  },
  {
   "id": "condo-23232-orange-ave-unit-2",
@@ -15938,7 +16132,9 @@
    "evidence": "Not researched: shared web-search budget was exhausted before this listing was reached. All fields null/unclear; see input listing URL. Freeway/transit/cafe fields not researched (search budget exhausted); left null/unclear. Page fetches failed (DNS/proxy refusal) and the shared web-search budget ran out mid-batch; all data from search-result snippets seen 2026-10-26."
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "1–2 mi",
+  "area_walk_score": null
  },
  {
   "id": "condo-23236-orange-ave-4",
@@ -16066,6 +16262,8 @@
    "evidence": "Not researched: shared web-search budget was exhausted before this listing was reached. All fields null/unclear; see input listing URL. Freeway/transit/cafe fields not researched (search budget exhausted); left null/unclear. Page fetches failed (DNS/proxy refusal) and the shared web-search budget ran out mid-batch; all data from search-result snippets seen 2026-10-26."
   },
   "detail_sources": [],
-  "required_fees_total": null
+  "required_fees_total": null,
+  "freeway_band": "1–2 mi",
+  "area_walk_score": null
  }
 ]
