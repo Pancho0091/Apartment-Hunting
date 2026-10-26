@@ -1416,7 +1416,7 @@ html.view-timeline .sidebar, html.view-timeline .filters-btn, html.view-timeline
 .c-line { fill: none; stroke: var(--green); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
 .c-dot { fill: var(--green); stroke: var(--panel); stroke-width: 2; }
 .c-dot.derived { fill: var(--panel); stroke: var(--green); stroke-width: 2; }
-.c-cross { stroke: var(--ink); stroke-width: 1; opacity: .5; pointer-events: none; }
+.c-cross { stroke: var(--ink); stroke-width: 1; stroke-opacity: .45; pointer-events: none; }
 .ctip { position: absolute; z-index: 5; max-width: 280px; padding: 9px 11px; background: var(--ink); color: var(--panel); border-radius: var(--r-2); box-shadow: var(--shadow-float); pointer-events: none; display: grid; gap: 3px; font-size: .8rem; line-height: 1.35; }
 .ctip-k { font: 500 .6rem/1.3 var(--font-mono); letter-spacing: .1em; text-transform: uppercase; color: #cfc7b6; }
 .ctip-v b { font-weight: 600; font-size: .92rem; }
@@ -1430,7 +1430,7 @@ html.view-timeline .sidebar, html.view-timeline .filters-btn, html.view-timeline
 .mini-table tr.win { background: color-mix(in srgb, var(--window) 60%, transparent); }
 .mini-table td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .mini-table td p + .srcl { margin-top: 4px; }
-.share-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 12px; }
+.share-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 12px; }
 .share { margin: 0; padding: 12px 14px 8px; background: var(--panel); border: 1px solid var(--hairline-strong); border-radius: var(--r-2); display: grid; gap: 8px; }
 .share-cap { display: grid; gap: 2px; }
 .share-cap b { font: 400 1.15rem/1.1 var(--font-serif); font-weight: 400; }

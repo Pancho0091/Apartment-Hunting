@@ -58,12 +58,13 @@
      Scoring model
      ========================================================================== */
   const FACTORS = [
-    { key: "drive",  name: "Freeway and traffic",  parts: ["freeway", "traffic"], def: 30 },  // name follows the market (setMarket)
-    { key: "coffee", name: "Coffee and walking",   parts: ["coffee", "walk"], def: 30 },
-    { key: "quiet",  name: "Quiet",                parts: ["quiet"], def: 15 },
-    { key: "safety", name: "Safety",               parts: ["safety"], def: 15 },
+    // pw: optional per-part weights inside a factor (default: equal). Freeway access matters more than traffic.
+    { key: "drive",  name: "Freeway and traffic",  parts: ["freeway", "traffic"], pw: [0.8, 0.2], def: 25 },  // name follows the market (setMarket)
+    { key: "coffee", name: "Coffee and walking",   parts: ["coffee", "walk"], def: 45 },
+    { key: "quiet",  name: "Quiet",                parts: ["quiet"], def: 5 },
+    { key: "safety", name: "Safety",               parts: ["safety"], def: 5 },
     { key: "lax",    name: "LAX",                  parts: ["lax"], def: 5 },
-    { key: "extras", name: "Nightlife, gyms, errands", parts: ["nightlife", "gyms", "services"], def: 5 },
+    { key: "extras", name: "Nightlife, gyms, errands", parts: ["nightlife", "gyms", "services"], def: 15 },
   ];
   const REP = { key: "rep", name: "Building reviews", def: 20 };
   const REQS = [
@@ -119,10 +120,13 @@
     return f;
   }
   const defaultWeights = Object.fromEntries(FACTORS.concat(REP).map(f => [f.key, f.def]));
+  /* Weights v2 (quiet, safety and traffic lowered): a new key, so weights saved under the old
+     defaults do not override the new ones. Reset weights restores these defaults. */
+  const WEIGHTS_KEY = "weights-v2";
   const S = {
     buildings: [], areas: [], areaById: new Map(), market: ls.get("market", "la"),
     f: loadFilters(),
-    weights: Object.assign({}, defaultWeights, ls.get("weights", {})),
+    weights: Object.assign({}, defaultWeights, ls.get(WEIGHTS_KEY, {})),
     q: "", view: ls.get("view", "list"), sort: ls.get("sort", "score"),
     density: ls.get("density", "cards"),
     tsort: ls.get("tsort", { key: "score", dir: -1 }),
@@ -235,7 +239,12 @@
   /* ==========================================================================
      Derived values
      ========================================================================== */
-  const factorScore = (a, f) => { const v = f.parts.map(p => a && a[p] && Number(a[p].score)).filter(x => typeof x === "number" && !isNaN(x)); return v.length ? v.reduce((s, x) => s + x, 0) / v.length : null; };
+  /* Weighted mean of a factor's parts that have a score (part weights renormalize when one is missing). */
+  const factorScore = (a, f) => {
+    let t = 0, w = 0;
+    f.parts.forEach((p, i) => { const x = a && a[p] && Number(a[p].score); if (typeof x !== "number" || isNaN(x)) return; const pw = f.pw ? f.pw[i] : 1; t += x * pw; w += pw; });
+    return w ? t / w : null;
+  };
   function areaScore(a) {
     if (!a) return null; let t = 0, w = 0;
     for (const f of FACTORS) { const s = factorScore(a, f), wt = Number(S.weights[f.key]) || 0; if (s == null || !wt) continue; t += s * wt; w += wt; }
@@ -678,21 +687,21 @@
       g("status", "My status", false,
         tagList("st", STATUSES.map(s => [s.key, s.name]), f.statuses, (k, on) => { toggleIn(f.statuses, k, on); rerender(); }, counts(b => b.my_status || "new"), null, "statuses")),
       g("weights", "Ranking weights", false,
-        h("p", { class: "hint", text: "How much each factor counts toward Best match. Shared by every market." }),
+        h("p", { class: "hint", text: `How much each factor counts toward Best match. Shared by every market. Within ${FACTORS[0].name.toLowerCase()}, freeway access counts ${Math.round(FACTORS[0].pw[0] * 100)}% and traffic ${Math.round(FACTORS[0].pw[1] * 100)}%.` }),
         h("div", { class: "weights" }, ...FACTORS.concat(REP).map(x => {
           const id = "w-" + x.key, share = Math.round((S.weights[x.key] || 0) / totalW * 100);
           return h("div", { class: "weight" },
             h("div", { class: "rangefield-head" }, h("label", { for: id }, factorIcon(x.key), h("span", { text: x.name })), h("output", { for: id, "data-w": x.key, text: share + "%" })),
             h("input", { type: "range", class: "range thin", id, min: 0, max: 50, value: S.weights[x.key] || 0, style: { "--p": ((S.weights[x.key] || 0) / 50 * 100) + "%" },
               oninput: e => {
-                S.weights[x.key] = +e.target.value; e.target.style.setProperty("--p", (+e.target.value / 50 * 100) + "%"); ls.set("weights", S.weights);
+                S.weights[x.key] = +e.target.value; e.target.style.setProperty("--p", (+e.target.value / 50 * 100) + "%"); ls.set(WEIGHTS_KEY, S.weights);
                 const tw = FACTORS.concat(REP).reduce((t, y) => t + (Number(S.weights[y.key]) || 0), 0) || 1;
                 document.querySelectorAll("#filters output[data-w]").forEach(o => { o.textContent = Math.round((S.weights[o.dataset.w] || 0) / tw * 100) + "%"; });
                 cancelAnimationFrame(lightRefresh); lightRefresh = requestAnimationFrame(() => renderResults({ summaryOnly: true }));
                 clearTimeout(restTimer); restTimer = setTimeout(() => renderResults(), 160);
               }, onchange: () => settleRange() }));
         })),
-        h("button", { class: "linkbtn", type: "button", text: "Reset weights", onclick: () => { S.weights = Object.assign({}, defaultWeights); ls.set("weights", S.weights); renderFilters(); renderResults(); } })),
+        h("button", { class: "linkbtn", type: "button", text: "Reset weights", onclick: () => { S.weights = Object.assign({}, defaultWeights); ls.set(WEIGHTS_KEY, S.weights); renderFilters(); renderResults(); } })),
     );
     renderChips();
     updateBadge();
@@ -1594,7 +1603,7 @@
 
   function tlSummary(today) {
     const all = allDone();
-    return h("aside", { class: "tl-summary", "aria-label": "Progress and fixed dates" },
+    return h("div", { class: "tl-summary" },
       h("div", { class: "tl-sum-prog" },
         h("p", { class: "mono-label", text: "Checklist" }),
         h("p", { class: "tl-sum-n" }, h("b", { "data-prog-all": "", text: all }), h("span", { text: ` of ${TASK_TOTAL} done` })),
@@ -1669,7 +1678,7 @@
       withWord ? h("span", { class: "lvl-w", text: x ? x[1] : "—" }) : h("span", { class: "sr", text: x ? x[1] : "not found" }));
   }
   const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-  const firstSentence = t => { const m = String(t || "").match(/^.*?[.!?](\s|$)/); return m ? m[0].trim() : String(t || ""); };
+  const firstSentence = t => String(t || "").split(/(?<=[.!?])\s+(?=[A-Z("'])/)[0].trim();
 
   /* A chart that redraws when its box changes width (fixed-size text at any width). */
   function sized(host, draw) {
@@ -1888,10 +1897,10 @@
   const tidyResearch = t => String(t).replace(/,? so rent_vs_avg_pct is null for every month rather than estimated\./, ", so no monthly rent change is shown rather than an estimate.");
   function lede(t) {
     t = tidyResearch(t);
-    const parts = t.match(/[^.!?]+[.!?]+(\s+|$)/g) || [t];
+    const parts = t.split(/(?<=[.!?])\s+(?=[A-Z("'(])/);
     if (t.length < 420 || parts.length < 4) return h("p", { class: "rsec-lede", text: t });
-    return h("div", { class: "rsec-lede" }, h("p", { text: parts.slice(0, 2).join("").trim() }),
-      h("details", { class: "srcs more" }, h("summary", null, h("span", { text: "Read the full summary" })), h("p", { text: parts.slice(2).join("").trim() })));
+    return h("div", { class: "rsec-lede" }, h("p", { text: parts.slice(0, 2).join(" ") }),
+      h("details", { class: "srcs more" }, h("summary", null, h("span", { text: "Read the full summary" })), h("p", { text: parts.slice(2).join(" ") })));
   }
   function rsec(id, k, title, ledeText, ...body) {
     return h("section", { class: "rsec", id: "tr-" + id, "aria-labelledby": "trh-" + id },
@@ -1966,11 +1975,11 @@
             h("dt", { text: "Operator" }), h("dd", null, vOr(x.operator))),
           srcLinks(x.sources)))))),
       rsec("who", "III", "Who", "Who sets the price, and how much room a leasing office has.",
-        ops && h("div", { class: "rgrid" }, ...ops.map(x => h("article", { class: "rcard" },
+        sub("Operators", ops && h("div", { class: "rgrid" }, ...ops.map(x => h("article", { class: "rcard" },
           h("header", { class: "rcard-head" }, h("h5", { class: "rcard-title", text: x.name || "—" }),
             h("span", { class: "tag " + ({ yes: "ok", somewhat: "amber", no: "bad" }[x.negotiable] || ""), text: "Negotiable: " + ({ yes: "yes", somewhat: "somewhat", no: "no" }[x.negotiable] || "—") })),
           h("dl", { class: "pkv" }, h("dt", { text: "Pricing" }), h("dd", null, vOr(x.pricing)), h("dt", { text: "Concessions" }), h("dd", null, vOr(x.concession_style))),
-          x.note ? h("p", { class: "rcard-note", text: x.note }) : null, srcLinks(x.sources)))),
+          x.note ? h("p", { class: "rcard-note", text: x.note }) : null, srcLinks(x.sources)))))),
         sub(`Your listings with a specials history (${specials.length})`, specials.length ? h("ul", { class: "spec-list" }, ...specials.map(b => {
           const c = b.concessions || {}, last = (c.seen || []).filter(x => x && x.offer).slice(-1)[0];
           return h("li", null, h("button", { type: "button", class: "spec-btn", "data-listing-link": b.id, onclick: () => openBuilding(b) },
