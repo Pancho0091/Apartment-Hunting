@@ -89,10 +89,10 @@ def num(v):
         return None
 
 
-def add_freeway_distance(buildings, areas):
+def add_freeway_distance(buildings, areas, geo_name="geo.json"):
     """Approximate straight-line miles to the nearest freeway, from the map's (generalized) freeway lines."""
     import math, re
-    geo_f = ROOT / "data/geo.json"
+    geo_f = ROOT / "data" / geo_name
     if not geo_f.exists():
         return
     geo = json.loads(geo_f.read_text())
@@ -104,7 +104,7 @@ def add_freeway_distance(buildings, areas):
             pts = [tuple(map(float, xy.split(","))) for xy in re.findall(r"-?[\d.]+,-?[\d.]+", part)]
             ll = [(W + x / MW * (E - W), N - y / MH * (N - S)) for x, y in pts]
             segs += [(fw["kind"], fw["ref"], ll[i], ll[i + 1]) for i in range(len(ll) - 1)]
-    kx = math.cos(math.radians(33.8)) * 69.17  # miles per degree lng
+    kx = math.cos(math.radians((S + N) / 2)) * 69.17  # miles per degree lng
     ky = 69.0                                    # miles per degree lat
 
     def dist(lng, lat, a, b):
