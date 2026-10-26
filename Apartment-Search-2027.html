@@ -4860,7 +4860,7 @@ position:relative;height:clamp(440px,78vh,760px);background:#ece6d8;border:1px s
           plateExtras(a, mkt),
           a.concessions ? h("div", { class: "plate-conc" }, h("span", { class: "fig-k", text: "Concessions" }), levelPips(a.concessions.level),
             h("p", { class: "plate-conc-t", text: [a.concessions.typical_offer, a.concessions.driver].filter(v => v && v !== "unknown").map(firstSentence).join(" · ") || "Offer and driver not found" }),
-            srcLinks(a.concessions.sources)) : null,
+            srcLinks(a.concessions.sources, 1)) : null,
           factorBars(a));
     });
     const sub = `${plural(list.length, "region")} of the atlas, ranked by your weights. Listing counts follow the current filters.`;
@@ -4924,7 +4924,7 @@ position:relative;height:clamp(440px,78vh,760px);background:#ece6d8;border:1px s
       ...FACTORS.map(f => [f.name, b => f1(factorScore(S.areaById.get(b.area_id), f)), b => factorScore(S.areaById.get(b.area_id), f), 1]),
       ["Landlord", b => b.landlord === "private" ? "Private owner" : ((b.reviews && b.reviews.management_company) || "Company")],
       ["Special", b => b.special || "—"],
-      ["Specials history", b => { const p = patternOf(b), c = b.concessions || {}, last = (c.seen || []).filter(x => x && x.offer).slice(-1)[0]; return p === "unknown" ? "—" : PATTERN_WORD[p] + (last ? ` · last seen: ${last.offer}` + (last.when ? ` (${last.when})` : "") : ""); }, b => ({ often: 3, sometimes: 2, rarely: 1 })[patternOf(b)] ?? null, 1],
+      ["Specials history", b => { const p = patternOf(b), c = b.concessions || {}, last = (c.seen || []).filter(x => x && x.offer).slice(-1)[0]; return p === "unknown" ? "—" : PATTERN_WORD[p] + (last ? ` · last seen: ${last.offer}` + (last.when ? ` (${last.when})` : "") : ""); }],
       ["Red flags", b => (b.reviews && b.reviews.dealbreakers) || b.red_flags || "—"],
     ];
     root.append(
@@ -5228,7 +5228,7 @@ position:relative;height:clamp(440px,78vh,760px);background:#ece6d8;border:1px s
 
   function tlSummary(today) {
     const all = allDone();
-    return h("aside", { class: "tl-summary", "aria-label": "Progress and fixed dates" },
+    return h("div", { class: "tl-summary" },
       h("div", { class: "tl-sum-prog" },
         h("p", { class: "mono-label", text: "Checklist" }),
         h("p", { class: "tl-sum-n" }, h("b", { "data-prog-all": "", text: all }), h("span", { text: ` of ${TASK_TOTAL} done` })),
@@ -5276,16 +5276,18 @@ position:relative;height:clamp(440px,78vh,760px);background:#ece6d8;border:1px s
 
   /* ---- Rent timing research ------------------------------------------------------------- */
   const hostOf = u => { try { const x = new URL(u); return /^https?:$/.test(x.protocol) ? x.hostname.replace(/^www\./, "") : null; } catch { return null; } };
-  function srcLinks(list) {
+  function srcLinks(list, max) {
     list = [...new Set((Array.isArray(list) ? list : [list]).filter(x => x != null && x !== "").map(String))];
     if (!list.length) return null;
     // one label per host; further pages on the same host are numbered
     const byHost = new Map();
     for (const u of list) { const k = hostOf(u) || "\u0000" + u; if (!byHost.has(k)) byHost.set(k, []); byHost.get(k).push(u); }
+    const hosts = [...byHost], cut = max && hosts.length > max ? hosts.length - max : 0;
     return h("p", { class: "srcl" }, h("span", { class: "srcl-k", text: list.length === 1 ? "Source" : "Sources" }),
-      ...[...byHost].map(([host, us]) => host.startsWith("\u0000") ? h("span", { class: "srcl-t", text: us[0] })
+      ...hosts.slice(0, max || hosts.length).map(([host, us]) => host.startsWith("\u0000") ? h("span", { class: "srcl-t", text: us[0] })
         : h("span", { class: "srcl-h" }, h("a", { href: us[0], target: "_blank", rel: "noopener", title: us[0], text: host }),
-          ...us.slice(1).map((u, i) => h("a", { class: "srcl-n", href: u, target: "_blank", rel: "noopener", title: u, "aria-label": `${host}, page ${i + 2}`, text: String(i + 2) })))));
+          ...us.slice(1).map((u, i) => h("a", { class: "srcl-n", href: u, target: "_blank", rel: "noopener", title: u, "aria-label": `${host}, page ${i + 2}`, text: String(i + 2) })))),
+      cut ? h("span", { class: "srcl-t", text: `+${cut} more in the report` }) : null);
   }
   const unk = () => h("span", { class: "pv unk", title: "Not found" }, "—", h("span", { class: "sr", text: "not found" }));
   const vOr = v => v == null || v === "" || v === "unknown" ? unk() : h("span", { text: String(v) });
@@ -5600,11 +5602,11 @@ position:relative;height:clamp(440px,78vh,760px);background:#ece6d8;border:1px s
             h("dt", { text: "Operator" }), h("dd", null, vOr(x.operator))),
           srcLinks(x.sources)))))),
       rsec("who", "III", "Who", "Who sets the price, and how much room a leasing office has.",
-        ops && h("div", { class: "rgrid" }, ...ops.map(x => h("article", { class: "rcard" },
+        sub("Operators", ops && h("div", { class: "rgrid" }, ...ops.map(x => h("article", { class: "rcard" },
           h("header", { class: "rcard-head" }, h("h5", { class: "rcard-title", text: x.name || "—" }),
             h("span", { class: "tag " + ({ yes: "ok", somewhat: "amber", no: "bad" }[x.negotiable] || ""), text: "Negotiable: " + ({ yes: "yes", somewhat: "somewhat", no: "no" }[x.negotiable] || "—") })),
           h("dl", { class: "pkv" }, h("dt", { text: "Pricing" }), h("dd", null, vOr(x.pricing)), h("dt", { text: "Concessions" }), h("dd", null, vOr(x.concession_style))),
-          x.note ? h("p", { class: "rcard-note", text: x.note }) : null, srcLinks(x.sources)))),
+          x.note ? h("p", { class: "rcard-note", text: x.note }) : null, srcLinks(x.sources))))),
         sub(`Your listings with a specials history (${specials.length})`, specials.length ? h("ul", { class: "spec-list" }, ...specials.map(b => {
           const c = b.concessions || {}, last = (c.seen || []).filter(x => x && x.offer).slice(-1)[0];
           return h("li", null, h("button", { type: "button", class: "spec-btn", "data-listing-link": b.id, onclick: () => openBuilding(b) },
