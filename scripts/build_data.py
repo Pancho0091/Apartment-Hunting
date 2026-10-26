@@ -37,10 +37,11 @@ def norm_name(s):
 
 
 def region_of(name):
-    if name.startswith("Long Beach"):
+    if name.startswith(("Long Beach", "Signal Hill")):
         return "Long Beach"
     la = ("Downtown LA", "Chinatown", "Little Tokyo", "Echo Park", "Historic Filipinotown",
-          "Silver Lake", "Koreatown", "Mid-City", "Hollywood", "Culver City", "Westchester")
+          "Silver Lake", "Koreatown", "Mid-City", "Hollywood", "Culver City", "Westchester",
+          "West Hollywood", "West LA", "Mar Vista", "Jefferson Park", "Los Feliz", "Atwater", "Highland Park")
     return "Los Angeles" if name.startswith(la) else "Orange County"
 
 
@@ -99,7 +100,18 @@ def main():
         if p:
             a["remote_work"] = {k: p.get(k) for k in ("remote_work_score", "cafes", "coworking", "packages", "internet", "groceries") if p.get(k)}
         areas.append(a)
+    extras_f = RESEARCH / "areas_extras.json"
+    extras = {norm_name(x["neighborhood"]): x.get("extras") for x in (json.loads(extras_f.read_text()) if extras_f.exists() else [])}
+    for a in areas:
+        if extras.get(a["name"]) and not a.get("extras"):
+            a["extras"] = extras[a["name"]]
     area_ids = {a["name"]: a["id"] for a in areas}
+
+    # Round-3 listing detail, keyed by listing id (enrich_*.json) or embedded in find3_* candidates.
+    enrich = {}
+    for f in sorted(RESEARCH.glob("enrich_*.json")):
+        for e in json.loads(f.read_text()):
+            enrich[e["id"]] = e
 
     buildings, missing = [], []
     for r in prior:
@@ -162,6 +174,8 @@ def main():
                 continue
             seen.add(c["name"].lower())
             area_name = norm_name(c.get("area") or "")
+            if area_name.startswith("NEW: ") and area_name[5:] in area_ids:
+                area_name = area_name[5:]
             loc_note = c.get("geocode_note") or ""
             if area_name not in area_ids and c.get("lat") is not None:
                 near = nearest_area(c["lat"], c["lng"])
@@ -188,12 +202,32 @@ def main():
                             "complaints": [], "praise": [], "dealbreakers": "", "recent_trend": "unknown",
                             "management": {"score": None, "summary": c.get("reputation_gist") or ""}},
                 "checked_on": CHECKED_ON, "source": "claude", "my_status": "new", "my_note": "",
-                "batch": "private-oct15" if f.name.startswith("find_p") else "new-oct15",
-                "landlord": "private" if f.name.startswith("find_p") else "company",
+                "batch": "round3-oct26" if f.name.startswith("find3") else "private-oct15" if f.name.startswith("find_p") else "new-oct15",
+                "landlord": c.get("landlord") or ("private" if f.name.startswith("find_p") else "company"),
                 "owner_type": c.get("owner_type"), "platform": c.get("platform"),
                 "hoa_amenities": c.get("hoa_amenities"), "rent_control": c.get("rent_control"),
                 "scam_flags": c.get("scam_flags") or "",
             })
+            if f.name.startswith("find3"):
+                enrich.setdefault(slug(c["name"]), {**c, "parking": c.get("parking_detail")})
+
+    DETAIL_KEYS = ("costs", "pets", "parking", "building", "unit", "internet", "location", "availability", "evidence")
+    for b in buildings:
+        e = enrich.get(b["id"])
+        if not e:
+            continue
+        b["detail"] = {k: e.get(k) for k in DETAIL_KEYS if e.get(k) is not None}
+        b["detail_sources"] = [u for u in (e.get("sources") or []) if u not in b["sources"]]
+        costs = e.get("costs") or {}
+        fees = [x for x in (costs.get("required_fees") or []) if isinstance(x, dict) and isinstance(x.get("amount"), (int, float))]
+        b["required_fees_total"] = round(sum(x["amount"] for x in fees), 2) if fees else None
+        if b.get("parking_fee") is None and isinstance(costs.get("parking_fee"), (int, float)):
+            b["parking_fee"] = costs["parking_fee"]
+        bld = e.get("building") or {}
+        if not b.get("year_built") and isinstance(bld.get("year_built"), (int, float)):
+            b["year_built"] = int(bld["year_built"])
+        if b.get("checked_on") and b["checked_on"] < "2026-10-26":
+            b["checked_on"] = "2026-10-26"
 
     updates = RESEARCH / "updates.json"
     for u in json.loads(updates.read_text()) if updates.exists() else []:
