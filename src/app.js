@@ -4,10 +4,54 @@
      ========================================================================== */
   const JAYNE = { allIn: 2726.83 };
   const DATES = [
-    { label: "Renewal offer expires", date: "2026-11-13" },
-    { label: "Written notice due", date: "2026-12-30" },
-    { label: "Lease ends", date: "2027-01-29" },
+    { id: "renewal", label: "Renewal offer expires", date: "2026-11-13" },
+    { id: "notice", label: "Written notice due", date: "2026-12-30" },
+    { id: "lease", label: "Lease ends", date: "2027-01-29" },
   ];
+  /* Timeline (shared by every market): the fixed dates, then the recommended steps. */
+  const TL = { start: "2026-10-26", end: "2027-02-28" };
+  const HARD = [
+    { id: "renewal", label: "Renewal offer expires", short: "Renewal expires", date: "2026-11-13", basis: "Renewal letter" },
+    { id: "notice", label: "Written notice due", short: "Notice due", date: "2026-12-30", basis: "Renewal letter" },
+    { id: "lease", label: "Lease ends", short: "Lease ends", date: "2027-01-29", basis: "Renewal letter" },
+    { id: "deposit", label: "Deposit return deadline", short: "Deposit due", date: "2027-02-19", basis: "21 days after move-out, Civ. Code 1950.5" },
+  ];
+  const PHASES = [
+    { id: "shortlist", title: "Shortlist", start: "2026-10-26", end: "2026-11-15",
+      why: "Narrow the list while nothing is urgent. Two requirements are rarely stated in listings, so confirm them by phone before spending a weekend on tours.",
+      tasks: [["narrow", "Narrow the list to the buildings worth touring"], ["ac", "Call to confirm central AC"], ["wd", "Call to confirm the in-unit washer/dryer"], ["status", "Set a status on every listing you keep"]] },
+    { id: "renewal", title: "Let the renewal offer lapse", date: "2026-11-13", hard: "renewal",
+      why: "The renewal offer ($2,726.83 a month, all-in) expires on Nov 13. Let it lapse as a decision, not by accident.",
+      tasks: [["decide", "Decide not to renew at $2,726.83"], ["mtm", "Optional fallback: ask The Jayne for its month-to-month or short-term rate, in writing"]] },
+    { id: "listings", title: "Late-January listings appear", start: "2026-12-01", end: "2027-01-01",
+      why: "Most buildings list a unit 30 to 60 days before it is ready, so units for a late-January move-in appear through December.",
+      tasks: [["alerts", "Set saved-search alerts for a Jan 30 move-in"], ["recheck", "Recheck shortlisted buildings for new units each week"]] },
+    { id: "tour", title: "Tour window", start: "2026-12-01", end: "2026-12-14",
+      why: "Tour while the late-January units are new. Have the application packet ready by Dec 1 so you can apply the day you tour.",
+      tasks: [["id", "Packet: photo ID"], ["income", "Packet: pay stubs or offer letter"], ["bank", "Packet: bank statements"], ["credit", "Packet: a credit report"], ["refs", "Packet: references"], ["insurance", "Packet: a renters-insurance quote"], ["book", "Book the tours"]] },
+    { id: "negotiate", title: "Negotiation window", start: "2026-12-15", end: "2026-12-23",
+      why: "Leasing offices have year-end occupancy goals. Ask for more than the posted special, and judge offers on net-effective rent.",
+      tasks: [["special", "Ask for the current special"], ["fees", "Ask to waive application and admin fees"], ["parking", "Ask for free parking"], ["net", "Compare net-effective rent against base rent"]] },
+    { id: "sign", title: "Target signing date", date: "2026-12-23",
+      why: "Signing by Dec 23 leaves a week's buffer before written notice is due.",
+      tasks: [["sign", "Sign the new lease"], ["movein", "Get the move-in date (about Jan 30) in writing"]] },
+    { id: "notice", title: "Written notice to The Jayne", date: "2026-12-30", hard: "notice",
+      why: "Notice is due by Dec 30. Send it in writing and keep proof that it was delivered.",
+      tasks: [["send", "Send written notice"], ["proof", "Keep proof of delivery"]] },
+    { id: "logistics", title: "Move logistics", start: "2027-01-02", end: "2027-01-25",
+      why: "Book what has lead times first: movers, the internet install and the elevator or loading dock.",
+      tasks: [["movers", "Book movers"], ["utilities", "Set up utilities"], ["internet", "Schedule the internet install"], ["insurance", "Start renters insurance"], ["usps", "Forward mail with USPS"], ["permit", "Get a parking permit"], ["dock", "Book the elevator or loading dock"]] },
+    { id: "inspection", title: "Pre-move-out inspection", date: "2027-01-15",
+      why: "California lets you ask for an inspection about two weeks before move-out, so you can fix what it lists before the deposit is assessed (Civ. Code 1950.5(f)).",
+      tasks: [["request", "Request the inspection in writing"], ["inspect", "Do the inspection, about Jan 15"]] },
+    { id: "move", title: "Lease ends; move in", start: "2027-01-29", end: "2027-01-30", hard: "lease",
+      why: "The Jayne lease ends Jan 29; move in around Jan 30. Photograph both units.",
+      tasks: [["photo-old", "Photograph The Jayne unit, empty"], ["photo-new", "Photograph the new unit before unpacking"]] },
+    { id: "deposit", title: "Deposit back", date: "2027-02-19", hard: "deposit",
+      why: "The deposit, with an itemized statement for any deductions, is due within 21 days of move-out (Civ. Code 1950.5).",
+      tasks: [["forward", "Give The Jayne a forwarding address"], ["received", "Deposit received by Feb 19"]] },
+  ];
+  PHASES.forEach((p, i) => { p.n = i + 1; });
   const RENT_CAP = 2300, MIN_SQFT = 700;
 
   /* ==========================================================================
@@ -45,7 +89,7 @@
   const TRI_MODES = [["any", "Any"], ["yes", "Yes"], ["maybe", "Not ruled out"]];
   const LANDLORDS = { company: "Management company", private: "Private owner" };
   const SORTS = [["score", "Best match"], ["value", "Best match per dollar"], ["rent", "Lowest rent"], ["cost", "Lowest true monthly cost"], ["sqft", "Largest"], ["ppsf", "Lowest $/sq ft"], ["reviews", "Best reviewed"], ["name", "Name"]];
-  const VIEWS = [["list", "Specimens"], ["table", "Table"], ["map", "Map"], ["areas", "Neighborhoods"], ["compare", "Compare"], ["add", "Add"]];
+  const VIEWS = [["list", "Specimens"], ["table", "Table"], ["map", "Map"], ["areas", "Neighborhoods"], ["compare", "Compare"], ["timeline", "Timeline"], ["add", "Add"]];
   const ROMAN = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"];
 
   /* ==========================================================================
@@ -62,6 +106,7 @@
     statuses: ["new", "watch", "tour", "applied"], mustHave: [], hideScam: true, newOnly: false,
     cats: "any", dogs: "any", garage: "any", ev: "any", gym: "any", pool: "any", elevator: "any", access: "any", balcony: "any",
     minYear: YEAR_MIN, yearUnknown: true, fwy: FWY_BANDS.map(([k]) => k), maxHeat: HEAT_MAX, minWalk: 0, walkUnknown: true, minDoc: 0,
+    specials: "any",
   };
   const freshFilters = () => JSON.parse(JSON.stringify(DEFAULT_FILTERS));
   /* Saved filters from earlier versions kept an allow-list of LA regions; keep only what is hidden,
