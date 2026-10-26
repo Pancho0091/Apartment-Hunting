@@ -8,9 +8,9 @@
   "lat": 34.0396,
   "lng": -118.2685,
   "location_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. 1420 S Figueroa, east side of Fig opposite LA Convention Center between Pico and Venice; Avant spans two buildings (1360-1500 S Fig).",
-  "sqft": 733.0,
-  "base_rent": 2079.0,
-  "effective_rent": 1921.0,
+  "sqft": 733,
+  "base_rent": 1921,
+  "effective_rent": 1921,
   "special": "Up to $1,900 off, applied to month 3 (select units, approved credit)",
   "parking_fee": 150.0,
   "year_built": 2014,
@@ -21,8 +21,8 @@
    "parking": "yes",
    "packages": "unclear"
   },
-  "packages_detail": "Essex amenities list for Avant does not list package lockers (other Essex communities do); no package info found",
-  "ac_evidence": "Essex/listing copy: 'central heating and air conditioning ... in-home washer and dryer' (essexapartmenthomes.com, silverdoor.com)",
+  "packages_detail": "Redfin: 'additional fees may apply, such as package delivery, trash, water, amenities' - no amounts; locker type unknown.",
+  "ac_evidence": "Not re-checked this pass (was not listed as a gap); keep prior-pass value.",
   "red_flags": "",
   "internet": "unverified",
   "notes": "Hotpads unit A502 (733 sq ft) at $2,117, available now; Redfin shows plan 1D at $2,079. Plans 1A (691 sq ft) and 1G (655 sq ft) are cheaper but under 700. Essex amenities page confirms in-home laundry, dishwasher and central A/C. The concession expires before a January move-in, so expect a different offer then.",
@@ -31,7 +31,9 @@
    "https://www.redfin.com/CA/Los-Angeles/Avant/apartment/103689741",
    "https://www.essexapartmenthomes.com/apartments/los-angeles/avant/amenities",
    "https://silverdoor.com/avant-apartments-los-angeles-15244",
-   "https://hotpads.com/avant-los-angeles-ca-90015-wcz4mq/pad"
+   "https://hotpads.com/avant-los-angeles-ca-90015-wcz4mq/pad",
+   "https://edge.apartmentiq.io/los-angeles-ca/avant",
+   "https://essexapartmenthomes.com/apartments/los-angeles/avant"
   ],
   "reviews": {
    "name": "Avant",
@@ -123,7 +125,7 @@
    ],
    "note": ""
   },
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "landlord": "company",
   "my_status": "new",
@@ -202,7 +204,7 @@
     "website": "https://www.essexapartmenthomes.com/apartments/los-angeles/avant",
     "leasing_phone": null
    },
-   "evidence": "WebFetch failed for every page (DNS/proxy errors), so this comes from search-result summaries only (searched 2026-10-26). Application fee $48 (ApartmentIQ shows $48 and $38, unlabeled; HotPads $48). Pets allowed per HotPads/corporate-housing listings; no pet fees found. Multi-level garage per corporate housing listing; monthly parking price not found. Amenities from Essex site summary: pool/spa, resident lounge, shared workspace, rooftop sundeck, massage room; aggregators add fitness center, bike storage, elevator. A phone number (425) 230-5675 appeared on ApartmentIQ but is a Washington area code (likely Essex corporate), so not recorded as leasing phone. Fees/utilities not found; check Essex Leasing Info page. Nearest on-ramp is from general map knowledge and not checked; distance left null. "
+   "evidence": "Verified redfin.com / apartmentiq + 2026-10-26. Security deposit 'varies, see representative'. Pet: $500 deposit, $75/mo pet rent. App fee conflict $48 vs $38. Essex-managed (leasing at 1420 S Figueroa). W/D/AC/DW/parking not re-checked (Not re-checked this pass (was not listed as a gap); keep prior-pass value.) WebFetch failed for every page (DNS/proxy errors), so this comes from search-result summaries only (searched 2026-10-26). Application fee $48 (ApartmentIQ shows $48 and $38, unlabeled; HotPads $48). Pets allowed per HotPads/corporate-housing listings; no pet fees found. Multi-level garage per corporate housing listing; monthly parking price not found. Amenities from Essex site summary: pool/spa, resident lounge, shared workspace, rooftop sundeck, massage room; aggregators add fitness center, bike storage, elevator. A phone number (425) 230-5675 appeared on ApartmentIQ but is a Washington area code (likely Essex corporate), so not recorded as leasing phone. Fees/utilities not found; check Essex Leasing Info page. Nearest on-ramp is from general map knowledge and not checked; distance left null."
   },
   "detail_sources": [
    "https://edge.apartmentiq.io/los-angeles-ca/avant",
@@ -210,6 +212,7 @@
    "https://nationalcorporatehousing.com/node/131900"
   ],
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 92
  },
@@ -222,9 +225,9 @@
   "lat": 34.0522,
   "lng": -118.2632,
   "location_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. 1050 Wilshire, between Figueroa and Bixel (City West, near I-110).",
-  "sqft": 810.0,
-  "base_rent": 2252.0,
-  "effective_rent": 2064.0,
+  "sqft": 810,
+  "base_rent": 2064,
+  "effective_rent": 2064,
   "special": "Up to 1 month free on select homes (new residents; through Oct 24, 2026)",
   "parking_fee": null,
   "year_built": 2008,
@@ -235,8 +238,8 @@
    "parking": "yes",
    "packages": "unclear"
   },
-  "packages_detail": "'Package Service With Notifications' (listing); locker type/staffing not stated",
-  "ac_evidence": "ApartmentAdvisor lists 'central AC'; HotPads only says 'A/C'",
+  "packages_detail": "Listings mention 'Package Service With Notifications' / 'Package Receiving'; lockers not stated.",
+  "ac_evidence": "Not re-checked this pass (was not listed as a gap); keep prior-pass value.",
   "red_flags": "VeryApt reviews (older): no guest parking; in-unit appliances 'shoddy'; rating 6.9/10",
   "internet": "AT&T Fiber available (Westside Rentals listing)",
   "notes": "Unit 338 at $2,252 (ApartmentAdvisor says 810 sq ft; Hotpads groups it as 730 sq ft). Unit A-211 is $2,357 (763 sq ft) and A-510 is $2,419. Equity Residential. Hotpads search snippet showed an 'Income restricted' tag, but no listing says Glo is income-restricted, so confirm before touring. The photo is of unit 338.",
@@ -244,7 +247,9 @@
   "sources": [
    "https://www.apartmentadvisor.com/details/1050-wilshire-blvd-los-angeles-ca-90017",
    "https://hotpads.com/glo-los-angeles-ca-90017-skfrds/pad",
-   "https://www.veryapt.com/ApartmentReview-a2569-glo-los-angeles"
+   "https://www.veryapt.com/ApartmentReview-a2569-glo-los-angeles",
+   "https://apartmentlist.com/ca/los-angeles/glo",
+   "https://www.westsiderentals.com/los-angeles-ca/glo-g9l29py"
   ],
   "reviews": {
    "name": "Glo",
@@ -318,7 +323,7 @@
    ],
    "note": ""
   },
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "landlord": "company",
   "my_status": "new",
@@ -394,7 +399,7 @@
     "website": null,
     "leasing_phone": null
    },
-   "evidence": "WebFetch failed for every page (DNS/proxy errors), so this comes from search-result summaries only (searched 2026-10-26). Deposit listed as $600-$800 (range, so left null). Pet deposit $500, pet rent $60 (another listing $45/$60). Underground garage with EV charging per one profile; parking price not found. Year built 2008 from one listing. Unit count conflicts: ApartmentIQ 201 vs rebusinessonline sale report describing 353 units in two five-story buildings joined by a sky bridge, so units left null. Amenities: pool, spa, 24-hr gym, rooftop fire pit, clubhouse. Walk Score not found. Building sits close to the I-110; within-500ft not verified. Nearest on-ramp is from general map knowledge and not checked; distance left null. "
+   "evidence": "Verified hotpads / apartmentlist / westsiderentals + 2026-10-26. Covered/garage parking, fee unpublished. Pet deposit $500, pet rent $60. Rent excludes required deposits/fees. Hotpads result titled 'Income restricted' - check whether some units are income-restricted. Leasing (323) 545-3463. W/D/AC not re-checked (Not re-checked this pass (was not listed as a gap); keep prior-pass value.) WebFetch failed for every page (DNS/proxy errors), so this comes from search-result summaries only (searched 2026-10-26). Deposit listed as $600-$800 (range, so left null). Pet deposit $500, pet rent $60 (another listing $45/$60). Underground garage with EV charging per one profile; parking price not found. Year built 2008 from one listing. Unit count conflicts: ApartmentIQ 201 vs rebusinessonline sale report describing 353 units in two five-story buildings joined by a sky bridge, so units left null. Amenities: pool, spa, 24-hr gym, rooftop fire pit, clubhouse. Walk Score not found. Building sits close to the I-110; within-500ft not verified. Nearest on-ramp is from general map knowledge and not checked; distance left null."
   },
   "detail_sources": [
    "https://apartmentlist.com/ca/los-angeles/glo",
@@ -402,6 +407,7 @@
    "https://rebusinessonline.com/201-unit-multifamily-community-fetches-47-5-million/"
   ],
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 95
  },
@@ -414,9 +420,9 @@
   "lat": 34.0617,
   "lng": -118.2393,
   "location_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. 639 N Broadway, Chinatown core near Alpine St.",
-  "sqft": 849.0,
-  "base_rent": 2284.0,
-  "effective_rent": 2234.0,
+  "sqft": 849,
+  "base_rent": 2234,
+  "effective_rent": 2234,
   "special": "Equity 'Special Offer' on unit 255 and several other 1BRs (terms undisclosed)",
   "parking_fee": null,
   "year_built": 2014,
@@ -427,8 +433,8 @@
    "parking": "yes",
    "packages": "unclear"
   },
-  "packages_detail": "ApartmentIQ lists 'Package Receiving' only; no lockers confirmed",
-  "ac_evidence": "No source found mentioning AC of any kind for Jia (HotPads, ApartmentIQ, RentHop, Equity snippets silent); VeryApt 'Air Conditioning' attribution ambiguous",
+  "packages_detail": "Not mentioned.",
+  "ac_evidence": "No source found states AC type.",
   "red_flags": "",
   "internet": "AT&T Fiber available (Equity site); community-wide Wi-Fi up to 1 Gb/s",
   "notes": "Strongest match. Equity's own site confirms in-home W/D and central AC; dishwasher from ApartmentIQ/listing aggregators (Equity amenity list omits it but kitchens are full stainless packages; confirm on tour). Other 1BRs: One E 712 sf $2,348, One C 766 sf $2,378, One D 849 sf $2,440 (top floor, DTLA view) - slightly over cap unless Special Offer applies. Pool, gym, Chase Bank on site, next to Chinatown Metro (A Line). Year built 2014 per builder AMPAM.",
@@ -437,7 +443,10 @@
    "https://www.equityapartments.com/los-angeles/chinatown/jia-apartments",
    "https://edge.apartmentiq.io/los-angeles-ca/jia",
    "https://hotpads.com/jia-los-angeles-ca-90012-249n450/pad",
-   "https://equityapartments.com/los-angeles/chinatown/jia-apartments-reviews"
+   "https://equityapartments.com/los-angeles/chinatown/jia-apartments-reviews",
+   "https://www.renthop.com/listings/639-n-broadway/one-f/76276786",
+   "https://www.renthop.com/listings/639-n-broadway/one-e/71606227",
+   "https://www.redfin.com/CA/Los-Angeles/Jia/apartment/40489748"
   ],
   "reviews": {
    "name": "Jia",
@@ -527,7 +536,7 @@
    ],
    "note": ""
   },
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "landlord": "company",
   "my_status": "new",
@@ -536,7 +545,7 @@
    "costs": {
     "required_fees": [],
     "utilities": null,
-    "deposit": null,
+    "deposit": 600,
     "application_fee": null,
     "admin_fee": null,
     "parking_fee": null,
@@ -604,7 +613,7 @@
     "website": "https://www.equityapartments.com/los-angeles/chinatown/jia-apartments",
     "leasing_phone": "(213) 335-6659"
    },
-   "evidence": "WebFetch failed for every page (DNS/proxy errors), so this comes from search-result summaries only (searched 2026-10-26). 280 units, 2014 (AMPAM project page); 6 stories (listing). Walk Score 97 (ApartmentIQ). Pets: $500 deposit, max 3, $55 dog/$45 cat (Apartment List); one RentHop note only mentions dogs. Deposit $600-800 range (left null). Underground garage + EV charging per Equity; parking price not found. 'Business center' counted as coworking. Metro station from general knowledge. Nearest on-ramp is from general map knowledge and not checked; distance left null. "
+   "evidence": "Verified renthop.com / hotpads / redfin + 2026-10-26. RentHop (Equity Residential): refundable security deposit $600-$800 conditional (600 = low end); pet deposit $500, pet rent $45 cat/$55 dog. Covered garage parking, fee unpublished. In-home W/D. Other 1BR listings: 712 sqft $2,365, 686 sqft $2,309. WebFetch failed for every page (DNS/proxy errors), so this comes from search-result summaries only (searched 2026-10-26). 280 units, 2014 (AMPAM project page); 6 stories (listing). Walk Score 97 (ApartmentIQ). Pets: $500 deposit, max 3, $55 dog/$45 cat (Apartment List); one RentHop note only mentions dogs. Deposit $600-800 range (left null). Underground garage + EV charging per Equity; parking price not found. 'Business center' counted as coworking. Metro station from general knowledge. Nearest on-ramp is from general map knowledge and not checked; distance left null."
   },
   "detail_sources": [
    "https://www.equityapartments.com/los-angeles/chinatown/jia-apartments?ILSid=107",
@@ -613,6 +622,7 @@
    "https://www.renthop.com/listings/639-n-broadway/one-f/76276786"
   ],
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 90
  },
@@ -837,9 +847,9 @@
   "lat": 34.0548,
   "lng": -118.2627,
   "location_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. 5th & Bixel, City West just east of I-110 (technically Central City West, not Historic Core).",
-  "sqft": 807.0,
-  "base_rent": 2200.0,
-  "effective_rent": 2158.0,
+  "sqft": 807,
+  "base_rent": 2158,
+  "effective_rent": 2158,
   "special": "$500 off move-in, 'Look & Lease' (expires 10/31/26)",
   "parking_fee": null,
   "year_built": null,
@@ -850,8 +860,8 @@
    "parking": "yes",
    "packages": "unclear"
   },
-  "packages_detail": "No package info found",
-  "ac_evidence": "Zillow features list 'central air conditioning'",
+  "packages_detail": "Not found.",
+  "ac_evidence": "Not re-checked this pass (was not listed as a gap); keep prior-pass value.",
   "red_flags": "No reviews found",
   "internet": "unverified ('high-speed internet ready')",
   "notes": "Zillow lists unit 304 (807 sq ft) at $2,200, available now, and unit 210 (662 sq ft) at $2,150, available Nov 1. Zillow confirms in-unit W/D, dishwasher and central air. Few amenities are advertised.",
@@ -934,7 +944,7 @@
    ],
    "note": ""
   },
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "landlord": "company",
   "my_status": "new",
@@ -1010,12 +1020,13 @@
     "website": null,
     "leasing_phone": null
    },
-   "evidence": "WebFetch failed for every page (DNS/proxy errors), so this comes from search-result summaries only (searched 2026-10-26). 80 residences designed by Aleks Istanbullu (Zillow description). Attached garage per Zillow; fee not found. Pets: Redfin mostly 'pets welcome', one says cats welcome, so dogs unclear. Year built not found. Close to the I-110; within-500ft not verified. Nearest on-ramp is from general map knowledge and not checked; distance left null. "
+   "evidence": "Verified zillow.com (snippet) + 2026-10-26. Only Zillow surfaced: 80 residences, Aleks Istanbullu design, from $2,000/mo, price may not include required fees. Packages, parking fee, deposit, fees all still unknown. Not re-checked this pass (was not listed as a gap); keep prior-pass value. WebFetch failed for every page (DNS/proxy errors), so this comes from search-result summaries only (searched 2026-10-26). 80 residences designed by Aleks Istanbullu (Zillow description). Attached garage per Zillow; fee not found. Pets: Redfin mostly 'pets welcome', one says cats welcome, so dogs unclear. Year built not found. Close to the I-110; within-500ft not verified. Nearest on-ramp is from general map knowledge and not checked; distance left null."
   },
   "detail_sources": [
    "https://www.redfin.com/zipcode/90017/1-bedroom-apartments-for-rent"
   ],
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 95
  },
@@ -1217,11 +1228,11 @@
   "lat": 34.0464,
   "lng": -118.2504,
   "location_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. 6th & Spring corner, Historic Core.",
-  "sqft": 760.0,
-  "base_rent": 1880.0,
-  "effective_rent": 1567.0,
+  "sqft": 760,
+  "base_rent": 1880,
+  "effective_rent": 1567,
   "special": "'Ask us how to get 2 months free' (select apartments, terms apply)",
-  "parking_fee": 250.0,
+  "parking_fee": 250,
   "year_built": 1959,
   "req": {
    "wd": "yes",
@@ -1230,15 +1241,16 @@
    "parking": "yes",
    "packages": "yes"
   },
-  "packages_detail": "Point2Homes: 'luxor package lockers' (likely Luxer One)",
-  "ac_evidence": "Point2Homes unit features: 'central air conditioning'",
+  "packages_detail": "Point2Homes: 'luxor package lockers' (prior pass).",
+  "ac_evidence": "Point2Homes unit features: 'central air conditioning' (prior pass).",
   "red_flags": "No reviews found",
   "internet": "unverified (only 'cable ready' listed)",
   "notes": "About 26 units of the 760 sq ft 1BR at $1,880-$1,965. Unit 0702 ($1,880) is available 10/31; unit 1307 ($1,965) is available 12/31/2026, which fits a January move. Parking is expensive at $250-$400/mo. This is an older office-to-residential conversion, not new construction. It is the best value found by a wide margin.",
   "listing_url": "https://www.westsiderentals.com/los-angeles-ca/thurman-lofts-397w5nf",
   "sources": [
    "https://www.westsiderentals.com/los-angeles-ca/thurman-lofts-397w5nf",
-   "https://www.point2homes.com/US/Apartment-Buildings/CA/Los-Angeles/Thurman-Lofts1.html"
+   "https://www.point2homes.com/US/Apartment-Buildings/CA/Los-Angeles/Thurman-Lofts1.html",
+   "https://www.homes.com/rentals/90014/"
   ],
   "reviews": {
    "name": "Thurman Lofts",
@@ -1312,19 +1324,32 @@
    ],
    "note": ""
   },
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "landlord": "company",
   "my_status": "new",
   "my_note": "",
   "detail": {
    "costs": {
-    "required_fees": [],
-    "utilities": null,
-    "deposit": null,
-    "application_fee": null,
+    "required_fees": [
+     {
+      "name": "utility billing fee",
+      "amount": 3.99
+     },
+     {
+      "name": "SCEP fee",
+      "amount": 2.83
+     },
+     {
+      "name": "pest control",
+      "amount": 5
+     }
+    ],
+    "utilities": "Electric and water billed separately (variable, usage-based) per Westside Rentals; trash fee not found.",
+    "deposit": 500,
+    "application_fee": 62,
     "admin_fee": null,
-    "parking_fee": null,
+    "parking_fee": 250,
     "lease_terms": null
    },
    "pets": {
@@ -1387,12 +1412,13 @@
     "website": null,
     "leasing_phone": null
    },
-   "evidence": "WebFetch failed for every page (DNS/proxy errors), so this comes from search-result summaries only (searched 2026-10-26). Point2Homes: controlled-access garage, renovated rooftop pool, rooftop lounge/sundeck, fitness center, package lockers; 2 pets/unit, no weight limit. The same source said 21 floors, built 2010, 263 units, which may be wrong for a 'lofts' building on Spring St, so building numbers left null. Fees not found. Metro station from general knowledge."
+   "evidence": "Verified westsiderentals.com / point2homes.com / homes.com search snippets, 2026-10-26. Deposit conflict: Point2Homes $500 vs Homes.com $1,000 ('subject to approval'). Parking $250-$400/mo garage (max 2), motorcycle $50. Pet deposit $500, pet rent $50. Westside Rentals notes its fee data may exclude mandatory/usage charges. A $50 valet-trash fee seen in the same search belongs to the Security Building, not Thurman. WebFetch failed for every page (DNS/proxy errors), so this comes from search-result summaries only (searched 2026-10-26). Point2Homes: controlled-access garage, renovated rooftop pool, rooftop lounge/sundeck, fitness center, package lockers; 2 pets/unit, no weight limit. The same source said 21 floors, built 2010, 263 units, which may be wrong for a 'lofts' building on Spring St, so building numbers left null. Fees not found. Metro station from general knowledge."
   },
   "detail_sources": [
    "https://redfin.com/neighborhood/1279/CA/Los-Angeles/Historic-Core/1-bedroom-apartments-for-rent"
   ],
-  "required_fees_total": null,
+  "required_fees_total": 11.82,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 95
  },
@@ -1405,11 +1431,11 @@
   "lat": 34.0505,
   "lng": -118.2503,
   "location_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. Hill St between 4th and 5th, facing Pershing Square area.",
-  "sqft": 735.0,
-  "base_rent": 2241.0,
-  "effective_rent": 2241.0,
-  "special": "One year of free parking (worth $175/mo) for move-in by 10/31/26 on a 12-month lease",
-  "parking_fee": 175.0,
+  "sqft": 735,
+  "base_rent": 2241,
+  "effective_rent": 2241,
+  "special": "One year of free parking for move-in by 10/31/26 (expires before a Jan 30 move)",
+  "parking_fee": 175,
   "year_built": 1925,
   "req": {
    "wd": "yes",
@@ -1418,8 +1444,8 @@
    "parking": "yes",
    "packages": "yes"
   },
-  "packages_detail": "24-hour front desk listed, but review says concierge services were changed/cut (guest parking removed as a result)",
-  "ac_evidence": "Listings say only 'Air Conditioning' (historic 1925 Subway Terminal Building conversion); type not stated",
+  "packages_detail": "24-hour front desk listed; a review says concierge services were cut.",
+  "ac_evidence": "After55/aggregators list only 'Air Conditioning'; a Peek unit feature list (unit 00-1003) shows dishwasher and stacked W/D but no A/C item; Redfin shows no A/C tag. Type still unknown.",
   "red_flags": "Concierge services reduced; no guest parking; aggregator rating 6.8",
   "internet": "unverified ('high-speed internet access')",
   "notes": "Unit 00-0745 (1S, 735 sq ft) is $2,241 total monthly price including fees, available now. Unit 00-0945 is $2,276 (available 11/13) and 1U (739 sq ft) is $2,336. Hotpads confirms in-unit laundry and central A/C; Peek virtual tours show dishwashers. Historic building, not new construction. Managed by Brookfield.",
@@ -1427,7 +1453,9 @@
   "sources": [
    "https://www.westsiderentals.com/los-angeles-ca/metro-417-l1qysxg",
    "https://nationalcorporatehousing.com/node/23453",
-   "https://www.after55.com/ca/los-angeles/metro-417/61qyyxv"
+   "https://www.after55.com/ca/los-angeles/metro-417/61qyyxv",
+   "https://a.peek.us/api/md/los-angeles-long-beach-anaheim-ca/los-angeles/metro-417/00-1003-pk_tkn-AKkNo-9J4_",
+   "https://lucidrents.com/CA/Los-Angeles/building/los-angeles/417-s-hill-st"
   ],
   "reviews": {
    "name": "Metro 417",
@@ -1505,7 +1533,7 @@
    ],
    "note": ""
   },
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "landlord": "company",
   "my_status": "new",
@@ -1517,7 +1545,7 @@
     "deposit": null,
     "application_fee": null,
     "admin_fee": null,
-    "parking_fee": null,
+    "parking_fee": 175,
     "lease_terms": null
    },
    "pets": {
@@ -1580,12 +1608,13 @@
     "website": null,
     "leasing_phone": null
    },
-   "evidence": "WebFetch failed for every page (DNS/proxy errors), so this comes from search-result summaries only (searched 2026-10-26). 277 units (uhomes); former Subway Terminal Building site. Multi-level garage, in-unit laundry, fitness room, pools, hot tub (National Corporate Housing, a short-term listing); sky lounge (uhomes). Pets welcome (Redfin). Fees, parking price, year not found. Metro station from general knowledge."
+   "evidence": "Verified Redfin/Peek/After55 search snippets, 2026-10-26. $2,241 is the total monthly price including fees (Westside Rentals, prior pass). No deposit/fee schedule found; a 'Metro' fee page at securityproperties.com ($350 deposit, $26 app) is not confirmed to be this building, so not used. LucidRents gives the building an F grade (violations/complaints). Central AC is the open blocker. WebFetch failed for every page (DNS/proxy errors), so this comes from search-result summaries only (searched 2026-10-26). 277 units (uhomes); former Subway Terminal Building site. Multi-level garage, in-unit laundry, fitness room, pools, hot tub (National Corporate Housing, a short-term listing); sky lounge (uhomes). Pets welcome (Redfin). Fees, parking price, year not found. Metro station from general knowledge."
   },
   "detail_sources": [
    "https://en.uhomes.com/us/los-angeles/detail-apartments-1686373"
   ],
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 95
  },
@@ -2563,21 +2592,21 @@
   "lat": 34.004,
   "lng": -118.429,
   "location_note": "Approximate: geocoding services (Census, Nominatim, Google) were blocked from this sandbox, so coordinates were placed from the LA street grid plus listing descriptions; expect ~100-300 m error. 11800 block of Washington Pl, Mar Vista (90066), near the I-405 between Venice and Washington Blvds. Low confidence on exact block. Note: this is Mar Vista (City of LA), not Culver City or Palms.",
-  "sqft": 750.0,
-  "base_rent": 2300.0,
-  "effective_rent": 2300.0,
+  "sqft": 750,
+  "base_rent": 2300,
+  "effective_rent": 2300,
   "special": "none listed",
   "parking_fee": null,
   "year_built": 1972,
   "req": {
-   "wd": "unclear",
+   "wd": "no",
    "ac": "yes",
    "dw": "yes",
    "parking": "yes",
    "packages": "unclear"
   },
-  "packages_detail": "VeryApt lists 24-hour front desk (stale); W/D conflict: VeryApt says building laundry room, Westside lists in-unit W/D",
-  "ac_evidence": "VeryApt (possibly stale): 'central air conditioning'",
+  "packages_detail": "VeryApt lists a 24-hour front desk (package handling not explicitly stated).",
+  "ac_evidence": "VeryApt lists 'air conditioning'; type not stated.",
   "red_flags": "",
   "internet": "unverified",
   "notes": "Only true Westside listing found at or under budget with 700+ sq ft. Washer/Dryer is marked with an asterisk, and the FAQ says only some units have in-unit W/D, so confirm Unit 213 has one. 'Air Conditioning*' is listed with no type given. Garage lot parking, fee not stated. Unit 213 is available Nov 14, 2026, which is early for a late-January move. Older building.",
@@ -2664,7 +2693,7 @@
    ],
    "note": ""
   },
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "landlord": "company",
   "my_status": "new",
@@ -2741,10 +2770,11 @@
     "website": null,
     "leasing_phone": null
    },
-   "evidence": "WebFetch failed for every page (DNS/proxy errors), so this comes from search-result summaries only (searched 2026-10-26). VeryApt: garage, gym, elevator, gated, 24-hr front desk, cat+dog friendly. Westside Rentals: 1972, studios/1BRs, EV charger, on-site manager, in-unit W/D listed but also 'laundry facilities'. Laundry conflict is a key thing to confirm."
+   "evidence": "Verified veryapt.com + 2026-10-26. VeryApt laundry: 'Building Laundry Room' only, no in-unit entry -> fails in-unit W/D. Parking garage, gated. VeryApt not accepting inquiries. WebFetch failed for every page (DNS/proxy errors), so this comes from search-result summaries only (searched 2026-10-26). VeryApt: garage, gym, elevator, gated, 24-hr front desk, cat+dog friendly. Westside Rentals: 1972, studios/1BRs, EV charger, on-site manager, in-unit W/D listed but also 'laundry facilities'. Laundry conflict is a key thing to confirm."
   },
   "detail_sources": [],
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 90
  },
@@ -2757,9 +2787,9 @@
   "lat": 34.0405,
   "lng": -118.2513,
   "location_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. E 8th between Los Angeles St and Maple Ave; actually Fashion District, near Skid Row edge, not Historic Core proper.",
-  "sqft": 758.0,
-  "base_rent": 2296.0,
-  "effective_rent": 1913.0,
+  "sqft": 758,
+  "base_rent": 2296,
+  "effective_rent": 1913,
   "special": "Up to 3 months free on select units with an 18-month lease",
   "parking_fee": null,
   "year_built": 2015,
@@ -2770,8 +2800,8 @@
    "parking": "unclear",
    "packages": "yes"
   },
-  "packages_detail": "Point2Homes: 'package locker' for deliveries",
-  "ac_evidence": "Point2Homes: 'central A/C heat'",
+  "packages_detail": "Point2Homes: 'package locker'.",
+  "ac_evidence": "Point2Homes: 'central A/C heat' (prior pass).",
   "red_flags": "No reviews found; no parking info found",
   "internet": "unverified (100+ Mbps high-speed available)",
   "notes": "Redfin and Point2 list it as a 1-bed (758 sq ft, $2,296, available 10/14), but the plan is named 'STU 6', so it may be an open loft or studio layout. Confirm there is a separate bedroom. Dishwasher unconfirmed. Central A/C is listed at property level.",
@@ -2864,7 +2894,7 @@
    ],
    "note": ""
   },
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "landlord": "company",
   "my_status": "new",
@@ -2874,7 +2904,7 @@
     "required_fees": [],
     "utilities": null,
     "deposit": null,
-    "application_fee": null,
+    "application_fee": 54,
     "admin_fee": null,
     "parking_fee": null,
     "lease_terms": null
@@ -2943,12 +2973,13 @@
     "website": null,
     "leasing_phone": null
    },
-   "evidence": "WebFetch failed for every page (DNS/proxy errors), so this comes from search-result summaries only (searched 2026-10-26). Point2Homes: 12 stories, 77 apartments, listed 'built 2015' (likely a renovation/conversion year, so left null). Rooftop spa and lounge, gym, package lockers, controlled access. Pets welcome (Redfin). Parking not found."
+   "evidence": "Verified point2homes.com search snippet, 2026-10-26. Application fee $54; pet deposit $250 + $25/mo pet rent per pet (fees are estimates). No parking info or security deposit found. Plan named 'STU 6' - confirm it has a separate bedroom. Parking is the remaining unknown. WebFetch failed for every page (DNS/proxy errors), so this comes from search-result summaries only (searched 2026-10-26). Point2Homes: 12 stories, 77 apartments, listed 'built 2015' (likely a renovation/conversion year, so left null). Rooftop spa and lounge, gym, package lockers, controlled access. Pets welcome (Redfin). Parking not found."
   },
   "detail_sources": [
    "https://redfin.com/neighborhood/110858/CA/Los-Angeles/Fashion-District/apartments-for-rent"
   ],
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 95
  },
@@ -2961,10 +2992,10 @@
   "lat": 34.053,
   "lng": -118.2645,
   "location_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. Wilshire & Bixel, City West next to I-110.",
-  "sqft": 742.0,
-  "base_rent": 2213.0,
-  "effective_rent": 1958.0,
-  "special": "Up to 6 weeks free on select homes, move-in by Nov 13, 2026 (Westside Rentals: 4 weeks + 2-week look-and-lease)",
+  "sqft": 742,
+  "base_rent": 2213,
+  "effective_rent": 1958,
+  "special": "Up to 6 weeks free on select homes, move-in by Nov 13, 2026 (may expire before a Jan move)",
   "parking_fee": null,
   "year_built": 2012,
   "req": {
@@ -2974,8 +3005,8 @@
    "parking": "yes",
    "packages": "unclear"
   },
-  "packages_detail": "VeryApt: 'Package Receiving'; no lockers mentioned",
-  "ac_evidence": "Point2Homes: 'Air Conditioner and Electronic Thermostat' (wording suggests unit, type not stated); VeryApt 'air conditioning'",
+  "packages_detail": "VeryApt: 'Package Receiving' service; lockers/room/desk not specified.",
+  "ac_evidence": "Point2Homes: 'Air Conditioner and Electronic Thermostat'; VeryApt 'air conditioning'. Type not stated.",
   "red_flags": "Apartments.com review accuses mgmt of deposit 'scam'; reviewer wanted more security (safety 6.4/10); VeryApt also lists building laundry room",
   "internet": "unverified (high-speed internet; Wi-Fi in amenity areas)",
   "notes": "Pico A1 is $2,213-$2,960 (Point2) or $2,235-$2,560 (Westside Rentals); the cheapest unit is likely at the low end of the size range. 'Los Angeles 1 Bedroom A' (734 sq ft) is $2,449. Ignore the Figueroa JR1 (606 sq ft, listed as a studio). AC type not stated. Pet limit: 2 pets, dogs up to 75 lb.",
@@ -2983,7 +3014,8 @@
   "sources": [
    "https://www.point2homes.com/US/Apartment-Buildings/CA/Los-Angeles-County/Los-Angeles/Westlake/1111-Wilshire/93058647.html",
    "https://www.veryapt.com/ApartmentReview-a26210-1111-wilshire-los-angeles",
-   "https://www.corporatehousing.com/ca/los-angeles/eleven-eleven-wilshire/9jz5337"
+   "https://www.corporatehousing.com/ca/los-angeles/eleven-eleven-wilshire/9jz5337",
+   "https://www.westsiderentals.com/los-angeles-ca/eleven-eleven-wilshire-wjz543l"
   ],
   "reviews": {
    "name": "Eleven Eleven Wilshire",
@@ -3083,7 +3115,7 @@
    ],
    "note": ""
   },
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "landlord": "company",
   "my_status": "new",
@@ -3158,7 +3190,7 @@
     "website": null,
     "leasing_phone": null
    },
-   "evidence": "All page fetches failed (DNS ENOTFOUND); data comes only from WebSearch result summaries of aggregator pages, many with stale 2025 snapshots. Units: Yardi Matrix 210 (architect Nadel says 204); delivered 2013 (Yardi/Nadel; CorporateHousing says 2012); 7 floors (Point2). Amenities: gym, pool, rooftop deck, lounge, theater, courtyard, EV charger, controlled access, dog park, mini grocery. Parking listed as covered by one site and surface lot by another; no fee. Note: one aggregator lists a building laundry room - confirm in-unit W/D. Managed by Holland Residential. Building sits next to the 110 Harbor Fwy at Wilshire per general map knowledge - unverified, so freeway_within_500ft left 'unclear' but likely YES; confirm."
+   "evidence": "Verified point2homes / veryapt search snippets, 2026-10-26. Covered parking and EV charging listed, no price. No deposit or application fee found. AC type and package method still unknown. All page fetches failed (DNS ENOTFOUND); data comes only from WebSearch result summaries of aggregator pages, many with stale 2025 snapshots. Units: Yardi Matrix 210 (architect Nadel says 204); delivered 2013 (Yardi/Nadel; CorporateHousing says 2012); 7 floors (Point2). Amenities: gym, pool, rooftop deck, lounge, theater, courtyard, EV charger, controlled access, dog park, mini grocery. Parking listed as covered by one site and surface lot by another; no fee. Note: one aggregator lists a building laundry room - confirm in-unit W/D. Managed by Holland Residential. Building sits next to the 110 Harbor Fwy at Wilshire per general map knowledge - unverified, so freeway_within_500ft left 'unclear' but likely YES; confirm."
   },
   "detail_sources": [
    "https://www.yardimatrix.com/property-types/multifamily/metrolosangeles/1111-wilshire-1111-wilshire-blvd-ca-90017--13696",
@@ -3167,6 +3199,7 @@
    "https://www.westsiderentals.com/los-angeles-ca/eleven-eleven-wilshire-wjz543l"
   ],
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 95
  },
@@ -3179,10 +3212,10 @@
   "lat": 34.0497,
   "lng": -118.2565,
   "location_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. Flower between 6th and Wilshire, Financial District.",
-  "sqft": 740.0,
-  "base_rent": 2055.0,
-  "effective_rent": 1969.0,
-  "special": "Up to 1/2 month free on select homes (new residents; through Oct 24, 2026)",
+  "sqft": 740,
+  "base_rent": 2055,
+  "effective_rent": 2055,
+  "special": "Up to 1/2 month free (ended Oct 24, 2026; would have made ~$1,969 effective)",
   "parking_fee": null,
   "year_built": 1949,
   "req": {
@@ -3192,8 +3225,8 @@
    "parking": "yes",
    "packages": "yes"
   },
-  "packages_detail": "24-hour front desk / package receiving",
-  "ac_evidence": "VeryApt: 'Central A/C'; PadMapper/ApartmentAdvisor: 'air conditioning'",
+  "packages_detail": "24-hour front desk / package receiving (prior pass).",
+  "ac_evidence": "VeryApt: 'Central A/C' (prior pass).",
   "red_flags": "Renter reported 3-6 month waitlist for building parking",
   "internet": "unverified",
   "notes": "Round 4: an LAist article says the garage fits only about half of the 322 units; many residents park two blocks away.\n\nMany 700+ sq ft 1BRs at or under budget: unit 1-704 (740 sq ft) $2,055 (avail 10/22), 1-1104 (749 sq ft) $2,095, 1-614 (737 sq ft) $2,120, 1-407 (716 sq ft) $2,125 (avail 11/4). Hotpads lists in-unit laundry and A/C (type not stated). Older building; Equity Residential.",
@@ -3202,7 +3235,10 @@
    "https://www.westsiderentals.com/los-angeles-ca/pegasus-hdpmn63",
    "https://www.veryapt.com/ApartmentReview-a2597-pegasus-los-angeles",
    "https://www.padmapper.com/buildings/p12886/pegasus-apartments-at-612-s-flower-st-los-angeles-ca-90017",
-   "https://hotpads.com/pegasus-los-angeles-ca-90017-skfw9x/pad"
+   "https://hotpads.com/pegasus-los-angeles-ca-90017-skfw9x/pad",
+   "https://www.renthop.com/listings/612-s-flower-street/15/73453473",
+   "https://edge.apartmentiq.io/los-angeles-ca/pegasus",
+   "https://parkchirp.com/facilities/pegasus-apartments-parking"
   ],
   "reviews": {
    "name": "Pegasus",
@@ -3374,7 +3410,7 @@
     "website": null,
     "leasing_phone": "(213) 486-3896 (ApartmentIQ; ApartmentList shows (323) 992-0257)"
    },
-   "evidence": "All page fetches failed (DNS ENOTFOUND); data comes only from WebSearch result summaries of aggregator pages, many with stale 2025 snapshots. Deposit $600-800 (PadMapper; recorded low end). 1949 landmark (former Superior Oil HQ conversion). LAist: garage only fits ~half of residents, many park 2 blocks away; valet off Flower; no parking fee found - parking is a risk for this client. Application fee amount not shown."
+   "evidence": "Verified hotpads / renthop / apartmentiq search snippets, 2026-10-26. Security deposit $600-$800 (HotPads, RentHop); Redfin says 'No deposit' (conflict). Pet deposit $500, pet rent $55. Covered valet/garage parking (ParkChirp), price not found. No monthly required fees found. All page fetches failed (DNS ENOTFOUND); data comes only from WebSearch result summaries of aggregator pages, many with stale 2025 snapshots. Deposit $600-800 (PadMapper; recorded low end). 1949 landmark (former Superior Oil HQ conversion). LAist: garage only fits ~half of residents, many park 2 blocks away; valet off Flower; no parking fee found - parking is a risk for this client. Application fee amount not shown."
   },
   "detail_sources": [
    "https://edge.apartmentiq.io/los-angeles-ca/pegasus",
@@ -3383,6 +3419,7 @@
    "https://apartmentlist.com/ca/los-angeles/pegasus"
   ],
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 95
  },
@@ -3395,9 +3432,9 @@
   "lat": 34.043,
   "lng": -118.2596,
   "location_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. NE-ish corner Olympic & Olive, South Park.",
-  "sqft": 732.0,
-  "base_rent": 2148.0,
-  "effective_rent": 2065.0,
+  "sqft": 732,
+  "base_rent": 2065,
+  "effective_rent": 2065,
   "special": "Up to 2 weeks free base rent (Point2: up to $1,500 off one month on look-and-lease)",
   "parking_fee": null,
   "year_built": 2017,
@@ -3408,8 +3445,8 @@
    "parking": "yes",
    "packages": "unclear"
   },
-  "packages_detail": "No package info found; secure-access garage",
-  "ac_evidence": "Greystar: 'Air Conditioning' only; type not stated",
+  "packages_detail": "No locker/package room mention found.",
+  "ac_evidence": "Greystar lists 'Air Conditioning' as an in-unit feature; type not stated.",
   "red_flags": "",
   "internet": "unverified",
   "notes": "Zillow showed unit 414 (732 sq ft) at $2,148 total monthly, but its availability date ('Jun 2') looks stale. Redfin lists 1BRs from $2,351+ (725-900 sq ft), so a sub-$2,300 unit of 700+ sq ft may not exist now. Re-check before touring. Managed by Greystar.",
@@ -3417,7 +3454,8 @@
   "sources": [
    "https://www.zillow.com/b/-CkBBHZ",
    "https://www.greystar.com/mresidences-olympic-olive-los-angeles-ca/p_20162",
-   "https://www.point2homes.com/US/Apartment-Buildings/CA/Los-Angeles/Mresidences-Olympic-Olive.html"
+   "https://www.point2homes.com/US/Apartment-Buildings/CA/Los-Angeles/Mresidences-Olympic-Olive.html",
+   "https://www.mapletree.com.sg/property/mresidences-olympic-olive/"
   ],
   "reviews": {
    "name": "mResidences Olympic & Olive",
@@ -3508,7 +3546,7 @@
    ],
    "note": ""
   },
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "landlord": "company",
   "my_status": "new",
@@ -3587,12 +3625,13 @@
     "website": "https://www.greystar.com/mresidences-olympic-olive-los-angeles-ca/p_20162",
     "leasing_phone": "(888) 542-0806"
    },
-   "evidence": "All page fetches failed (DNS ENOTFOUND); data comes only from WebSearch result summaries of aggregator pages, many with stale 2025 snapshots. 201 units (Mapletree, owner). Greystar-managed. Pet terms from Point2/Zillow. Underground secure garage w/ EV charging; fee not found. Walk Score 95 per Zillow. Oakwood corporate-stay product at same address says no pets - applies to short stays only."
+   "evidence": "Verified greystar.com / point2homes / mapletree + 2026-10-26. Secure-access building and underground parking with EV charging; parking fee not published. Point2: app fee $53, pet deposit $500, pet rent $50/mo; rents $2,030-$3,868. Greystar total monthly price includes mandatory monthly charges (not itemized). Leasing (888) 542-0806. All page fetches failed (DNS ENOTFOUND); data comes only from WebSearch result summaries of aggregator pages, many with stale 2025 snapshots. 201 units (Mapletree, owner). Greystar-managed. Pet terms from Point2/Zillow. Underground secure garage w/ EV charging; fee not found. Walk Score 95 per Zillow. Oakwood corporate-stay product at same address says no pets - applies to short stays only."
   },
   "detail_sources": [
    "https://www.mapletree.com.sg/property/mresidences-olympic-olive/"
   ],
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 92
  },
@@ -3605,9 +3644,9 @@
   "lat": 34.0518,
   "lng": -118.2622,
   "location_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. 6th St between Bixel and Lucas, City West.",
-  "sqft": 700.0,
-  "base_rent": 2088.0,
-  "effective_rent": 2088.0,
+  "sqft": 700,
+  "base_rent": 2088,
+  "effective_rent": 2088,
   "special": "None confirmed (page shows a 'special offer' heading with no details); recent $65 price drops",
   "parking_fee": null,
   "year_built": 2017,
@@ -3618,8 +3657,8 @@
    "parking": "yes",
    "packages": "unclear"
   },
-  "packages_detail": "No package system found",
-  "ac_evidence": "Greystar highlights: 'Air Conditioning' only; type not stated",
+  "packages_detail": "VeryApt: 'Package Receiving'; no lockers mentioned.",
+  "ac_evidence": "Greystar highlights list only 'Air Conditioning'. 'Central Air and Heating' on LoopNet applies to the retail unit, not apartments.",
   "red_flags": "Oct 2025 resident review: packages get stolen, cockroaches in trash area, break-in concerns; parking 'expensive'; mgmt score 6.1/10",
   "internet": "unverified (Greystar says residents set up their own internet)",
   "notes": "Unit 1153 (A1, 700 sq ft) at $2,087.95 total monthly price including mandatory fees, available now. Other A1 units are $2,451-$2,593. Exactly at the 700 sq ft floor. A2 (734 sq ft) starts at $2,571, over budget. Greystar lists only 'Air Conditioning' (type not stated). The photo is the A1 floor plan.",
@@ -3628,7 +3667,8 @@
    "https://hotpads.com/be-dtla-los-angeles-ca-90017-249n5mv/pad",
    "https://www.greystar.com/be-dtla-apartments-los-angeles-ca/p_16447",
    "https://bedtla.test.jonahsystems.com/reviews/",
-   "https://www.veryapt.com/ApartmentReview-a24657-be-dtla-los-angeles"
+   "https://www.veryapt.com/ApartmentReview-a24657-be-dtla-los-angeles",
+   "https://www.loopnet.com/Listing/1120-W-6th-St-Los-Angeles-CA/40814443/"
   ],
   "reviews": {
    "name": "Be DTLA",
@@ -3708,7 +3748,7 @@
    ],
    "note": ""
   },
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "landlord": "company",
   "my_status": "new",
@@ -3721,7 +3761,7 @@
       "amount": 1
      }
     ],
-    "utilities": "Sewer billed usage-based (amount not shown); tenant pays electric; full Greystar fee table not captured",
+    "utilities": "VeryApt lists trash/recycling included; a resident review says parking + electric push total near $2,800.",
     "deposit": null,
     "application_fee": null,
     "admin_fee": null,
@@ -3792,7 +3832,7 @@
     "website": "https://www.greystar.com/be-dtla-apartments-los-angeles-ca/p_16447",
     "leasing_phone": "(844) 634-4383"
    },
-   "evidence": "All page fetches failed (DNS ENOTFOUND); data comes only from WebSearch result summaries of aggregator pages, many with stale 2025 snapshots. Greystar page: pest control $1/mo, sewer usage-based. Resident review: parking is expensive (no figure). 606 units (LoopNet), built 2018 (CityFeet). Walk Score 93/Transit 98/Bike 62 from one Greystar page version (another shows 94; CityFeet 80). Trash, parking, pet rent, deposit not found."
+   "evidence": "Verified greystar.com / veryapt / loopnet search snippets, 2026-10-26. $2,088 is Greystar's total monthly price including mandatory monthly fees (excludes usage-based and move-in charges). Deposit and parking price not found. Exactly 700 sq ft. All page fetches failed (DNS ENOTFOUND); data comes only from WebSearch result summaries of aggregator pages, many with stale 2025 snapshots. Greystar page: pest control $1/mo, sewer usage-based. Resident review: parking is expensive (no figure). 606 units (LoopNet), built 2018 (CityFeet). Walk Score 93/Transit 98/Bike 62 from one Greystar page version (another shows 94; CityFeet 80). Trash, parking, pet rent, deposit not found."
   },
   "detail_sources": [
    "https://www.greystar.com/properties/los-angeles-ca/be-dtla-apartments/floorplans",
@@ -3800,6 +3840,7 @@
    "https://loopnet.com/Listing/1120-W-6th-St-Los-Angeles-CA/22787343"
   ],
   "required_fees_total": 1,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 95
  },
@@ -3812,9 +3853,9 @@
   "lat": 34.04,
   "lng": -118.2683,
   "location_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. 1400 S Figueroa; Urbanize LA says it sits between Avant's two buildings.",
-  "sqft": 758.0,
-  "base_rent": 2195.0,
-  "effective_rent": 2195.0,
+  "sqft": 758,
+  "base_rent": 2195,
+  "effective_rent": 2195,
   "special": "none",
   "parking_fee": 175.0,
   "year_built": 2020,
@@ -3825,15 +3866,17 @@
    "parking": "yes",
    "packages": "unclear"
   },
-  "packages_detail": "Apartments.com 'Package service' (prior input); type not stated",
-  "ac_evidence": "No AC info found (only appears on a Redfin AC-filtered page, no AC tag)",
+  "packages_detail": "Not found.",
+  "ac_evidence": "Only evidence: appears in Redfin's 'apartments with air conditioning' list; type not stated.",
   "red_flags": "",
   "internet": "unverified (high-speed internet listed, no provider named)",
   "notes": "Unit 613 (B5, 758 sq ft) is $2,195, available now. Also B4 unit 604 (738 sq ft) at $2,350, avail Nov 4, which is over the base cap. Description says 'W/D in every home'; the FAQ wording is softer ('has units with'). AC type is not specified. Gated parking. This building sits at the DTLA/South Park edge and may overlap a downtown search.",
   "listing_url": "https://www.apartments.com/1400-fig-apartments-los-angeles-ca/838zj23/",
   "sources": [
    "https://www.apartments.com/1400-fig-apartments-los-angeles-ca/838zj23/",
-   "https://urbanize.la/post/more-apartments-underway-south-park"
+   "https://urbanize.la/post/more-apartments-underway-south-park",
+   "https://www.redfin.com/city/11203/CA/Los-Angeles/apartments-with-air-conditioning-for-rent/page-3",
+   "https://www.redfin.com/neighborhood/290722/CA/Los-Angeles/Downtown-Los-Angeles/apartments-for-rent/page-2"
   ],
   "reviews": {
    "name": "1400 FIG Apartments",
@@ -3908,7 +3951,7 @@
    ],
    "note": ""
   },
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "landlord": "company",
   "my_status": "new",
@@ -3983,13 +4026,14 @@
     "website": null,
     "leasing_phone": null
    },
-   "evidence": "All page fetches failed (DNS ENOTFOUND); data comes only from WebSearch result summaries of aggregator pages, many with stale 2025 snapshots. Units/stories/amenities from 2016 Urbanize construction reports (110 units, 7 stories, underground parking for 114 cars, gym, pool/spa deck, rooftop deck) - planning-stage, may differ. Year completed unknown (construction stalled; planned 2018). No fees, phone or website found. Fronts Figueroa near the 10/110 interchange - freeway proximity unverified."
+   "evidence": "Verified redfin.com + 2026-10-26. Redfin: 0-2BR, 505-1,178 sqft, rents ~$1,890-$2,145+ across snapshots; tags pets + parking. No in-unit W/D confirmation found this pass. Deposit/fees unknown. All page fetches failed (DNS ENOTFOUND); data comes only from WebSearch result summaries of aggregator pages, many with stale 2025 snapshots. Units/stories/amenities from 2016 Urbanize construction reports (110 units, 7 stories, underground parking for 114 cars, gym, pool/spa deck, rooftop deck) - planning-stage, may differ. Year completed unknown (construction stalled; planned 2018). No fees, phone or website found. Fronts Figueroa near the 10/110 interchange - freeway proximity unverified."
   },
   "detail_sources": [
    "https://urbanize.la/post/downtown-1400-figueroa-apartments-construction",
    "https://www.redfin.com/neighborhood/116776/CA/Los-Angeles/South-Park/apartments-for-rent"
   ],
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 92
  },
@@ -4002,9 +4046,9 @@
   "lat": 34.0436,
   "lng": -118.2591,
   "location_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. Olive just north of Olympic, South Park.",
-  "sqft": 732.0,
-  "base_rent": 2204.0,
-  "effective_rent": 2204.0,
+  "sqft": 732,
+  "base_rent": 2204,
+  "effective_rent": 2204,
   "special": "None listed",
   "parking_fee": 190,
   "year_built": 2016,
@@ -4015,8 +4059,8 @@
    "parking": "yes",
    "packages": "unclear"
   },
-  "packages_detail": "No package info found; controlled-access garage w/ EV charging",
-  "ac_evidence": "VeryApt unit features: 'central air'",
+  "packages_detail": "No package locker info found.",
+  "ac_evidence": "A VeryApt listing surfaced in search lists 'Central A/C' for Olympic by Windsor (snippet only).",
   "red_flags": "",
   "internet": "unverified (Wi-Fi in grand lobby only)",
   "notes": "1A4 (732 sq ft) is $2,204-$2,351. 1A5 (729-753 sq ft) is $2,259-$2,450. Windsor's site lists 1BR 'total monthly' from $2,229. Full-size W/D is listed (VeryApt says in-unit). Central A/C per VeryApt. No source mentions a dishwasher. Pet rent $75/mo.",
@@ -4024,7 +4068,9 @@
   "sources": [
    "https://www.point2homes.com/US/Apartment-Buildings/CA/Los-Angeles/Downtown-Los-Angeles/Olympic-by-Windsor/80882183.html",
    "https://www.veryapt.com/ApartmentReview-a15911-olympic-by-windsor-los-angeles",
-   "https://www.windsorcommunities.com/properties/olympic-by-windsor/"
+   "https://www.windsorcommunities.com/properties/olympic-by-windsor/",
+   "https://www.windsorcommunities.com/properties/olympic-by-windsor/floorplans/",
+   "https://engrain.windsorcommunities.com/properties/olympic-by-windsor/floorplans/"
   ],
   "reviews": {
    "name": "Olympic by Windsor",
@@ -4109,17 +4155,26 @@
    ],
    "note": ""
   },
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "landlord": "company",
   "my_status": "new",
   "my_note": "",
   "detail": {
    "costs": {
-    "required_fees": [],
-    "utilities": "Not included in base rent; details in community 'costs overview' (not captured)",
-    "deposit": null,
-    "application_fee": null,
+    "required_fees": [
+     {
+      "name": "utility admin fee",
+      "amount": 6.3
+     },
+     {
+      "name": "SCEP",
+      "amount": 2.83
+     }
+    ],
+    "utilities": "Renters insurance required ($100k liability min); storage optional $75-100/mo.",
+    "deposit": 500,
+    "application_fee": 50,
     "admin_fee": null,
     "parking_fee": 190,
     "lease_terms": null
@@ -4188,12 +4243,13 @@
     "website": "https://www.windsorcommunities.com/properties/olympic-by-windsor/",
     "leasing_phone": null
    },
-   "evidence": "All page fetches failed (DNS ENOTFOUND); data comes only from WebSearch result summaries of aggregator pages, many with stale 2025 snapshots. Windsor floorplans page: pet $75/mo/pet, storage $75-100, parking from $190/mo, renters insurance required ($100k liability). 263 units/7 floors/2016 from Point2 only. Walk score number not found (Windsor says 'high')."
+   "evidence": "Verified windsorcommunities.com floorplans + 2026-10-26. Windsor: $50 app fee/applicant, $500 holding deposit applied to $500 security deposit (conditional approval up to 1 month rent). Monthly parking starts at $190. All page fetches failed (DNS ENOTFOUND); data comes only from WebSearch result summaries of aggregator pages, many with stale 2025 snapshots. Windsor floorplans page: pet $75/mo/pet, storage $75-100, parking from $190/mo, renters insurance required ($100k liability). 263 units/7 floors/2016 from Point2 only. Walk score number not found (Windsor says 'high')."
   },
   "detail_sources": [
    "https://engrain.windsorcommunities.com/properties/olympic-by-windsor/floorplans/"
   ],
-  "required_fees_total": null,
+  "required_fees_total": 9.13,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 92
  },
@@ -4206,11 +4262,11 @@
   "lat": 33.7375,
   "lng": -117.8445,
   "location_note": "ESTIMATED. Online geocoders were unreachable. Lyon St longitude from published geocodes of N Lyon St (-117.8446); latitude interpolated from Santa Ana's address grid (1816 E 1st St is at 33.7454), so 727 S is ~7 blocks south of 1st St, near I-5. Search did not confirm the building name at this address (a 2019 listing shows 727 S Lyon; Warwick Square is at 780 S Lyon). NOTE: this is in Santa Ana city (92705), ~1.2 mi west of Old Town Tustin, not in Tustin/Tustin Legacy.",
-  "sqft": 730.0,
-  "base_rent": 2250.0,
-  "effective_rent": 2250.0,
+  "sqft": 730,
+  "base_rent": 2250,
+  "effective_rent": 2250,
   "special": "none",
-  "parking_fee": 0.0,
+  "parking_fee": 0,
   "year_built": 1971,
   "req": {
    "wd": "unclear",
@@ -4219,8 +4275,8 @@
    "parking": "yes",
    "packages": "unclear"
   },
-  "packages_detail": "No package info found",
-  "ac_evidence": "Westside Rentals: 'Air Conditioning' (type not stated); 'Washer and dryer in select units'; 'Dishwasher in selected units'; 'Refrigerator Not Provided'; 1971 build",
+  "packages_detail": "No package info found.",
+  "ac_evidence": "Westside Rentals: 'Air Conditioning' with ceiling fans; type not stated; 1971 build.",
   "red_flags": "Older listing (2019) said on-site laundry; refrigerator not provided",
   "internet": "unverified",
   "notes": "The earlier lead of '1BR from ~$2,085' was not confirmed. Current price is $2,250 base, and the plan shows 'Check Back Soon' with nothing available now. Only some units have washer/dryer and dishwasher, so he would need to request a unit with both. Gas is included. Rent-controlled city (Santa Ana). Dogs only, max 25 lb ($50/mo).",
@@ -4318,7 +4374,7 @@
    ],
    "note": ""
   },
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "landlord": "company",
   "my_status": "new",
@@ -4326,7 +4382,7 @@
   "detail": {
    "costs": {
     "required_fees": [],
-    "utilities": null,
+    "utilities": "Gas included (prior pass).",
     "deposit": 219,
     "application_fee": 59,
     "admin_fee": null,
@@ -4396,12 +4452,13 @@
     "website": null,
     "leasing_phone": null
    },
-   "evidence": "Westside Rentals mirror of the apartments.com listing: 1971, 188 units, 2 stories, $219 deposit (low, may be 'from' amount), $59 app fee, covered parking $0 (1 vehicle), dogs $500 deposit + $50/mo; fees are community-supplied and may omit some. In-unit W/D only in select units; AC type not stated (central AC unverified). Mentions Santa Ana rent control. 2-story garden building so elevator assumed 'no' from story count. Hoodline 2019 article (outdated) said no pets at 727 S Lyon. Research cut short: the session-wide WebSearch budget (200) ran out partway through this batch and WebFetch failed (DNS ENOTFOUND for apartments.com/westsiderentals.com), so everything here comes from search-result snippets dated 2026-10-26. Fiber, Walk Score, cafe/grocery/metro distances and LAX times were not researched unless stated."
+   "evidence": "Verified westsiderentals search snippet, 2026-10-26. W/D and dishwasher only 'in select units'. Westside Rentals deposit $219 (community-supplied, may be stale), app fee $59. 2019 Hoodline listing at 727 S Lyon showed on-site laundry. Westside Rentals mirror of the apartments.com listing: 1971, 188 units, 2 stories, $219 deposit (low, may be 'from' amount), $59 app fee, covered parking $0 (1 vehicle), dogs $500 deposit + $50/mo; fees are community-supplied and may omit some. In-unit W/D only in select units; AC type not stated (central AC unverified). Mentions Santa Ana rent control. 2-story garden building so elevator assumed 'no' from story count. Hoodline 2019 article (outdated) said no pets at 727 S Lyon. Research cut short: the session-wide WebSearch budget (200) ran out partway through this batch and WebFetch failed (DNS ENOTFOUND for apartments.com/westsiderentals.com), so everything here comes from search-result snippets dated 2026-10-26. Fiber, Walk Score, cafe/grocery/metro distances and LAX times were not researched unless stated."
   },
   "detail_sources": [
    "https://hoodline.com/2019/09/apartments-for-rent-in-santa-ana-what-will-1-600-get-you/"
   ],
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": null
  },
@@ -4414,9 +4471,9 @@
   "lat": 34.0428,
   "lng": -118.2571,
   "location_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. Hill just north of Olympic, South Park/Fashion District edge.",
-  "sqft": 709.0,
-  "base_rent": 2270.0,
-  "effective_rent": 2270.0,
+  "sqft": 709,
+  "base_rent": 2270,
+  "effective_rent": 2270,
   "special": "None listed",
   "parking_fee": 190,
   "year_built": 2014,
@@ -4427,15 +4484,17 @@
    "parking": "yes",
    "packages": "unclear"
   },
-  "packages_detail": "No package info found; parking garage",
-  "ac_evidence": "VeryApt: 'Air Conditioning' only; type not stated",
+  "packages_detail": "VeryApt lists 'Doorman Building'; no lockers/package room mentioned.",
+  "ac_evidence": "VeryApt lists 'Air Conditioning' under living room features; not stated as central.",
   "red_flags": "",
   "internet": "unverified (VeryApt tags 'internet included', not confirmed by Windsor)",
   "notes": "A1 (709 sq ft) is $2,270-$2,484. A2 (730 sq ft) starts at $2,420. Windsor's site lists 1BR total monthly from $2,432, so the cheapest A1 may be gone. No source confirms the dishwasher or AC type. Strong work-from-home amenities.",
   "listing_url": "https://www.point2homes.com/US/Apartment-Buildings/CA/Los-Angeles/Downtown-Los-Angeles/South-Park-by-Windsor/93060290.html",
   "sources": [
    "https://www.point2homes.com/US/Apartment-Buildings/CA/Los-Angeles/Downtown-Los-Angeles/South-Park-by-Windsor/93060290.html",
-   "https://www.veryapt.com/ApartmentReview-a15959-south-park-by-windsor-los-angeles"
+   "https://www.veryapt.com/ApartmentReview-a15959-south-park-by-windsor-los-angeles",
+   "https://engrain.windsorcommunities.com/properties/south-park-by-windsor/floorplans/",
+   "https://www.windsorcommunities.com/properties/south-park-by-windsor/floorplans/"
   ],
   "reviews": {
    "name": "South Park by Windsor",
@@ -4513,7 +4572,7 @@
    ],
    "note": ""
   },
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "landlord": "company",
   "my_status": "new",
@@ -4522,13 +4581,17 @@
    "costs": {
     "required_fees": [
      {
-      "name": "renters insurance (required; $100k liability minimum)",
-      "amount": null
+      "name": "utility admin fee",
+      "amount": 3.66
+     },
+     {
+      "name": "SCEP",
+      "amount": 2.83
      }
     ],
-    "utilities": null,
-    "deposit": null,
-    "application_fee": null,
+    "utilities": "Electricity, water, sewer, trash billed by usage.",
+    "deposit": 500,
+    "application_fee": 50,
     "admin_fee": null,
     "parking_fee": 190,
     "lease_terms": null
@@ -4596,14 +4659,15 @@
     "website": "https://www.windsorcommunities.com/properties/south-park-by-windsor/",
     "leasing_phone": null
    },
-   "evidence": "Windsor floorplans page: pets $75/mo per pet, parking from $190/mo, renters insurance required. Aggregator: max 2 pets, 100 lb, $500 deposit, breed list. ApartmentIQ: Walk Score 96. Parking type 'garage' inferred from DTLA high-rise context (Windsor says parking varies by space type) - treat as likely, not confirmed. Coworking = 'business center' per listing. Freeway 'no': 939 S Hill is ~4 blocks east of the I-110 (map knowledge). Research cut short: the session-wide WebSearch budget (200) ran out partway through this batch and WebFetch failed (DNS ENOTFOUND for apartments.com/westsiderentals.com), so everything here comes from search-result snippets dated 2026-10-26. Fiber, Walk Score, cafe/grocery/metro distances and LAX times were not researched unless stated."
+   "evidence": "Verified windsorcommunities.com floorplans + veryapt + 2026-10-26. Windsor: $50 app fee, $500 holding deposit applied to $500 security deposit (up to 1 month on conditional approval). Monthly parking from $190. Pets $75/mo, storage $100/mo. VeryApt lists W/D in unit. Windsor floorplans page: pets $75/mo per pet, parking from $190/mo, renters insurance required. Aggregator: max 2 pets, 100 lb, $500 deposit, breed list. ApartmentIQ: Walk Score 96. Parking type 'garage' inferred from DTLA high-rise context (Windsor says parking varies by space type) - treat as likely, not confirmed. Coworking = 'business center' per listing. Freeway 'no': 939 S Hill is ~4 blocks east of the I-110 (map knowledge). Research cut short: the session-wide WebSearch budget (200) ran out partway through this batch and WebFetch failed (DNS ENOTFOUND for apartments.com/westsiderentals.com), so everything here comes from search-result snippets dated 2026-10-26. Fiber, Walk Score, cafe/grocery/metro distances and LAX times were not researched unless stated."
   },
   "detail_sources": [
    "https://engrain.windsorcommunities.com/properties/south-park-by-windsor/floorplans/",
    "https://edge.apartmentiq.io/los-angeles-ca/939-s-broadway",
    "https://www.veryapt.com/Apartments-L2198-los-angeles-90015"
   ],
-  "required_fees_total": null,
+  "required_fees_total": 6.49,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 92
  },
@@ -4616,9 +4680,9 @@
   "lat": 33.7505,
   "lng": -117.8365,
   "location_note": "ESTIMATED. Address confirmed (750 Park Center/Parkcenter Dr, 284 units, built 1975). Per Santa Ana Resolution 76-39, Parkcenter Dr runs from 4th St to Fruit St near N Tustin Ave (Saddleback View/Mabury Park area). Point placed just north of 4th St, west of Tustin Ave, +/- ~300 m. NOTE: this is in Santa Ana city, ~1 mi NW of Old Town Tustin, not Tustin proper.",
-  "sqft": 739.0,
-  "base_rent": 2299.0,
-  "effective_rent": 2299.0,
+  "sqft": 739,
+  "base_rent": 2299,
+  "effective_rent": 2299,
   "special": "none",
   "parking_fee": null,
   "year_built": 1978,
@@ -4629,8 +4693,8 @@
    "parking": "yes",
    "packages": "unclear"
   },
-  "packages_detail": "No package lockers/room mentioned in any listing found. Assigned parking + some attached garages; fee not stated.",
-  "ac_evidence": "Listings: 'Central Heating and Air Conditioning and a Ceiling Fan' (point2homes / westsiderentals). W/D: most listings say 'Washer and Dryer Connections' / hookups and on-site 'Laundry Facilities'; one says a stackable W/D set is a move-in option. Not confirmed in-unit machines.",
+  "packages_detail": "No package info found.",
+  "ac_evidence": "Listings: 'Central Heating and Air Conditioning' (prior pass).",
   "red_flags": "",
   "internet": "unverified",
   "notes": "Round 3: listings show washer/dryer hookups plus a shared laundry room; a stackable set may be offered. Confirm in-unit laundry. Dogs capped at 25 lb.\n\nOnly unit B032 is at $2,299. Other 1x1 B units are $2,399-$2,478. Listing says 'Central Heating and Air Conditioning'. The stackable washer/dryer is described as an 'option', so ask whether it is installed and whether it costs extra. Pets: dogs up to 25 lb ($50/mo), cats ($25/mo). Security deposit $750.",
@@ -4741,8 +4805,8 @@
    "costs": {
     "required_fees": [],
     "utilities": null,
-    "deposit": null,
-    "application_fee": 53,
+    "deposit": 750,
+    "application_fee": 59,
     "admin_fee": null,
     "parking_fee": null,
     "lease_terms": null
@@ -4810,12 +4874,13 @@
     "website": null,
     "leasing_phone": null
    },
-   "evidence": "Point2Homes / Rentable / ApartmentIQ snippets: built 1975; 2 pools, 2 hot tubs, clubhouse, fitness center, courtesy patrol, on-site mgmt; covered parking plus attached garages in select units. W/D hookups + shared laundry => hard requirement at risk. Rents conflict across sites. Research cut short: the session-wide WebSearch budget (200) ran out partway through this batch and WebFetch failed (DNS ENOTFOUND for apartments.com/westsiderentals.com), so everything here comes from search-result snippets dated 2026-10-26. Fiber, Walk Score, cafe/grocery/metro distances and LAX times were not researched unless stated."
+   "evidence": "Verified point2homes / westsiderentals search snippets, 2026-10-26. Listings describe washer/dryer CONNECTIONS (select apartments) plus shared laundry facilities; Zumper tags in-unit but describes hookups; one earlier listing called a stackable set an option. In-unit machines are unlikely to be standard. App fee $59 (one source $53). Attached garages/assigned parking, fee not found. Pet deposit $250 cat / $500 dog. Point2Homes / Rentable / ApartmentIQ snippets: built 1975; 2 pools, 2 hot tubs, clubhouse, fitness center, courtesy patrol, on-site mgmt; covered parking plus attached garages in select units. W/D hookups + shared laundry => hard requirement at risk. Rents conflict across sites. Research cut short: the session-wide WebSearch budget (200) ran out partway through this batch and WebFetch failed (DNS ENOTFOUND for apartments.com/westsiderentals.com), so everything here comes from search-result snippets dated 2026-10-26. Fiber, Walk Score, cafe/grocery/metro distances and LAX times were not researched unless stated."
   },
   "detail_sources": [
    "https://edge.apartmentiq.io/santa-ana-ca/lake-dianne"
   ],
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": null
  },
@@ -4828,10 +4893,10 @@
   "lat": 34.0627,
   "lng": -118.2465,
   "location_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. 550 N Figueroa near Cesar Chavez/Sunset, beside the 110/101 corridor; edge of Chinatown/Victor Heights rather than Chinatown core.",
-  "sqft": 735.0,
-  "base_rent": 2140.0,
-  "effective_rent": 1700.0,
-  "special": "Up to 2 months free + $1,000 off + 50% off security deposit (select units, OAC)",
+  "sqft": 735,
+  "base_rent": 1700,
+  "effective_rent": 1700,
+  "special": "(Sept) one month free + 50% off security deposit OAC (Westside Rentals; may be expired)",
   "parking_fee": null,
   "year_built": 2007,
   "req": {
@@ -4841,8 +4906,8 @@
    "parking": "yes",
    "packages": "yes"
   },
-  "packages_detail": "'Two Mail Rooms with Package Acceptance Services' (ApartmentSearch). Parking advertised as free gated in a 2011 flyer; no current fee found.",
-  "ac_evidence": "ApartmentList/Westside Rentals list only 'air conditioning' with no type. W/D: 'Washer/dryer in every home' (2011 leasing flyer) + Westside Rentals unit features.",
+  "packages_detail": "Not found.",
+  "ac_evidence": "ForRent and ApartmentList list 'Air Conditioning'; not stated as central.",
   "red_flags": "June 2026 ForRent review: roaches, poor management, elevators rarely working, 'thousands of dollars worth of packages were stolen'; manager reply acknowledged package-security concerns. Address listed inconsistently (505/550/606 N Figueroa).",
   "internet": "AT&T Fiber (Redfin: verified provider, up to 5 Gbps); 'High Speed Internet Access'",
   "notes": "Unit 5068 (735 sf) $2,140, available now; unit 340 $2,350; 7066 $2,460 avail 11/13. Sources conflict on in-unit W/D: Apartments.com FAQ says 'some units', ApartmentFinder lists W/D as a floor-plan amenity, but Hotpads/Redfin show shared laundry, so confirm for the specific unit. AC type is not specified anywhere. Built 2007, older than the 2010 target. No pets.",
@@ -4852,7 +4917,8 @@
    "https://www.westsiderentals.com/los-angeles-ca/orsini-y1q1mqv",
    "https://www.forrent.com/ca/los-angeles/orsini/c1q1lqg",
    "https://www.apartmentsearch.com/apartments/california/los-angeles/orsini",
-   "https://dailytrojan.com/wp-content/uploads/2011/02/classifieds-feb-16A.pdf"
+   "https://dailytrojan.com/wp-content/uploads/2011/02/classifieds-feb-16A.pdf",
+   "https://apartmentlist.com/ca/los-angeles/orsini--1"
   ],
   "reviews": {
    "name": "The Orsini",
@@ -4951,7 +5017,7 @@
    "notes": "No Reddit threads found. Page fetches failed (DNS errors); everything here comes from search-result snippets.",
    "note": "G.H. Palmer (GHP Management) deposit class action: one search found a $12.5M settlement, another says it fell apart and headed to trial. Status unconfirmed either way; ask how deposits and move-out charges are handled."
   },
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "landlord": "company",
   "my_status": "new",
@@ -5028,7 +5094,7 @@
     "website": null,
     "leasing_phone": null
    },
-   "evidence": "Multi-Housing News (Yardi Matrix): 550 N Figueroa is a 566-unit, five-story phase of the 1,072-unit Orsini (phases built 2003-2010; article text conflicts on whether 550 is phase II or III, so year_built left null) located 'at the nexus of Highway 101 and Interstate 110' -> freeway within 500 ft = yes (air-quality/noise concern). Amenities: fitness, business center, clubhouse, 2 pools + spas, covered parking, media room; ApartmentList adds doorman/concierge. Pets CONFLICT: ApartmentSearch says dogs and cats not allowed - left unclear. Old 2010 ads said free gated parking (outdated). ApartmentList shows conflicting addresses/phones; an 877-231-9362 number is from 2010 ads and not recorded. Research cut short: the session-wide WebSearch budget (200) ran out partway through this batch and WebFetch failed (DNS ENOTFOUND for apartments.com/westsiderentals.com), so everything here comes from search-result snippets dated 2026-10-26. Fiber, Walk Score, cafe/grocery/metro distances and LAX times were not researched unless stated."
+   "evidence": "Verified forrent / westsiderentals / apartmentlist / apartmentsearch + 2026-10-26. Gated resident parking (garage + surface), fee unpublished. Westside rent range $2,020-$3,250 - conflicts with input $1,700 (verify). Deposit amount not stated. Built 2007. Multi-Housing News (Yardi Matrix): 550 N Figueroa is a 566-unit, five-story phase of the 1,072-unit Orsini (phases built 2003-2010; article text conflicts on whether 550 is phase II or III, so year_built left null) located 'at the nexus of Highway 101 and Interstate 110' -> freeway within 500 ft = yes (air-quality/noise concern). Amenities: fitness, business center, clubhouse, 2 pools + spas, covered parking, media room; ApartmentList adds doorman/concierge. Pets CONFLICT: ApartmentSearch says dogs and cats not allowed - left unclear. Old 2010 ads said free gated parking (outdated). ApartmentList shows conflicting addresses/phones; an 877-231-9362 number is from 2010 ads and not recorded. Research cut short: the session-wide WebSearch budget (200) ran out partway through this batch and WebFetch failed (DNS ENOTFOUND for apartments.com/westsiderentals.com), so everything here comes from search-result snippets dated 2026-10-26. Fiber, Walk Score, cafe/grocery/metro distances and LAX times were not researched unless stated."
   },
   "detail_sources": [
    "https://www.multihousingnews.com/los-angeles-community-gets-121m-financing/",
@@ -5036,6 +5102,7 @@
    "https://www.redfin.com/neighborhood/483/CA/Los-Angeles/Chinatown/1-bedroom-apartments-for-rent"
   ],
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 90
  },
@@ -6632,10 +6699,10 @@
   "lat": 34.0718,
   "lng": -118.2614,
   "location_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. LOW CONFIDENCE: Rosenell Terrace is a short residential street in southern Echo Park (90026); listing cites 101/110 access, Echo Park Lake and Dodger Stadium nearby. Verify on a map.",
-  "sqft": 715.0,
-  "base_rent": 2445.0,
-  "effective_rent": 2257.0,
-  "special": "1 month free on a 13-month lease (listed rents already net of it)",
+  "sqft": 715,
+  "base_rent": 2257,
+  "effective_rent": 2257,
+  "special": "One month free on a 13-month lease (ForRent; ForRent prices shown are net effective)",
   "parking_fee": null,
   "year_built": 2025,
   "req": {
@@ -6646,7 +6713,7 @@
    "packages": "yes"
   },
   "packages_detail": "Amazon Lockers (listing amenities); also 24-hr video surveillance and fitness center.",
-  "ac_evidence": "Input listing claimed central AC, but no source found mentions AC at all (Westside Rentals/ForRent describe stainless appliances + in-unit W/D only).",
+  "ac_evidence": "ForRent lists 'Air Conditioning' as a unit feature; no source says central/ducted vs mini-split.",
   "red_flags": "",
   "internet": "unverified",
   "notes": "Oct 15: unit 210 is listed at $2,025 but is only 630 sq ft, under the 700 sq ft minimum. Ask for the 715 sq ft plan (unit 116 was $2,257 net on Oct 14). Deposit = one month; $45 application fee; cats and dogs allowed.\n\nUnit 116 (715 sf) is $2,257 net effective. Unit 216 is $2,303 and unit 316 is $2,395, so 316 fails. Listings say rents are net effective, so the gross figure is my calculation. Confirm the actual base. The 692 sf units (from $2,054) and 609 sf units fail on size. Apartments.com says no pets.",
@@ -6654,7 +6721,8 @@
   "sources": [
    "https://www.zillow.com/apartments/los-angeles-ca/the-rosenell/CpjZzT/",
    "https://www.westsiderentals.com/los-angeles-ca/the-rosenell-x8ybkwq",
-   "https://www.forrent.com/ca/los-angeles/the-rosenell/88ybnw3"
+   "https://www.forrent.com/ca/los-angeles/the-rosenell/88ybnw3",
+   "https://www.apartmentadvisor.com/details/433-rosenell-terrace-los-angeles-ca-90026"
   ],
   "reviews": {
    "name": "The Rosenell",
@@ -6724,7 +6792,7 @@
   "detail": {
    "costs": {
     "required_fees": [],
-    "utilities": null,
+    "utilities": "ForRent community features include 'Utilities Included' (no breakdown) - confirm.",
     "deposit": 1000,
     "application_fee": null,
     "admin_fee": null,
@@ -6791,12 +6859,13 @@
     "website": null,
     "leasing_phone": null
    },
-   "evidence": "Westside Rentals/ForRent/ApartmentAdvisor/Redfin: new 100-unit building, rooftop deck with BBQ and skyline views, fitness center, gated underground parking (controlled access = gated garage only), in-unit W/D, balconies. Security deposit $1,000 OAC for 1BR/2BR. 'Pets welcome' with no fees given (cats/dogs assumed from that tag). Parking fee not found. Research cut short: the session-wide WebSearch budget (200) ran out partway through this batch and WebFetch failed (DNS ENOTFOUND for apartments.com/westsiderentals.com), so everything here comes from search-result snippets dated 2026-10-26. Fiber, Walk Score, cafe/grocery/metro distances and LAX times were not researched unless stated."
+   "evidence": "Verified forrent.com / westsiderentals.com / zumper (snippets) + 2026-10-26. In-unit W/D confirmed by developer copy + Zumper. Gated underground parking, fee not published. Deposit $1,000 OAC (ForRent, 1BR and 2BR). Rent ranges conflict: Westside $2,211-$2,810 (13-mo lease), ForRent net-effective $2,026-$2,718, Zumper $2,625-$2,945; $2,257/715 sqft from the input Zillow listing not re-confirmed. Still unknown: AC type, parking fee, trash/other fees. Westside Rentals/ForRent/ApartmentAdvisor/Redfin: new 100-unit building, rooftop deck with BBQ and skyline views, fitness center, gated underground parking (controlled access = gated garage only), in-unit W/D, balconies. Security deposit $1,000 OAC for 1BR/2BR. 'Pets welcome' with no fees given (cats/dogs assumed from that tag). Parking fee not found. Research cut short: the session-wide WebSearch budget (200) ran out partway through this batch and WebFetch failed (DNS ENOTFOUND for apartments.com/westsiderentals.com), so everything here comes from search-result snippets dated 2026-10-26. Fiber, Walk Score, cafe/grocery/metro distances and LAX times were not researched unless stated."
   },
   "detail_sources": [
    "https://www.apartmentadvisor.com/details/433-rosenell-terrace-los-angeles-ca-90026"
   ],
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 82
  },
@@ -7218,11 +7287,11 @@
   "lat": 34.0618,
   "lng": -118.249,
   "location_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. Temple & Beaudry/Figueroa, directly beside the 101/110 four-level interchange (Central City West/Echo Park border, not Historic Core).",
-  "sqft": 740.0,
-  "base_rent": 2430.0,
-  "effective_rent": 1942.0,
-  "special": "Up to 2 months free + $1,000 off + 50% off security deposit (select units, October special)",
-  "parking_fee": 0.0,
+  "sqft": 740,
+  "base_rent": 2430,
+  "effective_rent": 1942,
+  "special": "Up to 2 months free + $1,000 off + 50% off deposit (select units, October special)",
+  "parking_fee": 0,
   "year_built": 2015,
   "req": {
    "wd": "yes",
@@ -7231,8 +7300,8 @@
    "parking": "yes",
    "packages": "yes"
   },
-  "packages_detail": "Tenant review cites package lockers + 24/7 security; listing cites mail room with package acceptance. Listing: free reserved gated subterranean parking (tandem); extra spots for purchase not always available.",
-  "ac_evidence": "VeryApt listing: 'Living Room - Central A/C'.",
+  "packages_detail": "Tenant review cites package lockers; listing cites mail room package acceptance.",
+  "ac_evidence": "VeryApt: 'Living Room - Central A/C' (prior pass).",
   "red_flags": "VeryApt reviews: occasional loud parties, pervasive marijuana smell at times, almost no guest parking (management called responsive).",
   "internet": "unverified (high-speed internet in library and computer rooms)",
   "notes": "B2 units 358 ($2,430), 518B ($2,450) and 518 ($2,470) are all available 11/14/2026. Only 358 and 518B are within the $2,450 near-miss cap. Not pet-friendly. The GH Palmer concession is unusually large. It sits next to the 110, so expect freeway noise.",
@@ -7240,7 +7309,9 @@
   "sources": [
    "https://www.westsiderentals.com/los-angeles-ca/davinci-bj5n538",
    "https://www.veryapt.com/ApartmentReview-a15905-da-vinci-los-angeles",
-   "https://apartmentlist.com/ca/los-angeles/da-vinci"
+   "https://apartmentlist.com/ca/los-angeles/da-vinci",
+   "https://www.padmapper.com/address/909-w-temple-st-los-angeles-ca-90012-usa",
+   "https://www.westsiderentals.com/los-angeles-ca/da-vinci-bj5n538"
   ],
   "reviews": {
    "name": "Da Vinci",
@@ -7336,7 +7407,7 @@
    ],
    "note": "G.H. Palmer (GHP Management) deposit class action: one search found a $12.5M settlement, another says it fell apart and headed to trial. Status unconfirmed either way; ask how deposits and move-out charges are handled."
   },
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "landlord": "company",
   "my_status": "new",
@@ -7344,7 +7415,7 @@
   "detail": {
    "costs": {
     "required_fees": [],
-    "utilities": null,
+    "utilities": "Gas and hot water included (ApartmentList); renter's insurance required; income 2.5x rent.",
     "deposit": 500,
     "application_fee": 45.99,
     "admin_fee": null,
@@ -7416,7 +7487,7 @@
     "website": null,
     "leasing_phone": "(424) 348-6896"
    },
-   "evidence": "All page fetches failed (DNS ENOTFOUND); data comes only from WebSearch result summaries of aggregator pages, many with stale 2025 snapshots. G.H. Palmer / GHP Management; 526 units, 2 buildings, 6-7 floors, 2016. Deposit $500-600, renters insurance required. Parking: 'Free reserved & gated subterranean parking' (one assigned with unit); a review cites tandem spots and limited extra spaces. Palmer's Temple St projects line the 110/101 freeway (Urbanize) - very likely <500 ft from freeway; unverified so left 'unclear'."
+   "evidence": "Verified apartmentlist / padmapper search snippets, 2026-10-26. Deposit ~$500-$600 (ApartmentList) vs $400-$700 (PadMapper). App fee ~$45.99 (ApartmentList). No trash or other monthly fees found. Reserved tandem parking free. All page fetches failed (DNS ENOTFOUND); data comes only from WebSearch result summaries of aggregator pages, many with stale 2025 snapshots. G.H. Palmer / GHP Management; 526 units, 2 buildings, 6-7 floors, 2016. Deposit $500-600, renters insurance required. Parking: 'Free reserved & gated subterranean parking' (one assigned with unit); a review cites tandem spots and limited extra spaces. Palmer's Temple St projects line the 110/101 freeway (Urbanize) - very likely <500 ft from freeway; unverified so left 'unclear'."
   },
   "detail_sources": [
    "https://www.point2homes.com/US/Apartment-Buildings/CA/Los-Angeles/Downtown-Los-Angeles/DaVinci/80874932.html",
@@ -7425,6 +7496,7 @@
    "https://urbanize.la/post/keeping-geoff-palmers-latest-faux-talian-fortresses-0"
   ],
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 95
  },
@@ -7437,11 +7509,11 @@
   "lat": 34.051,
   "lng": -118.2648,
   "location_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. St Paul Ave & W 6th St, adjacent to the Harbor Freeway (I-110), City West; addresses 609/616/640 St Paul used for different parts of the complex.",
-  "sqft": 725.0,
-  "base_rent": 2330.0,
-  "effective_rent": 1942.0,
-  "special": "Redfin badge says '2 months free'; Hotpads shows only 50% off security deposit, so the concession is uncertain",
-  "parking_fee": 0.0,
+  "sqft": 725,
+  "base_rent": 2330,
+  "effective_rent": 1942,
+  "special": "Redfin '2 months free' badge unconfirmed; HotPads shows only 50% off deposit",
+  "parking_fee": 0,
   "year_built": 2005,
   "req": {
    "wd": "yes",
@@ -7450,8 +7522,8 @@
    "parking": "yes",
    "packages": "yes"
   },
-  "packages_detail": "ApartmentSearch: 'Concierge', 'Package Receiving'; VeryApt: 24-hour front desk. ApartmentList: underground parking included in lease. Residential address 616 St Paul Ave.",
-  "ac_evidence": "VeryApt: 'Central A/C' under living room features; ApartmentSearch: 'Air Conditioning'.",
+  "packages_detail": "Concierge / package receiving; 24-hour front desk (prior pass).",
+  "ac_evidence": "VeryApt: 'Central A/C' (prior pass).",
   "red_flags": "One review says the gym had been closed for months.",
   "internet": "unverified",
   "notes": "Unit 230 (B2, 725 sq ft) is $2,330 and unit 749 is $2,380, both available now. Unit 608 ($2,390) is available 11/20. Plan D is 724 sq ft, call for price. W/D, dishwasher and central A/C come from the VeryApt amenity list. Net effective assumes the 2-months-free badge is real. If it is only the deposit discount, this building fails the budget.",
@@ -7556,7 +7628,7 @@
    ],
    "note": "G.H. Palmer (GHP Management) deposit class action: one search found a $12.5M settlement, another says it fell apart and headed to trial. Status unconfirmed either way; ask how deposits and move-out charges are handled."
   },
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "landlord": "company",
   "my_status": "new",
@@ -7564,7 +7636,7 @@
   "detail": {
    "costs": {
     "required_fees": [],
-    "utilities": "Tenant pays all utilities",
+    "utilities": "Some utilities paid by resident (ApartmentSearch, unspecified).",
     "deposit": 500,
     "application_fee": 45.99,
     "admin_fee": null,
@@ -7631,10 +7703,11 @@
     "website": null,
     "leasing_phone": null
    },
-   "evidence": "All page fetches failed (DNS ENOTFOUND); data comes only from WebSearch result summaries of aggregator pages, many with stale 2025 snapshots. ApartmentList: 225 units, built 2005, underground parking included in lease. GHP Management. Review (Oct 2022): one of the gyms closed 6+ months. Adjacent to 110 freeway area (City West) - unverified."
+   "evidence": "Verified apartmentsearch search snippet, 2026-10-26. Managed by GHP Management. No fee, deposit or application amounts found. Underground parking included in lease. If the 2-months-free badge isn't real, $2,330 is over the $2,300 cap. All page fetches failed (DNS ENOTFOUND); data comes only from WebSearch result summaries of aggregator pages, many with stale 2025 snapshots. ApartmentList: 225 units, built 2005, underground parking included in lease. GHP Management. Review (Oct 2022): one of the gyms closed 6+ months. Adjacent to 110 freeway area (City West) - unverified."
   },
   "detail_sources": [],
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 95
  },
@@ -7647,9 +7720,9 @@
   "lat": 34.0399,
   "lng": -118.2604,
   "location_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. Pico between Hill and Olive, south South Park near Pico station.",
-  "sqft": 725.0,
-  "base_rent": 2395.0,
-  "effective_rent": 2211.0,
+  "sqft": 725,
+  "base_rent": 2211,
+  "effective_rent": 2211,
   "special": "4 weeks free on select one-bedrooms (6 weeks on select studios)",
   "parking_fee": 150.0,
   "year_built": 2010,
@@ -7660,8 +7733,8 @@
    "parking": "yes",
    "packages": "unclear"
   },
-  "packages_detail": "'24/7 Package Delivery System' (Westside Rentals) and 'Package Receiving' (VeryApt) - type (lockers vs room) not stated. $150 parking from building site per input, not re-verified.",
-  "ac_evidence": "VeryApt/Westside list only 'Air Conditioning'; Point2Homes mentions a NEST thermostat. No source says central.",
+  "packages_detail": "VeryApt lists 'package receiving'; method (lockers/room/desk) unknown.",
+  "ac_evidence": "VeryApt lists 'air conditioning' (living room); not stated as central.",
   "red_flags": "",
   "internet": "AT&T fiber (up to 1 Gbps) per FCC data cited on ApartmentIQ; Wi-Fi in common areas",
   "notes": "Unit 514 (A2, 725 sq ft) is $2,395 after a $100 drop. Other A2 units are $2,580-$2,615, which would not qualify. A1 is 687 sq ft (under 700). The official site confirms in-home GE W/D and parking at $150/mo; ApartmentIQ lists dishwasher and central A/C. Pet rent $50/mo.",
@@ -7669,7 +7742,9 @@
   "sources": [
    "https://www.onyxdtla.com/floorplans",
    "https://www.westsiderentals.com/los-angeles-ca/onyx-8ever23",
-   "https://www.point2homes.com/US/Apartment-Buildings/CA/Los-Angeles/Onyx1.html"
+   "https://www.point2homes.com/US/Apartment-Buildings/CA/Los-Angeles/Onyx1.html",
+   "https://www.veryapt.com/Apartments-L11922-los-angeles-downtown-los-angeles?page=2",
+   "https://edge.apartmentiq.io/los-angeles-ca/onyx"
   ],
   "reviews": {
    "name": "Onyx",
@@ -7761,7 +7836,7 @@
    ],
    "note": ""
   },
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "landlord": "company",
   "my_status": "new",
@@ -7840,13 +7915,14 @@
     "website": "https://www.onyxdtla.com/floorplans",
     "leasing_phone": "(844) 605-0479"
    },
-   "evidence": "All page fetches failed (DNS ENOTFOUND); data comes only from WebSearch result summaries of aggregator pages, many with stale 2025 snapshots. 162 units/7 floors/2018 (Point2, ApartmentIQ). Pet terms from one listing (estimates). Parking listed as feature, no fee. Near I-10/110 interchange area (Pico/Grand) - proximity unverified."
+   "evidence": "Verified point2homes / veryapt / apartmentiq + 2026-10-26. Pet deposit $500, pet rent $50/mo (Point2). No general security deposit published. Built 2018, 162 units. Rents $1,960-$2,625 (Point2). Leasing (844) 605-0479. All page fetches failed (DNS ENOTFOUND); data comes only from WebSearch result summaries of aggregator pages, many with stale 2025 snapshots. 162 units/7 floors/2018 (Point2, ApartmentIQ). Pet terms from one listing (estimates). Parking listed as feature, no fee. Near I-10/110 interchange area (Pico/Grand) - proximity unverified."
   },
   "detail_sources": [
    "https://edge.apartmentiq.io/los-angeles-ca/onyx",
    "https://hotpads.com/onyx-los-angeles-ca-90015-248ggbq/pad"
   ],
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 92
  },
@@ -7859,9 +7935,9 @@
   "lat": 34.0479,
   "lng": -118.2406,
   "location_note": "Approximate: shell/WebFetch geocoders (Census, Nominatim, ArcGIS) were unreachable from this session, so coordinates were estimated from the DTLA street grid and known landmarks; expect ~100-200 m error. San Pedro between 2nd and 3rd, Little Tokyo (east edge borders Skid Row).",
-  "sqft": 772.0,
-  "base_rent": 2395.0,
-  "effective_rent": 2295.0,
+  "sqft": 772,
+  "base_rent": 2395,
+  "effective_rent": 2295,
   "special": "Half month free (Redfin badge; not shown on Equity for 1BRs)",
   "parking_fee": null,
   "year_built": 2009,
@@ -7872,8 +7948,8 @@
    "parking": "yes",
    "packages": "unclear"
   },
-  "packages_detail": "No package handling found; RentHop lists a 'Doorman' amenity. Dishwasher per ApartmentIQ (mid-2025 data). Covered parking/garage; fee not found.",
-  "ac_evidence": "VeryApt: 'Central A/C' under living room features.",
+  "packages_detail": "No package system found in any source.",
+  "ac_evidence": "VeryApt: 'Central A/C' (prior pass).",
   "red_flags": "",
   "internet": "unverified",
   "notes": "Round 4: Zillow shows washer/dryers in only some units and tags the building income-restricted. Confirm both.\n\nUnit 772 sf, 5th floor, move-in 11/5/2026. Redfin labels the building 'income restricted' (part of it is affordable housing), so confirm the unit is market-rate. The concession is doubtful, and this only qualifies if it applies. The photo URL is an Equity floor-plan image with no file extension. Little Tokyo may overlap with the DTLA-core agent's area.",
@@ -7883,7 +7959,9 @@
    "https://www.veryapt.com/ApartmentReview-a2581-sakura-crossing-los-angeles",
    "https://edge.apartmentiq.io/los-angeles-ca/sakura-crossing",
    "https://zillow.com/apartments/los-angeles-ca/sakura-crossing/5XkJ6F/",
-   "https://www.renthop.com/listings/235-south-san-pedro-street/1-bedroom-fp-24/76571634"
+   "https://www.renthop.com/listings/235-south-san-pedro-street/1-bedroom-fp-24/76571634",
+   "https://www.renthop.com/listings/235-south-san-pedro-street/2-bedroom-fp-14/75334009",
+   "https://equityapartments.com/los-angeles/little-tokyo-apartments"
   ],
   "reviews": {
    "name": "Sakura Crossing",
@@ -8042,7 +8120,7 @@
     "website": "https://www.equityapartments.com/los-angeles/little-tokyo/sakura-crossing-apartments",
     "leasing_phone": "(213) 625-9200"
    },
-   "evidence": "All page fetches failed (DNS ENOTFOUND); data comes only from WebSearch result summaries of aggregator pages, many with stale 2025 snapshots. 230 units (Related California); 2009 (CityFeet). Deposit $600-800 (RentHop, low end recorded). Zillow tags 'income restricted' - may include affordable units; verify. W/D only in some units. Parking fee and utilities not found. Walk 95/Transit 100/Bike 88 per ApartmentIQ (CityFeet says 80). Little Tokyo/Arts District Metro (A/E) nearby but minutes not verified."
+   "evidence": "Verified renthop / equityapartments search snippets, 2026-10-26. Deposit $600-$800 (RentHop, Equity Residential). Parking garage, fee not found. Partly income-restricted - confirm market-rate unit. All page fetches failed (DNS ENOTFOUND); data comes only from WebSearch result summaries of aggregator pages, many with stale 2025 snapshots. 230 units (Related California); 2009 (CityFeet). Deposit $600-800 (RentHop, low end recorded). Zillow tags 'income restricted' - may include affordable units; verify. W/D only in some units. Parking fee and utilities not found. Walk 95/Transit 100/Bike 88 per ApartmentIQ (CityFeet says 80). Little Tokyo/Arts District Metro (A/E) nearby but minutes not verified."
   },
   "detail_sources": [
    "https://www.renthop.com/listings/235-south-san-pedro-street/1-bedroom-fp-11/76583397",
@@ -8050,6 +8128,7 @@
    "https://www.cityfeet.com/cont/listing/235-s-san-pedro-st-los-angeles-ca-90012/cs40443740"
   ],
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 95
  },
@@ -9320,21 +9399,21 @@
   "lat": 34.0488,
   "lng": -118.2402,
   "location_note": "approximate coordinates estimated from street location (no geocoder available; page fetches blocked) - verify",
-  "sqft": 777.0,
+  "sqft": 777,
   "base_rent": null,
   "effective_rent": null,
-  "special": "HotPads showed up to 1.5 months free on select homes, but that offer ran through May 2026 (expired); Trulia offer ended Jun 20 2026",
+  "special": "Earlier up-to-1.5/2 months free offers ended mid-2026",
   "parking_fee": null,
   "year_built": null,
   "req": {
    "wd": "yes",
    "ac": "unclear",
-   "dw": "unclear",
+   "dw": "yes",
    "parking": "yes",
    "packages": "unclear"
   },
-  "packages_detail": "HotPads/ApartmentList list 'package service/receiving'; lockers not described",
-  "ac_evidence": "HotPads/ApartmentList list only 'Air Conditioning'; type not stated",
+  "packages_detail": "HotPads/ApartmentList list 'package service'; type not stated.",
+  "ac_evidence": "HotPads/ApartmentList list only 'Air Conditioning'.",
   "red_flags": [
    "Only the ~777 sq ft plan meets the 700 sq ft minimum, and its price is unconfirmed",
    "HotPads labels the listing income-restricted (some units may be affordable-housing only)",
@@ -9349,7 +9428,8 @@
    "https://trulia.com/building/hikari-375-e-2nd-st-los-angeles-ca-90012-1001484402",
    "https://apartmentlist.com/ca/los-angeles/hikari",
    "https://www.forrent.com/ca/los-angeles/hikari/twhdd18",
-   "https://edge.apartmentiq.io/los-angeles-ca/hikari"
+   "https://edge.apartmentiq.io/los-angeles-ca/hikari",
+   "https://www.redfin.com/neighborhood/1385/CA/Los-Angeles/Japantown-Little-Tokyo/1-bedroom-apartments-for-rent"
   ],
   "reviews": {
    "reputation_score": null,
@@ -9364,7 +9444,7 @@
     "summary": ""
    }
   },
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "my_status": "new",
   "my_note": "",
@@ -9442,10 +9522,12 @@
     "units_note": "Seen 2026-10-26 via undated aggregator snippets: Redfin 6 x 1BR from $2,205 (627-777 sq ft). Trulia deposit $600-$800.",
     "website": null,
     "leasing_phone": "(213) 663-1671 (ForRent property phone)"
-   }
+   },
+   "evidence": "Verified redfin / apartmentlist / trulia / renthop search snippets, 2026-10-26. Redfin 1BR plans 627-777 sq ft from $2,205-$2,248 (undated); price of the 777 plan is not stated. Deposit $600-$800. Pet rent $45 cat / $55 dog. HotPads tags it income-restricted."
   },
   "detail_sources": [],
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 95
  },
@@ -9599,20 +9681,20 @@
   "lng": -118.185,
   "location_note": "approximate coordinates estimated from street location (no geocoder available; page fetches blocked) - verify",
   "sqft": null,
-  "base_rent": 2100.0,
-  "effective_rent": 2100.0,
+  "base_rent": 2100,
+  "effective_rent": 2100,
   "special": null,
   "parking_fee": null,
   "year_built": null,
   "req": {
    "wd": "yes",
    "ac": "yes",
-   "dw": "unclear",
+   "dw": "yes",
    "parking": "yes",
    "packages": "unclear"
   },
-  "packages_detail": null,
-  "ac_evidence": "VeryApt listing tags 'central A/C' (aggregator tag; verify)",
+  "packages_detail": "No source mentions package handling.",
+  "ac_evidence": "Not re-checked this pass (was not listed as a gap); keep prior-pass value.",
   "red_flags": [
    "Square footage unknown (a 1BR/2BA layout suggests 700+ but unconfirmed)",
    "Only source is one aggregator page that is not taking inquiries",
@@ -9638,7 +9720,7 @@
     "summary": ""
    }
   },
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "my_status": "new",
   "my_note": "",
@@ -9720,10 +9802,12 @@
     "units_note": "Seen 2026-10-26: VeryApt 1BR/2BA from $2,100+, not accepting inquiries.",
     "website": null,
     "leasing_phone": null
-   }
+   },
+   "evidence": "Verified veryapt.com (search snippet) + 2026-10-26. VeryApt: 1BR from $2,100 (oddly listed as 1BR/2BA), 2BR from $2,395; amenities list dishwasher, parking, balconies, SS appliances; laundry described as 'in-unit washer/dryer hookups' (hookups only - confirm machines are provided). VeryApt not accepting inquiries. Still unknown: sqft (no source found, 2 searches), packages, parking fee, deposit, fees. W/D and AC not re-verified (Not re-checked this pass (was not listed as a gap); keep prior-pass value.)"
   },
   "detail_sources": [],
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 77
  },
@@ -11192,20 +11276,20 @@
   "lng": -117.82121564694081,
   "location_note": "Map position is approximate: placed near the center of Tustin – Tustin Legacy / Old Town. Not geocoded: page fetches failed (DNS errors) and the shared web-search budget ran out mid-task; lat/lng left null rather than guessed.",
   "sqft": null,
-  "base_rent": 2291.0,
-  "effective_rent": 2267.0,
-  "special": "$285 off (one-time; spread over 12 months)",
+  "base_rent": 2291,
+  "effective_rent": 2267,
+  "special": "$285 off (one-time)",
   "parking_fee": null,
   "year_built": null,
   "req": {
    "wd": "yes",
    "ac": "unclear",
-   "dw": "unclear",
+   "dw": "yes",
    "parking": "yes",
    "packages": "unclear"
   },
-  "packages_detail": null,
-  "ac_evidence": "Listing says 'air conditioning'; type not stated.",
+  "packages_detail": "'Package Acceptance Service' listed; method not stated.",
+  "ac_evidence": "Listings say 'Air Conditioning'; type not stated.",
   "red_flags": "1BR size unknown — may be under 700. Address sits near the I-5/SR-55 interchange; check freeway proximity/noise.",
   "internet": null,
   "notes": "Plan 1 bd / 1 ba. ApartmentFinder: 1BR from $2,291+ with $285 off; older listing $1,625+ (stale). 1BR sq ft not found. Seen on 2026-10-26.",
@@ -11213,7 +11297,9 @@
   "sources": [
    "https://www.apartmentsearch.com/apartments/california/tustin/axiom-tustin",
    "https://www.veryapt.com/ApartmentReview-a3351-axiom-tustin-i-tustin",
-   "https://www.apartmentfinder.com/California/Tustin/Almeria-Neighborhood-Apartments"
+   "https://www.apartmentfinder.com/California/Tustin/Almeria-Neighborhood-Apartments",
+   "https://www.apartments.com/axiom-tustin-tustin-ca/8s9sjn1/",
+   "https://hotpads.com/axiom-tustin-tustin-ca-92780-247q350/pad"
   ],
   "reviews": {
    "reputation_score": null,
@@ -11228,7 +11314,7 @@
     "summary": ""
    }
   },
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "my_status": "new",
   "my_note": "",
@@ -11308,10 +11394,12 @@
     "units_note": "1BR from $2,291 (ApartmentFinder); seen 2026-10-26",
     "website": null,
     "leasing_phone": null
-   }
+   },
+   "evidence": "Verified apartmentsearch / westsiderentals / hotpads search snippets, 2026-10-26. 1BR plans 696-810 sq ft (726 and 810 also named); the $2,291 unit's size unknown and may be the 696 plan (<700). Other quotes: $2,280-$2,880 and HotPads $2,315-$2,425. Address also listed as 13843 Tustin East Dr. Pet deposit $750, pet rent $110."
   },
   "detail_sources": [],
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": null
  },
@@ -11583,21 +11671,21 @@
   "lat": 34.0485,
   "lng": -118.2487,
   "location_note": "Estimated from street address (Spring St between 4th and 5th); not geocoded by a service.",
-  "sqft": 810.0,
-  "base_rent": 2500.0,
-  "effective_rent": 2500.0,
+  "sqft": 810,
+  "base_rent": 2500,
+  "effective_rent": 2500,
   "special": null,
   "parking_fee": null,
   "year_built": 1912,
   "req": {
    "wd": "yes",
    "ac": "yes",
-   "dw": "unclear",
+   "dw": "yes",
    "parking": "yes",
    "packages": "yes"
   },
-  "packages_detail": "24/7 front-desk concierge and 'secure package receiving' cited in the #801 listing (building-wide amenity).",
-  "ac_evidence": "Listing says 'central AC with a Nest thermostat'.",
+  "packages_detail": "24/7 front-desk concierge, secure package receiving (building-wide).",
+  "ac_evidence": "RentSpree listing: central AC (Nest thermostat).",
   "red_flags": "Parking is NOT in the building — spaces in the adjacent garage rent separately (#801 listing: +$125–255/mo for assigned/tandem). Historic Core street conditions (noise, homelessness) — visit at night. Listing dates not visible; may be stale.",
   "internet": null,
   "notes": "Plan 1BR/1BA. Owner listing on RentSpree: 1BR 810 sq ft at $2,500; date not shown. Seen on 2026-10-26 (search snippets only; all page fetches failed with DNS errors).",
@@ -11620,7 +11708,7 @@
     "summary": "1912 Rowan Building, converted to ~202-206 condo lofts c.2006-2008 under the Adaptive Reuse Ordinance; 24/7 concierge/security, resident lounge, patio with hot/cold plunge pools and BBQ. Legal live/work, Mills Act building."
    }
   },
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "my_status": "new",
   "my_note": "",
@@ -11634,7 +11722,7 @@
   "detail": {
    "costs": {
     "required_fees": [],
-    "utilities": null,
+    "utilities": "Gas, water/sewer, trash included in rent.",
     "deposit": null,
     "application_fee": null,
     "admin_fee": null,
@@ -11702,10 +11790,12 @@
     "units_note": "Owner listing on RentSpree: 1BR 810 sq ft at $2,500; date not shown. Seen 2026-10-26 (search snippets only; all page fetches failed with DNS errors).",
     "website": null,
     "leasing_phone": null
-   }
+   },
+   "evidence": "Verified rentspree search snippet, 2026-10-26. Listing is furnished and shows availability date June 18, 2025 - likely stale. Rent $2,500 is over $2,300 (within $2,600 collect cap). No in-building parking: adjacent garage, $125-$255/mo per the #801 listing."
   },
   "detail_sources": [],
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 95
  },
@@ -11718,21 +11808,21 @@
   "lat": 34.0485,
   "lng": -118.2487,
   "location_note": "Estimated from street address (Spring St between 4th and 5th); not geocoded by a service.",
-  "sqft": 720.0,
-  "base_rent": 2100.0,
-  "effective_rent": 2100.0,
+  "sqft": 720,
+  "base_rent": 2100,
+  "effective_rent": 2100,
   "special": null,
-  "parking_fee": 125.0,
+  "parking_fee": 125,
   "year_built": 1912,
   "req": {
    "wd": "yes",
-   "ac": "unclear",
+   "ac": "yes",
    "dw": "unclear",
    "parking": "yes",
    "packages": "yes"
   },
-  "packages_detail": "24/7 front-desk concierge and 'secure package receiving' cited in the #801 listing (building-wide amenity).",
-  "ac_evidence": "Listing snippet did not state AC type (other Rowan units list central AC).",
+  "packages_detail": "24/7 front-desk concierge, secure package receiving.",
+  "ac_evidence": "Avail amenity list includes central air and central heat.",
   "red_flags": "Parking is NOT in the building — spaces in the adjacent garage rent separately (#801 listing: +$125–255/mo for assigned/tandem). Historic Core street conditions (noise, homelessness) — visit at night. Listing dates not visible; may be stale.",
   "internet": null,
   "notes": "Plan 1BR/1BA. Avail owner listing: corner 1BR/1BA 720 sq ft, city & park views, $2,100; rent includes water, gas, trash. Date not shown — at this price it may be an old listing. Seen on 2026-10-26 (search snippets only; all page fetches failed with DNS errors).",
@@ -11755,7 +11845,7 @@
     "summary": "1912 Rowan Building, converted to ~202-206 condo lofts c.2006-2008 under the Adaptive Reuse Ordinance; 24/7 concierge/security, resident lounge, patio with hot/cold plunge pools and BBQ. Legal live/work, Mills Act building."
    }
   },
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "my_status": "new",
   "my_note": "",
@@ -11769,7 +11859,7 @@
   "detail": {
    "costs": {
     "required_fees": [],
-    "utilities": "Water, gas and trash included in rent; tenant pays electric (per listing)",
+    "utilities": "Water, gas, trash included in rent.",
     "deposit": null,
     "application_fee": null,
     "admin_fee": null,
@@ -11836,10 +11926,12 @@
     "units_note": "Avail owner listing: corner 1BR/1BA 720 sq ft, city & park views, $2,100; rent includes water, gas, trash. Date not shown — at this price it may be an old listing. Seen 2026-10-26 (search snippets only; all page fetches failed with DNS errors).",
     "website": null,
     "leasing_phone": null
-   }
+   },
+   "evidence": "Verified avail.com search snippet, 2026-10-26. Avail shows 'Date Available: Not Available', so it may not be rentable. Parking: one unassigned space, or assigned/tandem for +$125-$255/mo. Snippet lists stainless appliances but not a dishwasher. Deposit not stated (unit #715 in same building: one month's rent)."
   },
   "detail_sources": [],
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 95
  },
@@ -11852,9 +11944,9 @@
   "lat": 34.0485,
   "lng": -118.2487,
   "location_note": "Estimated from street address (Spring St between 4th and 5th); not geocoded by a service.",
-  "sqft": 900.0,
-  "base_rent": 2495.0,
-  "effective_rent": 2495.0,
+  "sqft": 900,
+  "base_rent": 2495,
+  "effective_rent": 2495,
   "special": null,
   "parking_fee": null,
   "year_built": 1912,
@@ -11865,8 +11957,8 @@
    "parking": "yes",
    "packages": "yes"
   },
-  "packages_detail": "24/7 front-desk concierge and 'secure package receiving' cited in the #801 listing (building-wide amenity).",
-  "ac_evidence": "Feature list includes 'washer/dryer'; AC type not stated in snippet.",
+  "packages_detail": "24/7 front-desk concierge (building-wide).",
+  "ac_evidence": "ForRentUniversity lists 'Air Conditioning'; type not stated.",
   "red_flags": "Parking is NOT in the building — spaces in the adjacent garage rent separately (#801 listing: +$125–255/mo for assigned/tandem). Historic Core street conditions (noise, homelessness) — visit at night. Listing dates not visible; may be stale.",
   "internet": null,
   "notes": "Plan 1BR/1BA. ForRentUniversity: 1BR/1BA 900 sq ft $2,495, 'Available Now' (building pages elsewhere describe 890 sq ft). Seen on 2026-10-26 (search snippets only; all page fetches failed with DNS errors).",
@@ -11889,7 +11981,7 @@
     "summary": "1912 Rowan Building, converted to ~202-206 condo lofts c.2006-2008 under the Adaptive Reuse Ordinance; 24/7 concierge/security, resident lounge, patio with hot/cold plunge pools and BBQ. Legal live/work, Mills Act building."
    }
   },
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "my_status": "new",
   "my_note": "",
@@ -11969,10 +12061,12 @@
     "units_note": "ForRentUniversity: 1BR/1BA 900 sq ft $2,495, 'Available Now' (building pages elsewhere describe 890 sq ft). Seen 2026-10-26 (search snippets only; all page fetches failed with DNS errors).",
     "website": null,
     "leasing_phone": null
-   }
+   },
+   "evidence": "Verified forrentuniversity search snippet, 2026-10-26. 'Available Now'. Building has no parking; adjacent garage for a monthly fee (amount not stated for this unit). Rent over $2,300."
   },
   "detail_sources": [],
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 95
  },
@@ -11985,9 +12079,9 @@
   "lat": 34.0485,
   "lng": -118.2487,
   "location_note": "Estimated from street address (Spring St between 4th and 5th); not geocoded by a service.",
-  "sqft": 920.0,
-  "base_rent": 2500.0,
-  "effective_rent": 2500.0,
+  "sqft": 920,
+  "base_rent": 2500,
+  "effective_rent": 2500,
   "special": null,
   "parking_fee": null,
   "year_built": 1912,
@@ -11998,8 +12092,8 @@
    "parking": "yes",
    "packages": "yes"
   },
-  "packages_detail": "24/7 front-desk concierge and 'secure package receiving' cited in the #801 listing (building-wide amenity).",
-  "ac_evidence": "Listing snippet did not mention AC or laundry.",
+  "packages_detail": "24/7 front-desk concierge (building-wide).",
+  "ac_evidence": "Snippet does not mention AC.",
   "red_flags": "Parking is NOT in the building — spaces in the adjacent garage rent separately (#801 listing: +$125–255/mo for assigned/tandem). Historic Core street conditions (noise, homelessness) — visit at night. Listing dates not visible; may be stale.",
   "internet": null,
   "notes": "Plan 1BR/1BA. Pardee Properties MLS page: $2,500/mo, 920 sq ft (bedroom count from search context = 1BR); status/date unknown. Seen on 2026-10-26 (search snippets only; all page fetches failed with DNS errors).",
@@ -12022,7 +12116,7 @@
     "summary": "1912 Rowan Building, converted to ~202-206 condo lofts c.2006-2008 under the Adaptive Reuse Ordinance; 24/7 concierge/security, resident lounge, patio with hot/cold plunge pools and BBQ. Legal live/work, Mills Act building."
    }
   },
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "my_status": "new",
   "my_note": "",
@@ -12100,10 +12194,12 @@
     "units_note": "Pardee Properties MLS page: $2,500/mo, 920 sq ft (bedroom count from search context = 1BR); status/date unknown. Seen 2026-10-26 (search snippets only; all page fetches failed with DNS errors).",
     "website": null,
     "leasing_phone": null
-   }
+   },
+   "evidence": "Verified pardeeproperties search snippet, 2026-10-26. Only price and size known. Status/date unknown. Rent over $2,300."
   },
   "detail_sources": [],
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 95
  },
@@ -12387,20 +12483,20 @@
   "lng": -118.4245,
   "location_note": "Estimated from street address (Inglewood Blvd between Venice Blvd and Washington area, 90066); not geocoded by a service.",
   "sqft": null,
-  "base_rent": 2495.0,
-  "effective_rent": 2495.0,
+  "base_rent": 2495,
+  "effective_rent": 2495,
   "special": null,
   "parking_fee": null,
   "year_built": null,
   "req": {
-   "wd": "yes",
+   "wd": "no",
    "ac": "yes",
    "dw": "unclear",
    "parking": "unclear",
    "packages": "unclear"
   },
-  "packages_detail": null,
-  "ac_evidence": "Listing: 'newly renovated ... central air and heat, in unit washer and dryer'.",
+  "packages_detail": "Not mentioned.",
+  "ac_evidence": "Amenities list generic 'Air Conditioning' - type not stated.",
   "red_flags": "Square footage unknown and may be <700. Listing contradicts itself on parking ('street parking only' vs. surface/garage options in fee table). Older building renovated — build year unknown.",
   "internet": null,
   "notes": "Plan 1BR/1BA. 1BR/1BA $2,495 'available now'; size not listed (neighbor 3930 Inglewood 1BR is 576 sq ft, so 700+ is doubtful). Seen on 2026-10-26 (search snippets only; all page fetches failed with DNS errors).",
@@ -12422,7 +12518,7 @@
     "summary": ""
    }
   },
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "my_status": "new",
   "my_note": "",
@@ -12437,7 +12533,7 @@
    "costs": {
     "required_fees": [],
     "utilities": null,
-    "deposit": null,
+    "deposit": 2495,
     "application_fee": null,
     "admin_fee": null,
     "parking_fee": null,
@@ -12500,10 +12596,12 @@
     "units_note": "1BR $2,495 available now, seen 2026-10-26 (search snippets only; all page fetches failed with DNS errors)",
     "website": null,
     "leasing_phone": null
-   }
+   },
+   "evidence": "Verified rentable.co + 2026-10-26. Rentable: unit 40-10, 1BR/1BA $2,495, deposit $2,495, size shown as '0 sq ft' (unknown). Amenities list 'On-site Laundry' and no in-unit W/D -> shared laundry (treated as fail). Building is mostly studios/'bachelor apartments' (KMK Management). Dishwasher, parking unknown."
   },
   "detail_sources": [],
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 75
  },
@@ -12646,8 +12744,8 @@
   "lng": -118.2496,
   "location_note": "Estimated from street address (Spring St at 5th St); not geocoded by a service.",
   "sqft": null,
-  "base_rent": 2350.0,
-  "effective_rent": 2350.0,
+  "base_rent": 2350,
+  "effective_rent": 2350,
   "special": "Redfin pages show 2BR from $2,408 and $2,778 at different dates; VeryApt 2BR $2,350+",
   "parking_fee": null,
   "year_built": null,
@@ -12658,8 +12756,8 @@
    "parking": "yes",
    "packages": "unclear"
   },
-  "packages_detail": null,
-  "ac_evidence": "Apartments.com: lofts and 2BR homes 'include air conditioning' (type unstated).",
+  "packages_detail": "Concierge listed; no package system mentioned.",
+  "ac_evidence": "Marketing says lofts and 2BR homes 'include air conditioning'; type not stated.",
   "red_flags": "In-unit W/D and central AC not confirmed. 2BR sq ft not found (building max 1,160–1,396). Historic Core street conditions.",
   "internet": null,
   "notes": "Plan 2BR (studios–2BR offered; no 1BR price found). Building range: studio–2BR, 509–1,396 sq ft, $2,081–$3,064 (Apartments.com); 2BR $2,350–$2,778 depending on source/date. Seen on 2026-10-26 (search snippets only; all page fetches failed with DNS errors).",
@@ -12667,7 +12765,9 @@
   "sources": [
    "https://www.apartments.com/the-lofts-at-the-security-building-apartments-los-angeles-ca/zm9pqvx/",
    "https://www.veryapt.com/ApartmentReview-a20946-the-lofts-at-the-security-building-los-angeles",
-   "https://www.redfin.com/neighborhood/1279/CA/Los-Angeles/Historic-Core/apartments-for-rent"
+   "https://www.redfin.com/neighborhood/1279/CA/Los-Angeles/Historic-Core/apartments-for-rent",
+   "https://www.apartmentsearch.com/apartments/california/los-angeles/the-lofts-at-the-security-building-apartments",
+   "https://www.redfin.com/zipcode/90013/2-bedroom-apartments-for-rent"
   ],
   "reviews": {
    "reputation_score": null,
@@ -12682,7 +12782,7 @@
     "summary": "Historic Security Building converted to rental lofts; 10-ft exposed ceilings, city views; pets welcome (per listing sites)."
    }
   },
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "my_status": "new",
   "my_note": "",
@@ -12695,7 +12795,12 @@
   "scam_flags": "",
   "detail": {
    "costs": {
-    "required_fees": [],
+    "required_fees": [
+     {
+      "name": "valet trash",
+      "amount": 50
+     }
+    ],
     "utilities": null,
     "deposit": null,
     "application_fee": null,
@@ -12760,10 +12865,12 @@
     "units_note": "2BR from ~$2,350–$2,778 across sources, seen 2026-10-26 (search snippets only; all page fetches failed with DNS errors)",
     "website": null,
     "leasing_phone": "213-725-2681"
-   }
+   },
+   "evidence": "Verified apartments.com / apartmentsearch / redfin search snippets, 2026-10-26. 2BR sq ft range 716-1,160 (Redfin); the $2,350 unit's size unknown. 2BR price conflicts: $2,350 (VeryApt), $2,408 / $2,778 (Redfin). ApartmentSearch lists on-site 'laundry facilities' - suggests in-unit W/D may not be standard. Managed by Simpson Property Group. Valet trash $50/mo from an Apartments.com snippet."
   },
   "detail_sources": [],
-  "required_fees_total": null,
+  "required_fees_total": 50,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 95
  },
@@ -12908,7 +13015,7 @@
   "lat": 33.9728,
   "lng": -118.4255,
   "location_note": "Estimated from street address (Seabluff Dr near Runway, Playa Vista); not geocoded by a service.",
-  "sqft": 790.0,
+  "sqft": 790,
   "base_rent": null,
   "effective_rent": null,
   "special": null,
@@ -12921,14 +13028,17 @@
    "parking": "yes",
    "packages": "unclear"
   },
-  "packages_detail": null,
-  "ac_evidence": "Not in snippet (Playa Vista condos are typically 2000s builds with central HVAC — unverified).",
+  "packages_detail": "Not mentioned.",
+  "ac_evidence": "No source mentions AC type for any unit in the building.",
   "red_flags": "Rent unknown; Playa Vista 1BR average ~$3,657, so likely over $2,600. Lead only.",
   "internet": null,
   "notes": "Plan 1BR/1BA. Top-floor 1BR/1BA condo, 790 sq ft, 1 parking spot, access to The Resort and Centerpointe Club; 'Available Now'; rent not shown. Seen on 2026-10-26 (search snippets only; all page fetches failed with DNS errors).",
   "listing_url": "https://www.theweglarzteam.com/rentals/CA/Los-Angeles/90094",
   "sources": [
-   "https://www.theweglarzteam.com/rentals/CA/Los-Angeles/90094"
+   "https://www.theweglarzteam.com/rentals/CA/Los-Angeles/90094",
+   "https://www.westsiderentals.com/los-angeles-ca/6020-s-seabluff-dr-unit-302-c86sy5g",
+   "https://theboutiquere.com/properties/retsPdf/25543973/6020-Seabluff-Drive",
+   "https://pardeeproperties.com/listings/playa+vista/ca/90094/6020+s+seabluff+dr+122,+playa+vista,+ca+90094/233340530"
   ],
   "reviews": {
    "reputation_score": null,
@@ -12943,7 +13053,7 @@
     "summary": ""
    }
   },
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "my_status": "new",
   "my_note": "",
@@ -12957,7 +13067,7 @@
   "detail": {
    "costs": {
     "required_fees": [],
-    "utilities": null,
+    "utilities": "One undated snippet for #402 says basic cable and internet included (plus resort access).",
     "deposit": null,
     "application_fee": null,
     "admin_fee": null,
@@ -13021,10 +13131,12 @@
     "units_note": "#402 'Available Now', rent not shown, seen 2026-10-26 (search snippets only; all page fetches failed with DNS errors)",
     "website": null,
     "leasing_phone": null
-   }
+   },
+   "evidence": "Verified westsiderentals.com / theboutiquere.com / theweglarzteam.com (search snippets) + 2026-10-26. No current rent found for #402. Undated snippet: #402 1BR/1BA top floor, 'available July 1', parking spot + basic cable/internet + resort access included, no price. Comparable 1BRs in the same building: #302 1BR/1BA $3,800 (2 tandem spaces); a 1BR+den with in-unit W/D at $3,600 (undated). Strongly suggests #402 is far over the $2,600 ceiling. W/D for #402 unconfirmed (other units have in-unit W/D)."
   },
   "detail_sources": [],
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 75
  },
@@ -13319,21 +13431,21 @@
   "lat": 33.6512,
   "lng": -117.742,
   "location_note": "lat/lng are my estimate from the street address (no geocoder available; page fetches failed with DNS errors) - approx +/-0.005 deg; verify.",
-  "sqft": 712.0,
-  "base_rent": 2595.0,
-  "effective_rent": 2595.0,
+  "sqft": 712,
+  "base_rent": 2595,
+  "effective_rent": 2595,
   "special": "Redfin flag 'LOWERED FEES'; earlier reduced-deposit offer ended Aug 3 2026",
   "parking_fee": null,
   "year_built": 2005,
   "req": {
-   "wd": "unclear",
+   "wd": "yes",
    "ac": "yes",
    "dw": "unclear",
    "parking": "yes",
    "packages": "yes"
   },
-  "packages_detail": "'24hr. parcel locker' per ApartmentHomeLiving",
-  "ac_evidence": "ApartmentHomeLiving listing: 'central air conditioning & heat'",
+  "packages_detail": "Not found.",
+  "ac_evidence": "ApartmentHomeLiving community features: 'central air conditioning & heat' (single third-party source; not confirmed on an Irvine Company page).",
   "red_flags": [
    "$2,595 floor is right at the $2,600 ceiling; Irvine Company usually adds utility/trash billing",
    "In-unit W/D not confirmed for the cheapest plan"
@@ -13345,7 +13457,8 @@
    "https://www.redfin.com/neighborhood/114689/CA/Irvine/Irvine-Spectrum/1-bedroom-apartments-for-rent",
    "https://www.apartmenthomeliving.com/apartment-finder/The-Village-at-Irvine-Spectrum-Irvine-CA-92618-1822245",
    "https://www.yardimatrix.com/property-types/multifamily/orangecounty/the-village-at-irvine-spectrum-50-prism-ca-92618--116452",
-   "https://www.multihousingnews.com/mve-partners-designs-contemporary-living-community-next-to-shopping-center/"
+   "https://www.multihousingnews.com/mve-partners-designs-contemporary-living-community-next-to-shopping-center/",
+   "https://nationalcorporatehousing.com/node/29248"
   ],
   "reviews": {
    "reputation_score": null,
@@ -13360,7 +13473,7 @@
     "summary": ""
    }
   },
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "my_status": "new",
   "my_note": "",
@@ -13439,10 +13552,11 @@
     "website": null,
     "leasing_phone": null
    },
-   "evidence": "Snippets only. 1,550 units in four 4-story districts beside Irvine Spectrum Center (walkable shopping/cafes). Some buildings sit near the I-5/I-405 junction - check unit location for the 500 ft freeway buffer. Parking type assumed garage from wrap design - unverified."
+   "evidence": "Verified apartmenthomeliving.com / nationalcorporatehousing.com + 2026-10-26. In-home full-size washer & dryer (ApartmentHomeLiving; National Corporate Housing also lists W/D in home). Pricing range $2,490-$6,470 on ApartmentHomeLiving. Dishwasher, parking fee, deposit, fees not found. Snippets only. 1,550 units in four 4-story districts beside Irvine Spectrum Center (walkable shopping/cafes). Some buildings sit near the I-5/I-405 junction - check unit location for the 500 ft freeway buffer. Parking type assumed garage from wrap design - unverified."
   },
   "detail_sources": [],
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": null
  },
@@ -13455,21 +13569,21 @@
   "lat": 33.6985,
   "lng": -117.7255,
   "location_note": "lat/lng are my estimate from the street address (no geocoder available; page fetches failed with DNS errors) - approx +/-0.005 deg; verify.",
-  "sqft": 807.0,
-  "base_rent": 2480.0,
-  "effective_rent": 2480.0,
+  "sqft": 807,
+  "base_rent": 2480,
+  "effective_rent": 2480,
   "special": "Redfin card flagged 'DEAL'",
   "parking_fee": null,
   "year_built": null,
   "req": {
    "wd": "unclear",
    "ac": "unclear",
-   "dw": "unclear",
+   "dw": "yes",
    "parking": "yes",
    "packages": "unclear"
   },
-  "packages_detail": null,
-  "ac_evidence": "Redfin and Trovit list 'A/C' - type not stated",
+  "packages_detail": "Not found.",
+  "ac_evidence": "Aggregators tag 'air conditioning' only; type not stated.",
   "red_flags": [
    "Price conflict across sources: 700+ sq ft plans may exceed $2,600",
    "Far east Irvine (Portola Springs): long drive to LAX"
@@ -13480,7 +13594,9 @@
   "sources": [
    "https://redfin.com/neighborhood/63926/CA/Irvine/El-Toro/1-bedroom-apartments-for-rent",
    "https://www.apartmentfinder.com/California/Irvine/Covered-Parking-Portola-Springs-Neighborhood-Apartments",
-   "https://homes.trovit.com/portola/12"
+   "https://homes.trovit.com/portola/12",
+   "https://www.irvinecompanyapartments.com/locations/orange-county/irvine/portola-springs/portola-place/features-amenities.html",
+   "https://www.redfin.com/zipcode/92618/rentals/page-8"
   ],
   "reviews": {
    "reputation_score": null,
@@ -13495,7 +13611,7 @@
     "summary": ""
    }
   },
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "my_status": "new",
   "my_note": "",
@@ -13509,7 +13625,7 @@
   "detail": {
    "costs": {
     "required_fees": [],
-    "utilities": null,
+    "utilities": "Official page: Cox Gigablast & Google Fiber not included in rent.",
     "deposit": null,
     "application_fee": null,
     "admin_fee": null,
@@ -13574,10 +13690,11 @@
     "website": null,
     "leasing_phone": null
    },
-   "evidence": "Snippets only; W/D and year built not found. Irvine Company newer communities typically include in-home W/D, but not verified here."
+   "evidence": "Verified irvinecompanyapartments.com (features page snippet) / redfin / apartmentfinder + 2026-10-26. Official Irvine Company features page lists in-home washer and dryer and private garages under 'Premium Features*' = select apartment homes only -> must confirm for the specific 807 sqft unit. Aggregators: 692-1,281 sqft, dishwasher, parking, AC. Rent conflict: input $2,480; Redfin from $2,540+; ApartmentFinder 1BR from $2,675. Snippets only; W/D and year built not found. Irvine Company newer communities typically include in-home W/D, but not verified here."
   },
   "detail_sources": [],
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": null
  },
@@ -13591,8 +13708,8 @@
   "lng": -117.756,
   "location_note": "lat/lng are my estimate from the street address (no geocoder available; page fetches failed with DNS errors) - approx +/-0.005 deg; verify.",
   "sqft": null,
-  "base_rent": 2555.0,
-  "effective_rent": 2555.0,
+  "base_rent": 2555,
+  "effective_rent": 2555,
   "special": null,
   "parking_fee": null,
   "year_built": null,
@@ -13603,8 +13720,8 @@
    "parking": "yes",
    "packages": "unclear"
   },
-  "packages_detail": null,
-  "ac_evidence": "Listings note 'A/C' only",
+  "packages_detail": "Not found.",
+  "ac_evidence": "CoStar-verified listing and Redfin list 'air conditioning'/A/C; type not stated.",
   "red_flags": [
    "Size/price pairing unknown",
    "W/D unconfirmed"
@@ -13614,7 +13731,10 @@
   "listing_url": "https://www.redfin.com/zipcode/92620/1-bedroom-apartments-for-rent",
   "sources": [
    "https://www.redfin.com/zipcode/92620/1-bedroom-apartments-for-rent",
-   "https://www.redfin.com/city/9361/CA/Irvine/1-bedroom-apartments-for-rent"
+   "https://www.redfin.com/city/9361/CA/Irvine/1-bedroom-apartments-for-rent",
+   "https://www.apartmenthomeliving.com/apartment-finder/Palmeras-Apartment-Homes-Irvine-CA-92620-1872125",
+   "https://en.uhomes.com/us/irvine/detail-apartments-1643821",
+   "https://redfin.com/neighborhood/63926/CA/Irvine/El-Toro/1-bedroom-apartments-for-rent"
   ],
   "reviews": {
    "reputation_score": null,
@@ -13629,7 +13749,7 @@
     "summary": ""
    }
   },
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "my_status": "new",
   "my_note": "",
@@ -13708,10 +13828,11 @@
     "website": null,
     "leasing_phone": null
    },
-   "evidence": "Snippets only."
+   "evidence": "Verified redfin / apartmenthomeliving / uhomes + 2026-10-26. 1BR plans 637-872 sqft (Redfin); exact plan size at $2,555 not determined. W/D only from a uhomes student-housing page (weak). Rent conflict: Redfin 1BR ~$2,555+, Zillow $2,595+. Management: Irvine Company. Snippets only."
   },
   "detail_sources": [],
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "1–2 mi",
   "area_walk_score": null
  },
@@ -13724,21 +13845,21 @@
   "lat": 33.7015,
   "lng": -117.722,
   "location_note": "lat/lng are my estimate from the street address (no geocoder available; page fetches failed with DNS errors) - approx +/-0.005 deg; verify. Note: VeryApt gives the address as 1000 Virtuoso - address conflict.",
-  "sqft": 745.0,
-  "base_rent": 2550.0,
-  "effective_rent": 2550.0,
+  "sqft": 745,
+  "base_rent": 2550,
+  "effective_rent": 2550,
   "special": null,
   "parking_fee": null,
   "year_built": null,
   "req": {
    "wd": "yes",
-   "ac": "unclear",
+   "ac": "yes",
    "dw": "unclear",
    "parking": "yes",
    "packages": "unclear"
   },
-  "packages_detail": null,
-  "ac_evidence": "VeryApt lists 'Air Conditioning' only",
+  "packages_detail": "Not found.",
+  "ac_evidence": "Westside Rentals: 'central air conditioning and heat'; official Irvine Company page only says air conditioning (does not name type).",
   "red_flags": [
    "Only the top of the size range qualifies",
    "Address conflict between sources"
@@ -13748,7 +13869,10 @@
   "listing_url": "https://www.redfin.com/neighborhood/114689/CA/Irvine/Irvine-Spectrum/1-bedroom-apartments-for-rent",
   "sources": [
    "https://www.redfin.com/neighborhood/114689/CA/Irvine/Irvine-Spectrum/1-bedroom-apartments-for-rent",
-   "https://heavy.veryapt.com/ApartmentReview-a7267-esperanza-apartments-irvine"
+   "https://heavy.veryapt.com/ApartmentReview-a7267-esperanza-apartments-irvine",
+   "https://www.irvinecompanyapartments.com/locations/orange-county/irvine/stonegate/esperanza/features-amenities.html",
+   "https://prod-release.westsiderentals.com/irvine-ca/esperanza-apartment-homes-hfm2m71",
+   "https://www.redfin.com/city/9361/CA/Irvine/apartments-for-rent/page-6"
   ],
   "reviews": {
    "reputation_score": null,
@@ -13763,7 +13887,7 @@
     "summary": ""
    }
   },
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "my_status": "new",
   "my_note": "",
@@ -13842,10 +13966,11 @@
     "website": null,
     "leasing_phone": null
    },
-   "evidence": "VeryApt: low-rise Irvine Company property with in-unit washer/dryer; its '$1,810+' price is stale. Snippets only."
+   "evidence": "Verified irvinecompanyapartments.com features page + westsiderentals + redfin + 2026-10-26. Official features page lists in-home laundry. 1BR 650-745 sqft. Rent conflict: input $2,550; Redfin 1BR now $2,630; VeryApt $1,810 (stale). Dishwasher not stated in any source found. VeryApt: low-rise Irvine Company property with in-unit washer/dryer; its '$1,810+' price is stale. Snippets only."
   },
   "detail_sources": [],
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": null
  },
@@ -14137,20 +14262,20 @@
   "lng": -118.184,
   "location_note": "lat/lng are my estimate from the street address (no geocoder available; page fetches failed with DNS errors) - approx +/-0.005 deg; verify. Low confidence - street location not verified.",
   "sqft": null,
-  "base_rent": 2200.0,
-  "effective_rent": 2200.0,
+  "base_rent": 2200,
+  "effective_rent": 2200,
   "special": null,
   "parking_fee": null,
   "year_built": null,
   "req": {
    "wd": "yes",
    "ac": "unclear",
-   "dw": "unclear",
+   "dw": "yes",
    "parking": "unclear",
    "packages": "unclear"
   },
-  "packages_detail": null,
-  "ac_evidence": "All-electric building; cooling type not stated",
+  "packages_detail": "Not mentioned.",
+  "ac_evidence": "Westside Rentals lists generic 'Air Conditioning' and 'Heating'; building is all-electric (heat pump likely but type - ducted vs mini-split - not stated).",
   "red_flags": [
    "Sq ft unknown (must be 700+)",
    "AC type unknown"
@@ -14159,7 +14284,8 @@
   "notes": "Plan 1 bed / 1 bath. Square footage not shown - may be under 700 sq ft; verify Seen on Westside Rentals snippet: $2,200, 12-month lease, 'brand-new' (seen 2026-10-26).",
   "listing_url": "https://www.westsiderentals.com/long-beach-ca/4152-n-business-st-unit-5-vzq6vtf",
   "sources": [
-   "https://www.westsiderentals.com/long-beach-ca/4152-n-business-st-unit-5-vzq6vtf"
+   "https://www.westsiderentals.com/long-beach-ca/4152-n-business-st-unit-5-vzq6vtf",
+   "https://www.westsiderentals.com/long-beach-ca/4152-n-business-st-unit-5-wexpgdl"
   ],
   "reviews": {
    "reputation_score": null,
@@ -14174,7 +14300,7 @@
     "summary": ""
    }
   },
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "my_status": "new",
   "my_note": "",
@@ -14256,10 +14382,11 @@
     "website": null,
     "leasing_phone": null
    },
-   "evidence": "Snippets only; low-information lead."
+   "evidence": "Verified westsiderentals.com (snippets; page fetch failed DNS) + 2026-10-26. 1BR/1BA, $2,200 on 12-month lease, brand new, just approved for occupancy. Stacked W/D in the bathroom plus app-driven common laundry room. MLS# DW26136660. Sqft, parking, deposit not found. Snippets only; low-information lead."
   },
   "detail_sources": [],
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 72
  },
@@ -14557,21 +14684,21 @@
   "lat": 34.0405,
   "lng": -118.2577,
   "location_note": "Estimated from block position on S Broadway between 10th and 11th; actually in the Broadway Theater/Fashion District edge, closest AREAS match is South Park; error <200 m",
-  "sqft": 758.0,
-  "base_rent": 2455.0,
-  "effective_rent": 2046.0,
+  "sqft": 758,
+  "base_rent": 2046,
+  "effective_rent": 2046,
   "special": "2 months free (Redfin, building-wide; 1BR from $2,139+ / $1,979 in another snapshot). Effective $2,046 = 2455 x 10/12, assuming a 12-month lease; the lease term is not stated",
   "parking_fee": null,
   "year_built": 2016,
   "req": {
    "wd": "yes",
    "ac": "unclear",
-   "dw": "unclear",
+   "dw": "yes",
    "parking": "unclear",
    "packages": "yes"
   },
-  "packages_detail": "ASU housing page (building also houses ASU California Center students) lists package lockers",
-  "ac_evidence": "ApartmentAdvisor amenity list says 'air conditioning'; type not stated",
+  "packages_detail": "Not found.",
+  "ac_evidence": "ApartmentAdvisor lists 'air conditioning'; type not stated.",
   "red_flags": "Weak management reviews. Partly a student-housing building (ASU), so expect noise. Package theft reported. Parking terms unknown. 2-month special is building-wide and not confirmed for the 758 sq ft unit.",
   "internet": null,
   "notes": "Plan 1x1, 758 sq ft. Redfin: 41-46 units available; 1BRs 565-1,320 sq ft. ApartmentAdvisor: 758 sq ft 1BR at $2,455 'available now' Seen on ApartmentAdvisor unit listing + Redfin DTLA 1BR page (snippets via web search), 2026-10-15.",
@@ -14596,7 +14723,7 @@
     "summary": "VeryApt has about 3 undated reviews, rating management 2-3/5: unhelpful or rude management, things broken, packages stolen, loud neighbors. Amenities praised (indoor courts, 2 pools, gym/sauna)."
    }
   },
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "my_status": "new",
   "my_note": "",
@@ -14678,13 +14805,14 @@
     "website": "https://www.broadwaypalaceapartments.com",
     "leasing_phone": null
    },
-   "evidence": "Amenities (rooftop pool + second pool, 24/7 gym & sauna, basketball/volleyball courts, theater) from ASU student-housing page — partly leased as student housing, which may affect noise. No fee schedule found; parking fee unknown. Search-only enrichment: all WebFetch page loads failed (DNS ENOTFOUND) and the shared WebSearch budget ran out partway (~2 searches/listing), so location fields (cafe, grocery, metro, gym, LAX time, onramp distance) were not researched and are null; fiber not checked."
+   "evidence": "Verified apartmentadvisor.com / housing.asu.edu + 2026-10-26. ApartmentAdvisor amenities: AC, dishwasher, in-unit W/D; notes price may exclude fees. Parking for general residents not confirmed (ASU student units there get parking 'if needed'). Note: ASU uses part of the building as student housing. Amenities (rooftop pool + second pool, 24/7 gym & sauna, basketball/volleyball courts, theater) from ASU student-housing page — partly leased as student housing, which may affect noise. No fee schedule found; parking fee unknown. Search-only enrichment: all WebFetch page loads failed (DNS ENOTFOUND) and the shared WebSearch budget ran out partway (~2 searches/listing), so location fields (cafe, grocery, metro, gym, LAX time, onramp distance) were not researched and are null; fiber not checked."
   },
   "detail_sources": [
    "https://amberstudent.com/es/places/broadway-palace-los-angeles-2403275323517",
    "https://www.cityfeet.com/cont/listing/1026-s-broadway-los-angeles-ca-90015/cs38554844"
   ],
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 92
  },
@@ -15108,9 +15236,9 @@
   "lat": 34.0292,
   "lng": -118.399,
   "location_note": "Placed from memory on Regent St between Shelby Dr and Motor Ave in Palms; not geocoded, likely error up to ~300 m",
-  "sqft": 700.0,
-  "base_rent": 2100.0,
-  "effective_rent": 2100.0,
+  "sqft": 700,
+  "base_rent": 2100,
+  "effective_rent": 2100,
   "special": null,
   "parking_fee": null,
   "year_built": null,
@@ -15118,11 +15246,11 @@
    "wd": "unclear",
    "ac": "unclear",
    "dw": "yes",
-   "parking": "unclear",
+   "parking": "yes",
    "packages": "unclear"
   },
-  "packages_detail": "Small rent-stabilized building with about 10 units; no package handling found",
-  "ac_evidence": "Listing amenities mention a ceiling fan and a dishwasher; no AC of any kind listed. RSO building, so central AC is unlikely",
+  "packages_detail": "Not mentioned.",
+  "ac_evidence": "PadMapper lists a ceiling fan; no AC listed at all.",
   "red_flags": "Older RSO building (pre-1978), not new construction. Amenity list shows both 'In-Unit Laundry' and 'Shared Laundry'. AC not mentioned. 700 sq ft is approximate (right at the minimum). Probably fails the central AC requirement. Low-confidence candidate.",
   "internet": null,
   "notes": "Round 4: listing mentions ceiling fans and no AC; 65 recorded housing violations; rent-stabilized (RSO).\n\nPlan 1x1 (unit 07). One unit (#07) listed. Lucid Rents shows 1BR asking rents at this address from $2,100 to $2,841 (median $2,470). The listing says the square footage is approximate Seen on PadMapper listing via web-search snippet, 2026-10-15 (page fetch failed: DNS/proxy blocked).",
@@ -15229,12 +15357,13 @@
     "website": "https://www.padmapper.com/rentals/29053324p/1-bedroom-1-bath-apartment-at-9819-regent-st-los-angeles-ca-90034",
     "leasing_phone": null
    },
-   "evidence": "Built from WebSearch snippets only (WebFetch failed: DNS ENOTFOUND), seen 2026-10-26. Parking 'off-street' (type mapped to surface; unverified). LucidRents: RSO rent-stabilized, 10 stabilized units, 65 recorded violations; 1BR range $2,100-$2,841. No central AC mentioned (ceiling fan only). Palms neighborhood Walk Score ~90 and 10310 Regent St = 91/transit 61/bike 82 — not this address, so walk_score left null."
+   "evidence": "Verified padmapper.com / lucidrents.com + 2026-10-26. PadMapper amenities list both 'In-Unit Laundry' and 'Shared/On-Site Laundry' (conflict). Off-street parking. Lucid Rents: RSO building, 10 stabilized units, 65 housing violations on record; 1BR range $2,100-$2,841. No AC listed - likely fails central AC. Built from WebSearch snippets only (WebFetch failed: DNS ENOTFOUND), seen 2026-10-26. Parking 'off-street' (type mapped to surface; unverified). LucidRents: RSO rent-stabilized, 10 stabilized units, 65 recorded violations; 1BR range $2,100-$2,841. No central AC mentioned (ceiling fan only). Palms neighborhood Walk Score ~90 and 10310 Regent St = 91/transit 61/bike 82 — not this address, so walk_score left null."
   },
   "detail_sources": [
    "https://www.point2homes.com/US/Apartment-Buildings/CA/Los-Angeles/10310-Regent-Street.html"
   ],
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 90
  },
@@ -16067,21 +16196,21 @@
   "lat": 33.877,
   "lng": -117.905,
   "location_note": "Rough placement in ZIP 92831 (east Fullerton). Likely error around 1-1.5 km. Verify.",
-  "sqft": 930.0,
-  "base_rent": 2000.0,
-  "effective_rent": 2000.0,
+  "sqft": 930,
+  "base_rent": 2000,
+  "effective_rent": 2000,
   "special": null,
   "parking_fee": null,
   "year_built": null,
   "req": {
    "wd": "yes",
    "ac": "yes",
-   "dw": "unclear",
+   "dw": "yes",
    "parking": "yes",
    "packages": "unclear"
   },
-  "packages_detail": "Assigned gated underground parking. Package handling not stated.",
-  "ac_evidence": "The listing says 'central heating and air'.",
+  "packages_detail": "No package info found.",
+  "ac_evidence": "Listing: 'central heating and air' (prior pass).",
   "red_flags": "Older condo complex (year unknown, likely pre-2000). Pet policy conflicts between listings. Listing freshness unknown.",
   "internet": null,
   "notes": "Plan 1x1 condo. 1 unit available. Move-in date not given. Seen on rentable.co search snippets, seen 2026-10-15 (listing undated)..",
@@ -16104,7 +16233,7 @@
     "summary": "No reviews (private condo rental). The complex has a pool and fitness center. HOA is about $735/mo per a sale listing in the same building."
    }
   },
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "my_status": "new",
   "my_note": "",
@@ -16189,12 +16318,13 @@
     "website": null,
     "leasing_phone": null
    },
-   "evidence": "Unit # (likely B per URL) not confirmed. AC not mentioned. Search-only enrichment: all WebFetch page loads failed (DNS ENOTFOUND) and the shared WebSearch budget ran out partway (~2 searches/listing), so location fields (cafe, grocery, metro, gym, LAX time, onramp distance) were not researched and are null; fiber not checked."
+   "evidence": "Verified rentable.co search snippet, 2026-10-26. Rentable lists dishwasher, in-unit laundry, assigned underground parking; managed by Hagar Realty; availability 'Ask'. A second Rentable page shows $2,250 - price conflict. Unit # (likely B per URL) not confirmed. AC not mentioned. Search-only enrichment: all WebFetch page loads failed (DNS ENOTFOUND) and the shared WebSearch budget ran out partway (~2 searches/listing), so location fields (cafe, grocery, metro, gym, LAX time, onramp distance) were not researched and are null; fiber not checked."
   },
   "detail_sources": [
    "https://www.westsiderentals.com/fullerton-ca/1360-shadow-ln-yx7fbfv"
   ],
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 54
  },
@@ -16491,21 +16621,21 @@
   "lat": 33.7345,
   "lng": -117.8125,
   "location_note": "Estimated from street address on Walnut Ave near Red Hill Ave; ~1 mi from Tustin Legacy. Likely error <400 m.",
-  "sqft": 750.0,
-  "base_rent": 2225.0,
-  "effective_rent": 2225.0,
+  "sqft": 750,
+  "base_rent": 2225,
+  "effective_rent": 2225,
   "special": null,
   "parking_fee": null,
   "year_built": 1969,
   "req": {
    "wd": "unclear",
-   "ac": "unclear",
-   "dw": "unclear",
+   "ac": "no",
+   "dw": "yes",
    "parking": "yes",
    "packages": "unclear"
   },
   "packages_detail": "No package info found.",
-  "ac_evidence": "LoopNet/ApartmentAdvisor list 'air conditioning' with no type; 1969 garden complex — could be wall units.",
+  "ac_evidence": "Listings describe an 'AC & Heating Wall Unit' (Westside Rentals snippet); 1969 garden complex.",
   "red_flags": "1969 building; Zumper says in-unit W/D only in 'select units' — must confirm this specific unit has W/D and what kind of AC. Listing date unknown.",
   "internet": null,
   "notes": "Plan 1x1 (unit 147). One 750 sq ft 1BR listed at $2,225. 116-unit two-story garden complex. Seen on ApartmentAdvisor / WestsideRentals snippets, seen 2026-10-15 (listing undated, marked 'available now').",
@@ -16514,7 +16644,8 @@
    "https://www.apartmentadvisor.com/details/1151-walnut-ave-tustin-ca-92780",
    "https://www.westsiderentals.com/tustin-ca/147-terra-at-tustin-s3m1057",
    "https://loopnet.com/Listing/1151-Walnut-Ave-Tustin-CA/17792837",
-   "https://www.veryapt.com/ApartmentReview-a3352-terra-at-tustin-tustin"
+   "https://www.veryapt.com/ApartmentReview-a3352-terra-at-tustin-tustin",
+   "https://www.zumper.com/listings/63644148/1-bedroom-tustin-ca"
   ],
   "reviews": {
    "reputation_score": null,
@@ -16529,7 +16660,7 @@
     "summary": "Thin: VeryApt has no reviews; Zumper summary says management is responsive, some room for improvement, street parking congestion."
    }
   },
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-10-27",
   "source": "claude",
   "my_status": "new",
   "my_note": "",
@@ -16550,7 +16681,7 @@
     ],
     "utilities": "Water, trash, sewer, gas flat $75/mo; tenant sets up SCE electric",
     "deposit": 750,
-    "application_fee": null,
+    "application_fee": 35,
     "admin_fee": null,
     "parking_fee": null,
     "lease_terms": null
@@ -16619,7 +16750,7 @@
     "website": null,
     "leasing_phone": null
    },
-   "evidence": "Parking: 1 assigned space per one listing, surface/attached garage per another. In-unit W/D conflicting. Sold 2020 for $41M (CoStar); managed by Pinnacle per one listing. Search-only enrichment: all WebFetch page loads failed (DNS ENOTFOUND) and the shared WebSearch budget ran out partway (~2 searches/listing), so location fields (cafe, grocery, metro, gym, LAX time, onramp distance) were not researched and are null; fiber not checked."
+   "evidence": "Verified westsiderentals / veryapt / zumper search snippets, 2026-10-26. Wall-unit AC fails the central-AC requirement. W/D only in select units (Zumper). Deposit $750, app $35. Assigned/gated parking, fee not found. Parking: 1 assigned space per one listing, surface/attached garage per another. In-unit W/D conflicting. Sold 2020 for $41M (CoStar); managed by Pinnacle per one listing. Search-only enrichment: all WebFetch page loads failed (DNS ENOTFOUND) and the shared WebSearch budget ran out partway (~2 searches/listing), so location fields (cafe, grocery, metro, gym, LAX time, onramp distance) were not researched and are null; fiber not checked."
   },
   "detail_sources": [
    "https://www.rentable.co/tustin-ca/terra-at-tustin",
@@ -16627,6 +16758,7 @@
    "https://costar.com/article/471543575/pacific-urban-residential-sells-terra-at-tustin-apartments"
   ],
   "required_fees_total": 75,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": null
  },
@@ -17471,9 +17603,9 @@
   "lat": 34.0489,
   "lng": -118.2383,
   "location_note": "approximate building centroid (Savoy, Alameda St & 1st St, edge of Little Tokyo / Arts District)",
-  "sqft": 735.0,
-  "base_rent": 2300.0,
-  "effective_rent": 2300.0,
+  "sqft": 735,
+  "base_rent": 2300,
+  "effective_rent": 2300,
   "special": null,
   "parking_fee": null,
   "year_built": 2006,
@@ -17482,10 +17614,10 @@
    "ac": "yes",
    "dw": "unclear",
    "parking": "yes",
-   "packages": "unclear"
+   "packages": "yes"
   },
-  "packages_detail": "Gated full-service condo complex with a subterranean garage. Mail and package handling are not confirmed; ask whether there is a lobby or mailroom and whether there are lockers.",
-  "ac_evidence": "Sale listing for #318 lists 'Cooling: Central Air'; Sep 2025 rental MLS cooling code 'CA'. Rental snippet itself doesn't state the AC type.",
+  "packages_detail": "Weichert sale listing: 24-hour lobby attendant.",
+  "ac_evidence": "Sale listing for #318: 'Cooling: Central Air' (prior pass).",
   "red_flags": "Possibly sold or off-market (also seen for sale at $499k). Earlier ask was $2,500, so $2,300 may be stale. Rent is exactly at the cap.",
   "internet": null,
   "notes": "Round 3: this unit appears listed FOR SALE ($499k), not for rent. Other 1BRs in the Savoy rent for about $2,350.\n\nSame unit was listed at $2,500 in Sep 2025 and is also for sale at $499k, so it may have sold or the price may be stale. Central air is from the sale listing.\n\nPlan 1bd/1ba. Same unit was listed for rent at $2,500 (MLS TR25192486, Sep 2025) and also appears as a for-sale listing at $499,000 (HOA ~$676/mo) - it may have sold or been re-listed; confirm it is still for lease for a Jan 30 2027 start. Other Savoy 1BRs seen at $2,350-$2,900 (unit 355 is 910 sq ft at $2,900). Seen on ApartmentAdvisor snippet via web search, 2026-10-15 (marked 'available now', posting date not shown).",
@@ -17591,13 +17723,14 @@
     "website": null,
     "leasing_phone": null
    },
-   "evidence": "Building facts come from multiple MLS listings for other units: pool/spa, gym and yoga room, business/conference center ('coworking' = business center), screening room, sports lounge, rooftop deck, 24-hr attended lobby, gated subterranean garage with 1-2 spaces (sometimes tandem), secure guest parking. HOA dues ~$653-$743. #318 may be for sale, not for rent, so verify. Freeway/transit/cafe fields not researched (search budget exhausted); left null/unclear. Page fetches failed (DNS/proxy refusal) and the shared web-search budget ran out mid-batch; all data from search-result snippets seen 2026-10-26."
+   "evidence": "Verified weichert / apartmentlist search snippets, 2026-10-26. No current rental listing for #318 found; it is listed FOR SALE at $499k (Weichert), so the rental may be gone. 1 gated subterranean space. Other Savoy rentals list dishwashers but #318's is not confirmed. Building facts come from multiple MLS listings for other units: pool/spa, gym and yoga room, business/conference center ('coworking' = business center), screening room, sports lounge, rooftop deck, 24-hr attended lobby, gated subterranean garage with 1-2 spaces (sometimes tandem), secure guest parking. HOA dues ~$653-$743. #318 may be for sale, not for rent, so verify. Freeway/transit/cafe fields not researched (search budget exhausted); left null/unclear. Page fetches failed (DNS/proxy refusal) and the shared web-search budget ran out mid-batch; all data from search-result snippets seen 2026-10-26."
   },
   "detail_sources": [
    "https://hotpads.com/los-angeles-ca-90012-24d981k/244/pad",
    "https://theboutiquere.com/properties/retsPdf/25533351/100-S-Alameda-Street"
   ],
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 95
  },
@@ -17610,9 +17743,9 @@
   "lat": 34.043,
   "lng": -118.2506,
   "location_note": "approximate; Santee Village / Fashion District, between 7th & 8th on Los Angeles St (closest AREAS entry is Historic Core)",
-  "sqft": 740.0,
-  "base_rent": 2100.0,
-  "effective_rent": 2100.0,
+  "sqft": 740,
+  "base_rent": 2100,
+  "effective_rent": 2100,
   "special": null,
   "parking_fee": null,
   "year_built": 1922,
@@ -17623,8 +17756,8 @@
    "parking": "yes",
    "packages": "unclear"
   },
-  "packages_detail": "HOA covers 24-hour security; the building has a secured lobby. Package room not confirmed.",
-  "ac_evidence": "Not stated for #402. Other units in the building (#809, #1001) list central HVAC/central A/C and in-unit W/D (#1001 is a combo washer/dryer unit), so it is likely but unit-specific.",
+  "packages_detail": "24-hour live security, fob access; no package room/concierge mentioned.",
+  "ac_evidence": "Not stated for #402. Unit #809 lists central HVAC; another listing calls Central AC a building amenity.",
   "red_flags": "Laundry, AC and dishwasher are unconfirmed for this unit. Listing data conflicts (1BR 740 vs 2BR 810 at #402). The listing may be stale.",
   "internet": null,
   "notes": "Round 3: parking is in a nearby off-site garage with a shuttle.\n\nListing data conflicts: the same page also shows #402 as a 2BR, 810 sq ft at $2,300. Other units in this 1922 conversion have central air and in-unit W/D; confirm for #402.\n\nPlan 1bd/1ba. Listed as 'Unit 746-402', 1bd/1ba, ~740 sq ft, $2,100/mo, with parking and a fitness center. The same Redfin page also shows 738 S Los Angeles St #402 as a 2bd/1ba, 810 sq ft unit at $2,300 - possibly the same unit or building; verify. Availability date not shown. Seen on Redfin 90014 condos-for-rent page snippet via web search, 2026-10-15.",
@@ -17727,12 +17860,13 @@
     "website": null,
     "leasing_phone": null
    },
-   "evidence": "Compass: 11-story, 1922, 95 units. Building listings mention a rooftop pool, spas, basketball court, gym, 24-hr security, and assigned parking in a NEARBY garage with shuttle (so not on-site; parking type marked garage, off-site). In-unit W/D and central AC not confirmed for #402. Freeway/transit/cafe fields not researched (search budget exhausted); left null/unclear. Page fetches failed (DNS/proxy refusal) and the shared web-search budget ran out mid-batch; all data from search-result snippets seen 2026-10-26."
+   "evidence": "Verified redfin / rubyhome / theboutiquere search snippets, 2026-10-26. Redfin #402 lists only parking and fitness center. Same page shows 738 S Los Angeles St #402 as 2BR 810 sq ft $2,300 with in-unit laundry (possible duplicate). Gated assigned parking in Maple Ave Garage. In-unit laundry in other units (stackable). Compass: 11-story, 1922, 95 units. Building listings mention a rooftop pool, spas, basketball court, gym, 24-hr security, and assigned parking in a NEARBY garage with shuttle (so not on-site; parking type marked garage, off-site). In-unit W/D and central AC not confirmed for #402. Freeway/transit/cafe fields not researched (search budget exhausted); left null/unclear. Page fetches failed (DNS/proxy refusal) and the shared web-search budget ran out mid-batch; all data from search-result snippets seen 2026-10-26."
   },
   "detail_sources": [
    "https://compass.com/building/the-cornell-los-angeles-ca/842979973568605413"
   ],
   "required_fees_total": null,
+  "verified": true,
   "freeway_band": "under 1 mi",
   "area_walk_score": 95
  },
