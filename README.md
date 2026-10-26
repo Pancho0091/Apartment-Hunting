@@ -4,7 +4,9 @@ A web app for finding a 1BR (700+ sq ft, rent ≤ $2,300 after specials, in-unit
 dishwasher, parking, package handling) in LA, Long Beach and Orange County, before The Jayne lease
 ends on 2027-01-29.
 
-Live app: https://claude.ai/artifact/WKf2rA6YdPZHSU57nMyLDd
+**Open `Apartment-Search-2027.html` in any browser.** It is one self-contained file: all listing and
+neighborhood data is embedded, nothing is hosted. Statuses, notes and listings you add are saved in that
+browser; use Export / Import at the bottom of the page to back them up or move them.
 
 ## How it ranks
 - **Neighborhood score** (0–10): freeway + traffic 30%, coffee + walkability 30%, quiet 15%,
@@ -15,13 +17,18 @@ Live app: https://claude.ai/artifact/WKf2rA6YdPZHSU57nMyLDd
   research could not find evidence either way — ask the leasing office.
 
 ## Files
-- `index.html` — the app (published as a claude.ai artifact; storage holds buildings, neighborhoods,
-  your statuses and notes; falls back to the JSON files below).
+- `Apartment-Search-2027.html` — the standalone tool (generated; do not edit by hand).
+- `src/` — the tool's source (`index.html`, `styles.css`, `app.js`, `map.js`, `illustrations.js`);
+  `scripts/build_html.py` inlines it with `data/*.json`. Design direction: `DESIGN_BRIEF.md`.
+- `data/geo.json` — map layers, built by `scripts/build_geo.py` (OSM coastline, L.A. Times neighborhoods,
+  Natural Earth freeways/rail). `scripts/check.mjs` screenshots and checks the built file.
+- `screenshots/` — current look of every view.
 - `data/buildings.json`, `data/neighborhoods.json` — merged data the app loads.
 - `data/prior/` — the Oct 14 2026 search from the earlier chat.
 - `data/research/` — raw research: neighborhood reports (`out_*`), requirement checks (`verified_*`),
   resident reviews (`reviews_out_*`).
 - `scripts/build_data.py` — merges the above: `python3 -I scripts/build_data.py data/research`.
+- Rebuild the tool after any data change: `python3 -I scripts/build_html.py`.
 
 ## Data limits (Oct 15 2026)
 Research came from web-search snippets; page fetches and Reddit were blocked. Building coordinates are
