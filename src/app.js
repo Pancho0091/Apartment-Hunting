@@ -291,6 +291,10 @@
   const whereText = b => areaName(b) || b.region || "Neighborhood not set";
   const isNew = b => b.batch === "new-oct15" || b.batch === "private-oct15";
   const statusName = k => (STATUSES.find(s => s.key === (k || "new")) || STATUSES[0]).name;
+  /* Specials history (concessions research, LA): how often this building has run a special. */
+  const PATTERN_WORD = { often: "Often", sometimes: "Sometimes", rarely: "Rarely", unknown: "—" };
+  const patternOf = b => { const p = b.concessions && b.concessions.pattern; return PATTERN_WORD[p] ? p : "unknown"; };
+  const SPEC_MODES = [["any", "Any"], ["some", "Often or sometimes"], ["often", "Often"]];
 
   /* ---- listing particulars (detail.*) ---------------------------------------------------- */
   const D = b => b.detail || {};
@@ -394,6 +398,7 @@
     if (f.maxHeat < HEAT_MAX) { const t = summerHigh(b); if (t != null && t > f.maxHeat) return false; }
     if (f.minWalk > 0) { const w = walkOf(b).v; if (w == null ? !f.walkUnknown : w < f.minWalk) return false; }
     if (f.minDoc > 0 && docPct(b) < f.minDoc) return false;
+    if (f.specials !== "any" && S.hasConc) { const p = patternOf(b); if (f.specials === "often" ? p !== "often" : p !== "often" && p !== "sometimes") return false; }
     if (q) { const hs = haystack(b); for (const t of q.split(/\s+/)) if (t && !hs.includes(t)) return false; }
     return true;
   }
@@ -434,7 +439,9 @@
         h("div", { class: "deadline-top" }, h("span", { class: "deadline-no", text: "No. " + ROMAN[i] }), h("span", { class: "deadline-date", text: dt.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }) })),
         h("p", { class: "deadline-days" }, days >= 0 ? h("b", { text: days, "data-n": days }) : h("b", { text: "—" }), h("span", { text: days >= 0 ? (days === 1 ? " day" : " days") : " passed" })),
         h("p", { class: "deadline-label", text: d.label }),
-        h("span", { class: "measure", "aria-hidden": "true", style: { "--p": (span * 100).toFixed(1) + "%", "--k": span.toFixed(3), "--i": i } }));
+        h("span", { class: "measure", "aria-hidden": "true", style: { "--p": (span * 100).toFixed(1) + "%", "--k": span.toFixed(3), "--i": i } }),
+        h("a", { class: "deadline-link", href: "#results", "aria-label": `${d.label}, ${dt.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}${days >= 0 ? ", " + relDays(days) : ", passed"}. Open the timeline.`,
+          onclick: e => { e.preventDefault(); goTimeline(d.id); } }));
     }));
     // count the days up once on load; the gauges fill in CSS (section 18)
     if (!reduceMotion()) $("dates").querySelectorAll("b[data-n]").forEach((b, i) => { const n = +b.dataset.n; b._tv = 0; b.textContent = "0"; setTimeout(() => tween(b, n, v => String(Math.round(v)), 760), 140 + i * 70); });
@@ -531,6 +538,7 @@
     n += f.hideRegions.filter(r => REGIONS.includes(r)).length ? 1 : 0;
     for (const t of TRI_FILTERS) if (f[t.k] !== "any") n++;
     n += f.mustHave.length; if (f.hideScam !== d.hideScam) n++; if (f.newOnly) n++;
+    if (f.specials !== "any" && S.hasConc) n++;
     return n;
   }
   function tagList(id, items, arr, onChange, countMap, iconFn, field) {
@@ -567,6 +575,24 @@
         h("label", { class: "trif-opt", title: m === "maybe" ? "Yes or not confirmed: hides only a confirmed no" : m === "yes" ? "Confirmed yes only" : "No filter" },
           h("input", { type: "radio", name, value: m, checked: S.f[t.k] === m, "data-tri": t.k, onchange: () => onChange(m) }),
           h("span", { text: label })))));
+  }
+  /* Specials history: Any / Often or sometimes / Often, with how the market splits. */
+  function specRow(onChange) {
+    const c = { often: 0, sometimes: 0, rarely: 0, unknown: 0 };
+    for (const b of S.buildings) c[patternOf(b)]++;
+    const n = S.buildings.length || 1, pct = k => (c[k] / n * 100).toFixed(1) + "%";
+    return h("fieldset", { class: "trif" },
+      h("legend", { class: "trif-head" },
+        h("span", { class: "trif-name", text: "Has run specials" }),
+        h("span", { class: "trif-n", title: `${c.often} often, ${c.sometimes} sometimes, ${c.rarely} rarely, ${c.unknown} not known` },
+          h("span", { class: "trif-bar", "aria-hidden": "true" }, h("i", { class: "y", style: { width: pct("often") } }), h("i", { class: "u", style: { width: pct("sometimes") } }), h("i", { class: "n", style: { width: pct("rarely") } })),
+          h("span", { class: "sr", text: `: ${c.often} often, ${c.sometimes} sometimes, ${c.rarely} rarely, ${c.unknown} not known.` }),
+          h("span", { "aria-hidden": "true", text: c.often + " often" }))),
+      h("div", { class: "trif-opts" }, ...SPEC_MODES.map(([m, label]) =>
+        h("label", { class: "trif-opt" },
+          h("input", { type: "radio", name: "spec-mode", value: m, checked: S.f.specials === m, "data-spec": "1", onchange: () => onChange(m) }),
+          h("span", { text: label })))),
+      h("p", { class: "hint", text: "From the concessions research: how often each building has offered a special. Listings it did not cover count as not known." }));
   }
   function range(id, label, min, max, step, value, fmt, onInput, ends, field, hint) {
     const out = h("output", { for: id, text: fmt(value) });
@@ -643,6 +669,7 @@
       g("docs", "Documentation", false,
         range("f-doc", "Well documented, at least", 0, 60, 5, f.minDoc, v => anyLbl(v, 0, x => x + "% known"), v => { f.minDoc = v; refreshFromRange(); }, ["Any", "60%"], "minDoc",
           `Share of the ${DOC_TOTAL} particulars (costs, pets, parking, building, unit, internet, location, availability) that research found.`)),
+      S.hasConc ? g("specials", "Specials history", false, specRow(m => { f.specials = m; rerender(); })) : null,
       g("landlord", "Landlord", false,
         tagList("ll", Object.entries(LANDLORDS), f.landlords, (k, on) => { toggleIn(f.landlords, k, on); rerender(); }, counts(b => b.landlord || "company"), null, "landlords"),
         h("div", { class: "switches" },
@@ -675,6 +702,7 @@
     const root = $("filters"), f = S.f;
     root.querySelectorAll("input[data-arr]").forEach(i => { i.checked = i.dataset.arr === "regionsShown" ? !f.hideRegions.includes(i.dataset.key) : f[i.dataset.arr].includes(i.dataset.key); });
     root.querySelectorAll("input[data-tri]").forEach(i => { i.checked = f[i.dataset.tri] === i.value; });
+    root.querySelectorAll("input[data-spec]").forEach(i => { i.checked = f.specials === i.value; });
     root.querySelectorAll("input[data-bool]").forEach(i => { i.checked = !!f[i.dataset.bool]; });
     root.querySelectorAll("input[data-num]").forEach(i => { if (+i.value !== f[i.dataset.num] && i._sync) i._sync(f[i.dataset.num]); });
     renderChips(); updateBadge();
@@ -788,6 +816,7 @@
       if (document.fonts && document.fonts.ready) document.fonts.ready.then(re);
       addEventListener("resize", re);
     }
+    document.documentElement.classList.toggle("view-timeline", S.view === "timeline");
     tb.viewBtns.forEach((btn, i) => {
       const k = VIEWS[i][0], on = S.view === k;
       btn.setAttribute("aria-pressed", on ? "true" : "false");
@@ -891,6 +920,7 @@
     return [
       b.landlord === "private" ? h("span", { class: "tag", text: "Private owner" }) : null,
       isNew(b) ? h("span", { class: "tag amber", text: "Recent find" }) : null,
+      patternOf(b) === "often" ? h("span", { class: "tag spec", title: "Specials history: this building often runs specials", text: "Specials often" }) : null,
       b.scam_flags ? h("span", { class: "tag bad", title: b.scam_flags, text: "Scam risk" }) : null,
       b.reviews && b.reviews.dealbreakers ? h("span", { class: "tag bad", title: b.reviews.dealbreakers, text: "Review red flags" }) : null,
       withStatus && b.my_status && b.my_status !== "new" ? h("span", { class: "tag ink status-" + b.my_status, text: statusName(b.my_status) }) : null,
@@ -1013,6 +1043,7 @@
     { k: "rent", t: "Rent", grp: "Cost", def: true, num: true, v: rentOf, cell: b => h("td", { class: "num strong", text: money(rentOf(b)) }) },
     { k: "cost", t: "True monthly", grp: "Cost", def: true, num: true, v: trueCost, cell: b => { const c = costOf(b); return h("td", { class: "num strong", title: c.total == null ? null : ["rent " + money(c.rent), ...costParts(c)].join(" + ") + (c.missing.length ? ". " + costNote(c) + "." : "") }, costValue(b)); } },
     { k: "save", t: "vs. Jayne", grp: "Cost", def: true, num: true, v: savingsOf, cell: b => { const d = savingsOf(b), part = costOf(b).missing.length; return h("td", { class: "num " + (d == null ? "" : d >= 0 ? "pos" : "neg"), title: part ? (d >= 0 ? "Up to this much saved; some costs not found" : "At least this much more; some costs not found") : null, text: d == null ? "—" : (part ? (d >= 0 ? "≤ " : "≥ ") : "") + (d >= 0 ? "+" : "−") + money(Math.abs(d)) }); } },
+    { k: "spec", t: "Specials history", grp: "Cost", v: b => ({ often: 3, sometimes: 2, rarely: 1 })[patternOf(b)] ?? null, cell: b => { const p = patternOf(b); return h("td", { class: "t-text" + (p === "unknown" ? " unk" : ""), title: p === "unknown" ? "Not known" : null, text: PATTERN_WORD[p] }); } },
     { k: "deposit", t: "Deposit", grp: "Cost", num: true, v: b => dget(b, "costs", "deposit"), cell: b => numCell(dget(b, "costs", "deposit"), money) },
     { k: "sqft", t: "Sq ft", grp: "Unit", def: true, num: true, v: b => b.sqft, cell: b => numCell(b.sqft, Math.round) },
     { k: "ppsf", t: "$/sq ft", grp: "Unit", num: true, v: ppsf, cell: b => numCell(ppsf(b), x => x.toFixed(2)) },
@@ -1193,6 +1224,9 @@
             h("div", null, h("h3", { class: "plate-name" }, openBtn(a.name, a.name + ", neighborhood report")), h("p", { class: "plate-count", text: n ? plural(n, "listing") + " in view" : "No listings in view" })),
             h("div", { class: "plate-score" }, h("b", { text: f1(sc) }), h("span", { text: "/ 10" }))),
           plateExtras(a, mkt),
+          a.concessions ? h("div", { class: "plate-conc" }, h("span", { class: "fig-k", text: "Concessions" }), levelPips(a.concessions.level),
+            h("p", { class: "plate-conc-t", text: [a.concessions.typical_offer, a.concessions.driver].filter(v => v && v !== "unknown").map(firstSentence).join(" · ") || "Offer and driver not found" }),
+            srcLinks(a.concessions.sources)) : null,
           factorBars(a));
     });
     const sub = `${plural(list.length, "region")} of the atlas, ranked by your weights. Listing counts follow the current filters.`;
@@ -1256,6 +1290,7 @@
       ...FACTORS.map(f => [f.name, b => f1(factorScore(S.areaById.get(b.area_id), f)), b => factorScore(S.areaById.get(b.area_id), f), 1]),
       ["Landlord", b => b.landlord === "private" ? "Private owner" : ((b.reviews && b.reviews.management_company) || "Company")],
       ["Special", b => b.special || "—"],
+      ["Specials history", b => { const p = patternOf(b), c = b.concessions || {}, last = (c.seen || []).filter(x => x && x.offer).slice(-1)[0]; return p === "unknown" ? "—" : PATTERN_WORD[p] + (last ? ` · last seen: ${last.offer}` + (last.when ? ` (${last.when})` : "") : ""); }, b => ({ often: 3, sometimes: 2, rarely: 1 })[patternOf(b)] ?? null, 1],
       ["Red flags", b => (b.reviews && b.reviews.dealbreakers) || b.red_flags || "—"],
     ];
     root.append(
@@ -1403,6 +1438,545 @@
         h("div", { class: "unsurveyed-actions" },
           S.view !== "map" ? h("button", { class: "btn", type: "button", text: `Open the ${mi.name} atlas`, onclick: () => setView("map") }) : null,
           h("button", { class: "btn ghost", type: "button", text: "Back to Los Angeles", onclick: () => setMarket("la") }))));
+  }
+
+  /* ==========================================================================
+     Views: timeline (shared by every market) + rent timing research (LA)
+     ========================================================================== */
+  const dOf = t => { const [y, m, d] = String(t).split("-").map(Number); return new Date(y, (m || 1) - 1, d || 1); };
+  const addDays = (d, n) => new Date(d.getFullYear(), d.getMonth(), d.getDate() + n);
+  const dayDiff = (a, b) => Math.round((b - a) / 864e5);
+  const fmtDay = (d, yr) => d.toLocaleDateString("en-US", yr ? { month: "short", day: "numeric", year: "numeric" } : { month: "short", day: "numeric" });
+  const todayDate = () => { const t = new Date(); t.setHours(0, 0, 0, 0); return t; };
+  const pStart = p => dOf(p.start || p.date), pEnd = p => dOf(p.end || p.date);
+  const pWhen = p => p.date ? fmtDay(dOf(p.date)) : `${fmtDay(dOf(p.start))} – ${fmtDay(dOf(p.end))}`;
+  const hardOf = id => HARD.find(x => x.id === id);
+  const relDays = n => n === 0 ? "today" : n === 1 ? "tomorrow" : n > 0 ? `in ${n} days` : n === -1 ? "yesterday" : `${-n} days ago`;
+
+  /* Checklist: one localStorage entry per item ("check:<phase>.<task>"), mirrored in memory so
+     Export still works when this browser blocks storage. */
+  const taskKey = (p, t) => p.id + "." + t[0];
+  const TASK_KEYS = new Set(PHASES.flatMap(p => p.tasks.map(t => taskKey(p, t))));
+  const TASK_TOTAL = TASK_KEYS.size;
+  const CHECKS = {};
+  function loadChecks() { for (const k of TASK_KEYS) { if (ls.get("check:" + k, false)) CHECKS[k] = true; else delete CHECKS[k]; } }
+  function setCheck(k, on) { if (!TASK_KEYS.has(k)) return; if (on) CHECKS[k] = true; else delete CHECKS[k]; ls.set("check:" + k, !!on); }
+  const phaseDone = p => p.tasks.filter(t => CHECKS[taskKey(p, t)]).length;
+  const allDone = () => PHASES.reduce((n, p) => n + phaseDone(p), 0);
+
+  /* Add to calendar: an .ics built here, all-day events. Fixed dates carry a two-day reminder;
+     steps tied to a fixed date are folded into that date's event so nothing appears twice. */
+  function icsText() {
+    const esc = t => String(t).replace(/\\/g, "\\\\").replace(/\r?\n/g, "\\n").replace(/([,;])/g, "\\$1");
+    const ymd = d => d.getFullYear() + pad2(d.getMonth() + 1) + pad2(d.getDate());
+    const fold = l => { const out = []; for (let i = 0; i < l.length; i += 60) out.push((i ? " " : "") + l.slice(i, i + 60)); return out.join("\r\n"); };
+    const now = new Date(), stamp = now.toISOString().replace(/[-:]/g, "").replace(/\.\d+/, "");
+    const lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Apartment Search 2027//Timeline//EN", "CALSCALE:GREGORIAN", "METHOD:PUBLISH", "X-WR-CALNAME:Apartment search 2027"];
+    const ev = (uid, title, a, b, desc, alarm) => {
+      lines.push("BEGIN:VEVENT", "UID:" + uid + "@apartment-search-2027", "DTSTAMP:" + stamp, "DTSTART;VALUE=DATE:" + ymd(a), "DTEND;VALUE=DATE:" + ymd(addDays(b, 1)),
+        "SUMMARY:" + esc(title), "DESCRIPTION:" + esc(desc), "TRANSP:TRANSPARENT");
+      if (alarm) lines.push("BEGIN:VALARM", "ACTION:DISPLAY", "DESCRIPTION:" + esc(title), "TRIGGER:-P2D", "END:VALARM");
+      lines.push("END:VEVENT");
+    };
+    const tasks = p => p.tasks.map(t => "- " + t[1]).join("\n");
+    for (const x of HARD) {
+      const p = PHASES.find(q => q.hard === x.id);
+      ev("deadline-" + x.id, "Deadline: " + x.label, dOf(x.date), dOf(x.date), [x.label + " (" + x.basis + ").", p ? p.title + ". " + p.why + "\n" + tasks(p) : ""].filter(Boolean).join("\n\n"), true);
+    }
+    for (const p of PHASES) if (!p.hard) ev("step-" + p.id, (p.date ? "" : "Window: ") + p.title, pStart(p), pEnd(p), p.why + "\n" + tasks(p), false);
+    lines.push("END:VCALENDAR");
+    return lines.map(fold).join("\r\n") + "\r\n";
+  }
+  function downloadIcs() {
+    const blob = new Blob([icsText()], { type: "text/calendar;charset=utf-8" });
+    const a = h("a", { href: URL.createObjectURL(blob), download: "apartment-search-2027-timeline.ics" });
+    document.body.append(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 500);
+    toast(`Calendar file saved: ${HARD.length} fixed dates and ${PHASES.filter(p => !p.hard).length} steps`);
+  }
+
+  /* Progress readouts update in place when a box is ticked. */
+  function updateProgress(root) {
+    root = root || document;
+    for (const p of PHASES) {
+      const d = phaseDone(p), n = p.tasks.length, w = (d / n * 100).toFixed(1) + "%";
+      root.querySelectorAll(`[data-prog="${p.id}"]`).forEach(el => { el.textContent = `${d}/${n}`; el.classList.toggle("full", d === n); });
+      root.querySelectorAll(`[data-progbar="${p.id}"]`).forEach(el => el.style.setProperty("--w", w));
+      root.querySelectorAll(`[data-progtext="${p.id}"]`).forEach(el => { el.textContent = d === n ? "All done" : `${d} of ${n} done`; });
+      const item = root.querySelector(`.tl-item[data-phase="${p.id}"]`); if (item) item.classList.toggle("complete", d === n);
+    }
+    const all = allDone();
+    root.querySelectorAll("[data-prog-all]").forEach(el => { el.textContent = all; });
+    root.querySelectorAll("[data-progbar-all]").forEach(el => el.style.setProperty("--w", (all / TASK_TOTAL * 100).toFixed(1) + "%"));
+  }
+
+  function tlChart(today) {
+    const t0 = dOf(TL.start), t1 = addDays(dOf(TL.end), 1), span = dayDiff(t0, t1);
+    const at = d => Math.max(0, Math.min(span, dayDiff(t0, d))) / span * 100;
+    const pc = d => at(d).toFixed(3) + "%";
+    const months = []; for (let d = new Date(t0.getFullYear(), t0.getMonth() + 1, 1); d < t1; d = new Date(d.getFullYear(), d.getMonth() + 1, 1)) months.push(d);
+    const weeks = []; for (let d = addDays(t0, 7); d < t1; d = addDays(d, 7)) weeks.push(d);
+    const inRange = today >= t0 && today < t1;
+    const mLabel = d => d.toLocaleDateString("en-US", { month: "short" }) + (d.getMonth() === 0 ? " " + d.getFullYear() : "");
+    const axis = h("div", { class: "tl-row tl-row-axis", "aria-hidden": "true" },
+      h("div", { class: "tl-lab" }, h("span", { class: "mono-label", text: "2026 – 27" })),
+      h("div", { class: "tl-track" }, h("span", { class: "tl-month first", style: { left: "0%" }, text: "Oct" }),
+        ...months.map(d => h("span", { class: "tl-month", style: { left: pc(d) }, text: mLabel(d) }))),
+      h("div", { class: "tl-prog-h mono-label", text: "Done" }));
+    const flags = h("div", { class: "tl-row tl-row-hard" },
+      h("div", { class: "tl-lab" }, h("span", { class: "tl-lab-k" }, h("i", { class: "tl-hard-key", "aria-hidden": "true" }), "Fixed dates")),
+      h("div", { class: "tl-track" }, ...HARD.map((x, i) => {
+        const d = dOf(x.date), left = at(d);
+        return h("span", { class: "tl-flag tier-" + (i % 2) + (left > 78 ? " end" : ""), "data-hard": x.id, style: { left: pc(d) } },
+          h("b", { text: fmtDay(d) }), h("span", { text: x.short }), h("span", { class: "sr", text: `: ${x.label}, ${relDays(dayDiff(today, d))}.` }));
+      })),
+      h("div", { class: "tl-prog" }));
+    const rows = PHASES.map(p => {
+      const a = pStart(p), b = addDays(pEnd(p), 1), d = phaseDone(p), n = p.tasks.length;
+      const mark = p.date
+        ? h("span", { class: "tl-ms" + (p.hard ? " hard" : ""), style: { left: pc(a) }, title: `${p.title}: ${pWhen(p)}` })
+        : h("span", { class: "tl-bar" + (p.hard ? " hard" : ""), style: { left: pc(a), width: Math.max(.9, at(b) - at(a)).toFixed(3) + "%" }, title: `${p.title}: ${pWhen(p)}` },
+            h("i", { "data-progbar": p.id, style: { "--w": (d / n * 100).toFixed(1) + "%" } }));
+      return h("div", { class: "tl-row" + (pEnd(p) < today ? " past" : ""), "data-phase": p.id },
+        h("div", { class: "tl-lab" }, h("button", { type: "button", class: "tl-lab-btn", "aria-label": `Step ${p.n}: ${p.title}, ${pWhen(p)}. Show checklist.`, onclick: () => focusPhase(p.id) },
+          h("span", { class: "tl-n", text: pad2(p.n) }), h("span", { class: "tl-lab-main" }, h("span", { class: "tl-lab-t", text: p.title }), h("span", { class: "tl-lab-d", text: pWhen(p) })))),
+        h("div", { class: "tl-track", "aria-hidden": "true" }, mark),
+        h("div", { class: "tl-prog", "data-prog": p.id, title: "Checklist items done", text: `${d}/${n}` }));
+    });
+    const overlay = h("div", { class: "tl-overlay", "aria-hidden": "true" },
+      ...weeks.map(d => h("i", { class: "tl-week", style: { left: pc(d) } })),
+      ...months.map(d => h("i", { class: "tl-grid", style: { left: pc(d) } })),
+      ...HARD.map(x => h("i", { class: "tl-hardline", "data-hard": x.id, style: { left: pc(dOf(x.date)) } })),
+      inRange ? h("i", { class: "tl-todayline", style: { left: pc(today) } }, h("span", { text: "Today" })) : null);
+    return h("div", { class: "tl-chart", role: "group", "aria-label": "Timeline from Oct 26, 2026 to Feb 28, 2027" }, overlay, axis, flags, ...rows);
+  }
+
+  function tlAgenda(today) {
+    const items = [];
+    let placed = false;
+    const todayItem = () => {
+      const next = HARD.map(x => ({ x, n: dayDiff(today, dOf(x.date)) })).find(o => o.n >= 0);
+      return h("li", { class: "tl-item tl-today" },
+        h("div", { class: "tl-when" }, h("b", { text: fmtDay(today) }), h("small", { text: "Today" })),
+        h("span", { class: "tl-node today", "aria-hidden": "true" }),
+        h("p", { class: "tl-today-text" }, h("b", { text: "You are here. " }), next ? `${next.x.label} ${relDays(next.n)} (${fmtDay(dOf(next.x.date))}).` : "Every fixed date has passed."));
+    };
+    for (const p of PHASES) {
+      if (!placed && pEnd(p) >= today) { items.push(todayItem()); placed = true; }
+      const a = pStart(p), b = pEnd(p), d = phaseDone(p), n = p.tasks.length;
+      const st = b < today ? "past" : a <= today ? "now" : "next";
+      const hard = p.hard && hardOf(p.hard);
+      const rel = st === "now" ? "Now" : st === "past" ? "Passed" : relDays(dayDiff(today, a));
+      items.push(h("li", { class: `tl-item ${st}` + (d === n ? " complete" : ""), id: "tl-" + p.id, "data-phase": p.id, tabindex: -1 },
+        h("div", { class: "tl-when" }, h("b", { text: fmtDay(a) }), p.date ? null : h("span", { text: "to " + fmtDay(b) }), h("small", { text: rel })),
+        h("span", { class: "tl-node" + (hard ? " hard" : "") + (p.date ? " ms" : ""), "aria-hidden": "true" }),
+        h("article", { class: "tl-card", "aria-labelledby": "tlh-" + p.id },
+          h("header", { class: "tl-card-head" },
+            h("span", { class: "tl-card-no", text: "Step " + pad2(p.n) }),
+            hard ? h("span", { class: "tag bad", text: "Fixed date · " + hard.short }) : null,
+            st === "now" ? h("span", { class: "tag ok", text: "Now" }) : null),
+          h("h3", { class: "tl-card-title", id: "tlh-" + p.id, text: p.title }),
+          h("p", { class: "tl-card-when mono-label", text: pWhen(p) + (hard ? " · " + hard.basis : "") }),
+          h("p", { class: "tl-card-why", text: p.why }),
+          h("ul", { class: "tl-checks", "aria-label": p.title + " checklist" }, ...p.tasks.map(t => {
+            const k = taskKey(p, t), id = "chk-" + k.replace(/\W/g, "-");
+            return h("li", null, h("label", { class: "tl-check", for: id },
+              h("input", { type: "checkbox", id, "data-task": k, checked: !!CHECKS[k], onchange: e => { setCheck(k, e.target.checked); updateProgress(); } }),
+              h("span", { class: "tl-box", "aria-hidden": "true", html: CHECK_SVG }),
+              h("span", { class: "tl-check-t", text: t[1] })));
+          })),
+          h("footer", { class: "tl-card-foot" },
+            h("span", { class: "tl-pbar", "aria-hidden": "true" }, h("i", { "data-progbar": p.id, style: { "--w": (d / n * 100).toFixed(1) + "%" } })),
+            h("span", { class: "tl-ptext", "data-progtext": p.id, text: d === n ? "All done" : `${d} of ${n} done` })))));
+    }
+    if (!placed) items.push(todayItem());
+    return h("ol", { class: "tl-agenda", "aria-label": "Steps, in order" }, ...items);
+  }
+
+  function tlSummary(today) {
+    const all = allDone();
+    return h("aside", { class: "tl-summary", "aria-label": "Progress and fixed dates" },
+      h("div", { class: "tl-sum-prog" },
+        h("p", { class: "mono-label", text: "Checklist" }),
+        h("p", { class: "tl-sum-n" }, h("b", { "data-prog-all": "", text: all }), h("span", { text: ` of ${TASK_TOTAL} done` })),
+        h("span", { class: "tl-pbar lg", "aria-hidden": "true" }, h("i", { "data-progbar-all": "", style: { "--w": (all / TASK_TOTAL * 100).toFixed(1) + "%" } }))),
+      h("ul", { class: "tl-sum-dates" }, ...HARD.map(x => {
+        const d = dOf(x.date), n = dayDiff(today, d);
+        return h("li", { class: n < 0 ? "past" : n <= 14 ? "urgent" : "" }, h("span", { class: "tl-sum-d", text: fmtDay(d) }), h("span", { class: "tl-sum-l", text: x.label }), h("span", { class: "tl-sum-r", text: n < 0 ? "passed" : relDays(n) }));
+      })),
+      h("button", { class: "btn block", type: "button", id: "icsBtn", onclick: downloadIcs },
+        h("span", { "aria-hidden": "true", html: '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="4" y="5" width="16" height="15" rx="1.5"/><path d="M4 10h16M9 3v4M15 3v4M12 13v5M9.5 15.5h5"/></svg>' }),
+        "Add to calendar"),
+      h("p", { class: "hint", text: `Downloads an .ics file with the ${HARD.length} fixed dates (each with a two-day reminder) and every step. Checkmarks are saved in this browser and included in Export notes.` }));
+  }
+
+  function focusPhase(id) {
+    const el = document.getElementById("tl-" + id); if (!el) return;
+    el.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "center" });
+    el.focus({ preventScroll: true });
+    el.classList.remove("flash"); void el.offsetWidth; el.classList.add("flash");
+  }
+  /* Masthead deadline cards land here. */
+  function goTimeline(hardId) {
+    setView("timeline");
+    requestAnimationFrame(() => {
+      const chart = document.querySelector(".tl-chart");
+      if (chart && chart.offsetParent) {
+        $("results").scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" });
+        document.querySelectorAll(`.tl-flag[data-hard="${hardId}"], .tl-hardline[data-hard="${hardId}"]`).forEach(el => { el.classList.remove("flash"); void el.offsetWidth; el.classList.add("flash"); });
+      } else { const p = PHASES.find(q => q.hard === hardId); if (p) focusPhase(p.id); }
+    });
+  }
+
+  function renderTimeline(root, _list, ctx) {
+    if (!ctx.switching && root.querySelector(":scope > .tl")) return;
+    const today = todayDate();
+    root.replaceChildren(h("div", { class: "tl" },
+      h("div", { class: "viewhead tl-head" },
+        h("p", { class: "eyebrow", text: "Shared by every market" }),
+        h("h2", { class: "viewhead-title", text: "The move, in order" }),
+        h("p", { class: "viewhead-sub", text: `Four fixed dates and ${PHASES.length} steps, from today to the deposit deadline. Select a step to see its checklist.` })),
+      tlChart(today),
+      h("div", { class: "tl-body" }, tlSummary(today), tlAgenda(today)),
+      timingResearch()));
+  }
+
+  /* ---- Rent timing research ------------------------------------------------------------- */
+  const hostOf = u => { try { const x = new URL(u); return /^https?:$/.test(x.protocol) ? x.hostname.replace(/^www\./, "") : null; } catch { return null; } };
+  function srcLinks(list) {
+    list = (Array.isArray(list) ? list : [list]).filter(x => x != null && x !== "");
+    if (!list.length) return null;
+    return h("p", { class: "srcl" }, h("span", { class: "srcl-k", text: list.length === 1 ? "Source" : "Sources" }),
+      ...list.map(u => { const host = hostOf(u); return host ? h("a", { href: u, target: "_blank", rel: "noopener", title: u, text: host }) : h("span", { class: "srcl-t", text: String(u) }); }));
+  }
+  const unk = () => h("span", { class: "pv unk", title: "Not found" }, "—", h("span", { class: "sr", text: "not found" }));
+  const vOr = v => v == null || v === "" || v === "unknown" ? unk() : h("span", { text: String(v) });
+  const STRENGTH = { strong: [3, "Strong evidence"], moderate: [2, "Moderate evidence"], weak: [1, "Weak evidence"], anecdotal: [0, "Anecdotal"] };
+  function strengthTag(sv) {
+    const x = STRENGTH[sv]; if (!x) return h("span", { class: "strength unk", text: "Strength —" });
+    if (!x[0]) return h("span", { class: "strength anec", text: "Anecdotal" });
+    return h("span", { class: "strength", title: x[1] }, h("span", { class: "pips", "aria-hidden": "true" }, ...[1, 2, 3].map(i => h("i", { class: i <= x[0] ? "on" : "" }))), h("span", { text: x[1] }));
+  }
+  const LEVEL = { high: [3, "High"], medium: [2, "Medium"], low: [1, "Low"] };
+  function levelPips(lv, withWord = true) {
+    const x = LEVEL[lv];
+    return h("span", { class: "lvl lvl-" + (x ? lv : "unknown"), title: x ? x[1] + " concessions" : "Concession level not found" },
+      h("span", { class: "pips", "aria-hidden": "true" }, ...[1, 2, 3].map(i => h("i", { class: x && i <= x[0] ? "on" : "" }))),
+      withWord ? h("span", { class: "lvl-w", text: x ? x[1] : "—" }) : h("span", { class: "sr", text: x ? x[1] : "not found" }));
+  }
+  const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  const firstSentence = t => { const m = String(t || "").match(/^.*?[.!?](\s|$)/); return m ? m[0].trim() : String(t || ""); };
+
+  /* A chart that redraws when its box changes width (fixed-size text at any width). */
+  function sized(host, draw) {
+    let w = 0;
+    const go = () => { const nw = Math.round(host.clientWidth); if (nw && Math.abs(nw - w) > 6) { w = nw; draw(nw); } };
+    if (window.ResizeObserver) new ResizeObserver(go).observe(host);
+    requestAnimationFrame(go);
+  }
+  function chartTip(wrap) {
+    const tip = h("div", { class: "ctip", hidden: true });
+    wrap.append(tip);
+    return {
+      show(x, y, ...kids) {
+        tip.replaceChildren(...kids.filter(Boolean)); tip.hidden = false;
+        const W = wrap.clientWidth, tw = tip.offsetWidth;
+        tip.style.left = Math.max(0, Math.min(W - tw, x - tw / 2)) + "px"; tip.style.top = Math.max(0, y - tip.offsetHeight - 10) + "px";
+      },
+      hide() { tip.hidden = true; },
+    };
+  }
+
+  /* Seasonality: concession level by month as a stepped column per month (an ordinal scale: one hue,
+     light to dark), months July to June so the Dec–Jan move window sits together. A rent panel is
+     drawn below only for months where research found a percentage; none are invented. */
+  const ORDER = [7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6];
+  const WINDOW = [12, 1];
+  function seasonChart(sea) {
+    const mm = new Map((sea.months || []).filter(x => x && x.m).map(x => [+x.m, x]));
+    const pctOf = m => { const v = mm.get(m) && mm.get(m).rent_vs_avg_pct; return v == null || isNaN(+v) ? null : +v; };
+    const hasPct = ORDER.some(m => pctOf(m) != null);
+    const wrap = h("div", { class: "schart" });
+    const host = h("div", { class: "schart-plot" });
+    const live = h("p", { class: "sr", "aria-live": "polite" });
+    const legend = h("div", { class: "clegend", "aria-hidden": "true" },
+      h("span", { class: "clegend-k", text: "Concession level" }),
+      ...["low", "medium", "high"].map(l => h("span", null, h("i", { class: "sw lvl-" + l }), LEVEL[l][1])),
+      h("span", null, h("i", { class: "sw none" }), "Not found"),
+      hasPct ? h("span", null, h("i", { class: "sw cobalt" }), "Rent below average") : null,
+      hasPct ? h("span", null, h("i", { class: "sw amberc" }), "Rent above average") : null,
+      h("span", null, h("i", { class: "sw window" }), "Your move window"));
+    wrap.append(legend, host, live);
+    const tip = chartTip(wrap);
+    let sel = -1, geo = null;
+    const readout = i => {
+      const m = ORDER[i], r = mm.get(m) || {}, lv = LEVEL[r.concessions], p = pctOf(m);
+      return { m, r, text: `${MONTHS[m - 1]}: concessions ${lv ? lv[1].toLowerCase() : "not found"}${p != null ? `, rent ${p > 0 ? "+" : ""}${p}% vs. the annual average` : ""}. ${r.note ? firstSentence(r.note) : ""}` };
+    };
+    const showSel = i => {
+      if (!geo) return;
+      sel = i;
+      geo.selRect.setAttribute("x", geo.x(i) - 1); geo.selRect.setAttribute("opacity", i < 0 ? 0 : 1);
+      if (i < 0) { tip.hide(); return; }
+      const { m, r } = readout(i), lv = LEVEL[r.concessions], p = pctOf(m);
+      tip.show(geo.x(i) + geo.band / 2, geo.top,
+        h("p", { class: "ctip-k", text: MONTHS[m - 1] + (WINDOW.includes(m) ? " · move window" : "") }),
+        h("p", { class: "ctip-v" }, h("b", { text: lv ? lv[1] + " concessions" : "Concessions not found" })),
+        p != null ? h("p", { class: "ctip-v" }, h("b", { text: `${p > 0 ? "+" : ""}${p}%` }), " rent vs. annual average") : null,
+        r.note ? h("p", { class: "ctip-note", text: firstSentence(r.note) }) : null);
+      live.textContent = readout(i).text;
+    };
+    sized(host, W => {
+      const narrow = W < 560, padL = narrow ? 58 : 70, padR = 6, top = 26, colH = narrow ? 120 : 150, gapX = 26;
+      const band = (W - padL - padR) / 12, x = i => padL + i * band;
+      const pctH = hasPct ? (narrow ? 90 : 110) : 0, pctTop = top + colH + gapX + (hasPct ? 18 : 0);
+      const H = top + colH + gapX + (hasPct ? 18 + pctH + 8 : 0);
+      const svg = s("svg", { width: W, height: H, viewBox: `0 0 ${W} ${H}`, class: "schart-svg", tabindex: 0, role: "group",
+        "aria-label": "Concession level by month, July to June. Use the left and right arrow keys to read each month." });
+      // move window band
+      const wi = ORDER.indexOf(12);
+      svg.append(s("rect", { x: x(wi) + 1, y: 4, width: band * 2 - 2, height: H - 4, fill: "var(--window)", rx: 3 }),
+        s("text", { x: x(wi) + band, y: 16, "text-anchor": "middle", class: "c-wlab" }, narrow ? "Move" : "Move window"));
+      // ordinal gridlines + labels
+      const yL = lv => top + colH - lv / 3 * colH;
+      for (const [k, [lv, word]] of Object.entries(LEVEL)) {
+        svg.append(s("line", { x1: padL, x2: W - padR, y1: yL(lv), y2: yL(lv), class: "c-grid" }),
+          s("text", { x: padL - 8, y: yL(lv) + 4, "text-anchor": "end", class: "c-tick" }, word));
+        void k;
+      }
+      const base = top + colH;
+      svg.append(s("line", { x1: padL, x2: W - padR, y1: base, y2: base, class: "c-base" }));
+      const bw = Math.min(narrow ? 20 : 30, band - 4);
+      ORDER.forEach((m, i) => {
+        const r = mm.get(m) || {}, lv = LEVEL[r.concessions], cx = x(i) + band / 2;
+        if (lv) {
+          const y1 = yL(lv[0]), r4 = 4, x0 = cx - bw / 2;
+          svg.append(s("path", { class: "c-col lvl-" + r.concessions, d: `M${x0},${base} V${y1 + r4} Q${x0},${y1} ${x0 + r4},${y1} H${x0 + bw - r4} Q${x0 + bw},${y1} ${x0 + bw},${y1 + r4} V${base} Z` }));
+        } else svg.append(s("text", { x: cx, y: base - 6, "text-anchor": "middle", class: "c-tick" }, "—"));
+        svg.append(s("text", { x: cx, y: base + 17, "text-anchor": "middle", class: "c-mon" + (WINDOW.includes(m) ? " on" : "") }, narrow ? MONTHS[m - 1][0] : MONTHS[m - 1].slice(0, 3)));
+      });
+      if (hasPct) {
+        const vals = ORDER.map(pctOf), mx = Math.max(...vals.filter(v => v != null).map(Math.abs), .5);
+        const step = [.5, 1, 2, 2.5, 5, 10].find(st => mx / st <= 2) || 10, dom = Math.ceil(mx / step) * step;
+        const yP = v => pctTop + pctH / 2 - v / dom * pctH / 2;
+        svg.append(s("text", { x: padL, y: pctTop - 6, class: "c-sub" }, "Rent vs. annual average"));
+        for (let v = -dom; v <= dom + 1e-9; v += step) svg.append(s("line", { x1: padL, x2: W - padR, y1: yP(v), y2: yP(v), class: Math.abs(v) < 1e-9 ? "c-base" : "c-grid" }),
+          s("text", { x: padL - 8, y: yP(v) + 4, "text-anchor": "end", class: "c-tick" }, (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(+v.toFixed(1)) + "%"));
+        const ext = [vals.indexOf(Math.max(...vals.filter(v => v != null))), vals.indexOf(Math.min(...vals.filter(v => v != null)))];
+        vals.forEach((v, i) => {
+          const cx = x(i) + band / 2, x0 = cx - bw / 2, y0 = yP(0);
+          if (v == null) { svg.append(s("text", { x: cx, y: y0 + 4, "text-anchor": "middle", class: "c-tick" }, "—")); return; }
+          const y1 = yP(v), r4 = Math.min(4, Math.abs(y1 - y0)), up = v > 0;
+          const d = up ? `M${x0},${y0} V${y1 + r4} Q${x0},${y1} ${x0 + r4},${y1} H${x0 + bw - r4} Q${x0 + bw},${y1} ${x0 + bw},${y1 + r4} V${y0} Z`
+            : `M${x0},${y0} V${y1 - r4} Q${x0},${y1} ${x0 + r4},${y1} H${x0 + bw - r4} Q${x0 + bw},${y1} ${x0 + bw},${y1 - r4} V${y0} Z`;
+          svg.append(s("path", { d, class: "c-pct " + (up ? "up" : "down") }));
+          if (ext.includes(i)) svg.append(s("text", { x: cx, y: up ? y1 - 5 : y1 + 13, "text-anchor": "middle", class: "c-val" }, (v > 0 ? "+" : "") + v + "%"));
+        });
+      }
+      const selRect = s("rect", { x: 0, y: top - 4, width: band + 2, height: H - top + 2, class: "c-sel", opacity: 0, rx: 3 });
+      svg.insertBefore(selRect, svg.children[2]);
+      ORDER.forEach((m, i) => {
+        const hit = s("rect", { x: x(i), y: 0, width: band, height: H, fill: "transparent", class: "c-hit" });
+        hit.addEventListener("pointerenter", () => showSel(i));
+        hit.addEventListener("click", () => showSel(i));
+        svg.append(hit);
+      });
+      svg.addEventListener("pointerleave", () => { if (document.activeElement !== svg) showSel(-1); });
+      svg.addEventListener("focus", () => showSel(sel < 0 ? wi : sel));
+      svg.addEventListener("blur", () => showSel(-1));
+      svg.addEventListener("keydown", e => {
+        if (e.key === "ArrowRight" || e.key === "ArrowLeft") { e.preventDefault(); showSel(((sel < 0 ? wi : sel) + (e.key === "ArrowRight" ? 1 : -1) + 12) % 12); }
+        else if (e.key === "Escape") showSel(-1);
+      });
+      geo = { x, band, top, selRect };
+      host.replaceChildren(svg);
+      if (sel >= 0) showSel(sel);
+    });
+    const table = h("details", { class: "srcs ctable" }, h("summary", null, h("span", { text: "Month-by-month notes and sources (12)" })),
+      h("div", { class: "tablewrap" }, h("table", { class: "mini-table" },
+        h("caption", { class: "sr", text: "Concession level and research notes by month" }),
+        h("thead", null, h("tr", null, ...["Month", "Concessions", ...(hasPct ? ["Rent vs. avg."] : []), "Note"].map(t => h("th", { scope: "col", text: t })))),
+        h("tbody", null, ...[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map(m => {
+          const r = mm.get(m) || {}, p = pctOf(m);
+          return h("tr", { class: WINDOW.includes(m) ? "win" : null }, h("th", { scope: "row", text: MONTHS[m - 1] }), h("td", null, levelPips(r.concessions)),
+            hasPct ? h("td", { class: "num" }, p == null ? unk() : (p > 0 ? "+" : "") + p + "%") : null,
+            h("td", null, r.note ? h("p", { text: r.note }) : unk(), srcLinks(r.sources)));
+        })))));
+    return h("div", { class: "schart-box" }, wrap,
+      hasPct ? null : h("p", { class: "schart-note" }, h("b", { text: "No rent curve. " }), "No reliable month-by-month rent index for Los Angeles was found, so the chart shows concession levels only. Each month's direction is in its note."),
+      table);
+  }
+
+  /* Share of listings or units with a concession, one small chart per source group,
+     all on the same 0–max scale and the same time axis so they compare honestly. */
+  const shareGroup = geo => { const g = String(geo || "Unknown"), place = g.split(" (")[0].trim(), src = (g.match(/\(([A-Za-z]+)/) || [])[1]; return src ? `${place} · ${src}` : place; };
+  function parsePeriod(p) {
+    const t = String(p || ""), m = t.match(/^(\d{4})-(\d{2})/);
+    if (m) return { y: +m[1], mo: +m[2], flag: t.length > 7 ? t.slice(7).replace(/^\s*\(?|\)?\s*$/g, "") : "" };
+    const l = t.match(/^(\d{4})-(late|mid|early)/i);
+    if (l) return { y: +l[1], mo: { early: 2, mid: 6, late: 11 }[l[2].toLowerCase()], flag: t.slice(5) };
+    return null;
+  }
+  const monthName = (y, mo) => new Date(y, mo - 1, 1).toLocaleDateString("en-US", { month: "short", year: "numeric" });
+  function shareCharts(rows) {
+    const pts = rows.filter(r => r && r.share_pct != null && !isNaN(+r.share_pct)).map(r => ({ ...r, g: shareGroup(r.geo), t: parsePeriod(r.period) }));
+    const groups = new Map();
+    for (const p of pts) { if (!groups.has(p.g)) groups.set(p.g, []); groups.get(p.g).push(p); }
+    const charted = [...groups].filter(([, l]) => l.filter(p => p.t).length >= 3).sort((a, b) => (b[0].startsWith("Los Angeles") - a[0].startsWith("Los Angeles")) || b[1].length - a[1].length);
+    const rest = [...groups].filter(([g]) => !charted.some(([c]) => c === g));
+    const tv = t => t.y * 12 + t.mo - 1;
+    const all = pts.filter(p => p.t);
+    const tMin = Math.min(...all.map(p => tv(p.t))), tMax = Math.max(...all.map(p => tv(p.t)));
+    const yMax = Math.max(10, Math.ceil(Math.max(...all.map(p => +p.share_pct)) / 10) * 10);
+    const card = ([g, list]) => {
+      const L = list.filter(p => p.t).sort((a, b) => tv(a.t) - tv(b.t));
+      const box = h("figure", { class: "share" }), host = h("div", { class: "share-plot" }), live = h("p", { class: "sr", "aria-live": "polite" });
+      box.append(h("figcaption", { class: "share-cap" }, h("b", { text: g }), h("span", { text: `${L.length} readings · ${monthName(L[0].t.y, L[0].t.mo)} to ${monthName(L[L.length - 1].t.y, L[L.length - 1].t.mo)}` })), host, live);
+      const tip = chartTip(box);
+      sized(host, W => {
+        const padL = 34, padR = 44, top = 12, ph = 96, H = top + ph + 24;
+        const X = t => padL + (tMax > tMin ? (tv(t) - tMin) / (tMax - tMin) : .5) * (W - padL - padR), Y = v => top + ph - v / yMax * ph;
+        const svg = s("svg", { width: W, height: H, viewBox: `0 0 ${W} ${H}`, class: "share-svg", tabindex: 0, role: "group", "aria-label": `${g}: share with a concession over time. Arrow keys read each point.` });
+        for (const v of [0, yMax / 2, yMax]) svg.append(s("line", { x1: padL, x2: W - padR, y1: Y(v), y2: Y(v), class: v ? "c-grid" : "c-base" }), s("text", { x: padL - 6, y: Y(v) + 4, "text-anchor": "end", class: "c-tick" }, v + "%"));
+        for (let y = Math.floor(tMin / 12) + 1; y * 12 <= tMax; y++) svg.append(s("text", { x: X({ y, mo: 1 }), y: H - 6, "text-anchor": "middle", class: "c-tick" }, String(y)));
+        svg.append(s("polyline", { points: L.map(p => X(p.t) + "," + Y(+p.share_pct)).join(" "), class: "c-line" }));
+        const cross = s("line", { y1: top, y2: top + ph, class: "c-cross", opacity: 0 });
+        svg.append(cross);
+        L.forEach(p => svg.append(s("circle", { cx: X(p.t), cy: Y(+p.share_pct), r: 4, class: "c-dot" + (p.t.flag ? " derived" : "") })));
+        const last = L[L.length - 1];
+        svg.append(s("text", { x: X(last.t) + 8, y: Y(+last.share_pct) + 4, class: "c-val" }, Math.round(+last.share_pct * 10) / 10 + "%"));
+        let sel = -1;
+        const show = i => {
+          sel = i;
+          if (i < 0) { cross.setAttribute("opacity", 0); tip.hide(); return; }
+          const p = L[i], cx = X(p.t);
+          cross.setAttribute("x1", cx); cross.setAttribute("x2", cx); cross.setAttribute("opacity", 1);
+          tip.show(cx, Y(+p.share_pct) + 26, h("p", { class: "ctip-v" }, h("b", { text: p.share_pct + "%" }), " with a concession"),
+            h("p", { class: "ctip-k", text: monthName(p.t.y, p.t.mo) + (p.t.flag ? " · " + p.t.flag : "") }),
+            h("p", { class: "ctip-note", text: p.geo + (hostOf(p.source) ? " · " + hostOf(p.source) : "") }));
+          live.textContent = `${monthName(p.t.y, p.t.mo)}: ${p.share_pct}%${p.t.flag ? " (" + p.t.flag + ")" : ""}.`;
+        };
+        svg.addEventListener("pointermove", e => {
+          const r = svg.getBoundingClientRect(), mx = e.clientX - r.left;
+          let best = 0; L.forEach((p, i) => { if (Math.abs(X(p.t) - mx) < Math.abs(X(L[best].t) - mx)) best = i; });
+          show(best);
+        });
+        svg.addEventListener("pointerleave", () => show(-1));
+        svg.addEventListener("focus", () => show(sel < 0 ? L.length - 1 : sel));
+        svg.addEventListener("blur", () => show(-1));
+        svg.addEventListener("keydown", e => { if (e.key === "ArrowRight" || e.key === "ArrowLeft") { e.preventDefault(); show(Math.max(0, Math.min(L.length - 1, (sel < 0 ? L.length - 1 : sel) + (e.key === "ArrowRight" ? 1 : -1)))); } });
+        host.replaceChildren(svg);
+      });
+      return box;
+    };
+    const anyDerived = all.some(p => p.t.flag);
+    return h("div", { class: "shares" },
+      charted.length ? h("div", { class: "share-grid" }, ...charted.map(card)) : null,
+      anyDerived && charted.length ? h("p", { class: "hint share-key" }, h("i", { class: "share-hollow", "aria-hidden": "true" }), "Hollow points are derived or have an inferred date. Zillow counts listings; RealPage counts stabilized units, so their levels differ.") : null,
+      rest.length ? h("ul", { class: "share-rest" }, ...rest.map(([g, l]) => h("li", null, h("b", { text: g + ": " }), l.map(p => `${p.share_pct}% (${p.period})`).join(", "), " ", srcLinks([...new Set(l.map(p => p.source).filter(Boolean))])))) : null,
+      h("details", { class: "srcs ctable" }, h("summary", null, h("span", { text: `All ${pts.length} readings as a table` })),
+        h("div", { class: "tablewrap" }, h("table", { class: "mini-table" },
+          h("thead", null, h("tr", null, ...["Period", "Geography and source", "Share", "Source"].map(t => h("th", { scope: "col", text: t })))),
+          h("tbody", null, ...pts.slice().sort((a, b) => (a.t ? tv(a.t) : 0) - (b.t ? tv(b.t) : 0)).map(p => h("tr", null, h("td", { text: p.period }), h("td", { text: p.geo || "—" }), h("td", { class: "num", text: p.share_pct + "%" }), h("td", null, srcLinks(p.source) || unk()))))))));
+  }
+
+  function rsec(id, k, title, lede, ...body) {
+    return h("section", { class: "rsec", id: "tr-" + id, "aria-labelledby": "trh-" + id },
+      h("header", { class: "rsec-head" }, h("span", { class: "rsec-k", text: k }), h("h3", { class: "rsec-title", id: "trh-" + id, text: title }), lede ? h("p", { class: "rsec-lede", text: lede }) : null),
+      ...body);
+  }
+  const sub = (t, ...body) => { const kids = body.filter(Boolean); return kids.length ? h("div", { class: "rsub" }, h("h4", { class: "rsub-title", text: t }), ...kids) : null; };
+  const nonEmpty = a => Array.isArray(a) && a.length ? a.filter(Boolean) : null;
+
+  function timingResearch() {
+    if (S.market !== "la") return h("section", { class: "tresearch tresearch-note", "aria-label": "Rent timing research" },
+      h("p", { text: "Timing research covers Los Angeles, Long Beach and Orange County." }));
+    const T = (MARKETS.la && MARKETS.la.timing) || null;
+    if (!T) return h("section", { class: "tresearch tresearch-note", "aria-label": "Rent timing research" }, h("p", { text: "Rent timing research for Los Angeles, Long Beach and Orange County has not been gathered yet." }));
+    const sea = T.seasonality || {};
+    const hasSea = nonEmpty(sea.months);
+    const effects = nonEmpty(T.timing_effects), now = nonEmpty(T.market_now), fc = nonEmpty(T.forecast), hist = nonEmpty(T.history), share = nonEmpty(T.concession_share_history);
+    const areas = nonEmpty(T.areas), ups = nonEmpty(T.lease_ups), ops = nonEmpty(T.operators), tactics = nonEmpty(T.tactics), pits = nonEmpty(T.pitfalls), rules = nonEmpty(T.rules), anec = nonEmpty(T.anecdotes);
+    const lvlRank = l => (LEVEL[l] || [0])[0];
+    const specials = S.buildings.filter(b => ["often", "sometimes"].includes(patternOf(b))).sort((a, b) => (patternOf(a) === "often" ? 0 : 1) - (patternOf(b) === "often" ? 0 : 1) || a.name.localeCompare(b.name));
+    const nav = [["when", "When"], ["where", "Where"], ["who", "Who"], ["how", "How"]];
+    return h("section", { class: "tresearch", "aria-labelledby": "trTitle" },
+      h("header", { class: "tresearch-head" },
+        h("p", { class: "eyebrow", text: "Los Angeles · Long Beach · Orange County" }),
+        h("h2", { class: "viewhead-title", id: "trTitle", text: "Rent timing and concessions" }),
+        h("p", { class: "viewhead-sub", text: "When rents dip, where landlords discount, who sets the price and how to ask." + (T.updated ? ` Research as of ${T.updated}.` : "") }),
+        h("nav", { class: "tr-nav", "aria-label": "Research sections" }, ...nav.map(([id, t], i) => h("a", { href: "#tr-" + id, class: "tr-navlink", onclick: e => { e.preventDefault(); const el = document.getElementById("tr-" + id); if (el) el.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); } },
+          h("span", { class: "mono-label", text: ROMAN[i] }), t)))),
+      rsec("when", "I", "When", sea.summary || null,
+        hasSea ? seasonChart(sea) : h("p", { class: "muted", text: "No month-by-month research found." }),
+        sea.best_window || sea.evidence ? h("div", { class: "callpair" },
+          sea.best_window ? h("div", { class: "callout good" }, h("p", { class: "mono-label", text: "Best window" }), h("p", { text: sea.best_window })) : null,
+          sea.evidence ? h("div", { class: "callout plain" }, h("p", { class: "mono-label", text: "How strong the evidence is" }), h("p", { text: sea.evidence })) : null) : null,
+        srcLinks(sea.sources),
+        sub("Timing effects", effects && h("div", { class: "rgrid" }, ...effects.map(x => h("article", { class: "rcard" },
+          h("header", { class: "rcard-head" }, h("h5", { class: "rcard-title", text: x.title || "—" }), strengthTag(x.strength)),
+          x.finding ? h("p", { text: x.finding }) : unk(), srcLinks(x.sources))))),
+        sub("The market now", now && h("div", { class: "nowgrid" }, ...now.map(x => h("article", { class: "nowcard" },
+          h("p", { class: "mono-label", text: [x.geo, x.as_of ? "as of " + x.as_of : null].filter(Boolean).join(" · ") || "—" }),
+          h("p", { class: "nowcard-m", text: x.metric || "—" }),
+          h("p", { class: "nowcard-v", text: x.value == null ? "—" : String(x.value) }),
+          srcLinks(x.source))))),
+        sub("Forecast", fc && h("ul", { class: "rlist" }, ...fc.map(x => h("li", null,
+          h("p", { class: "rlist-k mono-label", text: [x.geo, x.as_of ? "as of " + x.as_of : null].filter(Boolean).join(" · ") || "—" }), h("p", { text: x.finding || "—" }), srcLinks(x.source))))),
+        sub("History", hist && h("ol", { class: "hist" }, ...hist.map(x => h("li", null,
+          h("span", { class: "hist-p", text: x.period || "—" }),
+          h("div", null, h("p", { class: "hist-e" }, h("b", { text: x.event || "—" }), x.geo ? h("span", { class: "muted", text: " · " + x.geo }) : null),
+            x.effect ? h("p", { class: "hist-x", text: x.effect }) : null, srcLinks(x.sources)))))),
+        sub("Share of rentals offering a concession", share && shareCharts(share))),
+      rsec("where", "II", "Where", T.area_summary || null,
+        areas && h("ol", { class: "areas-rank" }, ...areas.slice().sort((a, b) => lvlRank(b.level) - lvlRank(a.level)).map(x => {
+          const a = x.area_id ? S.areaById.get(x.area_id) : null;
+          return h("li", { class: "arow" },
+            levelPips(x.level),
+            h("div", { class: "arow-main" },
+              a ? h("button", { type: "button", class: "arow-name linkish", onclick: () => openArea(a), text: x.name || a.name }) : h("p", { class: "arow-name", text: x.name || "—" }),
+              h("p", { class: "mono-label", text: [x.region, x.as_of ? "as of " + x.as_of : null].filter(Boolean).join(" · ") })),
+            h("dl", { class: "arow-kv" },
+              h("dt", { text: "Typical offer" }), h("dd", null, vOr(x.typical_offer)),
+              h("dt", { text: "Driver" }), h("dd", null, vOr(x.driver))),
+            x.vacancy || x.pipeline || x.evidence || nonEmpty(x.sources) ? h("details", { class: "srcs arow-more" }, h("summary", null, h("span", { text: "Vacancy, pipeline and sources" })),
+              h("dl", { class: "pkv" }, h("dt", { text: "Vacancy" }), h("dd", null, vOr(x.vacancy)), h("dt", { text: "Pipeline" }), h("dd", null, vOr(x.pipeline)), h("dt", { text: "Evidence" }), h("dd", null, vOr(x.evidence))),
+              srcLinks(x.sources)) : null);
+        })),
+        sub("New buildings in lease-up", ups && h("div", { class: "rgrid" }, ...ups.map(x => h("article", { class: "rcard" },
+          h("header", { class: "rcard-head" }, h("h5", { class: "rcard-title", text: x.name || "—" }), x.units ? h("span", { class: "mono-label", text: x.units + " units" }) : null),
+          h("dl", { class: "pkv" },
+            h("dt", { text: "Area" }), h("dd", null, vOr([x.area, x.region].filter(Boolean).join(" · ") || null)),
+            h("dt", { text: "Opening" }), h("dd", null, vOr(x.opening)),
+            h("dt", { text: "Special seen" }), h("dd", null, vOr(x.special_seen)),
+            h("dt", { text: "Studio / 1BR rent" }), h("dd", null, vOr(x.studio_1br_rent)),
+            h("dt", { text: "Operator" }), h("dd", null, vOr(x.operator))),
+          srcLinks(x.sources)))))),
+      rsec("who", "III", "Who", "Who sets the price, and how much room a leasing office has.",
+        ops && h("div", { class: "rgrid" }, ...ops.map(x => h("article", { class: "rcard" },
+          h("header", { class: "rcard-head" }, h("h5", { class: "rcard-title", text: x.name || "—" }),
+            h("span", { class: "tag " + ({ yes: "ok", somewhat: "amber", no: "bad" }[x.negotiable] || ""), text: "Negotiable: " + ({ yes: "yes", somewhat: "somewhat", no: "no" }[x.negotiable] || "—") })),
+          h("dl", { class: "pkv" }, h("dt", { text: "Pricing" }), h("dd", null, vOr(x.pricing)), h("dt", { text: "Concessions" }), h("dd", null, vOr(x.concession_style))),
+          x.note ? h("p", { class: "rcard-note", text: x.note }) : null, srcLinks(x.sources))))),
+        sub(`Your listings with a specials history (${specials.length})`, specials.length ? h("ul", { class: "spec-list" }, ...specials.map(b => {
+          const c = b.concessions || {}, last = (c.seen || []).filter(x => x && x.offer).slice(-1)[0];
+          return h("li", null, h("button", { type: "button", class: "spec-btn", "data-listing-link": b.id, onclick: () => openBuilding(b) },
+            h("span", { class: "tag " + (patternOf(b) === "often" ? "spec" : ""), text: PATTERN_WORD[patternOf(b)] }),
+            h("span", { class: "spec-name", text: b.name }),
+            h("span", { class: "spec-sub", text: [areaName(b), last ? "Last seen: " + last.offer : null].filter(Boolean).join(" · ") }),
+            h("span", { class: "minilist-arrow", "aria-hidden": "true", text: "→" })));
+        })) : h("p", { class: "muted", text: "None of the current listings has a specials history of often or sometimes." }))),
+      rsec("how", "IV", "How", "What to ask for, what to watch for, and the California rules that apply.",
+        sub("Tactics", tactics && h("div", { class: "rgrid" }, ...tactics.map(x => h("article", { class: "rcard" },
+          h("header", { class: "rcard-head" }, h("h5", { class: "rcard-title", text: x.title || "—" }), strengthTag(x.strength)),
+          h("dl", { class: "pkv" }, h("dt", { text: "How" }), h("dd", null, vOr(x.how)), h("dt", { text: "Why" }), h("dd", null, vOr(x.why))),
+          srcLinks(x.sources))))),
+        sub("Pitfalls", pits && h("div", { class: "rgrid" }, ...pits.map(x => h("article", { class: "rcard warn" },
+          h("h5", { class: "rcard-title", text: x.title || "—" }), x.detail ? h("p", { text: x.detail }) : unk(), srcLinks(x.sources))))),
+        sub("California rules", rules && h("div", { class: "rgrid" }, ...rules.map(x => h("article", { class: "rcard rule" },
+          h("h5", { class: "rcard-title", text: x.name || "—" }),
+          h("dl", { class: "pkv" }, h("dt", { text: "Applies to" }), h("dd", null, vOr(x.applies)), h("dt", { text: "Effective" }), h("dd", null, vOr(x.effective))),
+          x.detail ? h("p", { text: x.detail }) : null, srcLinks(x.sources))))),
+        sub("Anecdotes", anec && h("ul", { class: "rlist anec" }, ...anec.map(x => h("li", null, h("span", { class: "strength anec", text: "Anecdotal" }), h("p", { text: x.summary || "—" }), srcLinks(x.source)))))));
   }
 
   /* ==========================================================================
@@ -1574,7 +2148,7 @@
     const ctx = { switching, initial: !booted };
     if (S.loaded && !S.buildings.length && (S.view === "list" || S.view === "table")) {
       if (switching || !root.querySelector(":scope > .unsurveyed")) root.replaceChildren(marketEmpty("list"));
-    } else ({ list: renderList, table: renderTable, map: renderMap, areas: renderAreas, compare: renderCompare, add: renderAdd }[S.view] || renderList)(root, list, ctx);
+    } else ({ list: renderList, table: renderTable, map: renderMap, areas: renderAreas, compare: renderCompare, timeline: renderTimeline, add: renderAdd }[S.view] || renderList)(root, list, ctx);
     if (switching && booted) {
       const dx = opts.dir ? opts.dir * 18 : 0;
       if (root._sw) root._sw.cancel();
@@ -1725,6 +2299,21 @@
       D(b).evidence ? h("div", { class: "evidence" }, h("p", { class: "mono-label", text: "Research caveats" }), h("p", { text: D(b).evidence })) : null,
       sources(b.detail_sources, "Particulars sources"));
   }
+  /* Specials history from the concessions research. Shown for markets the research covers. */
+  function specialsSection(b) {
+    const c = b.concessions;
+    if (!c) return S.hasConc ? section("Specials history", h("p", { class: "muted", text: "The concessions research did not cover this building. Ask the leasing office what specials it has run." })) : null;
+    const p = patternOf(b), seen = (c.seen || []).filter(Boolean);
+    const t = v => v ? h("span", { text: v }) : h("span", { class: "pv unk" }, "—", h("span", { class: "sr", text: "not found" }));
+    return section("Specials history",
+      h("div", { class: "spec-head" },
+        h("span", { class: "spec-pattern " + p }, h("span", { class: "fig-k", text: "Runs specials" }), h("b", { class: "serif", text: p === "unknown" ? "Not known" : PATTERN_WORD[p] })),
+        c.evidence ? h("p", { class: "spec-ev", text: c.evidence }) : null),
+      seen.length ? h("ol", { class: "spec-seen", "aria-label": "Offers seen" }, ...seen.map(x => h("li", null,
+        h("span", { class: "spec-when", text: x.when || "Date not found" }), h("span", { class: "spec-offer", text: x.offer || "—" }), srcLinks(x.source)))) : h("p", { class: "muted small", text: "No dated offers found." }),
+      h("dl", { class: "pkv" }, h("dt", { text: "At renewal" }), h("dd", null, t(c.renewal_note)), h("dt", { text: "Negotiating" }), h("dd", null, t(c.negotiation_note))),
+      srcLinks(c.sources));
+  }
   function openBuilding(b) {
     const a = S.areaById.get(b.area_id), v = verdict(b), c = allIn(b), d = savingsOf(b), sc = score(b), rank = S.rank.get(b.id), p = ppsf(b);
     const statusGroup = h("div", { class: "statuses", role: "radiogroup", "aria-label": "Status" }, ...STATUSES.map(st =>
@@ -1779,6 +2368,7 @@
           ["Location", b.location_note], ["Watch out for", b.red_flags], ["Last checked", b.checked_on],
         ]),
         b.notes ? h("p", { class: "research-note", text: b.notes }) : null),
+      specialsSection(b),
       reviewSection(b),
       a ? section("Neighborhood",
         areaFacts(a, b),
@@ -1822,6 +2412,20 @@
       srcNotes.length ? h("details", { class: "srcs" }, h("summary", null, h("span", { text: `Source notes (${srcNotes.length})` })),
         h("ol", null, ...srcNotes.map(([k, v]) => h("li", null, h("b", { text: k + ": " }), v)))) : null);
   }
+  function areaConcessions(a) {
+    const c = a.concessions;
+    if (!c) return S.market === "la" && MARKETS.la && MARKETS.la.timing ? section("Concessions", h("p", { class: "muted", text: "The rent timing research did not rate this neighborhood." })) : null;
+    const t = v => v && v !== "unknown" ? h("span", { text: v }) : h("span", { class: "pv unk" }, "—", h("span", { class: "sr", text: "not found" }));
+    return section("Concessions",
+      h("div", { class: "aconc-head" }, levelPips(c.level), h("span", { class: "muted small", text: c.as_of ? "As of " + c.as_of : "" })),
+      h("dl", { class: "pkv" },
+        h("dt", { text: "Typical offer" }), h("dd", null, t(c.typical_offer)),
+        h("dt", { text: "Driver" }), h("dd", null, t(c.driver)),
+        h("dt", { text: "Vacancy" }), h("dd", null, t(c.vacancy)),
+        h("dt", { text: "Pipeline" }), h("dd", null, t(c.pipeline)),
+        h("dt", { text: "Evidence" }), h("dd", null, t(c.evidence))),
+      srcLinks(c.sources));
+  }
   const AREA_ICON = { Freeways: "drive", Traffic: "drive", "Specialty coffee": "coffee", Walkability: "coffee", Quiet: "quiet", Safety: "safety", LAX: "lax", Nightlife: "extras", Gyms: "extras", Errands: "extras", Rail: "drive" };
   function openArea(a) {
     const bs = S.buildings.filter(b => b.area_id === a.id);
@@ -1851,6 +2455,7 @@
       bs.length ? section(`Listings here`,
         h("ul", { class: "minilist" }, ...bs.map(b => h("li", null, h("button", { type: "button", class: "minilist-btn v-" + verdict(b), onclick: () => openBuilding(b) },
           h("span", { class: "minilist-name", text: b.name }), h("span", { class: "minilist-rent", text: money(rentOf(b)) }), h("span", { class: "minilist-arrow", "aria-hidden": "true", text: "→" })))))) : null,
+      areaConcessions(a),
       areaExtras(a),
       section("Field notes",
         h("div", { class: "fieldnotes" }, ...blocks.map(([name, x, extra, icoKey]) => h("div", { class: "fieldnote" },
@@ -1902,6 +2507,7 @@
     S.areas = areas.slice().sort((a, b) => a.name.localeCompare(b.name));
     S.areaById = new Map(S.areas.map(a => [a.id, a]));
     S.buildings = buildings.map(b => ({ ...b })); S.loaded = true;
+    S.hasConc = S.buildings.some(b => b.concessions);
   }
   /* Regions present in the market, in the expected order first; labels for roads and airport. */
   function applyMarketMeta() {
@@ -1949,7 +2555,7 @@
     renderMarkets(); renderFilters(); renderToolbar(); renderResults({ fade: true });
   }
   function exportEdits() {
-    const blob = new Blob([JSON.stringify({ app: "apartment-search-2027", exported: new Date().toISOString(), edits: EDITS, compare: [...S.compare] }, null, 1)], { type: "application/json" });
+    const blob = new Blob([JSON.stringify({ app: "apartment-search-2027", exported: new Date().toISOString(), edits: EDITS, compare: [...S.compare], checks: { ...CHECKS } }, null, 1)], { type: "application/json" });
     const a = h("a", { href: URL.createObjectURL(blob), download: "apartment-search-notes-" + new Date().toISOString().slice(0, 10) + ".json" });
     document.body.append(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 500);
     toast("Notes exported");
@@ -1964,6 +2570,7 @@
         ls.set("edits", merged);
         loadMarket();
         if (Array.isArray(d.compare)) { S.compare = new Set(d.compare); ls.set("compare", d.compare); }
+        if (d.checks && typeof d.checks === "object") { for (const [k, v] of Object.entries(d.checks)) setCheck(k, !!v); if (S.view === "timeline") $("view").replaceChildren(); }
         renderAll(); toast("Notes imported");
       } catch { toast("That file isn't an Apartment Search export."); }
     };
@@ -2015,6 +2622,7 @@
     renderArt();
     renderDates();
     EDITS = ls.get("edits", {}) || {};
+    loadChecks();
     loadMarket();
     renderMarkets();
     S.canWrite = true;
