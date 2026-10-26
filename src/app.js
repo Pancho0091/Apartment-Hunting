@@ -223,7 +223,6 @@
   }
   const fm = n => n == null || isNaN(n) ? "—" : String(Math.round(n));
   const rentOf = b => b.effective_rent ?? b.base_rent;
-  const allIn = b => { const r = rentOf(b); return r == null ? null : r + (Number(b.parking_fee) || 0); };
   const ppsf = b => rentOf(b) && b.sqft ? rentOf(b) / b.sqft : null;
   const reqVal = (b, k) => { const v = b.req && b.req[k]; return v === "yes" || v === "no" ? v : "unclear"; };
   function verdict(b) {
@@ -234,17 +233,90 @@
   function failReasons(b) {
     const out = [], rent = rentOf(b);
     if (b.sqft != null && b.sqft < MIN_SQFT) out.push(`Under ${MIN_SQFT} sq ft`);
-    if (rent != null && rent > RENT_CAP) out.push(`Over ${money(RENT_CAP)}`);
+    if (rent != null && rent > RENT_CAP) out.push(`Rent ${money(rent)} > ${money(RENT_CAP)}`);
     for (const r of REQS) if (reqVal(b, r.key) === "no") out.push("No " + r.name.charAt(0).toLowerCase() + r.name.slice(1));
     return out;
   }
-  const regionOf = b => { const a = S.areaById.get(b.area_id); return (a && a.region) || b.region || "Los Angeles"; };
+  /* Fails only on rent: still a real candidate if the budget stretches. */
+  const overBudgetOnly = b => { const r = failReasons(b); return r.length === 1 && r[0].startsWith("Rent "); };
+  const verdictLabel = b => { const v = verdict(b); return v === "fail" && overBudgetOnly(b) ? "Over budget" : VERDICTS[v]; };
+  const regionOf = b => { const a = S.areaById.get(b.area_id); return (a && a.region) || b.region || ""; };
   const areaName = b => { const a = S.areaById.get(b.area_id); return a ? a.name : ""; };
   /* Shown place name; never guesses a region the listing does not have (regionOf defaults for filtering only). */
   const whereText = b => areaName(b) || b.region || "Neighborhood not set";
   const isNew = b => b.batch === "new-oct15" || b.batch === "private-oct15";
   const statusName = k => (STATUSES.find(s => s.key === (k || "new")) || STATUSES[0]).name;
-  const savingsOf = b => { const c = allIn(b); return c == null ? null : JAYNE.allIn - c; };
+
+  /* ---- listing particulars (detail.*) ---------------------------------------------------- */
+  const D = b => b.detail || {};
+  const dget = (b, g, k) => { const o = D(b)[g]; const v = o ? o[k] : undefined;
+    if (v == null && g === "costs" && k === "parking_fee") return b.parking_fee;
+    if (v == null && g === "building" && k === "year_built") return b.year_built;
+    return v; };
+  const isKnown = v => !(v == null || v === "" || v === "unclear" || (Array.isArray(v) && !v.length));
+  const triOf = v => v === "yes" || v === "no" ? v : "unclear";
+  const parkType = b => dget(b, "parking", "type") || "unclear";
+  const garageOf = b => { const t = parkType(b); return t === "garage" || t === "covered" ? "yes" : t === "unclear" ? "unclear" : "no"; };
+  const areaOf = b => S.areaById.get(b.area_id) || null;
+  const extrasOf = a => (a && a.extras) || {};
+  const yearOf = b => { const y = dget(b, "building", "year_built"); return y == null || isNaN(+y) ? null : +y; };
+  const summerHigh = b => { const v = extrasOf(areaOf(b)).summer_high_f; return v == null ? null : +v; };
+  const typicalRent = b => { const v = extrasOf(areaOf(b)).median_1br_rent; return v == null ? null : +v; };
+  const fwyBand = b => b.freeway_band || "unknown";
+  /* Walk Score: the address score when research found one, else the neighborhood's. */
+  function walkOf(b) {
+    const own = dget(b, "location", "walk_score");
+    if (own != null) return { v: +own, src: "address" };
+    const a = areaOf(b), av = b.area_walk_score ?? (a && a.walk && a.walk.walk_score);
+    return av != null ? { v: +av, src: "area" } : { v: null, src: null };
+  }
+  /* True monthly cost = rent after specials + parking fee + required monthly fees, when known.
+     Unknown parts are listed, never guessed; the total then is a floor ("at least"). */
+  const costCache = new WeakMap();
+  function costOf(b) {
+    if (costCache.has(b)) return costCache.get(b);
+    const rent = rentOf(b), c = D(b).costs || {}, missing = [];
+    let park = dget(b, "costs", "parking_fee");
+    park = park == null || isNaN(+park) ? null : +park;
+    if (park == null) { if (reqVal(b, "parking") === "no" || parkType(b) === "street") park = 0; else missing.push("parking fee"); }
+    const list = Array.isArray(c.required_fees) ? c.required_fees : [];
+    let fees = null;
+    if (b.required_fees_total != null && !isNaN(+b.required_fees_total)) { fees = +b.required_fees_total; if (list.some(x => x.amount == null)) missing.push("some fees"); }
+    else if (list.length && list.some(x => x.amount != null)) { fees = list.reduce((t, x) => t + (+x.amount || 0), 0); if (list.some(x => x.amount == null)) missing.push("some fees"); }
+    else missing.push("required fees");
+    const out = { rent, park, fees, list, missing, total: rent == null ? null : rent + (park || 0) + (fees || 0) };
+    costCache.set(b, out);
+    return out;
+  }
+  const trueCost = b => costOf(b).total;
+  const savingsOf = b => { const c = trueCost(b); return c == null ? null : JAYNE.allIn - c; };
+  const allIn = trueCost;
+  /* Particulars: the dossier fields, grouped. The completeness meter is the share of these found. */
+  const fmtMoney = v => money(v);
+  const fmtMo = v => money(v) + "/mo";
+  const fmtMin = v => Math.round(v) + " min";
+  const fmtMi = v => (Math.round(v * 10) / 10) + " mi";
+  const PARTICULARS = [
+    ["costs", "Costs", [["required_fees", "Required fees"], ["utilities", "Utilities"], ["deposit", "Deposit", fmtMoney], ["application_fee", "Application fee", fmtMoney], ["admin_fee", "Admin fee", fmtMoney], ["parking_fee", "Parking fee", fmtMo], ["lease_terms", "Lease terms"]]],
+    ["pets", "Pets", [["cats", "Cats", "tri"], ["dogs", "Dogs", "tri"], ["pet_rent", "Pet rent", fmtMo], ["pet_deposit", "Pet deposit", fmtMoney], ["limits", "Limits"]]],
+    ["parking", "Parking", [["type", "Type"], ["ev_charging", "EV charging", "tri"], ["guest_parking", "Guest parking", "tri"]]],
+    ["building", "Building", [["units", "Units"], ["stories", "Stories"], ["year_built", "Year built"], ["renovated", "Renovated"], ["elevator", "Elevator", "tri"], ["gym", "Gym", "tri"], ["pool", "Pool", "tri"], ["coworking", "Coworking", "tri"], ["rooftop_or_courtyard", "Roof deck or courtyard", "tri"], ["controlled_access", "Controlled access", "tri"], ["onsite_management", "On-site management", "tri"], ["smoke_free", "Smoke-free", "tri"]]],
+    ["unit", "Unit", [["balcony", "Balcony", "tri"], ["storage", "Storage", "tri"], ["floors_available", "Floors available"], ["features", "Features"]]],
+    ["internet", "Internet", [["fiber", "Fiber", "tri"], ["providers", "Providers"]]],
+    ["location", "Location", [["walk_score", "Walk Score"], ["transit_score", "Transit Score"], ["bike_score", "Bike Score"], ["nearest_onramp", "Nearest on-ramp"], ["onramp_miles", "On-ramp distance", fmtMi], ["freeway_within_500ft", "Freeway within 500 ft", "tri"], ["nearest_specialty_cafe", "Specialty cafe"], ["cafe_walk_min", "Cafe walk", fmtMin], ["nearest_grocery", "Grocery"], ["grocery_walk_min", "Grocery walk", fmtMin], ["nearest_metro", "Rail station"], ["metro_walk_min", "Station walk", fmtMin], ["nearest_gym", "Gym nearby"], ["gym_minutes", "Gym trip", fmtMin], ["lax_drive_min_offpeak", "Airport drive, off-peak", fmtMin]]],
+    ["availability", "Availability", [["units_note", "Units seen"], ["website", "Website", "url"], ["leasing_phone", "Leasing phone", "tel"]]],
+  ];
+  const DOC_TOTAL = PARTICULARS.reduce((t, g) => t + g[2].length, 0);
+  const docCache = new WeakMap();
+  function docShare(b) {
+    if (docCache.has(b)) return docCache.get(b);
+    let k = 0;
+    for (const [g, , fields] of PARTICULARS) for (const [f] of fields) if (isKnown(dget(b, g, f))) k++;
+    const v = k / DOC_TOTAL;
+    docCache.set(b, v);
+    return v;
+  }
+  const docPct = b => Math.round(docShare(b) * 100);
 
   const hayCache = new WeakMap();
   function haystack(b) {
@@ -258,7 +330,7 @@
   }
   function matchesWith(b, f, q) {
     const rent = rentOf(b);
-    if (!f.regions.includes(regionOf(b))) return false;
+    if (f.hideRegions.length && f.hideRegions.includes(regionOf(b))) return false;
     if (!f.verdicts.includes(verdict(b))) return false;
     if (!f.landlords.includes(b.landlord || "company")) return false;
     if (!f.statuses.includes(b.my_status || "new")) return false;
@@ -268,14 +340,32 @@
     if (f.hideScam && b.scam_flags) return false;
     if (f.newOnly && !isNew(b)) return false;
     for (const k of f.mustHave) if (reqVal(b, k) !== "yes") return false;
+    if (f.maxCost < COST_MAX) { const c = trueCost(b); if (c != null && c > f.maxCost) return false; }
+    for (const t of TRI_FILTERS) { const m = f[t.k]; if (m !== "any") { const v = t.v(b); if (m === "yes" ? v !== "yes" : v === "no") return false; } }
+    if (f.minYear > YEAR_MIN) { const y = yearOf(b); if (y == null ? !f.yearUnknown : y < f.minYear) return false; }
+    if (f.fwy.length < FWY_BANDS.length && !f.fwy.includes(fwyBand(b))) return false;
+    if (f.maxHeat < HEAT_MAX) { const t = summerHigh(b); if (t != null && t > f.maxHeat) return false; }
+    if (f.minWalk > 0) { const w = walkOf(b).v; if (w == null ? !f.walkUnknown : w < f.minWalk) return false; }
+    if (f.minDoc > 0 && docPct(b) < f.minDoc) return false;
     if (q) { const hs = haystack(b); for (const t of q.split(/\s+/)) if (t && !hs.includes(t)) return false; }
     return true;
   }
   const matches = b => matchesWith(b, S.f, S.q);
+  const TRI_FILTERS = [
+    { k: "cats", name: "Cats allowed", g: "pets", v: b => triOf(dget(b, "pets", "cats")) },
+    { k: "dogs", name: "Dogs allowed", g: "pets", v: b => triOf(dget(b, "pets", "dogs")) },
+    { k: "garage", name: "Garage or covered parking", g: "parking", v: garageOf },
+    { k: "ev", name: "EV charging", g: "parking", v: b => triOf(dget(b, "parking", "ev_charging")) },
+    { k: "gym", name: "Gym", g: "building", v: b => triOf(dget(b, "building", "gym")) },
+    { k: "pool", name: "Pool", g: "building", v: b => triOf(dget(b, "building", "pool")) },
+    { k: "elevator", name: "Elevator", g: "building", v: b => triOf(dget(b, "building", "elevator")) },
+    { k: "access", name: "Controlled access", g: "building", v: b => triOf(dget(b, "building", "controlled_access")) },
+    { k: "balcony", name: "Balcony", g: "building", v: b => triOf(dget(b, "unit", "balcony")) },
+  ];
   function sorted(list) {
     const k = S.sort;
     const key = {
-      score: b => -(score(b) ?? -1), value: b => -((score(b) ?? 0) / (rentOf(b) || 9e9)), rent: b => rentOf(b) ?? 9e9,
+      score: b => -(score(b) ?? -1), value: b => -((score(b) ?? 0) / (rentOf(b) || 9e9)), rent: b => rentOf(b) ?? 9e9, cost: b => trueCost(b) ?? 9e9,
       sqft: b => -(b.sqft ?? 0), ppsf: b => ppsf(b) ?? 9e9, reviews: b => -(repScore(b) ?? -1), name: b => b.name.toLowerCase(),
     }[k] || (b => 0);
     // decorate once, so the comparator does not recompute scores
@@ -389,8 +479,10 @@
   function toggleIn(arr, key, on) { const i = arr.indexOf(key); if (on && i < 0) arr.push(key); if (!on && i >= 0) arr.splice(i, 1); }
   function activeFilterCount() {
     const f = S.f, d = DEFAULT_FILTERS; let n = 0;
-    if (f.maxRent !== d.maxRent) n++; if (f.minSqft !== d.minSqft) n++; if (f.minRep !== d.minRep) n++;
-    for (const k of ["regions", "verdicts", "landlords", "statuses"]) if (!sameSet(f[k], d[k])) n++;
+    for (const k of ["maxRent", "minSqft", "minRep", "maxCost", "minYear", "maxHeat", "minWalk", "minDoc"]) if (f[k] !== d[k]) n++;
+    for (const k of ["verdicts", "landlords", "statuses", "fwy"]) if (!sameSet(f[k], d[k])) n++;
+    n += f.hideRegions.filter(r => REGIONS.includes(r)).length ? 1 : 0;
+    for (const t of TRI_FILTERS) if (f[t.k] !== "any") n++;
     n += f.mustHave.length; if (f.hideScam !== d.hideScam) n++; if (f.newOnly) n++;
     return n;
   }
@@ -410,17 +502,37 @@
       h("span", { class: "switch-track", "aria-hidden": "true" }),
       h("span", { class: "switch-name", text: label }), h("span", { class: "tagcheck-n", text: n }));
   }
-  function range(id, label, min, max, step, value, fmt, onInput, ends, field) {
+  /* Three-state filter: Any / Yes / Not ruled out (yes or not confirmed). A small stacked bar shows
+     how the current market splits (confirmed yes, not confirmed, confirmed no). */
+  function triRow(t, onChange) {
+    const c = { yes: 0, unclear: 0, no: 0 };
+    for (const b of S.buildings) c[t.v(b)]++;
+    const n = S.buildings.length || 1, name = "tri-" + t.k;
+    const pct = k => (c[k] / n * 100).toFixed(1) + "%";
+    return h("fieldset", { class: "trif" },
+      h("legend", { class: "trif-head" },
+        h("span", { class: "trif-name", text: t.name }),
+        h("span", { class: "trif-n", title: `${c.yes} yes, ${c.unclear} not confirmed, ${c.no} no` },
+          h("span", { class: "trif-bar", "aria-hidden": "true" }, h("i", { class: "y", style: { width: pct("yes") } }), h("i", { class: "u", style: { width: pct("unclear") } }), h("i", { class: "n", style: { width: pct("no") } })),
+          h("span", { class: "sr", text: `: ${c.yes} yes, ${c.unclear} not confirmed, ${c.no} no.` }),
+          h("span", { "aria-hidden": "true", text: c.yes + " yes" }))),
+      h("div", { class: "trif-opts" }, ...TRI_MODES.map(([m, label]) =>
+        h("label", { class: "trif-opt", title: m === "maybe" ? "Yes or not confirmed: hides only a confirmed no" : m === "yes" ? "Confirmed yes only" : "No filter" },
+          h("input", { type: "radio", name, value: m, checked: S.f[t.k] === m, "data-tri": t.k, onchange: () => onChange(m) }),
+          h("span", { text: label })))));
+  }
+  function range(id, label, min, max, step, value, fmt, onInput, ends, field, hint) {
     const out = h("output", { for: id, text: fmt(value) });
     const pct = v => ((v - min) / (max - min) * 100).toFixed(2) + "%";
-    const input = h("input", { type: "range", class: "range", id, min, max, step, value, "data-num": field, style: { "--p": pct(value) },
+    const input = h("input", { type: "range", class: "range", id, min, max, step, value, "data-num": field, "aria-describedby": hint ? id + "-hint" : null, style: { "--p": pct(value) },
       oninput: e => { const v = +e.target.value; e.target.style.setProperty("--p", pct(v)); out.textContent = fmt(v); onInput(v); },
       onchange: () => settleRange() });
     input._sync = v => { input.value = v; input.style.setProperty("--p", pct(v)); out.textContent = fmt(v); };
     return h("div", { class: "rangefield" },
       h("div", { class: "rangefield-head" }, h("label", { for: id, text: label }), out),
       input,
-      ends ? h("div", { class: "rangefield-ends", "aria-hidden": "true" }, h("span", { text: ends[0] }), h("span", { text: ends[1] })) : null);
+      ends ? h("div", { class: "rangefield-ends", "aria-hidden": "true" }, h("span", { text: ends[0] }), h("span", { text: ends[1] })) : null,
+      hint ? h("p", { class: "hint", id: id + "-hint", text: hint }) : null);
   }
   function group(title, open, ...body) {
     return h("details", { class: "fgroup", open: open || null },
@@ -446,22 +558,45 @@
     const nActive = activeFilterCount();
     const openState = id => { const el = document.querySelector(`#filters details[data-g="${id}"]`); return el ? el.open : null; };
     const g = (id, title, defOpen, ...body) => { const st = openState(id); const d = group(title, st == null ? defOpen : st, ...body); d.dataset.g = id; return d; };
+    const anyLbl = (v, off, fmt) => v === off ? "Any" : fmt(v);
+    const triFor = g => TRI_FILTERS.filter(t => t.g === g).map(t => triRow(t, m => { f[t.k] = m; rerender(); }));
+    const known = fn => S.buildings.filter(b => fn(b) != null).length;
+    const nB = S.buildings.length;
     $("filters").replaceChildren(
       h("div", { class: "filters-head" },
         h("p", { class: "mono-label" }, "Refine", h("span", { class: "filters-active", id: "filtersActive", text: nActive ? ` · ${nActive} active` : "" })),
         h("button", { class: "linkbtn", id: "clearAll", type: "button", disabled: !nActive && !S.q, text: "Clear all", onclick: clearAll })),
       h("div", { class: "fgroup fgroup-flat" },
         range("f-rent", "Max rent", 1500, 2600, 25, f.maxRent, money, v => { f.maxRent = v; refreshFromRange(); }, ["$1,500", "$2,600"], "maxRent"),
+        range("f-cost", "Max true monthly cost", 1500, COST_MAX, 25, f.maxCost, v => anyLbl(v, COST_MAX, money), v => { f.maxCost = v; refreshFromRange(); }, ["$1,500", "Any"], "maxCost",
+          "Rent after specials, plus parking and required fees where known. Unknown parts count as $0 here."),
         range("f-sqft", "Min size", 600, 1000, 10, f.minSqft, v => v + " sq ft", v => { f.minSqft = v; refreshFromRange(); }, ["600", "1,000 sq ft"], "minSqft"),
         range("f-rep", "Min review score", 0, 9, 1, f.minRep, v => v ? v + "+ / 10" : "Any", v => { f.minRep = v; refreshFromRange(); }, ["Any", "9 / 10"], "minRep")),
       g("must", "Must be confirmed", true,
         tagList("mh", REQS.map(r => [r.key, r.name]), f.mustHave, (k, on) => { toggleIn(f.mustHave, k, on); rerender(); },
           Object.fromEntries(REQS.map(r => [r.key, S.buildings.filter(b => reqVal(b, r.key) === "yes").length])), k => reqIcon(k) || h("span", { class: "ico-fallback", "aria-hidden": "true" }), "mustHave")),
-      g("region", "Region", true,
-        tagList("rg", REGIONS.map(r => [r, r]), f.regions, (k, on) => { toggleIn(f.regions, k, on); rerender(); }, counts(regionOf), null, "regions")),
+      REGIONS.length > 1 ? g("region", "Region", true,
+        tagList("rg", REGIONS.map(r => [r, r]), REGIONS.filter(r => !f.hideRegions.includes(r)), (k, on) => { toggleIn(f.hideRegions, k, !on); rerender(); }, counts(regionOf), null, "regionsShown")) : null,
       g("verdict", "Requirements", true,
-        tagList("vd", Object.entries(VERDICTS), f.verdicts, (k, on) => { toggleIn(f.verdicts, k, on); rerender(); }, counts(verdict), k => h("span", { class: "vdot " + k, "aria-hidden": "true" }), "verdicts")),
-      g("landlord", "Landlord", true,
+        tagList("vd", Object.entries(VERDICTS), f.verdicts, (k, on) => { toggleIn(f.verdicts, k, on); rerender(); }, counts(verdict), k => h("span", { class: "vdot " + k, "aria-hidden": "true" }), "verdicts"),
+        h("p", { class: "hint", text: "Listings over the rent cap fail only on rent; raise Max rent to see them (labeled Over budget)." })),
+      g("pets", "Pets", false, ...triFor("pets")),
+      g("parking", "Parking", false, ...triFor("parking")),
+      g("building", "Building and unit", false, ...triFor("building"),
+        range("f-year", "Built in or after", YEAR_MIN, 2025, 5, f.minYear, v => anyLbl(v, YEAR_MIN, String), v => { f.minYear = v; refreshFromRange(); }, ["Any", "2025"], "minYear"),
+        toggleRow("f-yearu", "Keep listings with year not found", f.yearUnknown, nB - known(yearOf), on => { f.yearUnknown = on; rerender(); }, "yearUnknown")),
+      g("location", "Location", false,
+        h("p", { class: "mono-label sub-k", text: "Distance to a freeway (rough)" }),
+        tagList("fw", FWY_BANDS, f.fwy, (k, on) => { toggleIn(f.fwy, k, on); rerender(); }, counts(fwyBand), null, "fwy"),
+        range("f-heat", "Neighborhood summer high at most", 70, HEAT_MAX, 1, f.maxHeat, v => anyLbl(v, HEAT_MAX, x => x + "°F"), v => { f.maxHeat = v; refreshFromRange(); }, ["70°F", "Any"], "maxHeat",
+          "Average August high for the neighborhood."),
+        range("f-walk", "Walk Score at least", 0, 100, 5, f.minWalk, v => anyLbl(v, 0, String), v => { f.minWalk = v; refreshFromRange(); }, ["Any", "100"], "minWalk",
+          "The address's Walk Score where research found one, otherwise the neighborhood's."),
+        toggleRow("f-walku", "Keep listings with no Walk Score", f.walkUnknown, nB - known(b => walkOf(b).v), on => { f.walkUnknown = on; rerender(); }, "walkUnknown")),
+      g("docs", "Documentation", false,
+        range("f-doc", "Well documented, at least", 0, 60, 5, f.minDoc, v => anyLbl(v, 0, x => x + "% known"), v => { f.minDoc = v; refreshFromRange(); }, ["Any", "60%"], "minDoc",
+          `Share of the ${DOC_TOTAL} particulars (costs, pets, parking, building, unit, internet, location, availability) that research found.`)),
+      g("landlord", "Landlord", false,
         tagList("ll", Object.entries(LANDLORDS), f.landlords, (k, on) => { toggleIn(f.landlords, k, on); rerender(); }, counts(b => b.landlord || "company"), null, "landlords"),
         h("div", { class: "switches" },
           toggleRow("f-scam", "Hide likely scams", f.hideScam, S.buildings.filter(b => b.scam_flags).length, on => { f.hideScam = on; rerender(); }, "hideScam"),
@@ -469,7 +604,7 @@
       g("status", "My status", false,
         tagList("st", STATUSES.map(s => [s.key, s.name]), f.statuses, (k, on) => { toggleIn(f.statuses, k, on); rerender(); }, counts(b => b.my_status || "new"), null, "statuses")),
       g("weights", "Ranking weights", false,
-        h("p", { class: "hint", text: "How much each factor counts toward Best match." }),
+        h("p", { class: "hint", text: "How much each factor counts toward Best match. Shared by every market." }),
         h("div", { class: "weights" }, ...FACTORS.concat(REP).map(x => {
           const id = "w-" + x.key, share = Math.round((S.weights[x.key] || 0) / totalW * 100);
           return h("div", { class: "weight" },
@@ -491,7 +626,8 @@
   /* Bring the existing filter controls in line with S.f (after chips or Clear all). */
   function syncFilters() {
     const root = $("filters"), f = S.f;
-    root.querySelectorAll("input[data-arr]").forEach(i => { i.checked = f[i.dataset.arr].includes(i.dataset.key); });
+    root.querySelectorAll("input[data-arr]").forEach(i => { i.checked = i.dataset.arr === "regionsShown" ? !f.hideRegions.includes(i.dataset.key) : f[i.dataset.arr].includes(i.dataset.key); });
+    root.querySelectorAll("input[data-tri]").forEach(i => { i.checked = f[i.dataset.tri] === i.value; });
     root.querySelectorAll("input[data-bool]").forEach(i => { i.checked = !!f[i.dataset.bool]; });
     root.querySelectorAll("input[data-num]").forEach(i => { if (+i.value !== f[i.dataset.num] && i._sync) i._sync(f[i.dataset.num]); });
     renderChips(); updateBadge();
@@ -665,10 +801,43 @@
         h("span", { class: "sr", text: ": " + REQ_WORD[v].toLowerCase() }));
     }));
   }
+  /* Savings vs The Jayne use the true monthly cost. With unknown parts the cost is a floor, so a
+     saving is "up to" and an extra cost is "at least". */
   function savingsEl(b, cls) {
     const d = savingsOf(b); if (d == null) return null;
-    return h("span", { class: "save " + (d >= 0 ? "pos" : "neg") + (cls ? " " + cls : ""), title: "Rent plus parking, compared with renewing at The Jayne" },
-      h("span", { class: "save-k", text: d >= 0 ? "Saves" : "Costs" }), h("b", { text: money(Math.abs(d)) }), h("span", { class: "save-k", text: "/mo" }));
+    const part = costOf(b).missing.length > 0;
+    const k = d >= 0 ? (part ? "Saves ≤" : "Saves") : (part ? "Costs ≥" : "Costs");
+    return h("span", { class: "save " + (d >= 0 ? "pos" : "neg") + (cls ? " " + cls : ""),
+      title: `True monthly cost compared with renewing at The Jayne (${money(JAYNE.allIn)})` + (part ? `. Not found: ${costOf(b).missing.join(", ")}.` : "") },
+      h("span", { class: "save-k", text: k }), h("b", { text: money(Math.abs(d)) }), h("span", { class: "save-k", text: "/mo" }));
+  }
+  /* "True monthly $2,221+" with the parts that make it up; "+" marks a floor. */
+  const costParts = c => [c.park != null && c.park > 0 ? money(c.park) + " parking" : c.park === 0 ? "parking included" : null,
+    c.fees != null && c.fees > 0 ? money(c.fees) + " fees" : null].filter(Boolean);
+  const costNote = c => c.missing.length ? c.missing.join(" and ") + " not found" : "all parts known";
+  function costValue(b, cls) {
+    const c = costOf(b);
+    if (c.total == null) return h("span", { class: "cost-v " + (cls || ""), text: "—" });
+    return h("span", { class: "cost-v " + (cls || "") }, money(c.total), c.missing.length ? h("span", { class: "cost-plus", "aria-hidden": "true", text: "+" }) : null,
+      c.missing.length ? h("span", { class: "sr", text: " or more" }) : null);
+  }
+  function costLine(b) {
+    const c = costOf(b);
+    const parts = ["rent " + money(c.rent), ...costParts(c)].join(" + ");
+    return h("div", { class: "costline" },
+      h("div", { class: "costline-main" },
+        h("span", { class: "fig-k", text: "True monthly" }),
+        costValue(b, "serif"),
+        h("span", { class: "costline-parts", text: c.total == null ? "rent not listed" : parts + (c.missing.length ? " · " + costNote(c) : "") })),
+      docMeter(b));
+  }
+  /* Data completeness: a ten-tick measure, like a graduated cylinder lying down. */
+  function docMeter(b, cls) {
+    const p = docPct(b);
+    return h("span", { class: "doc " + (cls || ""), role: "img", "aria-label": `Documented: ${p}% of ${DOC_TOTAL} particulars found`, title: `${p}% of ${DOC_TOTAL} particulars found` },
+      h("span", { class: "doc-k", "aria-hidden": "true", text: "Documented" }),
+      h("span", { class: "doc-bar", "aria-hidden": "true" }, h("i", { style: { "--w": p + "%" } })),
+      h("span", { class: "doc-v", "aria-hidden": "true", text: p + "%" }));
   }
   function flagTags(b, withStatus) {
     return [
@@ -760,7 +929,8 @@
           h("div", { class: "fig" }, h("span", { class: "fig-k", text: "$/sq ft" }), h("span", { class: "fig-v", text: p ? p.toFixed(2) : "—" })),
           h("div", { class: "fig" }, h("span", { class: "fig-k", text: "Reviews" }), h("span", { class: "fig-v", text: rep == null ? "—" : rep + "/10" }))),
         reqRow(b),
-        fails.length ? h("p", { class: "specimen-fails", text: fails.join(" · ") }) : null,
+        fails.length ? h("p", { class: "specimen-fails" }, overBudgetOnly(b) ? h("span", { class: "tag bad", text: "Over budget" }) : null, fails.join(" · ")) : null,
+        costLine(b),
         h("footer", { class: "specimen-foot" },
           h("div", { class: "match", title: "Match out of 100 against all listings, using your ranking weights. Best = 100, lowest = 0." }, jar(sc), h("span", { class: "match-k", text: "Match" }), h("b", { class: "match-v", text: fm(sc) })),
           savingsEl(b)),
@@ -784,37 +954,88 @@
   /* ==========================================================================
      Views: table
      ========================================================================== */
+  const triWord = v => v === "yes" ? "Yes" : v === "no" ? "No" : "?";
+  const triCell = v => h("td", { class: "t-tri " + v, title: v === "unclear" ? "Not confirmed" : null }, h("span", { class: "sr", text: v === "unclear" ? "not confirmed" : "" }), h("span", { "aria-hidden": v === "unclear" ? "true" : null, text: triWord(v) }));
+  const petsKey = b => { const c = triOf(dget(b, "pets", "cats")), d = triOf(dget(b, "pets", "dogs")); return (c === "yes") + (d === "yes") * 2 - (c === "no") - (d === "no"); };
+  const numCell = (v, f) => h("td", { class: "num" + (v == null ? " unk" : ""), text: v == null ? "—" : f ? f(v) : v });
+  const PARK_WORD = { garage: "Garage", covered: "Covered", surface: "Surface", tandem: "Tandem", street: "Street", unclear: "?" };
+  /* Table columns. `fixed` cannot be hidden; `def` is on by default; the picker remembers the rest. */
   const TCOLS = [
-    { k: "name", t: "Building", v: b => b.name.toLowerCase(), cell: b => h("td", { class: "t-name" }, h("span", { class: "t-title" }, openBtn(b.name)), h("span", { class: "t-sub", text: whereText(b) })) },
-    { k: "rent", t: "Rent", num: true, v: rentOf, cell: b => h("td", { class: "num strong", text: money(rentOf(b)) }) },
-    { k: "sqft", t: "Sq ft", num: true, v: b => b.sqft, cell: b => h("td", { class: "num", text: b.sqft != null ? Math.round(b.sqft) : "—" }) },
-    { k: "ppsf", t: "$/sq ft", num: true, v: ppsf, cell: b => h("td", { class: "num", text: ppsf(b) ? ppsf(b).toFixed(2) : "—" }) },
-    { k: "save", t: "vs. Jayne", num: true, v: savingsOf, cell: b => { const d = savingsOf(b); return h("td", { class: "num " + (d == null ? "" : d >= 0 ? "pos" : "neg"), text: d == null ? "—" : (d >= 0 ? "+" : "−") + money(Math.abs(d)) }); } },
-    { k: "score", t: "Match", num: true, v: score, cell: b => h("td", { class: "num" }, h("span", { class: "t-match" }, score(b) == null ? null : h("span", { class: "meter xs", "aria-hidden": "true" }, h("i", { style: { "--w": score(b) + "%" } })), fm(score(b)))) },
-    { k: "rep", t: "Reviews", num: true, v: repScore, cell: b => h("td", { class: "num", text: repScore(b) ?? "—" }) },
-    { k: "req", t: "Requirements", v: b => REQS.filter(r => reqVal(b, r.key) === "yes").length, cell: b => h("td", null, h("span", { class: "dots" }, ...REQS.map(r => h("i", { class: reqVal(b, r.key), title: r.name + ": " + REQ_WORD[reqVal(b, r.key)].toLowerCase() })))) },
-    { k: "landlord", t: "Landlord", v: b => b.landlord || "company", cell: b => h("td", { class: "t-text", text: b.landlord === "private" ? "Private" : "Company" }) },
-    { k: "status", t: "Status", v: b => b.my_status || "new", cell: b => h("td", { class: "t-text", text: statusName(b.my_status) }) },
+    { k: "name", t: "Building", fixed: true, v: b => b.name.toLowerCase(), cell: b => h("td", { class: "t-name" }, h("span", { class: "t-title" }, openBtn(b.name)), h("span", { class: "t-sub", text: whereText(b) })) },
+    { k: "rent", t: "Rent", grp: "Cost", def: true, num: true, v: rentOf, cell: b => h("td", { class: "num strong", text: money(rentOf(b)) }) },
+    { k: "cost", t: "True monthly", grp: "Cost", def: true, num: true, v: trueCost, cell: b => { const c = costOf(b); return h("td", { class: "num strong", title: c.total == null ? null : ["rent " + money(c.rent), ...costParts(c)].join(" + ") + (c.missing.length ? ". " + costNote(c) + "." : "") }, costValue(b)); } },
+    { k: "save", t: "vs. Jayne", grp: "Cost", def: true, num: true, v: savingsOf, cell: b => { const d = savingsOf(b), part = costOf(b).missing.length; return h("td", { class: "num " + (d == null ? "" : d >= 0 ? "pos" : "neg"), text: d == null ? "—" : (d >= 0 ? "+" : "−") + money(Math.abs(d)) + (part ? (d >= 0 ? "≤" : "≥") : "") }); } },
+    { k: "deposit", t: "Deposit", grp: "Cost", num: true, v: b => dget(b, "costs", "deposit"), cell: b => numCell(dget(b, "costs", "deposit"), money) },
+    { k: "sqft", t: "Sq ft", grp: "Unit", def: true, num: true, v: b => b.sqft, cell: b => numCell(b.sqft, Math.round) },
+    { k: "ppsf", t: "$/sq ft", grp: "Unit", num: true, v: ppsf, cell: b => numCell(ppsf(b), x => x.toFixed(2)) },
+    { k: "score", t: "Match", grp: "Ranking", def: true, num: true, v: score, cell: b => h("td", { class: "num" }, h("span", { class: "t-match" }, score(b) == null ? null : h("span", { class: "meter xs", "aria-hidden": "true" }, h("i", { style: { "--w": score(b) + "%" } })), fm(score(b)))) },
+    { k: "rep", t: "Reviews", grp: "Ranking", num: true, v: repScore, cell: b => numCell(repScore(b)) },
+    { k: "req", t: "Requirements", grp: "Ranking", def: true, v: b => REQS.filter(r => reqVal(b, r.key) === "yes").length, cell: b => h("td", null, h("span", { class: "dots" }, ...REQS.map(r => h("i", { class: reqVal(b, r.key), title: r.name + ": " + REQ_WORD[reqVal(b, r.key)].toLowerCase() })))) },
+    { k: "pets", t: "Cats · Dogs", grp: "Building", def: true, v: petsKey, cell: b => { const c = triOf(dget(b, "pets", "cats")), d = triOf(dget(b, "pets", "dogs")); return h("td", { class: "t-pets", title: `Cats: ${REQ_WORD[c].toLowerCase()}. Dogs: ${REQ_WORD[d].toLowerCase()}.` }, h("span", { class: "pill " + c, text: "Cats " + triWord(c) }), h("span", { class: "pill " + d, text: "Dogs " + triWord(d) })); } },
+    { k: "park", t: "Parking", grp: "Building", def: true, v: b => { const c = costOf(b); return (parkType(b) === "unclear" ? "z" : parkType(b)) + (c.park == null ? 9999 : c.park); }, cell: b => { const c = costOf(b), t = parkType(b); return h("td", { class: "t-text" + (t === "unclear" && c.park == null ? " unk" : "") }, PARK_WORD[t] || t, h("span", { class: "t-sub", text: c.park == null ? "fee not found" : c.park === 0 ? "included" : money(c.park) + "/mo" })); } },
+    { k: "year", t: "Built", grp: "Building", def: true, num: true, v: yearOf, cell: b => numCell(yearOf(b)) },
+    { k: "units", t: "Units", grp: "Building", num: true, v: b => dget(b, "building", "units"), cell: b => numCell(dget(b, "building", "units")) },
+    { k: "amen", t: "Gym · Pool", grp: "Building", v: b => (dget(b, "building", "gym") === "yes") + (dget(b, "building", "pool") === "yes"), cell: b => { const g = triOf(dget(b, "building", "gym")), q = triOf(dget(b, "building", "pool")); return h("td", { class: "t-pets" }, h("span", { class: "pill " + g, text: "Gym " + triWord(g) }), h("span", { class: "pill " + q, text: "Pool " + triWord(q) })); } },
+    { k: "fwy", t: "Freeway", grp: "Location", def: true, v: b => ({ "under 1 mi": 1, "1–2 mi": 2, "over 2 mi": 3 })[fwyBand(b)] ?? null, cell: b => { const f = fwyBand(b); return h("td", { class: "t-text" + (f === "unknown" ? " unk" : ""), title: "Rough distance to the nearest freeway" }, f === "unknown" ? "—" : f); } },
+    { k: "walk", t: "Walk", grp: "Location", def: true, num: true, v: b => walkOf(b).v, cell: b => { const w = walkOf(b); return h("td", { class: "num" + (w.v == null ? " unk" : ""), title: w.src === "area" ? "Neighborhood Walk Score" : w.src ? "Address Walk Score" : null }, w.v == null ? "—" : String(w.v), w.src === "area" ? h("span", { class: "t-src", text: "area" }) : null); } },
+    { k: "heat", t: "Summer high", grp: "Location", num: true, v: summerHigh, cell: b => numCell(summerHigh(b), x => Math.round(x) + "°F") },
+    { k: "typ", t: "Area 1BR", grp: "Location", num: true, v: typicalRent, cell: b => numCell(typicalRent(b), money) },
+    { k: "doc", t: "Documented", grp: "Ranking", def: true, num: true, v: docPct, cell: b => h("td", { class: "num" }, h("span", { class: "t-match" }, h("span", { class: "meter xs doc-meter", "aria-hidden": "true" }, h("i", { style: { "--w": docPct(b) + "%" } })), docPct(b) + "%")) },
+    { k: "landlord", t: "Landlord", grp: "Other", v: b => b.landlord || "company", cell: b => h("td", { class: "t-text", text: b.landlord === "private" ? "Private" : "Company" }) },
+    { k: "status", t: "Status", grp: "Other", def: true, v: b => b.my_status || "new", cell: b => h("td", { class: "t-text", text: statusName(b.my_status) }) },
   ];
+  const TCOL_DEFAULT = TCOLS.filter(c => c.def).map(c => c.k);
+  const shownCols = () => { const on = Array.isArray(S.tcols) ? S.tcols : TCOL_DEFAULT; return TCOLS.filter(c => c.fixed || on.includes(c.k)); };
+  /* Column picker: a popover of checkboxes, grouped; choices persist. */
+  function colPicker() {
+    const on = new Set(shownCols().map(c => c.k));
+    const nOpt = TCOLS.filter(c => !c.fixed).length, nOn = TCOLS.filter(c => !c.fixed && on.has(c.k)).length;
+    const det = h("details", { class: "colpick" },
+      h("summary", { class: "btn ghost sm", html: '<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 5h4v14H4zM10 5h4v14h-4zM16 5h4v14h-4z"/></svg>Columns' },
+        h("span", { class: "colpick-n", text: `${nOn} of ${nOpt}` })));
+    const groups = [...new Set(TCOLS.filter(c => !c.fixed).map(c => c.grp))];
+    const pop = h("div", { class: "colpick-pop", role: "group", "aria-label": "Table columns" },
+      ...groups.map(gname => h("fieldset", { class: "colpick-g" }, h("legend", { class: "mono-label", text: gname }),
+        ...TCOLS.filter(c => !c.fixed && c.grp === gname).map(c => h("label", { class: "colpick-opt" },
+          h("input", { type: "checkbox", checked: on.has(c.k), onchange: e => {
+            const cur = shownCols().filter(x => !x.fixed).map(x => x.k);
+            toggleIn(cur, c.k, e.target.checked);
+            S.tcols = TCOLS.filter(x => cur.includes(x.k)).map(x => x.k); ls.set("tcols", S.tcols);
+            det.querySelector(".colpick-n").textContent = `${S.tcols.length} of ${nOpt}`;
+            renderResults();
+          } }), h("span", { text: c.t }))))),
+      h("div", { class: "colpick-foot" }, h("button", { type: "button", class: "linkbtn sm", text: "Default columns", onclick: () => { S.tcols = null; ls.set("tcols", null); det.open = false; renderResults(); } })));
+    det.append(pop);
+    det.addEventListener("keydown", e => { if (e.key === "Escape" && det.open) { e.stopPropagation(); det.open = false; det.querySelector("summary").focus(); } });
+    return det;
+  }
+  document.addEventListener("click", e => { document.querySelectorAll(".colpick[open]").forEach(d => { if (!d.contains(e.target)) d.open = false; }); });
   function renderTable(root, list, ctx) {
     if (!list.length) {
       if (!root.querySelector(":scope > .empty")) { root.replaceChildren(emptyState()); if (!ctx.switching) fadeIn(root.firstChild); }
       return;
     }
-    const col = TCOLS.find(c => c.k === S.tsort.key) || TCOLS.find(c => c.k === "score");
+    const COLS = shownCols();
+    const col = COLS.find(c => c.k === S.tsort.key) || TCOLS.find(c => c.k === "score");
     const rows = list.slice().sort((a, b) => { const x = col.v(a), y = col.v(b); if (x == null) return 1; if (y == null) return -1; return (x < y ? -1 : x > y ? 1 : 0) * S.tsort.dir; });
-    const head = h("thead", null, h("tr", null, h("th", { class: "num t-no", scope: "col", text: "No." }), ...TCOLS.map(c => h("th", { class: c.num ? "num" : null, scope: "col", "aria-sort": S.tsort.key === c.k ? (S.tsort.dir > 0 ? "ascending" : "descending") : null },
+    const head = h("thead", null, h("tr", null, h("th", { class: "num t-no", scope: "col", text: "No." }), ...COLS.map(c => h("th", { class: c.num ? "num" : null, scope: "col", "aria-sort": S.tsort.key === c.k ? (S.tsort.dir > 0 ? "ascending" : "descending") : null },
       h("button", { type: "button", class: "th-btn" + (S.tsort.key === c.k ? " on" : ""), "data-col": c.k, onclick: () => {
           S.tsort = { key: c.k, dir: S.tsort.key === c.k ? -S.tsort.dir : (c.num && !["rent", "ppsf"].includes(c.k) ? -1 : 1) }; ls.set("tsort", S.tsort); renderResults();
           const again = document.querySelector(`.th-btn[data-col="${c.k}"]`); if (again) again.focus({ preventScroll: true });
         } },
         c.t, h("span", { class: "th-arrow", "aria-hidden": "true", text: S.tsort.key === c.k ? (S.tsort.dir > 0 ? "↑" : "↓") : "↕" }))))));
     const trs = rows.map((b, i) => h("tr", { class: "v-" + verdict(b), "data-listing": b.id, onclick: () => openBuilding(b) },
-      h("td", { class: "num t-no", text: pad2(i + 1) }), ...TCOLS.map(c => c.cell(b))));
+      h("td", { class: "num t-no", text: pad2(i + 1) }), ...COLS.map(c => c.cell(b))));
     const cap = h("caption", { class: "sr", text: `${rows.length} listings. Select a column heading to sort.` });
+    const colKey = COLS.map(c => c.k).join(",");
     const table = root.querySelector(":scope > .tablewrap > table");
-    if (!table) {
-      root.replaceChildren(h("div", { class: "tablewrap" }, h("table", { class: "ledger-table" }, cap, head, h("tbody", null, ...trs))));
+    if (!table || table.dataset.cols !== colKey) {
+      const bar = root.querySelector(":scope > .tablebar") || h("div", { class: "tablebar" },
+        h("p", { class: "tablebar-note", text: "Unknown values show as — or ?. A + after a cost means some parts were not found." }), colPicker());
+      const sx = table ? table.parentNode.scrollLeft : 0;
+      const wrap = h("div", { class: "tablewrap" }, h("table", { class: "ledger-table", "data-cols": colKey }, cap, head, h("tbody", null, ...trs)));
+      root.replaceChildren(bar, wrap);
+      if (sx) wrap.scrollLeft = sx;
       return;
     }
     // Same table: keep the scroll box (and its scroll position), move rows with FLIP.
@@ -856,7 +1077,9 @@
     if (!root) { root = h("div", { class: "mapslot" }); view.replaceChildren(root); }
     if (window.MapView && typeof window.MapView.render === "function") {
       try {
-        return window.MapView.render(root, list, { geo: DATA.geo, areas: S.areas, verdict, rentOf, money, score, areaScore, openBuilding, openArea });
+        const M = marketData(), mi = marketInfo();
+        return window.MapView.render(root, list, { geo: M.geo, areas: S.areas, verdict, rentOf, money, score, areaScore, openBuilding, openArea,
+          surveyed: S.buildings.length > 0, emptyNote: S.buildings.length ? null : `No ${mi.name} listings yet. The atlas is ready for them.` });
       } catch (err) { console.error(err); root.replaceChildren(); }
     }
     root.replaceChildren();
@@ -905,8 +1128,10 @@
     }));
   }
   function renderAreas(root, _list, ctx) {
-    const list = S.areas.filter(a => S.f.regions.includes(a.region)).map(a => ({ a, sc: areaScore(a) })).sort((x, y) => (y.sc ?? -1) - (x.sc ?? -1));
+    if (S.loaded && !S.areas.length) { if (!root.querySelector(":scope > .unsurveyed")) root.replaceChildren(marketEmpty("areas")); return; }
+    const list = S.areas.filter(a => !S.f.hideRegions.includes(a.region)).map(a => ({ a, sc: areaScore(a) })).sort((x, y) => (y.sc ?? -1) - (x.sc ?? -1));
     if (!list.length) { root.replaceChildren(emptyState(S.loaded ? "No neighborhoods in the selected regions." : "Loading…")); return; }
+    const mkt = median(S.buildings.map(rentOf));
     const inView = new Map();
     for (const b of S.buildings) if (matches(b)) inView.set(b.area_id, (inView.get(b.area_id) || 0) + 1);
     const plates = list.map(({ a, sc }, i) => {
@@ -919,6 +1144,7 @@
             regionEmblem(a.region, "md") || h("span", { class: "emblem-fallback", "aria-hidden": "true", text: a.region.split(" ").map(w => w[0]).join("") }),
             h("div", null, h("h3", { class: "plate-name" }, openBtn(a.name, a.name + ", neighborhood report")), h("p", { class: "plate-count", text: n ? plural(n, "listing") + " in view" : "No listings in view" })),
             h("div", { class: "plate-score" }, h("b", { text: f1(sc) }), h("span", { text: "/ 10" }))),
+          plateExtras(a, mkt),
           factorBars(a));
     });
     const sub = `${plural(list.length, "region")} of the atlas, ranked by your weights. Listing counts follow the current filters.`;
@@ -930,6 +1156,17 @@
         h("p", { class: "viewhead-sub", text: sub })),
       h("div", { class: "atlas" }, ...plates));
     if (ctx.switching) growBars(root);
+  }
+  /* Three measures from the neighborhood extras: typical 1BR rent (vs. listings in this market),
+     summer high, Walk Score. Unknown shows as a dash. */
+  function plateExtras(a, mkt) {
+    const x = extrasOf(a), r = x.median_1br_rent, t = x.summer_high_f, w = a.walk && a.walk.walk_score;
+    const diff = r != null && mkt != null ? r - mkt : null;
+    const cell = (k, v, sub, cls) => h("div", { class: "px " + (cls || "") }, h("dt", { class: "fig-k", text: k }), h("dd", null, h("b", { text: v }), sub ? h("span", { text: sub }) : null));
+    return h("dl", { class: "plate-extras" },
+      cell("Typical 1BR", r == null ? "—" : money(r), diff == null ? "not found" : diff >= 0 ? `${money(diff)} over listings` : `${money(-diff)} under listings`),
+      cell("Summer high", t == null ? "—" : Math.round(t) + "°F", t == null ? "not found" : t >= 90 ? "hot" : t >= 84 ? "warm" : "mild", t >= 90 ? "hot" : ""),
+      cell("Walk Score", w == null ? "—" : String(w), w == null ? "not found" : "neighborhood"));
   }
   /* Factor bars draw out from zero when a view or dossier first appears. */
   function growBars(scope) {
@@ -943,17 +1180,31 @@
      ========================================================================== */
   function renderCompare(root) {
     root.replaceChildren();
+    if (S.loaded && !S.buildings.length) return root.append(marketEmpty("compare"));
     const picks = S.buildings.filter(b => S.compare.has(b.id));
     if (!picks.length) return root.append(emptyState("Open any listing and choose Compare to line up to four side by side.", "Nothing on the bench yet", true));
+    const tri = (g, k) => b => triOf(dget(b, g, k));
     const rows = [
       ["Neighborhood", b => areaName(b) || "—"],
       ["Match (of 100)", b => fm(score(b)), score, 1],
       ["Rent", b => money(rentOf(b)), rentOf, -1],
       ["Size", b => b.sqft ? Math.round(b.sqft) + " sq ft" : "—", b => b.sqft, 1],
       ["$ per sq ft", b => ppsf(b) ? "$" + ppsf(b).toFixed(2) : "—", ppsf, -1],
-      ["Saves vs. The Jayne", b => allIn(b) == null ? "—" : money(JAYNE.allIn - allIn(b)) + "/mo", b => allIn(b) == null ? null : JAYNE.allIn - allIn(b), 1],
+      ["True monthly cost", b => { const c = costOf(b); return c.total == null ? "—" : money(c.total) + (c.missing.length ? "+ (" + costNote(c) + ")" : ""); }, trueCost, -1],
+      ["Saves vs. The Jayne", b => { const d = savingsOf(b); return d == null ? "—" : (costOf(b).missing.length ? "up to " : "") + money(d) + "/mo"; }, savingsOf, 1],
+      ["Deposit", b => dget(b, "costs", "deposit") == null ? "—" : money(dget(b, "costs", "deposit")), b => dget(b, "costs", "deposit"), -1],
+      ["Documented", b => docPct(b) + "% of particulars", docPct, 1],
       ["Reviews", b => repScore(b) == null ? "—" : repScore(b) + "/10", repScore, 1],
       ...REQS.map(r => [r.name, b => reqVal(b, r.key), null, 0, r.key]),
+      ["Cats", tri("pets", "cats"), null, 0, "tri"], ["Dogs", tri("pets", "dogs"), null, 0, "tri"],
+      ["Parking", b => { const c = costOf(b), t = parkType(b); return (t === "unclear" ? "Type not found" : PARK_WORD[t]) + " · " + (c.park == null ? "fee not found" : c.park === 0 ? "included" : money(c.park) + "/mo"); }],
+      ["Year built", b => yearOf(b) ?? "—", yearOf, 1],
+      ["Units", b => dget(b, "building", "units") ?? "—"],
+      ["Gym", tri("building", "gym"), null, 0, "tri"], ["Pool", tri("building", "pool"), null, 0, "tri"],
+      ["Freeway distance", b => fwyBand(b) === "unknown" ? "—" : fwyBand(b) + " (rough)"],
+      ["Walk Score", b => { const w = walkOf(b); return w.v == null ? "—" : w.v + (w.src === "area" ? " (neighborhood)" : " (address)"); }, b => walkOf(b).v, 1],
+      ["Summer high", b => summerHigh(b) == null ? "—" : Math.round(summerHigh(b)) + "°F", summerHigh, -1],
+      ["Area typical 1BR", b => typicalRent(b) == null ? "—" : money(typicalRent(b))],
       ...FACTORS.map(f => [f.name, b => f1(factorScore(S.areaById.get(b.area_id), f)), b => factorScore(S.areaById.get(b.area_id), f), 1]),
       ["Landlord", b => b.landlord === "private" ? "Private owner" : ((b.reviews && b.reviews.management_company) || "Company")],
       ["Special", b => b.special || "—"],
@@ -962,13 +1213,13 @@
     root.append(
       h("div", { class: "viewhead" },
         h("h2", { class: "viewhead-title" }, "On the bench"),
-        h("p", { class: "viewhead-sub", text: `${plural(picks.length, "specimen")} side by side${picks.length < 4 ? ` · room for ${4 - picks.length} more` : ""}. The best value in each row is marked.` })),
+        h("p", { class: "viewhead-sub", text: `${plural(picks.length, "specimen")} side by side${picks.length < 4 ? ` · room for ${4 - picks.length} more` : ""}. The best value in each row is marked; — means research did not find it.` })),
       h("div", { class: "tablewrap compare-wrap" }, h("table", { class: "compare", style: { "--cols": picks.length } },
         h("thead", null, h("tr", null, h("th", { class: "compare-corner", scope: "col" }, h("span", { class: "sr", text: "Attribute" })), ...picks.map(b => h("th", { scope: "col" },
           h("div", { class: "compare-head" },
             h("span", { class: "mono-label", text: whereText(b) }),
             h("button", { class: "compare-name", type: "button", text: b.name, onclick: () => openBuilding(b) }),
-            verdict(b) === "all" ? h("span", { class: "tag ok", text: "Meets everything" }) : null,
+            verdict(b) === "all" ? h("span", { class: "tag ok", text: "Meets everything" }) : overBudgetOnly(b) ? h("span", { class: "tag bad", text: "Over budget" }) : null,
             h("button", { class: "linkbtn sm", type: "button", "aria-label": "Remove " + b.name, text: "Remove", onclick: () => { S.compare.delete(b.id); ls.set("compare", [...S.compare]); renderToolbar(); renderResults(); } })))))),
         h("tbody", null, ...rows.map(([label, fmt, val, dir, reqKey]) => {
           // mark the best value (all ties, judged on the shown value); no mark when every column shows the same
@@ -983,7 +1234,7 @@
           }
           return h("tr", null, h("th", { scope: "row", class: "compare-k" }, reqKey ? reqIcon(reqKey) : null, label), ...picks.map((b, i) => {
             const t = String(fmt(b));
-            if (reqKey) return h("td", null, h("span", { class: "reqword " + t }, h("i", { "aria-hidden": "true" }), REQ_WORD[t]));
+            if (reqKey) return h("td", null, h("span", { class: "reqword " + t }, h("i", { "aria-hidden": "true" }), reqKey === "tri" ? ({ yes: "Yes", no: "No", unclear: "Not confirmed" })[t] : REQ_WORD[t]));
             return h("td", { class: bestSet.has(i) ? "best" : null }, t, bestSet.has(i) ? h("span", { class: "sr", text: " (best)" }) : null);
           }));
         })))));
