@@ -55,6 +55,51 @@ def destar(x):
     return x
 
 
+def apply_verify(buildings, files):
+    """Apply verification results (VERIFY2 schema): firm yes/no facts, size, rent and costs override older data."""
+    by_id = {b["id"]: b for b in buildings}
+    for f in files:
+        for v in destar(json.loads(f.read_text())):
+            b = by_id.get(v.get("id"))
+            if not b:
+                continue
+            for src, key in (("washer_dryer", "wd"), ("central_ac", "ac"), ("dishwasher", "dw"), ("parking", "parking")):
+                t = tri(v.get(src))
+                if t in ("yes", "no"):
+                    b["req"][key] = t
+            pk = packages_tri(v.get("packages"))
+            if pk in ("yes", "no"):
+                b["req"]["packages"] = pk
+            for k in ("sqft", "base_rent", "effective_rent", "parking_fee"):
+                if isinstance(v.get(k), (int, float)):
+                    b[k] = v[k]
+            if v.get("base_rent") and not v.get("effective_rent"):
+                b["effective_rent"] = v["base_rent"]
+            if v.get("special"):
+                b["special"] = v["special"]
+            if v.get("central_ac_evidence"):
+                b["ac_evidence"] = v["central_ac_evidence"]
+            if v.get("packages_detail"):
+                b["packages_detail"] = v["packages_detail"]
+            d = b.setdefault("detail", {})
+            costs = d.setdefault("costs", {})
+            for k in ("deposit", "application_fee", "utilities"):
+                if v.get(k) not in (None, ""):
+                    costs[k] = v[k]
+            if isinstance(v.get("parking_fee"), (int, float)):
+                costs["parking_fee"] = v["parking_fee"]
+            fees = [x for x in (v.get("required_fees") or []) if isinstance(x, dict) and isinstance(x.get("amount"), (int, float))]
+            if fees:
+                costs["required_fees"] = fees
+                b["required_fees_total"] = round(sum(x["amount"] for x in fees), 2)
+            note = " ".join(x for x in [v.get("seen_on") and "Verified " + v["seen_on"] + ".", v.get("evidence")] if x)
+            if note:
+                d["evidence"] = (note + " " + (d.get("evidence") or "")).strip()
+            b["sources"] = list(dict.fromkeys((b.get("sources") or []) + (v.get("sources") or [])))
+            b["checked_on"] = "2026-10-27"
+            b["verified"] = True
+
+
 def region_of(name):
     if name.startswith(("Long Beach", "Signal Hill")):
         return "Long Beach"
@@ -301,6 +346,7 @@ def main():
         if b.get("checked_on") and b["checked_on"] < "2026-10-26":
             b["checked_on"] = "2026-10-26"
 
+    apply_verify(buildings, sorted(RESEARCH.glob("verify_*.json")))
     add_freeway_distance(buildings, areas)
 
     updates = RESEARCH / "updates.json"

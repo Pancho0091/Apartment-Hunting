@@ -9,7 +9,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from build_data import ROOT, slug, tri, packages_tri, num, destar, norm_name, add_freeway_distance  # noqa: E402
+from build_data import ROOT, slug, tri, packages_tri, num, destar, norm_name, add_freeway_distance, apply_verify  # noqa: E402
 
 MARKET = sys.argv[1]
 PREFIX = {"seattle": "sea-", "nyc": "nyc-"}[MARKET]
@@ -79,6 +79,18 @@ def main():
                 b["year_built"] = int(e["building"]["year_built"])
             buildings.append(b)
 
+    apply_verify(buildings, sorted(RES.glob("verify*.json")))
+    fill_f = RES / "areas_fill.json"
+    for x in destar(json.loads(fill_f.read_text())) if fill_f.exists() else []:
+        a = by_name.get(norm_name(x["neighborhood"]))
+        if not a:
+            continue
+        if x.get("extras"):
+            a.setdefault("extras", {}).update({k: v for k, v in x["extras"].items() if v not in (None, "")})
+        if x.get("safety"):
+            a.setdefault("safety", {}).update({k: v for k, v in x["safety"].items() if v not in (None, "")})
+        if x.get("walk") and x["walk"].get("walk_score") is not None:
+            a.setdefault("walk", {}).update(x["walk"])
     add_freeway_distance(buildings, areas, f"geo-{MARKET}.json")
     (ROOT / f"data/buildings-{MARKET}.json").write_text(json.dumps(buildings, indent=1, ensure_ascii=False))
     (ROOT / f"data/neighborhoods-{MARKET}.json").write_text(json.dumps(areas, indent=1, ensure_ascii=False))
