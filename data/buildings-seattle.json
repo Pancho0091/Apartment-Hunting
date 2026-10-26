@@ -3728,7 +3728,7 @@
   },
   "required_fees_total": null,
   "freeway_band": "over 2 mi",
-  "area_walk_score": null
+  "area_walk_score": 90
  },
  {
   "id": "sea-sundodger-apartments",

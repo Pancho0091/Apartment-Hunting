@@ -1,0 +1,182 @@
+[
+ {
+  "market": "seattle",
+  "neighborhood": "Capitol Hill / First Hill",
+  "extras": {
+   "median_1br_rent": 2078,
+   "rent_source": "RentHop Capitol Hill page, Oct 2026 (1BR median; FAQ avg $2,092 from 22 listings)",
+   "rent_trend": "-7.2% YoY (RentHop, $2,240 -> $2,078)"
+  },
+  "safety": {
+   "note": "Seattle per-neighborhood SPD per-capita rates not found: SPD dashboard/data.seattle.gov blocked from this environment and no Seattle Times per-capita neighborhood table surfaced in search. Citywide context: SPD reported overall crime -18% in 2025 vs 2024."
+  },
+  "walk": null
+ },
+ {
+  "market": "seattle",
+  "neighborhood": "Downtown / Belltown / South Lake Union",
+  "extras": {},
+  "safety": {
+   "note": "Seattle per-neighborhood SPD per-capita rates not found: SPD dashboard/data.seattle.gov blocked from this environment and no Seattle Times per-capita neighborhood table surfaced in search. Citywide context: SPD reported overall crime -18% in 2025 vs 2024."
+  },
+  "walk": null
+ },
+ {
+  "market": "seattle",
+  "neighborhood": "Queen Anne",
+  "extras": {},
+  "safety": {
+   "note": "Seattle per-neighborhood SPD per-capita rates not found: SPD dashboard/data.seattle.gov blocked from this environment and no Seattle Times per-capita neighborhood table surfaced in search. Citywide context: SPD reported overall crime -18% in 2025 vs 2024."
+  },
+  "walk": null
+ },
+ {
+  "market": "seattle",
+  "neighborhood": "Fremont / Wallingford",
+  "extras": {},
+  "safety": {
+   "note": "Seattle per-neighborhood SPD per-capita rates not found: SPD dashboard/data.seattle.gov blocked from this environment and no Seattle Times per-capita neighborhood table surfaced in search. Citywide context: SPD reported overall crime -18% in 2025 vs 2024."
+  },
+  "walk": null
+ },
+ {
+  "market": "seattle",
+  "neighborhood": "Ballard",
+  "extras": {
+   "median_1br_rent": 2410,
+   "rent_source": "RentHop Ballard page, Jun 2026 (1BR median; same site's older undated avg $2,069)",
+   "rent_trend": "+47% YoY per RentHop (likely small-sample noise; treat as unreliable)"
+  },
+  "safety": {
+   "violent_per_1k": 4.85,
+   "property_per_1k": 66.18,
+   "year": "typical-year estimate (2024-2026 pages)",
+   "source": "CrimeGrade.org (modeled estimate, NOT SPD)",
+   "note": "Not SPD data: CrimeGrade modeled rates (violent page ~600 days old; property page recent; older CrimeGrade page gave 44.8 property). For comparison an unofficial blog put Seattle citywide at ~6.8 violent / ~52 property per 1k; Ballard roughly below-avg violent, above-avg property (car prowls/theft). Seattle per-neighborhood SPD per-capita rates not found: SPD dashboard/data.seattle.gov blocked from this environment and no Seattle Times per-capita neighborhood table surfaced in search. Citywide context: SPD reported overall crime -18% in 2025 vs 2024."
+  },
+  "walk": {
+   "walk_score": 90,
+   "note": "Walk Score neighborhood page (walkscore.com, via search snippet; page fetch blocked): Ballard 90 (13th in Seattle), Transit 52, Bike 91; Seattle avg 74."
+  }
+ },
+ {
+  "market": "seattle",
+  "neighborhood": "University District / Roosevelt",
+  "extras": {
+   "median_1br_rent": 1595,
+   "rent_source": "Trulia 98105 ZIP page, ~May 2026 (avg 1BR; Redfin U-District 1BRs from $1,599)",
+   "rent_trend": "Zumper: U District all-unit median $1,499 Aug 2026, -12% YoY"
+  },
+  "safety": {
+   "note": "Seattle per-neighborhood SPD per-capita rates not found: SPD dashboard/data.seattle.gov blocked from this environment and no Seattle Times per-capita neighborhood table surfaced in search. Citywide context: SPD reported overall crime -18% in 2025 vs 2024."
+  },
+  "walk": null
+ },
+ {
+  "market": "seattle",
+  "neighborhood": "Northgate / Lake City",
+  "extras": {
+   "median_1br_rent": 1773,
+   "rent_source": "RentHop ZIP 98125 (Northgate/Lake City), Sep 2026; only 6 1BR listings",
+   "rent_trend": "+34.5% YoY per RentHop ($1,318 -> $1,773) — small sample, unreliable"
+  },
+  "safety": {
+   "note": "Seattle per-neighborhood SPD per-capita rates not found: SPD dashboard/data.seattle.gov blocked from this environment and no Seattle Times per-capita neighborhood table surfaced in search. Citywide context: SPD reported overall crime -18% in 2025 vs 2024."
+  },
+  "walk": null
+ },
+ {
+  "market": "seattle",
+  "neighborhood": "Columbia City / Beacon Hill",
+  "extras": {
+   "median_1br_rent": 1299,
+   "rent_source": "RentHop North Beacon Hill page, Oct 2026 (1BR median; small sample). Columbia City ZIP 98118 showed $2,675 from only 2 listings — not used",
+   "rent_trend": "-15.9% YoY (RentHop North Beacon Hill, $1,545 -> $1,299)"
+  },
+  "safety": {
+   "note": "Seattle per-neighborhood SPD per-capita rates not found: SPD dashboard/data.seattle.gov blocked from this environment and no Seattle Times per-capita neighborhood table surfaced in search. Citywide context: SPD reported overall crime -18% in 2025 vs 2024."
+  },
+  "walk": null
+ },
+ {
+  "market": "seattle",
+  "neighborhood": "West Seattle",
+  "extras": {
+   "median_1br_rent": 1795,
+   "rent_source": "RentHop West Seattle page, Oct 2026 (1BR median; FAQ avg $1,748 from 38 listings)",
+   "rent_trend": "-10.6% YoY (RentHop, $2,008 -> $1,795)"
+  },
+  "safety": {
+   "note": "Seattle per-neighborhood SPD per-capita rates not found: SPD dashboard/data.seattle.gov blocked from this environment and no Seattle Times per-capita neighborhood table surfaced in search. Citywide context: SPD reported overall crime -18% in 2025 vs 2024."
+  },
+  "walk": null
+ },
+ {
+  "market": "seattle",
+  "neighborhood": "Bellevue",
+  "extras": {
+   "median_1br_rent": 2493,
+   "rent_source": "Apartment List Bellevue rent report, Oct 2026 (1BR listing average; all-unit median $2,440)",
+   "rent_trend": "+1.4% YoY all units (Apartment List Oct 2026)"
+  },
+  "safety": {},
+  "walk": null
+ },
+ {
+  "market": "seattle",
+  "neighborhood": "Kirkland",
+  "extras": {
+   "median_1br_rent": 2128,
+   "rent_source": "Trulia Kirkland, May 2026 (avg 1BR all types; apts/condos $2,100). Rentometer Jan 2026 gives higher 1BR median $2,420",
+   "rent_trend": null
+  },
+  "safety": {},
+  "walk": null
+ },
+ {
+  "market": "seattle",
+  "neighborhood": "Redmond",
+  "extras": {
+   "median_1br_rent": 2120,
+   "rent_source": "Apartment List Redmond rent report, Jun 2026 (1BR median)",
+   "rent_trend": "+2.3% YoY all units (Apartment List, 2026 — fastest in metro)"
+  },
+  "safety": {
+   "note": "Redmond PD per-capita rates not found within search budget."
+  },
+  "walk": null
+ },
+ {
+  "market": "seattle",
+  "neighborhood": "Shoreline / Lynnwood",
+  "extras": {
+   "median_1br_rent": 1958,
+   "rent_source": "Apartment List Lynnwood 1BR page, Oct 21 2026 (avg 1BR, Lynnwood only; Shoreline not found)",
+   "rent_trend": "-2.3% YoY all units (Apartment List Lynnwood, Jul 2026)"
+  },
+  "safety": {},
+  "walk": null
+ },
+ {
+  "market": "seattle",
+  "neighborhood": "Bothell",
+  "extras": {
+   "median_1br_rent": 2087,
+   "rent_source": "Apartment List Bothell rent report, Oct 2026 (1BR average, base rent excl. fees; all-unit median $2,365)",
+   "rent_trend": null
+  },
+  "safety": {},
+  "walk": null
+ },
+ {
+  "market": "seattle",
+  "neighborhood": "Renton / Tukwila",
+  "extras": {
+   "median_1br_rent": 1921,
+   "rent_source": "Apartment List Tukwila 1BR page, 2026 (avg 1BR; another 2026 snapshot $2,020). Renton 1BR apartment figure not found; Renton all-unit median $2,048 Aug 2026",
+   "rent_trend": "Renton all units -1.3% YoY (Apartment List Aug 2026)"
+  },
+  "safety": {},
+  "walk": null
+ }
+]

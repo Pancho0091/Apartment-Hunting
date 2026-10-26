@@ -274,7 +274,7 @@
   },
   "required_fees_total": null,
   "freeway_band": "under 1 mi",
-  "area_walk_score": null
+  "area_walk_score": 87
  },
  {
   "id": "nyc-211-baldwin-avenue-739-sq-ft-1br-unit-not-given",
@@ -406,7 +406,7 @@
   },
   "required_fees_total": null,
   "freeway_band": "under 1 mi",
-  "area_walk_score": null
+  "area_walk_score": 87
  },
  {
   "id": "nyc-651-newark-avenue-1",
@@ -538,7 +538,7 @@
   },
   "required_fees_total": null,
   "freeway_band": "under 1 mi",
-  "area_walk_score": null
+  "area_walk_score": 87
  },
  {
   "id": "nyc-858-west-side-avenue-2f",
@@ -668,7 +668,7 @@
   },
   "required_fees_total": null,
   "freeway_band": "under 1 mi",
-  "area_walk_score": null
+  "area_walk_score": 87
  },
  {
   "id": "nyc-34-elmwood-park-drive-25",
@@ -1069,7 +1069,7 @@
   },
   "required_fees_total": null,
   "freeway_band": "1–2 mi",
-  "area_walk_score": null
+  "area_walk_score": 97
  },
  {
   "id": "nyc-3820-parsons-blvd-1br-950-sq-ft",
@@ -1201,7 +1201,7 @@
   },
   "required_fees_total": null,
   "freeway_band": "under 1 mi",
-  "area_walk_score": null
+  "area_walk_score": 89
  },
  {
   "id": "nyc-43-73-union-street-1br-750-sq-ft",
@@ -1332,7 +1332,7 @@
   },
   "required_fees_total": null,
   "freeway_band": "under 1 mi",
-  "area_walk_score": null
+  "area_walk_score": 89
  },
  {
   "id": "nyc-1-patricia-lane-lagoon-development-2br-2ba",

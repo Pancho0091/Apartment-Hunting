@@ -1,0 +1,248 @@
+[
+ {
+  "market": "nyc",
+  "neighborhood": "Upper West Side / Morningside Heights",
+  "extras": {
+   "median_1br_rent": 5100,
+   "rent_source": "RentHop NYC neighborhood table (1BR average, not median), Manhattan page ~Apr 2026 (UWS only; Morningside not separated)",
+   "rent_trend": "citywide 1BR median +5.3% YoY to $4,428 (RentHop Jul 2026)"
+  },
+  "safety": {
+   "violent_per_1k": 2.4,
+   "property_per_1k": 7.6,
+   "year": "2025 (one snippet labeled 2023)",
+   "source": "NYU Furman Center neighborhood profile (CoreData.nyc), NYPD major-felony 'serious crime' per 1,000 residents — MN07 Upper West Side",
+   "note": "Well below NYC average on both. Morningside Heights is in MN09 (not retrieved). Compare: NYC avg 5.3 violent / 9.0 property per 1k (brief); Furman's own 2025 citywide serious-crime total is 12.3/1k."
+  },
+  "walk": {
+   "walk_score": 98,
+   "note": "Walk Score neighborhood page (walkscore.com, via search snippet; page fetch blocked): Upper West Side 98 (29th in NYC)."
+  }
+ },
+ {
+  "market": "nyc",
+  "neighborhood": "Harlem / Washington Heights",
+  "extras": {},
+  "safety": {
+   "violent_per_1k": 5.6,
+   "property_per_1k": 8.7,
+   "year": "2025 (one snippet labeled 2023)",
+   "source": "NYU Furman Center neighborhood profile (CoreData.nyc), NYPD major-felony 'serious crime' per 1,000 residents — MN12 Washington Heights/Inwood",
+   "note": "Washington Heights/Inwood only; Central Harlem (MN10) not retrieved. About NYC average. Compare: NYC avg 5.3 violent / 9.0 property per 1k (brief); Furman's own 2025 citywide serious-crime total is 12.3/1k."
+  },
+  "walk": {
+   "walk_score": 97,
+   "note": "Walk Score neighborhood page (walkscore.com, via search snippet; page fetch blocked): Central Harlem 97 (West Harlem also 97); Washington Heights not found."
+  }
+ },
+ {
+  "market": "nyc",
+  "neighborhood": "Midtown / Hell's Kitchen",
+  "extras": {
+   "median_1br_rent": 4905,
+   "rent_source": "RentHop NYC neighborhood table (1BR average, not median), citywide page ~Jul 2026 (Midtown; Manhattan page ~Apr 2026 had $4,994)",
+   "rent_trend": "citywide 1BR median +5.3% YoY (RentHop Jul 2026)"
+  },
+  "safety": {
+   "violent_per_1k": 6.0,
+   "property_per_1k": 16.6,
+   "year": "2025 (one snippet labeled 2023)",
+   "source": "NYU Furman Center neighborhood profile (CoreData.nyc), NYPD major-felony 'serious crime' per 1,000 residents — MN04 Clinton/Chelsea",
+   "note": "Hell's Kitchen = MN04 Clinton/Chelsea. MN05 Midtown core is far higher (15.9 violent / 73.7 property) because of tiny resident base + commuter/visitor crime. Above NYC average, especially property. Compare: NYC avg 5.3 violent / 9.0 property per 1k (brief); Furman's own 2025 citywide serious-crime total is 12.3/1k."
+  },
+  "walk": {
+   "walk_score": null,
+   "note": "Hell's Kitchen/Clinton score not found; nearby Midtown East 99 and Chelsea 99 (walkscore.com)."
+  }
+ },
+ {
+  "market": "nyc",
+  "neighborhood": "Lower Manhattan / Financial District",
+  "extras": {
+   "median_1br_rent": 5349,
+   "rent_source": "RentHop NYC neighborhood table (1BR average, not median), citywide page ~Jul 2026 (Manhattan page ~Apr 2026: $5,442)",
+   "rent_trend": "citywide 1BR median +5.3% YoY (RentHop Jul 2026)"
+  },
+  "safety": {
+   "violent_per_1k": 3.7,
+   "property_per_1k": 13.8,
+   "year": "2025 (one snippet labeled 2023)",
+   "source": "NYU Furman Center neighborhood profile (CoreData.nyc), NYPD major-felony 'serious crime' per 1,000 residents — MN01 Financial District",
+   "note": "Below-average violent, above-average property (commuter/visitor-inflated, small resident base). Compare: NYC avg 5.3 violent / 9.0 property per 1k (brief); Furman's own 2025 citywide serious-crime total is 12.3/1k."
+  },
+  "walk": {
+   "walk_score": 100,
+   "note": "Walk Score neighborhood page (walkscore.com, via search snippet; page fetch blocked): Financial District 100 (10th in NYC)."
+  }
+ },
+ {
+  "market": "nyc",
+  "neighborhood": "Williamsburg / Greenpoint",
+  "extras": {
+   "median_1br_rent": 4950,
+   "rent_source": "RentHop NYC neighborhood table (1BR average, not median), citywide page ~Jul 2026 (Williamsburg; Greenpoint not separated)",
+   "rent_trend": "citywide 1BR median +5.3% YoY (RentHop Jul 2026)"
+  },
+  "safety": {},
+  "walk": {
+   "walk_score": 96,
+   "note": "Walk Score neighborhood page (walkscore.com, via search snippet; page fetch blocked): Williamsburg 96, Greenpoint 96."
+  }
+ },
+ {
+  "market": "nyc",
+  "neighborhood": "Downtown Brooklyn / Fort Greene",
+  "extras": {
+   "median_1br_rent": 4588,
+   "rent_source": "RentHop NYC neighborhood table (1BR average, not median), citywide page ~Jul 2026 (Fort Greene; Downtown Brooklyn not captured)",
+   "rent_trend": "citywide 1BR median +5.3% YoY (RentHop Jul 2026)"
+  },
+  "safety": {},
+  "walk": {
+   "walk_score": null,
+   "note": "Downtown Brooklyn/Fort Greene neighborhood scores not captured in search snippets (Downtown Brooklyn page exists; likely high 90s, unverified)."
+  }
+ },
+ {
+  "market": "nyc",
+  "neighborhood": "Park Slope / Prospect Heights",
+  "extras": {},
+  "safety": {},
+  "walk": {
+   "walk_score": 98,
+   "note": "Walk Score neighborhood page (walkscore.com, via search snippet; page fetch blocked): Park Slope 98 (16th in NYC); Prospect Heights not found."
+  }
+ },
+ {
+  "market": "nyc",
+  "neighborhood": "Bushwick / Bed-Stuy",
+  "extras": {},
+  "safety": {},
+  "walk": {
+   "walk_score": 95,
+   "note": "Walk Score neighborhood page (walkscore.com, via search snippet; page fetch blocked): Bushwick 95 (Transit 98); Bed-Stuy not found."
+  }
+ },
+ {
+  "market": "nyc",
+  "neighborhood": "Bay Ridge / Sunset Park",
+  "extras": {},
+  "safety": {},
+  "walk": {
+   "walk_score": 94,
+   "note": "Walk Score neighborhood page (walkscore.com, via search snippet; page fetch blocked): Bay Ridge 94 (51st in NYC); Sunset Park not found."
+  }
+ },
+ {
+  "market": "nyc",
+  "neighborhood": "Long Island City / Astoria",
+  "extras": {},
+  "safety": {
+   "violent_per_1k": 3.3,
+   "property_per_1k": 6.6,
+   "year": "2025",
+   "source": "NYU Furman Center neighborhood profile (CoreData.nyc), NYPD major-felony 'serious crime' per 1,000 residents — QN01 Astoria",
+   "note": "Astoria only (2023 total 11.7, 2024 11.5, 2025 9.9 — improving). LIC is in QN02 (not retrieved). Below NYC average. Compare: NYC avg 5.3 violent / 9.0 property per 1k (brief); Furman's own 2025 citywide serious-crime total is 12.3/1k."
+  },
+  "walk": {
+   "walk_score": 94,
+   "note": "Walk Score neighborhood page (walkscore.com, via search snippet; page fetch blocked): Astoria 94, Long Island City 95."
+  }
+ },
+ {
+  "market": "nyc",
+  "neighborhood": "Forest Hills / Rego Park",
+  "extras": {
+   "median_1br_rent": 3101,
+   "rent_source": "M.N.S. Real Estate Queens rental report via QNS, May 2026 (Forest Hills avg 1BR; a listings site showed $2,485 Aug 2026)",
+   "rent_trend": "Biggest 1BR increase among 11 Queens neighborhoods in May 2026 (M.N.S.)"
+  },
+  "safety": {
+   "violent_per_1k": 1.7,
+   "property_per_1k": 5.4,
+   "year": "2025",
+   "source": "NYU Furman Center neighborhood profile (CoreData.nyc), NYPD major-felony 'serious crime' per 1,000 residents — QN06 Rego Park/Forest Hills",
+   "note": "Well below NYC average; total 7.4 (2023) -> 7.2 (2024) -> 7.1 (2025). Compare: NYC avg 5.3 violent / 9.0 property per 1k (brief); Furman's own 2025 citywide serious-crime total is 12.3/1k."
+  },
+  "walk": {
+   "walk_score": 92,
+   "note": "Walk Score neighborhood page (walkscore.com, via search snippet; page fetch blocked): Forest Hills 92 (Transit 95); Rego Park not found."
+  }
+ },
+ {
+  "market": "nyc",
+  "neighborhood": "Flushing / Jamaica",
+  "extras": {},
+  "safety": {
+   "violent_per_1k": 4.1,
+   "property_per_1k": 6.4,
+   "year": "2025",
+   "source": "NYU Furman Center neighborhood profile (CoreData.nyc), NYPD major-felony 'serious crime' per 1,000 residents — mean of QN07 Flushing/Whitestone and QN12 Jamaica/Hollis",
+   "note": "Unweighted mean of two districts: Flushing/Whitestone 2.2 violent / 6.9 property; Jamaica/Hollis 5.9 violent / 5.9 property (total 13.4 in 2024 -> 11.8 in 2025). Flushing well below average; Jamaica about average violent. Compare: NYC avg 5.3 violent / 9.0 property per 1k (brief); Furman's own 2025 citywide serious-crime total is 12.3/1k."
+  },
+  "walk": {
+   "walk_score": 89,
+   "note": "Walk Score neighborhood page (walkscore.com, via search snippet; page fetch blocked): Flushing 89 (82nd in NYC); Jamaica not found."
+  }
+ },
+ {
+  "market": "nyc",
+  "neighborhood": "Riverdale / Kingsbridge",
+  "extras": {
+   "median_1br_rent": 2778,
+   "rent_source": "latination.com citing Apartments.com, 2026 (weak single source; M.N.S. Sep 2025 Riverdale-area grouping avg 1BR $2,521)",
+   "rent_trend": null
+  },
+  "safety": {},
+  "walk": {
+   "walk_score": null,
+   "note": "Riverdale/Kingsbridge not found on walkscore.com within budget."
+  }
+ },
+ {
+  "market": "nyc",
+  "neighborhood": "Mott Haven / South Bronx",
+  "extras": {},
+  "safety": {},
+  "walk": {
+   "walk_score": null,
+   "note": "Mott Haven not found on walkscore.com within budget."
+  }
+ },
+ {
+  "market": "nyc",
+  "neighborhood": "St. George / North Shore",
+  "extras": {},
+  "safety": {
+   "violent_per_1k": 4.0,
+   "property_per_1k": 3.7,
+   "year": "2025",
+   "source": "NYU Furman Center neighborhood profile (CoreData.nyc), NYPD major-felony 'serious crime' per 1,000 residents — SI01 St. George/Stapleton",
+   "note": "Property crime well below NYC average, violent somewhat below; total 10.0 (2023) -> 8.7 (2024) -> 7.7 (2025). Median 1BR rent not found. Compare: NYC avg 5.3 violent / 9.0 property per 1k (brief); Furman's own 2025 citywide serious-crime total is 12.3/1k."
+  },
+  "walk": {
+   "walk_score": null,
+   "note": "St. George not found on walkscore.com within budget."
+  }
+ },
+ {
+  "market": "nyc",
+  "neighborhood": "Jersey City",
+  "extras": {},
+  "safety": {},
+  "walk": {
+   "walk_score": 87,
+   "note": "Walk Score neighborhood page (walkscore.com, via search snippet; page fetch blocked): Jersey City citywide avg 87 (The Heights 91; Journal Sq/McGinley Sq most walkable). Data page may be dated."
+  }
+ },
+ {
+  "market": "nyc",
+  "neighborhood": "Hoboken",
+  "extras": {},
+  "safety": {},
+  "walk": {
+   "walk_score": 97,
+   "note": "Walk Score neighborhood page (walkscore.com, via search snippet; page fetch blocked): Hoboken citywide avg 97."
+  }
+ }
+]
