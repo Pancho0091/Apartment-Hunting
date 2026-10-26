@@ -1643,10 +1643,15 @@
   /* ---- Rent timing research ------------------------------------------------------------- */
   const hostOf = u => { try { const x = new URL(u); return /^https?:$/.test(x.protocol) ? x.hostname.replace(/^www\./, "") : null; } catch { return null; } };
   function srcLinks(list) {
-    list = (Array.isArray(list) ? list : [list]).filter(x => x != null && x !== "");
+    list = [...new Set((Array.isArray(list) ? list : [list]).filter(x => x != null && x !== "").map(String))];
     if (!list.length) return null;
+    // one label per host; further pages on the same host are numbered
+    const byHost = new Map();
+    for (const u of list) { const k = hostOf(u) || "\u0000" + u; if (!byHost.has(k)) byHost.set(k, []); byHost.get(k).push(u); }
     return h("p", { class: "srcl" }, h("span", { class: "srcl-k", text: list.length === 1 ? "Source" : "Sources" }),
-      ...list.map(u => { const host = hostOf(u); return host ? h("a", { href: u, target: "_blank", rel: "noopener", title: u, text: host }) : h("span", { class: "srcl-t", text: String(u) }); }));
+      ...[...byHost].map(([host, us]) => host.startsWith("\u0000") ? h("span", { class: "srcl-t", text: us[0] })
+        : h("span", { class: "srcl-h" }, h("a", { href: us[0], target: "_blank", rel: "noopener", title: us[0], text: host }),
+          ...us.slice(1).map((u, i) => h("a", { class: "srcl-n", href: u, target: "_blank", rel: "noopener", title: u, "aria-label": `${host}, page ${i + 2}`, text: String(i + 2) })))));
   }
   const unk = () => h("span", { class: "pv unk", title: "Not found" }, "—", h("span", { class: "sr", text: "not found" }));
   const vOr = v => v == null || v === "" || v === "unknown" ? unk() : h("span", { text: String(v) });
@@ -1745,7 +1750,7 @@
       }
       const base = top + colH;
       svg.append(s("line", { x1: padL, x2: W - padR, y1: base, y2: base, class: "c-base" }));
-      const bw = Math.min(narrow ? 20 : 30, band - 4);
+      const bw = Math.min(narrow ? 18 : 24, band - 4);
       ORDER.forEach((m, i) => {
         const r = mm.get(m) || {}, lv = LEVEL[r.concessions], cx = x(i) + band / 2;
         if (lv) {
@@ -1879,9 +1884,18 @@
           h("tbody", null, ...pts.slice().sort((a, b) => (a.t ? tv(a.t) : 0) - (b.t ? tv(b.t) : 0)).map(p => h("tr", null, h("td", { text: p.period }), h("td", { text: p.geo || "—" }), h("td", { class: "num", text: p.share_pct + "%" }), h("td", null, srcLinks(p.source) || unk()))))))));
   }
 
-  function rsec(id, k, title, lede, ...body) {
+  /* Research text sometimes names a data field; say it plainly. Long summaries open with two sentences. */
+  const tidyResearch = t => String(t).replace(/,? so rent_vs_avg_pct is null for every month rather than estimated\./, ", so no monthly rent change is shown rather than an estimate.");
+  function lede(t) {
+    t = tidyResearch(t);
+    const parts = t.match(/[^.!?]+[.!?]+(\s+|$)/g) || [t];
+    if (t.length < 420 || parts.length < 4) return h("p", { class: "rsec-lede", text: t });
+    return h("div", { class: "rsec-lede" }, h("p", { text: parts.slice(0, 2).join("").trim() }),
+      h("details", { class: "srcs more" }, h("summary", null, h("span", { text: "Read the full summary" })), h("p", { text: parts.slice(2).join("").trim() })));
+  }
+  function rsec(id, k, title, ledeText, ...body) {
     return h("section", { class: "rsec", id: "tr-" + id, "aria-labelledby": "trh-" + id },
-      h("header", { class: "rsec-head" }, h("span", { class: "rsec-k", text: k }), h("h3", { class: "rsec-title", id: "trh-" + id, text: title }), lede ? h("p", { class: "rsec-lede", text: lede }) : null),
+      h("header", { class: "rsec-head" }, h("span", { class: "rsec-k", text: k }), h("h3", { class: "rsec-title", id: "trh-" + id, text: title }), ledeText ? lede(ledeText) : null),
       ...body);
   }
   const sub = (t, ...body) => { const kids = body.filter(Boolean); return kids.length ? h("div", { class: "rsub" }, h("h4", { class: "rsub-title", text: t }), ...kids) : null; };
@@ -1956,7 +1970,7 @@
           h("header", { class: "rcard-head" }, h("h5", { class: "rcard-title", text: x.name || "—" }),
             h("span", { class: "tag " + ({ yes: "ok", somewhat: "amber", no: "bad" }[x.negotiable] || ""), text: "Negotiable: " + ({ yes: "yes", somewhat: "somewhat", no: "no" }[x.negotiable] || "—") })),
           h("dl", { class: "pkv" }, h("dt", { text: "Pricing" }), h("dd", null, vOr(x.pricing)), h("dt", { text: "Concessions" }), h("dd", null, vOr(x.concession_style))),
-          x.note ? h("p", { class: "rcard-note", text: x.note }) : null, srcLinks(x.sources))))),
+          x.note ? h("p", { class: "rcard-note", text: x.note }) : null, srcLinks(x.sources)))),
         sub(`Your listings with a specials history (${specials.length})`, specials.length ? h("ul", { class: "spec-list" }, ...specials.map(b => {
           const c = b.concessions || {}, last = (c.seen || []).filter(x => x && x.offer).slice(-1)[0];
           return h("li", null, h("button", { type: "button", class: "spec-btn", "data-listing-link": b.id, onclick: () => openBuilding(b) },
