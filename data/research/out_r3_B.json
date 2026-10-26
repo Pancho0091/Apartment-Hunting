@@ -1,0 +1,916 @@
+{
+  "neighborhoods": [
+    {
+      "neighborhood": "Placentia",
+      "lat": 33.8722,
+      "lng": -117.8703,
+      "freeway": {
+        "score": 8,
+        "nearest": [
+          "SR-57 (Orangethorpe / Chapman / Yorba Linda Blvd ramps on the west edge, ~3-6 min)",
+          "SR-91 (Kraemer Blvd / Tustin Ave, ~5-8 min)",
+          "SR-90 Imperial Hwy (~8 min)"
+        ],
+        "note": "Freeway names and ramps are general knowledge, not verified this round; times are estimates."
+      },
+      "traffic": {
+        "score": 5,
+        "note": "SR-57 southbound into the Orange Crush (5/57/22) and SR-91 east through Anaheim Hills are chronic peak bottlenecks. Local arterials (Kraemer, Placentia Ave, Yorba Linda Blvd) are mostly typical suburban stop-and-go. Assessment from general knowledge, not verified this round."
+      },
+      "coffee": {
+        "score": 4,
+        "cafes": [
+          "Bodhi Leaf Coffee Traders – 119 E Yorba Linda Blvd; roasts daily (north Placentia)",
+          "Golden State Coffee Roasters – downtown / Old Town Placentia; brick-walled room, reviewers like it",
+          "Golden Gate Coffee Roasters – 109 W Santa Fe Ave, Old Town; in-house roaster per an older article, may be closed or renamed (could be the same business as Golden State)",
+          "Ape Coffee – small modern espresso bar, mixed reviews"
+        ],
+        "note": "There are 2-3 real roasters, but they are spread across town. Only Old Town (Santa Fe Ave) gives a short walk to one or two. Laptop-friendliness was not verified."
+      },
+      "walk": {
+        "score": 5,
+        "walk_score": 50,
+        "note": "Walk Score city average is 50. Old Town / N Placentia Ave pockets score ~56-75."
+      },
+      "quiet": {
+        "score": 7,
+        "note": "Mostly calm residential streets. The BNSF freight main along Orangethorpe/Crowther brings train noise (grade separations have reduced horn use, per general knowledge, not verified this round). No flight path. Neighborhoods near the 57 have freeway hum."
+      },
+      "safety": {
+        "score": 8,
+        "violent_per_1k": 3.48,
+        "property_per_1k": 14.33,
+        "year": "2021-2024 vintage (NeighborhoodScout label unclear)",
+        "source": "NeighborhoodScout (FBI UCR; page labels the data year inconsistently, 2021 to 2024), seen in search snippets because the page fetch failed",
+        "note": "Well below the LA rates (~7 / ~25). CrimeGrade gives ~18.8 total per 1k. Northeast Placentia is safer than the southwest (CrimeGrade odds 1 in 75 vs 1 in 44)."
+      },
+      "lax": {
+        "score": 3,
+        "minutes_offpeak": 45,
+        "minutes_peak": 75,
+        "note": "SR-91 W, then I-605 S or I-105 W. rough drive-time estimate from general road-network knowledge; not verified (web search budget ran out this round)"
+      },
+      "nightlife": {
+        "score": 8,
+        "nearest_district": "Downtown Fullerton (Harbor Blvd / Commonwealth)",
+        "drive_minutes": 10,
+        "note": "Old Towne Orange is ~15 min. Times are estimates."
+      },
+      "gyms": {
+        "score": 7,
+        "examples": [
+          "24 Hour Fitness / LA Fitness-type chain gyms along Yorba Linda Blvd and in Fullerton (unverified)"
+        ]
+      },
+      "services": {
+        "score": 7,
+        "note": "Full suburban grocery mix (Ralphs, Albertsons, Trader Joe's nearby in Fullerton/Yorba Linda). general knowledge, not verified this round."
+      },
+      "rail": {
+        "score": 2,
+        "nearest_station": "Fullerton Transportation Center (Metrolink/Amtrak), ~10-12 min drive",
+        "line": "Metrolink 91/Perris Valley & Orange County lines",
+        "note": "The long-planned Placentia Metrolink station has not been built (general knowledge, not verified this round)."
+      },
+      "airports_other": "LGB ~30 min, SNA ~25 min (estimates)",
+      "summary": "Quiet, relatively safe North OC suburb with fast access to the 57 and 91. It fits if you'll drive to coffee: walkable specialty cafes are thin outside Old Town. The main trade-off is weak coffee/walk scores in exchange for safety and calm.",
+      "sources": [
+        "https://www.neighborhoodscout.com/ca/placentia/crime",
+        "https://crimegrade.org/safest-places-in-placentia-ca/",
+        "https://frankiapp.com/business/bodhi-leaf-coffee-traders-48132.md",
+        "https://wanderlog.com/place/details/1512787/golden-state-coffee-roasters",
+        "https://titanradio.org/?p=4490",
+        "https://www.renthop.com/average-rent-in/placentia-ca",
+        "https://www.trulia.com/for_rent/Placentia,CA/",
+        "https://www.rentometer.com/average-rent-in/ca/placentia-ca",
+        "https://www.walkscore.com/score/-92870"
+      ],
+      "extras": {
+        "median_1br_rent": 2250,
+        "rent_source": "RentHop, Jun 2026 (Trulia Jun 2026 $2,225; Rentometer Mar 2026 median $2,225; Apartment List $2,620)",
+        "rent_trend": "+31% YoY (RentHop Jun 2026; small sample, likely noisy)",
+        "summer_high_f": null,
+        "marine_layer": "little: inland North OC, warm summers. summer_high_f is null because no NOAA normal was retrieved. Expect high-80s °F August highs (general knowledge, not verified this round).",
+        "fire_hazard": "CAL FIRE FHSZ: none / not notable for the flat core (general knowledge, not verified this round; check the CAL FIRE map for the eastern edge toward Yorba Linda)",
+        "flood_zone": null,
+        "airport_noise": "none notable",
+        "parks": [
+          "Tri-City Park",
+          "Kraemer Memorial Park"
+        ],
+        "farmers_markets": [],
+        "fiber": "Not checked this round (search budget ran out). Spectrum cable is near-universal in OC; AT&T Fiber covers many OC neighborhoods. Check by address.",
+        "vibe": "Calm, family-suburban streets with a small Old Town. You'd drive 5-10 min for third-wave coffee."
+      }
+    },
+    {
+      "neighborhood": "Fullerton (east, non-downtown)",
+      "lat": 33.88,
+      "lng": -117.885,
+      "freeway": {
+        "score": 8,
+        "nearest": [
+          "SR-57 (Nutwood / Chapman / Yorba Linda Blvd ramps, ~3-5 min)",
+          "SR-91 (State College / Raymond / Harbor, ~6-8 min)",
+          "I-5 (~10 min west)"
+        ],
+        "note": "East Fullerton (CSUF / Chapman-Nutwood / Commonwealth east of Raymond) hugs the 57. general knowledge, not verified this round; times are estimates."
+      },
+      "traffic": {
+        "score": 5,
+        "note": "SR-57 southbound to the Orange Crush and SR-91 are classic peak bottlenecks. Arterials around CSUF (Nutwood, State College, Chapman) clog at class change times. general knowledge, not verified this round."
+      },
+      "coffee": {
+        "score": 5,
+        "cafes": [
+          "Lion and Lamb Coffee Roasters – top-rated (5.0) on an aggregator; listed with north/east Fullerton roasteries",
+          "Coffee Up Roastery – specialty organic roaster with its own cafe",
+          "Chase Coffee Roasters – roastery listed for north/east Fullerton",
+          "Little Ox Coffee – north/east Fullerton, 'quieter neighborhood coffee'",
+          "Klatch Coffee (inside Fullerton Sprouts) – serious multi-roaster/roaster brand"
+        ],
+        "note": "An aggregator guide says north and east Fullerton have Lion and Lamb, Coffee Up, Chase and Little Ox 'for roastery visits, campus-area work sessions'. Exact addresses were not confirmed, so walkability depends on the block. Downtown (Play, Dripp, Made) is ~8 min by car."
+      },
+      "walk": {
+        "score": 6,
+        "walk_score": 54,
+        "note": "City average is 54. 2300 E Commonwealth scores 79 and Deerpark Dr 72, but hillside streets fall to ~32."
+      },
+      "quiet": {
+        "score": 7,
+        "note": "Residential and mostly quiet. Expect student activity near CSUF and hum from the 57 within a few blocks of it. Fullerton Municipal Airport is on the far west side. general knowledge, not verified this round."
+      },
+      "safety": {
+        "score": 7,
+        "violent_per_1k": 4.52,
+        "property_per_1k": 21.26,
+        "year": "2021-2024 vintage (NeighborhoodScout label unclear)",
+        "source": "NeighborhoodScout (FBI UCR; page labels the data year inconsistently, 2021 to 2024), seen in search snippets because the page fetch failed",
+        "note": "These are citywide figures. The east side is generally calmer than downtown and southwest Fullerton (CrimeGrade has Downtown-specific pages showing higher rates). CrimeGrade violent rate ~4.1/1k. Fullerton was #49 on SmartAsset's 2025 safest-suburbs list."
+      },
+      "lax": {
+        "score": 4,
+        "minutes_offpeak": 40,
+        "minutes_peak": 70,
+        "note": "SR-91 W, then I-605 S / I-105 W. rough drive-time estimate from general road-network knowledge; not verified (web search budget ran out this round)"
+      },
+      "nightlife": {
+        "score": 9,
+        "nearest_district": "Downtown Fullerton",
+        "drive_minutes": 8,
+        "note": "Bars and SOCO are close by car but far enough to keep home quiet."
+      },
+      "gyms": {
+        "score": 8,
+        "examples": [
+          "CSUF-area chain gyms on Chapman/State College; 24 Hour Fitness / LA Fitness-type options (unverified)"
+        ]
+      },
+      "services": {
+        "score": 8,
+        "note": "Grocery-dense: Sprouts (with Klatch), plus Trader Joe's and Ralphs-type options nearby (general knowledge, not verified this round)."
+      },
+      "rail": {
+        "score": 2,
+        "nearest_station": "Fullerton Transportation Center, ~8 min drive",
+        "line": "Metrolink Orange County / 91-PV lines + Amtrak Pacific Surfliner",
+        "note": "No Metro rail."
+      },
+      "airports_other": "LGB ~25 min, SNA ~25 min (estimates)",
+      "summary": "A strong North OC balance: a quick 57 on-ramp, a short drive to downtown nightlife, decent safety and a cluster of roasters around north/east Fullerton. The trade-off is that coffee within a true 10-min walk depends on the exact block, and 57/91 peak traffic is real.",
+      "sources": [
+        "https://mycoffeeexplorer.com/guides/fullerton",
+        "https://joe.coffee/locations/ca/fullerton/coffee-up-roastery-specialty-cafe-and-tea-fullerton-e688b71c-1100-43d6-9886-16293d671821/",
+        "https://www.tripadvisor.com/Restaurants-g32416-c8-Fullerton_California.html",
+        "https://www.neighborhoodscout.com/ca/fullerton/crime",
+        "https://crimegrade.org/violent-crime-fullerton-ca/",
+        "https://fullertonobserver.com/2025/08/13/fullerton-recognized-in-smartassets-2025-ranking-of-americas-safest-suburbs/",
+        "https://www.renthop.com/average-rent-in/fullerton-ca",
+        "https://www.rentometer.com/average-rent-in/ca/fullerton-ca",
+        "https://www.walkscore.com/score/1220-n-placentia-ave-fullerton-ca-92831"
+      ],
+      "extras": {
+        "median_1br_rent": 2350,
+        "rent_source": "RentHop, Jul 2026, citywide (Rentometer Jan 2026 range $2,200-2,400; Apartment List $2,599)",
+        "rent_trend": "-4.5% YoY (RentHop Jul 2026)",
+        "summer_high_f": null,
+        "marine_layer": "little: inland. summer_high_f is null because no NOAA normal was retrieved. Expect high-80s °F August highs (general knowledge, not verified this round).",
+        "fire_hazard": "CAL FIRE FHSZ: none for the flat east/CSUF area; the northern hills (Coyote Hills / Sunny Hills edges) may be mapped. Verify on the CAL FIRE map (general knowledge, not verified this round).",
+        "flood_zone": null,
+        "airport_noise": "none notable (Fullerton Municipal Airport is on the west side)",
+        "parks": [
+          "Craig Regional Park",
+          "Fullerton Arboretum (CSUF)"
+        ],
+        "farmers_markets": [],
+        "fiber": "Not checked this round (search budget ran out). Spectrum cable is near-universal in OC; AT&T Fiber covers many OC neighborhoods. Check by address.",
+        "vibe": "College-town suburb with real roasters nearby. Quiet streets, and downtown bars are a short drive away."
+      }
+    },
+    {
+      "neighborhood": "Buena Park",
+      "lat": 33.8675,
+      "lng": -117.9981,
+      "freeway": {
+        "score": 9,
+        "nearest": [
+          "I-5 (Beach Blvd / Artesia / Valley View, ~3-5 min)",
+          "SR-91 (Beach Blvd / Knott Ave / Valley View, ~3-5 min)",
+          "SR-39 Beach Blvd",
+          "I-605 (~8-10 min)"
+        ],
+        "note": "Two major freeways cross the city. general knowledge, not verified this round; times are estimates."
+      },
+      "traffic": {
+        "score": 5,
+        "note": "SR-91 westbound to the 605 and I-5 at peak are heavy. Beach Blvd backs up near Knott's and The Source on weekends and event nights. general knowledge, not verified this round."
+      },
+      "coffee": {
+        "score": 5,
+        "cafes": [
+          "Stereoscope Coffee – roasts daily in front of customers; often called the best in Buena Park",
+          "Van Dyke's Coffee Roasters – in-house specialty roaster, single location",
+          "Coffee Code – La Palma Ave roaster (coffee ice cubes)",
+          "Seesaw Beans and Coffee – Beach Blvd, roasts its own beans",
+          "In-sit Coffee – The Source OC, flavored lattes"
+        ],
+        "note": "There are genuinely 3-4 roasters, but they are spread across a sprawling city. Few blocks will have more than 1-2 within a 10-min walk. Laptop-friendliness was not verified."
+      },
+      "walk": {
+        "score": 5,
+        "walk_score": 57,
+        "note": "City average is 57 (one page says 55). Individual addresses range 53-78."
+      },
+      "quiet": {
+        "score": 6,
+        "note": "Expect tourist corridor noise on Beach Blvd and around Knott's (nightly summer fireworks and coaster noise nearby), freeway noise near the 5/91, and BNSF freight trains. Residential tracts away from Beach Blvd are calmer. general knowledge, not verified this round."
+      },
+      "safety": {
+        "score": 7,
+        "violent_per_1k": 2.46,
+        "property_per_1k": 23.3,
+        "year": "2021-2024 vintage (NeighborhoodScout label unclear)",
+        "source": "NeighborhoodScout (FBI UCR; page labels the data year inconsistently, 2021 to 2024), seen in search snippets because the page fetch failed",
+        "note": "Violent crime is well below LA. Property crime is near the LA average, likely inflated by the Knott's / Beach Blvd retail and hotel corridor."
+      },
+      "lax": {
+        "score": 5,
+        "minutes_offpeak": 35,
+        "minutes_peak": 60,
+        "note": "SR-91 W, then I-605 S and I-405 N, or I-105 W. rough drive-time estimate from general road-network knowledge; not verified (web search budget ran out this round)"
+      },
+      "nightlife": {
+        "score": 7,
+        "nearest_district": "Downtown Fullerton",
+        "drive_minutes": 12,
+        "note": "The Source OC and Beach Blvd K-town spots are local. Belmont Shore is ~20 min."
+      },
+      "gyms": {
+        "score": 8,
+        "examples": [
+          "Chain gyms along Beach Blvd / Orangethorpe (unverified)"
+        ]
+      },
+      "services": {
+        "score": 8,
+        "note": "Large Korean grocery options (H Mart-type) plus standard chains (general knowledge, not verified this round)."
+      },
+      "rail": {
+        "score": 3,
+        "nearest_station": "Buena Park Metrolink station",
+        "line": "Metrolink Orange County / 91-PV lines",
+        "note": "No Metro rail."
+      },
+      "airports_other": "LGB ~20 min, SNA ~25 min (estimates)",
+      "summary": "The best freeway access of this set (5 + 91 + 39) and the shortest LAX drive, with surprisingly many roasters. The trade-offs are tourist-corridor noise near Knott's/Beach Blvd and a car-oriented layout.",
+      "sources": [
+        "https://justinpluslauren.com/buena-park-coffee-shops/",
+        "https://visitbuenapark.com/p/plan/blog/blog-dining/buena-park-brings-coffee-culture-to-orange-county-visitors",
+        "https://wanderlog.com/place/details/1415831/van-dyke-coffee-roasters",
+        "https://www.neighborhoodscout.com/ca/buena-park/crime",
+        "https://www.trulia.com/for_rent/Buena_Park,CA/",
+        "https://www.apartments.com/reviews/ca/buena-park/6766-san-benito-way-buena-park-ca-90620/ycxxemv",
+        "https://apartmentlist.com/ca/buena-park",
+        "https://walkscore.com/CA/Buena_Park"
+      ],
+      "extras": {
+        "median_1br_rent": 2095,
+        "rent_source": "Trulia, May 2026 (Apartments.com $1,931; Apartment List ~$2,250)",
+        "rent_trend": "+0.8% YoY (Apartments.com, undated snapshot)",
+        "summer_high_f": null,
+        "marine_layer": "some: a bit closer to the coast than Fullerton. summer_high_f is null because no NOAA normal was retrieved. Expect mid/upper-80s °F August highs (general knowledge, not verified this round).",
+        "fire_hazard": "CAL FIRE FHSZ: none (flat urban; general knowledge, not verified this round)",
+        "flood_zone": null,
+        "airport_noise": "none notable",
+        "parks": [
+          "Ralph B. Clark Regional Park"
+        ],
+        "farmers_markets": [],
+        "fiber": "Not checked this round (search budget ran out). Spectrum cable is near-universal in OC; AT&T Fiber covers many OC neighborhoods. Check by address.",
+        "vibe": "Busy, practical, tourist-edged suburb with a strong Korean cafe and food scene. Pick a tract away from Beach Blvd for quiet."
+      }
+    },
+    {
+      "neighborhood": "Brea",
+      "lat": 33.9167,
+      "lng": -117.9001,
+      "freeway": {
+        "score": 7,
+        "nearest": [
+          "SR-57 (Imperial Hwy / Lambert Rd, ~5 min)",
+          "SR-90 Imperial Hwy",
+          "SR-91 (~12 min)"
+        ],
+        "note": "Only one freeway is close. general knowledge, not verified this round; times are estimates."
+      },
+      "traffic": {
+        "score": 5,
+        "note": "SR-57 peak congestion runs both ways (toward the 60 and toward the Orange Crush). Imperial Hwy near Brea Mall is busy. general knowledge, not verified this round."
+      },
+      "coffee": {
+        "score": 4,
+        "cafes": [
+          "Melted Vinyl Coffee – 580 S Brea Blvd, near downtown core",
+          "Reborn Coffee – 3373 E Imperial Hwy; specialty cafe (Brea-based small chain), outdoor seating",
+          "The International Coffee House – 1015 E Imperial Hwy; long-time local favorite, specialty drinks",
+          "Oak & Willow Coffee & Bakery – E Imperial Hwy",
+          "Intelligentsia – 115 S Brea Blvd per a generic regional roundup (unconfirmed, possibly wrong)"
+        ],
+        "note": "Mostly flavored-drink and neighborhood cafes. Serious third-wave options are unconfirmed. Downtown Brea (Birch St) is the only walkable cluster."
+      },
+      "walk": {
+        "score": 4,
+        "walk_score": null,
+        "note": "No city Walk Score was found (fetch failed). Downtown Brea / Birch St is walkable, but most of the city is car-dependent (estimate)."
+      },
+      "quiet": {
+        "score": 8,
+        "note": "Hillside and tract neighborhoods are very quiet. Downtown Birch St has the Improv and bars but is self-contained. general knowledge, not verified this round."
+      },
+      "safety": {
+        "score": 7,
+        "violent_per_1k": 2.15,
+        "property_per_1k": 29.32,
+        "year": "2021-2024 vintage (NeighborhoodScout label unclear)",
+        "source": "NeighborhoodScout (FBI UCR; page labels the data year inconsistently, 2021 to 2024), seen in search snippets because the page fetch failed",
+        "note": "Very low violent crime. Property crime is above the LA average, inflated by Brea Mall and big-box retail theft. Residential areas are likely much lower."
+      },
+      "lax": {
+        "score": 3,
+        "minutes_offpeak": 45,
+        "minutes_peak": 75,
+        "note": "SR-57 S, SR-91 W, then I-605 / I-105. rough drive-time estimate from general road-network knowledge; not verified (web search budget ran out this round)"
+      },
+      "nightlife": {
+        "score": 8,
+        "nearest_district": "Downtown Brea (Birch St Promenade); Downtown Fullerton",
+        "drive_minutes": 8,
+        "note": "Downtown Fullerton is ~12 min."
+      },
+      "gyms": {
+        "score": 7,
+        "examples": [
+          "Gyms around Brea Mall / Imperial Hwy (unverified)"
+        ]
+      },
+      "services": {
+        "score": 8,
+        "note": "Brea Mall area has full retail and grocery. general knowledge, not verified this round."
+      },
+      "rail": {
+        "score": 1,
+        "nearest_station": "Fullerton Transportation Center, ~12-15 min drive",
+        "line": "Metrolink",
+        "note": "None practical."
+      },
+      "airports_other": "LGB ~30 min, SNA ~30 min (estimates)",
+      "summary": "Very quiet and low in violent crime, with a compact walkable downtown. For this client it scores below Fullerton on specialty coffee, has only one nearby freeway (57), and has a long LAX drive.",
+      "sources": [
+        "https://orangecoast.com/?p=38908",
+        "https://frankiapp.com/business/melted-vinyl-coffee-42014.md",
+        "https://frankiapp.com/business/reborn-coffee-43639.md",
+        "https://meetingguide.aa.org/?p=673180",
+        "https://www.neighborhoodscout.com/ca/brea/crime",
+        "https://www.trulia.com/for_rent/Brea,CA/",
+        "https://www.rentometer.com/average-rent-in/ca/brea-ca",
+        "https://www.rentcafe.com/average-rent-market-trends/us/ca/brea/",
+        "https://apartmentlist.com/ca/brea"
+      ],
+      "extras": {
+        "median_1br_rent": 2292,
+        "rent_source": "Trulia, Sep 2026 (Rentometer Feb 2026 $2,438; RentCafe May 2026 $2,386; Apartment List $2,608)",
+        "rent_trend": null,
+        "summer_high_f": null,
+        "marine_layer": "little: inland, among the warmest areas here. summer_high_f is null because no NOAA normal was retrieved. Expect ~90 °F August highs (general knowledge, not verified this round).",
+        "fire_hazard": "CAL FIRE FHSZ: very high in the northern/eastern hills (Carbon Canyon, Olinda); none for flat downtown and south Brea (general knowledge, not verified this round, verify)",
+        "flood_zone": null,
+        "airport_noise": "none notable",
+        "parks": [
+          "Carbon Canyon Regional Park",
+          "Craig Regional Park",
+          "Brea Sports Park"
+        ],
+        "farmers_markets": [],
+        "fiber": "Not checked this round (search budget ran out). Spectrum cable is near-universal in OC; AT&T Fiber covers many OC neighborhoods. Check by address.",
+        "vibe": "Tidy, quiet, safe suburb with a small entertainment downtown. Coffee leans casual rather than third-wave."
+      }
+    },
+    {
+      "neighborhood": "Seal Beach",
+      "lat": 33.7414,
+      "lng": -118.1048,
+      "freeway": {
+        "score": 8,
+        "nearest": [
+          "I-405 (Seal Beach Blvd, ~5 min from Old Town)",
+          "I-605 (south terminus at the 405/22, ~6 min)",
+          "SR-22 (~6 min)",
+          "PCH (local)"
+        ],
+        "note": "Three freeways meet just north of town. general knowledge, not verified this round; times are estimates."
+      },
+      "traffic": {
+        "score": 4,
+        "note": "The 405/605/22 interchange and I-405 through Westminster are chronic peak bottlenecks (405 Express Lanes opened ~2023; general knowledge, not verified this round). PCH is jammed on summer weekends."
+      },
+      "coffee": {
+        "score": 6,
+        "cafes": [
+          "Humblemaker Coffee – 350 Main St; pour-over specialty, calm minimalist room",
+          "Javatinis – 148 Main St; roasts in-house, limited seating",
+          "Catrina Café – 300 block of Main; breakfast/lunch with specialty coffee drinks",
+          "Bogart's Coffee House – Ocean Ave (per Wanderlog roundup)",
+          "The Coffee Bean & Tea Leaf – 347 Main St (chain)"
+        ],
+        "note": "From Old Town, 2-3 real options are a walk away on Main St. Belmont Shore's 2nd St cafes are a ~5-8 min drive. Outside Old Town (College Park, Leisure World) there is little walkable coffee."
+      },
+      "walk": {
+        "score": 6,
+        "walk_score": 41,
+        "note": "City average is 41, but Old Town's neighborhood Walk Score is 81. Score assumes an Old Town rental, which is where most apartments are."
+      },
+      "quiet": {
+        "score": 7,
+        "note": "Old Town side streets are quiet, though Main St bars get lively on weekends. Military helicopter traffic from Joint Forces Training Base Los Alamitos is a known noise source in north Seal Beach. The 405 hums in College Park. general knowledge, not verified this round."
+      },
+      "safety": {
+        "score": 6,
+        "violent_per_1k": null,
+        "property_per_1k": null,
+        "year": "2025",
+        "source": "Seal Beach PD 2025 Annual Crime Statistics Report (NIBRS Group A), via city press release / Sun News",
+        "note": "In 2025 there were 1,322 Group A offenses (-8.7%), 173 crimes-against-persons victims and 952 property offenses (-5%). With ~24.2k residents that is roughly 7.1 persons and ~39 property per 1k (my arithmetic). Those NIBRS figures include simple assault, vandalism and fraud, so they are not comparable to UCR violent/property rates, and per-1k fields are left null. NeighborhoodScout gives ~32 total per 1k. Small population plus retail along Seal Beach Blvd/PCH inflates the rates. Old Town is generally regarded as safe."
+      },
+      "lax": {
+        "score": 6,
+        "minutes_offpeak": 30,
+        "minutes_peak": 50,
+        "note": "I-405 N. rough drive-time estimate from general road-network knowledge; not verified (web search budget ran out this round)"
+      },
+      "nightlife": {
+        "score": 9,
+        "nearest_district": "Main St Seal Beach; Belmont Shore 2nd St (Long Beach)",
+        "drive_minutes": 6,
+        "note": "Long Beach downtown is ~15 min."
+      },
+      "gyms": {
+        "score": 6,
+        "examples": [
+          "Small boutique gyms in Old Town; chain gyms at Seal Beach Blvd shopping centers (unverified)"
+        ]
+      },
+      "services": {
+        "score": 7,
+        "note": "Pavilions / Trader Joe's-type grocery on Seal Beach Blvd / PCH and the Shops at Rossmoor (general knowledge, not verified this round)."
+      },
+      "rail": {
+        "score": 1,
+        "nearest_station": "Metro A Line, downtown Long Beach, ~15-20 min drive",
+        "line": "A Line",
+        "note": "None practical."
+      },
+      "airports_other": "LGB ~10 min, SNA ~20 min (estimates)",
+      "summary": "Small beach town with a walkable Old Town, real specialty coffee on Main St and the shortest LAX/LGB drives in this OC set. The trade-offs are notoriously congested 405/605/22 traffic, a small rental stock and military helicopter noise in parts of town.",
+      "sources": [
+        "https://atmosfy.io/location/seal-beach/humblemaker-coffee",
+        "https://www.sunnews.org/restaurant-spotlight-javatinis/",
+        "https://www.sunnews.org/whats-new-in-old-town-businesses-setting-up-shop-on-300-block-of-main-street/",
+        "https://wanderlog.com/list/geoCategory/288999",
+        "https://www.sealbeachca.gov/Portals/0/Documents/City of Seal Beach Press Release - Seal Beach PD Releases 2025 Annual Crime Statistics Report.pdf",
+        "https://www.sunnews.org/seal-beach-police-department-sees-8-7-decrease-in-reported-crime/",
+        "https://www.neighborhoodscout.com/ca/seal-beach/crime",
+        "https://www.rentometer.com/average-rent-in/ca/seal-beach-ca",
+        "https://www.apartments.com/seal-beach-ca/",
+        "https://www.padmapper.com/apartments/seal-beach-ca",
+        "https://www.walkscore.com/score/-Seal Beach--CA"
+      ],
+      "extras": {
+        "median_1br_rent": 2391,
+        "rent_source": "Apartments.com, 2026 snapshot (Trulia Jun 2026 $2,367; Rentometer Jan 2026 apartments $2,563; PadMapper Aug 2026 median $3,026 on 25 listings)",
+        "rent_trend": "-4% YoY (Apartments.com)",
+        "summer_high_f": null,
+        "marine_layer": "strong: right on the ocean; June gloom is common and AC is often optional. summer_high_f is null because no NOAA normal was retrieved. Expect upper-70s °F August highs (general knowledge, not verified this round).",
+        "fire_hazard": "CAL FIRE FHSZ: none (general knowledge, not verified this round)",
+        "flood_zone": "Coastal flood exposure: Old Town and Surfside sit near sea level, with FEMA coastal (AE/VE) zones along the beach. Check the exact address on the FEMA map (general knowledge, not verified this round).",
+        "airport_noise": "Military helicopters (JFTB Los Alamitos) in north town; LGB is ~10 min but its flight paths mostly miss Old Town (general knowledge, not verified this round)",
+        "parks": [
+          "Seal Beach Pier & beach",
+          "Eisenhower Park",
+          "Gum Grove Park"
+        ],
+        "farmers_markets": [],
+        "fiber": "Not checked this round (search budget ran out). Spectrum cable is near-universal in OC; AT&T Fiber covers many OC neighborhoods. Check by address.",
+        "vibe": "Sleepy, walkable beach village with a couple of good cafes on Main St. Quiet nights except weekend bar blocks."
+      }
+    },
+    {
+      "neighborhood": "Santa Ana – East (Franzen Ave)",
+      "lat": 33.77,
+      "lng": -117.832,
+      "freeway": {
+        "score": 9,
+        "nearest": [
+          "SR-55 (17th St / 4th St ramps, ~2-4 min)",
+          "I-5 (~5 min)",
+          "SR-22 (~5-7 min)"
+        ],
+        "note": "Franzen Ave (ZIP 92705) sits beside the 55 near the Tustin/Orange border, in or near Cabrillo Park per Walk Score. general knowledge, not verified this round; times are estimates."
+      },
+      "traffic": {
+        "score": 4,
+        "note": "Sits on the Orange Crush (5/55/22). The SR-55 and the I-5 at the 55 are among OC's worst peak corridors. Tustin Ave / 17th St arterials are busy. general knowledge, not verified this round."
+      },
+      "coffee": {
+        "score": 3,
+        "cafes": [
+          "The Coffee Bean & Tea Leaf – 2264 E 17th St (chain)",
+          "Bruegger's Bagels – 2262 E 17th St (bagels with coffee)"
+        ],
+        "note": "Search found no independent specialty cafe within a 10-min walk. DTSA's specialty scene and Old Towne Orange are ~5-8 min by car."
+      },
+      "walk": {
+        "score": 7,
+        "walk_score": 75,
+        "note": "A Franzen Ave listing shows Walk Score 75 (Transit 24), helped by Northland Center and the Tustin Franzen Center. The walking is to errands, not to cafes."
+      },
+      "quiet": {
+        "score": 5,
+        "note": "SR-55 freeway noise is likely on the blocks nearest the freeway. Tustin Ave and 17th St traffic too. Possible SNA arrival traffic overhead (unverified). Interior blocks of Cabrillo Park are calmer. general knowledge, not verified this round."
+      },
+      "safety": {
+        "score": 6,
+        "violent_per_1k": 4.93,
+        "property_per_1k": 17.02,
+        "year": "2024",
+        "source": "AreaVibes citing FBI UCR, citywide Santa Ana (1,530 violent / 5,282 property)",
+        "note": "These are citywide rates, below LA's. The east side near the Tustin/Orange border is generally calmer than central Santa Ana (general knowledge, not verified this round). No 2025 SAPD numbers were found."
+      },
+      "lax": {
+        "score": 3,
+        "minutes_offpeak": 45,
+        "minutes_peak": 75,
+        "note": "I-5 N, then I-605 / I-105, or I-405 N. rough drive-time estimate from general road-network knowledge; not verified (web search budget ran out this round)"
+      },
+      "nightlife": {
+        "score": 9,
+        "nearest_district": "Downtown Santa Ana (4th St / East End); Old Towne Orange",
+        "drive_minutes": 7,
+        "note": "Times are estimates."
+      },
+      "gyms": {
+        "score": 8,
+        "examples": [
+          "Gyms around Tustin Ave / 17th St centers (unverified)"
+        ]
+      },
+      "services": {
+        "score": 8,
+        "note": "Northland Center and Tustin Franzen Center are walkable for groceries and errands (per listing)."
+      },
+      "rail": {
+        "score": 2,
+        "nearest_station": "Santa Ana Regional Transportation Center / Orange station, short drive",
+        "line": "Metrolink Orange County line",
+        "note": "No Metro rail."
+      },
+      "airports_other": "LGB ~25 min, SNA ~12 min (estimates)",
+      "summary": "The best freeway proximity of this set and walkable errands, with DTSA/Orange nightlife minutes away. But walkable specialty coffee is missing, and it sits on the congested Orange Crush with likely freeway noise. Best for someone who drives to cafes.",
+      "sources": [
+        "https://www.redfin.com/sitemap/CA/92705/street/Franzen+Ave",
+        "https://www.walkscore.com/score/loc/lat=33.7700/lng=-117.8320/",
+        "https://www.westsiderentals.com/santa-ana-ca/2220-franzen-ave-unit-d-ffslz0t",
+        "https://www.coffeebean.com/store/ca/santa-ana/2264-17th-st",
+        "https://fr.foursquare.com/daggo/list/venuelikes",
+        "https://www.areavibes.com/santa+ana-ca/eastside/crime/",
+        "https://www.rentcafe.com/apartments-for-rent/santa-ana-ca/?page=2"
+      ],
+      "extras": {
+        "median_1br_rent": null,
+        "rent_source": "No 92705 1BR median found. RentCafe May 2026 Santa Ana all-unit average $2,635; Trulia 92706 1BR $2,044 (Jun 2026); one Franzen Ave listing at $2,200/mo seen.",
+        "rent_trend": null,
+        "summer_high_f": null,
+        "marine_layer": "some: central OC gets morning marine layer in late spring. summer_high_f is null because no NOAA normal was retrieved. Expect mid-80s °F August highs (general knowledge, not verified this round).",
+        "fire_hazard": "CAL FIRE FHSZ: none (general knowledge, not verified this round)",
+        "flood_zone": null,
+        "airport_noise": "Possible SNA arrival traffic and SR-55 freeway noise; unverified",
+        "parks": [
+          "Santiago Park",
+          "Santa Ana Zoo at Prentice Park"
+        ],
+        "farmers_markets": [],
+        "fiber": "Not checked this round (search budget ran out). Spectrum cable is near-universal in OC; AT&T Fiber covers many OC neighborhoods. Check by address.",
+        "vibe": "Practical, errand-walkable residential pocket by the 55. Good coffee and nightlife are a short drive, not a stroll."
+      }
+    },
+    {
+      "neighborhood": "Newport Beach",
+      "lat": 33.6189,
+      "lng": -117.9289,
+      "freeway": {
+        "score": 6,
+        "nearest": [
+          "SR-55 (south end at 19th St, Costa Mesa; ~5-8 min from Newport Heights)",
+          "SR-73 (Jamboree / MacArthur, ~8 min)",
+          "I-405 (~10 min)"
+        ],
+        "note": "Varies a lot by sub-area: Newport Heights/Westcliff is closest to the 55, while the Peninsula and Corona del Mar are 10-15 min out. general knowledge, not verified this round; times are estimates."
+      },
+      "traffic": {
+        "score": 5,
+        "note": "PCH and Newport Blvd jam on summer weekends. The 405 near SNA and the 55 are heavy at peak. general knowledge, not verified this round."
+      },
+      "coffee": {
+        "score": 6,
+        "cafes": [
+          "Kéan Coffee Artisan Roasters – local roaster, rotating seasonal roasts",
+          "Alta Coffee Warehouse – Cannery Village; good for reading / lingering",
+          "Huskins Coffee – Balboa Island; small-batch, family-run",
+          "KIT Coffee – modern, design-forward",
+          "Mermaid Coffee Bar – Balboa Village",
+          "Stereoscope Coffee Co. – Newport location (per visitor guide)"
+        ],
+        "note": "There's a real specialty scene, but it's split across sub-areas (Balboa, Cannery Village, CdM, Westcliff). Any one apartment walks to 1-3 cafes."
+      },
+      "walk": {
+        "score": 5,
+        "walk_score": 49,
+        "note": "City average is 49. Balboa / Corona del Mar addresses score up to ~95, while inland tracts score ~37."
+      },
+      "quiet": {
+        "score": 6,
+        "note": "SNA departures fly over the Back Bay, Newport Heights and Dover Shores, a well-known jet-noise issue. The Peninsula has summer crowds and bar noise. CdM / Eastbluff interior streets are quiet. general knowledge, not verified this round."
+      },
+      "safety": {
+        "score": 8,
+        "violent_per_1k": 2.0,
+        "property_per_1k": null,
+        "year": "2021-2024 vintage (NeighborhoodScout label unclear)",
+        "source": "NeighborhoodScout (FBI UCR; page labels the data year inconsistently, 2021 to 2024), seen in search snippets because the page fetch failed",
+        "note": "Violent ~2/1k and total ~21/1k, implying property ~19/1k (not stated directly). AreaVibes gives property ~18.7/1k (undated). Visitor-inflated rates on the Peninsula; car break-ins at beach lots."
+      },
+      "lax": {
+        "score": 3,
+        "minutes_offpeak": 45,
+        "minutes_peak": 80,
+        "note": "I-405 N. rough drive-time estimate from general road-network knowledge; not verified (web search budget ran out this round)"
+      },
+      "nightlife": {
+        "score": 8,
+        "nearest_district": "Costa Mesa (17th St / The Lab & The Camp); Balboa Peninsula",
+        "drive_minutes": 10,
+        "note": "Times are estimates."
+      },
+      "gyms": {
+        "score": 8,
+        "examples": [
+          "Equinox / boutique studios around Fashion Island and Westcliff (unverified)"
+        ]
+      },
+      "services": {
+        "score": 9,
+        "note": "Full high-end grocery: Whole Foods, Trader Joe's, Gelson's/Bristol Farms-type options (general knowledge, not verified this round)."
+      },
+      "rail": {
+        "score": 1,
+        "nearest_station": "Irvine or Tustin Metrolink, ~15 min drive",
+        "line": "Metrolink",
+        "note": "None practical."
+      },
+      "airports_other": "LGB ~30 min, SNA ~10 min (estimates)",
+      "summary": "Coastal, safe and coffee-rich in pockets, with SNA minutes away. But rents run ~$3,300-3,500+ for a 1BR, freeway access is mediocre outside Newport Heights, and SNA jet noise affects Back Bay neighborhoods.",
+      "sources": [
+        "https://visitnewportbeach.com/restaurants/article/your-ultimate-guide-to-newport-beachs-best-cafes-and-coffee-shops/",
+        "https://visitnewportbeach.com/restaurants/article/best-coffee-shops-bakeries-newport-beach",
+        "https://cassiefrench.com/blog/best-coffee-shops-in-newport-beach-a-locals-guide",
+        "https://www.neighborhoodscout.com/ca/newport-beach/crime",
+        "https://www.areavibes.com/newport+beach-ca/crime/",
+        "https://www.rentometer.com/average-rent-in/ca/newport-beach-ca",
+        "https://www.trulia.com/for_rent/Newport Beach,CA/",
+        "https://www.renthop.com/average-rent-in/92663-newport-beach-ca",
+        "https://www.zumper.com/rent-research/newport-beach-ca/upper-newport-bay-nature-preserve",
+        "https://www.walkscore.com/score/-92625"
+      ],
+      "extras": {
+        "median_1br_rent": 3447,
+        "rent_source": "Rentometer, Feb 2026 average (Trulia May 2026 $3,300; RentHop 92663 Jun 2026 median $4,725; Corona del Mar median $4,495)",
+        "rent_trend": "RentHop 92663 median +43% YoY (Jun 2026, likely mix-driven)",
+        "summer_high_f": null,
+        "marine_layer": "strong: coastal, with frequent May-July gloom; little AC need near the water. summer_high_f is null because no NOAA normal was retrieved. Expect mid-70s °F August highs at the coast (general knowledge, not verified this round).",
+        "fire_hazard": "CAL FIRE FHSZ: none for the harbor/Peninsula; Newport Coast and the canyon edges are high to very high (general knowledge, not verified this round, verify)",
+        "flood_zone": "Coastal flood zones on Balboa Peninsula, Balboa Island and the harbor edges (FEMA AE/VE; general knowledge, not verified this round, verify by address).",
+        "airport_noise": "SNA departure noise over the Back Bay, Newport Heights and Dover Shores; notable",
+        "parks": [
+          "Upper Newport Bay Nature Preserve",
+          "Balboa Island boardwalk",
+          "Corona del Mar State Beach"
+        ],
+        "farmers_markets": [],
+        "fiber": "Not checked this round (search budget ran out). Spectrum cable is near-universal in OC; AT&T Fiber covers many OC neighborhoods. Check by address.",
+        "vibe": "Polished coastal city with good cafes in each village. Pick CdM or Newport Heights for quiet, and budget for high rent."
+      }
+    },
+    {
+      "neighborhood": "Lake Forest",
+      "lat": 33.6469,
+      "lng": -117.6892,
+      "freeway": {
+        "score": 8,
+        "nearest": [
+          "I-5 (Lake Forest Dr / Bake Pkwy / El Toro Rd / Alton, ~3-6 min)",
+          "SR-241 toll (~6-8 min)",
+          "SR-133 / I-405 (~8-10 min)"
+        ],
+        "note": "West Lake Forest is close to I-5; the Foothill Ranch / Portola Hills areas are farther out on the 241. general knowledge, not verified this round; times are estimates."
+      },
+      "traffic": {
+        "score": 5,
+        "note": "I-5 through the El Toro Y and Laguna Hills is heavy at peak. Arterials flow fairly well. general knowledge, not verified this round."
+      },
+      "coffee": {
+        "score": 3,
+        "cafes": [],
+        "note": "Not researched (web search budget ran out this round). The suburban strip-center layout suggests mostly chains, with a few independents. Low confidence; recheck."
+      },
+      "walk": {
+        "score": 3,
+        "walk_score": null,
+        "note": "No Walk Score found. Car-dependent master-planned suburb (estimate)."
+      },
+      "quiet": {
+        "score": 9,
+        "note": "Very quiet master-planned neighborhoods. No commercial flight path since El Toro MCAS closed. I-5 adjacency only on the west edge. general knowledge, not verified this round."
+      },
+      "safety": {
+        "score": 9,
+        "violent_per_1k": 1.0,
+        "property_per_1k": 8.0,
+        "year": "2021-2024 vintage (NeighborhoodScout label unclear)",
+        "source": "NeighborhoodScout (FBI UCR; page labels the data year inconsistently, 2021 to 2024), seen in search snippets because the page fetch failed; rounded values from snippet",
+        "note": "Among the lowest rates in this set. Total ~10/1k. Policed by OCSD under contract."
+      },
+      "lax": {
+        "score": 2,
+        "minutes_offpeak": 55,
+        "minutes_peak": 90,
+        "note": "I-5 N / I-405 N. rough drive-time estimate from general road-network knowledge; not verified (web search budget ran out this round)"
+      },
+      "nightlife": {
+        "score": 6,
+        "nearest_district": "Irvine Spectrum",
+        "drive_minutes": 12,
+        "note": "Laguna Beach is ~25 min. Times are estimates."
+      },
+      "gyms": {
+        "score": 7,
+        "examples": [
+          "Chain gyms along Lake Forest Dr / Bake Pkwy (unverified)"
+        ]
+      },
+      "services": {
+        "score": 8,
+        "note": "Full suburban grocery and errands in strip centers (general knowledge, not verified this round)."
+      },
+      "rail": {
+        "score": 2,
+        "nearest_station": "Irvine Station (~10 min drive)",
+        "line": "Metrolink Orange County line",
+        "note": "No Metro rail."
+      },
+      "airports_other": "LGB ~35 min, SNA ~15 min (estimates)",
+      "summary": "Very safe and very quiet with decent I-5 access. But walkable specialty coffee is unverified and likely weak, and LAX is a long haul. It suits the quiet and safety priorities, not coffee or walkability.",
+      "sources": [
+        "https://www.neighborhoodscout.com/ca/lake-forest/crime"
+      ],
+      "extras": {
+        "median_1br_rent": null,
+        "rent_source": "No rent data retrieved (search budget exhausted)",
+        "rent_trend": null,
+        "summer_high_f": null,
+        "marine_layer": "some/little: inland south OC with some morning marine layer. summer_high_f is null because no NOAA normal was retrieved. Expect mid-80s °F August highs (general knowledge, not verified this round).",
+        "fire_hazard": "CAL FIRE FHSZ: very high along the eastern foothills (Portola Hills, Foothill Ranch near Whiting Ranch); none for the western flatlands (general knowledge, not verified this round, verify)",
+        "flood_zone": null,
+        "airport_noise": "none notable (El Toro MCAS closed)",
+        "parks": [
+          "Whiting Ranch Wilderness Park",
+          "Heritage Hill Historical Park",
+          "Lake Forest Sports Park"
+        ],
+        "farmers_markets": [],
+        "fiber": "Not checked this round (search budget ran out). Spectrum cable is near-universal in OC; AT&T Fiber covers many OC neighborhoods. Check by address.",
+        "vibe": "Calm, safe, master-planned suburb. You'd drive to good coffee."
+      }
+    },
+    {
+      "neighborhood": "Mission Viejo",
+      "lat": 33.6,
+      "lng": -117.672,
+      "freeway": {
+        "score": 7,
+        "nearest": [
+          "I-5 (Oso Pkwy / La Paz / Alicia / Crown Valley, ~3-8 min depending on tract)",
+          "SR-73 toll (~8-10 min)",
+          "SR-241 toll (~8-10 min)"
+        ],
+        "note": "The west side is close to I-5; eastern tracts are 8-10 min out. general knowledge, not verified this round; times are estimates."
+      },
+      "traffic": {
+        "score": 5,
+        "note": "I-5 through Mission Viejo / Laguna Hills is congested at peak. Arterials are wide and mostly flow. general knowledge, not verified this round."
+      },
+      "coffee": {
+        "score": 3,
+        "cafes": [],
+        "note": "Not researched (web search budget ran out this round). The Kaleidoscope / Shops at Mission Viejo areas likely have mostly chains. Low confidence; recheck."
+      },
+      "walk": {
+        "score": 3,
+        "walk_score": 36,
+        "note": "City average is 36, so car-dependent."
+      },
+      "quiet": {
+        "score": 9,
+        "note": "Very quiet residential, no flight path. Freeway noise only near the I-5. general knowledge, not verified this round."
+      },
+      "safety": {
+        "score": 9,
+        "violent_per_1k": 1.0,
+        "property_per_1k": 12.0,
+        "year": "2021-2024 vintage (NeighborhoodScout label unclear)",
+        "source": "NeighborhoodScout (FBI UCR; page labels the data year inconsistently, 2021 to 2024), seen in search snippets because the page fetch failed; rounded values from snippet",
+        "note": "Total ~13/1k, well below LA. Policed by OCSD under contract."
+      },
+      "lax": {
+        "score": 1,
+        "minutes_offpeak": 60,
+        "minutes_peak": 95,
+        "note": "I-5 N / I-405 N. rough drive-time estimate from general road-network knowledge; not verified (web search budget ran out this round)"
+      },
+      "nightlife": {
+        "score": 6,
+        "nearest_district": "Irvine Spectrum; Laguna Beach; San Juan Capistrano",
+        "drive_minutes": 15,
+        "note": "Times are estimates."
+      },
+      "gyms": {
+        "score": 7,
+        "examples": [
+          "Chain gyms near the Shops at Mission Viejo / Kaleidoscope (unverified)"
+        ]
+      },
+      "services": {
+        "score": 8,
+        "note": "Full suburban grocery and the Shops at Mission Viejo (general knowledge, not verified this round)."
+      },
+      "rail": {
+        "score": 3,
+        "nearest_station": "Laguna Niguel/Mission Viejo Metrolink",
+        "line": "Metrolink Orange County line",
+        "note": "Metrolink only."
+      },
+      "airports_other": "LGB ~40 min, SNA ~20 min (estimates)",
+      "summary": "Among the safest and quietest options, with Lake Mission Viejo and the hills. But it is car-dependent, specialty coffee is unverified, and it has the longest LAX drive of this set.",
+      "sources": [
+        "https://www.neighborhoodscout.com/ca/mission-viejo/crime",
+        "https://www.walkscore.com/score/loc/lat=33.656406/lng=-117.642746/"
+      ],
+      "extras": {
+        "median_1br_rent": null,
+        "rent_source": "No rent data retrieved (search budget exhausted)",
+        "rent_trend": null,
+        "summer_high_f": null,
+        "marine_layer": "little/some: inland south OC. summer_high_f is null because no NOAA normal was retrieved. Expect mid/upper-80s °F August highs (general knowledge, not verified this round).",
+        "fire_hazard": "CAL FIRE FHSZ: high / very high along eastern and canyon edges (toward O'Neill Park / Trabuco); most of the city is lower (general knowledge, not verified this round, verify)",
+        "flood_zone": null,
+        "airport_noise": "none notable",
+        "parks": [
+          "Oso Creek Trail",
+          "O'Neill Regional Park (nearby)",
+          "Lake Mission Viejo (residents' association access)"
+        ],
+        "farmers_markets": [],
+        "fiber": "Not checked this round (search budget ran out). Spectrum cable is near-universal in OC; AT&T Fiber covers many OC neighborhoods. Check by address.",
+        "vibe": "Leafy, very quiet, safe master-planned suburb. Coffee and nightlife mean driving."
+      }
+    }
+  ]
+}

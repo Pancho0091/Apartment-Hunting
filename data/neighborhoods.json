@@ -95,6 +95,25 @@
    "packages": "South Park is mostly large post-2005 high-rises, which typically have staffed lobbies and package rooms or locker systems such as Luxer One or Amazon Hub; confirm this per building. A Feb 2026 Tripalink blog notes that lockers are usually in newer or renovated buildings. The LAPD Central Area YTD 2026 shows larceny/theft of 2,161 and theft from motor vehicles of 1,722, both high. A security vendor (GNS Guard, Apr 2026) citing Crosstown LA analysis says Downtown, Koreatown and Westlake consistently rank highest for LA package-theft reports, with 436 citywide reports in Dec 2024 vs a monthly av…",
    "internet": "Fiber data (FCC BDC Dec 2025 via ISPReports, South Park): Spectrum fiber about 57.5%, AT&T Fiber and EarthLink about 51%, BAI Connect about 36.6%, Starry about 5.7%. Any AT&T service reaches 99.4%, Verizon about 91%, T-Mobile Home Internet about 89.8%. BroadbandNow says AT&T Fiber coverage is weakest downtown overall, but South Park is better than average. Many towers have bulk Spectrum or privat…",
    "groceries": "Whole Foods Market (770 S Grand Ave); Ralphs with pharmacy (645 W 9th St at 9th & Flower, described as downtown's dominant grocer); Target at FIGat7th (735 S Figueroa St). There is no Trader Joe's downtown; the nearest per Trader Joe's official list are USC Village (3131 S Hoover St) and Silver Lak…"
+  },
+  "extras": {
+   "median_1br_rent": 3175,
+   "rent_source": "RentHop South Park LA page (search snippet, undated, ~$3.44/sqft). The page may mix DTLA South Park with South LA's South Park; Downtown overall is $2,609 (RentReboot Oct 2026)",
+   "rent_trend": "~-0.1% YoY (RentHop, undated)",
+   "summer_high_f": null,
+   "marine_layer": "some: inland of the coast, gets June gloom mornings that burn off",
+   "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "flood_zone": null,
+   "airport_noise": "none notable for LAX; frequent LAPD/news helicopters downtown",
+   "parks": [
+    "Grand Hope Park",
+    "Pershing Square (nearby)"
+   ],
+   "farmers_markets": [
+    "Thursday Pershing Square Farmers Market (verify)"
+   ],
+   "fiber": "AT&T Fiber widely available in central LA multifamily; Frontier Fiber in some pockets; Google Fiber not in LA (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "vibe": "Dense high-rise district by Crypto.com Arena with plenty of coffee, but event-night crowds and sirens make it noisy."
   }
  },
  {
@@ -192,6 +211,25 @@
    "packages": "The housing mix is converted lofts, where package handling varies (some older conversions have open lobbies or mailrooms), and newer large complexes that usually have lockers. Ask each building. The district is in LAPD Central Area, where YTD 2026 larceny/theft is 2,161 and theft from motor vehicles 1,722. GNS Guard (Apr 2026, citing Crosstown) names Downtown among LA's top package-theft areas. No specific Amazon Locker or Counter was verified inside the district; check the Amazon app.",
    "internet": "No neighborhood-level FCC page could be fetched for the Arts District. Nearby Civic Center/Little Tokyo shows AT&T Fiber and EarthLink at about 44.5%, BAI Connect about 42.5% and Spectrum fiber about 12.2%, with Starry fixed wireless about 49% and T-Mobile Home about 91%. Converted lofts can be poorly wired, so verify the exact building on the FCC National Broadband Map. Status: unverified.",
    "groceries": "There is no full-service supermarket inside the district (Hank's Organic was announced for the Arts District but its status is unverified). Whole Foods (770 S Grand Ave) and Ralphs (645 W 9th St) are about 1.5 mi away. Little Tokyo's Japanese markets are on the west edge (Nijiya Market in Japanese…"
+  },
+  "extras": {
+   "median_1br_rent": 3350,
+   "rent_source": "RentHop Arts District page, Jun 2026 (search snippet)",
+   "rent_trend": "-17% YoY (RentHop Jun 2026, $4,040 -> $3,350)",
+   "summer_high_f": null,
+   "marine_layer": "some",
+   "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "flood_zone": "Parts near the LA River channel may be mapped; check FEMA FIRM (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "airport_noise": "none notable for LAX; helicopters and freight-rail noise near the river",
+   "parks": [
+    "Arts District Park",
+    "LA State Historic Park (short drive)"
+   ],
+   "farmers_markets": [
+    "Sunday Arts District farmers market (verify)"
+   ],
+   "fiber": "AT&T Fiber widely available in central LA multifamily; Frontier Fiber in some pockets; Google Fiber not in LA (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "vibe": "Converted lofts with excellent coffee (Verve, Groundwork and others), but nights and weekends can be loud from bars and events."
   }
  },
  {
@@ -294,6 +332,27 @@
    "packages": "Bunker Hill and the FiDi are dominated by full-service high-rises with concierge desks and package rooms. The Historic Core has many converted historic buildings, where package handling ranges from staffed lobbies to unattended mailrooms; ask each building. The area is in LAPD Central Area (high larceny and theft from vehicles), and Downtown is cited as a package-theft hot spot by GNS Guard (Apr 2026, citing Crosstown). Whole Foods (770 S Grand Ave) and other Amazon pickup points are nearby; specific Locker or Counter sites are unverified.",
    "internet": "No neighborhood-specific FCC page could be fetched for the Historic Core or Bunker Hill. BroadbandNow says AT&T Fiber is weakest in Downtown LA. Nearby South Park shows Spectrum fiber about 57.5% and AT&T about 51%; Civic Center shows AT&T about 44.5%. Office-tower-adjacent residential buildings often have extra fiber options (BAI Connect, GeoLinks). Verify by address.",
    "groceries": "Grand Central Market (317 S Broadway, food hall with produce stalls); Whole Foods Market (770 S Grand Ave); Ralphs (645 W 9th St); Target at FIGat7th (735 S Figueroa St). No Trader Joe's downtown."
+  },
+  "extras": {
+   "median_1br_rent": 2609,
+   "rent_source": "RentReboot (search snippet), Oct 2026: median asking rent for Downtown LA overall; other sources $2,265-$2,940. Historic Core 1BR asks run about $1,600-$2,900 (Redfin listings)",
+   "rent_trend": "PadMapper Sep 2026: -0.16% MoM (Downtown overall); RentCafe Sep 2026 says down YoY",
+   "summer_high_f": null,
+   "marine_layer": "some",
+   "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "flood_zone": null,
+   "airport_noise": "none notable for LAX; frequent helicopters",
+   "parks": [
+    "Grand Park",
+    "Pershing Square",
+    "Angels Knoll"
+   ],
+   "farmers_markets": [
+    "Thursday Pershing Square Farmers Market (verify)",
+    "Bunker Hill / Grand Park markets (verify)"
+   ],
+   "fiber": "AT&T Fiber widely available in central LA multifamily; Frontier Fiber in some pockets; Google Fiber not in LA (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "vibe": "The most walkable part of DTLA, with Grand Central Market and strong cafes, but it has street noise and visible disorder. Bunker Hill high-rises are the quieter pocket."
   }
  },
  {
@@ -390,6 +449,25 @@
    "packages": "The building mix is older low-rise apartments plus several newer mid-size complexes near the Metro A Line Chinatown station; the newer ones are more likely to have lockers. No Chinatown-specific package-theft data was found. The area is in LAPD Central Area, which has high citywide-relative larceny counts. Specific Amazon Locker or Counter sites are unverified.",
    "internet": "This is the weakest fiber footprint of the downtown-area options. FCC BDC (Dec 2025) via BestNeighborhood: Spectrum fiber about 42%, AT&T Fiber and EarthLink only about 13%. Spectrum cable is near-universal citywide (about 89%). Verify the building; Spectrum gig service is the likely realistic option.",
    "groceries": "There is no Trader Joe's or Whole Foods in Chinatown. Asian supermarkets such as Ai Hoa (listed in a 2012 PBS SoCal piece; current status unverified). Whole Foods (770 S Grand Ave) is about 1.5 mi away by Metro or car. Grocery access is a known weak spot."
+  },
+  "extras": {
+   "median_1br_rent": 2344,
+   "rent_source": "RentHop Chinatown page, Jun 2026 (search snippet)",
+   "rent_trend": "-5% YoY (RentHop Jun 2026, $2,468 -> $2,344)",
+   "summer_high_f": null,
+   "marine_layer": "some",
+   "fire_hazard": "CAL FIRE FHSZ: flatland none; Elysian Park hillsides to the north are Very High (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "flood_zone": null,
+   "airport_noise": "none notable for LAX; some helicopters; Dodger Stadium game traffic",
+   "parks": [
+    "LA State Historic Park",
+    "Elysian Park"
+   ],
+   "farmers_markets": [
+    "Saturday Chinatown farmers market (verify)"
+   ],
+   "fiber": "AT&T Fiber widely available in central LA multifamily; Frontier Fiber in some pockets; Google Fiber not in LA (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "vibe": "Compact and fairly calm at night next to two big parks, with a growing set of cafes. It sits beside the 110 and 101."
   }
  },
  {
@@ -485,6 +563,25 @@
    "packages": "Little Tokyo has several large newer complexes, which commonly have locker systems, plus older senior and affordable buildings. It is in LAPD Central Area, and Downtown is cited by GNS Guard (Apr 2026, citing Crosstown) as a top package-theft area. No neighborhood-specific data; specific Amazon pickup sites unverified.",
    "internet": "FCC BDC (Dec 2025) via ISPReports for Civic Center/Little Tokyo: AT&T Fiber and EarthLink about 44.5%, BAI Connect fiber about 42.5%, Spectrum fiber about 12.2%, Astound about 5.8%. Overall AT&T 93.8%, T-Mobile Home 90.7%, Spectrum 88.4%, Verizon 84.7%, Starry 49.2%. A reasonable chance of fiber in newer buildings; verify by address.",
    "groceries": "Japanese and Korean markets in and around Little Tokyo; a 2012 PBS SoCal piece listed Nijiya Market (Japanese Village Plaza), Marukai and Woori, but their current names and status are unverified. Whole Foods (770 S Grand Ave) is about 1 mi. No Trader Joe's downtown."
+  },
+  "extras": {
+   "median_1br_rent": 2335,
+   "rent_source": "RentHop 'Historic Cultural' 1BR median cited on a Sakura Crossing listing (search snippet, 2026, undated)",
+   "rent_trend": null,
+   "summer_high_f": null,
+   "marine_layer": "some",
+   "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "flood_zone": null,
+   "airport_noise": "none notable for LAX; helicopters",
+   "parks": [
+    "Arts District Park (nearby)",
+    "Grand Park (nearby)"
+   ],
+   "farmers_markets": [
+    "Little Tokyo farmers market (verify)"
+   ],
+   "fiber": "AT&T Fiber widely available in central LA multifamily; Frontier Fiber in some pockets; Google Fiber not in LA (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "vibe": "A walkable cultural district with good cafes and the Regional Connector station, a bit livelier than residential Bunker Hill."
   }
  },
  {
@@ -586,6 +683,25 @@
    "packages": "Housing is mostly small and mid-size older buildings, courtyard apartments and hillside units, and many lack package lockers or staffed lobbies, which raises exposure. Some newer Sunset Blvd complexes have lockers. No neighborhood-level package-theft statistic was found. The LA metro ranks 7th-worst nationally (SafeWise 2025). For frequent Amazon orders, plan on lockers or Counter pickup; specific Echo Park Amazon Locker sites are unverified.",
    "internet": "Strong. FCC BDC (Dec 2025) via BestNeighborhood: AT&T Fiber and EarthLink about 83.5%, Spectrum fiber about 36%, BAI Connect about 2.6%. BroadbandNow also names Echo Park among the best-covered AT&T Fiber areas in LA.",
    "groceries": "Trader Joe's Silver Lake (2738 Hyperion Ave) is about 2 mi away. Whole Foods operates a Silver Lake store (address unverified). Local supermarkets and markets along Sunset/Alvarado; specific names unverified."
+  },
+  "extras": {
+   "median_1br_rent": 2345,
+   "rent_source": "RentHop Greater Echo Park Elysian, Jul 2026 (Zumper Jul 2026: $2,327)",
+   "rent_trend": "-2% YoY (RentHop Jul 2026); flat (Zumper Jul 2026)",
+   "summer_high_f": null,
+   "marine_layer": "some: a little more inland heat than the Westside",
+   "fire_hazard": "CAL FIRE FHSZ: Very High on hillside streets near Elysian Park; flats below Sunset none (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "flood_zone": null,
+   "airport_noise": "none notable for LAX; helicopters around Dodger Stadium and police activity",
+   "parks": [
+    "Echo Park Lake",
+    "Elysian Park"
+   ],
+   "farmers_markets": [
+    "Friday Echo Park Farmers Market (verify)"
+   ],
+   "fiber": "AT&T Fiber widely available in central LA multifamily; Frontier Fiber in some pockets; Google Fiber not in LA (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "vibe": "Hilly and creative, with lots of indie coffee. Quiet hillside side streets sit a short walk from Sunset Blvd bars."
   }
  },
  {
@@ -682,6 +798,23 @@
    "packages": "These are dense areas of older rent-stabilized apartment buildings, many with unsecured lobby or hallway drop-off. Tripalink (Feb 2026) notes older buildings in this part of LA often lack lockers, staff or cameras. GNS Guard (Apr 2026, citing Crosstown LA analysis) names Westlake, with Koreatown and Downtown, as consistently ranking highest for LA package-theft reports. This is the highest-risk profile on the list for frequent Amazon deliveries: prioritize a building with lockers or use an Amazon Locker or Counter (specific nearby sites unverified).",
    "internet": "Varies. Historic Filipinotown: AT&T Fiber and EarthLink about 74.7%, Spectrum fiber about 36.7%. Westlake: Spectrum fiber about 54.4%, AT&T and EarthLink about 34.6%, BAI Connect about 4.9% (FCC BDC Dec 2025 via BestNeighborhood).",
    "groceries": "Korean supermarkets on the Koreatown edge: Zion Market (888 S Vermont Ave) and Galleria Market (440 S Vermont Ave). No Trader Joe's or Whole Foods; the nearest Trader Joe's are Silver Lake (2738 Hyperion Ave) and 263 S La Brea Ave."
+  },
+  "extras": {
+   "median_1br_rent": 1234,
+   "rent_source": "RentHop Westlake, Jun 2026 (Zumper Jun 2026: ~$950). Both figures look skewed by older rent-stabilized stock; newer HiFi buildings run much higher",
+   "rent_trend": "-28% YoY (RentHop Jun 2026; likely noisy)",
+   "summer_high_f": null,
+   "marine_layer": "some",
+   "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "flood_zone": null,
+   "airport_noise": "none notable for LAX; frequent helicopters",
+   "parks": [
+    "MacArthur Park",
+    "Lafayette Park"
+   ],
+   "farmers_markets": [],
+   "fiber": "AT&T Fiber widely available in central LA multifamily; Frontier Fiber in some pockets; Google Fiber not in LA (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "vibe": "Central and cheap with close access to the 101/110, but it has some of the highest crime and helicopter activity on this list. HiFi side streets are calmer than Westlake."
   }
  },
  {
@@ -777,6 +910,25 @@
    "packages": "Housing is mostly small multifamily, courtyard buildings, duplexes and hillside homes, which often have porches or open entries and no package rooms. Porch-style theft risk depends heavily on the building. No neighborhood-specific package-theft statistic was found. The LA metro ranks 7th-worst nationally (SafeWise 2025). Consider Amazon Locker or Counter pickup (specific sites unverified; Whole Foods Silver Lake is a likely host, also unverified).",
    "internet": "Best on the list. FCC BDC (Dec 2025) via BestNeighborhood: AT&T Fiber and EarthLink about 87.2%, Spectrum fiber about 37%. BroadbandNow also names Silver Lake among LA's best-served AT&T Fiber areas.",
    "groceries": "Trader Joe's Silver Lake (2738 Hyperion Ave); Whole Foods Silver Lake (confirmed to exist by The Eastsider; address unverified). Gelson's and smaller markets also present (unverified)."
+  },
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "No current Silver Lake 1BR median found; RentHop Nov 2024 was $2,600 and Farerent lists ~$2,100 (2026, undated)",
+   "rent_trend": "RentHop Nov 2024: about -10% YoY (old)",
+   "summer_high_f": null,
+   "marine_layer": "some: warmer than the Westside",
+   "fire_hazard": "CAL FIRE FHSZ: Very High on many hillside streets; flats near Sunset none (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "flood_zone": null,
+   "airport_noise": "none notable for LAX; occasional helicopters",
+   "parks": [
+    "Silver Lake Reservoir & Meadow",
+    "Sunset Junction / Bellevue Rec (nearby Echo Park)"
+   ],
+   "farmers_markets": [
+    "Saturday & Tuesday Silver Lake Farmers Market (verify)"
+   ],
+   "fiber": "AT&T Fiber widely available in central LA multifamily; Frontier Fiber in some pockets; Google Fiber not in LA (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "vibe": "Top-tier coffee (Intelligentsia, Maru and others) and quiet residential hills. Sunset Junction can be busy."
   }
  },
  {
@@ -876,6 +1028,25 @@
    "packages": "This is one of LA's densest neighborhoods (over 46,000 people per sq mi). Tripalink (Feb 2026, a landlord marketing blog) says older rent-controlled buildings commonly use unsecured lobby or hallway drop-off without lockers or cameras, while newer and renovated buildings use Luxer One or Amazon Hub lockers. GNS Guard (Apr 2026, citing Crosstown) names Koreatown, with Downtown and Westlake, as consistently ranking highest for LA package-theft reports. Strongly prefer a building with lockers; Amazon Locker or Counter sites exist citywide (572 in LA) but specific Koreatown sites are unverified.",
    "internet": "Weaker fiber than expected. FCC data via BestNeighborhood/ISPReports (data as of Dec 2024/Jun 2025): AT&T Fiber and EarthLink about 25.8%, Spectrum fiber about 8.8%, BAI Connect about 8.7%. Spectrum cable is about 98.4% and T-Mobile Home Internet 99.3%. Starry fixed wireless reaches about 96%, unusually high and often wired into large buildings. Mid-Wilshire just west shows AT&T fiber about 47.5%…",
    "groceries": "H Mart Madang (621 S Western Ave); Zion Market (888 S Vermont Ave); Galleria Market (3250 W Olympic Blvd and 440 S Vermont Ave); California Market (450 S Western Ave); Hannam Chain (2740 W Olympic Blvd). No Trader Joe's in Koreatown; the nearest is 263 S La Brea Ave (about 2.5 mi)."
+  },
+  "extras": {
+   "median_1br_rent": 1865,
+   "rent_source": "Zumper Wilshire Center-Koreatown, Aug 2026 (search snippet); Lucid Rents 90020 median $1,995 (Mar 2026)",
+   "rent_trend": "RentHop Jul 2024: +24% YoY (old); no 2026 YoY found",
+   "summer_high_f": null,
+   "marine_layer": "some",
+   "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "flood_zone": null,
+   "airport_noise": "none notable for LAX; frequent LAPD helicopters",
+   "parks": [
+    "Shatto Recreation Center",
+    "Lafayette Park (nearby)"
+   ],
+   "farmers_markets": [
+    "Koreatown farmers market (verify)"
+   ],
+   "fiber": "AT&T Fiber widely available in central LA multifamily; Frontier Fiber in some pockets; Google Fiber not in LA (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "vibe": "Very dense and lively with 24-hour food and many cafes. Side streets are noisy, but the Metro D Line and good value make up for it."
   }
  },
  {
@@ -970,6 +1141,26 @@
    "packages": "The area mixes 1920s-1960s courtyard and dingbat apartments, which often have open entries and no package rooms, with newer large complexes along Wilshire and La Brea that typically have lockers. No neighborhood-specific package-theft data was found. The LAPD Wilshire Area shows property crime down about 18% YTD 2026, the best trend on this list. Specific Amazon Locker or Counter sites are unverified.",
    "internet": "Good. FCC BDC (Dec 2025) via BestNeighborhood: Mid City AT&T Fiber and EarthLink about 65.2%, Spectrum fiber about 33.6%, BAI Connect about 1.5%. Mid-Wilshire (Miracle Mile side): AT&T about 47.5%, Spectrum fiber about 33.6%, ConnectTo about 5.3%. BroadbandNow lists Mid-City among strong AT&T Fiber areas.",
    "groceries": "Trader Joe's (263 S La Brea Ave) and Trader Joe's 3rd & Fairfax (175 S Fairfax Ave); Whole Foods and Ralphs on 3rd St and La Brea (addresses unverified); The Original Farmers Market at 3rd & Fairfax."
+  },
+  "extras": {
+   "median_1br_rent": 2551,
+   "rent_source": "Apartments.com Miracle Mile, Jul 2026 (search snippet)",
+   "rent_trend": "-1.2% YoY (Apartments.com Jul 2026)",
+   "summer_high_f": null,
+   "marine_layer": "some",
+   "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "flood_zone": null,
+   "airport_noise": "none notable",
+   "parks": [
+    "Pan Pacific Park",
+    "Hancock Park / La Brea Tar Pits"
+   ],
+   "farmers_markets": [
+    "Sunday Original Farmers Market area / The Grove (verify)",
+    "Mid-City markets (verify)"
+   ],
+   "fiber": "AT&T Fiber widely available in central LA multifamily; Frontier Fiber in some pockets; Google Fiber not in LA (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "vibe": "Leafy grid streets near LACMA with decent coffee. Calm off Wilshire, but the D Line construction and I-10 access are mixed."
   }
  },
  {
@@ -1067,6 +1258,26 @@
    "packages": "Hollywood has many large new mid- and high-rise complexes along Sunset, Hollywood and Vine (usually with lockers or package rooms) mixed with older courtyard buildings. Mail and package thefts at apartment buildings are regularly reported in Hollywood and West Hollywood (for example, an ABC7 report of a mail thief caught on video at a West Hollywood building). In the LAPD Hollywood Area, larceny/theft is up 9.2% YTD 2026 (1,629 vs 1,492), the clearest local theft signal on this list. Prefer a building with lockers; Amazon Locker or Counter sites are unverified.",
    "internet": "Mixed. FCC BDC (Dec 2025) via BestNeighborhood: Spectrum fiber about 57.6%, AT&T Fiber and EarthLink about 35%, ConnectTo about 9.1%, BAI Connect about 6.6%, Starry about 1.2%. Many newer towers have Spectrum fiber; verify by address.",
    "groceries": "Trader Joe's Hollywood (1600 N Vine St); Whole Foods coming to the 5420 Sunset Blvd project at Sunset and Western (expected 2026 per The Eastsider, July 2025; current status unverified). Ralphs and Target in Hollywood (addresses unverified)."
+  },
+  "extras": {
+   "median_1br_rent": 2195,
+   "rent_source": "RentHop Central Hollywood, Jul 2026; Zumper Hollywood Studio District ~$2,022 (mid-2026); RentHop 'Hollywood United' $3,500 is an outlier",
+   "rent_trend": "-7% YoY (RentHop Central Hollywood Jul 2026)",
+   "summer_high_f": null,
+   "marine_layer": "some",
+   "fire_hazard": "CAL FIRE FHSZ: flats none; hillside streets north of Franklin Very High (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "flood_zone": null,
+   "airport_noise": "none notable for LAX; heavy helicopter traffic (police, tours, news)",
+   "parks": [
+    "Runyon Canyon",
+    "Griffith Park (nearby)",
+    "Barnsdall Art Park"
+   ],
+   "farmers_markets": [
+    "Sunday Hollywood Farmers Market (Ivar/Selma) (verify)"
+   ],
+   "fiber": "AT&T Fiber widely available in central LA multifamily; Frontier Fiber in some pockets; Google Fiber not in LA (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "vibe": "Central, with good freeway (101) access and lots of coffee, but tourist and nightlife zones are loud. Look for quiet streets east of Vine or near Franklin."
   }
  },
  {
@@ -1165,6 +1376,27 @@
    "packages": "Regional context: SafeWise ranks the LA metro #7 for package theft in 2025, and Crosstown found about 31.5% of LAPD-reported package thefts happen in apartment and condo buildings, often in mailrooms, with a December spike. In December 2025, Culver City police arrested a man with multiple stolen packages addressed to Culver City residents (CBS LA). Newer Culver City mid-rises commonly have package lockers, while older Palms dingbats often have open mailrooms or gates, so ask. LockerMap counts 572 Amazon Lockers and Counters in the city of LA, so pickup points are plentiful. The nearby Ladera…",
    "internet": "Culver City (BroadbandMap estimates; verify by address): AT&T Fiber (up to 5 Gbps) covers about 88%, Frontier Fiber (up to 7 Gbps) about 46%, and Ting fiber is listed at 100% (verify). Spectrum offers up to 1 Gbps, and Starry, Verizon 5G Home and T-Mobile 5G Home are listed at 100%. For Palms (LA city), citywide AT&T Fiber coverage is about 79% and Frontier about 22%; no Palms-specific data was f…",
    "groceries": "Trader Joe's: 9290 Culver Blvd (downtown Culver), 10850 National Blvd and 3456 S Sepulveda Blvd (Palms area), 6150 Slauson Ave. Ralphs: Westside Walk at 3827 Culver Center, and Raintree Plaza at 10772 Jefferson Blvd."
+  },
+  "extras": {
+   "median_1br_rent": 2700,
+   "rent_source": "RentHop Culver City, Jul 2026 (search snippet); Palms RentHop Jul 2026 shows $3,595 (+39% YoY), likely skewed by new luxury buildings",
+   "rent_trend": "Culver City estimates run $2,600-$2,850 across sources (Jun-Sep 2026); no clean YoY",
+   "summer_high_f": null,
+   "marine_layer": "strong-to-some: often cooler than central LA thanks to the ocean breeze",
+   "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "flood_zone": null,
+   "airport_noise": "none notable; Santa Monica Airport (SMO) light aircraft near west Palms",
+   "parks": [
+    "Culver City Park / Baldwin Hills Scenic Overlook",
+    "Veterans Memorial Park",
+    "Media Park"
+   ],
+   "farmers_markets": [
+    "Tuesday Culver City Farmers Market (verify)",
+    "Palms farmers market (verify)"
+   ],
+   "fiber": "AT&T Fiber widely available in central LA multifamily; Frontier Fiber in some pockets; Google Fiber not in LA (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "vibe": "A walkable downtown Culver City with excellent coffee and the E Line, but the I-10/I-405 interchange is among the worst in LA."
   }
  },
  {
@@ -1250,7 +1482,27 @@
   ],
   "id": "westchester",
   "name": "Westchester",
-  "region": "Los Angeles"
+  "region": "Los Angeles",
+  "extras": {
+   "median_1br_rent": 2750,
+   "rent_source": "Zumper Westchester-Playa del Rey, Aug 2026 (search snippet); RentHop ~$2,844 (undated); Apartments.com ~$2,377",
+   "rent_trend": "+7% YoY (Apartments.com snapshot, 2026)",
+   "summer_high_f": null,
+   "marine_layer": "strong: coastal fog and cool summers",
+   "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "flood_zone": null,
+   "airport_noise": "SIGNIFICANT: directly beside LAX; jet noise varies by street (north of Manchester under the departure/arrival paths)",
+   "parks": [
+    "Westchester Park",
+    "Kenneth Hahn (drive)",
+    "Ballona Discovery Park / Dockweiler Beach"
+   ],
+   "farmers_markets": [
+    "Wednesday Westchester Farmers Market (Loyola Village) (verify)"
+   ],
+   "fiber": "AT&T Fiber widely available in central LA multifamily; Frontier Fiber in some pockets; Google Fiber not in LA (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "vibe": "A quiet suburban grid near LMU with a few cafes on Manchester/Sepulveda. LAX is under 10 minutes away, but some streets get jet noise."
+  }
  },
  {
   "neighborhood": "Long Beach – Downtown / East Village",
@@ -1353,6 +1605,26 @@
    "packages": "Regional context: SafeWise's 2025 report ranks the LA metro #7 nationally for package theft and California #1 by value lost. Crosstown's analysis of LAPD reports found about 31.5% of reported package thefts happen at apartments and condos, often in mailrooms, with a sharp spike in December. In January 2026, Amazon announced the closure of both Long Beach Amazon Fresh stores (Spring St and Palo Verde Ave), removing two in-store return and pickup options. Some sites may convert to Whole Foods. Downtown's newer mid- and high-rise rentals often include smart package lockers; for example, 555 Pine…",
    "internet": "BroadbandMap's census-block estimates for the city of Long Beach (may be optimistic; verify by address): Frontier Fiber (up to 7 Gbps symmetric) covers about 99%, while AT&T Fiber covers only about 19%. Spectrum cable/fiber offers up to 1 Gbps and covers about 99%. Verizon 5G Home covers about 99%, T-Mobile 5G Home about 100%, and Starry about 45%. Frontier Fiber is the default gig option in most…",
    "groceries": "Vons, 600 E Broadway (the main full-size downtown grocery). Ralphs, 2930 E 4th St, is about 1.5–2 mi east. The nearest Trader Joe's is 4210 Long Beach Blvd (Bixby Knolls). The Amazon Fresh stores were announced for closure in 2026."
+  },
+  "extras": {
+   "median_1br_rent": 2495,
+   "rent_source": "RentHop Downtown Long Beach, Jun 2026 (search snippet); Long Beach citywide median $1,850 (PadMapper Jul 2026)",
+   "rent_trend": "+22% YoY (RentHop Jun 2026, $2,045 -> $2,495; likely mix-shift to new towers)",
+   "summer_high_f": null,
+   "marine_layer": "some-to-strong: harbor breeze keeps it mild",
+   "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "flood_zone": "Low-lying blocks near the shoreline and LA River mouth may be in a FEMA zone; check FIRM (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "airport_noise": "LGB is about 15 min north; little jet noise downtown, some helicopters and Queen Mary/harbor activity",
+   "parks": [
+    "Bluff Park (nearby)",
+    "Shoreline Aquatic Park",
+    "Lincoln Park"
+   ],
+   "farmers_markets": [
+    "Friday Downtown Long Beach Farmers Market (Promenade) (verify)"
+   ],
+   "fiber": "AT&T Fiber available in parts of Long Beach; Frontier in some areas; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "vibe": "Urban and walkable with good East Village coffee (Recreational, Black Ring and others) and the A Line. It has some street disorder; nightlife is on Pine."
   }
  },
  {
@@ -1451,6 +1723,25 @@
    "packages": "Regional context: SafeWise's 2025 report ranks the LA metro #7 nationally for package theft and California #1 by value lost. Crosstown's analysis of LAPD reports found about 31.5% of reported package thefts happen at apartments and condos, often in mailrooms, with a sharp spike in December. In January 2026, Amazon announced the closure of both Long Beach Amazon Fresh stores (Spring St and Palo Verde Ave), removing two in-store return and pickup options. Some sites may convert to Whole Foods. Alamitos Beach is mostly older courtyard buildings and walk-ups, with some newer Ocean Blvd towers. Ol…",
    "internet": "BroadbandMap's census-block estimates for the city of Long Beach (may be optimistic; verify by address): Frontier Fiber (up to 7 Gbps symmetric) covers about 99%, while AT&T Fiber covers only about 19%. Spectrum cable/fiber offers up to 1 Gbps and covers about 99%. Verizon 5G Home covers about 99%, T-Mobile 5G Home about 100%, and Starry about 45%. Frontier Fiber is the default gig option in most…",
    "groceries": "Vons, 600 E Broadway (west edge), and Ralphs, 2930 E 4th St (east edge). The nearest Trader Joe's is 2222 Bellflower Blvd or 4210 Long Beach Blvd."
+  },
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "No neighborhood figure found (search budget exhausted). Downtown LB is $2,495 (RentHop Jun 2026) and citywide 1BR is $1,850 (PadMapper Jul 2026)",
+   "rent_trend": null,
+   "summer_high_f": null,
+   "marine_layer": "strong: beachfront fog and breeze",
+   "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "flood_zone": "Beach-level lots may be in a FEMA coastal zone; the bluff-top blocks are higher (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "airport_noise": "none notable (LGB ~15 min)",
+   "parks": [
+    "Bluff Park",
+    "Alamitos Beach / beach bike path"
+   ],
+   "farmers_markets": [
+    "Friday Downtown LB market (nearby) (verify)"
+   ],
+   "fiber": "AT&T Fiber available in parts of Long Beach; Frontier in some areas; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "vibe": "Dense, older walk-ups between downtown and the beach, with coffee on 4th St Retro Row and Broadway. Parking is very hard."
   }
  },
  {
@@ -1553,6 +1844,26 @@
    "packages": "Regional context: SafeWise's 2025 report ranks the LA metro #7 nationally for package theft and California #1 by value lost. Crosstown's analysis of LAPD reports found about 31.5% of reported package thefts happen at apartments and condos, often in mailrooms, with a sharp spike in December. In January 2026, Amazon announced the closure of both Long Beach Amazon Fresh stores (Spring St and Palo Verde Ave), removing two in-store return and pickup options. Some sites may convert to Whole Foods. Housing here is mostly older duplexes, fourplexes and small courtyard buildings with porch or gate dro…",
    "internet": "BroadbandMap's census-block estimates for the city of Long Beach (may be optimistic; verify by address): Frontier Fiber (up to 7 Gbps symmetric) covers about 99%, while AT&T Fiber covers only about 19%. Spectrum cable/fiber offers up to 1 Gbps and covers about 99%. Verizon 5G Home covers about 99%, T-Mobile 5G Home about 100%, and Starry about 45%. Frontier Fiber is the default gig option in most…",
    "groceries": "Ralphs, 2930 E 4th St (4th & Orizaba, west of Belmont Heights); Ralphs Marina Shopping Center, 6290 E PCH; Whole Foods, 6400 E PCH (2nd & PCH); Trader Joe's, 6451 E PCH"
+  },
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "No 1BR figure found; Redfin all-units median for Belmont Heights was $2,695 (Sep 2025, bedroom count unknown)",
+   "rent_trend": null,
+   "summer_high_f": null,
+   "marine_layer": "strong",
+   "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "flood_zone": "Belmont Shore/Naples are low-lying and partly in FEMA AE/VE zones; Belmont Heights is higher (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "airport_noise": "none notable (LGB ~10 min)",
+   "parks": [
+    "Marine Stadium / Colorado Lagoon",
+    "Bixby Park",
+    "Belmont Shore beach"
+   ],
+   "farmers_markets": [
+    "Sunday Southeast LB / Alamitos Bay Marina Farmers Market (verify)"
+   ],
+   "fiber": "AT&T Fiber available in parts of Long Beach; Frontier in some areas; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "vibe": "Beach-town feel. Belmont Shore's 2nd St is lively with bars, while Belmont Heights is quieter and leafier with good coffee nearby."
   }
  },
  {
@@ -1649,6 +1960,26 @@
    "packages": "Regional context: SafeWise's 2025 report ranks the LA metro #7 nationally for package theft and California #1 by value lost. Crosstown's analysis of LAPD reports found about 31.5% of reported package thefts happen at apartments and condos, often in mailrooms, with a sharp spike in December. In January 2026, Amazon announced the closure of both Long Beach Amazon Fresh stores (Spring St and Palo Verde Ave), removing two in-store return and pickup options. Some sites may convert to Whole Foods. The area is mostly single-family homes, duplexes and small to mid-size apartment buildings, with porch…",
    "internet": "BroadbandMap's census-block estimates for the city of Long Beach (may be optimistic; verify by address): Frontier Fiber (up to 7 Gbps symmetric) covers about 99%, while AT&T Fiber covers only about 19%. Spectrum cable/fiber offers up to 1 Gbps and covers about 99%. Verizon 5G Home covers about 99%, T-Mobile 5G Home about 100%, and Starry about 45%. Frontier Fiber is the default gig option in most…",
    "groceries": "Trader Joe's, 4210 Long Beach Blvd; Ralphs Cherry Carson, 2250 E Carson St. Aldi and Smart & Final are nearby per LB Post (addresses unverified). The Bixby Knolls Vons at 4550 Atlantic Ave closed in Feb 2025."
+  },
+  "extras": {
+   "median_1br_rent": 2329,
+   "rent_source": "ApartmentIQ/Rentable listing-based Bixby Knolls 1BR asking (undated, search snippet); Redfin all-units median for Cal Heights/Bixby Knolls/Los Cerritos was $2,125 (Sep 2025)",
+   "rent_trend": null,
+   "summer_high_f": null,
+   "marine_layer": "some: warmer than the shore",
+   "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "flood_zone": null,
+   "airport_noise": "NOTABLE for parts: under the LGB approach/departure paths; the city enforces noise rules, but Cal Heights hears jets",
+   "parks": [
+    "Los Cerritos Park",
+    "Scherer Park",
+    "Virginia Country Club area (private)"
+   ],
+   "farmers_markets": [
+    "Sunday Bixby Knolls / Uptown farmers market (verify)"
+   ],
+   "fiber": "AT&T Fiber available in parts of Long Beach; Frontier in some areas; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "vibe": "Quiet, leafy streets of 1920s houses with a few cafes on Atlantic Ave. Very calm, with easy 405/710 access."
   }
  },
  {
@@ -1750,6 +2081,27 @@
    "packages": "Downtown Fullerton has a mix of newer mixed-use apartments and older small buildings. An Amazon Hub Locker ('Vega') is listed at 800 N State College Blvd (Waze), near CSUF, about 2 mi away. Fullerton larceny-theft fell from 2,051 (2024) to 1,837 (2025), and residential burglary fell from 177 to 141. (Plus the general OC context in shared_context.package_security_general.)",
    "internet": "Unusually competitive: AT&T Fiber ~83%, GigabitNow fiber ~72% (up to 5 Gbps symmetrical), Spectrum fiber ~59%, Ting fiber ~53%, and Spectrum cable 100%. 5G Home from Verizon and T-Mobile ~100% (FCC BDC Dec 2025).",
    "groceries": "Specific walkable grocery stores were not verified in sources."
+  },
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "No current rent figure retrieved for this city (search budget exhausted; page fetches blocked)",
+   "rent_trend": null,
+   "summer_high_f": null,
+   "marine_layer": "little: inland north OC, hot summers",
+   "fire_hazard": "CAL FIRE FHSZ: none downtown; the Coyote Hills / north Fullerton hills have Very High areas (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "flood_zone": null,
+   "airport_noise": "Fullerton Municipal Airport (small GA) to the west; otherwise none notable",
+   "parks": [
+    "Hillcrest Park",
+    "Fullerton Arboretum",
+    "Laguna Lake Park"
+   ],
+   "farmers_markets": [
+    "Thursday Downtown Fullerton market (verify)",
+    "CSUF/Arboretum market (verify)"
+   ],
+   "fiber": "AT&T Fiber and Frontier Fiber (ex-Verizon FiOS) present in much of OC; Cox/Spectrum cable everywhere; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "vibe": "College-town downtown with Metrolink and some good coffee. Bars on Harbor Blvd are loud on weekends, but nearby residential streets are calm."
   }
  },
  {
@@ -1848,6 +2200,26 @@
    "packages": "Platinum Triangle housing is dominated by large, newer mid-rise apartment complexes, which are the most likely to have lockers. An Amazon Locker was confirmed at 1201 E Santa Ana St, Anaheim (MapQuest), near the Packing District. Anaheim larceny-theft fell from 4,850 (2024) to 4,193 (2025). (Plus the general OC context in shared_context.package_security_general.)",
    "internet": "AT&T Fiber ~87% coverage (up to 5 Gbps), Spectrum cable 100%, Spectrum fiber ~69%. GigabitNow fiber ~5%. Verizon and T-Mobile 5G Home ~100% (FCC BDC Dec 2025).",
    "groceries": "Specific grocery stores were not verified in sources. The Packing House and Packing District have food halls; nearby supermarkets are unverified."
+  },
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "No current rent figure retrieved for this city (search budget exhausted; page fetches blocked)",
+   "rent_trend": null,
+   "summer_high_f": null,
+   "marine_layer": "little: inland",
+   "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "flood_zone": "Near the Santa Ana River; check the FEMA FIRM (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "airport_noise": "none notable; game/concert traffic at Angel Stadium and Honda Center",
+   "parks": [
+    "Pearson Park (Packing District)",
+    "Santa Ana River Trail",
+    "Anaheim Coves"
+   ],
+   "farmers_markets": [
+    "Thursday Downtown Anaheim market (verify)"
+   ],
+   "fiber": "AT&T Fiber and Frontier Fiber (ex-Verizon FiOS) present in much of OC; Cox/Spectrum cable everywhere; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "vibe": "New apartment towers by the 57/5/22 near the stadiums. Good freeway access and the Packing House food hall, but thin walkable coffee."
   }
  },
  {
@@ -1943,6 +2315,26 @@
    "packages": "Garden Grove housing is largely older garden-style complexes and single-family homes, so lockers are less common outside newer projects (e.g., the Harbor Blvd hotel/resort corridor). Garden Grove larceny-theft fell from 1,974 (2024) to 1,121 (2025), though residential burglary was flat (126 to 132). No specific Amazon Locker address was verified. (Plus the general OC context in shared_context.package_security_general.)",
    "internet": "AT&T Fiber ~88% (up to 5 Gbps), Frontier fiber ~21% (up to 7 Gbps symmetrical), Spectrum fiber ~67%, Spectrum cable 100%. Verizon and T-Mobile 5G Home ~100% (FCC BDC Dec 2025).",
    "groceries": "Specific walkable grocery stores were not verified in sources. The city has many Vietnamese and Korean markets along Garden Grove Blvd and Brookhurst."
+  },
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "No current rent figure retrieved for this city (search budget exhausted; page fetches blocked)",
+   "rent_trend": null,
+   "summer_high_f": null,
+   "marine_layer": "some: mild central OC",
+   "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "flood_zone": null,
+   "airport_noise": "none notable",
+   "parks": [
+    "Garden Grove Park",
+    "Village Green Park",
+    "Atlantis Play Center"
+   ],
+   "farmers_markets": [
+    "Main Street Garden Grove market (verify)"
+   ],
+   "fiber": "AT&T Fiber and Frontier Fiber (ex-Verizon FiOS) present in much of OC; Cox/Spectrum cable everywhere; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "vibe": "Suburban and quiet with Little Saigon food and boba nearby. Few specialty cafes are walkable; you drive almost everywhere."
   }
  },
  {
@@ -2039,6 +2431,26 @@
    "packages": "Downtown housing is a mix of older walk-ups and lofts (fewer lockers) and newer mid-rise rentals (more likely to have lockers). Santa Ana residential burglaries fell from 188 (2024) to 145 (2025), and larceny-theft fell from 3,601 to 2,763 (CA DOJ). No specific Amazon Locker address in DTSA was verified; use Amazon's locker finder. (Plus the general OC context in shared_context.package_security_general.)",
    "internet": "Strong. AT&T Fiber (up to 5 Gbps symmetrical) covers ~96% of Santa Ana; Spectrum cable covers 100% (up to 1 Gbps) and Spectrum fiber ~75%. Verizon 5G Home and T-Mobile 5G Home cover ~100% (FCC BDC Dec 2025 via BroadbandMap.com). Verify at the exact unit address.",
    "groceries": "Northgate González Market at 1010 S Main St (~1 mi). Northgate closed its 409 E 4th St store in Nov 2022 when the larger Westminster Ave store opened, so downtown has no full-size supermarket in the core. 4th Street Market food hall (East End). Others unverified."
+  },
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "No current rent figure retrieved for this city (search budget exhausted; page fetches blocked)",
+   "rent_trend": null,
+   "summer_high_f": null,
+   "marine_layer": "some",
+   "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "flood_zone": null,
+   "airport_noise": "none notable (SNA ~15 min; departures route over Newport Bay, not DTSA)",
+   "parks": [
+    "Santiago Park",
+    "Jerome Park",
+    "Prentice Park (zoo)"
+   ],
+   "farmers_markets": [
+    "Saturday DTSA farmers market (verify)"
+   ],
+   "fiber": "AT&T Fiber and Frontier Fiber (ex-Verizon FiOS) present in much of OC; Cox/Spectrum cable everywhere; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "vibe": "The most urban OC option, with an Artists Village coffee scene and the OC Streetcar arriving. Fourth St is lively, with some street disorder."
   }
  },
  {
@@ -2133,6 +2545,25 @@
    "packages": "Housing here is mostly large, newer managed apartment communities, which are the type most likely to have package lockers or rooms. Amazon Locker locations were confirmed nearby at 2683 Harbor Blvd and 2300 Harbor Blvd in Costa Mesa (MapQuest/Waze listings). (Plus the general OC context in shared_context.package_security_general.)",
    "internet": "AT&T Fiber ~96% citywide in Santa Ana, plus Spectrum cable (100%) and Spectrum fiber (~75%). The Costa Mesa side has similar AT&T Fiber (~96%). 5G home internet from Verizon and T-Mobile covers ~100% (FCC BDC Dec 2025).",
    "groceries": "Specific walkable grocery stores were not verified in sources. South Coast Plaza and nearby centers are mostly retail and dining."
+  },
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "No current rent figure retrieved for this city (search budget exhausted; page fetches blocked)",
+   "rent_trend": null,
+   "summer_high_f": null,
+   "marine_layer": "some",
+   "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "flood_zone": null,
+   "airport_noise": "NOTABLE nearby: close to SNA, though departure noise is mostly over Newport Bay; some approach noise north of the airport",
+   "parks": [
+    "Segerstrom Center plaza",
+    "Mesa Verde parks (drive)"
+   ],
+   "farmers_markets": [
+    "South Coast Plaza area markets (verify)"
+   ],
+   "fiber": "AT&T Fiber and Frontier Fiber (ex-Verizon FiOS) present in much of OC; Cox/Spectrum cable everywhere; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "vibe": "Office/retail district near South Coast Plaza and the 405/55, quiet at night. Coffee is mostly drive-to."
   }
  },
  {
@@ -2231,6 +2662,26 @@
    "packages": "Old Towne's historic district is mostly older small multifamily buildings and houses, which rarely have lockers. Newer complexes are toward The Outlets at Orange and The Block area. No Old Towne Amazon Locker address was verified. Orange larceny-theft fell from 970 (2024) to 582 (2025), and residential burglary was flat (85 to 86). (Plus the general OC context in shared_context.package_security_general.)",
    "internet": "AT&T Fiber ~81% (up to 5 Gbps), Spectrum cable 100%, Spectrum fiber ~69%. Verizon and T-Mobile 5G Home ~100% (FCC BDC Dec 2025).",
    "groceries": "Specific walkable grocery stores were not verified in sources."
+  },
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "No current rent figure retrieved for this city (search budget exhausted; page fetches blocked)",
+   "rent_trend": null,
+   "summer_high_f": null,
+   "marine_layer": "little-to-some",
+   "fire_hazard": "CAL FIRE FHSZ: none in Old Towne; the eastern Orange hills (Orange Park Acres / Santiago Canyon) are Very High (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "flood_zone": null,
+   "airport_noise": "none notable",
+   "parks": [
+    "Hart Park",
+    "Grijalva Park",
+    "Santiago Creek trail"
+   ],
+   "farmers_markets": [
+    "Saturday Old Towne Orange / Chapman market (verify)"
+   ],
+   "fiber": "AT&T Fiber and Frontier Fiber (ex-Verizon FiOS) present in much of OC; Cox/Spectrum cable everywhere; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "vibe": "Historic plaza with craftsman houses, several good cafes and antique shops. Quiet and small-town, with Chapman University students nearby."
   }
  },
  {
@@ -2328,6 +2779,26 @@
    "packages": "Tustin Legacy is mostly new master-planned apartments and townhomes built in the last ~15 years, the stock most likely to have lockers or package rooms. Old Town Tustin is older and smaller-scale. Tustin residential burglaries were low (44 in 2025), and larceny-theft fell from 1,317 to 1,223. No specific Amazon Locker address was verified. (Plus the general OC context in shared_context.package_security_general.)",
    "internet": "Strong multi-provider fiber: AT&T Fiber ~72%, Spectrum fiber ~53%, Spectrum (former Cox) fiber up to 2 Gbps symmetrical ~25%, and Google Fiber ~25%. Cable from Spectrum and former Cox. Verizon and T-Mobile 5G Home ~100% (FCC BDC Dec 2025). Tustin Legacy is the part most likely to have the newer fiber builds; verify by address.",
    "groceries": "Stater Bros. and CVS Pharmacy at The Village at Tustin Legacy (Wikipedia). Other stores are unverified."
+  },
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "No current rent figure retrieved for this city (search budget exhausted; page fetches blocked)",
+   "rent_trend": null,
+   "summer_high_f": null,
+   "marine_layer": "some",
+   "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "flood_zone": null,
+   "airport_noise": "none notable (SNA ~10-15 min; occasional helicopters)",
+   "parks": [
+    "Peppertree Park",
+    "Tustin Legacy Park / Veterans Sports Park",
+    "Columbus Square"
+   ],
+   "farmers_markets": [
+    "Wednesday Old Town Tustin market (verify)"
+   ],
+   "fiber": "AT&T Fiber and Frontier Fiber (ex-Verizon FiOS) present in much of OC; Cox/Spectrum cable everywhere; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "vibe": "Newer master-planned Legacy plus a quaint Old Town with a few cafes. Quiet, with fast 5/55/261 access."
   }
  },
  {
@@ -2425,6 +2896,27 @@
    "packages": "Costa Mesa is a mix of older small apartment buildings on the Westside and Eastside and large newer complexes near South Coast Metro and SoBeCa. Amazon Lockers were confirmed at 2683 Harbor Blvd and 2300 Harbor Blvd (MapQuest/Waze). Costa Mesa larceny-theft fell from 2,340 (2024) to 1,711 (2025), and residential burglary fell from 124 to 96. (Plus the general OC context in shared_context.package_security_general.)",
    "internet": "AT&T Fiber ~96% (up to 5 Gbps), Spectrum cable 100%, Spectrum fiber ~82%, Frontier fiber ~3%. Verizon and T-Mobile 5G Home ~100% (FCC BDC Dec 2025).",
    "groceries": "Specific walkable grocery stores were not verified in sources."
+  },
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "No current rent figure retrieved for this city (search budget exhausted; page fetches blocked)",
+   "rent_trend": null,
+   "summer_high_f": null,
+   "marine_layer": "strong-to-some: ocean breeze, mild summers",
+   "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "flood_zone": null,
+   "airport_noise": "NOTABLE in the eastside/near-airport pockets: SNA departures cross Newport Bay; Mesa Verde and the eastside mostly hear only distant noise",
+   "parks": [
+    "Fairview Park",
+    "TeWinkle Park",
+    "Talbert Regional Park"
+   ],
+   "farmers_markets": [
+    "Thursday OC Fair farmers market (verify)",
+    "The Lab/The Camp events (verify)"
+   ],
+   "fiber": "AT&T Fiber and Frontier Fiber (ex-Verizon FiOS) present in much of OC; Cox/Spectrum cable everywhere; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "vibe": "A strong coffee and food scene (The Camp, The Lab, Mesa) near the 405/55 and near the beach. Quieter streets are on the eastside and Mesa Verde."
   }
  },
  {
@@ -2521,6 +3013,27 @@
    "packages": "Spectrum and IBC housing is overwhelmingly large, newer, professionally managed complexes, which commonly have package lockers or rooms; confirm per building. Irvine PD reported package theft down 11% year-to-date in late 2025 and runs public 'Wanted Wednesday' campaigns against porch pirates (CBS, Dec 2025). An Amazon Fresh opened in Irvine's Market Place in 2020 (current status unverified). (Plus the general OC context in shared_context.package_security_general.)",
    "internet": "Unique mix: Google Fiber ~71% (2 Gbps), AT&T Fiber ~53% (5 Gbps), Spectrum (former Cox) fiber ~41% (2 Gbps symmetrical), and former-Cox cable ~98%. Verizon and T-Mobile 5G Home ~99% (FCC BDC Dec 2025). Irvine Company apartments have historically had building-level ISP arrangements, so check which providers each building allows.",
    "groceries": "Amazon Fresh at The Market Place, Irvine (opened 2020; current status unverified). Others unverified."
+  },
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "No current rent figure retrieved for this city (search budget exhausted; page fetches blocked)",
+   "rent_trend": null,
+   "summer_high_f": null,
+   "marine_layer": "some",
+   "fire_hazard": "CAL FIRE FHSZ: none in IBC/Spectrum; Very High near the foothills of Orchard Hills/Portola Springs (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "flood_zone": null,
+   "airport_noise": "IBC is next to SNA; some approach/departure noise. Spectrum area: none notable",
+   "parks": [
+    "Great Park",
+    "San Diego Creek trail",
+    "William R. Mason Regional Park"
+   ],
+   "farmers_markets": [
+    "Saturday Irvine Farmers Market (UCI / Mason Park) (verify)",
+    "Great Park market (verify)"
+   ],
+   "fiber": "AT&T Fiber and Frontier Fiber (ex-Verizon FiOS) present in much of OC; Cox/Spectrum cable everywhere; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "vibe": "Very safe and quiet with master-planned towers by the 405/5/133. Coffee is mostly chain or in-plaza; it lacks a walkable street-life feel."
   }
  },
  {
@@ -2617,6 +3130,27 @@
    "packages": "HB has many single-family homes and older small complexes (porch-exposed), alongside large newer complexes near Bella Terra, Beach Blvd/Edinger and downtown/Pacific City. LockerMap lists ~20 Amazon pickup points in HB (17 lockers, 3 counters; 10 open 24/7). HB larceny-theft fell from 3,125 (2024) to 2,293 (2025), and residential burglary fell from 153 to 104. (Plus the general OC context in shared_context.package_security_general.)",
    "internet": "Frontier Fiber covers ~99% of the city (up to 7 Gbps symmetrical, the best symmetric-fiber coverage in the set). Spectrum fiber ~67% and Spectrum cable 100%. Verizon 5G Home, T-Mobile 5G Home and Cosmo fixed wireless ~100% (FCC BDC Dec 2025).",
    "groceries": "Specific walkable grocery stores were not verified in sources."
+  },
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "No current rent figure retrieved for this city (search budget exhausted; page fetches blocked)",
+   "rent_trend": null,
+   "summer_high_f": null,
+   "marine_layer": "strong: coastal fog, cool summers",
+   "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "flood_zone": "Parts of southeast HB and the Huntington Harbour lowlands are in FEMA AE zones; check the FIRM (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "airport_noise": "none notable; occasional Joint Forces Training Base Los Alamitos flights in the north",
+   "parks": [
+    "Huntington Central Park",
+    "Bolsa Chica Ecological Reserve",
+    "HB pier/beach path"
+   ],
+   "farmers_markets": [
+    "Friday Surf City Nights (Main St) (verify)",
+    "Tuesday Pier Plaza market (verify)"
+   ],
+   "fiber": "AT&T Fiber and Frontier Fiber (ex-Verizon FiOS) present in much of OC; Cox/Spectrum cable everywhere; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "vibe": "Beach culture with some good coffee near Main St. Quiet residential tracts, but a long drive to LA and the 405 near the HB stretch congests."
   }
  },
  {
@@ -2703,6 +3237,1919 @@
   ],
   "id": "rancho-santa-margarita",
   "name": "Rancho Santa Margarita",
+  "region": "Orange County",
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "No current rent figure retrieved for this city (search budget exhausted; page fetches blocked)",
+   "rent_trend": null,
+   "summer_high_f": null,
+   "marine_layer": "little: inland foothill, warm summers",
+   "fire_hazard": "CAL FIRE FHSZ: Very High in much of the city's wildland-urban interface (Santa Ana Mountains foothills) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "flood_zone": null,
+   "airport_noise": "none notable",
+   "parks": [
+    "Central Park RSM",
+    "Santa Rosa Lake (Lake RSM, private HOA)",
+    "O'Neill Regional Park"
+   ],
+   "farmers_markets": [
+    "Sunday RSM farmers market (verify)"
+   ],
+   "fiber": "AT&T Fiber and Frontier Fiber (ex-Verizon FiOS) present in much of OC; Cox/Spectrum cable everywhere; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+   "vibe": "Very quiet and safe foothill suburb, but far from LA (60+ min to LAX) with few walkable specialty cafes. It is also high wildfire exposure."
+  }
+ },
+ {
+  "neighborhood": "West Hollywood",
+  "lat": 34.09,
+  "lng": -118.3617,
+  "freeway": {
+   "score": 3,
+   "nearest": [
+    "US-101 (Highland Ave / Hollywood Bl on-ramps, ~10-12 min from central WeHo)",
+    "I-10 (La Cienega Bl on-ramp, ~12-15 min)"
+   ],
+   "note": "No freeway inside the city; every trip starts on congested surface streets. drive times are estimates from typical routing, not measured"
+  },
+  "traffic": {
+   "score": 3,
+   "note": "Santa Monica Bl, La Cienega, Fairfax, Sunset and Melrose are slow at peak and on weekend nights; La Cienega to I-10 is a chronic crawl."
+  },
+  "coffee": {
+   "score": 8,
+   "cafes": [
+    "Verve Coffee Roasters – Melrose Ave, walkable, laptop-friendly (Time Out: big indoor-outdoor space full of laptops)",
+    "Alfred Coffee – Melrose Place, walkable, more scene than workspace",
+    "Strings of Life – Huntley Dr, free Wi-Fi, limited seating",
+    "La Colombe – West Hollywood, indoor + outdoor tables",
+    "Urth Caffe – Melrose Ave, big patio (multi-roaster/organic, busy)"
+   ],
+   "note": "Dense cafe scene along Melrose/Santa Monica Bl; many LA cafes impose 2-3 hr laptop limits on weekends."
+  },
+  "walk": {
+   "score": 8,
+   "walk_score": null,
+   "note": "Walk Score not retrieved (not verified this round (web-search budget exhausted)); WeHo is compact, flat and widely regarded as one of the most walkable parts of LA County."
+  },
+  "quiet": {
+   "score": 3,
+   "note": "Sunset Strip and Santa Monica Bl nightlife, late-night crowds, frequent sirens/helicopters. Quieter pockets: West Hollywood West and residential blocks east of Fairfax/near Formosa, but still urban."
+  },
+  "safety": {
+   "score": 3,
+   "violent_per_1k": 7.7,
+   "property_per_1k": 48.2,
+   "year": "2025",
+   "source": "Eufy blog table (263 violent / 1,642 property reports, pop 34,048) – per-1k computed by me; commercial blog, verify vs FBI/LASD",
+   "note": "Property crime roughly double the LA city average, inflated by large nightlife visitor population. WeHo Online: 2025 overall crime -12%, aggravated assaults -31% (164→113), robberies ~flat (85→87)."
+  },
+  "lax": {
+   "score": 6,
+   "minutes_offpeak": 28,
+   "minutes_peak": 55,
+   "note": "La Cienega Bl south to I-405/Century Bl or straight down La Cienega. drive times are estimates from typical routing, not measured"
+  },
+  "nightlife": {
+   "score": 10,
+   "nearest_district": "Sunset Strip / Santa Monica Bl (in city)",
+   "drive_minutes": 3,
+   "note": "Nightlife is on the doorstep – great for access, bad for quiet."
+  },
+  "gyms": {
+   "score": 10,
+   "examples": [
+    "Equinox West Hollywood (Sunset)",
+    "Crunch (West Hollywood)",
+    "Barry's / boutique studios on Santa Monica Bl"
+   ]
+  },
+  "services": {
+   "score": 9,
+   "note": "Multiple grocers (Whole Foods, Trader Joe's, Pavilions, Gelson's area) and pharmacies within minutes; Amazon lockers common. Specific branches not verified this round (web-search budget exhausted)."
+  },
+  "rail": {
+   "score": 3,
+   "nearest_station": "D Line Wilshire/La Cienega (~1.5 mi south)",
+   "line": "Metro D Line",
+   "note": "Opening status of D Line section 1 not verified this round (web-search budget exhausted); otherwise bus only (Santa Monica Bl lines)."
+  },
+  "airports_other": "LGB ~40 min, SNA ~55 min off-peak (estimates)",
+  "summary": "Best coffee/walk density and nightlife of this batch, but it fails the client's top weight: freeway access is 10-15 min of stop-and-go, traffic is among the worst on the Westside, and the city has high property-crime rates and nightlife noise. Only works if a quiet side street is found and freeway speed matters less than walkability.",
+  "sources": [
+   "https://www.timeout.com/los-angeles/restaurants/the-best-coffee-shops-in-west-hollywood",
+   "https://www.timeout.com/los-angeles/restaurants/verve-coffee-roasters-melrose",
+   "https://layersofbeauty.com/best-coffee-shops-west-hollywood/",
+   "https://www.eufy.com/blogs/security-system/most-dangerous-cities-in-california",
+   "https://wehoonline.com/west-hollywood-crime-dropped-12-percent-robberies-doubled-2025/",
+   "https://www.zumper.com/rent-research/west-hollywood-ca"
+  ],
+  "extras": {
+   "median_1br_rent": 2550,
+   "rent_source": "Zumper, Jun 2026 (text also says $2,526)",
+   "rent_trend": "+4% YoY 1BR (Zumper Jun 2026); all-unit average -2% YoY (Zumper Sep 2026)",
+   "summer_high_f": null,
+   "marine_layer": "some – about 8 mi from the coast; some June gloom, warmer than the Westside",
+   "fire_hazard": "CAL FIRE FHSZ: none in the flats; hillside streets north of Sunset are in the VHFHSZ (not verified this round (web-search budget exhausted))",
+   "flood_zone": null,
+   "airport_noise": "none notable from LAX; frequent helicopters (LASD/LAPD/news)",
+   "parks": [
+    "West Hollywood Park",
+    "Plummer Park",
+    "Kings Road Park"
+   ],
+   "farmers_markets": [
+    "Monday West Hollywood Farmers Market (Plummer Park) – verify day",
+    "Sunday Melrose Place Farmers Market"
+   ],
+   "fiber": "AT&T Fiber / Frontier / Spectrum availability not verified this round (web-search budget exhausted); check address on att.com/fiber",
+   "vibe": "Lively, gay-friendly, walkable and expensive; great cafes, but quiet only on select side streets."
+  },
+  "id": "west-hollywood",
+  "name": "West Hollywood",
+  "region": "Los Angeles"
+ },
+ {
+  "neighborhood": "West LA / Sawtelle",
+  "lat": 34.039,
+  "lng": -118.444,
+  "freeway": {
+   "score": 9,
+   "nearest": [
+    "I-405 (Santa Monica Bl / Wilshire / Olympic ramps, ~2-4 min)",
+    "I-10 (Bundy Dr or Centinela Ave, ~5 min)"
+   ],
+   "note": "Sits right on the 405 and close to the 10. drive times are estimates from typical routing, not measured"
+  },
+  "traffic": {
+   "score": 3,
+   "note": "Adjacent I-405 (Sepulveda Pass / Westside) is among the worst corridors in the region; Santa Monica Bl, Olympic, Bundy and Sawtelle back up at peak. Freeway proximity is excellent, flow is not."
+  },
+  "coffee": {
+   "score": 6,
+   "cafes": [
+    "Coffee Tomo – Mississippi Ave just off Sawtelle, roasts in-house, small",
+    "10 Speed Coffee – 1947 Sawtelle Bl, walkable (review Nov 2025)",
+    "Alfred Coffee – Sawtelle (current status unverified)",
+    "Balconi Coffee – CLOSED per Time Out"
+   ],
+   "note": "Sawtelle Japantown is more ramen/boba/dessert than specialty coffee; 2-3 real options within a 10-min walk."
+  },
+  "walk": {
+   "score": 8,
+   "walk_score": 87,
+   "note": "Redfin neighborhood Walk Score 87; individual addresses on Sawtelle/Santa Monica Bl 89-95."
+  },
+  "quiet": {
+   "score": 5,
+   "note": "405 roar on blocks next to the freeway; Sawtelle Bl crowds at night; side streets between Sawtelle and Bundy are calmer residential."
+  },
+  "safety": {
+   "score": 6,
+   "violent_per_1k": null,
+   "property_per_1k": null,
+   "year": "n/a",
+   "source": "LAPD West LA Area – no 2025 neighborhood rate found",
+   "note": "Crosstown neighborhood data could not be fetched (DNS failure). Westside generally below city-average violent crime; car break-ins common around Sawtelle restaurants. Score is a judgment, not data."
+  },
+  "lax": {
+   "score": 8,
+   "minutes_offpeak": 20,
+   "minutes_peak": 45,
+   "note": "I-405 south to Century Bl; peak 405 is unpredictable. drive times are estimates from typical routing, not measured"
+  },
+  "nightlife": {
+   "score": 8,
+   "nearest_district": "Sawtelle Japantown (walk) / Santa Monica",
+   "drive_minutes": 10,
+   "note": "Restaurants/bars walkable; Santa Monica and Westwood ~10 min."
+  },
+  "gyms": {
+   "score": 9,
+   "examples": [
+    "Equinox (Westside locations)",
+    "24 Hour Fitness (West LA)",
+    "boutique climbing/fitness on Sawtelle/Olympic – not verified this round (web-search budget exhausted)"
+   ]
+  },
+  "services": {
+   "score": 9,
+   "note": "Japanese markets (Nijiya/Mitsuwa area), Whole Foods/TJ's/Ralphs nearby on the Westside; specific branches not verified this round (web-search budget exhausted)."
+  },
+  "rail": {
+   "score": 4,
+   "nearest_station": "Expo/Bundy or Expo/Sepulveda (~1-1.5 mi)",
+   "line": "Metro E Line",
+   "note": "Not a 5-min walk; bike/bus."
+  },
+  "airports_other": "LGB ~35-40 min, SNA ~50 min off-peak (estimates)",
+  "summary": "Strong freeway access (405/10 within minutes), walkable Sawtelle strip and close LAX, but the 405 itself is a notorious bottleneck and coffee is thinner than the food scene suggests. Good for a remote worker who drives off-peak.",
+  "sources": [
+   "https://www.redfin.com/neighborhood/9168/CA/Los-Angeles/Sawtelle/mls-listings",
+   "https://www.timeout.com/los-angeles/restaurants/the-best-coffee-shops-in-west-la",
+   "https://www.timeout.com/los-angeles/restaurants/balconi-coffee-company",
+   "https://frankiapp.com/business/10-speed-coffee-223741.md",
+   "https://www.renthop.com/average-rent-in/west-los-angeles/los-angeles-ca",
+   "https://tripalink.com/blog/things-to-know-before-you-move-to-west-la-and-sawtelle-apartments"
+  ],
+  "extras": {
+   "median_1br_rent": 2500,
+   "rent_source": "RentHop, Jun 2026 (West Los Angeles median 1BR)",
+   "rent_trend": "-7.4% YoY (RentHop Jun 2026)",
+   "summer_high_f": null,
+   "marine_layer": "some/strong – ~3 mi from the ocean; frequent May-June gray, mild summers",
+   "fire_hazard": "CAL FIRE FHSZ: none (flat urban area) – not verified this round (web-search budget exhausted)",
+   "flood_zone": null,
+   "airport_noise": "none notable from LAX; Santa Monica Airport traffic audible on southern edge (not verified this round (web-search budget exhausted))",
+   "parks": [
+    "Stoner Recreation Center",
+    "Westwood Park"
+   ],
+   "farmers_markets": [
+    "Wednesday Santa Monica Farmers Market (Arizona Ave, ~10 min drive)"
+   ],
+   "fiber": "AT&T Fiber / Frontier / Spectrum availability not verified this round (web-search budget exhausted); check address on att.com/fiber",
+   "vibe": "Busy, food-centric Japantown strip with calm side streets; fast to the 405, but you will live with its traffic."
+  },
+  "id": "west-la-sawtelle",
+  "name": "West LA / Sawtelle",
+  "region": "Los Angeles"
+ },
+ {
+  "neighborhood": "Mar Vista / Del Rey",
+  "lat": 34.002,
+  "lng": -118.43,
+  "freeway": {
+   "score": 8,
+   "nearest": [
+    "I-405 (Venice Bl / Washington Bl / Culver Bl ramps, ~3-5 min)",
+    "SR-90 Marina Fwy (~5 min)",
+    "I-10 (Centinela/Bundy, ~6-8 min)"
+   ],
+   "note": "drive times are estimates from typical routing, not measured"
+  },
+  "traffic": {
+   "score": 4,
+   "note": "405 near the 90/10 is congested at peak; Venice Bl, Centinela and Washington slow but moving."
+  },
+  "coffee": {
+   "score": 5,
+   "cafes": [
+    "Alana's Coffee Roasters – 12511 Venice Bl, own micro-batch roaster",
+    "Mavro Kafe – 12224 Venice Bl, stylish, daily 7am-6pm",
+    "Blueys – 12825 Venice Bl, cafe/restaurant"
+   ],
+   "note": "Cluster on Venice Bl near Grand View; walkable only if living near Venice Bl. Del Rey proper is thinner."
+  },
+  "walk": {
+   "score": 7,
+   "walk_score": 75,
+   "note": "Walk Score 75 (ranked ~35th in LA); varies 47-86 by block."
+  },
+  "quiet": {
+   "score": 7,
+   "note": "Mostly single-family/low-rise residential, calm streets; 405 noise near Sepulveda; northern Mar Vista under Santa Monica Airport approach (not verified this round (web-search budget exhausted))."
+  },
+  "safety": {
+   "score": 7,
+   "violent_per_1k": null,
+   "property_per_1k": null,
+   "year": "n/a",
+   "source": "goodmigrations.com (qualitative)",
+   "note": "Described as below-average violent and property crime for LA; no official rate found. A rental site cites 4 violent / 289 property incidents in 90066 over 2 yrs – implausibly low, not used."
+  },
+  "lax": {
+   "score": 9,
+   "minutes_offpeak": 15,
+   "minutes_peak": 30,
+   "note": "Centinela/Sepulveda or 405 south. drive times are estimates from typical routing, not measured"
+  },
+  "nightlife": {
+   "score": 9,
+   "nearest_district": "Culver City downtown / Abbot Kinney (Venice)",
+   "drive_minutes": 10,
+   "note": "Plus Accomplice Bar on Grand View locally."
+  },
+  "gyms": {
+   "score": 7,
+   "examples": [
+    "gyms in Culver City / Marina del Rey (not verified this round (web-search budget exhausted))"
+   ]
+  },
+  "services": {
+   "score": 8,
+   "note": "Grocers along Venice/Washington and Culver City (Rustic Kitchen Market local; chain branches not verified this round (web-search budget exhausted))."
+  },
+  "rail": {
+   "score": 3,
+   "nearest_station": "Expo/Bundy or Culver City (~2 mi)",
+   "line": "Metro E Line",
+   "note": "Bus-based area (Transit Score 43)."
+  },
+  "airports_other": "LGB ~35 min, SNA ~50 min off-peak (estimates)",
+  "summary": "Quiet, safe-feeling Westside residential area with 405/90 access, the best LAX time here, and a small Venice Bl coffee cluster. Trade-off: 405 congestion and coffee that is only walkable from the Venice Bl side.",
+  "sources": [
+   "https://www.timeout.com/los-angeles/restaurants/mavro-kafe",
+   "https://www.yahoo.com/lifestyle/stroll-mar-vista-155500178.html",
+   "https://www.walkscore.com/score/-Mar Vista--CA",
+   "https://goodmigrations.com/city-guides/los-angeles/mar-vista/",
+   "https://lucidrents.com/CA/Los-Angeles/building/mar-vista/13241-w-lake-st",
+   "https://www.apartments.com/local-guide/mar-vista-los-angeles-ca/",
+   "https://renthop.com/average-rent-in/mar-vista-los-angeles-ca"
+  ],
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "No clean 2026 median; sources range $2,300-2,800 (Apartments.com undated $2,316; Lucid Rents 90066 bldg median $2,480 Mar 2026; RentHop $2,800 Feb 2025)",
+   "rent_trend": "Apartments.com shows -9% YoY (undated)",
+   "summer_high_f": null,
+   "marine_layer": "strong – ~3 mi from the coast; cool summers, frequent June gloom",
+   "fire_hazard": "CAL FIRE FHSZ: none (flats) – not verified this round (web-search budget exhausted)",
+   "flood_zone": null,
+   "airport_noise": "Santa Monica Airport approaches over northern Mar Vista; LAX departures mostly over the ocean (not verified this round (web-search budget exhausted))",
+   "parks": [
+    "Mar Vista Recreation Center",
+    "Ballona Creek Bike Path"
+   ],
+   "farmers_markets": [
+    "Sunday Mar Vista Farmers Market (Grand View Bl)"
+   ],
+   "fiber": "AT&T Fiber / Frontier / Spectrum availability not verified this round (web-search budget exhausted); check address on att.com/fiber",
+   "vibe": "Low-key, family-ish Westside with cool ocean air and a short walk-to-coffee strip on Venice Bl."
+  },
+  "id": "mar-vista-del-rey",
+  "name": "Mar Vista / Del Rey",
+  "region": "Los Angeles"
+ },
+ {
+  "neighborhood": "Jefferson Park / West Adams",
+  "lat": 34.027,
+  "lng": -118.329,
+  "freeway": {
+   "score": 9,
+   "nearest": [
+    "I-10 (Crenshaw / Arlington / Western ramps, ~2-4 min)",
+    "I-110 (~8 min)"
+   ],
+   "note": "drive times are estimates from typical routing, not measured"
+  },
+  "traffic": {
+   "score": 5,
+   "note": "I-10 is congested toward DTLA at peak but not the worst; Crenshaw, Jefferson, Adams are typical LA arterials."
+  },
+  "coffee": {
+   "score": 3,
+   "cafes": [
+    "Highly Likely – 4310 W Jefferson Bl, cafe by day/dinner at night, walkable",
+    "Adams Coffee Shop – 5359 W Adams Bl (status/quality unverified)",
+    "Red Bay Coffee – announced for Jefferson Park (opening unconfirmed)"
+   ],
+   "note": "Only one confirmed specialty-leaning cafe; Culver City coffee is a ~10 min drive."
+  },
+  "walk": {
+   "score": 7,
+   "walk_score": 76,
+   "note": "Walk Score 76 for West Adams (rank ~31); Jefferson Park not separately retrieved."
+  },
+  "quiet": {
+   "score": 5,
+   "note": "Historic craftsman blocks can be calm, but I-10 freeway noise near the 10, and frequent LAPD helicopters in South/Southwest LA."
+  },
+  "safety": {
+   "score": 3,
+   "violent_per_1k": null,
+   "property_per_1k": 33.4,
+   "year": "2019 (property only)",
+   "source": "Crosstown LA 2019 property-crime table (West Adams 3,338/100k)",
+   "note": "No 2025 rates found. Neighborhood guides describe West Adams as high violent crime and above-average property crime; DoorProfit index 51% above national. Jefferson Park row in Crosstown snippet unlabeled, not used."
+  },
+  "lax": {
+   "score": 7,
+   "minutes_offpeak": 22,
+   "minutes_peak": 40,
+   "note": "La Brea/La Cienega south or I-10→I-405. drive times are estimates from typical routing, not measured"
+  },
+  "nightlife": {
+   "score": 7,
+   "nearest_district": "Culver City / Jefferson Bl strip / DTLA",
+   "drive_minutes": 12,
+   "note": "Local restaurant row on W Jefferson (Highly Likely, Maydan)."
+  },
+  "gyms": {
+   "score": 6,
+   "examples": [
+    "gyms at Baldwin Hills Crenshaw Plaza area (not verified this round (web-search budget exhausted))"
+   ]
+  },
+  "services": {
+   "score": 6,
+   "note": "Grocers on Crenshaw/La Brea and Baldwin Hills Crenshaw Plaza; fewer premium grocers. Specific branches not verified this round (web-search budget exhausted)."
+  },
+  "rail": {
+   "score": 6,
+   "nearest_station": "Expo/Crenshaw or Farmdale (~10-15 min walk)",
+   "line": "Metro E Line / K Line",
+   "note": "Good rail coverage for the price."
+  },
+  "airports_other": "LGB ~30 min, SNA ~45 min off-peak (estimates)",
+  "summary": "Cheapest rents and excellent I-10 access, close to Culver City and LAX, but coffee is sparse and safety data (where findable) is the weakest in this batch. Suits a price-sensitive driver who doesn't need walk-to cafes.",
+  "sources": [
+   "https://www.timeout.com/los-angeles/restaurants/highly-likely",
+   "https://www.gayot.com/restaurants/zipcode-90016-ca_2la.html",
+   "https://xtown.la/2020/01/30/la-property-crime-sharpest-drop-in-a-decade/",
+   "https://www.doorprofit.com/crime-statistics/city/Los_Angeles-CA/neighborhood/jefferson_park/",
+   "https://goodmigrations.com/?p=3886",
+   "https://lucidrents.com/CA/Los-Angeles/building/west-adams/2801-west-blvd",
+   "https://www.renthop.com/average-rent-in/west-adams-los-angeles-ca"
+  ],
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "No reliable median: Lucid Rents 90016 HUD FMR 1BR $2,270 / listing medians ~$1,890 (Mar 2026); RentHop $950 (Jun 2026) is an outlier; PadMapper listing $2,495 (Jul 2026)",
+   "rent_trend": null,
+   "summer_high_f": null,
+   "marine_layer": "some – inland ~8 mi; warmer than the Westside",
+   "fire_hazard": "CAL FIRE FHSZ: none (flats) – not verified this round (web-search budget exhausted)",
+   "flood_zone": null,
+   "airport_noise": "LAX arrival path lies south (over Inglewood); not usually overhead (not verified this round (web-search budget exhausted)); helicopters frequent",
+   "parks": [
+    "Kenneth Hahn State Recreation Area (~5 min drive)",
+    "Baldwin Hills Scenic Overlook"
+   ],
+   "farmers_markets": [],
+   "fiber": "AT&T Fiber / Frontier / Spectrum availability not verified this round (web-search budget exhausted); check address on att.com/fiber",
+   "vibe": "Historic, rapidly changing neighborhood with grand old houses; affordable, but few walk-to cafes."
+  },
+  "id": "jefferson-park-west-adams",
+  "name": "Jefferson Park / West Adams",
+  "region": "Los Angeles"
+ },
+ {
+  "neighborhood": "Los Feliz",
+  "lat": 34.107,
+  "lng": -118.288,
+  "freeway": {
+   "score": 8,
+   "nearest": [
+    "US-101 (Vermont Ave / Hollywood Bl, ~3-5 min)",
+    "I-5 (Los Feliz Bl, ~5-7 min)"
+   ],
+   "note": "drive times are estimates from typical routing, not measured"
+  },
+  "traffic": {
+   "score": 4,
+   "note": "101 through Hollywood/DTLA is a chronic peak slog; Los Feliz Bl toward the 5 and Hillhurst/Vermont are busy."
+  },
+  "coffee": {
+   "score": 8,
+   "cafes": [
+    "Maru Coffee – Los Feliz, minimalist pour-overs, walkable",
+    "Bru Coffeebar – Los Feliz Village (Vermont), single-origin direct trade, upstairs loft good for lingering",
+    "H Coffee House – Hillhurst at Kingswell, bungalow patios, Wi-Fi but no outlets",
+    "Gardens Coffee & Tea – Los Feliz"
+   ],
+   "note": "Plus Silver Lake cafes a few minutes away."
+  },
+  "walk": {
+   "score": 8,
+   "walk_score": null,
+   "note": "Walk Score not retrieved; Los Feliz Village (Vermont/Hillhurst) is very walkable, hillside streets north of Los Feliz Bl are not."
+  },
+  "quiet": {
+   "score": 6,
+   "note": "Bars/restaurants on Vermont and Hillhurst; Griffith Park traffic and helicopters; quiet streets in the flats west of Hillhurst and in the hills."
+  },
+  "safety": {
+   "score": 6,
+   "violent_per_1k": null,
+   "property_per_1k": null,
+   "year": "n/a",
+   "source": "Crosstown LA (only Q1-2019 overall rate found)",
+   "note": "No current per-capita rate found; Q1 2019 overall crime rate 1,333/100k for the quarter, +6% YoY. Car break-ins near Griffith Park trailheads common. Score is a judgment."
+  },
+  "lax": {
+   "score": 5,
+   "minutes_offpeak": 33,
+   "minutes_peak": 60,
+   "note": "101→110→105 or 101→I-10→405. drive times are estimates from typical routing, not measured"
+  },
+  "nightlife": {
+   "score": 10,
+   "nearest_district": "Los Feliz Village / Silver Lake / Hollywood",
+   "drive_minutes": 5,
+   "note": ""
+  },
+  "gyms": {
+   "score": 8,
+   "examples": [
+    "gyms in Los Feliz/Silver Lake (not verified this round (web-search budget exhausted))"
+   ]
+  },
+  "services": {
+   "score": 8,
+   "note": "Grocers along Hillhurst/Vermont and Los Feliz Bl; specific branches not verified this round (web-search budget exhausted)."
+  },
+  "rail": {
+   "score": 6,
+   "nearest_station": "Vermont/Sunset (~5-10 min walk from southern Los Feliz)",
+   "line": "Metro B Line",
+   "note": ""
+  },
+  "airports_other": "LGB ~40 min, SNA ~55 min off-peak (estimates)",
+  "summary": "Top-tier walkable coffee and quick access to the 101/5, with Griffith Park next door; trade-offs are the 101's chronic congestion, long LAX trips and fire risk in the hills.",
+  "sources": [
+   "https://www.timeout.com/los-angeles/restaurants/the-best-coffee-shops-in-los-feliz",
+   "https://www.tryperdiem.com/guide/best-coffee-spots-near-griffith-observatory-los-feliz",
+   "https://thebettervacation.com/los-angeles/best-coffee-shops-in-los-angeles/",
+   "https://xtown.la/2019/05/17/la-crime-rate-falls-in-first-quarter/",
+   "https://www.renthop.com/average-rent-in/los-feliz-los-angeles-ca",
+   "https://edge.apartmentiq.io/los-angeles-ca/los-feliz",
+   "https://www.theeastsiderla.com/news/fire-hazard-zones-may-expand-across-the-eastside-under-new-maps/article_1121ab13-ab36-4610-b176-9687fbefe679.html"
+  ],
+  "extras": {
+   "median_1br_rent": 2300,
+   "rent_source": "RentHop, Jun 2026 (ApartmentIQ $2,250; Apartments.com ~$2,169)",
+   "rent_trend": "-12.5% YoY (RentHop Jun 2026)",
+   "summer_high_f": null,
+   "marine_layer": "little – inland ~12 mi; hot summer afternoons, AC matters",
+   "fire_hazard": "CAL FIRE FHSZ: very high in the hills (LAFD); new state maps extend the zone to the flats south of Los Feliz Bl (adoption status unconfirmed)",
+   "flood_zone": null,
+   "airport_noise": "none notable from LAX; Burbank traffic occasionally, helicopters common",
+   "parks": [
+    "Griffith Park",
+    "Barnsdall Art Park"
+   ],
+   "farmers_markets": [
+    "Sunday Hollywood Farmers Market (Ivar/Selma, ~10 min)",
+    "Silver Lake Farmers Market (Tue/Sat)"
+   ],
+   "fiber": "AT&T Fiber / Frontier / Spectrum availability not verified this round (web-search budget exhausted); check address on att.com/fiber",
+   "vibe": "Leafy, creative and walkable with excellent cafes; lively on Vermont/Hillhurst, calm a block or two away."
+  },
+  "id": "los-feliz",
+  "name": "Los Feliz",
+  "region": "Los Angeles"
+ },
+ {
+  "neighborhood": "Atwater Village",
+  "lat": 34.117,
+  "lng": -118.256,
+  "freeway": {
+   "score": 9,
+   "nearest": [
+    "I-5 (Los Feliz Bl / Glendale Bl, ~2-3 min)",
+    "SR-2 (~4-5 min)",
+    "SR-134 (~5-6 min)"
+   ],
+   "note": "drive times are estimates from typical routing, not measured"
+  },
+  "traffic": {
+   "score": 6,
+   "note": "I-5 through Glendale and the 5/134 interchange congest at peak but are not the worst; Glendale Bl and Los Feliz Bl usually move."
+  },
+  "coffee": {
+   "score": 7,
+   "cafes": [
+    "Kaldi Coffee – Glendale Bl, long-stay laptop spot with window couch",
+    "Proof Bakery – 3156 Glendale Bl, Cognoscenti coffee, no outlets (grab-and-go)",
+    "Black Elephant Coffee – 3195 Glendale Bl, full espresso bar, 7am-6pm",
+    "Trystero Coffee – small home roaster with open hours (status unverified)"
+   ],
+   "note": "All on the Glendale Bl strip; Silver Lake/Los Feliz cafes ~5-10 min drive."
+  },
+  "walk": {
+   "score": 7,
+   "walk_score": 73,
+   "note": "Walk Score 73 (rank ~34 in LA), Redfin agrees."
+  },
+  "quiet": {
+   "score": 7,
+   "note": "Small-town residential grid; I-5 hum on the west edge by the LA River; Glendale Bl restaurants modest."
+  },
+  "safety": {
+   "score": 5,
+   "violent_per_1k": 9.5,
+   "property_per_1k": null,
+   "year": "2019",
+   "source": "Crosstown LA 2019 table (946/100k, down from 1,026 in 2018)",
+   "note": "Column labels in the snippet were unclear – this may be violent crime; old data. No 2025 figure found."
+  },
+  "lax": {
+   "score": 5,
+   "minutes_offpeak": 35,
+   "minutes_peak": 65,
+   "note": "I-5→I-10→I-405 or 2→101→110→105. drive times are estimates from typical routing, not measured"
+  },
+  "nightlife": {
+   "score": 9,
+   "nearest_district": "Glendale Bl (walk) / Silver Lake / Los Feliz",
+   "drive_minutes": 8,
+   "note": ""
+  },
+  "gyms": {
+   "score": 7,
+   "examples": [
+    "gyms in Atwater/Glendale (not verified this round (web-search budget exhausted))"
+   ]
+  },
+  "services": {
+   "score": 8,
+   "note": "Glendale big-box retail and Galleria ~5 min; local grocers on Glendale Bl. Specific branches not verified this round (web-search budget exhausted)."
+  },
+  "rail": {
+   "score": 3,
+   "nearest_station": "Glendale Transportation Center (~1.5 mi)",
+   "line": "Metrolink",
+   "note": "No Metro rail nearby."
+  },
+  "airports_other": "Burbank ~15 min; LGB ~40 min, SNA ~55 min off-peak (estimates)",
+  "summary": "Best freeway access of the Eastside picks (5/2/134 within minutes) with a walkable Glendale Bl coffee strip and a quiet village feel. Trade-offs: long LAX drives, hot summers, and only old crime data.",
+  "sources": [
+   "https://www.timeout.com/los-angeles/restaurants/kaldi-coffee",
+   "https://www.timeout.com/los-angeles/restaurants/black-elephant-coffee",
+   "https://www.timeout.com/los-angeles/restaurants/the-best-coffee-shops-in-atwater-village",
+   "https://lamag.com/news/street-smart-atwater-village/",
+   "https://walkscore.com/CA/Los_Angeles/Eagle_Rock",
+   "https://www.redfin.com/neighborhood/104/CA/Los-Angeles/Atwater-Village/views",
+   "https://xtown.la/2019/02/21/angelenos-how-safe-is-your-neighborhood/",
+   "https://www.rentcafe.com/average-rent-market-trends/us/ca/los-angeles/atwater-village/"
+  ],
+  "extras": {
+   "median_1br_rent": 2604,
+   "rent_source": "RentCafe, Jun 2026 (average, not median)",
+   "rent_trend": "+3.5% YoY all units (RentCafe Jun 2026)",
+   "summer_high_f": null,
+   "marine_layer": "little – inland; hot, dry summer afternoons",
+   "fire_hazard": "CAL FIRE FHSZ: flats mostly none (not verified this round (web-search budget exhausted)); Griffith Park edge is very high",
+   "flood_zone": null,
+   "airport_noise": "Burbank (BUR) approaches occasionally audible; none from LAX",
+   "parks": [
+    "Griffith Park",
+    "LA River Greenway / bike path"
+   ],
+   "farmers_markets": [
+    "Sunday Atwater Village Farmers Market (Glendale Bl) – verify"
+   ],
+   "fiber": "AT&T Fiber / Frontier / Spectrum availability not verified this round (web-search budget exhausted); check address on att.com/fiber",
+   "vibe": "Quiet small-town feel by the LA River with a walkable coffee/restaurant strip and fast freeway access."
+  },
+  "id": "atwater-village",
+  "name": "Atwater Village",
+  "region": "Los Angeles"
+ },
+ {
+  "neighborhood": "Highland Park / Eagle Rock",
+  "lat": 34.122,
+  "lng": -118.2,
+  "freeway": {
+   "score": 8,
+   "nearest": [
+    "SR-110 Arroyo Seco Pkwy (Ave 43/52/60, ~3-5 min from Highland Park)",
+    "SR-134 and SR-2 (~3-5 min from Eagle Rock)"
+   ],
+   "note": "drive times are estimates from typical routing, not measured"
+  },
+  "traffic": {
+   "score": 6,
+   "note": "The narrow 110 Arroyo Seco slows heavily toward DTLA at peak; York, Figueroa and Colorado Bl are moderate."
+  },
+  "coffee": {
+   "score": 7,
+   "cafes": [
+    "Cafe de Leche – Highland Park, own roasting since 2017",
+    "Civil Coffee – 5629 N Figueroa St, Intelligentsia, draws remote workers",
+    "Go Get Em Tiger – 5918 N Figueroa St (listed as opening; confirm)",
+    "Found Coffee – 1355 Colorado Bl, Eagle Rock, pour-over",
+    "Swork Coffee – 2160 Colorado Bl, Eagle Rock, calmer",
+    "À Bloc – coffee bar + cycling shop"
+   ],
+   "note": "Good overall, but split between Figueroa/York (HP) and Colorado Bl (ER); 2-3 within a 10-min walk of any one address."
+  },
+  "walk": {
+   "score": 7,
+   "walk_score": 77,
+   "note": "Highland Park 77 (rank ~28), Eagle Rock 70 (rank ~41-43)."
+  },
+  "quiet": {
+   "score": 7,
+   "note": "Figueroa/York bars on weekends; residential hillsides quiet; helicopters occasional."
+  },
+  "safety": {
+   "score": 6,
+   "violent_per_1k": null,
+   "property_per_1k": null,
+   "year": "n/a",
+   "source": "Crosstown LA (2019 partial-period overall rates only)",
+   "note": "Highland Park Q1-2019 overall rate 1,323/100k (-18%), Eagle Rock H1-2019 1,554/100k (-13%); no violent/property split or 2025 data found. Score is a judgment."
+  },
+  "lax": {
+   "score": 4,
+   "minutes_offpeak": 38,
+   "minutes_peak": 70,
+   "note": "110 south through DTLA to the 105. drive times are estimates from typical routing, not measured"
+  },
+  "nightlife": {
+   "score": 9,
+   "nearest_district": "York Bl / Figueroa (HP), Colorado Bl (ER)",
+   "drive_minutes": 5,
+   "note": ""
+  },
+  "gyms": {
+   "score": 7,
+   "examples": [
+    "gyms in HP/Eagle Rock (not verified this round (web-search budget exhausted))"
+   ]
+  },
+  "services": {
+   "score": 7,
+   "note": "Eagle Rock Plaza and Colorado Bl grocers; Highland Park more limited. Specific branches not verified this round (web-search budget exhausted)."
+  },
+  "rail": {
+   "score": 7,
+   "nearest_station": "Highland Park station (Ave 57/Marmion Way)",
+   "line": "Metro A Line",
+   "note": "Walkable for central Highland Park; Eagle Rock has no rail."
+  },
+  "airports_other": "Burbank ~20 min; LGB ~40 min, SNA ~50 min off-peak (estimates)",
+  "summary": "Good coffee and nightlife, decent freeway access via the 110/134/2, and A Line rail in Highland Park. Downsides for this client: the slowest LAX trips in the batch, very-high fire-zone designations and hot summers.",
+  "sources": [
+   "https://lamag.com/dining/best-coffee-shops-highland-park/",
+   "https://thebettervacation.com/los-angeles/best-coffee-shops-in-los-angeles/",
+   "https://walkscore.com/CA/Los_Angeles/Eagle_Rock",
+   "https://xtown.la/2019/05/17/la-crime-rate-falls-in-first-quarter/",
+   "https://xtown.la/2019/08/08/so-far-la-crime-in-2019-is-dipping/",
+   "https://www.renthop.com/average-rent-in/highland-park-los-angeles-ca",
+   "https://affordwhere.com/usa/los-angeles/neighborhood/highland-park",
+   "https://www.theeastsiderla.com/news/fire-hazard-zones-may-expand-across-the-eastside-under-new-maps/article_1121ab13-ab36-4610-b176-9687fbefe679.html",
+   "https://thelalocal.org/public-safety/fire-hazard-maps-eastside-neighborhood/"
+  ],
+  "extras": {
+   "median_1br_rent": 2295,
+   "rent_source": "RentHop, Jul 2026 (Highland Park; no Eagle Rock figure found)",
+   "rent_trend": "+14.7% YoY (RentHop Jul 2026, Highland Park)",
+   "summer_high_f": null,
+   "marine_layer": "little – inland valley; hot summers, AC important",
+   "fire_hazard": "CAL FIRE FHSZ: very high – new state maps put most of HP/ER, including stretches of York and Figueroa, in very-high zones (adoption status unconfirmed)",
+   "flood_zone": null,
+   "airport_noise": "none notable from LAX; occasional Burbank traffic",
+   "parks": [
+    "Ernest E. Debs Regional Park",
+    "Arroyo Seco / Sycamore Grove Park",
+    "Eagle Rock Recreation Center"
+   ],
+   "farmers_markets": [
+    "Tuesday Old LA Farmers Market (Highland Park) – verify",
+    "Eagle Rock Farmers Market – verify day"
+   ],
+   "fiber": "AT&T Fiber / Frontier / Spectrum availability not verified this round (web-search budget exhausted); check address on att.com/fiber",
+   "vibe": "Creative, hilly Northeast LA with lots of cafes and bars; quiet up the hills, far from the airport."
+  },
+  "id": "highland-park-eagle-rock",
+  "name": "Highland Park / Eagle Rock",
+  "region": "Los Angeles"
+ },
+ {
+  "neighborhood": "Signal Hill / Lakewood",
+  "lat": 33.83,
+  "lng": -118.14,
+  "freeway": {
+   "score": 9,
+   "nearest": [
+    "I-405 (Cherry Ave / Atlantic, ~2-3 min from Signal Hill)",
+    "I-710 (~5 min)",
+    "I-605 (~5-8 min from Lakewood)"
+   ],
+   "note": "drive times are estimates from typical routing, not measured"
+  },
+  "traffic": {
+   "score": 6,
+   "note": "405 near LGB and the 405/605/22 interchange slow at peak; arterials flow far better than central LA."
+  },
+  "coffee": {
+   "score": 3,
+   "cafes": [
+    "Ziggi's Coffee – 5721 Bellflower Bl, Lakewood (drive-thru chain)",
+    "Long Beach specialty cafes in Bixby Knolls / Retro Row ~5-10 min drive (not verified this round (web-search budget exhausted))"
+   ],
+   "note": "No walkable specialty cafe confirmed in Signal Hill or Lakewood; search found none."
+  },
+  "walk": {
+   "score": 4,
+   "walk_score": null,
+   "note": "Not retrieved; suburban, car-oriented layout (shopping centers)."
+  },
+  "quiet": {
+   "score": 7,
+   "note": "Lakewood is quiet tract housing; Signal Hill residential hilltop is calm but near LGB flight path and 405."
+  },
+  "safety": {
+   "score": 6,
+   "violent_per_1k": 4.0,
+   "property_per_1k": 22.0,
+   "year": "undated (likely FBI 2023-24)",
+   "source": "NeighborhoodScout (Lakewood); Signal Hill est. ~3.4 violent / ~22.7 property per 1k from DoorProfit odds (Sep 2026)",
+   "note": "Roughly at or below LA city averages. Conflicting source: Freedom for All Americans lists Signal Hill total ~60/1k (2024) – likely retail-theft inflated (Towne Center)."
+  },
+  "lax": {
+   "score": 5,
+   "minutes_offpeak": 30,
+   "minutes_peak": 60,
+   "note": "I-405 north. drive times are estimates from typical routing, not measured"
+  },
+  "nightlife": {
+   "score": 8,
+   "nearest_district": "Bixby Knolls / Downtown Long Beach",
+   "drive_minutes": 12,
+   "note": ""
+  },
+  "gyms": {
+   "score": 7,
+   "examples": [
+    "gyms at Signal Hill / Lakewood Center (not verified this round (web-search budget exhausted))"
+   ]
+  },
+  "services": {
+   "score": 9,
+   "note": "Signal Hill Towne Center big-box retail and Lakewood Center mall – very convenient by car. Specific stores not verified this round (web-search budget exhausted)."
+  },
+  "rail": {
+   "score": 3,
+   "nearest_station": "Willow St or Wardlow (~1.5-2 mi)",
+   "line": "Metro A Line",
+   "note": ""
+  },
+  "airports_other": "LGB ~5-10 min, SNA ~25 min off-peak (estimates)",
+  "summary": "Excellent freeway access, lower rents and LGB minutes away, with suburban calm; but it misses the client's walk-to specialty coffee priority almost entirely.",
+  "sources": [
+   "https://www.doorprofit.com/crime-statistics/city/Signal_Hill-CA/",
+   "https://freedomforallamericans.org/most-dangerous-cities-in-california/",
+   "https://relocationcoordinates.neighborhoodscout.com/ca/lakewood/crime",
+   "https://whatnow.com/los-angeles/restaurants/ziggis-coffee-opens-in-lakewood-ca",
+   "https://www.rentometer.com/average-rent-in/ca/signal-hill-ca",
+   "https://www.padmapper.com/apartments/long-beach-ca/move-in-special",
+   "https://www.renthop.com/average-rent-in/lakewood-ca",
+   "https://www.trulia.com/for_rent/Lakewood,CA/"
+  ],
+  "extras": {
+   "median_1br_rent": 2060,
+   "rent_source": "PadMapper, Jul 2026 (Signal Hill median); Lakewood RentHop Jun 2026 $2,395",
+   "rent_trend": "Signal Hill +3.1% MoM (PadMapper Jul 2026); Lakewood +29.6% YoY (RentHop Jun 2026, looks noisy)",
+   "summer_high_f": null,
+   "marine_layer": "some – ~4 mi from the coast; milder than inland LA",
+   "fire_hazard": "CAL FIRE FHSZ: none (urban) – not verified this round (web-search budget exhausted)",
+   "flood_zone": null,
+   "airport_noise": "LGB airport flight paths cross parts of Signal Hill/Lakewood (not verified this round (web-search budget exhausted))",
+   "parks": [
+    "Hilltop Park (Signal Hill)",
+    "El Dorado Regional Park (Long Beach, nearby)",
+    "Mayfair Park (Lakewood)"
+   ],
+   "farmers_markets": [],
+   "fiber": "AT&T Fiber / Frontier / Spectrum availability not verified this round (web-search budget exhausted); check address on att.com/fiber",
+   "vibe": "Quiet, practical suburbia with easy freeways and parking; coffee and walkability mean driving to Long Beach."
+  },
+  "id": "signal-hill-lakewood",
+  "name": "Signal Hill / Lakewood",
+  "region": "Long Beach"
+ },
+ {
+  "neighborhood": "Los Alamitos / Rossmoor",
+  "lat": 33.799,
+  "lng": -118.072,
+  "freeway": {
+   "score": 9,
+   "nearest": [
+    "I-405 (Seal Beach Bl / Valley View, ~3-5 min)",
+    "I-605 (Katella Ave, ~3 min)",
+    "SR-22 (~5 min)"
+   ],
+   "note": "drive times are estimates from typical routing, not measured"
+  },
+  "traffic": {
+   "score": 5,
+   "note": "405/605/22 interchange and 405 into OC/Long Beach are peak bottlenecks; local arterials (Katella, Los Alamitos Bl) flow."
+  },
+  "coffee": {
+   "score": 4,
+   "cafes": [
+    "Local Grind Coffee + Cafe – 10612 Los Alamitos Bl",
+    "Teofilo Coffee Company – 10525 Los Alamitos Bl",
+    "Blk Dot Coffee – 5247 Katella Ave, Cypress (drive)"
+   ],
+   "note": "Directory listings only; quality/laptop policy unverified. Walkable only from the Los Alamitos Bl corridor."
+  },
+  "walk": {
+   "score": 3,
+   "walk_score": null,
+   "note": "Not retrieved; Rossmoor is a 1.5 sq mi postwar suburb with few shops inside it."
+  },
+  "quiet": {
+   "score": 9,
+   "note": "Very calm residential streets; Joint Forces Training Base Los Alamitos military helicopters at times; 405/605 hum near edges."
+  },
+  "safety": {
+   "score": 7,
+   "violent_per_1k": null,
+   "property_per_1k": null,
+   "year": "n/a",
+   "source": "City-Data crime index 164.1 (undated); SpotCrime monthly counts (undated)",
+   "note": "No clean per-capita rate found; indicators suggest low-to-moderate crime typical of OC suburbs. Score is a judgment."
+  },
+  "lax": {
+   "score": 4,
+   "minutes_offpeak": 38,
+   "minutes_peak": 75,
+   "note": "I-405 north the whole way. drive times are estimates from typical routing, not measured"
+  },
+  "nightlife": {
+   "score": 7,
+   "nearest_district": "Seal Beach Main St / Belmont Shore (Long Beach)",
+   "drive_minutes": 12,
+   "note": ""
+  },
+  "gyms": {
+   "score": 6,
+   "examples": [
+    "gyms on Los Alamitos Bl / Katella (not verified this round (web-search budget exhausted))"
+   ]
+  },
+  "services": {
+   "score": 7,
+   "note": "Shopping centers on Los Alamitos Bl and Katella; Seal Beach and Long Beach retail nearby. Specific stores not verified this round (web-search budget exhausted)."
+  },
+  "rail": {
+   "score": 1,
+   "nearest_station": "none practical",
+   "line": "n/a",
+   "note": ""
+  },
+  "airports_other": "LGB ~12 min, SNA ~20 min off-peak (estimates)",
+  "summary": "The quietest and most suburban pick, with three freeways at hand and close LGB/SNA; weak walkability and coffee and the longest LAX drive make it a poor fit for the client's top coffee/walk weight.",
+  "sources": [
+   "https://www.iexitapp.com/California/I-605/Exit%201B/31621",
+   "https://www.apartmentlist.com/city-guide/ca/rossmoor",
+   "https://spotcrime.com/CA/Los%20Alamitos/trends",
+   "https://www.city-data.com/crime/crime-Hawaiian-Gardens-California.html",
+   "https://crimegrade.org/robbery-los-alamitos-ca/",
+   "https://assets.rentometer.com/average-rent-in/ca/los-alamitos-ca",
+   "https://apartments.com/los-alamitos-CA",
+   "https://www.trulia.com/for_rent/Los_Alamitos,CA/"
+  ],
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "No clean median; ~$2,000-2,200 (Apartments.com $2,023-2,191; Trulia Jul 2026 ~$2,000; Rentometer Jan 2026 $1,800s)",
+   "rent_trend": null,
+   "summer_high_f": null,
+   "marine_layer": "some – ~4 mi inland from Seal Beach; mild summers",
+   "fire_hazard": "CAL FIRE FHSZ: none (urban) – not verified this round (web-search budget exhausted)",
+   "flood_zone": null,
+   "airport_noise": "military rotorcraft from Joint Forces Training Base Los Alamitos; LGB traffic occasionally",
+   "parks": [
+    "Rossmoor Park",
+    "El Dorado Regional Park (~10 min)"
+   ],
+   "farmers_markets": [],
+   "fiber": "AT&T Fiber / Frontier / Spectrum availability not verified this round (web-search budget exhausted); check address on att.com/fiber",
+   "vibe": "Sleepy, safe-feeling suburb with big trees and easy freeways; plan to drive for good coffee."
+  },
+  "id": "los-alamitos-rossmoor",
+  "name": "Los Alamitos / Rossmoor",
+  "region": "Orange County"
+ },
+ {
+  "neighborhood": "Placentia",
+  "lat": 33.8722,
+  "lng": -117.8703,
+  "freeway": {
+   "score": 8,
+   "nearest": [
+    "SR-57 (Orangethorpe / Chapman / Yorba Linda Blvd ramps on the west edge, ~3-6 min)",
+    "SR-91 (Kraemer Blvd / Tustin Ave, ~5-8 min)",
+    "SR-90 Imperial Hwy (~8 min)"
+   ],
+   "note": "Freeway names and ramps are general knowledge, not verified this round; times are estimates."
+  },
+  "traffic": {
+   "score": 5,
+   "note": "SR-57 southbound into the Orange Crush (5/57/22) and SR-91 east through Anaheim Hills are chronic peak bottlenecks. Local arterials (Kraemer, Placentia Ave, Yorba Linda Blvd) are mostly typical suburban stop-and-go. Assessment from general knowledge, not verified this round."
+  },
+  "coffee": {
+   "score": 4,
+   "cafes": [
+    "Bodhi Leaf Coffee Traders – 119 E Yorba Linda Blvd; roasts daily (north Placentia)",
+    "Golden State Coffee Roasters – downtown / Old Town Placentia; brick-walled room, reviewers like it",
+    "Golden Gate Coffee Roasters – 109 W Santa Fe Ave, Old Town; in-house roaster per an older article, may be closed or renamed (could be the same business as Golden State)",
+    "Ape Coffee – small modern espresso bar, mixed reviews"
+   ],
+   "note": "There are 2-3 real roasters, but they are spread across town. Only Old Town (Santa Fe Ave) gives a short walk to one or two. Laptop-friendliness was not verified."
+  },
+  "walk": {
+   "score": 5,
+   "walk_score": 50,
+   "note": "Walk Score city average is 50. Old Town / N Placentia Ave pockets score ~56-75."
+  },
+  "quiet": {
+   "score": 7,
+   "note": "Mostly calm residential streets. The BNSF freight main along Orangethorpe/Crowther brings train noise (grade separations have reduced horn use, per general knowledge, not verified this round). No flight path. Neighborhoods near the 57 have freeway hum."
+  },
+  "safety": {
+   "score": 8,
+   "violent_per_1k": 3.48,
+   "property_per_1k": 14.33,
+   "year": "2021-2024 vintage (NeighborhoodScout label unclear)",
+   "source": "NeighborhoodScout (FBI UCR; page labels the data year inconsistently, 2021 to 2024), seen in search snippets because the page fetch failed",
+   "note": "Well below the LA rates (~7 / ~25). CrimeGrade gives ~18.8 total per 1k. Northeast Placentia is safer than the southwest (CrimeGrade odds 1 in 75 vs 1 in 44)."
+  },
+  "lax": {
+   "score": 3,
+   "minutes_offpeak": 45,
+   "minutes_peak": 75,
+   "note": "SR-91 W, then I-605 S or I-105 W. rough drive-time estimate from general road-network knowledge; not verified (web search budget ran out this round)"
+  },
+  "nightlife": {
+   "score": 8,
+   "nearest_district": "Downtown Fullerton (Harbor Blvd / Commonwealth)",
+   "drive_minutes": 10,
+   "note": "Old Towne Orange is ~15 min. Times are estimates."
+  },
+  "gyms": {
+   "score": 7,
+   "examples": [
+    "24 Hour Fitness / LA Fitness-type chain gyms along Yorba Linda Blvd and in Fullerton (unverified)"
+   ]
+  },
+  "services": {
+   "score": 7,
+   "note": "Full suburban grocery mix (Ralphs, Albertsons, Trader Joe's nearby in Fullerton/Yorba Linda). general knowledge, not verified this round."
+  },
+  "rail": {
+   "score": 2,
+   "nearest_station": "Fullerton Transportation Center (Metrolink/Amtrak), ~10-12 min drive",
+   "line": "Metrolink 91/Perris Valley & Orange County lines",
+   "note": "The long-planned Placentia Metrolink station has not been built (general knowledge, not verified this round)."
+  },
+  "airports_other": "LGB ~30 min, SNA ~25 min (estimates)",
+  "summary": "Quiet, relatively safe North OC suburb with fast access to the 57 and 91. It fits if you'll drive to coffee: walkable specialty cafes are thin outside Old Town. The main trade-off is weak coffee/walk scores in exchange for safety and calm.",
+  "sources": [
+   "https://www.neighborhoodscout.com/ca/placentia/crime",
+   "https://crimegrade.org/safest-places-in-placentia-ca/",
+   "https://frankiapp.com/business/bodhi-leaf-coffee-traders-48132.md",
+   "https://wanderlog.com/place/details/1512787/golden-state-coffee-roasters",
+   "https://titanradio.org/?p=4490",
+   "https://www.renthop.com/average-rent-in/placentia-ca",
+   "https://www.trulia.com/for_rent/Placentia,CA/",
+   "https://www.rentometer.com/average-rent-in/ca/placentia-ca",
+   "https://www.walkscore.com/score/-92870"
+  ],
+  "extras": {
+   "median_1br_rent": 2250,
+   "rent_source": "RentHop, Jun 2026 (Trulia Jun 2026 $2,225; Rentometer Mar 2026 median $2,225; Apartment List $2,620)",
+   "rent_trend": "+31% YoY (RentHop Jun 2026; small sample, likely noisy)",
+   "summer_high_f": null,
+   "marine_layer": "little: inland North OC, warm summers. summer_high_f is null because no NOAA normal was retrieved. Expect high-80s °F August highs (general knowledge, not verified this round).",
+   "fire_hazard": "CAL FIRE FHSZ: none / not notable for the flat core (general knowledge, not verified this round; check the CAL FIRE map for the eastern edge toward Yorba Linda)",
+   "flood_zone": null,
+   "airport_noise": "none notable",
+   "parks": [
+    "Tri-City Park",
+    "Kraemer Memorial Park"
+   ],
+   "farmers_markets": [],
+   "fiber": "Not checked this round (search budget ran out). Spectrum cable is near-universal in OC; AT&T Fiber covers many OC neighborhoods. Check by address.",
+   "vibe": "Calm, family-suburban streets with a small Old Town. You'd drive 5-10 min for third-wave coffee."
+  },
+  "id": "placentia",
+  "name": "Placentia",
+  "region": "Orange County"
+ },
+ {
+  "neighborhood": "Fullerton (east, non-downtown)",
+  "lat": 33.88,
+  "lng": -117.885,
+  "freeway": {
+   "score": 8,
+   "nearest": [
+    "SR-57 (Nutwood / Chapman / Yorba Linda Blvd ramps, ~3-5 min)",
+    "SR-91 (State College / Raymond / Harbor, ~6-8 min)",
+    "I-5 (~10 min west)"
+   ],
+   "note": "East Fullerton (CSUF / Chapman-Nutwood / Commonwealth east of Raymond) hugs the 57. general knowledge, not verified this round; times are estimates."
+  },
+  "traffic": {
+   "score": 5,
+   "note": "SR-57 southbound to the Orange Crush and SR-91 are classic peak bottlenecks. Arterials around CSUF (Nutwood, State College, Chapman) clog at class change times. general knowledge, not verified this round."
+  },
+  "coffee": {
+   "score": 5,
+   "cafes": [
+    "Lion and Lamb Coffee Roasters – top-rated (5.0) on an aggregator; listed with north/east Fullerton roasteries",
+    "Coffee Up Roastery – specialty organic roaster with its own cafe",
+    "Chase Coffee Roasters – roastery listed for north/east Fullerton",
+    "Little Ox Coffee – north/east Fullerton, 'quieter neighborhood coffee'",
+    "Klatch Coffee (inside Fullerton Sprouts) – serious multi-roaster/roaster brand"
+   ],
+   "note": "An aggregator guide says north and east Fullerton have Lion and Lamb, Coffee Up, Chase and Little Ox 'for roastery visits, campus-area work sessions'. Exact addresses were not confirmed, so walkability depends on the block. Downtown (Play, Dripp, Made) is ~8 min by car."
+  },
+  "walk": {
+   "score": 6,
+   "walk_score": 54,
+   "note": "City average is 54. 2300 E Commonwealth scores 79 and Deerpark Dr 72, but hillside streets fall to ~32."
+  },
+  "quiet": {
+   "score": 7,
+   "note": "Residential and mostly quiet. Expect student activity near CSUF and hum from the 57 within a few blocks of it. Fullerton Municipal Airport is on the far west side. general knowledge, not verified this round."
+  },
+  "safety": {
+   "score": 7,
+   "violent_per_1k": 4.52,
+   "property_per_1k": 21.26,
+   "year": "2021-2024 vintage (NeighborhoodScout label unclear)",
+   "source": "NeighborhoodScout (FBI UCR; page labels the data year inconsistently, 2021 to 2024), seen in search snippets because the page fetch failed",
+   "note": "These are citywide figures. The east side is generally calmer than downtown and southwest Fullerton (CrimeGrade has Downtown-specific pages showing higher rates). CrimeGrade violent rate ~4.1/1k. Fullerton was #49 on SmartAsset's 2025 safest-suburbs list."
+  },
+  "lax": {
+   "score": 4,
+   "minutes_offpeak": 40,
+   "minutes_peak": 70,
+   "note": "SR-91 W, then I-605 S / I-105 W. rough drive-time estimate from general road-network knowledge; not verified (web search budget ran out this round)"
+  },
+  "nightlife": {
+   "score": 9,
+   "nearest_district": "Downtown Fullerton",
+   "drive_minutes": 8,
+   "note": "Bars and SOCO are close by car but far enough to keep home quiet."
+  },
+  "gyms": {
+   "score": 8,
+   "examples": [
+    "CSUF-area chain gyms on Chapman/State College; 24 Hour Fitness / LA Fitness-type options (unverified)"
+   ]
+  },
+  "services": {
+   "score": 8,
+   "note": "Grocery-dense: Sprouts (with Klatch), plus Trader Joe's and Ralphs-type options nearby (general knowledge, not verified this round)."
+  },
+  "rail": {
+   "score": 2,
+   "nearest_station": "Fullerton Transportation Center, ~8 min drive",
+   "line": "Metrolink Orange County / 91-PV lines + Amtrak Pacific Surfliner",
+   "note": "No Metro rail."
+  },
+  "airports_other": "LGB ~25 min, SNA ~25 min (estimates)",
+  "summary": "A strong North OC balance: a quick 57 on-ramp, a short drive to downtown nightlife, decent safety and a cluster of roasters around north/east Fullerton. The trade-off is that coffee within a true 10-min walk depends on the exact block, and 57/91 peak traffic is real.",
+  "sources": [
+   "https://mycoffeeexplorer.com/guides/fullerton",
+   "https://joe.coffee/locations/ca/fullerton/coffee-up-roastery-specialty-cafe-and-tea-fullerton-e688b71c-1100-43d6-9886-16293d671821/",
+   "https://www.tripadvisor.com/Restaurants-g32416-c8-Fullerton_California.html",
+   "https://www.neighborhoodscout.com/ca/fullerton/crime",
+   "https://crimegrade.org/violent-crime-fullerton-ca/",
+   "https://fullertonobserver.com/2025/08/13/fullerton-recognized-in-smartassets-2025-ranking-of-americas-safest-suburbs/",
+   "https://www.renthop.com/average-rent-in/fullerton-ca",
+   "https://www.rentometer.com/average-rent-in/ca/fullerton-ca",
+   "https://www.walkscore.com/score/1220-n-placentia-ave-fullerton-ca-92831"
+  ],
+  "extras": {
+   "median_1br_rent": 2350,
+   "rent_source": "RentHop, Jul 2026, citywide (Rentometer Jan 2026 range $2,200-2,400; Apartment List $2,599)",
+   "rent_trend": "-4.5% YoY (RentHop Jul 2026)",
+   "summer_high_f": null,
+   "marine_layer": "little: inland. summer_high_f is null because no NOAA normal was retrieved. Expect high-80s °F August highs (general knowledge, not verified this round).",
+   "fire_hazard": "CAL FIRE FHSZ: none for the flat east/CSUF area; the northern hills (Coyote Hills / Sunny Hills edges) may be mapped. Verify on the CAL FIRE map (general knowledge, not verified this round).",
+   "flood_zone": null,
+   "airport_noise": "none notable (Fullerton Municipal Airport is on the west side)",
+   "parks": [
+    "Craig Regional Park",
+    "Fullerton Arboretum (CSUF)"
+   ],
+   "farmers_markets": [],
+   "fiber": "Not checked this round (search budget ran out). Spectrum cable is near-universal in OC; AT&T Fiber covers many OC neighborhoods. Check by address.",
+   "vibe": "College-town suburb with real roasters nearby. Quiet streets, and downtown bars are a short drive away."
+  },
+  "id": "fullerton-east-non-downtown",
+  "name": "Fullerton (east, non-downtown)",
+  "region": "Orange County"
+ },
+ {
+  "neighborhood": "Buena Park",
+  "lat": 33.8675,
+  "lng": -117.9981,
+  "freeway": {
+   "score": 9,
+   "nearest": [
+    "I-5 (Beach Blvd / Artesia / Valley View, ~3-5 min)",
+    "SR-91 (Beach Blvd / Knott Ave / Valley View, ~3-5 min)",
+    "SR-39 Beach Blvd",
+    "I-605 (~8-10 min)"
+   ],
+   "note": "Two major freeways cross the city. general knowledge, not verified this round; times are estimates."
+  },
+  "traffic": {
+   "score": 5,
+   "note": "SR-91 westbound to the 605 and I-5 at peak are heavy. Beach Blvd backs up near Knott's and The Source on weekends and event nights. general knowledge, not verified this round."
+  },
+  "coffee": {
+   "score": 5,
+   "cafes": [
+    "Stereoscope Coffee – roasts daily in front of customers; often called the best in Buena Park",
+    "Van Dyke's Coffee Roasters – in-house specialty roaster, single location",
+    "Coffee Code – La Palma Ave roaster (coffee ice cubes)",
+    "Seesaw Beans and Coffee – Beach Blvd, roasts its own beans",
+    "In-sit Coffee – The Source OC, flavored lattes"
+   ],
+   "note": "There are genuinely 3-4 roasters, but they are spread across a sprawling city. Few blocks will have more than 1-2 within a 10-min walk. Laptop-friendliness was not verified."
+  },
+  "walk": {
+   "score": 5,
+   "walk_score": 57,
+   "note": "City average is 57 (one page says 55). Individual addresses range 53-78."
+  },
+  "quiet": {
+   "score": 6,
+   "note": "Expect tourist corridor noise on Beach Blvd and around Knott's (nightly summer fireworks and coaster noise nearby), freeway noise near the 5/91, and BNSF freight trains. Residential tracts away from Beach Blvd are calmer. general knowledge, not verified this round."
+  },
+  "safety": {
+   "score": 7,
+   "violent_per_1k": 2.46,
+   "property_per_1k": 23.3,
+   "year": "2021-2024 vintage (NeighborhoodScout label unclear)",
+   "source": "NeighborhoodScout (FBI UCR; page labels the data year inconsistently, 2021 to 2024), seen in search snippets because the page fetch failed",
+   "note": "Violent crime is well below LA. Property crime is near the LA average, likely inflated by the Knott's / Beach Blvd retail and hotel corridor."
+  },
+  "lax": {
+   "score": 5,
+   "minutes_offpeak": 35,
+   "minutes_peak": 60,
+   "note": "SR-91 W, then I-605 S and I-405 N, or I-105 W. rough drive-time estimate from general road-network knowledge; not verified (web search budget ran out this round)"
+  },
+  "nightlife": {
+   "score": 7,
+   "nearest_district": "Downtown Fullerton",
+   "drive_minutes": 12,
+   "note": "The Source OC and Beach Blvd K-town spots are local. Belmont Shore is ~20 min."
+  },
+  "gyms": {
+   "score": 8,
+   "examples": [
+    "Chain gyms along Beach Blvd / Orangethorpe (unverified)"
+   ]
+  },
+  "services": {
+   "score": 8,
+   "note": "Large Korean grocery options (H Mart-type) plus standard chains (general knowledge, not verified this round)."
+  },
+  "rail": {
+   "score": 3,
+   "nearest_station": "Buena Park Metrolink station",
+   "line": "Metrolink Orange County / 91-PV lines",
+   "note": "No Metro rail."
+  },
+  "airports_other": "LGB ~20 min, SNA ~25 min (estimates)",
+  "summary": "The best freeway access of this set (5 + 91 + 39) and the shortest LAX drive, with surprisingly many roasters. The trade-offs are tourist-corridor noise near Knott's/Beach Blvd and a car-oriented layout.",
+  "sources": [
+   "https://justinpluslauren.com/buena-park-coffee-shops/",
+   "https://visitbuenapark.com/p/plan/blog/blog-dining/buena-park-brings-coffee-culture-to-orange-county-visitors",
+   "https://wanderlog.com/place/details/1415831/van-dyke-coffee-roasters",
+   "https://www.neighborhoodscout.com/ca/buena-park/crime",
+   "https://www.trulia.com/for_rent/Buena_Park,CA/",
+   "https://www.apartments.com/reviews/ca/buena-park/6766-san-benito-way-buena-park-ca-90620/ycxxemv",
+   "https://apartmentlist.com/ca/buena-park",
+   "https://walkscore.com/CA/Buena_Park"
+  ],
+  "extras": {
+   "median_1br_rent": 2095,
+   "rent_source": "Trulia, May 2026 (Apartments.com $1,931; Apartment List ~$2,250)",
+   "rent_trend": "+0.8% YoY (Apartments.com, undated snapshot)",
+   "summer_high_f": null,
+   "marine_layer": "some: a bit closer to the coast than Fullerton. summer_high_f is null because no NOAA normal was retrieved. Expect mid/upper-80s °F August highs (general knowledge, not verified this round).",
+   "fire_hazard": "CAL FIRE FHSZ: none (flat urban; general knowledge, not verified this round)",
+   "flood_zone": null,
+   "airport_noise": "none notable",
+   "parks": [
+    "Ralph B. Clark Regional Park"
+   ],
+   "farmers_markets": [],
+   "fiber": "Not checked this round (search budget ran out). Spectrum cable is near-universal in OC; AT&T Fiber covers many OC neighborhoods. Check by address.",
+   "vibe": "Busy, practical, tourist-edged suburb with a strong Korean cafe and food scene. Pick a tract away from Beach Blvd for quiet."
+  },
+  "id": "buena-park",
+  "name": "Buena Park",
+  "region": "Orange County"
+ },
+ {
+  "neighborhood": "Brea",
+  "lat": 33.9167,
+  "lng": -117.9001,
+  "freeway": {
+   "score": 7,
+   "nearest": [
+    "SR-57 (Imperial Hwy / Lambert Rd, ~5 min)",
+    "SR-90 Imperial Hwy",
+    "SR-91 (~12 min)"
+   ],
+   "note": "Only one freeway is close. general knowledge, not verified this round; times are estimates."
+  },
+  "traffic": {
+   "score": 5,
+   "note": "SR-57 peak congestion runs both ways (toward the 60 and toward the Orange Crush). Imperial Hwy near Brea Mall is busy. general knowledge, not verified this round."
+  },
+  "coffee": {
+   "score": 4,
+   "cafes": [
+    "Melted Vinyl Coffee – 580 S Brea Blvd, near downtown core",
+    "Reborn Coffee – 3373 E Imperial Hwy; specialty cafe (Brea-based small chain), outdoor seating",
+    "The International Coffee House – 1015 E Imperial Hwy; long-time local favorite, specialty drinks",
+    "Oak & Willow Coffee & Bakery – E Imperial Hwy",
+    "Intelligentsia – 115 S Brea Blvd per a generic regional roundup (unconfirmed, possibly wrong)"
+   ],
+   "note": "Mostly flavored-drink and neighborhood cafes. Serious third-wave options are unconfirmed. Downtown Brea (Birch St) is the only walkable cluster."
+  },
+  "walk": {
+   "score": 4,
+   "walk_score": null,
+   "note": "No city Walk Score was found (fetch failed). Downtown Brea / Birch St is walkable, but most of the city is car-dependent (estimate)."
+  },
+  "quiet": {
+   "score": 8,
+   "note": "Hillside and tract neighborhoods are very quiet. Downtown Birch St has the Improv and bars but is self-contained. general knowledge, not verified this round."
+  },
+  "safety": {
+   "score": 7,
+   "violent_per_1k": 2.15,
+   "property_per_1k": 29.32,
+   "year": "2021-2024 vintage (NeighborhoodScout label unclear)",
+   "source": "NeighborhoodScout (FBI UCR; page labels the data year inconsistently, 2021 to 2024), seen in search snippets because the page fetch failed",
+   "note": "Very low violent crime. Property crime is above the LA average, inflated by Brea Mall and big-box retail theft. Residential areas are likely much lower."
+  },
+  "lax": {
+   "score": 3,
+   "minutes_offpeak": 45,
+   "minutes_peak": 75,
+   "note": "SR-57 S, SR-91 W, then I-605 / I-105. rough drive-time estimate from general road-network knowledge; not verified (web search budget ran out this round)"
+  },
+  "nightlife": {
+   "score": 8,
+   "nearest_district": "Downtown Brea (Birch St Promenade); Downtown Fullerton",
+   "drive_minutes": 8,
+   "note": "Downtown Fullerton is ~12 min."
+  },
+  "gyms": {
+   "score": 7,
+   "examples": [
+    "Gyms around Brea Mall / Imperial Hwy (unverified)"
+   ]
+  },
+  "services": {
+   "score": 8,
+   "note": "Brea Mall area has full retail and grocery. general knowledge, not verified this round."
+  },
+  "rail": {
+   "score": 1,
+   "nearest_station": "Fullerton Transportation Center, ~12-15 min drive",
+   "line": "Metrolink",
+   "note": "None practical."
+  },
+  "airports_other": "LGB ~30 min, SNA ~30 min (estimates)",
+  "summary": "Very quiet and low in violent crime, with a compact walkable downtown. For this client it scores below Fullerton on specialty coffee, has only one nearby freeway (57), and has a long LAX drive.",
+  "sources": [
+   "https://orangecoast.com/?p=38908",
+   "https://frankiapp.com/business/melted-vinyl-coffee-42014.md",
+   "https://frankiapp.com/business/reborn-coffee-43639.md",
+   "https://meetingguide.aa.org/?p=673180",
+   "https://www.neighborhoodscout.com/ca/brea/crime",
+   "https://www.trulia.com/for_rent/Brea,CA/",
+   "https://www.rentometer.com/average-rent-in/ca/brea-ca",
+   "https://www.rentcafe.com/average-rent-market-trends/us/ca/brea/",
+   "https://apartmentlist.com/ca/brea"
+  ],
+  "extras": {
+   "median_1br_rent": 2292,
+   "rent_source": "Trulia, Sep 2026 (Rentometer Feb 2026 $2,438; RentCafe May 2026 $2,386; Apartment List $2,608)",
+   "rent_trend": null,
+   "summer_high_f": null,
+   "marine_layer": "little: inland, among the warmest areas here. summer_high_f is null because no NOAA normal was retrieved. Expect ~90 °F August highs (general knowledge, not verified this round).",
+   "fire_hazard": "CAL FIRE FHSZ: very high in the northern/eastern hills (Carbon Canyon, Olinda); none for flat downtown and south Brea (general knowledge, not verified this round, verify)",
+   "flood_zone": null,
+   "airport_noise": "none notable",
+   "parks": [
+    "Carbon Canyon Regional Park",
+    "Craig Regional Park",
+    "Brea Sports Park"
+   ],
+   "farmers_markets": [],
+   "fiber": "Not checked this round (search budget ran out). Spectrum cable is near-universal in OC; AT&T Fiber covers many OC neighborhoods. Check by address.",
+   "vibe": "Tidy, quiet, safe suburb with a small entertainment downtown. Coffee leans casual rather than third-wave."
+  },
+  "id": "brea",
+  "name": "Brea",
+  "region": "Orange County"
+ },
+ {
+  "neighborhood": "Seal Beach",
+  "lat": 33.7414,
+  "lng": -118.1048,
+  "freeway": {
+   "score": 8,
+   "nearest": [
+    "I-405 (Seal Beach Blvd, ~5 min from Old Town)",
+    "I-605 (south terminus at the 405/22, ~6 min)",
+    "SR-22 (~6 min)",
+    "PCH (local)"
+   ],
+   "note": "Three freeways meet just north of town. general knowledge, not verified this round; times are estimates."
+  },
+  "traffic": {
+   "score": 4,
+   "note": "The 405/605/22 interchange and I-405 through Westminster are chronic peak bottlenecks (405 Express Lanes opened ~2023; general knowledge, not verified this round). PCH is jammed on summer weekends."
+  },
+  "coffee": {
+   "score": 6,
+   "cafes": [
+    "Humblemaker Coffee – 350 Main St; pour-over specialty, calm minimalist room",
+    "Javatinis – 148 Main St; roasts in-house, limited seating",
+    "Catrina Café – 300 block of Main; breakfast/lunch with specialty coffee drinks",
+    "Bogart's Coffee House – Ocean Ave (per Wanderlog roundup)",
+    "The Coffee Bean & Tea Leaf – 347 Main St (chain)"
+   ],
+   "note": "From Old Town, 2-3 real options are a walk away on Main St. Belmont Shore's 2nd St cafes are a ~5-8 min drive. Outside Old Town (College Park, Leisure World) there is little walkable coffee."
+  },
+  "walk": {
+   "score": 6,
+   "walk_score": 41,
+   "note": "City average is 41, but Old Town's neighborhood Walk Score is 81. Score assumes an Old Town rental, which is where most apartments are."
+  },
+  "quiet": {
+   "score": 7,
+   "note": "Old Town side streets are quiet, though Main St bars get lively on weekends. Military helicopter traffic from Joint Forces Training Base Los Alamitos is a known noise source in north Seal Beach. The 405 hums in College Park. general knowledge, not verified this round."
+  },
+  "safety": {
+   "score": 6,
+   "violent_per_1k": null,
+   "property_per_1k": null,
+   "year": "2025",
+   "source": "Seal Beach PD 2025 Annual Crime Statistics Report (NIBRS Group A), via city press release / Sun News",
+   "note": "In 2025 there were 1,322 Group A offenses (-8.7%), 173 crimes-against-persons victims and 952 property offenses (-5%). With ~24.2k residents that is roughly 7.1 persons and ~39 property per 1k (my arithmetic). Those NIBRS figures include simple assault, vandalism and fraud, so they are not comparable to UCR violent/property rates, and per-1k fields are left null. NeighborhoodScout gives ~32 total per 1k. Small population plus retail along Seal Beach Blvd/PCH inflates the rates. Old Town is generally regarded as safe."
+  },
+  "lax": {
+   "score": 6,
+   "minutes_offpeak": 30,
+   "minutes_peak": 50,
+   "note": "I-405 N. rough drive-time estimate from general road-network knowledge; not verified (web search budget ran out this round)"
+  },
+  "nightlife": {
+   "score": 9,
+   "nearest_district": "Main St Seal Beach; Belmont Shore 2nd St (Long Beach)",
+   "drive_minutes": 6,
+   "note": "Long Beach downtown is ~15 min."
+  },
+  "gyms": {
+   "score": 6,
+   "examples": [
+    "Small boutique gyms in Old Town; chain gyms at Seal Beach Blvd shopping centers (unverified)"
+   ]
+  },
+  "services": {
+   "score": 7,
+   "note": "Pavilions / Trader Joe's-type grocery on Seal Beach Blvd / PCH and the Shops at Rossmoor (general knowledge, not verified this round)."
+  },
+  "rail": {
+   "score": 1,
+   "nearest_station": "Metro A Line, downtown Long Beach, ~15-20 min drive",
+   "line": "A Line",
+   "note": "None practical."
+  },
+  "airports_other": "LGB ~10 min, SNA ~20 min (estimates)",
+  "summary": "Small beach town with a walkable Old Town, real specialty coffee on Main St and the shortest LAX/LGB drives in this OC set. The trade-offs are notoriously congested 405/605/22 traffic, a small rental stock and military helicopter noise in parts of town.",
+  "sources": [
+   "https://atmosfy.io/location/seal-beach/humblemaker-coffee",
+   "https://www.sunnews.org/restaurant-spotlight-javatinis/",
+   "https://www.sunnews.org/whats-new-in-old-town-businesses-setting-up-shop-on-300-block-of-main-street/",
+   "https://wanderlog.com/list/geoCategory/288999",
+   "https://www.sealbeachca.gov/Portals/0/Documents/City of Seal Beach Press Release - Seal Beach PD Releases 2025 Annual Crime Statistics Report.pdf",
+   "https://www.sunnews.org/seal-beach-police-department-sees-8-7-decrease-in-reported-crime/",
+   "https://www.neighborhoodscout.com/ca/seal-beach/crime",
+   "https://www.rentometer.com/average-rent-in/ca/seal-beach-ca",
+   "https://www.apartments.com/seal-beach-ca/",
+   "https://www.padmapper.com/apartments/seal-beach-ca",
+   "https://www.walkscore.com/score/-Seal Beach--CA"
+  ],
+  "extras": {
+   "median_1br_rent": 2391,
+   "rent_source": "Apartments.com, 2026 snapshot (Trulia Jun 2026 $2,367; Rentometer Jan 2026 apartments $2,563; PadMapper Aug 2026 median $3,026 on 25 listings)",
+   "rent_trend": "-4% YoY (Apartments.com)",
+   "summer_high_f": null,
+   "marine_layer": "strong: right on the ocean; June gloom is common and AC is often optional. summer_high_f is null because no NOAA normal was retrieved. Expect upper-70s °F August highs (general knowledge, not verified this round).",
+   "fire_hazard": "CAL FIRE FHSZ: none (general knowledge, not verified this round)",
+   "flood_zone": "Coastal flood exposure: Old Town and Surfside sit near sea level, with FEMA coastal (AE/VE) zones along the beach. Check the exact address on the FEMA map (general knowledge, not verified this round).",
+   "airport_noise": "Military helicopters (JFTB Los Alamitos) in north town; LGB is ~10 min but its flight paths mostly miss Old Town (general knowledge, not verified this round)",
+   "parks": [
+    "Seal Beach Pier & beach",
+    "Eisenhower Park",
+    "Gum Grove Park"
+   ],
+   "farmers_markets": [],
+   "fiber": "Not checked this round (search budget ran out). Spectrum cable is near-universal in OC; AT&T Fiber covers many OC neighborhoods. Check by address.",
+   "vibe": "Sleepy, walkable beach village with a couple of good cafes on Main St. Quiet nights except weekend bar blocks."
+  },
+  "id": "seal-beach",
+  "name": "Seal Beach",
+  "region": "Orange County"
+ },
+ {
+  "neighborhood": "Santa Ana – East (Franzen Ave)",
+  "lat": 33.77,
+  "lng": -117.832,
+  "freeway": {
+   "score": 9,
+   "nearest": [
+    "SR-55 (17th St / 4th St ramps, ~2-4 min)",
+    "I-5 (~5 min)",
+    "SR-22 (~5-7 min)"
+   ],
+   "note": "Franzen Ave (ZIP 92705) sits beside the 55 near the Tustin/Orange border, in or near Cabrillo Park per Walk Score. general knowledge, not verified this round; times are estimates."
+  },
+  "traffic": {
+   "score": 4,
+   "note": "Sits on the Orange Crush (5/55/22). The SR-55 and the I-5 at the 55 are among OC's worst peak corridors. Tustin Ave / 17th St arterials are busy. general knowledge, not verified this round."
+  },
+  "coffee": {
+   "score": 3,
+   "cafes": [
+    "The Coffee Bean & Tea Leaf – 2264 E 17th St (chain)",
+    "Bruegger's Bagels – 2262 E 17th St (bagels with coffee)"
+   ],
+   "note": "Search found no independent specialty cafe within a 10-min walk. DTSA's specialty scene and Old Towne Orange are ~5-8 min by car."
+  },
+  "walk": {
+   "score": 7,
+   "walk_score": 75,
+   "note": "A Franzen Ave listing shows Walk Score 75 (Transit 24), helped by Northland Center and the Tustin Franzen Center. The walking is to errands, not to cafes."
+  },
+  "quiet": {
+   "score": 5,
+   "note": "SR-55 freeway noise is likely on the blocks nearest the freeway. Tustin Ave and 17th St traffic too. Possible SNA arrival traffic overhead (unverified). Interior blocks of Cabrillo Park are calmer. general knowledge, not verified this round."
+  },
+  "safety": {
+   "score": 6,
+   "violent_per_1k": 4.93,
+   "property_per_1k": 17.02,
+   "year": "2024",
+   "source": "AreaVibes citing FBI UCR, citywide Santa Ana (1,530 violent / 5,282 property)",
+   "note": "These are citywide rates, below LA's. The east side near the Tustin/Orange border is generally calmer than central Santa Ana (general knowledge, not verified this round). No 2025 SAPD numbers were found."
+  },
+  "lax": {
+   "score": 3,
+   "minutes_offpeak": 45,
+   "minutes_peak": 75,
+   "note": "I-5 N, then I-605 / I-105, or I-405 N. rough drive-time estimate from general road-network knowledge; not verified (web search budget ran out this round)"
+  },
+  "nightlife": {
+   "score": 9,
+   "nearest_district": "Downtown Santa Ana (4th St / East End); Old Towne Orange",
+   "drive_minutes": 7,
+   "note": "Times are estimates."
+  },
+  "gyms": {
+   "score": 8,
+   "examples": [
+    "Gyms around Tustin Ave / 17th St centers (unverified)"
+   ]
+  },
+  "services": {
+   "score": 8,
+   "note": "Northland Center and Tustin Franzen Center are walkable for groceries and errands (per listing)."
+  },
+  "rail": {
+   "score": 2,
+   "nearest_station": "Santa Ana Regional Transportation Center / Orange station, short drive",
+   "line": "Metrolink Orange County line",
+   "note": "No Metro rail."
+  },
+  "airports_other": "LGB ~25 min, SNA ~12 min (estimates)",
+  "summary": "The best freeway proximity of this set and walkable errands, with DTSA/Orange nightlife minutes away. But walkable specialty coffee is missing, and it sits on the congested Orange Crush with likely freeway noise. Best for someone who drives to cafes.",
+  "sources": [
+   "https://www.redfin.com/sitemap/CA/92705/street/Franzen+Ave",
+   "https://www.walkscore.com/score/loc/lat=33.7700/lng=-117.8320/",
+   "https://www.westsiderentals.com/santa-ana-ca/2220-franzen-ave-unit-d-ffslz0t",
+   "https://www.coffeebean.com/store/ca/santa-ana/2264-17th-st",
+   "https://fr.foursquare.com/daggo/list/venuelikes",
+   "https://www.areavibes.com/santa+ana-ca/eastside/crime/",
+   "https://www.rentcafe.com/apartments-for-rent/santa-ana-ca/?page=2"
+  ],
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "No 92705 1BR median found. RentCafe May 2026 Santa Ana all-unit average $2,635; Trulia 92706 1BR $2,044 (Jun 2026); one Franzen Ave listing at $2,200/mo seen.",
+   "rent_trend": null,
+   "summer_high_f": null,
+   "marine_layer": "some: central OC gets morning marine layer in late spring. summer_high_f is null because no NOAA normal was retrieved. Expect mid-80s °F August highs (general knowledge, not verified this round).",
+   "fire_hazard": "CAL FIRE FHSZ: none (general knowledge, not verified this round)",
+   "flood_zone": null,
+   "airport_noise": "Possible SNA arrival traffic and SR-55 freeway noise; unverified",
+   "parks": [
+    "Santiago Park",
+    "Santa Ana Zoo at Prentice Park"
+   ],
+   "farmers_markets": [],
+   "fiber": "Not checked this round (search budget ran out). Spectrum cable is near-universal in OC; AT&T Fiber covers many OC neighborhoods. Check by address.",
+   "vibe": "Practical, errand-walkable residential pocket by the 55. Good coffee and nightlife are a short drive, not a stroll."
+  },
+  "id": "santa-ana-east-franzen-ave",
+  "name": "Santa Ana – East (Franzen Ave)",
+  "region": "Orange County"
+ },
+ {
+  "neighborhood": "Newport Beach",
+  "lat": 33.6189,
+  "lng": -117.9289,
+  "freeway": {
+   "score": 6,
+   "nearest": [
+    "SR-55 (south end at 19th St, Costa Mesa; ~5-8 min from Newport Heights)",
+    "SR-73 (Jamboree / MacArthur, ~8 min)",
+    "I-405 (~10 min)"
+   ],
+   "note": "Varies a lot by sub-area: Newport Heights/Westcliff is closest to the 55, while the Peninsula and Corona del Mar are 10-15 min out. general knowledge, not verified this round; times are estimates."
+  },
+  "traffic": {
+   "score": 5,
+   "note": "PCH and Newport Blvd jam on summer weekends. The 405 near SNA and the 55 are heavy at peak. general knowledge, not verified this round."
+  },
+  "coffee": {
+   "score": 6,
+   "cafes": [
+    "Kéan Coffee Artisan Roasters – local roaster, rotating seasonal roasts",
+    "Alta Coffee Warehouse – Cannery Village; good for reading / lingering",
+    "Huskins Coffee – Balboa Island; small-batch, family-run",
+    "KIT Coffee – modern, design-forward",
+    "Mermaid Coffee Bar – Balboa Village",
+    "Stereoscope Coffee Co. – Newport location (per visitor guide)"
+   ],
+   "note": "There's a real specialty scene, but it's split across sub-areas (Balboa, Cannery Village, CdM, Westcliff). Any one apartment walks to 1-3 cafes."
+  },
+  "walk": {
+   "score": 5,
+   "walk_score": 49,
+   "note": "City average is 49. Balboa / Corona del Mar addresses score up to ~95, while inland tracts score ~37."
+  },
+  "quiet": {
+   "score": 6,
+   "note": "SNA departures fly over the Back Bay, Newport Heights and Dover Shores, a well-known jet-noise issue. The Peninsula has summer crowds and bar noise. CdM / Eastbluff interior streets are quiet. general knowledge, not verified this round."
+  },
+  "safety": {
+   "score": 8,
+   "violent_per_1k": 2.0,
+   "property_per_1k": null,
+   "year": "2021-2024 vintage (NeighborhoodScout label unclear)",
+   "source": "NeighborhoodScout (FBI UCR; page labels the data year inconsistently, 2021 to 2024), seen in search snippets because the page fetch failed",
+   "note": "Violent ~2/1k and total ~21/1k, implying property ~19/1k (not stated directly). AreaVibes gives property ~18.7/1k (undated). Visitor-inflated rates on the Peninsula; car break-ins at beach lots."
+  },
+  "lax": {
+   "score": 3,
+   "minutes_offpeak": 45,
+   "minutes_peak": 80,
+   "note": "I-405 N. rough drive-time estimate from general road-network knowledge; not verified (web search budget ran out this round)"
+  },
+  "nightlife": {
+   "score": 8,
+   "nearest_district": "Costa Mesa (17th St / The Lab & The Camp); Balboa Peninsula",
+   "drive_minutes": 10,
+   "note": "Times are estimates."
+  },
+  "gyms": {
+   "score": 8,
+   "examples": [
+    "Equinox / boutique studios around Fashion Island and Westcliff (unverified)"
+   ]
+  },
+  "services": {
+   "score": 9,
+   "note": "Full high-end grocery: Whole Foods, Trader Joe's, Gelson's/Bristol Farms-type options (general knowledge, not verified this round)."
+  },
+  "rail": {
+   "score": 1,
+   "nearest_station": "Irvine or Tustin Metrolink, ~15 min drive",
+   "line": "Metrolink",
+   "note": "None practical."
+  },
+  "airports_other": "LGB ~30 min, SNA ~10 min (estimates)",
+  "summary": "Coastal, safe and coffee-rich in pockets, with SNA minutes away. But rents run ~$3,300-3,500+ for a 1BR, freeway access is mediocre outside Newport Heights, and SNA jet noise affects Back Bay neighborhoods.",
+  "sources": [
+   "https://visitnewportbeach.com/restaurants/article/your-ultimate-guide-to-newport-beachs-best-cafes-and-coffee-shops/",
+   "https://visitnewportbeach.com/restaurants/article/best-coffee-shops-bakeries-newport-beach",
+   "https://cassiefrench.com/blog/best-coffee-shops-in-newport-beach-a-locals-guide",
+   "https://www.neighborhoodscout.com/ca/newport-beach/crime",
+   "https://www.areavibes.com/newport+beach-ca/crime/",
+   "https://www.rentometer.com/average-rent-in/ca/newport-beach-ca",
+   "https://www.trulia.com/for_rent/Newport Beach,CA/",
+   "https://www.renthop.com/average-rent-in/92663-newport-beach-ca",
+   "https://www.zumper.com/rent-research/newport-beach-ca/upper-newport-bay-nature-preserve",
+   "https://www.walkscore.com/score/-92625"
+  ],
+  "extras": {
+   "median_1br_rent": 3447,
+   "rent_source": "Rentometer, Feb 2026 average (Trulia May 2026 $3,300; RentHop 92663 Jun 2026 median $4,725; Corona del Mar median $4,495)",
+   "rent_trend": "RentHop 92663 median +43% YoY (Jun 2026, likely mix-driven)",
+   "summer_high_f": null,
+   "marine_layer": "strong: coastal, with frequent May-July gloom; little AC need near the water. summer_high_f is null because no NOAA normal was retrieved. Expect mid-70s °F August highs at the coast (general knowledge, not verified this round).",
+   "fire_hazard": "CAL FIRE FHSZ: none for the harbor/Peninsula; Newport Coast and the canyon edges are high to very high (general knowledge, not verified this round, verify)",
+   "flood_zone": "Coastal flood zones on Balboa Peninsula, Balboa Island and the harbor edges (FEMA AE/VE; general knowledge, not verified this round, verify by address).",
+   "airport_noise": "SNA departure noise over the Back Bay, Newport Heights and Dover Shores; notable",
+   "parks": [
+    "Upper Newport Bay Nature Preserve",
+    "Balboa Island boardwalk",
+    "Corona del Mar State Beach"
+   ],
+   "farmers_markets": [],
+   "fiber": "Not checked this round (search budget ran out). Spectrum cable is near-universal in OC; AT&T Fiber covers many OC neighborhoods. Check by address.",
+   "vibe": "Polished coastal city with good cafes in each village. Pick CdM or Newport Heights for quiet, and budget for high rent."
+  },
+  "id": "newport-beach",
+  "name": "Newport Beach",
+  "region": "Orange County"
+ },
+ {
+  "neighborhood": "Lake Forest",
+  "lat": 33.6469,
+  "lng": -117.6892,
+  "freeway": {
+   "score": 8,
+   "nearest": [
+    "I-5 (Lake Forest Dr / Bake Pkwy / El Toro Rd / Alton, ~3-6 min)",
+    "SR-241 toll (~6-8 min)",
+    "SR-133 / I-405 (~8-10 min)"
+   ],
+   "note": "West Lake Forest is close to I-5; the Foothill Ranch / Portola Hills areas are farther out on the 241. general knowledge, not verified this round; times are estimates."
+  },
+  "traffic": {
+   "score": 5,
+   "note": "I-5 through the El Toro Y and Laguna Hills is heavy at peak. Arterials flow fairly well. general knowledge, not verified this round."
+  },
+  "coffee": {
+   "score": 3,
+   "cafes": [],
+   "note": "Not researched (web search budget ran out this round). The suburban strip-center layout suggests mostly chains, with a few independents. Low confidence; recheck."
+  },
+  "walk": {
+   "score": 3,
+   "walk_score": null,
+   "note": "No Walk Score found. Car-dependent master-planned suburb (estimate)."
+  },
+  "quiet": {
+   "score": 9,
+   "note": "Very quiet master-planned neighborhoods. No commercial flight path since El Toro MCAS closed. I-5 adjacency only on the west edge. general knowledge, not verified this round."
+  },
+  "safety": {
+   "score": 9,
+   "violent_per_1k": 1.0,
+   "property_per_1k": 8.0,
+   "year": "2021-2024 vintage (NeighborhoodScout label unclear)",
+   "source": "NeighborhoodScout (FBI UCR; page labels the data year inconsistently, 2021 to 2024), seen in search snippets because the page fetch failed; rounded values from snippet",
+   "note": "Among the lowest rates in this set. Total ~10/1k. Policed by OCSD under contract."
+  },
+  "lax": {
+   "score": 2,
+   "minutes_offpeak": 55,
+   "minutes_peak": 90,
+   "note": "I-5 N / I-405 N. rough drive-time estimate from general road-network knowledge; not verified (web search budget ran out this round)"
+  },
+  "nightlife": {
+   "score": 6,
+   "nearest_district": "Irvine Spectrum",
+   "drive_minutes": 12,
+   "note": "Laguna Beach is ~25 min. Times are estimates."
+  },
+  "gyms": {
+   "score": 7,
+   "examples": [
+    "Chain gyms along Lake Forest Dr / Bake Pkwy (unverified)"
+   ]
+  },
+  "services": {
+   "score": 8,
+   "note": "Full suburban grocery and errands in strip centers (general knowledge, not verified this round)."
+  },
+  "rail": {
+   "score": 2,
+   "nearest_station": "Irvine Station (~10 min drive)",
+   "line": "Metrolink Orange County line",
+   "note": "No Metro rail."
+  },
+  "airports_other": "LGB ~35 min, SNA ~15 min (estimates)",
+  "summary": "Very safe and very quiet with decent I-5 access. But walkable specialty coffee is unverified and likely weak, and LAX is a long haul. It suits the quiet and safety priorities, not coffee or walkability.",
+  "sources": [
+   "https://www.neighborhoodscout.com/ca/lake-forest/crime"
+  ],
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "No rent data retrieved (search budget exhausted)",
+   "rent_trend": null,
+   "summer_high_f": null,
+   "marine_layer": "some/little: inland south OC with some morning marine layer. summer_high_f is null because no NOAA normal was retrieved. Expect mid-80s °F August highs (general knowledge, not verified this round).",
+   "fire_hazard": "CAL FIRE FHSZ: very high along the eastern foothills (Portola Hills, Foothill Ranch near Whiting Ranch); none for the western flatlands (general knowledge, not verified this round, verify)",
+   "flood_zone": null,
+   "airport_noise": "none notable (El Toro MCAS closed)",
+   "parks": [
+    "Whiting Ranch Wilderness Park",
+    "Heritage Hill Historical Park",
+    "Lake Forest Sports Park"
+   ],
+   "farmers_markets": [],
+   "fiber": "Not checked this round (search budget ran out). Spectrum cable is near-universal in OC; AT&T Fiber covers many OC neighborhoods. Check by address.",
+   "vibe": "Calm, safe, master-planned suburb. You'd drive to good coffee."
+  },
+  "id": "lake-forest",
+  "name": "Lake Forest",
+  "region": "Orange County"
+ },
+ {
+  "neighborhood": "Mission Viejo",
+  "lat": 33.6,
+  "lng": -117.672,
+  "freeway": {
+   "score": 7,
+   "nearest": [
+    "I-5 (Oso Pkwy / La Paz / Alicia / Crown Valley, ~3-8 min depending on tract)",
+    "SR-73 toll (~8-10 min)",
+    "SR-241 toll (~8-10 min)"
+   ],
+   "note": "The west side is close to I-5; eastern tracts are 8-10 min out. general knowledge, not verified this round; times are estimates."
+  },
+  "traffic": {
+   "score": 5,
+   "note": "I-5 through Mission Viejo / Laguna Hills is congested at peak. Arterials are wide and mostly flow. general knowledge, not verified this round."
+  },
+  "coffee": {
+   "score": 3,
+   "cafes": [],
+   "note": "Not researched (web search budget ran out this round). The Kaleidoscope / Shops at Mission Viejo areas likely have mostly chains. Low confidence; recheck."
+  },
+  "walk": {
+   "score": 3,
+   "walk_score": 36,
+   "note": "City average is 36, so car-dependent."
+  },
+  "quiet": {
+   "score": 9,
+   "note": "Very quiet residential, no flight path. Freeway noise only near the I-5. general knowledge, not verified this round."
+  },
+  "safety": {
+   "score": 9,
+   "violent_per_1k": 1.0,
+   "property_per_1k": 12.0,
+   "year": "2021-2024 vintage (NeighborhoodScout label unclear)",
+   "source": "NeighborhoodScout (FBI UCR; page labels the data year inconsistently, 2021 to 2024), seen in search snippets because the page fetch failed; rounded values from snippet",
+   "note": "Total ~13/1k, well below LA. Policed by OCSD under contract."
+  },
+  "lax": {
+   "score": 1,
+   "minutes_offpeak": 60,
+   "minutes_peak": 95,
+   "note": "I-5 N / I-405 N. rough drive-time estimate from general road-network knowledge; not verified (web search budget ran out this round)"
+  },
+  "nightlife": {
+   "score": 6,
+   "nearest_district": "Irvine Spectrum; Laguna Beach; San Juan Capistrano",
+   "drive_minutes": 15,
+   "note": "Times are estimates."
+  },
+  "gyms": {
+   "score": 7,
+   "examples": [
+    "Chain gyms near the Shops at Mission Viejo / Kaleidoscope (unverified)"
+   ]
+  },
+  "services": {
+   "score": 8,
+   "note": "Full suburban grocery and the Shops at Mission Viejo (general knowledge, not verified this round)."
+  },
+  "rail": {
+   "score": 3,
+   "nearest_station": "Laguna Niguel/Mission Viejo Metrolink",
+   "line": "Metrolink Orange County line",
+   "note": "Metrolink only."
+  },
+  "airports_other": "LGB ~40 min, SNA ~20 min (estimates)",
+  "summary": "Among the safest and quietest options, with Lake Mission Viejo and the hills. But it is car-dependent, specialty coffee is unverified, and it has the longest LAX drive of this set.",
+  "sources": [
+   "https://www.neighborhoodscout.com/ca/mission-viejo/crime",
+   "https://www.walkscore.com/score/loc/lat=33.656406/lng=-117.642746/"
+  ],
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "No rent data retrieved (search budget exhausted)",
+   "rent_trend": null,
+   "summer_high_f": null,
+   "marine_layer": "little/some: inland south OC. summer_high_f is null because no NOAA normal was retrieved. Expect mid/upper-80s °F August highs (general knowledge, not verified this round).",
+   "fire_hazard": "CAL FIRE FHSZ: high / very high along eastern and canyon edges (toward O'Neill Park / Trabuco); most of the city is lower (general knowledge, not verified this round, verify)",
+   "flood_zone": null,
+   "airport_noise": "none notable",
+   "parks": [
+    "Oso Creek Trail",
+    "O'Neill Regional Park (nearby)",
+    "Lake Mission Viejo (residents' association access)"
+   ],
+   "farmers_markets": [],
+   "fiber": "Not checked this round (search budget ran out). Spectrum cable is near-universal in OC; AT&T Fiber covers many OC neighborhoods. Check by address.",
+   "vibe": "Leafy, very quiet, safe master-planned suburb. Coffee and nightlife mean driving."
+  },
+  "id": "mission-viejo",
+  "name": "Mission Viejo",
   "region": "Orange County"
  }
 ]

@@ -88,5 +88,74 @@
   "name": "1834 S Bentley Ave",
   "source": "Private search 2026-10-15",
   "landlord": "company"
+ },
+ {
+  "name": "1206 Hayworth Ave (Units 3 & 14)",
+  "source": "Round 3 research 2026-10-26",
+  "req": {
+   "wd": "no"
+  },
+  "note": "Shared laundry, not in-unit (round 3). Listings also conflict on parking (\"no parking space\" vs \"attached garage\")."
+ },
+ {
+  "name": "Hayworth Apartments – 924-944 N Hayworth Ave",
+  "source": "Round 3 research 2026-10-26",
+  "req": {
+   "wd": "no"
+  },
+  "note": "Shared on-site laundry, not in-unit (round 3)."
+ },
+ {
+  "name": "Small-building unit – 2240 Franzen Ave Unit D",
+  "source": "Round 3 research 2026-10-26",
+  "req": {
+   "wd": "no"
+  },
+  "note": "Coin laundry, not in-unit (round 3)."
+ },
+ {
+  "name": "Lake Dianne",
+  "source": "Round 3 research 2026-10-26",
+  "req": {
+   "wd": "unclear"
+  },
+  "note": "Round 3: listings show washer/dryer hookups plus a shared laundry room; a stackable set may be offered. Confirm in-unit laundry. Dogs capped at 25 lb."
+ },
+ {
+  "name": "Condo – Savoy, 100 S Alameda St #318",
+  "source": "Round 3 research 2026-10-26",
+  "note": "Round 3: this unit appears listed FOR SALE ($499k), not for rent. Other 1BRs in the Savoy rent for about $2,350."
+ },
+ {
+  "name": "Condo – Cornell Building, 746 S Los Angeles St #402",
+  "source": "Round 3 research 2026-10-26",
+  "note": "Round 3: parking is in a nearby off-site garage with a shuttle."
+ },
+ {
+  "name": "4138 Perlita Ave, Unit D",
+  "source": "Round 3 research 2026-10-26",
+  "req": {
+   "parking": "no"
+  },
+  "note": "Round 3: listing says street parking only, and the unit may be 650 sq ft. Likely fails parking and size."
+ },
+ {
+  "name": "1365 Masselin Ave (townhome)",
+  "source": "Round 3 research 2026-10-26",
+  "base_rent": 2500,
+  "effective_rent": 2500,
+  "sqft": 1000,
+  "note": "Round 3: the listing is a ~1,000 sq ft 1BR apartment at $2,500, not a $2,300 townhome."
+ },
+ {
+  "name": "Kara",
+  "source": "Round 3 research 2026-10-26",
+  "note": "Round 3: Tripalink marks the building fully rented. Check for openings closer to January."
+ },
+ {
+  "name": "Channel Point (condo/unit rental)",
+  "source": "Round 3 research 2026-10-26",
+  "landlord": "company",
+  "note": "Round 3: looks like a managed apartment complex, not a condo; rents conflict ($1,900–$2,990)."
  }
 ]

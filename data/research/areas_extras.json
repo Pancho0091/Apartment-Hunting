@@ -1,0 +1,640 @@
+[
+  {
+    "neighborhood": "Downtown LA – South Park",
+    "extras": {
+      "median_1br_rent": 3175,
+      "rent_source": "RentHop South Park LA page (search snippet, undated, ~$3.44/sqft). The page may mix DTLA South Park with South LA's South Park; Downtown overall is $2,609 (RentReboot Oct 2026)",
+      "rent_trend": "~-0.1% YoY (RentHop, undated)",
+      "summer_high_f": null,
+      "marine_layer": "some: inland of the coast, gets June gloom mornings that burn off",
+      "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "flood_zone": null,
+      "airport_noise": "none notable for LAX; frequent LAPD/news helicopters downtown",
+      "parks": [
+        "Grand Hope Park",
+        "Pershing Square (nearby)"
+      ],
+      "farmers_markets": [
+        "Thursday Pershing Square Farmers Market (verify)"
+      ],
+      "fiber": "AT&T Fiber widely available in central LA multifamily; Frontier Fiber in some pockets; Google Fiber not in LA (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "vibe": "Dense high-rise district by Crypto.com Arena with plenty of coffee, but event-night crowds and sirens make it noisy."
+    }
+  },
+  {
+    "neighborhood": "Downtown LA – Arts District",
+    "extras": {
+      "median_1br_rent": 3350,
+      "rent_source": "RentHop Arts District page, Jun 2026 (search snippet)",
+      "rent_trend": "-17% YoY (RentHop Jun 2026, $4,040 -> $3,350)",
+      "summer_high_f": null,
+      "marine_layer": "some",
+      "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "flood_zone": "Parts near the LA River channel may be mapped; check FEMA FIRM (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "airport_noise": "none notable for LAX; helicopters and freight-rail noise near the river",
+      "parks": [
+        "Arts District Park",
+        "LA State Historic Park (short drive)"
+      ],
+      "farmers_markets": [
+        "Sunday Arts District farmers market (verify)"
+      ],
+      "fiber": "AT&T Fiber widely available in central LA multifamily; Frontier Fiber in some pockets; Google Fiber not in LA (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "vibe": "Converted lofts with excellent coffee (Verve, Groundwork and others), but nights and weekends can be loud from bars and events."
+    }
+  },
+  {
+    "neighborhood": "Downtown LA – Historic Core / Financial District / Bunker Hill",
+    "extras": {
+      "median_1br_rent": 2609,
+      "rent_source": "RentReboot (search snippet), Oct 2026: median asking rent for Downtown LA overall; other sources $2,265-$2,940. Historic Core 1BR asks run about $1,600-$2,900 (Redfin listings)",
+      "rent_trend": "PadMapper Sep 2026: -0.16% MoM (Downtown overall); RentCafe Sep 2026 says down YoY",
+      "summer_high_f": null,
+      "marine_layer": "some",
+      "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "flood_zone": null,
+      "airport_noise": "none notable for LAX; frequent helicopters",
+      "parks": [
+        "Grand Park",
+        "Pershing Square",
+        "Angels Knoll"
+      ],
+      "farmers_markets": [
+        "Thursday Pershing Square Farmers Market (verify)",
+        "Bunker Hill / Grand Park markets (verify)"
+      ],
+      "fiber": "AT&T Fiber widely available in central LA multifamily; Frontier Fiber in some pockets; Google Fiber not in LA (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "vibe": "The most walkable part of DTLA, with Grand Central Market and strong cafes, but it has street noise and visible disorder. Bunker Hill high-rises are the quieter pocket."
+    }
+  },
+  {
+    "neighborhood": "Chinatown",
+    "extras": {
+      "median_1br_rent": 2344,
+      "rent_source": "RentHop Chinatown page, Jun 2026 (search snippet)",
+      "rent_trend": "-5% YoY (RentHop Jun 2026, $2,468 -> $2,344)",
+      "summer_high_f": null,
+      "marine_layer": "some",
+      "fire_hazard": "CAL FIRE FHSZ: flatland none; Elysian Park hillsides to the north are Very High (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "flood_zone": null,
+      "airport_noise": "none notable for LAX; some helicopters; Dodger Stadium game traffic",
+      "parks": [
+        "LA State Historic Park",
+        "Elysian Park"
+      ],
+      "farmers_markets": [
+        "Saturday Chinatown farmers market (verify)"
+      ],
+      "fiber": "AT&T Fiber widely available in central LA multifamily; Frontier Fiber in some pockets; Google Fiber not in LA (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "vibe": "Compact and fairly calm at night next to two big parks, with a growing set of cafes. It sits beside the 110 and 101."
+    }
+  },
+  {
+    "neighborhood": "Little Tokyo",
+    "extras": {
+      "median_1br_rent": 2335,
+      "rent_source": "RentHop 'Historic Cultural' 1BR median cited on a Sakura Crossing listing (search snippet, 2026, undated)",
+      "rent_trend": null,
+      "summer_high_f": null,
+      "marine_layer": "some",
+      "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "flood_zone": null,
+      "airport_noise": "none notable for LAX; helicopters",
+      "parks": [
+        "Arts District Park (nearby)",
+        "Grand Park (nearby)"
+      ],
+      "farmers_markets": [
+        "Little Tokyo farmers market (verify)"
+      ],
+      "fiber": "AT&T Fiber widely available in central LA multifamily; Frontier Fiber in some pockets; Google Fiber not in LA (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "vibe": "A walkable cultural district with good cafes and the Regional Connector station, a bit livelier than residential Bunker Hill."
+    }
+  },
+  {
+    "neighborhood": "Echo Park",
+    "extras": {
+      "median_1br_rent": 2345,
+      "rent_source": "RentHop Greater Echo Park Elysian, Jul 2026 (Zumper Jul 2026: $2,327)",
+      "rent_trend": "-2% YoY (RentHop Jul 2026); flat (Zumper Jul 2026)",
+      "summer_high_f": null,
+      "marine_layer": "some: a little more inland heat than the Westside",
+      "fire_hazard": "CAL FIRE FHSZ: Very High on hillside streets near Elysian Park; flats below Sunset none (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "flood_zone": null,
+      "airport_noise": "none notable for LAX; helicopters around Dodger Stadium and police activity",
+      "parks": [
+        "Echo Park Lake",
+        "Elysian Park"
+      ],
+      "farmers_markets": [
+        "Friday Echo Park Farmers Market (verify)"
+      ],
+      "fiber": "AT&T Fiber widely available in central LA multifamily; Frontier Fiber in some pockets; Google Fiber not in LA (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "vibe": "Hilly and creative, with lots of indie coffee. Quiet hillside side streets sit a short walk from Sunset Blvd bars."
+    }
+  },
+  {
+    "neighborhood": "Historic Filipinotown / Westlake",
+    "extras": {
+      "median_1br_rent": 1234,
+      "rent_source": "RentHop Westlake, Jun 2026 (Zumper Jun 2026: ~$950). Both figures look skewed by older rent-stabilized stock; newer HiFi buildings run much higher",
+      "rent_trend": "-28% YoY (RentHop Jun 2026; likely noisy)",
+      "summer_high_f": null,
+      "marine_layer": "some",
+      "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "flood_zone": null,
+      "airport_noise": "none notable for LAX; frequent helicopters",
+      "parks": [
+        "MacArthur Park",
+        "Lafayette Park"
+      ],
+      "farmers_markets": [],
+      "fiber": "AT&T Fiber widely available in central LA multifamily; Frontier Fiber in some pockets; Google Fiber not in LA (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "vibe": "Central and cheap with close access to the 101/110, but it has some of the highest crime and helicopter activity on this list. HiFi side streets are calmer than Westlake."
+    }
+  },
+  {
+    "neighborhood": "Silver Lake",
+    "extras": {
+      "median_1br_rent": null,
+      "rent_source": "No current Silver Lake 1BR median found; RentHop Nov 2024 was $2,600 and Farerent lists ~$2,100 (2026, undated)",
+      "rent_trend": "RentHop Nov 2024: about -10% YoY (old)",
+      "summer_high_f": null,
+      "marine_layer": "some: warmer than the Westside",
+      "fire_hazard": "CAL FIRE FHSZ: Very High on many hillside streets; flats near Sunset none (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "flood_zone": null,
+      "airport_noise": "none notable for LAX; occasional helicopters",
+      "parks": [
+        "Silver Lake Reservoir & Meadow",
+        "Sunset Junction / Bellevue Rec (nearby Echo Park)"
+      ],
+      "farmers_markets": [
+        "Saturday & Tuesday Silver Lake Farmers Market (verify)"
+      ],
+      "fiber": "AT&T Fiber widely available in central LA multifamily; Frontier Fiber in some pockets; Google Fiber not in LA (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "vibe": "Top-tier coffee (Intelligentsia, Maru and others) and quiet residential hills. Sunset Junction can be busy."
+    }
+  },
+  {
+    "neighborhood": "Koreatown",
+    "extras": {
+      "median_1br_rent": 1865,
+      "rent_source": "Zumper Wilshire Center-Koreatown, Aug 2026 (search snippet); Lucid Rents 90020 median $1,995 (Mar 2026)",
+      "rent_trend": "RentHop Jul 2024: +24% YoY (old); no 2026 YoY found",
+      "summer_high_f": null,
+      "marine_layer": "some",
+      "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "flood_zone": null,
+      "airport_noise": "none notable for LAX; frequent LAPD helicopters",
+      "parks": [
+        "Shatto Recreation Center",
+        "Lafayette Park (nearby)"
+      ],
+      "farmers_markets": [
+        "Koreatown farmers market (verify)"
+      ],
+      "fiber": "AT&T Fiber widely available in central LA multifamily; Frontier Fiber in some pockets; Google Fiber not in LA (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "vibe": "Very dense and lively with 24-hour food and many cafes. Side streets are noisy, but the Metro D Line and good value make up for it."
+    }
+  },
+  {
+    "neighborhood": "Mid-City / Miracle Mile",
+    "extras": {
+      "median_1br_rent": 2551,
+      "rent_source": "Apartments.com Miracle Mile, Jul 2026 (search snippet)",
+      "rent_trend": "-1.2% YoY (Apartments.com Jul 2026)",
+      "summer_high_f": null,
+      "marine_layer": "some",
+      "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "flood_zone": null,
+      "airport_noise": "none notable",
+      "parks": [
+        "Pan Pacific Park",
+        "Hancock Park / La Brea Tar Pits"
+      ],
+      "farmers_markets": [
+        "Sunday Original Farmers Market area / The Grove (verify)",
+        "Mid-City markets (verify)"
+      ],
+      "fiber": "AT&T Fiber widely available in central LA multifamily; Frontier Fiber in some pockets; Google Fiber not in LA (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "vibe": "Leafy grid streets near LACMA with decent coffee. Calm off Wilshire, but the D Line construction and I-10 access are mixed."
+    }
+  },
+  {
+    "neighborhood": "Hollywood",
+    "extras": {
+      "median_1br_rent": 2195,
+      "rent_source": "RentHop Central Hollywood, Jul 2026; Zumper Hollywood Studio District ~$2,022 (mid-2026); RentHop 'Hollywood United' $3,500 is an outlier",
+      "rent_trend": "-7% YoY (RentHop Central Hollywood Jul 2026)",
+      "summer_high_f": null,
+      "marine_layer": "some",
+      "fire_hazard": "CAL FIRE FHSZ: flats none; hillside streets north of Franklin Very High (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "flood_zone": null,
+      "airport_noise": "none notable for LAX; heavy helicopter traffic (police, tours, news)",
+      "parks": [
+        "Runyon Canyon",
+        "Griffith Park (nearby)",
+        "Barnsdall Art Park"
+      ],
+      "farmers_markets": [
+        "Sunday Hollywood Farmers Market (Ivar/Selma) (verify)"
+      ],
+      "fiber": "AT&T Fiber widely available in central LA multifamily; Frontier Fiber in some pockets; Google Fiber not in LA (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "vibe": "Central, with good freeway (101) access and lots of coffee, but tourist and nightlife zones are loud. Look for quiet streets east of Vine or near Franklin."
+    }
+  },
+  {
+    "neighborhood": "Culver City / Palms",
+    "extras": {
+      "median_1br_rent": 2700,
+      "rent_source": "RentHop Culver City, Jul 2026 (search snippet); Palms RentHop Jul 2026 shows $3,595 (+39% YoY), likely skewed by new luxury buildings",
+      "rent_trend": "Culver City estimates run $2,600-$2,850 across sources (Jun-Sep 2026); no clean YoY",
+      "summer_high_f": null,
+      "marine_layer": "strong-to-some: often cooler than central LA thanks to the ocean breeze",
+      "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "flood_zone": null,
+      "airport_noise": "none notable; Santa Monica Airport (SMO) light aircraft near west Palms",
+      "parks": [
+        "Culver City Park / Baldwin Hills Scenic Overlook",
+        "Veterans Memorial Park",
+        "Media Park"
+      ],
+      "farmers_markets": [
+        "Tuesday Culver City Farmers Market (verify)",
+        "Palms farmers market (verify)"
+      ],
+      "fiber": "AT&T Fiber widely available in central LA multifamily; Frontier Fiber in some pockets; Google Fiber not in LA (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "vibe": "A walkable downtown Culver City with excellent coffee and the E Line, but the I-10/I-405 interchange is among the worst in LA."
+    }
+  },
+  {
+    "neighborhood": "Westchester",
+    "extras": {
+      "median_1br_rent": 2750,
+      "rent_source": "Zumper Westchester-Playa del Rey, Aug 2026 (search snippet); RentHop ~$2,844 (undated); Apartments.com ~$2,377",
+      "rent_trend": "+7% YoY (Apartments.com snapshot, 2026)",
+      "summer_high_f": null,
+      "marine_layer": "strong: coastal fog and cool summers",
+      "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "flood_zone": null,
+      "airport_noise": "SIGNIFICANT: directly beside LAX; jet noise varies by street (north of Manchester under the departure/arrival paths)",
+      "parks": [
+        "Westchester Park",
+        "Kenneth Hahn (drive)",
+        "Ballona Discovery Park / Dockweiler Beach"
+      ],
+      "farmers_markets": [
+        "Wednesday Westchester Farmers Market (Loyola Village) (verify)"
+      ],
+      "fiber": "AT&T Fiber widely available in central LA multifamily; Frontier Fiber in some pockets; Google Fiber not in LA (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "vibe": "A quiet suburban grid near LMU with a few cafes on Manchester/Sepulveda. LAX is under 10 minutes away, but some streets get jet noise."
+    }
+  },
+  {
+    "neighborhood": "Long Beach – Downtown / East Village",
+    "extras": {
+      "median_1br_rent": 2495,
+      "rent_source": "RentHop Downtown Long Beach, Jun 2026 (search snippet); Long Beach citywide median $1,850 (PadMapper Jul 2026)",
+      "rent_trend": "+22% YoY (RentHop Jun 2026, $2,045 -> $2,495; likely mix-shift to new towers)",
+      "summer_high_f": null,
+      "marine_layer": "some-to-strong: harbor breeze keeps it mild",
+      "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "flood_zone": "Low-lying blocks near the shoreline and LA River mouth may be in a FEMA zone; check FIRM (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "airport_noise": "LGB is about 15 min north; little jet noise downtown, some helicopters and Queen Mary/harbor activity",
+      "parks": [
+        "Bluff Park (nearby)",
+        "Shoreline Aquatic Park",
+        "Lincoln Park"
+      ],
+      "farmers_markets": [
+        "Friday Downtown Long Beach Farmers Market (Promenade) (verify)"
+      ],
+      "fiber": "AT&T Fiber available in parts of Long Beach; Frontier in some areas; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "vibe": "Urban and walkable with good East Village coffee (Recreational, Black Ring and others) and the A Line. It has some street disorder; nightlife is on Pine."
+    }
+  },
+  {
+    "neighborhood": "Long Beach – Alamitos Beach",
+    "extras": {
+      "median_1br_rent": null,
+      "rent_source": "No neighborhood figure found (search budget exhausted). Downtown LB is $2,495 (RentHop Jun 2026) and citywide 1BR is $1,850 (PadMapper Jul 2026)",
+      "rent_trend": null,
+      "summer_high_f": null,
+      "marine_layer": "strong: beachfront fog and breeze",
+      "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "flood_zone": "Beach-level lots may be in a FEMA coastal zone; the bluff-top blocks are higher (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "airport_noise": "none notable (LGB ~15 min)",
+      "parks": [
+        "Bluff Park",
+        "Alamitos Beach / beach bike path"
+      ],
+      "farmers_markets": [
+        "Friday Downtown LB market (nearby) (verify)"
+      ],
+      "fiber": "AT&T Fiber available in parts of Long Beach; Frontier in some areas; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "vibe": "Dense, older walk-ups between downtown and the beach, with coffee on 4th St Retro Row and Broadway. Parking is very hard."
+    }
+  },
+  {
+    "neighborhood": "Long Beach – Belmont Shore / Belmont Heights",
+    "extras": {
+      "median_1br_rent": null,
+      "rent_source": "No 1BR figure found; Redfin all-units median for Belmont Heights was $2,695 (Sep 2025, bedroom count unknown)",
+      "rent_trend": null,
+      "summer_high_f": null,
+      "marine_layer": "strong",
+      "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "flood_zone": "Belmont Shore/Naples are low-lying and partly in FEMA AE/VE zones; Belmont Heights is higher (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "airport_noise": "none notable (LGB ~10 min)",
+      "parks": [
+        "Marine Stadium / Colorado Lagoon",
+        "Bixby Park",
+        "Belmont Shore beach"
+      ],
+      "farmers_markets": [
+        "Sunday Southeast LB / Alamitos Bay Marina Farmers Market (verify)"
+      ],
+      "fiber": "AT&T Fiber available in parts of Long Beach; Frontier in some areas; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "vibe": "Beach-town feel. Belmont Shore's 2nd St is lively with bars, while Belmont Heights is quieter and leafier with good coffee nearby."
+    }
+  },
+  {
+    "neighborhood": "Long Beach – Bixby Knolls / Cal Heights",
+    "extras": {
+      "median_1br_rent": 2329,
+      "rent_source": "ApartmentIQ/Rentable listing-based Bixby Knolls 1BR asking (undated, search snippet); Redfin all-units median for Cal Heights/Bixby Knolls/Los Cerritos was $2,125 (Sep 2025)",
+      "rent_trend": null,
+      "summer_high_f": null,
+      "marine_layer": "some: warmer than the shore",
+      "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "flood_zone": null,
+      "airport_noise": "NOTABLE for parts: under the LGB approach/departure paths; the city enforces noise rules, but Cal Heights hears jets",
+      "parks": [
+        "Los Cerritos Park",
+        "Scherer Park",
+        "Virginia Country Club area (private)"
+      ],
+      "farmers_markets": [
+        "Sunday Bixby Knolls / Uptown farmers market (verify)"
+      ],
+      "fiber": "AT&T Fiber available in parts of Long Beach; Frontier in some areas; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "vibe": "Quiet, leafy streets of 1920s houses with a few cafes on Atlantic Ave. Very calm, with easy 405/710 access."
+    }
+  },
+  {
+    "neighborhood": "Fullerton – Downtown",
+    "extras": {
+      "median_1br_rent": null,
+      "rent_source": "No current rent figure retrieved for this city (search budget exhausted; page fetches blocked)",
+      "rent_trend": null,
+      "summer_high_f": null,
+      "marine_layer": "little: inland north OC, hot summers",
+      "fire_hazard": "CAL FIRE FHSZ: none downtown; the Coyote Hills / north Fullerton hills have Very High areas (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "flood_zone": null,
+      "airport_noise": "Fullerton Municipal Airport (small GA) to the west; otherwise none notable",
+      "parks": [
+        "Hillcrest Park",
+        "Fullerton Arboretum",
+        "Laguna Lake Park"
+      ],
+      "farmers_markets": [
+        "Thursday Downtown Fullerton market (verify)",
+        "CSUF/Arboretum market (verify)"
+      ],
+      "fiber": "AT&T Fiber and Frontier Fiber (ex-Verizon FiOS) present in much of OC; Cox/Spectrum cable everywhere; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "vibe": "College-town downtown with Metrolink and some good coffee. Bars on Harbor Blvd are loud on weekends, but nearby residential streets are calm."
+    }
+  },
+  {
+    "neighborhood": "Anaheim – Platinum Triangle / Packing District area",
+    "extras": {
+      "median_1br_rent": null,
+      "rent_source": "No current rent figure retrieved for this city (search budget exhausted; page fetches blocked)",
+      "rent_trend": null,
+      "summer_high_f": null,
+      "marine_layer": "little: inland",
+      "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "flood_zone": "Near the Santa Ana River; check the FEMA FIRM (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "airport_noise": "none notable; game/concert traffic at Angel Stadium and Honda Center",
+      "parks": [
+        "Pearson Park (Packing District)",
+        "Santa Ana River Trail",
+        "Anaheim Coves"
+      ],
+      "farmers_markets": [
+        "Thursday Downtown Anaheim market (verify)"
+      ],
+      "fiber": "AT&T Fiber and Frontier Fiber (ex-Verizon FiOS) present in much of OC; Cox/Spectrum cable everywhere; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "vibe": "New apartment towers by the 57/5/22 near the stadiums. Good freeway access and the Packing House food hall, but thin walkable coffee."
+    }
+  },
+  {
+    "neighborhood": "Garden Grove",
+    "extras": {
+      "median_1br_rent": null,
+      "rent_source": "No current rent figure retrieved for this city (search budget exhausted; page fetches blocked)",
+      "rent_trend": null,
+      "summer_high_f": null,
+      "marine_layer": "some: mild central OC",
+      "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "flood_zone": null,
+      "airport_noise": "none notable",
+      "parks": [
+        "Garden Grove Park",
+        "Village Green Park",
+        "Atlantis Play Center"
+      ],
+      "farmers_markets": [
+        "Main Street Garden Grove market (verify)"
+      ],
+      "fiber": "AT&T Fiber and Frontier Fiber (ex-Verizon FiOS) present in much of OC; Cox/Spectrum cable everywhere; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "vibe": "Suburban and quiet with Little Saigon food and boba nearby. Few specialty cafes are walkable; you drive almost everywhere."
+    }
+  },
+  {
+    "neighborhood": "Santa Ana – Downtown (DTSA / Artists Village)",
+    "extras": {
+      "median_1br_rent": null,
+      "rent_source": "No current rent figure retrieved for this city (search budget exhausted; page fetches blocked)",
+      "rent_trend": null,
+      "summer_high_f": null,
+      "marine_layer": "some",
+      "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "flood_zone": null,
+      "airport_noise": "none notable (SNA ~15 min; departures route over Newport Bay, not DTSA)",
+      "parks": [
+        "Santiago Park",
+        "Jerome Park",
+        "Prentice Park (zoo)"
+      ],
+      "farmers_markets": [
+        "Saturday DTSA farmers market (verify)"
+      ],
+      "fiber": "AT&T Fiber and Frontier Fiber (ex-Verizon FiOS) present in much of OC; Cox/Spectrum cable everywhere; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "vibe": "The most urban OC option, with an Artists Village coffee scene and the OC Streetcar arriving. Fourth St is lively, with some street disorder."
+    }
+  },
+  {
+    "neighborhood": "Santa Ana – South Coast Metro / MacArthur area",
+    "extras": {
+      "median_1br_rent": null,
+      "rent_source": "No current rent figure retrieved for this city (search budget exhausted; page fetches blocked)",
+      "rent_trend": null,
+      "summer_high_f": null,
+      "marine_layer": "some",
+      "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "flood_zone": null,
+      "airport_noise": "NOTABLE nearby: close to SNA, though departure noise is mostly over Newport Bay; some approach noise north of the airport",
+      "parks": [
+        "Segerstrom Center plaza",
+        "Mesa Verde parks (drive)"
+      ],
+      "farmers_markets": [
+        "South Coast Plaza area markets (verify)"
+      ],
+      "fiber": "AT&T Fiber and Frontier Fiber (ex-Verizon FiOS) present in much of OC; Cox/Spectrum cable everywhere; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "vibe": "Office/retail district near South Coast Plaza and the 405/55, quiet at night. Coffee is mostly drive-to."
+    }
+  },
+  {
+    "neighborhood": "Orange – Old Towne area",
+    "extras": {
+      "median_1br_rent": null,
+      "rent_source": "No current rent figure retrieved for this city (search budget exhausted; page fetches blocked)",
+      "rent_trend": null,
+      "summer_high_f": null,
+      "marine_layer": "little-to-some",
+      "fire_hazard": "CAL FIRE FHSZ: none in Old Towne; the eastern Orange hills (Orange Park Acres / Santiago Canyon) are Very High (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "flood_zone": null,
+      "airport_noise": "none notable",
+      "parks": [
+        "Hart Park",
+        "Grijalva Park",
+        "Santiago Creek trail"
+      ],
+      "farmers_markets": [
+        "Saturday Old Towne Orange / Chapman market (verify)"
+      ],
+      "fiber": "AT&T Fiber and Frontier Fiber (ex-Verizon FiOS) present in much of OC; Cox/Spectrum cable everywhere; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "vibe": "Historic plaza with craftsman houses, several good cafes and antique shops. Quiet and small-town, with Chapman University students nearby."
+    }
+  },
+  {
+    "neighborhood": "Tustin – Tustin Legacy / Old Town",
+    "extras": {
+      "median_1br_rent": null,
+      "rent_source": "No current rent figure retrieved for this city (search budget exhausted; page fetches blocked)",
+      "rent_trend": null,
+      "summer_high_f": null,
+      "marine_layer": "some",
+      "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "flood_zone": null,
+      "airport_noise": "none notable (SNA ~10-15 min; occasional helicopters)",
+      "parks": [
+        "Peppertree Park",
+        "Tustin Legacy Park / Veterans Sports Park",
+        "Columbus Square"
+      ],
+      "farmers_markets": [
+        "Wednesday Old Town Tustin market (verify)"
+      ],
+      "fiber": "AT&T Fiber and Frontier Fiber (ex-Verizon FiOS) present in much of OC; Cox/Spectrum cable everywhere; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "vibe": "Newer master-planned Legacy plus a quaint Old Town with a few cafes. Quiet, with fast 5/55/261 access."
+    }
+  },
+  {
+    "neighborhood": "Costa Mesa",
+    "extras": {
+      "median_1br_rent": null,
+      "rent_source": "No current rent figure retrieved for this city (search budget exhausted; page fetches blocked)",
+      "rent_trend": null,
+      "summer_high_f": null,
+      "marine_layer": "strong-to-some: ocean breeze, mild summers",
+      "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "flood_zone": null,
+      "airport_noise": "NOTABLE in the eastside/near-airport pockets: SNA departures cross Newport Bay; Mesa Verde and the eastside mostly hear only distant noise",
+      "parks": [
+        "Fairview Park",
+        "TeWinkle Park",
+        "Talbert Regional Park"
+      ],
+      "farmers_markets": [
+        "Thursday OC Fair farmers market (verify)",
+        "The Lab/The Camp events (verify)"
+      ],
+      "fiber": "AT&T Fiber and Frontier Fiber (ex-Verizon FiOS) present in much of OC; Cox/Spectrum cable everywhere; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "vibe": "A strong coffee and food scene (The Camp, The Lab, Mesa) near the 405/55 and near the beach. Quieter streets are on the eastside and Mesa Verde."
+    }
+  },
+  {
+    "neighborhood": "Irvine (Spectrum / Irvine Business Complex)",
+    "extras": {
+      "median_1br_rent": null,
+      "rent_source": "No current rent figure retrieved for this city (search budget exhausted; page fetches blocked)",
+      "rent_trend": null,
+      "summer_high_f": null,
+      "marine_layer": "some",
+      "fire_hazard": "CAL FIRE FHSZ: none in IBC/Spectrum; Very High near the foothills of Orchard Hills/Portola Springs (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "flood_zone": null,
+      "airport_noise": "IBC is next to SNA; some approach/departure noise. Spectrum area: none notable",
+      "parks": [
+        "Great Park",
+        "San Diego Creek trail",
+        "William R. Mason Regional Park"
+      ],
+      "farmers_markets": [
+        "Saturday Irvine Farmers Market (UCI / Mason Park) (verify)",
+        "Great Park market (verify)"
+      ],
+      "fiber": "AT&T Fiber and Frontier Fiber (ex-Verizon FiOS) present in much of OC; Cox/Spectrum cable everywhere; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "vibe": "Very safe and quiet with master-planned towers by the 405/5/133. Coffee is mostly chain or in-plaza; it lacks a walkable street-life feel."
+    }
+  },
+  {
+    "neighborhood": "Huntington Beach",
+    "extras": {
+      "median_1br_rent": null,
+      "rent_source": "No current rent figure retrieved for this city (search budget exhausted; page fetches blocked)",
+      "rent_trend": null,
+      "summer_high_f": null,
+      "marine_layer": "strong: coastal fog, cool summers",
+      "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "flood_zone": "Parts of southeast HB and the Huntington Harbour lowlands are in FEMA AE zones; check the FIRM (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "airport_noise": "none notable; occasional Joint Forces Training Base Los Alamitos flights in the north",
+      "parks": [
+        "Huntington Central Park",
+        "Bolsa Chica Ecological Reserve",
+        "HB pier/beach path"
+      ],
+      "farmers_markets": [
+        "Friday Surf City Nights (Main St) (verify)",
+        "Tuesday Pier Plaza market (verify)"
+      ],
+      "fiber": "AT&T Fiber and Frontier Fiber (ex-Verizon FiOS) present in much of OC; Cox/Spectrum cable everywhere; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "vibe": "Beach culture with some good coffee near Main St. Quiet residential tracts, but a long drive to LA and the 405 near the HB stretch congests."
+    }
+  },
+  {
+    "neighborhood": "Rancho Santa Margarita",
+    "extras": {
+      "median_1br_rent": null,
+      "rent_source": "No current rent figure retrieved for this city (search budget exhausted; page fetches blocked)",
+      "rent_trend": null,
+      "summer_high_f": null,
+      "marine_layer": "little: inland foothill, warm summers",
+      "fire_hazard": "CAL FIRE FHSZ: Very High in much of the city's wildland-urban interface (Santa Ana Mountains foothills) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "flood_zone": null,
+      "airport_noise": "none notable",
+      "parks": [
+        "Central Park RSM",
+        "Santa Rosa Lake (Lake RSM, private HOA)",
+        "O'Neill Regional Park"
+      ],
+      "farmers_markets": [
+        "Sunday RSM farmers market (verify)"
+      ],
+      "fiber": "AT&T Fiber and Frontier Fiber (ex-Verizon FiOS) present in much of OC; Cox/Spectrum cable everywhere; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
+      "vibe": "Very quiet and safe foothill suburb, but far from LA (60+ min to LAX) with few walkable specialty cafes. It is also high wildfire exposure."
+    }
+  }
+]

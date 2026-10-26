@@ -20,6 +20,12 @@ NEIGHBORHOOD_FIX = {
     "7122 Kittyhawk Ave Unit 0": "Westchester",
 }
 CHECKED_ON = "2026-10-15"
+# Search agents sometimes invent sub-area names; map them onto scored neighborhoods.
+AREA_ALIAS = {
+    "NEW: Highland Park": "Highland Park / Eagle Rock",
+    "NEW: Santa Ana – East": "Santa Ana – East (Franzen Ave)",
+    "NEW: Tustin": "Tustin – Tustin Legacy / Old Town",
+}
 # Findings that contradict each other across research batches, shown on the building.
 REVIEW_NOTES = {
     name: "G.H. Palmer (GHP Management) deposit class action: one search found a $12.5M settlement, another says it "
@@ -168,7 +174,7 @@ def main():
                    key=lambda a: (a["lat"] - lat) ** 2 + ((a["lng"] - lng) * math.cos(math.radians(lat))) ** 2)
         return best
     seen = {b["name"].lower() for b in buildings}
-    for f in sorted(RESEARCH.glob("find_*.json")):
+    for f in sorted(RESEARCH.glob("find*.json")):
         for c in json.loads(f.read_text()):
             if c["name"].lower() in seen:
                 continue
@@ -176,7 +182,16 @@ def main():
             area_name = norm_name(c.get("area") or "")
             if area_name.startswith("NEW: ") and area_name[5:] in area_ids:
                 area_name = area_name[5:]
+            for prefix, target in AREA_ALIAS.items():
+                if area_name.startswith(prefix) and target in area_ids:
+                    area_name = target
             loc_note = c.get("geocode_note") or ""
+            if c.get("lat") is None and area_name in area_ids:
+                ar = next(x for x in areas if x["name"] == area_name)
+                if ar.get("lat") is not None:
+                    h = sum(map(ord, c["name"])) % 997 / 997.0
+                    c = {**c, "lat": ar["lat"] + (h - 0.5) * 0.008, "lng": ar["lng"] + ((h * 7) % 1 - 0.5) * 0.008}
+                    loc_note = "Map position is approximate: placed near the center of " + area_name + ". " + loc_note
             if area_name not in area_ids and c.get("lat") is not None:
                 near = nearest_area(c["lat"], c["lng"])
                 loc_note = (f"{area_name.replace('NEW: ', '')} is not a scored neighborhood yet; "
@@ -237,6 +252,9 @@ def main():
             b["req"].update(u.get("req", {}))
             if u.get("landlord"):
                 b["landlord"] = u["landlord"]
+            for k in ("base_rent", "effective_rent", "sqft"):
+                if k in u:
+                    b[k] = u[k]
             if u.get("packages_detail"):
                 b["packages_detail"] = u["packages_detail"]
             if u.get("note"):

@@ -1,0 +1,1253 @@
+[
+ {
+  "name": "Surf House Apartments",
+  "address": "7701 Warner Ave, Huntington Beach, CA 92647",
+  "area": "Huntington Beach",
+  "lat": null,
+  "lng": null,
+  "geocode_note": "Not geocoded: page fetches failed (DNS errors) and the shared web-search budget ran out mid-task; lat/lng left null rather than guessed.",
+  "landlord": "company",
+  "owner_type": "LLC-owned garden community (listing names 'Surf House HB LLC')",
+  "platform": "Rentable / Westside Rentals / Zumper / ApartmentAdvisor / ApartmentFinder",
+  "management_company": "Surf House HB LLC (per listing; third-party manager not confirmed)",
+  "year_built": 1970,
+  "floor_plan": "1 bd / 1 ba",
+  "sqft": 750,
+  "base_rent": 2445,
+  "effective_rent": 2445,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Snapshots disagree: Westside Rentals $2,355-$2,610 (11 units?); Rentable $2,445-$2,595, 8 available; Zumper $2,670; ApartmentAdvisor $3,110 (avail Oct 3). base_rent = low end of Rentable range; snapshot dates unknown.",
+  "washer_dryer": "yes",
+  "central_ac": "yes",
+  "central_ac_evidence": "Listing marketing copy: 'in-unit Washer + Dryer, Central AC' (search snippet; building is a 1970 renovation, verify on tour)",
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": "One listing shows 'Package Service' amenity; lockers/room not specified",
+  "scam_flags": null,
+  "reputation_gist": "No tenant reviews surfaced in searches.",
+  "red_flags": "1970 two-story garden complex (264 units) — check sound insulation and that the 'central AC' is ducted in the specific unit; rents vary widely across sites.",
+  "listing_url": "https://www.rentable.co/huntington-beach-ca/surf-house-apartments",
+  "sources": [
+   "https://www.rentable.co/huntington-beach-ca/surf-house-apartments",
+   "https://prod-release.westsiderentals.com/huntington-beach-ca/surf-house-apartments-xbrsbwp",
+   "https://www.zumper.com/apartment-buildings/p16221/surf-house-apartments-washington-huntington-beach-ca",
+   "https://www.apartmentadvisor.com/details/7701-warner-ave-huntington-beach-ca-92647",
+   "https://www.apartmentfinder.com/California/Huntington-Beach-Apartments/Surf-House-Apartments-mcrqfwk"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": 500,
+   "application_fee": 55,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "yes",
+   "dogs": "yes",
+   "pet_rent": 75,
+   "pet_deposit": 0,
+   "limits": "2 pets max, 50 lb limit; vaccination/license records + photos required (Westside Rentals)"
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": 264,
+   "stories": 2,
+   "year_built": 1970,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "yes",
+   "onsite_management": "yes",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "walk-in closets",
+    "Energy Star appliances"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "1BR 750 sq ft listed on several aggregators (Rentable: 8 available, $2,445-$2,595); seen 2026-10-26, snapshot dates unknown",
+   "website": null,
+   "leasing_phone": null
+  }
+ },
+ {
+  "name": "The Vivere Flats",
+  "address": "1725 S Auburn Way, Anaheim, CA 92805",
+  "area": "Anaheim – Platinum Triangle / Packing District area",
+  "lat": null,
+  "lng": null,
+  "geocode_note": "Not geocoded: page fetches failed (DNS errors) and the shared web-search budget ran out mid-task; lat/lng left null rather than guessed.",
+  "landlord": "company",
+  "owner_type": "Institutional/managed community",
+  "platform": "Redfin / Westside Rentals / ApartmentList",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1 bd / 1 ba (754 or 821 sq ft plans)",
+  "sqft": 754,
+  "base_rent": 2470,
+  "effective_rent": 2264,
+  "special": "1 month free (Redfin banner); effective = $2,470 x 11/12 on a 12-mo lease, assumption",
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Redfin: $2,470+/mo, 754-821 sq ft, 1 MONTH FREE; other snapshots (possibly mid-2025) $2,470-$2,730.",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Listings say 'air conditioning' only; type not stated. Newer Platinum Triangle mid-rise, so central/ducted plausible but unverified.",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": "No package info found",
+  "scam_flags": null,
+  "reputation_gist": null,
+  "red_flags": "Year built not found (sister Vivere Lofts at 1331 E Katella is 2018). Parking listed as both 'covered' and 'garage'.",
+  "listing_url": "https://www.redfin.com/neighborhood/110631/CA/Anaheim/Platinum-Triangle/1-bedroom-apartments-for-rent",
+  "sources": [
+   "https://www.westsiderentals.com/anaheim-ca/the-vivere-flats-n42kzlm",
+   "https://www.redfin.com/neighborhood/110631/CA/Anaheim/Platinum-Triangle/1-bedroom-apartments-for-rent",
+   "https://apartmentlist.com/ca/anaheim/vivere-flats",
+   "https://edge.apartmentiq.io/anaheim-ca/vivere-flats",
+   "https://www.point2homes.com/US/Apartment-Buildings/CA/Anaheim/Vivere-Flats-The.html"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "yes",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "yes",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "in-home washer/dryer",
+    "fireplace (some listings)",
+    "hardwood-style floors",
+    "patio/balcony (some listings)"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Redfin showed 1BR from $2,470 with 1 month free; seen 2026-10-26",
+   "website": null,
+   "leasing_phone": "(714) 453-4984"
+  }
+ },
+ {
+  "name": "REVO (formerly Griffis Platinum Triangle)",
+  "address": "1912 S Jacaranda St, Anaheim, CA 92805",
+  "area": "Anaheim – Platinum Triangle / Packing District area",
+  "lat": null,
+  "lng": null,
+  "geocode_note": "Not geocoded: page fetches failed (DNS errors) and the shared web-search budget ran out mid-task; lat/lng left null rather than guessed.",
+  "landlord": "company",
+  "owner_type": "Institutional",
+  "platform": "Redfin / Apartments.com / ApartmentList",
+  "management_company": "Gables Residential (since Nov 2024, per ApartmentList)",
+  "year_built": null,
+  "floor_plan": "1 bd / 1 ba (692-834 sq ft range)",
+  "sqft": null,
+  "base_rent": 2570,
+  "effective_rent": 2356,
+  "special": "Up to one month free on select homes (Apartments.com); effective assumes the full month on a 12-mo lease and the $2,570 low-end price — which may be the 692 sq ft plan",
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Redfin snapshots: $2,570+ (66 avail) and $2,594+ (40 avail), 692-834 sq ft. Price for a 700+ sq ft plan not confirmed.",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Not stated in snippets.",
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": "'Package receiving' mentioned; lockers not confirmed",
+  "scam_flags": null,
+  "reputation_gist": null,
+  "red_flags": "Entry price may correspond to the sub-700 sq ft plan; ApartmentList phone differs from Apartments.com phone.",
+  "listing_url": "https://www.apartments.com/griffis-platinum-triangle-anaheim-ca/g9xdtdy/",
+  "sources": [
+   "https://www.redfin.com/neighborhood/110631/CA/Anaheim/Platinum-Triangle/1-bedroom-apartments-for-rent",
+   "https://www.apartments.com/griffis-platinum-triangle-anaheim-ca/g9xdtdy/",
+   "https://apartmentlist.com/ca/anaheim/revo--1",
+   "https://www.redfin.com/neighborhood/14780/CA/Orange/Park-Royale/1-bedroom-apartments-for-rent"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "yes",
+   "dogs": "yes",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": "pet friendly + pet wash station; fees unknown"
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "yes",
+   "pool": "yes",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "40-66 1BR units listed on Redfin at $2,570-$2,594+; seen 2026-10-26",
+   "website": null,
+   "leasing_phone": "657-239-3749"
+  }
+ },
+ {
+  "name": "5117 E The Toledo, Unit 03",
+  "address": "5117 E The Toledo, Unit 03, Long Beach, CA 90803",
+  "area": "Long Beach – Belmont Shore / Belmont Heights",
+  "lat": null,
+  "lng": null,
+  "geocode_note": "Not geocoded: page fetches failed (DNS errors) and the shared web-search budget ran out mid-task; lat/lng left null rather than guessed.",
+  "landlord": "company",
+  "owner_type": "Small building, professionally managed (AppFolio listing)",
+  "platform": "AppFolio (Seaward Road listings page)",
+  "management_company": "Seaward Road (AppFolio portal name; confirm)",
+  "year_built": null,
+  "floor_plan": "1 bd",
+  "sqft": 700,
+  "base_rent": 2200,
+  "effective_rent": 2200,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Listed at $2,200, 700 sq ft, W/D in unit, hardwood floors.",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "No AC mentioned in listing snippet — likely none; must ask.",
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": null,
+  "reputation_gist": null,
+  "red_flags": "Older small Belmont Shore building likely lacks central AC; exactly 700 sq ft (meets floor). Year built unknown.",
+  "listing_url": "https://seawardroad.appfolio.com/listings/listings",
+  "sources": [
+   "https://seawardroad.appfolio.com/listings/listings"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "hardwood floors"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Listed on AppFolio portal; seen 2026-10-26",
+   "website": null,
+   "leasing_phone": null
+  }
+ },
+ {
+  "name": "315 Cherry Ave",
+  "address": "315 Cherry Ave, Long Beach, CA 90802",
+  "area": "Long Beach – Alamitos Beach",
+  "lat": null,
+  "lng": null,
+  "geocode_note": "Not geocoded: page fetches failed (DNS errors) and the shared web-search budget ran out mid-task; lat/lng left null rather than guessed.",
+  "landlord": "company",
+  "owner_type": "Small building",
+  "platform": "unknown (appeared only in a search-engine summary; URL not captured)",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1 bd",
+  "sqft": 875,
+  "base_rent": 2495,
+  "effective_rent": 2495,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "$2,495, 875 sq ft, washer/dryer in unit.",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "AC not mentioned.",
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": null,
+  "reputation_gist": null,
+  "red_flags": "Above $2,300 cap; source URL not captured precisely (seen in a search summary of LB listings); verify still active.",
+  "listing_url": null,
+  "sources": [],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Seen in search results 2026-10-26; listing date unknown",
+   "website": null,
+   "leasing_phone": null
+  }
+ },
+ {
+  "name": "eaves South Coast",
+  "address": "555 Paularino Ave, Costa Mesa, CA 92626",
+  "area": "Costa Mesa",
+  "lat": null,
+  "lng": null,
+  "geocode_note": "Not geocoded: page fetches failed (DNS errors) and the shared web-search budget ran out mid-task; lat/lng left null rather than guessed.",
+  "landlord": "company",
+  "owner_type": "REIT (AvalonBay 'eaves' brand)",
+  "platform": "Redfin",
+  "management_company": "AvalonBay Communities",
+  "year_built": null,
+  "floor_plan": "1 bd / 1 ba (524-750 sq ft range)",
+  "sqft": 750,
+  "base_rent": 2345,
+  "effective_rent": 2150,
+  "special": "1 month free (Redfin); effective assumes 12-mo lease on the $2,345 entry price, which is probably a smaller plan",
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Redfin: $2,345+/mo, 524-750 sq ft, one month free. 750 sq ft is the top of the range; its own price not seen.",
+  "washer_dryer": "unclear",
+  "central_ac": "unclear",
+  "central_ac_evidence": null,
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": null,
+  "reputation_gist": null,
+  "red_flags": "eaves brand = older acquired communities; W/D and central AC not confirmed (sister eaves Huntington Beach was ruled out for wall AC).",
+  "listing_url": "https://www.redfin.com/neighborhood/14793/CA/Costa-Mesa/Paularino/1-bedroom-apartments-for-rent",
+  "sources": [
+   "https://www.redfin.com/neighborhood/14793/CA/Costa-Mesa/Paularino/1-bedroom-apartments-for-rent"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Redfin special seen 2026-10-26",
+   "website": null,
+   "leasing_phone": null
+  }
+ },
+ {
+  "name": "Pointe Mesa (365 W Wilson St)",
+  "address": "365 W Wilson St, Costa Mesa, CA 92627",
+  "area": "Costa Mesa",
+  "lat": null,
+  "lng": null,
+  "geocode_note": "Not geocoded: page fetches failed (DNS errors) and the shared web-search budget ran out mid-task; lat/lng left null rather than guessed.",
+  "landlord": "company",
+  "owner_type": "Small investor-owned complex (38 units)",
+  "platform": "Redfin",
+  "management_company": null,
+  "year_built": 1969,
+  "floor_plan": "1 bd / 1 ba",
+  "sqft": 750,
+  "base_rent": 2350,
+  "effective_rent": 2288,
+  "special": "$750 off (one-time; effective spreads it over 12 months)",
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Redfin: 1 unit, $2,350, 750 sq ft, $750 off, pets welcome, dishwasher.",
+  "washer_dryer": "unclear",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Not mentioned; 1969 building — central AC unlikely.",
+  "dishwasher": "yes",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": null,
+  "reputation_gist": null,
+  "red_flags": "1969 building recently marketed for sale on LoopNet (possible ownership change). In-unit W/D and central AC unverified and doubtful.",
+  "listing_url": "https://www.redfin.com/neighborhood/58041/CA/Costa-Mesa/College-Park-District/1-bedroom-apartments-for-rent",
+  "sources": [
+   "https://www.redfin.com/neighborhood/58041/CA/Costa-Mesa/College-Park-District/1-bedroom-apartments-for-rent",
+   "https://pointemesa.sharplaunch.com/sitemap.xml",
+   "https://www.loopnet.ca/Listing/365-W-Wilson-St-Costa-Mesa-CA/38659793"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "yes",
+   "dogs": "yes",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": "'pets welcome' per Redfin; details unknown"
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": 38,
+   "stories": null,
+   "year_built": 1969,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "1 unit on Redfin; seen 2026-10-26",
+   "website": null,
+   "leasing_phone": null
+  }
+ },
+ {
+  "name": "Excelsior Apartments",
+  "address": "610 N Garfield St, Santa Ana, CA 92701",
+  "area": "Santa Ana – Downtown (DTSA / Artists Village)",
+  "lat": null,
+  "lng": null,
+  "geocode_note": "Not geocoded: page fetches failed (DNS errors) and the shared web-search budget ran out mid-task; lat/lng left null rather than guessed.",
+  "landlord": "company",
+  "owner_type": "Small/mid building (listing entity 'Baker Place Apartments, LLC' / 'HPM LLC')",
+  "platform": "Zumper / Rentable",
+  "management_company": "HPM LLC (per listing name)",
+  "year_built": null,
+  "floor_plan": "1 bd / 1 ba",
+  "sqft": 750,
+  "base_rent": 1950,
+  "effective_rent": 1950,
+  "special": null,
+  "parking_fee": 0,
+  "seen_on": "2026-10-26",
+  "units_note": "$1,950, 750 sq ft, 1 unit, available July 10 2026 (stale date); rent includes reserved parking, water, trash; deposit $2,000.",
+  "washer_dryer": "unclear",
+  "central_ac": "unclear",
+  "central_ac_evidence": "No cooling info.",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": null,
+  "reputation_gist": null,
+  "red_flags": "Availability date already passed — listing likely stale. Amenities unknown; price far below market suggests older building without in-unit W/D.",
+  "listing_url": "https://www.zumper.com/apartment-buildings/p1246372/excelsior-apartments-hpm-llc-downtown-santa-ana-santa-ana-ca",
+  "sources": [
+   "https://www.zumper.com/apartment-buildings/p1246372/excelsior-apartments-hpm-llc-downtown-santa-ana-santa-ana-ca",
+   "https://www.rentable.co/santa-ana-ca/excelsior-apartments-hpm-llc"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": "water + trash included (listing)",
+   "deposit": 2000,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": 0,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Zumper/Rentable: 1 unit, avail 2026-07-10 (stale); seen 2026-10-26",
+   "website": null,
+   "leasing_phone": null
+  }
+ },
+ {
+  "name": "The Arbors Santa Ana",
+  "address": "1200 Fairhaven Ave, Santa Ana, CA",
+  "area": "NEW: Santa Ana – East (Fairhaven / near Tustin)",
+  "lat": null,
+  "lng": null,
+  "geocode_note": "Not geocoded: page fetches failed (DNS errors) and the shared web-search budget ran out mid-task; lat/lng left null rather than guessed.",
+  "landlord": "company",
+  "owner_type": "Managed community",
+  "platform": "Redfin",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1 bd (700-750 sq ft)",
+  "sqft": 700,
+  "base_rent": 2187,
+  "effective_rent": 2104,
+  "special": "$1,000 off (one-time; spread over 12 months)",
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Redfin: $2,187+/mo, 700-750 sq ft, 6 units available, $1,000 off.",
+  "washer_dryer": "unclear",
+  "central_ac": "unclear",
+  "central_ac_evidence": null,
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": null,
+  "reputation_gist": null,
+  "red_flags": "Amenities (W/D, AC) not checked — search budget ran out. Likely an older garden complex at this price.",
+  "listing_url": "https://www.redfin.com/neighborhood/10957/CA/Santa-Ana/Lacy/1-bedroom-apartments-for-rent",
+  "sources": [
+   "https://www.redfin.com/neighborhood/10957/CA/Santa-Ana/Lacy/1-bedroom-apartments-for-rent"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "6 units on Redfin; seen 2026-10-26",
+   "website": null,
+   "leasing_phone": null
+  }
+ },
+ {
+  "name": "Axiom Tustin",
+  "address": "13921 Tustin East Dr, Tustin, CA 92780",
+  "area": "NEW: Tustin – North (Tustin East Dr / 55-5 junction)",
+  "lat": null,
+  "lng": null,
+  "geocode_note": "Not geocoded: page fetches failed (DNS errors) and the shared web-search budget ran out mid-task; lat/lng left null rather than guessed.",
+  "landlord": "company",
+  "owner_type": "Institutional",
+  "platform": "ApartmentFinder / ApartmentSearch",
+  "management_company": "Avenue5 Residential",
+  "year_built": null,
+  "floor_plan": "1 bd / 1 ba",
+  "sqft": null,
+  "base_rent": 2291,
+  "effective_rent": 2267,
+  "special": "$285 off (one-time; spread over 12 months)",
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "ApartmentFinder: 1BR from $2,291+ with $285 off; older listing $1,625+ (stale). 1BR sq ft not found.",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Listing says 'air conditioning'; type not stated.",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": null,
+  "reputation_gist": null,
+  "red_flags": "1BR size unknown — may be under 700. Address sits near the I-5/SR-55 interchange; check freeway proximity/noise.",
+  "listing_url": "https://www.apartmentsearch.com/apartments/california/tustin/axiom-tustin",
+  "sources": [
+   "https://www.apartmentsearch.com/apartments/california/tustin/axiom-tustin",
+   "https://www.veryapt.com/ApartmentReview-a3351-axiom-tustin-i-tustin",
+   "https://www.apartmentfinder.com/California/Tustin/Almeria-Neighborhood-Apartments"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "covered",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "yes",
+   "pool": "yes",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "full-size washer/dryer"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "1BR from $2,291 (ApartmentFinder); seen 2026-10-26",
+   "website": null,
+   "leasing_phone": null
+  }
+ },
+ {
+  "name": "Pine and 9th (Executive Suites)",
+  "address": "Pine Ave & 9th St, Long Beach, CA 90813 (exact address not captured)",
+  "area": "Long Beach – Downtown / East Village",
+  "lat": null,
+  "lng": null,
+  "geocode_note": "Not geocoded: page fetches failed (DNS errors) and the shared web-search budget ran out mid-task; lat/lng left null rather than guessed.",
+  "landlord": "company",
+  "owner_type": "LLC-owned small building",
+  "platform": "CSUF off-campus housing",
+  "management_company": "Pine and 9th Executive Suites LLC (listing name)",
+  "year_built": null,
+  "floor_plan": "1 bd",
+  "sqft": null,
+  "base_rent": 2195,
+  "effective_rent": 2012,
+  "special": "1 month free (effective assumes 12-mo lease)",
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "1BR $2,195, in-unit washer & dryer, 1 month free.",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": null,
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": null,
+  "reputation_gist": null,
+  "red_flags": "Size and AC unknown; 'executive suites' may mean furnished/short-term. Verify.",
+  "listing_url": "https://offcampushousing.fullerton.edu/city/long-beach-ca/listing/pine-and-9th-executive-suites-llc-234157",
+  "sources": [
+   "https://offcampushousing.fullerton.edu/city/long-beach-ca/listing/pine-and-9th-executive-suites-llc-234157"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Listed on CSUF housing board; seen 2026-10-26",
+   "website": null,
+   "leasing_phone": null
+  }
+ },
+ {
+  "name": "17372 Dairyview Cir (upstairs 1BR)",
+  "address": "17372 Dairyview Cir, Huntington Beach, CA 92647",
+  "area": "Huntington Beach",
+  "lat": null,
+  "lng": null,
+  "geocode_note": "Not geocoded: page fetches failed (DNS errors) and the shared web-search budget ran out mid-task; lat/lng left null rather than guessed.",
+  "landlord": "private",
+  "owner_type": "Individual owner/condo or small building (not confirmed)",
+  "platform": "Chapman / UCI off-campus housing",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1 bd, upstairs",
+  "sqft": null,
+  "base_rent": 2495,
+  "effective_rent": 2495,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Upstairs 1BR, in-unit washer/dryer, $2,495.",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "AC not mentioned.",
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": null,
+  "reputation_gist": null,
+  "red_flags": "Above $2,300 cap; size unknown.",
+  "listing_url": "https://offcampushousing.chapman.edu/housing/property/17372-dairyview-cir/xt1729n",
+  "sources": [
+   "https://offcampushousing.chapman.edu/housing/property/17372-dairyview-cir/xt1729n",
+   "https://offcampus.housing.uci.edu/housing/property/17372-dairyview-cir/xt1729n"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Seen on university housing boards 2026-10-26",
+   "website": null,
+   "leasing_phone": null
+  }
+ }
+]
