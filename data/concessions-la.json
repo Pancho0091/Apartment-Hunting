@@ -13,7 +13,7 @@
     "source": "https://edge.apartmentiq.io/los-angeles-ca/avant"
    },
    {
-    "when": "2026-10 (per client list)",
+    "when": "2026-10 (per our listing data)",
     "offer": "Up to $1,900 off, applied to month 3 (select units, OAC)",
     "source": "LIST_LA.tsv"
    }
@@ -44,7 +44,7 @@
     "source": "https://www.redfin.com/city/11203/CA/Los-Angeles/3-bedroom-apartments-for-rent/page-9"
    },
    {
-    "when": "2026-10 (per client list)",
+    "when": "2026-10 (per our listing data)",
     "offer": "Up to 1 month free on select homes through Oct 24, 2026",
     "source": "LIST_LA.tsv"
    }
@@ -72,7 +72,7 @@
     "source": "https://www.redfin.com/neighborhood/483/CA/Los-Angeles/Chinatown/1-bedroom-apartments-for-rent"
    }
   ],
-  "evidence": "Equity template offers seen spring 2026 and on undated Redfin snapshots; client list shows a current undisclosed 'Special Offer' on several 1BRs. Operator-level (Equity Residential): earnings-call summaries say EQR started using concessions in LA in early 2024 and in Q2 2025 concessions averaged ~7 days per move-in, expected to continue in parts of LA (https://fintool.com/app/research/companies/EQR/earnings/Q1 2024 ; https://fintool.com/app/research/companies/EQR/earnings/Q3 2024 ; https://nz.finance.yahoo.com/news/equity-residential-eqr-q1-2024-071414445.html). Equity offers follow a recurring format: 'Up to X months free on select homes, new residents only, transfers excluded, offer good thru <date>'.",
+  "evidence": "Equity template offers seen spring 2026 and on undated Redfin snapshots; our listing data shows a current undisclosed 'Special Offer' on several 1BRs. Operator-level (Equity Residential): earnings-call summaries say EQR started using concessions in LA in early 2024 and in Q2 2025 concessions averaged ~7 days per move-in, expected to continue in parts of LA (https://fintool.com/app/research/companies/EQR/earnings/Q1 2024 ; https://fintool.com/app/research/companies/EQR/earnings/Q3 2024 ; https://nz.finance.yahoo.com/news/equity-residential-eqr-q1-2024-071414445.html). Equity offers follow a recurring format: 'Up to X months free on select homes, new residents only, transfers excluded, offer good thru <date>'.",
   "sources": [
    "https://hotpads.com/jia-los-angeles-ca-90012-249n450/pad",
    "https://www.redfin.com/neighborhood/483/CA/Los-Angeles/Chinatown/1-bedroom-apartments-for-rent",
@@ -88,7 +88,7 @@
     "source": "https://hotpads.com/pegasus-los-angeles-ca-90017-skfw9x/pad"
    },
    {
-    "when": "2026-10 (per client list)",
+    "when": "2026-10 (per our listing data)",
     "offer": "Up to 1/2 month free, ended Oct 24, 2026",
     "source": "LIST_LA.tsv"
    }
@@ -118,7 +118,7 @@
     "source": "https://www.redfin.com/neighborhood/1385/CA/Los-Angeles/Japantown-Little-Tokyo/studio-apartments-for-rent"
    }
   ],
-  "evidence": "Equity template offers through spring/early summer 2026, extended once (May 23 -> June 20). Client list says these ended mid-2026. Operator-level (Equity Residential): earnings-call summaries say EQR started using concessions in LA in early 2024 and in Q2 2025 concessions averaged ~7 days per move-in, expected to continue in parts of LA (https://fintool.com/app/research/companies/EQR/earnings/Q1 2024 ; https://fintool.com/app/research/companies/EQR/earnings/Q3 2024 ; https://nz.finance.yahoo.com/news/equity-residential-eqr-q1-2024-071414445.html). Equity offers follow a recurring format: 'Up to X months free on select homes, new residents only, transfers excluded, offer good thru <date>'.",
+  "evidence": "Equity template offers through spring/early summer 2026, extended once (May 23 -> June 20). Our listing data says these ended mid-2026. Operator-level (Equity Residential): earnings-call summaries say EQR started using concessions in LA in early 2024 and in Q2 2025 concessions averaged ~7 days per move-in, expected to continue in parts of LA (https://fintool.com/app/research/companies/EQR/earnings/Q1 2024 ; https://fintool.com/app/research/companies/EQR/earnings/Q3 2024 ; https://nz.finance.yahoo.com/news/equity-residential-eqr-q1-2024-071414445.html). Equity offers follow a recurring format: 'Up to X months free on select homes, new residents only, transfers excluded, offer good thru <date>'.",
   "sources": [
    "https://hotpads.com/hikari-los-angeles-ca-90012-skfsr6/pad",
    "https://trulia.com/building/hikari-375-e-2nd-st-los-angeles-ca-90012-1001484402",
@@ -134,7 +134,7 @@
     "source": "https://www.point2homes.com/US/Apartment-Buildings/CA/Los-Angeles-County/Los-Angeles/Westlake/1111-Wilshire/93058647.html"
    },
    {
-    "when": "2026-10 (per client list)",
+    "when": "2026-10 (per our listing data)",
     "offer": "Up to 6 weeks free on select homes, move-in by Nov 13, 2026",
     "source": "LIST_LA.tsv"
    }
@@ -169,7 +169,7 @@
     "source": "https://www.redfin.com/zipcode/90014/rentals"
    }
   ],
-  "evidence": "Redfin snapshots (5-7 units available) consistently show 2 months free, matching the client list's current 'ask about 2 months free'.",
+  "evidence": "Redfin snapshots (5-7 units available) consistently show 2 months free, matching the our listing data's current 'ask about 2 months free'.",
   "sources": [
    "https://www.redfin.com/zipcode/90014/rentals",
    "https://www.redfin.com/neighborhood/1279/CA/Los-Angeles/Historic-Core/2-bedroom-apartments-for-rent"
@@ -259,7 +259,7 @@
     "source": "https://engrain.windsorcommunities.com/properties/1000-grand-by-windsor/floorplans/"
    }
   ],
-  "evidence": "Windsor's floorplan page advertised a year-end parking/storage special; client list cites a Redfin '3 months free' rent badge. A year-end-deadline offer is relevant to a late-December signing.",
+  "evidence": "Windsor's floorplan page advertised a year-end parking/storage special; our listing data cites a Redfin '3 months free' rent badge. A year-end-deadline offer is relevant to a late-December signing.",
   "sources": [
    "https://engrain.windsorcommunities.com/properties/1000-grand-by-windsor/floorplans/"
   ]
@@ -278,13 +278,13 @@
     "source": "https://hotpads.com/da-vinci-los-angeles-ca-90012-ssg396/pad"
    },
    {
-    "when": "2026-10 (per client list)",
+    "when": "2026-10 (per our listing data)",
     "offer": "Up to 2 months free + $1,000 off + 50% off deposit (October special)",
     "source": "LIST_LA.tsv"
    }
   ],
   "negotiation_note": "Monthly specials mean a December special will likely exist; also ask about free parking and a reduced deposit.",
-  "evidence": "G.H. Palmer posts a named monthly special ('September Specials', 'October special'), usually free rent plus deposit discount; sizes seen 1 month to 10 weeks. Same pattern noted at sister building The Orsini (client list: Sept one month free + 50% off deposit).",
+  "evidence": "G.H. Palmer posts a named monthly special ('September Specials', 'October special'), usually free rent plus deposit discount; sizes seen 1 month to 10 weeks. Same pattern noted at sister building The Orsini (our listing data: Sept one month free + 50% off deposit).",
   "sources": [
    "https://www.westsiderentals.com/los-angeles-ca/davinci-bj5n538",
    "https://hotpads.com/da-vinci-los-angeles-ca-90012-ssg396/pad"
@@ -299,7 +299,7 @@
     "source": "https://tripalink.com/blog/your-ultimate-guide-to-koreatown-apartments-best-rentals-in-la"
    },
    {
-    "when": "2026-10 (per client list)",
+    "when": "2026-10 (per our listing data)",
     "offer": "Up to 4 weeks free + $500 Look & Lease bonus for 1BR",
     "source": "LIST_LA.tsv"
    }
@@ -339,7 +339,7 @@
     "source": "https://hotpads.com/luna-los-angeles-ca-90010-249jzr1/pad"
    },
    {
-    "when": "2026-10 (per client list)",
+    "when": "2026-10 (per our listing data)",
     "offer": "Up to 6 weeks free + $500 Look & Lease on 1BR",
     "source": "LIST_LA.tsv"
    }
@@ -457,7 +457,7 @@
    }
   ],
   "negotiation_note": "Offers have ranged from 2 to 10 weeks; ask for the high end.",
-  "evidence": "Free rent seen at 2, 4, 6 and (per client list) 10 weeks; Greystar site shows 12-month leases from about $2,383 without the special.",
+  "evidence": "Free rent seen at 2, 4, 6 and (per our listing data) 10 weeks; Greystar site shows 12-month leases from about $2,383 without the special.",
   "sources": [
    "https://www.westsiderentals.com/los-angeles-ca/garey-building-rqdqd22",
    "https://www.point2homes.com/US/Apartment-Buildings/CA/Los-Angeles/Garey-Building.html",
@@ -508,7 +508,7 @@
     "source": "https://www.apartments.com/kenmore-modern-apartments-los-angeles-ca/cgs622f/"
    },
    {
-    "when": "2026-10 (per client list)",
+    "when": "2026-10 (per our listing data)",
     "offer": "October special: 8 weeks free (select units)",
     "source": "LIST_LA.tsv"
    }

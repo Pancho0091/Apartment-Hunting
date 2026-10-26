@@ -21,6 +21,20 @@ def load(name, default):
     return json.loads(p.read_text()) if p.exists() else default
 
 
+# Research notes were written about "the client"; the tool speaks to the reader.
+WORDING = [("per client list", "per our listing data"), ("client list", "our listing data"), ("Client list", "Our listing data"),
+           ("above client budget", "above your budget"), ("outside client's", "outside your"),
+           ("the client list's", "the listing's"), ("The client's", "Your"), ("the client's", "your"),
+           ("The client", "You"), ("the client", "you")]
+
+
+def dumps(obj):
+    text = json.dumps(obj, indent=1, ensure_ascii=False)
+    for old, new in WORDING:
+        text = text.replace(old, new)
+    return text
+
+
 def main():
     area_ids = {a["id"] for a in json.loads((ROOT / "data/neighborhoods.json").read_text())}
     listing_ids = {b["id"] for b in json.loads((ROOT / "data/buildings.json").read_text())}
@@ -75,8 +89,8 @@ def main():
             conc[c["id"]] = {k: c.get(k) for k in ("pattern", "seen", "renewal_note", "negotiation_note", "evidence", "sources")
                              if c.get(k) not in (None, [], "")}
 
-    (ROOT / "data/timing-la.json").write_text(json.dumps(timing, indent=1, ensure_ascii=False))
-    (ROOT / "data/concessions-la.json").write_text(json.dumps(conc, indent=1, ensure_ascii=False))
+    (ROOT / "data/timing-la.json").write_text(dumps(timing))
+    (ROOT / "data/concessions-la.json").write_text(dumps(conc))
     linked = sum(1 for a in area_rows if a.get("area_id"))
     print(f"timing-la.json: {len(area_rows)} areas ({linked} linked), {len(timing.get('lease_ups') or [])} lease-ups, "
           f"{len(timing.get('operators') or [])} operators · concessions-la.json: {len(conc)} listings"
