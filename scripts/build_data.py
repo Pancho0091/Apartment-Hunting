@@ -25,6 +25,10 @@ AREA_ALIAS = {
     "NEW: Highland Park": "Highland Park / Eagle Rock",
     "NEW: Santa Ana – East": "Santa Ana – East (Franzen Ave)",
     "NEW: Tustin": "Tustin – Tustin Legacy / Old Town",
+    "NEW: Westminster": "Garden Grove",
+    "NEW: Irvine": "Irvine (Spectrum / Irvine Business Complex)",
+    "NEW: Playa del Rey": "Westchester",
+    "NEW: Playa Vista": "Mar Vista / Del Rey",
 }
 # Findings that contradict each other across research batches, shown on the building.
 REVIEW_NOTES = {
@@ -40,6 +44,15 @@ def slug(s):
 
 def norm_name(s):
     return (s or "").replace(" - ", " – ")
+
+
+def destar(x):
+    """Some research files kept the schema's ★ priority markers in key names; drop them."""
+    if isinstance(x, dict):
+        return {k.replace("★", "").strip(): destar(v) for k, v in x.items()}
+    if isinstance(x, list):
+        return [destar(v) for v in x]
+    return x
 
 
 def region_of(name):
@@ -149,12 +162,18 @@ def main():
     for a in areas:
         if extras.get(a["name"]) and not a.get("extras"):
             a["extras"] = extras[a["name"]]
+    fill_f = RESEARCH / "areas_fill.json"
+    for x in json.loads(fill_f.read_text()) if fill_f.exists() else []:
+        for a in areas:
+            if a["name"] == norm_name(x["neighborhood"]):
+                a.setdefault("extras", {})
+                a["extras"].update({k: v for k, v in (x.get("extras") or {}).items() if v not in (None, "")})
     area_ids = {a["name"]: a["id"] for a in areas}
 
     # Round-3 listing detail, keyed by listing id (enrich_*.json) or embedded in find3_* candidates.
     enrich = {}
     for f in sorted(RESEARCH.glob("enrich_*.json")):
-        for e in json.loads(f.read_text()):
+        for e in destar(json.loads(f.read_text())):
             enrich[e["id"]] = e
 
     buildings, missing = [], []
@@ -213,7 +232,7 @@ def main():
         return best
     seen = {b["name"].lower() for b in buildings}
     for f in sorted(RESEARCH.glob("find*.json")):
-        for c in json.loads(f.read_text()):
+        for c in destar(json.loads(f.read_text())):
             if c["name"].lower() in seen:
                 continue
             seen.add(c["name"].lower())
@@ -255,13 +274,13 @@ def main():
                             "complaints": [], "praise": [], "dealbreakers": "", "recent_trend": "unknown",
                             "management": {"score": None, "summary": c.get("reputation_gist") or ""}},
                 "checked_on": CHECKED_ON, "source": "claude", "my_status": "new", "my_note": "",
-                "batch": "round3-oct26" if f.name.startswith("find3") else "private-oct15" if f.name.startswith("find_p") else "new-oct15",
+                "batch": "recent-oct26" if f.name.startswith(("find3", "find4")) else "private-oct15" if f.name.startswith("find_p") else "new-oct15",
                 "landlord": c.get("landlord") or ("private" if f.name.startswith("find_p") else "company"),
                 "owner_type": c.get("owner_type"), "platform": c.get("platform"),
                 "hoa_amenities": c.get("hoa_amenities"), "rent_control": c.get("rent_control"),
                 "scam_flags": c.get("scam_flags") or "",
             })
-            if f.name.startswith("find3"):
+            if f.name.startswith(("find3", "find4")):
                 enrich.setdefault(slug(c["name"]), {**c, "parking": c.get("parking_detail")})
 
     DETAIL_KEYS = ("costs", "pets", "parking", "building", "unit", "internet", "location", "availability", "evidence")

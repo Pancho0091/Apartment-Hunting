@@ -1,0 +1,373 @@
+[
+ {
+  "neighborhood": "Downtown LA – South Park",
+  "extras": {
+   "summer_high_f": 84.0,
+   "summer_source": "NWS LOX PNS 2021-05-05 1991-2020 normals, Downtown LA (USC) Aug avg high 84.0F; also LA Almanac"
+  }
+ },
+ {
+  "neighborhood": "Downtown LA – Arts District",
+  "extras": {
+   "summer_high_f": 84.0,
+   "summer_source": "NWS LOX PNS 2021-05-05 1991-2020 normals, Downtown LA (USC) Aug avg high 84.0F; also LA Almanac"
+  }
+ },
+ {
+  "neighborhood": "Downtown LA – Historic Core / Financial District / Bunker Hill",
+  "extras": {
+   "summer_high_f": 84.0,
+   "summer_source": "NWS LOX PNS 2021-05-05 1991-2020 normals, Downtown LA (USC) Aug avg high 84.0F; also LA Almanac"
+  }
+ },
+ {
+  "neighborhood": "Chinatown",
+  "extras": {
+   "summer_high_f": 84.0,
+   "summer_source": "NWS LOX PNS 2021-05-05 1991-2020 normals, Downtown LA (USC) Aug avg high 84.0F; also LA Almanac"
+  }
+ },
+ {
+  "neighborhood": "Little Tokyo",
+  "extras": {
+   "summer_high_f": 84.0,
+   "summer_source": "NWS LOX PNS 2021-05-05 1991-2020 normals, Downtown LA (USC) Aug avg high 84.0F; also LA Almanac"
+  }
+ },
+ {
+  "neighborhood": "Echo Park",
+  "extras": {
+   "summer_high_f": 84.0,
+   "summer_source": "NWS LOX PNS 2021-05-05 1991-2020 normals, Downtown LA (USC) Aug avg high 84.0F; also LA Almanac"
+  }
+ },
+ {
+  "neighborhood": "Historic Filipinotown / Westlake",
+  "extras": {
+   "summer_high_f": 84.0,
+   "summer_source": "NWS LOX PNS 2021-05-05 1991-2020 normals, Downtown LA (USC) Aug avg high 84.0F; also LA Almanac"
+  }
+ },
+ {
+  "neighborhood": "Silver Lake",
+  "extras": {
+   "median_1br_rent": 1895,
+   "rent_source": "Zumper Silver Lake, Jul 2026 (table labeling ambiguous studio vs 1BR; RentHop Nov 2024 1BR $2,600)",
+   "summer_high_f": 84.0,
+   "summer_source": "NWS LOX PNS 2021-05-05 1991-2020 normals, Downtown LA (USC) Aug avg high 84.0F; also LA Almanac"
+  }
+ },
+ {
+  "neighborhood": "Koreatown",
+  "extras": {
+   "summer_high_f": 84.0,
+   "summer_source": "NWS LOX PNS 2021-05-05 1991-2020 normals, Downtown LA (USC) Aug avg high 84.0F; also LA Almanac"
+  }
+ },
+ {
+  "neighborhood": "Mid-City / Miracle Mile",
+  "extras": {
+   "summer_high_f": 84.0,
+   "summer_source": "NWS LOX PNS 2021-05-05 1991-2020 normals, Downtown LA (USC) Aug avg high 84.0F; also LA Almanac"
+  }
+ },
+ {
+  "neighborhood": "Hollywood",
+  "extras": {
+   "summer_high_f": 84.0,
+   "summer_source": "NWS LOX PNS 2021-05-05 1991-2020 normals, Downtown LA (USC) Aug avg high 84.0F; also LA Almanac; nearest NOAA station, Hollywood likely similar"
+  }
+ },
+ {
+  "neighborhood": "Culver City / Palms",
+  "extras": {
+   "summer_high_f": 79.4,
+   "summer_source": "ExtremeWeatherWatch Culver City Aug avg high 79.4F (NOAA 1991-2020)"
+  }
+ },
+ {
+  "neighborhood": "Westchester",
+  "extras": {
+   "summer_high_f": 77,
+   "summer_source": "approx: NWS LAX daily climate report normal max 77F for Aug 30 (LAX July monthly normal 75.1F); LAX monthly Aug normal not retrieved"
+  }
+ },
+ {
+  "neighborhood": "Long Beach – Downtown / East Village",
+  "extras": {
+   "summer_high_f": 83.9,
+   "summer_source": "ExtremeWeatherWatch Long Beach Aug avg high 83.9F (NOAA 1991-2020)"
+  }
+ },
+ {
+  "neighborhood": "Long Beach – Alamitos Beach",
+  "extras": {
+   "median_1br_rent": 2453,
+   "rent_source": "RentCafe/Yardi Aug 2026 Long Beach citywide 1BR avg; Alamitos Beach all-unit avg $2,531",
+   "summer_high_f": 83.9,
+   "summer_source": "ExtremeWeatherWatch Long Beach Aug avg high 83.9F (NOAA 1991-2020)"
+  }
+ },
+ {
+  "neighborhood": "Long Beach – Belmont Shore / Belmont Heights",
+  "extras": {
+   "median_1br_rent": 2453,
+   "rent_source": "RentCafe/Yardi Aug 2026 Long Beach citywide 1BR avg; Belmont Shore all-unit avg $2,406",
+   "summer_high_f": 83.9,
+   "summer_source": "ExtremeWeatherWatch Long Beach Aug avg high 83.9F (NOAA 1991-2020); shoreline likely a bit cooler"
+  }
+ },
+ {
+  "neighborhood": "Long Beach – Bixby Knolls / Cal Heights",
+  "extras": {
+   "summer_high_f": 83.9,
+   "summer_source": "ExtremeWeatherWatch Long Beach Aug avg high 83.9F (NOAA 1991-2020)"
+  }
+ },
+ {
+  "neighborhood": "Fullerton – Downtown",
+  "extras": {
+   "median_1br_rent": 2350,
+   "rent_source": "RentHop Fullerton city 1BR, Jul 2026 (Zumper Downtown Fullerton ~$1,975 Aug 2026, label ambiguous)",
+   "rent_trend": "-4.5% YoY (RentHop Jul 2026)",
+   "summer_high_f": 85,
+   "summer_source": "WeatherSpark Fullerton Municipal Airport Aug avg high 85F (weatheronthisday NOAA daily ~87-88F, east Fullerton likely warmer)"
+  }
+ },
+ {
+  "neighborhood": "Anaheim – Platinum Triangle / Packing District area",
+  "extras": {
+   "median_1br_rent": 2100,
+   "rent_source": "RentHop Anaheim city 1BR, Oct 2026 (city-level; new Platinum Triangle buildings likely higher)",
+   "rent_trend": "-3.4% YoY (RentHop Oct 2026)",
+   "summer_high_f": 86,
+   "summer_source": "approx: WeatherAPI Anaheim Aug avg high 86F (2009-2025); weatheronthisday NOAA daily 85-87F"
+  }
+ },
+ {
+  "neighborhood": "Garden Grove",
+  "extras": {
+   "median_1br_rent": 2000,
+   "rent_source": "RentHop Garden Grove 1BR, Sep 2026",
+   "rent_trend": "-0.4% YoY (RentHop Sep 2026)",
+   "summer_high_f": 85.7,
+   "summer_source": "ExtremeWeatherWatch Santa Ana Aug avg high 85.7F (NOAA 1991-2020); nearest station"
+  }
+ },
+ {
+  "neighborhood": "Santa Ana – Downtown (DTSA / Artists Village)",
+  "extras": {
+   "median_1br_rent": 2250,
+   "rent_source": "Trulia Santa Ana city 1BR avg, Jun 2026 (city-level)",
+   "summer_high_f": 85.7,
+   "summer_source": "ExtremeWeatherWatch Santa Ana Aug avg high 85.7F (NOAA 1991-2020)"
+  }
+ },
+ {
+  "neighborhood": "Santa Ana – South Coast Metro / MacArthur area",
+  "extras": {
+   "median_1br_rent": 2250,
+   "rent_source": "Trulia Santa Ana city 1BR avg, Jun 2026 (city-level; South Coast Metro newer buildings likely higher)",
+   "summer_high_f": 85.7,
+   "summer_source": "ExtremeWeatherWatch Santa Ana Aug avg high 85.7F (NOAA 1991-2020)"
+  }
+ },
+ {
+  "neighborhood": "Orange – Old Towne area",
+  "extras": {
+   "median_1br_rent": 2300,
+   "rent_source": "RentHop 1BR avg for zip codes in/near Orange, CA (2026; no clean city figure)",
+   "summer_high_f": 85.7,
+   "summer_source": "ExtremeWeatherWatch Santa Ana Aug avg high 85.7F (NOAA 1991-2020); nearest station"
+  }
+ },
+ {
+  "neighborhood": "Tustin – Tustin Legacy / Old Town",
+  "extras": {
+   "median_1br_rent": 2500,
+   "rent_source": "RentHop Tustin 1BR, Apr 2026",
+   "rent_trend": "+12.8% YoY (RentHop Apr 2026)",
+   "summer_high_f": 85.7,
+   "summer_source": "ExtremeWeatherWatch Santa Ana Aug avg high 85.7F (NOAA 1991-2020); nearest station"
+  }
+ },
+ {
+  "neighborhood": "Costa Mesa",
+  "extras": {
+   "median_1br_rent": 2412,
+   "rent_source": "RentHop Costa Mesa 1BR, Apr 2026",
+   "rent_trend": "+0.7% YoY (RentHop Apr 2026)",
+   "summer_high_f": 83,
+   "summer_source": "approx: weatheronthisday.com 92626 daily Aug avg highs 82-84F (NOAA 55-yr); monthly normal not retrieved"
+  }
+ },
+ {
+  "neighborhood": "Irvine (Spectrum / Irvine Business Complex)",
+  "extras": {
+   "median_1br_rent": 2525,
+   "rent_source": "Zumper Irvine Industrial Complex East 1BR, Jun 2026 (RentHop Irvine city $2,690 Jul 2026)",
+   "rent_trend": "+1.8% YoY citywide (RentHop Jul 2026)",
+   "summer_high_f": 81,
+   "summer_source": "WeatherSpark Irvine Aug avg high 81F (WeatherAPI 82F)"
+  }
+ },
+ {
+  "neighborhood": "Huntington Beach",
+  "extras": {
+   "median_1br_rent": 2500,
+   "rent_source": "RentHop Huntington Beach 1BR, Oct 2026",
+   "rent_trend": "+3.9% YoY (RentHop Oct 2026)",
+   "summer_high_f": 78,
+   "summer_source": "WeatherSpark Huntington Beach Aug avg high 78F"
+  }
+ },
+ {
+  "neighborhood": "Rancho Santa Margarita",
+  "extras": {
+   "median_1br_rent": 2451,
+   "rent_source": "RentHop zip 92688 1BR, Aug 2025 (stale; page also shows $2,402)",
+   "summer_high_f": 85,
+   "summer_source": "approx: weatheronthisday.com 92691 daily Aug avg highs ~83-86F (NOAA 55-yr); monthly NOAA normal not retrieved; RSM inland/higher, likely similar or warmer"
+  }
+ },
+ {
+  "neighborhood": "West Hollywood",
+  "extras": {
+   "summer_high_f": 84.0,
+   "summer_source": "NWS LOX PNS 2021-05-05 1991-2020 normals, Downtown LA (USC) Aug avg high 84.0F; also LA Almanac; nearest NOAA station used (hotels.com climate tab claims 86-88F, not trusted)"
+  }
+ },
+ {
+  "neighborhood": "West LA / Sawtelle",
+  "extras": {
+   "summer_high_f": 79.4,
+   "summer_source": "ExtremeWeatherWatch Culver City Aug avg high 79.4F (NOAA 1991-2020); nearest station"
+  }
+ },
+ {
+  "neighborhood": "Mar Vista / Del Rey",
+  "extras": {
+   "median_1br_rent": 2295,
+   "rent_source": "RentHop Mar Vista 1BR, Aug 2026 (FAQ on same page says $2,900)",
+   "rent_trend": "-1.4% YoY (RentHop Aug 2026)",
+   "summer_high_f": 79.4,
+   "summer_source": "ExtremeWeatherWatch Culver City Aug avg high 79.4F (NOAA 1991-2020); nearest station"
+  }
+ },
+ {
+  "neighborhood": "Jefferson Park / West Adams",
+  "extras": {
+   "median_1br_rent": 2298,
+   "rent_source": "RentHop Jefferson Park 1BR, Aug 2025 (stale; West Adams rows elsewhere $1,699-$2,195)",
+   "rent_trend": "+28% YoY (RentHop Aug 2025)",
+   "summer_high_f": 84.0,
+   "summer_source": "NWS LOX PNS 2021-05-05 1991-2020 normals, Downtown LA (USC) Aug avg high 84.0F; also LA Almanac"
+  }
+ },
+ {
+  "neighborhood": "Los Feliz",
+  "extras": {
+   "summer_high_f": 84.0,
+   "summer_source": "NWS LOX PNS 2021-05-05 1991-2020 normals, Downtown LA (USC) Aug avg high 84.0F; also LA Almanac"
+  }
+ },
+ {
+  "neighborhood": "Atwater Village",
+  "extras": {
+   "summer_high_f": 88,
+   "summer_source": "approx: myperfectweather.com Glendale Aug avg high 88F (WeatherAPI Glendale 89F); not NOAA normals"
+  }
+ },
+ {
+  "neighborhood": "Highland Park / Eagle Rock",
+  "extras": {
+   "summer_high_f": 89,
+   "summer_source": "City of Pasadena climate page Aug avg high 89F (weather.com 91103: 91F)"
+  }
+ },
+ {
+  "neighborhood": "Signal Hill / Lakewood",
+  "extras": {
+   "summer_high_f": 83.9,
+   "summer_source": "ExtremeWeatherWatch Long Beach Aug avg high 83.9F (NOAA 1991-2020)"
+  }
+ },
+ {
+  "neighborhood": "Los Alamitos / Rossmoor",
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "not found (RentHop only single-building pages, ~$1,948-$2,150 1BR)",
+   "summer_high_f": 83.9,
+   "summer_source": "ExtremeWeatherWatch Long Beach Aug avg high 83.9F (NOAA 1991-2020); nearest station"
+  }
+ },
+ {
+  "neighborhood": "Placentia",
+  "extras": {
+   "summer_high_f": 85,
+   "summer_source": "WeatherSpark Fullerton Municipal Airport Aug avg high 85F (weatheronthisday NOAA daily ~87-88F, east Fullerton likely warmer); nearest station"
+  }
+ },
+ {
+  "neighborhood": "Fullerton (east, non-downtown)",
+  "extras": {
+   "summer_high_f": 85,
+   "summer_source": "WeatherSpark Fullerton Municipal Airport Aug avg high 85F (weatheronthisday NOAA daily ~87-88F, east Fullerton likely warmer)"
+  }
+ },
+ {
+  "neighborhood": "Buena Park",
+  "extras": {
+   "summer_high_f": 85,
+   "summer_source": "WeatherSpark Fullerton Municipal Airport Aug avg high 85F (weatheronthisday NOAA daily ~87-88F, east Fullerton likely warmer); nearest station"
+  }
+ },
+ {
+  "neighborhood": "Brea",
+  "extras": {
+   "summer_high_f": 85,
+   "summer_source": "WeatherSpark Fullerton Municipal Airport Aug avg high 85F (weatheronthisday NOAA daily ~87-88F, east Fullerton likely warmer); nearest station"
+  }
+ },
+ {
+  "neighborhood": "Seal Beach",
+  "extras": {
+   "summer_high_f": 83.9,
+   "summer_source": "ExtremeWeatherWatch Long Beach Aug avg high 83.9F (NOAA 1991-2020); Long Beach Airport is inland of Seal Beach, coastal Seal Beach likely a few degrees cooler"
+  }
+ },
+ {
+  "neighborhood": "Santa Ana – East (Franzen Ave)",
+  "extras": {
+   "median_1br_rent": 2250,
+   "rent_source": "Trulia Santa Ana city 1BR avg, Jun 2026 (city-level)",
+   "summer_high_f": 85.7,
+   "summer_source": "ExtremeWeatherWatch Santa Ana Aug avg high 85.7F (NOAA 1991-2020)"
+  }
+ },
+ {
+  "neighborhood": "Newport Beach",
+  "extras": {
+   "summer_high_f": 72.9,
+   "summer_source": "ExtremeWeatherWatch Newport Beach Aug avg high 72.9F (coastal station; period not stated, header 1921-2025)"
+  }
+ },
+ {
+  "neighborhood": "Lake Forest",
+  "extras": {
+   "median_1br_rent": 2750,
+   "rent_source": "RentHop Lake Forest 1BR, Jul 2026 (nearby-cities table shows $2,500)",
+   "summer_high_f": 85,
+   "summer_source": "approx: weatheronthisday.com 92691 daily Aug avg highs ~83-86F (NOAA 55-yr); monthly NOAA normal not retrieved"
+  }
+ },
+ {
+  "neighborhood": "Mission Viejo",
+  "extras": {
+   "median_1br_rent": 2595,
+   "rent_source": "RentHop Mission Viejo 1BR, Mar 2026 (zip 92692 ~$2,576 May 2026)",
+   "summer_high_f": 85,
+   "summer_source": "approx: weatheronthisday.com 92691 daily Aug avg highs ~83-86F (NOAA 55-yr); monthly NOAA normal not retrieved"
+  }
+ }
+]

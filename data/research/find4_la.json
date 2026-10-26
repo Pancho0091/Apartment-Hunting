@@ -1,0 +1,1159 @@
+[
+ {
+  "name": "Rowan Lofts \u2013 460 S Spring St #301",
+  "address": "460 S Spring St #301, Los Angeles, CA 90013",
+  "area": "Downtown LA \u2013 Historic Core / Financial District / Bunker Hill",
+  "lat": 34.0485,
+  "lng": -118.2487,
+  "geocode_note": "Estimated from street address (Spring St between 4th and 5th); not geocoded by a service.",
+  "landlord": "private",
+  "owner_type": "individual condo owner",
+  "platform": "Avail / RentSpree / ForRentUniversity (owner listings)",
+  "management_company": null,
+  "year_built": 1912,
+  "floor_plan": "1BR/1BA",
+  "sqft": 810,
+  "base_rent": 2500,
+  "effective_rent": 2500,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26 (search snippets only; all page fetches failed with DNS errors)",
+  "units_note": "Owner listing on RentSpree: 1BR 810 sq ft at $2,500; date not shown.",
+  "washer_dryer": "yes",
+  "central_ac": "yes",
+  "central_ac_evidence": "Listing says 'central AC with a Nest thermostat'.",
+  "dishwasher": "unclear",
+  "parking": "yes (extra fee, adjacent garage)",
+  "packages": "front desk",
+  "packages_detail": "24/7 front-desk concierge and 'secure package receiving' cited in the #801 listing (building-wide amenity).",
+  "scam_flags": null,
+  "reputation_gist": "1912 Rowan Building, converted to ~202-206 condo lofts c.2006-2008 under the Adaptive Reuse Ordinance; 24/7 concierge/security, resident lounge, patio with hot/cold plunge pools and BBQ. Legal live/work, Mills Act building.",
+  "red_flags": "Parking is NOT in the building \u2014 spaces in the adjacent garage rent separately (#801 listing: +$125\u2013255/mo for assigned/tandem). Historic Core street conditions (noise, homelessness) \u2014 visit at night. Listing dates not visible; may be stale.",
+  "listing_url": "https://www.rentspree.com/listing/460-s-spring-st-301-los-angeles-5ecc6lsb",
+  "sources": [
+   "https://www.rentspree.com/listing/460-s-spring-st-301-los-angeles-5ecc6lsb",
+   "https://propmodo.com/playbook/buildings/rowan-building-460-s-spring-street-downtown-la/",
+   "https://www.rubyhome.com/los-angeles/rowan-lofts/"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": "12 months typical for owner listings"
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "garage",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": 206,
+   "stories": null,
+   "year_built": 1912,
+   "renovated": 2008,
+   "elevator": "yes",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "yes",
+   "controlled_access": "yes",
+   "onsite_management": "yes",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "stackable Bosch washer/dryer",
+    "central AC + Nest",
+    "custom built-in storage"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": "US-101 / I-110 via 4th St or 3rd St (estimate from map knowledge, not verified)",
+   "onramp_miles": null,
+   "freeway_within_500ft": "no",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": "Pershing Square (B/D lines) / Historic Broadway (A/E, Regional Connector)",
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Owner listing on RentSpree: 1BR 810 sq ft at $2,500; date not shown. Seen 2026-10-26 (search snippets only; all page fetches failed with DNS errors).",
+   "website": null,
+   "leasing_phone": null
+  }
+ },
+ {
+  "name": "Rowan Lofts \u2013 460 S Spring St #801",
+  "address": "460 S Spring St #801, Los Angeles, CA 90013",
+  "area": "Downtown LA \u2013 Historic Core / Financial District / Bunker Hill",
+  "lat": 34.0485,
+  "lng": -118.2487,
+  "geocode_note": "Estimated from street address (Spring St between 4th and 5th); not geocoded by a service.",
+  "landlord": "private",
+  "owner_type": "individual condo owner",
+  "platform": "Avail / RentSpree / ForRentUniversity (owner listings)",
+  "management_company": null,
+  "year_built": 1912,
+  "floor_plan": "1BR/1BA",
+  "sqft": 720,
+  "base_rent": 2100,
+  "effective_rent": 2100,
+  "special": null,
+  "parking_fee": 125,
+  "seen_on": "2026-10-26 (search snippets only; all page fetches failed with DNS errors)",
+  "units_note": "Avail owner listing: corner 1BR/1BA 720 sq ft, city & park views, $2,100; rent includes water, gas, trash. Date not shown \u2014 at this price it may be an old listing.",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Listing snippet did not state AC type (other Rowan units list central AC).",
+  "dishwasher": "unclear",
+  "parking": "yes (extra fee, adjacent garage)",
+  "packages": "front desk",
+  "packages_detail": "24/7 front-desk concierge and 'secure package receiving' cited in the #801 listing (building-wide amenity).",
+  "scam_flags": null,
+  "reputation_gist": "1912 Rowan Building, converted to ~202-206 condo lofts c.2006-2008 under the Adaptive Reuse Ordinance; 24/7 concierge/security, resident lounge, patio with hot/cold plunge pools and BBQ. Legal live/work, Mills Act building.",
+  "red_flags": "Parking is NOT in the building \u2014 spaces in the adjacent garage rent separately (#801 listing: +$125\u2013255/mo for assigned/tandem). Historic Core street conditions (noise, homelessness) \u2014 visit at night. Listing dates not visible; may be stale.",
+  "listing_url": "https://www.avail.com/l/60090255",
+  "sources": [
+   "https://www.avail.com/l/60090255",
+   "https://propmodo.com/playbook/buildings/rowan-building-460-s-spring-street-downtown-la/",
+   "https://www.rubyhome.com/los-angeles/rowan-lofts/"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": "Water, gas and trash included in rent; tenant pays electric (per listing)",
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": 125,
+   "lease_terms": "12 months typical for owner listings"
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "garage",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": 206,
+   "stories": null,
+   "year_built": 1912,
+   "renovated": 2008,
+   "elevator": "yes",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "yes",
+   "controlled_access": "yes",
+   "onsite_management": "yes",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "in-unit washer/dryer",
+    "corner unit, city/park views"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": "US-101 / I-110 via 4th St or 3rd St (estimate from map knowledge, not verified)",
+   "onramp_miles": null,
+   "freeway_within_500ft": "no",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": "Pershing Square (B/D lines) / Historic Broadway (A/E, Regional Connector)",
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Avail owner listing: corner 1BR/1BA 720 sq ft, city & park views, $2,100; rent includes water, gas, trash. Date not shown \u2014 at this price it may be an old listing. Seen 2026-10-26 (search snippets only; all page fetches failed with DNS errors).",
+   "website": null,
+   "leasing_phone": null
+  }
+ },
+ {
+  "name": "Rowan Lofts \u2013 460 S Spring St #512",
+  "address": "460 S Spring St #512, Los Angeles, CA 90013",
+  "area": "Downtown LA \u2013 Historic Core / Financial District / Bunker Hill",
+  "lat": 34.0485,
+  "lng": -118.2487,
+  "geocode_note": "Estimated from street address (Spring St between 4th and 5th); not geocoded by a service.",
+  "landlord": "private",
+  "owner_type": "individual condo owner",
+  "platform": "Avail / RentSpree / ForRentUniversity (owner listings)",
+  "management_company": null,
+  "year_built": 1912,
+  "floor_plan": "1BR/1BA",
+  "sqft": 900,
+  "base_rent": 2495,
+  "effective_rent": 2495,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26 (search snippets only; all page fetches failed with DNS errors)",
+  "units_note": "ForRentUniversity: 1BR/1BA 900 sq ft $2,495, 'Available Now' (building pages elsewhere describe 890 sq ft).",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Feature list includes 'washer/dryer'; AC type not stated in snippet.",
+  "dishwasher": "unclear",
+  "parking": "yes (extra fee, adjacent garage)",
+  "packages": "front desk",
+  "packages_detail": "24/7 front-desk concierge and 'secure package receiving' cited in the #801 listing (building-wide amenity).",
+  "scam_flags": null,
+  "reputation_gist": "1912 Rowan Building, converted to ~202-206 condo lofts c.2006-2008 under the Adaptive Reuse Ordinance; 24/7 concierge/security, resident lounge, patio with hot/cold plunge pools and BBQ. Legal live/work, Mills Act building.",
+  "red_flags": "Parking is NOT in the building \u2014 spaces in the adjacent garage rent separately (#801 listing: +$125\u2013255/mo for assigned/tandem). Historic Core street conditions (noise, homelessness) \u2014 visit at night. Listing dates not visible; may be stale.",
+  "listing_url": "https://www.forrentuniversity.com/ca/los-angeles/460-s-spring-st/02msdf3",
+  "sources": [
+   "https://www.forrentuniversity.com/ca/los-angeles/460-s-spring-st/02msdf3",
+   "https://propmodo.com/playbook/buildings/rowan-building-460-s-spring-street-downtown-la/",
+   "https://www.rubyhome.com/los-angeles/rowan-lofts/"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": "12 months typical for owner listings"
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "garage",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": 206,
+   "stories": null,
+   "year_built": 1912,
+   "renovated": 2008,
+   "elevator": "yes",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "yes",
+   "controlled_access": "yes",
+   "onsite_management": "yes",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "washer/dryer"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": "US-101 / I-110 via 4th St or 3rd St (estimate from map knowledge, not verified)",
+   "onramp_miles": null,
+   "freeway_within_500ft": "no",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": "Pershing Square (B/D lines) / Historic Broadway (A/E, Regional Connector)",
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "ForRentUniversity: 1BR/1BA 900 sq ft $2,495, 'Available Now' (building pages elsewhere describe 890 sq ft). Seen 2026-10-26 (search snippets only; all page fetches failed with DNS errors).",
+   "website": null,
+   "leasing_phone": null
+  }
+ },
+ {
+  "name": "Rowan Lofts \u2013 460 S Spring St #910",
+  "address": "460 S Spring St #910, Los Angeles, CA 90013",
+  "area": "Downtown LA \u2013 Historic Core / Financial District / Bunker Hill",
+  "lat": 34.0485,
+  "lng": -118.2487,
+  "geocode_note": "Estimated from street address (Spring St between 4th and 5th); not geocoded by a service.",
+  "landlord": "private",
+  "owner_type": "individual condo owner",
+  "platform": "Avail / RentSpree / ForRentUniversity (owner listings)",
+  "management_company": null,
+  "year_built": 1912,
+  "floor_plan": "1BR/1BA",
+  "sqft": 920,
+  "base_rent": 2500,
+  "effective_rent": 2500,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26 (search snippets only; all page fetches failed with DNS errors)",
+  "units_note": "Pardee Properties MLS page: $2,500/mo, 920 sq ft (bedroom count from search context = 1BR); status/date unknown.",
+  "washer_dryer": "unclear",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Listing snippet did not mention AC or laundry.",
+  "dishwasher": "unclear",
+  "parking": "yes (extra fee, adjacent garage)",
+  "packages": "front desk",
+  "packages_detail": "24/7 front-desk concierge and 'secure package receiving' cited in the #801 listing (building-wide amenity).",
+  "scam_flags": null,
+  "reputation_gist": "1912 Rowan Building, converted to ~202-206 condo lofts c.2006-2008 under the Adaptive Reuse Ordinance; 24/7 concierge/security, resident lounge, patio with hot/cold plunge pools and BBQ. Legal live/work, Mills Act building.",
+  "red_flags": "Parking is NOT in the building \u2014 spaces in the adjacent garage rent separately (#801 listing: +$125\u2013255/mo for assigned/tandem). Historic Core street conditions (noise, homelessness) \u2014 visit at night. Listing dates not visible; may be stale.",
+  "listing_url": "https://pardeeproperties.com/listings/Los+Angeles/CA/90013/460+S+Spring+St+910%2C+Los+Angeles%2C+CA+90013/232399795",
+  "sources": [
+   "https://pardeeproperties.com/listings/Los+Angeles/CA/90013/460+S+Spring+St+910%2C+Los+Angeles%2C+CA+90013/232399795",
+   "https://propmodo.com/playbook/buildings/rowan-building-460-s-spring-street-downtown-la/",
+   "https://www.rubyhome.com/los-angeles/rowan-lofts/"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": "12 months typical for owner listings"
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "garage",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": 206,
+   "stories": null,
+   "year_built": 1912,
+   "renovated": 2008,
+   "elevator": "yes",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "yes",
+   "controlled_access": "yes",
+   "onsite_management": "yes",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": "US-101 / I-110 via 4th St or 3rd St (estimate from map knowledge, not verified)",
+   "onramp_miles": null,
+   "freeway_within_500ft": "no",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": "Pershing Square (B/D lines) / Historic Broadway (A/E, Regional Connector)",
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Pardee Properties MLS page: $2,500/mo, 920 sq ft (bedroom count from search context = 1BR); status/date unknown. Seen 2026-10-26 (search snippets only; all page fetches failed with DNS errors).",
+   "website": null,
+   "leasing_phone": null
+  }
+ },
+ {
+  "name": "Seagate Village \u2013 8707 Falmouth Ave #218",
+  "address": "8707 Falmouth Ave #218, Playa del Rey, CA 90293",
+  "area": "NEW: Playa del Rey",
+  "lat": 33.959,
+  "lng": -118.442,
+  "geocode_note": "Estimated from street address (Falmouth Ave just south of Manchester Ave / Seagate Village); not geocoded by a service.",
+  "landlord": "private",
+  "owner_type": "individual condo owner",
+  "platform": "ForRent.com / WestsideRentals",
+  "management_company": null,
+  "year_built": 1982,
+  "floor_plan": "1BR/1BA",
+  "sqft": 780,
+  "base_rent": 2300,
+  "effective_rent": 2300,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26 (search snippets only; all page fetches failed with DNS errors)",
+  "units_note": "1BR/1BA condo, 780 sq ft, $2,300 'Total Monthly Price', 12-month lease, 'Available Now', utilities listed as included. A separate building page shows $3,295 for an unspecified 1BR \u2014 price conflict.",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Unit listing says 'air conditioning' (type unstated); complex amenity list and other unit listings say central heat/AC.",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": "No package info found; ask HOA about package room/lockers.",
+  "scam_flags": "Price ~$1,000 below a same-building listing ($3,295) \u2014 confirm with the listing agent/owner; never wire deposits before a tour.",
+  "reputation_gist": "Seagate Village: 262-unit, 3-story 1982 condo complex; gated subterranean garage (most units 2 assigned spaces), pools, spas, tennis, short walk to beach. HOA ~$655/mo (owner-paid). Building amenity list includes central AC.",
+  "red_flags": "1982 build (below the 1985 condo preference); confirm the specific unit's HVAC is central and working. Third-party listing sites disagree on price.",
+  "listing_url": "https://www.forrent.com/ca/playa-del-rey/8707-falmouth-ave/2xsj8yb",
+  "sources": [
+   "https://www.forrent.com/ca/playa-del-rey/8707-falmouth-ave/2xsj8yb",
+   "https://www.westsiderentals.com/playa-del-rey-ca/8707-falmouth-ave-unit-218-qxsjgyy",
+   "https://www.westsiderentals.com/los-angeles-ca/8707-falmouth-ave-0vdc270",
+   "https://compass.com/building/seagate-village-playa-del-rey-ca/841511320339914093",
+   "https://www.sereno.com/SB25140018/8707-falmouth-ave-221-playa-del-rey-california-90293-crmls",
+   "https://www.houzeo.com/homes/8707-falmouth-318-ave-318-playa-del-rey-ca-90293/hzid_1a133023"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": "Listing says utilities included (ForRent caveat: may exclude extra fees)",
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": "12 months"
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "garage",
+   "ev_charging": "unclear",
+   "guest_parking": "yes"
+  },
+  "building": {
+   "units": 262,
+   "stories": 3,
+   "year_built": 1982,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "yes",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "yes",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "fireplace",
+    "in-unit washer/dryer",
+    "air conditioning"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": "I-405 at Howard Hughes Pkwy / Sepulveda, or SR-90 at Culver Blvd (estimate from map knowledge, not verified)",
+   "onramp_miles": null,
+   "freeway_within_500ft": "no",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": "Westchester/Veterans (K line) \u2014 ~2.5 mi, not walkable",
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "#218: $2,300, 780 sq ft, 'Available Now' on ForRent \u2014 seen 2026-10-26 (search snippets only; all page fetches failed with DNS errors). Price conflicts with a $3,295 building listing; low price for the area, verify it is real and current.",
+   "website": null,
+   "leasing_phone": null
+  }
+ },
+ {
+  "name": "Seagate Village \u2013 8707 Falmouth Ave #109",
+  "address": "8707 Falmouth Ave #109, Playa del Rey, CA 90293",
+  "area": "NEW: Playa del Rey",
+  "lat": 33.959,
+  "lng": -118.442,
+  "geocode_note": "Estimated from street address (Falmouth Ave just south of Manchester Ave / Seagate Village); not geocoded by a service.",
+  "landlord": "private",
+  "owner_type": "individual condo owner",
+  "platform": "WestsideRentals",
+  "management_company": null,
+  "year_built": 1982,
+  "floor_plan": "unclear (likely 1BR \u2014 not confirmed)",
+  "sqft": null,
+  "base_rent": null,
+  "effective_rent": null,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26 (search snippets only; all page fetches failed with DNS errors)",
+  "units_note": "2026 rental listing for #109 with 1 covered parking spot and 2025 HVAC replacement; rent, size and bedroom count not in snippet.",
+  "washer_dryer": "unclear",
+  "central_ac": "yes",
+  "central_ac_evidence": "2026 rental listing says the unit's HVAC system was replaced in 2025; complex lists central AC.",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": "No package info found; ask HOA about package room/lockers.",
+  "scam_flags": null,
+  "reputation_gist": "Seagate Village: 262-unit, 3-story 1982 condo complex; gated subterranean garage (most units 2 assigned spaces), pools, spas, tennis, short walk to beach. HOA ~$655/mo (owner-paid). Building amenity list includes central AC.",
+  "red_flags": "1982 build (below the 1985 condo preference); confirm the specific unit's HVAC is central and working. Third-party listing sites disagree on price.",
+  "listing_url": "https://www.westsiderentals.com/los-angeles-ca/8707-falmouth-ave-unit-109-4b3hh6l",
+  "sources": [
+   "https://www.westsiderentals.com/los-angeles-ca/8707-falmouth-ave-unit-109-4b3hh6l",
+   "https://compass.com/building/seagate-village-playa-del-rey-ca/841511320339914093",
+   "https://www.sereno.com/SB25140018/8707-falmouth-ave-221-playa-del-rey-california-90293-crmls",
+   "https://www.houzeo.com/homes/8707-falmouth-318-ave-318-playa-del-rey-ca-90293/hzid_1a133023"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "covered",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": 262,
+   "stories": 3,
+   "year_built": 1982,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "yes",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "yes",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": "I-405 at Howard Hughes Pkwy / Sepulveda, or SR-90 at Culver Blvd (estimate from map knowledge, not verified)",
+   "onramp_miles": null,
+   "freeway_within_500ft": "no",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": "Westchester/Veterans (K line) \u2014 ~2.5 mi, not walkable",
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "#109 rental listing (2026) \u2014 rent/size unknown; lead only. Seen 2026-10-26 (search snippets only; all page fetches failed with DNS errors)",
+   "website": null,
+   "leasing_phone": null
+  }
+ },
+ {
+  "name": "3940-44 Inglewood Blvd (Mar Vista)",
+  "address": "3940-3944 Inglewood Blvd, Los Angeles, CA 90066",
+  "area": "Mar Vista / Del Rey",
+  "lat": 34.004,
+  "lng": -118.4245,
+  "geocode_note": "Estimated from street address (Inglewood Blvd between Venice Blvd and Washington area, 90066); not geocoded by a service.",
+  "landlord": "company",
+  "owner_type": "small apartment building",
+  "platform": "Rentable / ApartmentFinder",
+  "management_company": "KMK Management",
+  "year_built": null,
+  "floor_plan": "1BR/1BA",
+  "sqft": null,
+  "base_rent": 2495,
+  "effective_rent": 2495,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26 (search snippets only; all page fetches failed with DNS errors)",
+  "units_note": "1BR/1BA $2,495 'available now'; size not listed (neighbor 3930 Inglewood 1BR is 576 sq ft, so 700+ is doubtful).",
+  "washer_dryer": "yes",
+  "central_ac": "yes",
+  "central_ac_evidence": "Listing: 'newly renovated ... central air and heat, in unit washer and dryer'.",
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": null,
+  "reputation_gist": null,
+  "red_flags": "Square footage unknown and may be <700. Listing contradicts itself on parking ('street parking only' vs. surface/garage options in fee table). Older building renovated \u2014 build year unknown.",
+  "listing_url": "https://www.rentable.co/los-angeles-ca/3940-44-inglewood-blvd",
+  "sources": [
+   "https://www.rentable.co/los-angeles-ca/3940-44-inglewood-blvd",
+   "https://www.padmapper.com/buildings/p132464/ing394-apartments-at-3940-inglewood-blvd-los-angeles-ca-90066"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": "I-405 at Venice Blvd / SR-90 (estimate from map knowledge, not verified)",
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "1BR $2,495 available now, seen 2026-10-26 (search snippets only; all page fetches failed with DNS errors)",
+   "website": null,
+   "leasing_phone": null
+  }
+ },
+ {
+  "name": "4431 S Centinela Ave #3 (Del Rey)",
+  "address": "4431 S Centinela Ave #3, Los Angeles, CA 90066",
+  "area": "Mar Vista / Del Rey",
+  "lat": 33.9935,
+  "lng": -118.4215,
+  "geocode_note": "Estimated from street address (Centinela Ave south of Culver Blvd area); not geocoded by a service.",
+  "landlord": "private",
+  "owner_type": "small building / unit owner (unclear)",
+  "platform": "ForRent.com",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1BR/1BA",
+  "sqft": null,
+  "base_rent": 2375,
+  "effective_rent": 2375,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26 (search snippets only; all page fetches failed with DNS errors)",
+  "units_note": "1BR/1BA $2,375, 12-month lease, gated community, utilities included; size not stated.",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Listing says 'air conditioning' only.",
+  "dishwasher": "unclear",
+  "parking": "no (street parking per listing)",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": null,
+  "reputation_gist": null,
+  "red_flags": "FAILS parking requirement as listed (street parking). Size unknown. Centinela Ave is a busy arterial.",
+  "listing_url": "https://www.forrent.com/ca/los-angeles/4431-s-centinela-ave/3brdj5e",
+  "sources": [
+   "https://www.forrent.com/ca/los-angeles/4431-s-centinela-ave/3brdj5e"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": "Listing says utilities included",
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": "12 months"
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "street",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "yes",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": "SR-90 at Culver Blvd / I-405 at Culver (estimate from map knowledge, not verified)",
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "$2,375 1BR, seen 2026-10-26 (search snippets only; all page fetches failed with DNS errors)",
+   "website": null,
+   "leasing_phone": null
+  }
+ },
+ {
+  "name": "The Lofts at the Security Building (2BR)",
+  "address": "510 S Spring St, Los Angeles, CA 90013",
+  "area": "Downtown LA \u2013 Historic Core / Financial District / Bunker Hill",
+  "lat": 34.0478,
+  "lng": -118.2496,
+  "geocode_note": "Estimated from street address (Spring St at 5th St); not geocoded by a service.",
+  "landlord": "company",
+  "owner_type": "managed apartment (historic adaptive reuse)",
+  "platform": "Apartments.com / Redfin / VeryApt",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "2BR (studios\u20132BR offered; no 1BR price found)",
+  "sqft": null,
+  "base_rent": 2350,
+  "effective_rent": 2350,
+  "special": "Redfin pages show 2BR from $2,408 and $2,778 at different dates; VeryApt 2BR $2,350+",
+  "parking_fee": null,
+  "seen_on": "2026-10-26 (search snippets only; all page fetches failed with DNS errors)",
+  "units_note": "Building range: studio\u20132BR, 509\u20131,396 sq ft, $2,081\u2013$3,064 (Apartments.com); 2BR $2,350\u2013$2,778 depending on source/date.",
+  "washer_dryer": "unclear",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Apartments.com: lofts and 2BR homes 'include air conditioning' (type unstated).",
+  "dishwasher": "yes",
+  "parking": "yes (available; fee unknown)",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": null,
+  "reputation_gist": "Historic Security Building converted to rental lofts; 10-ft exposed ceilings, city views; pets welcome (per listing sites).",
+  "red_flags": "In-unit W/D and central AC not confirmed. 2BR sq ft not found (building max 1,160\u20131,396). Historic Core street conditions.",
+  "listing_url": "https://www.apartments.com/the-lofts-at-the-security-building-apartments-los-angeles-ca/zm9pqvx/",
+  "sources": [
+   "https://www.apartments.com/the-lofts-at-the-security-building-apartments-los-angeles-ca/zm9pqvx/",
+   "https://www.veryapt.com/ApartmentReview-a20946-the-lofts-at-the-security-building-los-angeles",
+   "https://www.redfin.com/neighborhood/1279/CA/Los-Angeles/Historic-Core/apartments-for-rent"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "yes",
+   "dogs": "yes",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": "I-110 / US-101 via 4th/3rd St (estimate from map knowledge, not verified)",
+   "onramp_miles": null,
+   "freeway_within_500ft": "no",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": "Pershing Square (B/D lines)",
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "2BR from ~$2,350\u2013$2,778 across sources, seen 2026-10-26 (search snippets only; all page fetches failed with DNS errors)",
+   "website": null,
+   "leasing_phone": "213-725-2681"
+  }
+ },
+ {
+  "name": "3767 1/2 Edenhurst Ave (Atwater Village loft)",
+  "address": "3767 1/2 Edenhurst Ave, Los Angeles, CA 90039",
+  "area": "Atwater Village",
+  "lat": 34.121,
+  "lng": -118.2615,
+  "geocode_note": "Estimated from street address (Edenhurst Ave, south Atwater Village); not geocoded by a service.",
+  "landlord": "private",
+  "owner_type": "individual owner (two-story rear unit)",
+  "platform": "Avail",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1BR loft (spiral stair) / 1BA",
+  "sqft": 700,
+  "base_rent": 2595,
+  "effective_rent": 2595,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26 (search snippets only; all page fetches failed with DNS errors)",
+  "units_note": "1BR/1BA ~700 sq ft two-story home, $2,595, 1-yr lease from Sept 1 (now past \u2014 may be stale). Renovated 2017.",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Listing says 'A/C unit' \u2014 likely not central.",
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "none",
+  "packages_detail": "Small residential lot; no package facility mentioned.",
+  "scam_flags": null,
+  "reputation_gist": null,
+  "red_flags": "'A/C unit' probably fails central-AC; parking not mentioned; listing start date already passed. Tenant pays utilities except gardener.",
+  "listing_url": "https://www.avail.com/l/60125335",
+  "sources": [
+   "https://www.avail.com/l/60125335"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": "Tenant pays all utilities except gardener",
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": "12 months"
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": 250,
+   "limits": "case by case"
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": 2017,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "brand-new in-unit W/D",
+    "loft bedroom via spiral staircase"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": "I-5 at Los Feliz Blvd (estimate from map knowledge, not verified)",
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "$2,595, lease start Sept 1 2026 per listing (past), seen 2026-10-26 (search snippets only; all page fetches failed with DNS errors)",
+   "website": null,
+   "leasing_phone": null
+  }
+ },
+ {
+  "name": "Tempo building \u2013 6020 Seabluff Dr #402 (Playa Vista)",
+  "address": "6020 Seabluff Dr #402, Playa Vista, CA 90094",
+  "area": "NEW: Playa Vista",
+  "lat": 33.9728,
+  "lng": -118.4255,
+  "geocode_note": "Estimated from street address (Seabluff Dr near Runway, Playa Vista); not geocoded by a service.",
+  "landlord": "private",
+  "owner_type": "individual condo owner",
+  "platform": "The Weglarz Team (broker)",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1BR/1BA",
+  "sqft": 790,
+  "base_rent": null,
+  "effective_rent": null,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26 (search snippets only; all page fetches failed with DNS errors)",
+  "units_note": "Top-floor 1BR/1BA condo, 790 sq ft, 1 parking spot, access to The Resort and Centerpointe Club; 'Available Now'; rent not shown.",
+  "washer_dryer": "unclear",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Not in snippet (Playa Vista condos are typically 2000s builds with central HVAC \u2014 unverified).",
+  "dishwasher": "unclear",
+  "parking": "yes (1 space)",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": null,
+  "reputation_gist": null,
+  "red_flags": "Rent unknown; Playa Vista 1BR average ~$3,657, so likely over $2,600. Lead only.",
+  "listing_url": "https://www.theweglarzteam.com/rentals/CA/Los-Angeles/90094",
+  "sources": [
+   "https://www.theweglarzteam.com/rentals/CA/Los-Angeles/90094"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "yes",
+   "pool": "yes",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": "SR-90 at Culver Blvd / I-405 at Jefferson (estimate from map knowledge, not verified)",
+   "onramp_miles": null,
+   "freeway_within_500ft": "no",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "#402 'Available Now', rent not shown, seen 2026-10-26 (search snippets only; all page fetches failed with DNS errors)",
+   "website": null,
+   "leasing_phone": null
+  }
+ }
+]

@@ -157,5 +157,33 @@
   "source": "Round 3 research 2026-10-26",
   "landlord": "company",
   "note": "Round 3: looks like a managed apartment complex, not a condo; rents conflict ($1,900–$2,990)."
+ },
+ {
+  "name": "1834 S Bentley Ave",
+  "source": "Round 4 research 2026-10-26",
+  "req": {
+   "wd": "no"
+  },
+  "note": "Round 4: shared laundry, not in-unit. One month free advertised."
+ },
+ {
+  "name": "9819 Regent St (small Palms building), Unit 07",
+  "source": "Round 4 research 2026-10-26",
+  "note": "Round 4: listing mentions ceiling fans and no AC; 65 recorded housing violations; rent-stabilized (RSO)."
+ },
+ {
+  "name": "Condo – 23236 Orange Ave #4",
+  "source": "Round 4 research 2026-10-26",
+  "note": "Round 4: probably a furnished 2BR at $2,900, despite one listing calling it a 1BR."
+ },
+ {
+  "name": "Pegasus",
+  "source": "Round 4 research 2026-10-26",
+  "note": "Round 4: an LAist article says the garage fits only about half of the 322 units; many residents park two blocks away."
+ },
+ {
+  "name": "Sakura Crossing",
+  "source": "Round 4 research 2026-10-26",
+  "note": "Round 4: Zillow shows washer/dryers in only some units and tags the building income-restricted. Confirm both."
  }
 ]

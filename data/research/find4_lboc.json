@@ -1,0 +1,1106 @@
+[
+ {
+  "name": "Wilshire Promenade",
+  "address": "141 W Wilshire Ave, Fullerton, CA 92832",
+  "area": "Fullerton – Downtown",
+  "lat": 33.8693,
+  "lng": -117.9262,
+  "geocode_note": "lat/lng are my estimate from the street address (no geocoder available; page fetches failed with DNS errors) - approx +/-0.005 deg; verify.",
+  "landlord": "company",
+  "owner_type": "REIT (Essex Property Trust)",
+  "platform": "Essex / Redfin / ApartmentIQ",
+  "management_company": "Essex Property Trust",
+  "year_built": 1992,
+  "floor_plan": "1 bed / 1 bath",
+  "sqft": 710,
+  "base_rent": 2449,
+  "effective_rent": 2449,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "Redfin Downtown Fullerton pages (snippet, ~$2,449-$2,477 for 710 sq ft, undated, seen 2026-10-26); ApartmentIQ showed $2,337 avail Jul 2025 (stale)",
+  "units_note": "Redfin snippet shows 710 sq ft 1BR at ~$2,449-$2,477; current availability not confirmed (seen 2026-10-26)",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "ApartmentIQ lists 'central A/C' and VeryApt lists 'Air Conditioning'; Essex page snippet did not mention AC - confirm",
+  "dishwasher": "yes",
+  "parking": "yes",
+  "packages": "front desk",
+  "packages_detail": "Listings mention a 24-hour front desk; package handling method not stated explicitly",
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "1992 building (older than the ~2000+ preference)",
+   "710 sq ft is just over the minimum",
+   "Central AC not confirmed by owner"
+  ],
+  "listing_url": "https://www.essexapartmenthomes.com/apartments/wilshire-promenade",
+  "sources": [
+   "https://edge.apartmentiq.io/fullerton-ca/wilshire-promenade",
+   "https://www.redfin.com/neighborhood/110044/CA/Fullerton/Downtown-Fullerton/apartments-for-rent",
+   "https://www.veryapt.com/ApartmentReview-a25339-wilshire-promenade-fullerton",
+   "https://essexapartmenthomes.com/apartments/wilshire-promenade",
+   "https://nationalcorporatehousing.com/node/131859",
+   "https://www.cityfeet.com/cont/listing/141-w-wilshire-ave-fullerton-ca-92832/cs39390649"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "yes",
+   "dogs": "yes",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": "Redfin says pets allowed; limits unknown"
+  },
+  "parking_detail": {
+   "type": "garage",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": 149,
+   "stories": null,
+   "year_built": 1992,
+   "renovated": null,
+   "elevator": "yes",
+   "gym": "yes",
+   "pool": "yes",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "yes",
+   "onsite_management": "yes",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "in-unit washer/dryer",
+    "fireplace (VeryApt)",
+    "vaulted ceilings (VeryApt)"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": "SR-91 at Harbor Blvd",
+   "onramp_miles": 1.3,
+   "freeway_within_500ft": "no",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": "Fullerton Transportation Center (Metrolink/Amtrak)",
+   "metro_walk_min": 5,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Redfin snippet shows 710 sq ft 1BR at ~$2,449-$2,477; current availability not confirmed (seen 2026-10-26)",
+   "website": "https://www.essexapartmenthomes.com/apartments/wilshire-promenade",
+   "leasing_phone": null
+  },
+  "evidence": "Search snippets only (page fetches failed). Unit count '149' from a retail flyer ('below 149 residential units'). Onramp/metro distances are my estimates from the address; Fullerton station is ~0.2 mi away. Mixed-use with ground-floor retail in downtown Fullerton bar district - noise possible on weekends."
+ },
+ {
+  "name": "Jasmine Place",
+  "address": "15100 Moran St, Westminster, CA 92683",
+  "area": "NEW: Westminster",
+  "lat": 33.7493,
+  "lng": -117.9825,
+  "geocode_note": "lat/lng are my estimate from the street address (no geocoder available; page fetches failed with DNS errors) - approx +/-0.005 deg; verify.",
+  "landlord": "company",
+  "owner_type": "professionally managed apartment community",
+  "platform": "Redfin / RentCafe / Point2Homes",
+  "management_company": null,
+  "year_built": 2009,
+  "floor_plan": "1 bed / 1 bath",
+  "sqft": 770,
+  "base_rent": 2541,
+  "effective_rent": 2541,
+  "special": "RentCafe snippet showed a special on the Westminster page; terms not captured",
+  "parking_fee": null,
+  "seen_on": "Redfin (from ~$2,541-$2,560, 770-836 sq ft, 5-8 units available) and RentCafe (from ~$2,609-$2,690), snippets seen 2026-10-26",
+  "units_note": "1BRs 770-836 sq ft from ~$2,541 (Redfin) to ~$2,690 (RentCafe ZIP page); 5-8 units shown available on Redfin (seen 2026-10-26)",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Point2Homes lists 'Air Conditioner and Ceiling Fan'; ApartmentIQ 'Air Conditioning' - type not stated",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": "No package info found",
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "Lowest prices are just over the $2,300 cap; RentCafe pricing reaches ~$2,690 (over $2,600)",
+   "AC type unverified"
+  ],
+  "listing_url": "https://www.point2homes.com/US/Apartment-Buildings/CA/Westminster/Jasmine-Place/93061880.html",
+  "sources": [
+   "https://www.redfin.com/city/20793/CA/Westminster/1-bedroom-apartments-for-rent",
+   "https://www.point2homes.com/US/Apartment-Buildings/CA/Westminster/Jasmine-Place/93061880.html",
+   "https://edge.apartmentiq.io/westminster-ca/jasmine-place",
+   "https://www.rentcafe.com/apartments-for-rent/92683-ca/"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": 500,
+   "application_fee": 45,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "yes",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": 400,
+   "limits": "Point2Homes: $400 cat deposit plus monthly pet rent (amount cut off)"
+  },
+  "parking_detail": {
+   "type": "garage",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": 144,
+   "stories": null,
+   "year_built": 2009,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "yes",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "in-home washer/dryer",
+    "ceiling fan"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": "I-405 at Magnolia St or Brookhurst St",
+   "onramp_miles": 1.5,
+   "freeway_within_500ft": "no",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "1BRs 770-836 sq ft from ~$2,541 (Redfin) to ~$2,690 (RentCafe ZIP page); 5-8 units shown available on Redfin (seen 2026-10-26)",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Snippets only. Deposit $500-$600 per Point2Homes. 'Gated subterranean parking' per Point2Homes. Freeway distance is my estimate (Moran St in Little Saigon is ~1+ mi north of I-405)."
+ },
+ {
+  "name": "The Village at Irvine Spectrum Center",
+  "address": "50 Prism, Irvine, CA 92618",
+  "area": "Irvine (Spectrum / Irvine Business Complex)",
+  "lat": 33.6512,
+  "lng": -117.742,
+  "geocode_note": "lat/lng are my estimate from the street address (no geocoder available; page fetches failed with DNS errors) - approx +/-0.005 deg; verify.",
+  "landlord": "company",
+  "owner_type": "Irvine Company (owner-operator)",
+  "platform": "Redfin / ApartmentHomeLiving",
+  "management_company": "Irvine Company Apartment Communities",
+  "year_built": 2005,
+  "floor_plan": "1 bed / 1 bath",
+  "sqft": 712,
+  "base_rent": 2595,
+  "effective_rent": 2595,
+  "special": "Redfin flag 'LOWERED FEES'; earlier reduced-deposit offer ended Aug 3 2026",
+  "parking_fee": null,
+  "seen_on": "Redfin Irvine Spectrum page: '$2,595+/mo 1 bed 712-988 sq ft, 87 units available' (snippet seen 2026-10-26)",
+  "units_note": "1BR 712-988 sq ft from $2,595; 87 units available across all types (Redfin, seen 2026-10-26)",
+  "washer_dryer": "unclear",
+  "central_ac": "yes",
+  "central_ac_evidence": "ApartmentHomeLiving listing: 'central air conditioning & heat'",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "lockers",
+  "packages_detail": "'24hr. parcel locker' per ApartmentHomeLiving",
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "$2,595 floor is right at the $2,600 ceiling; Irvine Company usually adds utility/trash billing",
+   "In-unit W/D not confirmed for the cheapest plan"
+  ],
+  "listing_url": "https://www.redfin.com/neighborhood/114689/CA/Irvine/Irvine-Spectrum/1-bedroom-apartments-for-rent",
+  "sources": [
+   "https://www.redfin.com/neighborhood/114689/CA/Irvine/Irvine-Spectrum/1-bedroom-apartments-for-rent",
+   "https://www.apartmenthomeliving.com/apartment-finder/The-Village-at-Irvine-Spectrum-Irvine-CA-92618-1822245",
+   "https://www.yardimatrix.com/property-types/multifamily/orangecounty/the-village-at-irvine-spectrum-50-prism-ca-92618--116452",
+   "https://www.multihousingnews.com/mve-partners-designs-contemporary-living-community-next-to-shopping-center/"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "garage",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": 1550,
+   "stories": 4,
+   "year_built": 2005,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "yes",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": "I-5/I-405 at Irvine Center Dr",
+   "onramp_miles": 0.6,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": "Irvine Station (Metrolink)",
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "1BR 712-988 sq ft from $2,595; 87 units available across all types (Redfin, seen 2026-10-26)",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Snippets only. 1,550 units in four 4-story districts beside Irvine Spectrum Center (walkable shopping/cafes). Some buildings sit near the I-5/I-405 junction - check unit location for the 500 ft freeway buffer. Parking type assumed garage from wrap design - unverified."
+ },
+ {
+  "name": "Portola Place Apartment Homes",
+  "address": "1000 Archway, Irvine, CA 92618",
+  "area": "NEW: Irvine – Portola Springs",
+  "lat": 33.6985,
+  "lng": -117.7255,
+  "geocode_note": "lat/lng are my estimate from the street address (no geocoder available; page fetches failed with DNS errors) - approx +/-0.005 deg; verify.",
+  "landlord": "company",
+  "owner_type": "Irvine Company (likely)",
+  "platform": "Redfin / ApartmentFinder / Trovit",
+  "management_company": "Irvine Company Apartment Communities (likely; not confirmed in snippets)",
+  "year_built": null,
+  "floor_plan": "1 bed / 1 bath",
+  "sqft": 807,
+  "base_rent": 2480,
+  "effective_rent": 2480,
+  "special": "Redfin card flagged 'DEAL'",
+  "parking_fee": null,
+  "seen_on": "Redfin $2,480+ (692-860 sq ft); ApartmentFinder $2,675+/$2,750+; Trovit $2,720-$2,840 for an 807 sq ft unit (snippets, seen 2026-10-26)",
+  "units_note": "Entry 1BR from $2,480 may be the 692 sq ft plan; 700+ sq ft plans likely $2,600+ - confirm",
+  "washer_dryer": "unclear",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Redfin and Trovit list 'A/C' - type not stated",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "Price conflict across sources: 700+ sq ft plans may exceed $2,600",
+   "Far east Irvine (Portola Springs): long drive to LAX"
+  ],
+  "listing_url": "https://www.redfin.com/zipcode/92618/1-bedroom-apartments-for-rent",
+  "sources": [
+   "https://redfin.com/neighborhood/63926/CA/Irvine/El-Toro/1-bedroom-apartments-for-rent",
+   "https://www.apartmentfinder.com/California/Irvine/Covered-Parking-Portola-Springs-Neighborhood-Apartments",
+   "https://homes.trovit.com/portola/12"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": "SR-133 / SR-241 at Portola Pkwy",
+   "onramp_miles": 1.5,
+   "freeway_within_500ft": "no",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Entry 1BR from $2,480 may be the 692 sq ft plan; 700+ sq ft plans likely $2,600+ - confirm",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Snippets only; W/D and year built not found. Irvine Company newer communities typically include in-home W/D, but not verified here."
+ },
+ {
+  "name": "Palmeras Apartment Homes",
+  "address": "100 Virtuoso, Irvine, CA 92620",
+  "area": "NEW: Irvine – Cypress Village",
+  "lat": 33.7035,
+  "lng": -117.756,
+  "geocode_note": "lat/lng are my estimate from the street address (no geocoder available; page fetches failed with DNS errors) - approx +/-0.005 deg; verify.",
+  "landlord": "company",
+  "owner_type": "Irvine Company (likely)",
+  "platform": "Redfin",
+  "management_company": "Irvine Company Apartment Communities (likely)",
+  "year_built": null,
+  "floor_plan": "1 bed / 1 bath",
+  "sqft": null,
+  "base_rent": 2555,
+  "effective_rent": 2555,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "Redfin Irvine pages: $2,555-$2,630, 1BR 637-872 sq ft (snippets, seen 2026-10-26)",
+  "units_note": "1BR range 637-872 sq ft; which plan is $2,555 is unknown - 700+ sq ft plans may be above $2,600",
+  "washer_dryer": "unclear",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Listings note 'A/C' only",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "Size/price pairing unknown",
+   "W/D unconfirmed"
+  ],
+  "listing_url": "https://www.redfin.com/zipcode/92620/1-bedroom-apartments-for-rent",
+  "sources": [
+   "https://www.redfin.com/zipcode/92620/1-bedroom-apartments-for-rent",
+   "https://www.redfin.com/city/9361/CA/Irvine/1-bedroom-apartments-for-rent"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "yes",
+   "dogs": "yes",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": "'Pets welcome' per Redfin"
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": "I-5 at Jeffrey Rd or Culver Dr",
+   "onramp_miles": 1.5,
+   "freeway_within_500ft": "no",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "1BR range 637-872 sq ft; which plan is $2,555 is unknown - 700+ sq ft plans may be above $2,600",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Snippets only."
+ },
+ {
+  "name": "Esperanza (Irvine Company)",
+  "address": "100 Esperanza, Irvine, CA 92618",
+  "area": "NEW: Irvine – Portola Springs",
+  "lat": 33.7015,
+  "lng": -117.722,
+  "geocode_note": "lat/lng are my estimate from the street address (no geocoder available; page fetches failed with DNS errors) - approx +/-0.005 deg; verify. Note: VeryApt gives the address as 1000 Virtuoso - address conflict.",
+  "landlord": "company",
+  "owner_type": "Irvine Company",
+  "platform": "Redfin / VeryApt",
+  "management_company": "Irvine Company Apartment Communities",
+  "year_built": null,
+  "floor_plan": "1 bed / 1 bath",
+  "sqft": 745,
+  "base_rent": 2550,
+  "effective_rent": 2550,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "Redfin Irvine Spectrum page: '$2,550+/mo 1 bed 650-745 sq ft' (snippet, seen 2026-10-26)",
+  "units_note": "Only the larger (~700-745 sq ft) 1BRs meet the size rule; their price is probably above the $2,550 floor",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "VeryApt lists 'Air Conditioning' only",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "Only the top of the size range qualifies",
+   "Address conflict between sources"
+  ],
+  "listing_url": "https://www.redfin.com/neighborhood/114689/CA/Irvine/Irvine-Spectrum/1-bedroom-apartments-for-rent",
+  "sources": [
+   "https://www.redfin.com/neighborhood/114689/CA/Irvine/Irvine-Spectrum/1-bedroom-apartments-for-rent",
+   "https://heavy.veryapt.com/ApartmentReview-a7267-esperanza-apartments-irvine"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": "SR-133 / SR-241 at Portola Pkwy",
+   "onramp_miles": 1.5,
+   "freeway_within_500ft": "no",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Only the larger (~700-745 sq ft) 1BRs meet the size rule; their price is probably above the $2,550 floor",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "VeryApt: low-rise Irvine Company property with in-unit washer/dryer; its '$1,810+' price is stale. Snippets only."
+ },
+ {
+  "name": "Condo – 12732 Madrid Ct (renovated 1BR + loft)",
+  "address": "12732 Madrid Ct, Garden Grove, CA 92840",
+  "area": "Garden Grove",
+  "lat": 33.776,
+  "lng": -117.94,
+  "geocode_note": "lat/lng are my estimate from the street address (no geocoder available; page fetches failed with DNS errors) - approx +/-0.005 deg; verify.",
+  "landlord": "private",
+  "owner_type": "individual condo owner (via listing)",
+  "platform": "ForRent / Westside Rentals / Chapman off-campus",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1 bed / 1 bath + loft",
+  "sqft": 915,
+  "base_rent": 2600,
+  "effective_rent": 2600,
+  "special": null,
+  "parking_fee": 0,
+  "seen_on": "ForRent listing: $2,600, 915 sq ft, 'Available Jul 12' (snippet, seen 2026-10-26)",
+  "units_note": "Single condo; listed with availability Jul 12 (2026) - may be leased by now (seen 2026-10-26)",
+  "washer_dryer": "yes",
+  "central_ac": "yes",
+  "central_ac_evidence": "Listing text: 'central air'",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "none",
+  "packages_detail": "Private condo - no package service mentioned",
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "Listing likely stale (July availability)",
+   "At the $2,600 ceiling, $300 over the cap"
+  ],
+  "listing_url": "https://www.forrent.com/ca/garden-grove/12732-madrid-ct/gcsz63z",
+  "sources": [
+   "https://www.forrent.com/ca/garden-grove/12732-madrid-ct/gcsz63z",
+   "https://www.westsiderentals.com/garden-grove-ca/12732-madrid-ct-tcsz13c",
+   "https://offcampushousing.chapman.edu/housing/property/12732-madrid-ct/98s9237"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": 2600,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": 0,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "yes",
+   "dogs": "yes",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": "Pets allowed with monthly fee + extra deposit (amounts not shown)"
+  },
+  "parking_detail": {
+   "type": "garage",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "yes",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "yes",
+   "storage": "yes",
+   "floors_available": null,
+   "features": [
+    "renovated kitchen",
+    "loft",
+    "two private balconies",
+    "1-car garage with workbench + 1 assigned space"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": "SR-22 at Euclid St or Brookhurst St",
+   "onramp_miles": 1.0,
+   "freeway_within_500ft": "no",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Single condo; listed with availability Jul 12 (2026) - may be leased by now (seen 2026-10-26)",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Snippets only. Described as walking distance to Downtown Garden Grove (Main St). Year built not found."
+ },
+ {
+  "name": "111 W 48th St (renovated duplex 1BR)",
+  "address": "111 W 48th St, Long Beach, CA 90805",
+  "area": "Long Beach – Bixby Knolls / Cal Heights",
+  "lat": 33.8466,
+  "lng": -118.1905,
+  "geocode_note": "lat/lng are my estimate from the street address (no geocoder available; page fetches failed with DNS errors) - approx +/-0.005 deg; verify. Technically North Long Beach just north of Bixby Knolls.",
+  "landlord": "private",
+  "owner_type": "small landlord (duplex)",
+  "platform": "Westside Rentals",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1 bed / 1 bath (top floor, corner-lot duplex)",
+  "sqft": 850,
+  "base_rent": 2500,
+  "effective_rent": 2500,
+  "special": null,
+  "parking_fee": 0,
+  "seen_on": "Westside Rentals: $2,500, ~850 sq ft, move-in Jun 25 2026 (snippet, seen 2026-10-26)",
+  "units_note": "Single unit; move-in date was June 25 2026 - likely stale",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Listing says 'A/C' only",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "none",
+  "packages_detail": "Duplex - no package service",
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "Likely stale listing",
+   "AC type unclear",
+   "Uncovered surface parking only"
+  ],
+  "listing_url": "https://www.westsiderentals.com/long-beach-ca/111-w-48th-st-6e9hdqr",
+  "sources": [
+   "https://www.westsiderentals.com/long-beach-ca/111-w-48th-st-6e9hdqr"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": "water + trash included",
+   "deposit": 3750,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": 0,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "surface",
+   "ev_charging": "unclear",
+   "guest_parking": "no"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "fully renovated",
+    "new doors and windows",
+    "top floor"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": "I-405 or I-710 near Long Beach Blvd",
+   "onramp_miles": 1.5,
+   "freeway_within_500ft": "no",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Single unit; move-in date was June 25 2026 - likely stale",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Snippets only."
+ },
+ {
+  "name": "4152 N Business St Unit 5 (new all-electric building)",
+  "address": "4152 N Business St, Unit 5, Long Beach, CA 90807",
+  "area": "Long Beach – Bixby Knolls / Cal Heights",
+  "lat": 33.833,
+  "lng": -118.184,
+  "geocode_note": "lat/lng are my estimate from the street address (no geocoder available; page fetches failed with DNS errors) - approx +/-0.005 deg; verify. Low confidence - street location not verified.",
+  "landlord": "private",
+  "owner_type": "small new building",
+  "platform": "Westside Rentals (MLS# DW26136660)",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1 bed / 1 bath",
+  "sqft": null,
+  "base_rent": 2200,
+  "effective_rent": 2200,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "Westside Rentals snippet: $2,200, 12-month lease, 'brand-new' (seen 2026-10-26)",
+  "units_note": "Square footage not shown - may be under 700 sq ft; verify",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "All-electric building; cooling type not stated",
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "Sq ft unknown (must be 700+)",
+   "AC type unknown"
+  ],
+  "listing_url": "https://www.westsiderentals.com/long-beach-ca/4152-n-business-st-unit-5-vzq6vtf",
+  "sources": [
+   "https://www.westsiderentals.com/long-beach-ca/4152-n-business-st-unit-5-vzq6vtf"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": 2200,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "stacked washer/dryer in bathroom",
+    "shared app-controlled laundry room also on site"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Square footage not shown - may be under 700 sq ft; verify",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Snippets only; low-information lead."
+ },
+ {
+  "name": "Hillside Pines condo (1BR)",
+  "address": "2599 Walnut Ave, Signal Hill, CA 90755 (unit # not captured)",
+  "area": "Signal Hill / Lakewood",
+  "lat": 33.8035,
+  "lng": -118.165,
+  "geocode_note": "lat/lng are my estimate from the street address (no geocoder available; page fetches failed with DNS errors) - approx +/-0.005 deg; verify.",
+  "landlord": "private",
+  "owner_type": "individual condo owner",
+  "platform": "Charles Drew U off-campus housing listing",
+  "management_company": null,
+  "year_built": 1985,
+  "floor_plan": "1 bed / 1 bath",
+  "sqft": 809,
+  "base_rent": 2400,
+  "effective_rent": 2400,
+  "special": null,
+  "parking_fee": 0,
+  "seen_on": "CDU off-campus housing snippet: $2,400 1BR condo with washer/dryer (seen 2026-10-26); 809 sq ft is the size of 1BR unit #227 listed for sale",
+  "units_note": "Rental unit # unknown; 809 sq ft assumed from same-building 1BR for-sale listing - verify",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Not mentioned in snippet",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "none",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "Unit size inferred from another unit",
+   "AC not mentioned"
+  ],
+  "listing_url": "https://offcampushousing.cdrewu.edu/housing/property/2599-walnut-ave/vpd2g8g",
+  "sources": [
+   "https://offcampushousing.cdrewu.edu/housing/property/2599-walnut-ave/vpd2g8g",
+   "https://specialagent.c21.com/property/2599-walnut-avenue-227-signal-hill-ca-90755-REN032033196",
+   "https://compass.com/building/hillside-pines-signal-hill-ca/840420105389487061"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": "water + trash included (per listing)",
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": 0,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": 85,
+   "stories": 2,
+   "year_built": 1985,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "yes",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "hardwood floors",
+    "yard",
+    "one parking spot in gated community"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": "I-405 at Cherry Ave",
+   "onramp_miles": 1.5,
+   "freeway_within_500ft": "no",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Rental unit # unknown; 809 sq ft assumed from same-building 1BR for-sale listing - verify",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Snippets only."
+ }
+]

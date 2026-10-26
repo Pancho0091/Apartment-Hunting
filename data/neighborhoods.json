@@ -100,7 +100,7 @@
    "median_1br_rent": 3175,
    "rent_source": "RentHop South Park LA page (search snippet, undated, ~$3.44/sqft). The page may mix DTLA South Park with South LA's South Park; Downtown overall is $2,609 (RentReboot Oct 2026)",
    "rent_trend": "~-0.1% YoY (RentHop, undated)",
-   "summer_high_f": null,
+   "summer_high_f": 84.0,
    "marine_layer": "some: inland of the coast, gets June gloom mornings that burn off",
    "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
    "flood_zone": null,
@@ -113,7 +113,8 @@
     "Thursday Pershing Square Farmers Market (verify)"
    ],
    "fiber": "AT&T Fiber widely available in central LA multifamily; Frontier Fiber in some pockets; Google Fiber not in LA (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
-   "vibe": "Dense high-rise district by Crypto.com Arena with plenty of coffee, but event-night crowds and sirens make it noisy."
+   "vibe": "Dense high-rise district by Crypto.com Arena with plenty of coffee, but event-night crowds and sirens make it noisy.",
+   "summer_source": "NWS LOX PNS 2021-05-05 1991-2020 normals, Downtown LA (USC) Aug avg high 84.0F; also LA Almanac"
   }
  },
  {
@@ -216,7 +217,7 @@
    "median_1br_rent": 3350,
    "rent_source": "RentHop Arts District page, Jun 2026 (search snippet)",
    "rent_trend": "-17% YoY (RentHop Jun 2026, $4,040 -> $3,350)",
-   "summer_high_f": null,
+   "summer_high_f": 84.0,
    "marine_layer": "some",
    "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
    "flood_zone": "Parts near the LA River channel may be mapped; check FEMA FIRM (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
@@ -229,7 +230,8 @@
     "Sunday Arts District farmers market (verify)"
    ],
    "fiber": "AT&T Fiber widely available in central LA multifamily; Frontier Fiber in some pockets; Google Fiber not in LA (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
-   "vibe": "Converted lofts with excellent coffee (Verve, Groundwork and others), but nights and weekends can be loud from bars and events."
+   "vibe": "Converted lofts with excellent coffee (Verve, Groundwork and others), but nights and weekends can be loud from bars and events.",
+   "summer_source": "NWS LOX PNS 2021-05-05 1991-2020 normals, Downtown LA (USC) Aug avg high 84.0F; also LA Almanac"
   }
  },
  {
@@ -337,7 +339,7 @@
    "median_1br_rent": 2609,
    "rent_source": "RentReboot (search snippet), Oct 2026: median asking rent for Downtown LA overall; other sources $2,265-$2,940. Historic Core 1BR asks run about $1,600-$2,900 (Redfin listings)",
    "rent_trend": "PadMapper Sep 2026: -0.16% MoM (Downtown overall); RentCafe Sep 2026 says down YoY",
-   "summer_high_f": null,
+   "summer_high_f": 84.0,
    "marine_layer": "some",
    "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
    "flood_zone": null,
@@ -352,7 +354,8 @@
     "Bunker Hill / Grand Park markets (verify)"
    ],
    "fiber": "AT&T Fiber widely available in central LA multifamily; Frontier Fiber in some pockets; Google Fiber not in LA (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
-   "vibe": "The most walkable part of DTLA, with Grand Central Market and strong cafes, but it has street noise and visible disorder. Bunker Hill high-rises are the quieter pocket."
+   "vibe": "The most walkable part of DTLA, with Grand Central Market and strong cafes, but it has street noise and visible disorder. Bunker Hill high-rises are the quieter pocket.",
+   "summer_source": "NWS LOX PNS 2021-05-05 1991-2020 normals, Downtown LA (USC) Aug avg high 84.0F; also LA Almanac"
   }
  },
  {
@@ -454,7 +457,7 @@
    "median_1br_rent": 2344,
    "rent_source": "RentHop Chinatown page, Jun 2026 (search snippet)",
    "rent_trend": "-5% YoY (RentHop Jun 2026, $2,468 -> $2,344)",
-   "summer_high_f": null,
+   "summer_high_f": 84.0,
    "marine_layer": "some",
    "fire_hazard": "CAL FIRE FHSZ: flatland none; Elysian Park hillsides to the north are Very High (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
    "flood_zone": null,
@@ -467,7 +470,8 @@
     "Saturday Chinatown farmers market (verify)"
    ],
    "fiber": "AT&T Fiber widely available in central LA multifamily; Frontier Fiber in some pockets; Google Fiber not in LA (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
-   "vibe": "Compact and fairly calm at night next to two big parks, with a growing set of cafes. It sits beside the 110 and 101."
+   "vibe": "Compact and fairly calm at night next to two big parks, with a growing set of cafes. It sits beside the 110 and 101.",
+   "summer_source": "NWS LOX PNS 2021-05-05 1991-2020 normals, Downtown LA (USC) Aug avg high 84.0F; also LA Almanac"
   }
  },
  {
@@ -568,7 +572,7 @@
    "median_1br_rent": 2335,
    "rent_source": "RentHop 'Historic Cultural' 1BR median cited on a Sakura Crossing listing (search snippet, 2026, undated)",
    "rent_trend": null,
-   "summer_high_f": null,
+   "summer_high_f": 84.0,
    "marine_layer": "some",
    "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
    "flood_zone": null,
@@ -581,7 +585,8 @@
     "Little Tokyo farmers market (verify)"
    ],
    "fiber": "AT&T Fiber widely available in central LA multifamily; Frontier Fiber in some pockets; Google Fiber not in LA (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
-   "vibe": "A walkable cultural district with good cafes and the Regional Connector station, a bit livelier than residential Bunker Hill."
+   "vibe": "A walkable cultural district with good cafes and the Regional Connector station, a bit livelier than residential Bunker Hill.",
+   "summer_source": "NWS LOX PNS 2021-05-05 1991-2020 normals, Downtown LA (USC) Aug avg high 84.0F; also LA Almanac"
   }
  },
  {
@@ -688,7 +693,7 @@
    "median_1br_rent": 2345,
    "rent_source": "RentHop Greater Echo Park Elysian, Jul 2026 (Zumper Jul 2026: $2,327)",
    "rent_trend": "-2% YoY (RentHop Jul 2026); flat (Zumper Jul 2026)",
-   "summer_high_f": null,
+   "summer_high_f": 84.0,
    "marine_layer": "some: a little more inland heat than the Westside",
    "fire_hazard": "CAL FIRE FHSZ: Very High on hillside streets near Elysian Park; flats below Sunset none (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
    "flood_zone": null,
@@ -701,7 +706,8 @@
     "Friday Echo Park Farmers Market (verify)"
    ],
    "fiber": "AT&T Fiber widely available in central LA multifamily; Frontier Fiber in some pockets; Google Fiber not in LA (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
-   "vibe": "Hilly and creative, with lots of indie coffee. Quiet hillside side streets sit a short walk from Sunset Blvd bars."
+   "vibe": "Hilly and creative, with lots of indie coffee. Quiet hillside side streets sit a short walk from Sunset Blvd bars.",
+   "summer_source": "NWS LOX PNS 2021-05-05 1991-2020 normals, Downtown LA (USC) Aug avg high 84.0F; also LA Almanac"
   }
  },
  {
@@ -803,7 +809,7 @@
    "median_1br_rent": 1234,
    "rent_source": "RentHop Westlake, Jun 2026 (Zumper Jun 2026: ~$950). Both figures look skewed by older rent-stabilized stock; newer HiFi buildings run much higher",
    "rent_trend": "-28% YoY (RentHop Jun 2026; likely noisy)",
-   "summer_high_f": null,
+   "summer_high_f": 84.0,
    "marine_layer": "some",
    "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
    "flood_zone": null,
@@ -814,7 +820,8 @@
    ],
    "farmers_markets": [],
    "fiber": "AT&T Fiber widely available in central LA multifamily; Frontier Fiber in some pockets; Google Fiber not in LA (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
-   "vibe": "Central and cheap with close access to the 101/110, but it has some of the highest crime and helicopter activity on this list. HiFi side streets are calmer than Westlake."
+   "vibe": "Central and cheap with close access to the 101/110, but it has some of the highest crime and helicopter activity on this list. HiFi side streets are calmer than Westlake.",
+   "summer_source": "NWS LOX PNS 2021-05-05 1991-2020 normals, Downtown LA (USC) Aug avg high 84.0F; also LA Almanac"
   }
  },
  {
@@ -912,10 +919,10 @@
    "groceries": "Trader Joe's Silver Lake (2738 Hyperion Ave); Whole Foods Silver Lake (confirmed to exist by The Eastsider; address unverified). Gelson's and smaller markets also present (unverified)."
   },
   "extras": {
-   "median_1br_rent": null,
-   "rent_source": "No current Silver Lake 1BR median found; RentHop Nov 2024 was $2,600 and Farerent lists ~$2,100 (2026, undated)",
+   "median_1br_rent": 1895,
+   "rent_source": "Zumper Silver Lake, Jul 2026 (table labeling ambiguous studio vs 1BR; RentHop Nov 2024 1BR $2,600)",
    "rent_trend": "RentHop Nov 2024: about -10% YoY (old)",
-   "summer_high_f": null,
+   "summer_high_f": 84.0,
    "marine_layer": "some: warmer than the Westside",
    "fire_hazard": "CAL FIRE FHSZ: Very High on many hillside streets; flats near Sunset none (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
    "flood_zone": null,
@@ -928,7 +935,8 @@
     "Saturday & Tuesday Silver Lake Farmers Market (verify)"
    ],
    "fiber": "AT&T Fiber widely available in central LA multifamily; Frontier Fiber in some pockets; Google Fiber not in LA (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
-   "vibe": "Top-tier coffee (Intelligentsia, Maru and others) and quiet residential hills. Sunset Junction can be busy."
+   "vibe": "Top-tier coffee (Intelligentsia, Maru and others) and quiet residential hills. Sunset Junction can be busy.",
+   "summer_source": "NWS LOX PNS 2021-05-05 1991-2020 normals, Downtown LA (USC) Aug avg high 84.0F; also LA Almanac"
   }
  },
  {
@@ -1033,7 +1041,7 @@
    "median_1br_rent": 1865,
    "rent_source": "Zumper Wilshire Center-Koreatown, Aug 2026 (search snippet); Lucid Rents 90020 median $1,995 (Mar 2026)",
    "rent_trend": "RentHop Jul 2024: +24% YoY (old); no 2026 YoY found",
-   "summer_high_f": null,
+   "summer_high_f": 84.0,
    "marine_layer": "some",
    "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
    "flood_zone": null,
@@ -1046,7 +1054,8 @@
     "Koreatown farmers market (verify)"
    ],
    "fiber": "AT&T Fiber widely available in central LA multifamily; Frontier Fiber in some pockets; Google Fiber not in LA (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
-   "vibe": "Very dense and lively with 24-hour food and many cafes. Side streets are noisy, but the Metro D Line and good value make up for it."
+   "vibe": "Very dense and lively with 24-hour food and many cafes. Side streets are noisy, but the Metro D Line and good value make up for it.",
+   "summer_source": "NWS LOX PNS 2021-05-05 1991-2020 normals, Downtown LA (USC) Aug avg high 84.0F; also LA Almanac"
   }
  },
  {
@@ -1146,7 +1155,7 @@
    "median_1br_rent": 2551,
    "rent_source": "Apartments.com Miracle Mile, Jul 2026 (search snippet)",
    "rent_trend": "-1.2% YoY (Apartments.com Jul 2026)",
-   "summer_high_f": null,
+   "summer_high_f": 84.0,
    "marine_layer": "some",
    "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
    "flood_zone": null,
@@ -1160,7 +1169,8 @@
     "Mid-City markets (verify)"
    ],
    "fiber": "AT&T Fiber widely available in central LA multifamily; Frontier Fiber in some pockets; Google Fiber not in LA (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
-   "vibe": "Leafy grid streets near LACMA with decent coffee. Calm off Wilshire, but the D Line construction and I-10 access are mixed."
+   "vibe": "Leafy grid streets near LACMA with decent coffee. Calm off Wilshire, but the D Line construction and I-10 access are mixed.",
+   "summer_source": "NWS LOX PNS 2021-05-05 1991-2020 normals, Downtown LA (USC) Aug avg high 84.0F; also LA Almanac"
   }
  },
  {
@@ -1263,7 +1273,7 @@
    "median_1br_rent": 2195,
    "rent_source": "RentHop Central Hollywood, Jul 2026; Zumper Hollywood Studio District ~$2,022 (mid-2026); RentHop 'Hollywood United' $3,500 is an outlier",
    "rent_trend": "-7% YoY (RentHop Central Hollywood Jul 2026)",
-   "summer_high_f": null,
+   "summer_high_f": 84.0,
    "marine_layer": "some",
    "fire_hazard": "CAL FIRE FHSZ: flats none; hillside streets north of Franklin Very High (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
    "flood_zone": null,
@@ -1277,7 +1287,8 @@
     "Sunday Hollywood Farmers Market (Ivar/Selma) (verify)"
    ],
    "fiber": "AT&T Fiber widely available in central LA multifamily; Frontier Fiber in some pockets; Google Fiber not in LA (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
-   "vibe": "Central, with good freeway (101) access and lots of coffee, but tourist and nightlife zones are loud. Look for quiet streets east of Vine or near Franklin."
+   "vibe": "Central, with good freeway (101) access and lots of coffee, but tourist and nightlife zones are loud. Look for quiet streets east of Vine or near Franklin.",
+   "summer_source": "NWS LOX PNS 2021-05-05 1991-2020 normals, Downtown LA (USC) Aug avg high 84.0F; also LA Almanac; nearest NOAA station, Hollywood likely similar"
   }
  },
  {
@@ -1381,7 +1392,7 @@
    "median_1br_rent": 2700,
    "rent_source": "RentHop Culver City, Jul 2026 (search snippet); Palms RentHop Jul 2026 shows $3,595 (+39% YoY), likely skewed by new luxury buildings",
    "rent_trend": "Culver City estimates run $2,600-$2,850 across sources (Jun-Sep 2026); no clean YoY",
-   "summer_high_f": null,
+   "summer_high_f": 79.4,
    "marine_layer": "strong-to-some: often cooler than central LA thanks to the ocean breeze",
    "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
    "flood_zone": null,
@@ -1396,7 +1407,8 @@
     "Palms farmers market (verify)"
    ],
    "fiber": "AT&T Fiber widely available in central LA multifamily; Frontier Fiber in some pockets; Google Fiber not in LA (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
-   "vibe": "A walkable downtown Culver City with excellent coffee and the E Line, but the I-10/I-405 interchange is among the worst in LA."
+   "vibe": "A walkable downtown Culver City with excellent coffee and the E Line, but the I-10/I-405 interchange is among the worst in LA.",
+   "summer_source": "ExtremeWeatherWatch Culver City Aug avg high 79.4F (NOAA 1991-2020)"
   }
  },
  {
@@ -1487,7 +1499,7 @@
    "median_1br_rent": 2750,
    "rent_source": "Zumper Westchester-Playa del Rey, Aug 2026 (search snippet); RentHop ~$2,844 (undated); Apartments.com ~$2,377",
    "rent_trend": "+7% YoY (Apartments.com snapshot, 2026)",
-   "summer_high_f": null,
+   "summer_high_f": 77,
    "marine_layer": "strong: coastal fog and cool summers",
    "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
    "flood_zone": null,
@@ -1501,7 +1513,8 @@
     "Wednesday Westchester Farmers Market (Loyola Village) (verify)"
    ],
    "fiber": "AT&T Fiber widely available in central LA multifamily; Frontier Fiber in some pockets; Google Fiber not in LA (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
-   "vibe": "A quiet suburban grid near LMU with a few cafes on Manchester/Sepulveda. LAX is under 10 minutes away, but some streets get jet noise."
+   "vibe": "A quiet suburban grid near LMU with a few cafes on Manchester/Sepulveda. LAX is under 10 minutes away, but some streets get jet noise.",
+   "summer_source": "approx: NWS LAX daily climate report normal max 77F for Aug 30 (LAX July monthly normal 75.1F); LAX monthly Aug normal not retrieved"
   }
  },
  {
@@ -1610,7 +1623,7 @@
    "median_1br_rent": 2495,
    "rent_source": "RentHop Downtown Long Beach, Jun 2026 (search snippet); Long Beach citywide median $1,850 (PadMapper Jul 2026)",
    "rent_trend": "+22% YoY (RentHop Jun 2026, $2,045 -> $2,495; likely mix-shift to new towers)",
-   "summer_high_f": null,
+   "summer_high_f": 83.9,
    "marine_layer": "some-to-strong: harbor breeze keeps it mild",
    "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
    "flood_zone": "Low-lying blocks near the shoreline and LA River mouth may be in a FEMA zone; check FIRM (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
@@ -1624,7 +1637,8 @@
     "Friday Downtown Long Beach Farmers Market (Promenade) (verify)"
    ],
    "fiber": "AT&T Fiber available in parts of Long Beach; Frontier in some areas; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
-   "vibe": "Urban and walkable with good East Village coffee (Recreational, Black Ring and others) and the A Line. It has some street disorder; nightlife is on Pine."
+   "vibe": "Urban and walkable with good East Village coffee (Recreational, Black Ring and others) and the A Line. It has some street disorder; nightlife is on Pine.",
+   "summer_source": "ExtremeWeatherWatch Long Beach Aug avg high 83.9F (NOAA 1991-2020)"
   }
  },
  {
@@ -1725,10 +1739,10 @@
    "groceries": "Vons, 600 E Broadway (west edge), and Ralphs, 2930 E 4th St (east edge). The nearest Trader Joe's is 2222 Bellflower Blvd or 4210 Long Beach Blvd."
   },
   "extras": {
-   "median_1br_rent": null,
-   "rent_source": "No neighborhood figure found (search budget exhausted). Downtown LB is $2,495 (RentHop Jun 2026) and citywide 1BR is $1,850 (PadMapper Jul 2026)",
+   "median_1br_rent": 2453,
+   "rent_source": "RentCafe/Yardi Aug 2026 Long Beach citywide 1BR avg; Alamitos Beach all-unit avg $2,531",
    "rent_trend": null,
-   "summer_high_f": null,
+   "summer_high_f": 83.9,
    "marine_layer": "strong: beachfront fog and breeze",
    "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
    "flood_zone": "Beach-level lots may be in a FEMA coastal zone; the bluff-top blocks are higher (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
@@ -1741,7 +1755,8 @@
     "Friday Downtown LB market (nearby) (verify)"
    ],
    "fiber": "AT&T Fiber available in parts of Long Beach; Frontier in some areas; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
-   "vibe": "Dense, older walk-ups between downtown and the beach, with coffee on 4th St Retro Row and Broadway. Parking is very hard."
+   "vibe": "Dense, older walk-ups between downtown and the beach, with coffee on 4th St Retro Row and Broadway. Parking is very hard.",
+   "summer_source": "ExtremeWeatherWatch Long Beach Aug avg high 83.9F (NOAA 1991-2020)"
   }
  },
  {
@@ -1846,10 +1861,10 @@
    "groceries": "Ralphs, 2930 E 4th St (4th & Orizaba, west of Belmont Heights); Ralphs Marina Shopping Center, 6290 E PCH; Whole Foods, 6400 E PCH (2nd & PCH); Trader Joe's, 6451 E PCH"
   },
   "extras": {
-   "median_1br_rent": null,
-   "rent_source": "No 1BR figure found; Redfin all-units median for Belmont Heights was $2,695 (Sep 2025, bedroom count unknown)",
+   "median_1br_rent": 2453,
+   "rent_source": "RentCafe/Yardi Aug 2026 Long Beach citywide 1BR avg; Belmont Shore all-unit avg $2,406",
    "rent_trend": null,
-   "summer_high_f": null,
+   "summer_high_f": 83.9,
    "marine_layer": "strong",
    "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
    "flood_zone": "Belmont Shore/Naples are low-lying and partly in FEMA AE/VE zones; Belmont Heights is higher (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
@@ -1863,7 +1878,8 @@
     "Sunday Southeast LB / Alamitos Bay Marina Farmers Market (verify)"
    ],
    "fiber": "AT&T Fiber available in parts of Long Beach; Frontier in some areas; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
-   "vibe": "Beach-town feel. Belmont Shore's 2nd St is lively with bars, while Belmont Heights is quieter and leafier with good coffee nearby."
+   "vibe": "Beach-town feel. Belmont Shore's 2nd St is lively with bars, while Belmont Heights is quieter and leafier with good coffee nearby.",
+   "summer_source": "ExtremeWeatherWatch Long Beach Aug avg high 83.9F (NOAA 1991-2020); shoreline likely a bit cooler"
   }
  },
  {
@@ -1965,7 +1981,7 @@
    "median_1br_rent": 2329,
    "rent_source": "ApartmentIQ/Rentable listing-based Bixby Knolls 1BR asking (undated, search snippet); Redfin all-units median for Cal Heights/Bixby Knolls/Los Cerritos was $2,125 (Sep 2025)",
    "rent_trend": null,
-   "summer_high_f": null,
+   "summer_high_f": 83.9,
    "marine_layer": "some: warmer than the shore",
    "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
    "flood_zone": null,
@@ -1979,7 +1995,8 @@
     "Sunday Bixby Knolls / Uptown farmers market (verify)"
    ],
    "fiber": "AT&T Fiber available in parts of Long Beach; Frontier in some areas; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
-   "vibe": "Quiet, leafy streets of 1920s houses with a few cafes on Atlantic Ave. Very calm, with easy 405/710 access."
+   "vibe": "Quiet, leafy streets of 1920s houses with a few cafes on Atlantic Ave. Very calm, with easy 405/710 access.",
+   "summer_source": "ExtremeWeatherWatch Long Beach Aug avg high 83.9F (NOAA 1991-2020)"
   }
  },
  {
@@ -2083,10 +2100,10 @@
    "groceries": "Specific walkable grocery stores were not verified in sources."
   },
   "extras": {
-   "median_1br_rent": null,
-   "rent_source": "No current rent figure retrieved for this city (search budget exhausted; page fetches blocked)",
-   "rent_trend": null,
-   "summer_high_f": null,
+   "median_1br_rent": 2350,
+   "rent_source": "RentHop Fullerton city 1BR, Jul 2026 (Zumper Downtown Fullerton ~$1,975 Aug 2026, label ambiguous)",
+   "rent_trend": "-4.5% YoY (RentHop Jul 2026)",
+   "summer_high_f": 85,
    "marine_layer": "little: inland north OC, hot summers",
    "fire_hazard": "CAL FIRE FHSZ: none downtown; the Coyote Hills / north Fullerton hills have Very High areas (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
    "flood_zone": null,
@@ -2101,7 +2118,8 @@
     "CSUF/Arboretum market (verify)"
    ],
    "fiber": "AT&T Fiber and Frontier Fiber (ex-Verizon FiOS) present in much of OC; Cox/Spectrum cable everywhere; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
-   "vibe": "College-town downtown with Metrolink and some good coffee. Bars on Harbor Blvd are loud on weekends, but nearby residential streets are calm."
+   "vibe": "College-town downtown with Metrolink and some good coffee. Bars on Harbor Blvd are loud on weekends, but nearby residential streets are calm.",
+   "summer_source": "WeatherSpark Fullerton Municipal Airport Aug avg high 85F (weatheronthisday NOAA daily ~87-88F, east Fullerton likely warmer)"
   }
  },
  {
@@ -2202,10 +2220,10 @@
    "groceries": "Specific grocery stores were not verified in sources. The Packing House and Packing District have food halls; nearby supermarkets are unverified."
   },
   "extras": {
-   "median_1br_rent": null,
-   "rent_source": "No current rent figure retrieved for this city (search budget exhausted; page fetches blocked)",
-   "rent_trend": null,
-   "summer_high_f": null,
+   "median_1br_rent": 2100,
+   "rent_source": "RentHop Anaheim city 1BR, Oct 2026 (city-level; new Platinum Triangle buildings likely higher)",
+   "rent_trend": "-3.4% YoY (RentHop Oct 2026)",
+   "summer_high_f": 86,
    "marine_layer": "little: inland",
    "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
    "flood_zone": "Near the Santa Ana River; check the FEMA FIRM (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
@@ -2219,7 +2237,8 @@
     "Thursday Downtown Anaheim market (verify)"
    ],
    "fiber": "AT&T Fiber and Frontier Fiber (ex-Verizon FiOS) present in much of OC; Cox/Spectrum cable everywhere; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
-   "vibe": "New apartment towers by the 57/5/22 near the stadiums. Good freeway access and the Packing House food hall, but thin walkable coffee."
+   "vibe": "New apartment towers by the 57/5/22 near the stadiums. Good freeway access and the Packing House food hall, but thin walkable coffee.",
+   "summer_source": "approx: WeatherAPI Anaheim Aug avg high 86F (2009-2025); weatheronthisday NOAA daily 85-87F"
   }
  },
  {
@@ -2317,10 +2336,10 @@
    "groceries": "Specific walkable grocery stores were not verified in sources. The city has many Vietnamese and Korean markets along Garden Grove Blvd and Brookhurst."
   },
   "extras": {
-   "median_1br_rent": null,
-   "rent_source": "No current rent figure retrieved for this city (search budget exhausted; page fetches blocked)",
-   "rent_trend": null,
-   "summer_high_f": null,
+   "median_1br_rent": 2000,
+   "rent_source": "RentHop Garden Grove 1BR, Sep 2026",
+   "rent_trend": "-0.4% YoY (RentHop Sep 2026)",
+   "summer_high_f": 85.7,
    "marine_layer": "some: mild central OC",
    "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
    "flood_zone": null,
@@ -2334,7 +2353,8 @@
     "Main Street Garden Grove market (verify)"
    ],
    "fiber": "AT&T Fiber and Frontier Fiber (ex-Verizon FiOS) present in much of OC; Cox/Spectrum cable everywhere; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
-   "vibe": "Suburban and quiet with Little Saigon food and boba nearby. Few specialty cafes are walkable; you drive almost everywhere."
+   "vibe": "Suburban and quiet with Little Saigon food and boba nearby. Few specialty cafes are walkable; you drive almost everywhere.",
+   "summer_source": "ExtremeWeatherWatch Santa Ana Aug avg high 85.7F (NOAA 1991-2020); nearest station"
   }
  },
  {
@@ -2433,10 +2453,10 @@
    "groceries": "Northgate González Market at 1010 S Main St (~1 mi). Northgate closed its 409 E 4th St store in Nov 2022 when the larger Westminster Ave store opened, so downtown has no full-size supermarket in the core. 4th Street Market food hall (East End). Others unverified."
   },
   "extras": {
-   "median_1br_rent": null,
-   "rent_source": "No current rent figure retrieved for this city (search budget exhausted; page fetches blocked)",
+   "median_1br_rent": 2250,
+   "rent_source": "Trulia Santa Ana city 1BR avg, Jun 2026 (city-level)",
    "rent_trend": null,
-   "summer_high_f": null,
+   "summer_high_f": 85.7,
    "marine_layer": "some",
    "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
    "flood_zone": null,
@@ -2450,7 +2470,8 @@
     "Saturday DTSA farmers market (verify)"
    ],
    "fiber": "AT&T Fiber and Frontier Fiber (ex-Verizon FiOS) present in much of OC; Cox/Spectrum cable everywhere; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
-   "vibe": "The most urban OC option, with an Artists Village coffee scene and the OC Streetcar arriving. Fourth St is lively, with some street disorder."
+   "vibe": "The most urban OC option, with an Artists Village coffee scene and the OC Streetcar arriving. Fourth St is lively, with some street disorder.",
+   "summer_source": "ExtremeWeatherWatch Santa Ana Aug avg high 85.7F (NOAA 1991-2020)"
   }
  },
  {
@@ -2547,10 +2568,10 @@
    "groceries": "Specific walkable grocery stores were not verified in sources. South Coast Plaza and nearby centers are mostly retail and dining."
   },
   "extras": {
-   "median_1br_rent": null,
-   "rent_source": "No current rent figure retrieved for this city (search budget exhausted; page fetches blocked)",
+   "median_1br_rent": 2250,
+   "rent_source": "Trulia Santa Ana city 1BR avg, Jun 2026 (city-level; South Coast Metro newer buildings likely higher)",
    "rent_trend": null,
-   "summer_high_f": null,
+   "summer_high_f": 85.7,
    "marine_layer": "some",
    "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
    "flood_zone": null,
@@ -2563,7 +2584,8 @@
     "South Coast Plaza area markets (verify)"
    ],
    "fiber": "AT&T Fiber and Frontier Fiber (ex-Verizon FiOS) present in much of OC; Cox/Spectrum cable everywhere; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
-   "vibe": "Office/retail district near South Coast Plaza and the 405/55, quiet at night. Coffee is mostly drive-to."
+   "vibe": "Office/retail district near South Coast Plaza and the 405/55, quiet at night. Coffee is mostly drive-to.",
+   "summer_source": "ExtremeWeatherWatch Santa Ana Aug avg high 85.7F (NOAA 1991-2020)"
   }
  },
  {
@@ -2664,10 +2686,10 @@
    "groceries": "Specific walkable grocery stores were not verified in sources."
   },
   "extras": {
-   "median_1br_rent": null,
-   "rent_source": "No current rent figure retrieved for this city (search budget exhausted; page fetches blocked)",
+   "median_1br_rent": 2300,
+   "rent_source": "RentHop 1BR avg for zip codes in/near Orange, CA (2026; no clean city figure)",
    "rent_trend": null,
-   "summer_high_f": null,
+   "summer_high_f": 85.7,
    "marine_layer": "little-to-some",
    "fire_hazard": "CAL FIRE FHSZ: none in Old Towne; the eastern Orange hills (Orange Park Acres / Santiago Canyon) are Very High (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
    "flood_zone": null,
@@ -2681,7 +2703,8 @@
     "Saturday Old Towne Orange / Chapman market (verify)"
    ],
    "fiber": "AT&T Fiber and Frontier Fiber (ex-Verizon FiOS) present in much of OC; Cox/Spectrum cable everywhere; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
-   "vibe": "Historic plaza with craftsman houses, several good cafes and antique shops. Quiet and small-town, with Chapman University students nearby."
+   "vibe": "Historic plaza with craftsman houses, several good cafes and antique shops. Quiet and small-town, with Chapman University students nearby.",
+   "summer_source": "ExtremeWeatherWatch Santa Ana Aug avg high 85.7F (NOAA 1991-2020); nearest station"
   }
  },
  {
@@ -2781,10 +2804,10 @@
    "groceries": "Stater Bros. and CVS Pharmacy at The Village at Tustin Legacy (Wikipedia). Other stores are unverified."
   },
   "extras": {
-   "median_1br_rent": null,
-   "rent_source": "No current rent figure retrieved for this city (search budget exhausted; page fetches blocked)",
-   "rent_trend": null,
-   "summer_high_f": null,
+   "median_1br_rent": 2500,
+   "rent_source": "RentHop Tustin 1BR, Apr 2026",
+   "rent_trend": "+12.8% YoY (RentHop Apr 2026)",
+   "summer_high_f": 85.7,
    "marine_layer": "some",
    "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
    "flood_zone": null,
@@ -2798,7 +2821,8 @@
     "Wednesday Old Town Tustin market (verify)"
    ],
    "fiber": "AT&T Fiber and Frontier Fiber (ex-Verizon FiOS) present in much of OC; Cox/Spectrum cable everywhere; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
-   "vibe": "Newer master-planned Legacy plus a quaint Old Town with a few cafes. Quiet, with fast 5/55/261 access."
+   "vibe": "Newer master-planned Legacy plus a quaint Old Town with a few cafes. Quiet, with fast 5/55/261 access.",
+   "summer_source": "ExtremeWeatherWatch Santa Ana Aug avg high 85.7F (NOAA 1991-2020); nearest station"
   }
  },
  {
@@ -2898,10 +2922,10 @@
    "groceries": "Specific walkable grocery stores were not verified in sources."
   },
   "extras": {
-   "median_1br_rent": null,
-   "rent_source": "No current rent figure retrieved for this city (search budget exhausted; page fetches blocked)",
-   "rent_trend": null,
-   "summer_high_f": null,
+   "median_1br_rent": 2412,
+   "rent_source": "RentHop Costa Mesa 1BR, Apr 2026",
+   "rent_trend": "+0.7% YoY (RentHop Apr 2026)",
+   "summer_high_f": 83,
    "marine_layer": "strong-to-some: ocean breeze, mild summers",
    "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
    "flood_zone": null,
@@ -2916,7 +2940,8 @@
     "The Lab/The Camp events (verify)"
    ],
    "fiber": "AT&T Fiber and Frontier Fiber (ex-Verizon FiOS) present in much of OC; Cox/Spectrum cable everywhere; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
-   "vibe": "A strong coffee and food scene (The Camp, The Lab, Mesa) near the 405/55 and near the beach. Quieter streets are on the eastside and Mesa Verde."
+   "vibe": "A strong coffee and food scene (The Camp, The Lab, Mesa) near the 405/55 and near the beach. Quieter streets are on the eastside and Mesa Verde.",
+   "summer_source": "approx: weatheronthisday.com 92626 daily Aug avg highs 82-84F (NOAA 55-yr); monthly normal not retrieved"
   }
  },
  {
@@ -3015,10 +3040,10 @@
    "groceries": "Amazon Fresh at The Market Place, Irvine (opened 2020; current status unverified). Others unverified."
   },
   "extras": {
-   "median_1br_rent": null,
-   "rent_source": "No current rent figure retrieved for this city (search budget exhausted; page fetches blocked)",
-   "rent_trend": null,
-   "summer_high_f": null,
+   "median_1br_rent": 2525,
+   "rent_source": "Zumper Irvine Industrial Complex East 1BR, Jun 2026 (RentHop Irvine city $2,690 Jul 2026)",
+   "rent_trend": "+1.8% YoY citywide (RentHop Jul 2026)",
+   "summer_high_f": 81,
    "marine_layer": "some",
    "fire_hazard": "CAL FIRE FHSZ: none in IBC/Spectrum; Very High near the foothills of Orchard Hills/Portola Springs (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
    "flood_zone": null,
@@ -3033,7 +3058,8 @@
     "Great Park market (verify)"
    ],
    "fiber": "AT&T Fiber and Frontier Fiber (ex-Verizon FiOS) present in much of OC; Cox/Spectrum cable everywhere; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
-   "vibe": "Very safe and quiet with master-planned towers by the 405/5/133. Coffee is mostly chain or in-plaza; it lacks a walkable street-life feel."
+   "vibe": "Very safe and quiet with master-planned towers by the 405/5/133. Coffee is mostly chain or in-plaza; it lacks a walkable street-life feel.",
+   "summer_source": "WeatherSpark Irvine Aug avg high 81F (WeatherAPI 82F)"
   }
  },
  {
@@ -3132,10 +3158,10 @@
    "groceries": "Specific walkable grocery stores were not verified in sources."
   },
   "extras": {
-   "median_1br_rent": null,
-   "rent_source": "No current rent figure retrieved for this city (search budget exhausted; page fetches blocked)",
-   "rent_trend": null,
-   "summer_high_f": null,
+   "median_1br_rent": 2500,
+   "rent_source": "RentHop Huntington Beach 1BR, Oct 2026",
+   "rent_trend": "+3.9% YoY (RentHop Oct 2026)",
+   "summer_high_f": 78,
    "marine_layer": "strong: coastal fog, cool summers",
    "fire_hazard": "CAL FIRE FHSZ: none (urban flatland, outside mapped zones) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
    "flood_zone": "Parts of southeast HB and the Huntington Harbour lowlands are in FEMA AE zones; check the FIRM (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
@@ -3150,7 +3176,8 @@
     "Tuesday Pier Plaza market (verify)"
    ],
    "fiber": "AT&T Fiber and Frontier Fiber (ex-Verizon FiOS) present in much of OC; Cox/Spectrum cable everywhere; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
-   "vibe": "Beach culture with some good coffee near Main St. Quiet residential tracts, but a long drive to LA and the 405 near the HB stretch congests."
+   "vibe": "Beach culture with some good coffee near Main St. Quiet residential tracts, but a long drive to LA and the 405 near the HB stretch congests.",
+   "summer_source": "WeatherSpark Huntington Beach Aug avg high 78F"
   }
  },
  {
@@ -3239,10 +3266,10 @@
   "name": "Rancho Santa Margarita",
   "region": "Orange County",
   "extras": {
-   "median_1br_rent": null,
-   "rent_source": "No current rent figure retrieved for this city (search budget exhausted; page fetches blocked)",
+   "median_1br_rent": 2451,
+   "rent_source": "RentHop zip 92688 1BR, Aug 2025 (stale; page also shows $2,402)",
    "rent_trend": null,
-   "summer_high_f": null,
+   "summer_high_f": 85,
    "marine_layer": "little: inland foothill, warm summers",
    "fire_hazard": "CAL FIRE FHSZ: Very High in much of the city's wildland-urban interface (Santa Ana Mountains foothills) (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
    "flood_zone": null,
@@ -3256,7 +3283,8 @@
     "Sunday RSM farmers market (verify)"
    ],
    "fiber": "AT&T Fiber and Frontier Fiber (ex-Verizon FiOS) present in much of OC; Cox/Spectrum cable everywhere; Google Fiber not present (not verified this round: web search budget exhausted and page fetches blocked; general knowledge only)",
-   "vibe": "Very quiet and safe foothill suburb, but far from LA (60+ min to LAX) with few walkable specialty cafes. It is also high wildfire exposure."
+   "vibe": "Very quiet and safe foothill suburb, but far from LA (60+ min to LAX) with few walkable specialty cafes. It is also high wildfire exposure.",
+   "summer_source": "approx: weatheronthisday.com 92691 daily Aug avg highs ~83-86F (NOAA 55-yr); monthly NOAA normal not retrieved; RSM inland/higher, likely similar or warmer"
   }
  },
  {
@@ -3347,7 +3375,7 @@
    "median_1br_rent": 2550,
    "rent_source": "Zumper, Jun 2026 (text also says $2,526)",
    "rent_trend": "+4% YoY 1BR (Zumper Jun 2026); all-unit average -2% YoY (Zumper Sep 2026)",
-   "summer_high_f": null,
+   "summer_high_f": 84.0,
    "marine_layer": "some – about 8 mi from the coast; some June gloom, warmer than the Westside",
    "fire_hazard": "CAL FIRE FHSZ: none in the flats; hillside streets north of Sunset are in the VHFHSZ (not verified this round (web-search budget exhausted))",
    "flood_zone": null,
@@ -3362,7 +3390,8 @@
     "Sunday Melrose Place Farmers Market"
    ],
    "fiber": "AT&T Fiber / Frontier / Spectrum availability not verified this round (web-search budget exhausted); check address on att.com/fiber",
-   "vibe": "Lively, gay-friendly, walkable and expensive; great cafes, but quiet only on select side streets."
+   "vibe": "Lively, gay-friendly, walkable and expensive; great cafes, but quiet only on select side streets.",
+   "summer_source": "NWS LOX PNS 2021-05-05 1991-2020 normals, Downtown LA (USC) Aug avg high 84.0F; also LA Almanac; nearest NOAA station used (hotels.com climate tab claims 86-88F, not trusted)"
   },
   "id": "west-hollywood",
   "name": "West Hollywood",
@@ -3455,7 +3484,7 @@
    "median_1br_rent": 2500,
    "rent_source": "RentHop, Jun 2026 (West Los Angeles median 1BR)",
    "rent_trend": "-7.4% YoY (RentHop Jun 2026)",
-   "summer_high_f": null,
+   "summer_high_f": 79.4,
    "marine_layer": "some/strong – ~3 mi from the ocean; frequent May-June gray, mild summers",
    "fire_hazard": "CAL FIRE FHSZ: none (flat urban area) – not verified this round (web-search budget exhausted)",
    "flood_zone": null,
@@ -3468,7 +3497,8 @@
     "Wednesday Santa Monica Farmers Market (Arizona Ave, ~10 min drive)"
    ],
    "fiber": "AT&T Fiber / Frontier / Spectrum availability not verified this round (web-search budget exhausted); check address on att.com/fiber",
-   "vibe": "Busy, food-centric Japantown strip with calm side streets; fast to the 405, but you will live with its traffic."
+   "vibe": "Busy, food-centric Japantown strip with calm side streets; fast to the 405, but you will live with its traffic.",
+   "summer_source": "ExtremeWeatherWatch Culver City Aug avg high 79.4F (NOAA 1991-2020); nearest station"
   },
   "id": "west-la-sawtelle",
   "name": "West LA / Sawtelle",
@@ -3557,10 +3587,10 @@
    "https://renthop.com/average-rent-in/mar-vista-los-angeles-ca"
   ],
   "extras": {
-   "median_1br_rent": null,
-   "rent_source": "No clean 2026 median; sources range $2,300-2,800 (Apartments.com undated $2,316; Lucid Rents 90066 bldg median $2,480 Mar 2026; RentHop $2,800 Feb 2025)",
-   "rent_trend": "Apartments.com shows -9% YoY (undated)",
-   "summer_high_f": null,
+   "median_1br_rent": 2295,
+   "rent_source": "RentHop Mar Vista 1BR, Aug 2026 (FAQ on same page says $2,900)",
+   "rent_trend": "-1.4% YoY (RentHop Aug 2026)",
+   "summer_high_f": 79.4,
    "marine_layer": "strong – ~3 mi from the coast; cool summers, frequent June gloom",
    "fire_hazard": "CAL FIRE FHSZ: none (flats) – not verified this round (web-search budget exhausted)",
    "flood_zone": null,
@@ -3573,7 +3603,8 @@
     "Sunday Mar Vista Farmers Market (Grand View Bl)"
    ],
    "fiber": "AT&T Fiber / Frontier / Spectrum availability not verified this round (web-search budget exhausted); check address on att.com/fiber",
-   "vibe": "Low-key, family-ish Westside with cool ocean air and a short walk-to-coffee strip on Venice Bl."
+   "vibe": "Low-key, family-ish Westside with cool ocean air and a short walk-to-coffee strip on Venice Bl.",
+   "summer_source": "ExtremeWeatherWatch Culver City Aug avg high 79.4F (NOAA 1991-2020); nearest station"
   },
   "id": "mar-vista-del-rey",
   "name": "Mar Vista / Del Rey",
@@ -3661,10 +3692,10 @@
    "https://www.renthop.com/average-rent-in/west-adams-los-angeles-ca"
   ],
   "extras": {
-   "median_1br_rent": null,
-   "rent_source": "No reliable median: Lucid Rents 90016 HUD FMR 1BR $2,270 / listing medians ~$1,890 (Mar 2026); RentHop $950 (Jun 2026) is an outlier; PadMapper listing $2,495 (Jul 2026)",
-   "rent_trend": null,
-   "summer_high_f": null,
+   "median_1br_rent": 2298,
+   "rent_source": "RentHop Jefferson Park 1BR, Aug 2025 (stale; West Adams rows elsewhere $1,699-$2,195)",
+   "rent_trend": "+28% YoY (RentHop Aug 2025)",
+   "summer_high_f": 84.0,
    "marine_layer": "some – inland ~8 mi; warmer than the Westside",
    "fire_hazard": "CAL FIRE FHSZ: none (flats) – not verified this round (web-search budget exhausted)",
    "flood_zone": null,
@@ -3675,7 +3706,8 @@
    ],
    "farmers_markets": [],
    "fiber": "AT&T Fiber / Frontier / Spectrum availability not verified this round (web-search budget exhausted); check address on att.com/fiber",
-   "vibe": "Historic, rapidly changing neighborhood with grand old houses; affordable, but few walk-to cafes."
+   "vibe": "Historic, rapidly changing neighborhood with grand old houses; affordable, but few walk-to cafes.",
+   "summer_source": "NWS LOX PNS 2021-05-05 1991-2020 normals, Downtown LA (USC) Aug avg high 84.0F; also LA Almanac"
   },
   "id": "jefferson-park-west-adams",
   "name": "Jefferson Park / West Adams",
@@ -3767,7 +3799,7 @@
    "median_1br_rent": 2300,
    "rent_source": "RentHop, Jun 2026 (ApartmentIQ $2,250; Apartments.com ~$2,169)",
    "rent_trend": "-12.5% YoY (RentHop Jun 2026)",
-   "summer_high_f": null,
+   "summer_high_f": 84.0,
    "marine_layer": "little – inland ~12 mi; hot summer afternoons, AC matters",
    "fire_hazard": "CAL FIRE FHSZ: very high in the hills (LAFD); new state maps extend the zone to the flats south of Los Feliz Bl (adoption status unconfirmed)",
    "flood_zone": null,
@@ -3781,7 +3813,8 @@
     "Silver Lake Farmers Market (Tue/Sat)"
    ],
    "fiber": "AT&T Fiber / Frontier / Spectrum availability not verified this round (web-search budget exhausted); check address on att.com/fiber",
-   "vibe": "Leafy, creative and walkable with excellent cafes; lively on Vermont/Hillhurst, calm a block or two away."
+   "vibe": "Leafy, creative and walkable with excellent cafes; lively on Vermont/Hillhurst, calm a block or two away.",
+   "summer_source": "NWS LOX PNS 2021-05-05 1991-2020 normals, Downtown LA (USC) Aug avg high 84.0F; also LA Almanac"
   },
   "id": "los-feliz",
   "name": "Los Feliz",
@@ -3875,7 +3908,7 @@
    "median_1br_rent": 2604,
    "rent_source": "RentCafe, Jun 2026 (average, not median)",
    "rent_trend": "+3.5% YoY all units (RentCafe Jun 2026)",
-   "summer_high_f": null,
+   "summer_high_f": 88,
    "marine_layer": "little – inland; hot, dry summer afternoons",
    "fire_hazard": "CAL FIRE FHSZ: flats mostly none (not verified this round (web-search budget exhausted)); Griffith Park edge is very high",
    "flood_zone": null,
@@ -3888,7 +3921,8 @@
     "Sunday Atwater Village Farmers Market (Glendale Bl) – verify"
    ],
    "fiber": "AT&T Fiber / Frontier / Spectrum availability not verified this round (web-search budget exhausted); check address on att.com/fiber",
-   "vibe": "Quiet small-town feel by the LA River with a walkable coffee/restaurant strip and fast freeway access."
+   "vibe": "Quiet small-town feel by the LA River with a walkable coffee/restaurant strip and fast freeway access.",
+   "summer_source": "approx: myperfectweather.com Glendale Aug avg high 88F (WeatherAPI Glendale 89F); not NOAA normals"
   },
   "id": "atwater-village",
   "name": "Atwater Village",
@@ -3984,7 +4018,7 @@
    "median_1br_rent": 2295,
    "rent_source": "RentHop, Jul 2026 (Highland Park; no Eagle Rock figure found)",
    "rent_trend": "+14.7% YoY (RentHop Jul 2026, Highland Park)",
-   "summer_high_f": null,
+   "summer_high_f": 89,
    "marine_layer": "little – inland valley; hot summers, AC important",
    "fire_hazard": "CAL FIRE FHSZ: very high – new state maps put most of HP/ER, including stretches of York and Figueroa, in very-high zones (adoption status unconfirmed)",
    "flood_zone": null,
@@ -3999,7 +4033,8 @@
     "Eagle Rock Farmers Market – verify day"
    ],
    "fiber": "AT&T Fiber / Frontier / Spectrum availability not verified this round (web-search budget exhausted); check address on att.com/fiber",
-   "vibe": "Creative, hilly Northeast LA with lots of cafes and bars; quiet up the hills, far from the airport."
+   "vibe": "Creative, hilly Northeast LA with lots of cafes and bars; quiet up the hills, far from the airport.",
+   "summer_source": "City of Pasadena climate page Aug avg high 89F (weather.com 91103: 91F)"
   },
   "id": "highland-park-eagle-rock",
   "name": "Highland Park / Eagle Rock",
@@ -4091,7 +4126,7 @@
    "median_1br_rent": 2060,
    "rent_source": "PadMapper, Jul 2026 (Signal Hill median); Lakewood RentHop Jun 2026 $2,395",
    "rent_trend": "Signal Hill +3.1% MoM (PadMapper Jul 2026); Lakewood +29.6% YoY (RentHop Jun 2026, looks noisy)",
-   "summer_high_f": null,
+   "summer_high_f": 83.9,
    "marine_layer": "some – ~4 mi from the coast; milder than inland LA",
    "fire_hazard": "CAL FIRE FHSZ: none (urban) – not verified this round (web-search budget exhausted)",
    "flood_zone": null,
@@ -4103,7 +4138,8 @@
    ],
    "farmers_markets": [],
    "fiber": "AT&T Fiber / Frontier / Spectrum availability not verified this round (web-search budget exhausted); check address on att.com/fiber",
-   "vibe": "Quiet, practical suburbia with easy freeways and parking; coffee and walkability mean driving to Long Beach."
+   "vibe": "Quiet, practical suburbia with easy freeways and parking; coffee and walkability mean driving to Long Beach.",
+   "summer_source": "ExtremeWeatherWatch Long Beach Aug avg high 83.9F (NOAA 1991-2020)"
   },
   "id": "signal-hill-lakewood",
   "name": "Signal Hill / Lakewood",
@@ -4194,9 +4230,9 @@
   ],
   "extras": {
    "median_1br_rent": null,
-   "rent_source": "No clean median; ~$2,000-2,200 (Apartments.com $2,023-2,191; Trulia Jul 2026 ~$2,000; Rentometer Jan 2026 $1,800s)",
+   "rent_source": "not found (RentHop only single-building pages, ~$1,948-$2,150 1BR)",
    "rent_trend": null,
-   "summer_high_f": null,
+   "summer_high_f": 83.9,
    "marine_layer": "some – ~4 mi inland from Seal Beach; mild summers",
    "fire_hazard": "CAL FIRE FHSZ: none (urban) – not verified this round (web-search budget exhausted)",
    "flood_zone": null,
@@ -4207,7 +4243,8 @@
    ],
    "farmers_markets": [],
    "fiber": "AT&T Fiber / Frontier / Spectrum availability not verified this round (web-search budget exhausted); check address on att.com/fiber",
-   "vibe": "Sleepy, safe-feeling suburb with big trees and easy freeways; plan to drive for good coffee."
+   "vibe": "Sleepy, safe-feeling suburb with big trees and easy freeways; plan to drive for good coffee.",
+   "summer_source": "ExtremeWeatherWatch Long Beach Aug avg high 83.9F (NOAA 1991-2020); nearest station"
   },
   "id": "los-alamitos-rossmoor",
   "name": "Los Alamitos / Rossmoor",
@@ -4302,7 +4339,7 @@
    "median_1br_rent": 2250,
    "rent_source": "RentHop, Jun 2026 (Trulia Jun 2026 $2,225; Rentometer Mar 2026 median $2,225; Apartment List $2,620)",
    "rent_trend": "+31% YoY (RentHop Jun 2026; small sample, likely noisy)",
-   "summer_high_f": null,
+   "summer_high_f": 85,
    "marine_layer": "little: inland North OC, warm summers. summer_high_f is null because no NOAA normal was retrieved. Expect high-80s °F August highs (general knowledge, not verified this round).",
    "fire_hazard": "CAL FIRE FHSZ: none / not notable for the flat core (general knowledge, not verified this round; check the CAL FIRE map for the eastern edge toward Yorba Linda)",
    "flood_zone": null,
@@ -4313,7 +4350,8 @@
    ],
    "farmers_markets": [],
    "fiber": "Not checked this round (search budget ran out). Spectrum cable is near-universal in OC; AT&T Fiber covers many OC neighborhoods. Check by address.",
-   "vibe": "Calm, family-suburban streets with a small Old Town. You'd drive 5-10 min for third-wave coffee."
+   "vibe": "Calm, family-suburban streets with a small Old Town. You'd drive 5-10 min for third-wave coffee.",
+   "summer_source": "WeatherSpark Fullerton Municipal Airport Aug avg high 85F (weatheronthisday NOAA daily ~87-88F, east Fullerton likely warmer); nearest station"
   },
   "id": "placentia",
   "name": "Placentia",
@@ -4409,7 +4447,7 @@
    "median_1br_rent": 2350,
    "rent_source": "RentHop, Jul 2026, citywide (Rentometer Jan 2026 range $2,200-2,400; Apartment List $2,599)",
    "rent_trend": "-4.5% YoY (RentHop Jul 2026)",
-   "summer_high_f": null,
+   "summer_high_f": 85,
    "marine_layer": "little: inland. summer_high_f is null because no NOAA normal was retrieved. Expect high-80s °F August highs (general knowledge, not verified this round).",
    "fire_hazard": "CAL FIRE FHSZ: none for the flat east/CSUF area; the northern hills (Coyote Hills / Sunny Hills edges) may be mapped. Verify on the CAL FIRE map (general knowledge, not verified this round).",
    "flood_zone": null,
@@ -4420,7 +4458,8 @@
    ],
    "farmers_markets": [],
    "fiber": "Not checked this round (search budget ran out). Spectrum cable is near-universal in OC; AT&T Fiber covers many OC neighborhoods. Check by address.",
-   "vibe": "College-town suburb with real roasters nearby. Quiet streets, and downtown bars are a short drive away."
+   "vibe": "College-town suburb with real roasters nearby. Quiet streets, and downtown bars are a short drive away.",
+   "summer_source": "WeatherSpark Fullerton Municipal Airport Aug avg high 85F (weatheronthisday NOAA daily ~87-88F, east Fullerton likely warmer)"
   },
   "id": "fullerton-east-non-downtown",
   "name": "Fullerton (east, non-downtown)",
@@ -4516,7 +4555,7 @@
    "median_1br_rent": 2095,
    "rent_source": "Trulia, May 2026 (Apartments.com $1,931; Apartment List ~$2,250)",
    "rent_trend": "+0.8% YoY (Apartments.com, undated snapshot)",
-   "summer_high_f": null,
+   "summer_high_f": 85,
    "marine_layer": "some: a bit closer to the coast than Fullerton. summer_high_f is null because no NOAA normal was retrieved. Expect mid/upper-80s °F August highs (general knowledge, not verified this round).",
    "fire_hazard": "CAL FIRE FHSZ: none (flat urban; general knowledge, not verified this round)",
    "flood_zone": null,
@@ -4526,7 +4565,8 @@
    ],
    "farmers_markets": [],
    "fiber": "Not checked this round (search budget ran out). Spectrum cable is near-universal in OC; AT&T Fiber covers many OC neighborhoods. Check by address.",
-   "vibe": "Busy, practical, tourist-edged suburb with a strong Korean cafe and food scene. Pick a tract away from Beach Blvd for quiet."
+   "vibe": "Busy, practical, tourist-edged suburb with a strong Korean cafe and food scene. Pick a tract away from Beach Blvd for quiet.",
+   "summer_source": "WeatherSpark Fullerton Municipal Airport Aug avg high 85F (weatheronthisday NOAA daily ~87-88F, east Fullerton likely warmer); nearest station"
   },
   "id": "buena-park",
   "name": "Buena Park",
@@ -4622,7 +4662,7 @@
    "median_1br_rent": 2292,
    "rent_source": "Trulia, Sep 2026 (Rentometer Feb 2026 $2,438; RentCafe May 2026 $2,386; Apartment List $2,608)",
    "rent_trend": null,
-   "summer_high_f": null,
+   "summer_high_f": 85,
    "marine_layer": "little: inland, among the warmest areas here. summer_high_f is null because no NOAA normal was retrieved. Expect ~90 °F August highs (general knowledge, not verified this round).",
    "fire_hazard": "CAL FIRE FHSZ: very high in the northern/eastern hills (Carbon Canyon, Olinda); none for flat downtown and south Brea (general knowledge, not verified this round, verify)",
    "flood_zone": null,
@@ -4634,7 +4674,8 @@
    ],
    "farmers_markets": [],
    "fiber": "Not checked this round (search budget ran out). Spectrum cable is near-universal in OC; AT&T Fiber covers many OC neighborhoods. Check by address.",
-   "vibe": "Tidy, quiet, safe suburb with a small entertainment downtown. Coffee leans casual rather than third-wave."
+   "vibe": "Tidy, quiet, safe suburb with a small entertainment downtown. Coffee leans casual rather than third-wave.",
+   "summer_source": "WeatherSpark Fullerton Municipal Airport Aug avg high 85F (weatheronthisday NOAA daily ~87-88F, east Fullerton likely warmer); nearest station"
   },
   "id": "brea",
   "name": "Brea",
@@ -4733,7 +4774,7 @@
    "median_1br_rent": 2391,
    "rent_source": "Apartments.com, 2026 snapshot (Trulia Jun 2026 $2,367; Rentometer Jan 2026 apartments $2,563; PadMapper Aug 2026 median $3,026 on 25 listings)",
    "rent_trend": "-4% YoY (Apartments.com)",
-   "summer_high_f": null,
+   "summer_high_f": 83.9,
    "marine_layer": "strong: right on the ocean; June gloom is common and AC is often optional. summer_high_f is null because no NOAA normal was retrieved. Expect upper-70s °F August highs (general knowledge, not verified this round).",
    "fire_hazard": "CAL FIRE FHSZ: none (general knowledge, not verified this round)",
    "flood_zone": "Coastal flood exposure: Old Town and Surfside sit near sea level, with FEMA coastal (AE/VE) zones along the beach. Check the exact address on the FEMA map (general knowledge, not verified this round).",
@@ -4745,7 +4786,8 @@
    ],
    "farmers_markets": [],
    "fiber": "Not checked this round (search budget ran out). Spectrum cable is near-universal in OC; AT&T Fiber covers many OC neighborhoods. Check by address.",
-   "vibe": "Sleepy, walkable beach village with a couple of good cafes on Main St. Quiet nights except weekend bar blocks."
+   "vibe": "Sleepy, walkable beach village with a couple of good cafes on Main St. Quiet nights except weekend bar blocks.",
+   "summer_source": "ExtremeWeatherWatch Long Beach Aug avg high 83.9F (NOAA 1991-2020); Long Beach Airport is inland of Seal Beach, coastal Seal Beach likely a few degrees cooler"
   },
   "id": "seal-beach",
   "name": "Seal Beach",
@@ -4833,10 +4875,10 @@
    "https://www.rentcafe.com/apartments-for-rent/santa-ana-ca/?page=2"
   ],
   "extras": {
-   "median_1br_rent": null,
-   "rent_source": "No 92705 1BR median found. RentCafe May 2026 Santa Ana all-unit average $2,635; Trulia 92706 1BR $2,044 (Jun 2026); one Franzen Ave listing at $2,200/mo seen.",
+   "median_1br_rent": 2250,
+   "rent_source": "Trulia Santa Ana city 1BR avg, Jun 2026 (city-level)",
    "rent_trend": null,
-   "summer_high_f": null,
+   "summer_high_f": 85.7,
    "marine_layer": "some: central OC gets morning marine layer in late spring. summer_high_f is null because no NOAA normal was retrieved. Expect mid-80s °F August highs (general knowledge, not verified this round).",
    "fire_hazard": "CAL FIRE FHSZ: none (general knowledge, not verified this round)",
    "flood_zone": null,
@@ -4847,7 +4889,8 @@
    ],
    "farmers_markets": [],
    "fiber": "Not checked this round (search budget ran out). Spectrum cable is near-universal in OC; AT&T Fiber covers many OC neighborhoods. Check by address.",
-   "vibe": "Practical, errand-walkable residential pocket by the 55. Good coffee and nightlife are a short drive, not a stroll."
+   "vibe": "Practical, errand-walkable residential pocket by the 55. Good coffee and nightlife are a short drive, not a stroll.",
+   "summer_source": "ExtremeWeatherWatch Santa Ana Aug avg high 85.7F (NOAA 1991-2020)"
   },
   "id": "santa-ana-east-franzen-ave",
   "name": "Santa Ana – East (Franzen Ave)",
@@ -4945,7 +4988,7 @@
    "median_1br_rent": 3447,
    "rent_source": "Rentometer, Feb 2026 average (Trulia May 2026 $3,300; RentHop 92663 Jun 2026 median $4,725; Corona del Mar median $4,495)",
    "rent_trend": "RentHop 92663 median +43% YoY (Jun 2026, likely mix-driven)",
-   "summer_high_f": null,
+   "summer_high_f": 72.9,
    "marine_layer": "strong: coastal, with frequent May-July gloom; little AC need near the water. summer_high_f is null because no NOAA normal was retrieved. Expect mid-70s °F August highs at the coast (general knowledge, not verified this round).",
    "fire_hazard": "CAL FIRE FHSZ: none for the harbor/Peninsula; Newport Coast and the canyon edges are high to very high (general knowledge, not verified this round, verify)",
    "flood_zone": "Coastal flood zones on Balboa Peninsula, Balboa Island and the harbor edges (FEMA AE/VE; general knowledge, not verified this round, verify by address).",
@@ -4957,7 +5000,8 @@
    ],
    "farmers_markets": [],
    "fiber": "Not checked this round (search budget ran out). Spectrum cable is near-universal in OC; AT&T Fiber covers many OC neighborhoods. Check by address.",
-   "vibe": "Polished coastal city with good cafes in each village. Pick CdM or Newport Heights for quiet, and budget for high rent."
+   "vibe": "Polished coastal city with good cafes in each village. Pick CdM or Newport Heights for quiet, and budget for high rent.",
+   "summer_source": "ExtremeWeatherWatch Newport Beach Aug avg high 72.9F (coastal station; period not stated, header 1921-2025)"
   },
   "id": "newport-beach",
   "name": "Newport Beach",
@@ -5036,10 +5080,10 @@
    "https://www.neighborhoodscout.com/ca/lake-forest/crime"
   ],
   "extras": {
-   "median_1br_rent": null,
-   "rent_source": "No rent data retrieved (search budget exhausted)",
+   "median_1br_rent": 2750,
+   "rent_source": "RentHop Lake Forest 1BR, Jul 2026 (nearby-cities table shows $2,500)",
    "rent_trend": null,
-   "summer_high_f": null,
+   "summer_high_f": 85,
    "marine_layer": "some/little: inland south OC with some morning marine layer. summer_high_f is null because no NOAA normal was retrieved. Expect mid-80s °F August highs (general knowledge, not verified this round).",
    "fire_hazard": "CAL FIRE FHSZ: very high along the eastern foothills (Portola Hills, Foothill Ranch near Whiting Ranch); none for the western flatlands (general knowledge, not verified this round, verify)",
    "flood_zone": null,
@@ -5051,7 +5095,8 @@
    ],
    "farmers_markets": [],
    "fiber": "Not checked this round (search budget ran out). Spectrum cable is near-universal in OC; AT&T Fiber covers many OC neighborhoods. Check by address.",
-   "vibe": "Calm, safe, master-planned suburb. You'd drive to good coffee."
+   "vibe": "Calm, safe, master-planned suburb. You'd drive to good coffee.",
+   "summer_source": "approx: weatheronthisday.com 92691 daily Aug avg highs ~83-86F (NOAA 55-yr); monthly NOAA normal not retrieved"
   },
   "id": "lake-forest",
   "name": "Lake Forest",
@@ -5131,10 +5176,10 @@
    "https://www.walkscore.com/score/loc/lat=33.656406/lng=-117.642746/"
   ],
   "extras": {
-   "median_1br_rent": null,
-   "rent_source": "No rent data retrieved (search budget exhausted)",
+   "median_1br_rent": 2595,
+   "rent_source": "RentHop Mission Viejo 1BR, Mar 2026 (zip 92692 ~$2,576 May 2026)",
    "rent_trend": null,
-   "summer_high_f": null,
+   "summer_high_f": 85,
    "marine_layer": "little/some: inland south OC. summer_high_f is null because no NOAA normal was retrieved. Expect mid/upper-80s °F August highs (general knowledge, not verified this round).",
    "fire_hazard": "CAL FIRE FHSZ: high / very high along eastern and canyon edges (toward O'Neill Park / Trabuco); most of the city is lower (general knowledge, not verified this round, verify)",
    "flood_zone": null,
@@ -5146,7 +5191,8 @@
    ],
    "farmers_markets": [],
    "fiber": "Not checked this round (search budget ran out). Spectrum cable is near-universal in OC; AT&T Fiber covers many OC neighborhoods. Check by address.",
-   "vibe": "Leafy, very quiet, safe master-planned suburb. Coffee and nightlife mean driving."
+   "vibe": "Leafy, very quiet, safe master-planned suburb. Coffee and nightlife mean driving.",
+   "summer_source": "approx: weatheronthisday.com 92691 daily Aug avg highs ~83-86F (NOAA 55-yr); monthly NOAA normal not retrieved"
   },
   "id": "mission-viejo",
   "name": "Mission Viejo",
