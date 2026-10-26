@@ -20,6 +20,16 @@ NEIGHBORHOOD_FIX = {
     "7122 Kittyhawk Ave Unit 0": "Westchester",
 }
 CHECKED_ON = "2026-10-15"
+# Search agents sometimes invent sub-area names; map them onto scored neighborhoods.
+AREA_ALIAS = {
+    "NEW: Highland Park": "Highland Park / Eagle Rock",
+    "NEW: Santa Ana – East": "Santa Ana – East (Franzen Ave)",
+    "NEW: Tustin": "Tustin – Tustin Legacy / Old Town",
+    "NEW: Westminster": "Garden Grove",
+    "NEW: Irvine": "Irvine (Spectrum / Irvine Business Complex)",
+    "NEW: Playa del Rey": "Westchester",
+    "NEW: Playa Vista": "Mar Vista / Del Rey",
+}
 # Findings that contradict each other across research batches, shown on the building.
 REVIEW_NOTES = {
     name: "G.H. Palmer (GHP Management) deposit class action: one search found a $12.5M settlement, another says it "
@@ -36,11 +46,21 @@ def norm_name(s):
     return (s or "").replace(" - ", " – ")
 
 
+def destar(x):
+    """Some research files kept the schema's ★ priority markers in key names; drop them."""
+    if isinstance(x, dict):
+        return {k.replace("★", "").strip(): destar(v) for k, v in x.items()}
+    if isinstance(x, list):
+        return [destar(v) for v in x]
+    return x
+
+
 def region_of(name):
-    if name.startswith("Long Beach"):
+    if name.startswith(("Long Beach", "Signal Hill")):
         return "Long Beach"
     la = ("Downtown LA", "Chinatown", "Little Tokyo", "Echo Park", "Historic Filipinotown",
-          "Silver Lake", "Koreatown", "Mid-City", "Hollywood", "Culver City", "Westchester")
+          "Silver Lake", "Koreatown", "Mid-City", "Hollywood", "Culver City", "Westchester",
+          "West Hollywood", "West LA", "Mar Vista", "Jefferson Park", "Los Feliz", "Atwater", "Highland Park")
     return "Los Angeles" if name.startswith(la) else "Orange County"
 
 
@@ -67,6 +87,44 @@ def num(v):
         return None if v in (None, "") else float(v)
     except (TypeError, ValueError):
         return None
+
+
+def add_freeway_distance(buildings, areas, geo_name="geo.json"):
+    """Approximate straight-line miles to the nearest freeway, from the map's (generalized) freeway lines."""
+    import math, re
+    geo_f = ROOT / "data" / geo_name
+    if not geo_f.exists():
+        return
+    geo = json.loads(geo_f.read_text())
+    W, E, S, N = geo["bounds"]
+    MW, MH = geo["size"]
+    segs = []
+    for fw in geo["freeways"]:
+        for part in re.split(r"(?=M)", fw["d"]):
+            pts = [tuple(map(float, xy.split(","))) for xy in re.findall(r"-?[\d.]+,-?[\d.]+", part)]
+            ll = [(W + x / MW * (E - W), N - y / MH * (N - S)) for x, y in pts]
+            segs += [(fw["kind"], fw["ref"], ll[i], ll[i + 1]) for i in range(len(ll) - 1)]
+    kx = math.cos(math.radians((S + N) / 2)) * 69.17  # miles per degree lng
+    ky = 69.0                                    # miles per degree lat
+
+    def dist(lng, lat, a, b):
+        ax, ay, bx, by = a[0] * kx, a[1] * ky, b[0] * kx, b[1] * ky
+        px, py = lng * kx, lat * ky
+        dx, dy = bx - ax, by - ay
+        t = max(0, min(1, ((px - ax) * dx + (py - ay) * dy) / (dx * dx + dy * dy or 1)))
+        return math.hypot(px - ax - t * dx, py - ay - t * dy)
+
+    label = {"i": "I-", "us": "US-", "ca": "SR-"}
+    for b in buildings:
+        if b.get("lat") is None:
+            continue
+        best = min(segs, key=lambda sg: dist(b["lng"], b["lat"], sg[2], sg[3]))
+        # Generalized freeway lines + estimated coordinates: only a coarse band is honest.
+        d = dist(b["lng"], b["lat"], best[2], best[3])
+        b["freeway_band"] = "under 1 mi" if d < 1 else "1–2 mi" if d < 2 else "over 2 mi"
+    walk = {a["id"]: (a.get("walk") or {}).get("walk_score") for a in areas}
+    for b in buildings:
+        b["area_walk_score"] = walk.get(b.get("area_id"))
 
 
 def main():
@@ -99,7 +157,24 @@ def main():
         if p:
             a["remote_work"] = {k: p.get(k) for k in ("remote_work_score", "cafes", "coworking", "packages", "internet", "groceries") if p.get(k)}
         areas.append(a)
+    extras_f = RESEARCH / "areas_extras.json"
+    extras = {norm_name(x["neighborhood"]): x.get("extras") for x in (json.loads(extras_f.read_text()) if extras_f.exists() else [])}
+    for a in areas:
+        if extras.get(a["name"]) and not a.get("extras"):
+            a["extras"] = extras[a["name"]]
+    fill_f = RESEARCH / "areas_fill.json"
+    for x in json.loads(fill_f.read_text()) if fill_f.exists() else []:
+        for a in areas:
+            if a["name"] == norm_name(x["neighborhood"]):
+                a.setdefault("extras", {})
+                a["extras"].update({k: v for k, v in (x.get("extras") or {}).items() if v not in (None, "")})
     area_ids = {a["name"]: a["id"] for a in areas}
+
+    # Round-3 listing detail, keyed by listing id (enrich_*.json) or embedded in find3_* candidates.
+    enrich = {}
+    for f in sorted(RESEARCH.glob("enrich_*.json")):
+        for e in destar(json.loads(f.read_text())):
+            enrich[e["id"]] = e
 
     buildings, missing = [], []
     for r in prior:
@@ -156,13 +231,24 @@ def main():
                    key=lambda a: (a["lat"] - lat) ** 2 + ((a["lng"] - lng) * math.cos(math.radians(lat))) ** 2)
         return best
     seen = {b["name"].lower() for b in buildings}
-    for f in sorted(RESEARCH.glob("find_*.json")):
-        for c in json.loads(f.read_text()):
+    for f in sorted(RESEARCH.glob("find*.json")):
+        for c in destar(json.loads(f.read_text())):
             if c["name"].lower() in seen:
                 continue
             seen.add(c["name"].lower())
             area_name = norm_name(c.get("area") or "")
+            if area_name.startswith("NEW: ") and area_name[5:] in area_ids:
+                area_name = area_name[5:]
+            for prefix, target in AREA_ALIAS.items():
+                if area_name.startswith(prefix) and target in area_ids:
+                    area_name = target
             loc_note = c.get("geocode_note") or ""
+            if c.get("lat") is None and area_name in area_ids:
+                ar = next(x for x in areas if x["name"] == area_name)
+                if ar.get("lat") is not None:
+                    h = sum(map(ord, c["name"])) % 997 / 997.0
+                    c = {**c, "lat": ar["lat"] + (h - 0.5) * 0.008, "lng": ar["lng"] + ((h * 7) % 1 - 0.5) * 0.008}
+                    loc_note = "Map position is approximate: placed near the center of " + area_name + ". " + loc_note
             if area_name not in area_ids and c.get("lat") is not None:
                 near = nearest_area(c["lat"], c["lng"])
                 loc_note = (f"{area_name.replace('NEW: ', '')} is not a scored neighborhood yet; "
@@ -188,12 +274,34 @@ def main():
                             "complaints": [], "praise": [], "dealbreakers": "", "recent_trend": "unknown",
                             "management": {"score": None, "summary": c.get("reputation_gist") or ""}},
                 "checked_on": CHECKED_ON, "source": "claude", "my_status": "new", "my_note": "",
-                "batch": "private-oct15" if f.name.startswith("find_p") else "new-oct15",
-                "landlord": "private" if f.name.startswith("find_p") else "company",
+                "batch": "recent-oct26" if f.name.startswith(("find3", "find4")) else "private-oct15" if f.name.startswith("find_p") else "new-oct15",
+                "landlord": c.get("landlord") or ("private" if f.name.startswith("find_p") else "company"),
                 "owner_type": c.get("owner_type"), "platform": c.get("platform"),
                 "hoa_amenities": c.get("hoa_amenities"), "rent_control": c.get("rent_control"),
                 "scam_flags": c.get("scam_flags") or "",
             })
+            if f.name.startswith(("find3", "find4")):
+                enrich.setdefault(slug(c["name"]), {**c, "parking": c.get("parking_detail")})
+
+    DETAIL_KEYS = ("costs", "pets", "parking", "building", "unit", "internet", "location", "availability", "evidence")
+    for b in buildings:
+        e = enrich.get(b["id"])
+        if not e:
+            continue
+        b["detail"] = {k: e.get(k) for k in DETAIL_KEYS if e.get(k) is not None}
+        b["detail_sources"] = [u for u in (e.get("sources") or []) if u not in b["sources"]]
+        costs = e.get("costs") or {}
+        fees = [x for x in (costs.get("required_fees") or []) if isinstance(x, dict) and isinstance(x.get("amount"), (int, float))]
+        b["required_fees_total"] = round(sum(x["amount"] for x in fees), 2) if fees else None
+        if b.get("parking_fee") is None and isinstance(costs.get("parking_fee"), (int, float)):
+            b["parking_fee"] = costs["parking_fee"]
+        bld = e.get("building") or {}
+        if not b.get("year_built") and isinstance(bld.get("year_built"), (int, float)):
+            b["year_built"] = int(bld["year_built"])
+        if b.get("checked_on") and b["checked_on"] < "2026-10-26":
+            b["checked_on"] = "2026-10-26"
+
+    add_freeway_distance(buildings, areas)
 
     updates = RESEARCH / "updates.json"
     for u in json.loads(updates.read_text()) if updates.exists() else []:
@@ -203,6 +311,9 @@ def main():
             b["req"].update(u.get("req", {}))
             if u.get("landlord"):
                 b["landlord"] = u["landlord"]
+            for k in ("base_rent", "effective_rent", "sqft"):
+                if k in u:
+                    b[k] = u[k]
             if u.get("packages_detail"):
                 b["packages_detail"] = u["packages_detail"]
             if u.get("note"):

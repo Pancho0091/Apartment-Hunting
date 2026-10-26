@@ -1,0 +1,1524 @@
+[
+ {
+  "id": "the-imperial-apartments",
+  "name": "The Imperial Apartments",
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": 52,
+   "stories": null,
+   "year_built": 1985,
+   "renovated": null,
+   "elevator": "yes",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "yes",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "air conditioning (type not stated)"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Redfin snapshots (seen 2026-10-26, undated): 1BR 1BA ~648-720 sq ft at ~$1,999-$2,175, '1 month free', 2-7 units available; ApartmentAdvisor: 1BR $2,125, studio $2,000.",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Yardi Matrix: 52 units, built 1985; OCBJ sale article says 51 units, studios/1BR/2BR. ApartmentAdvisor lists AC, elevator, parking, gated access. Redfin tags 'Pets welcome' and 'Very walkable' (no numeric score). No data on W/D, fees, deposit, parking fee, utilities, website or phone. 648-720 sq ft may fall below the 700 sq ft minimum. Freeway/transit/cafe fields not researched (search budget exhausted); left null/unclear. Page fetches failed (DNS/proxy refusal) and the shared web-search budget ran out mid-batch; all data from search-result snippets seen 2026-10-26.",
+  "sources": [
+   "https://www.yardimatrix.com/property-types/multifamily/orange-county/imperial-1722-north-bush-street-ca-92706--7931/",
+   "https://www.ocbj.com/news/santa-ana-multifamily-property-sells-for-15-million/",
+   "https://www.apartmentadvisor.com/details/1722-n-bush-st-santa-ana-ca-92706",
+   "https://www.redfin.com/zipcode/92706/1-bedroom-apartments-for-rent"
+  ]
+ },
+ {
+  "id": "the-aspens-south-coast",
+  "name": "The Aspens South Coast",
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": 45,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "yes",
+   "dogs": "unclear",
+   "pet_rent": 25,
+   "pet_deposit": 500,
+   "limits": "max 2 pets; restrictions apply, contact office (dogs not confirmed)"
+  },
+  "parking": {
+   "type": "garage",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "yes",
+   "pool": "yes",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "yes",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "yes",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "central air and heat",
+    "dishwasher",
+    "gas range",
+    "microwave",
+    "high ceilings",
+    "large balconies/patios",
+    "shared laundry facilities (no in-unit W/D mentioned)"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Seen 2026-10-26 in snippets: Zumper/Point2 $2,385-$3,660 (1-2BR); Redfin 1BR ~$2,375-$2,450 with 1 month free (new rentals only); Redfin reported 28 units available.",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Management per input: Far West Management. Fee/pet figures are community-supplied data on a listing site, unverified. Point2Homes/Zumper say shared/on-site laundry, which would fail the in-unit W/D requirement. Private enclosed garages, gated, pool/spa, fitness center, tennis, clubhouse, saunas. No year built found (do not confuse with Aspen Village, 3600 Aspen Village Way, built 1985). Freeway/transit/cafe fields not researched (search budget exhausted); left null/unclear. Page fetches failed (DNS/proxy refusal) and the shared web-search budget ran out mid-batch; all data from search-result snippets seen 2026-10-26.",
+  "sources": [
+   "https://www.point2homes.com/US/Apartment-Buildings/CA/South-Coast-Metro/The-Aspens-South-Coast0.html",
+   "https://www.zumper.com/apartment-buildings/p2530/the-aspens-south-coast-armstrong-santa-ana-ca",
+   "https://www.redfin.com/neighborhood/115548/CA/Santa-Ana/South-Coast/apartments-for-rent"
+  ]
+ },
+ {
+  "id": "saddleback-ranch-apartments",
+  "name": "Saddleback Ranch Apartments",
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": 50,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": "listed as 'Pets welcome'; no species/fee details"
+  },
+  "parking": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": 305,
+   "stories": 2,
+   "year_built": 1972,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "yes",
+   "pool": "yes",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "yes",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "central air and heating",
+    "ceiling fans",
+    "walk-in closets",
+    "private patio/balcony",
+    "dishwasher (one listing)"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Snippets seen 2026-10-26: 1BR 1BA ~$2,188-$2,438 (also a $2,296 unit); other sources $2,175-$2,433+; sizes 670-1,513 (aggregator) or 750-1,500 sq ft (property). $500 'Look & Lease' special if you apply within 24 hrs of your tour.",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "ForRent University listing: built 1972, 305 units, 2 stories, $50 application fee per applicant. 38-acre site with 2 pools, fitness center, tennis court, bike and running paths. Washer/dryer and garage parking not mentioned. Website and phone not found. Freeway/transit/cafe fields not researched (search budget exhausted); left null/unclear. Page fetches failed (DNS/proxy refusal) and the shared web-search budget ran out mid-batch; all data from search-result snippets seen 2026-10-26.",
+  "sources": [
+   "https://www.forrentuniversity.com/ca/mission-viejo/saddleback-ranch-apartments/14b8834",
+   "https://www.point2homes.com/US/Apartment-Buildings/CA/Mission-Viejo/Saddleback-Ranch.html",
+   "https://redfin.com/neighborhood/42039/CA/Mission-Viejo/La-Paz/apartments-for-rent"
+  ]
+ },
+ {
+  "id": "casa-cortez-apartments",
+  "name": "Casa Cortez Apartments",
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "yes",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "air conditioning (type not stated)",
+    "dishwasher"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Snippets seen 2026-10-26: 1BR 1BA ~750 sq ft at $2,025/mo; listing showed Oct 6-9 tour dates; current availability not confirmed.",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Homefinder (Realtor.com feed) lists a pool and groundskeeping; Redfin lists AC, dishwasher, 'very walkable'. No data on W/D, parking, fees, pets, building size or management. One search only. Freeway/transit/cafe fields not researched (search budget exhausted); left null/unclear. Page fetches failed (DNS/proxy refusal) and the shared web-search budget ran out mid-batch; all data from search-result snippets seen 2026-10-26.",
+  "sources": [
+   "https://homefinder.com/rentals/details/1412-Nisson-Rd_Tustin_CA_92780_M11300-82324",
+   "https://www.redfin.com/neighborhood/497664/CA/Tustin/Peppertree/apartments-for-rent"
+  ]
+ },
+ {
+  "id": "ascent-apartment-homes",
+  "name": "Ascent Apartment Homes",
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": "Redfin 'Pets welcome'; no details"
+  },
+  "parking": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "dishwasher",
+    "renovated units",
+    "laundry only in select floorplans (per one listing)"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Snippets seen 2026-10-26 (undated, possibly 2025): Redfin 1BR $2,295 (also 1 month free; 26 then 13 units available); Westside Rentals 1BR $2,550-$2,675, 2BR $3,195-$3,250; 1-3BR 745-1,230 sq ft.",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Aggregator-only data; no official website, fee schedule, year built, or parking details found. In-unit laundry is only in some floorplans, so confirm for any specific unit. Freeway/transit/cafe fields not researched (search budget exhausted); left null/unclear. Page fetches failed (DNS/proxy refusal) and the shared web-search budget ran out mid-batch; all data from search-result snippets seen 2026-10-26.",
+  "sources": [
+   "https://jsonapi.westsiderentals.com/los-alamitos-ca/ascent-apartment-homes-f3zp3cr",
+   "https://www.redfin.com/neighborhood/66084/CA/Los-Alamitos/Armed-Forces-Reserve-Center/1-bedroom-apartments-for-rent"
+  ]
+ },
+ {
+  "id": "the-montville",
+  "name": "The Montville",
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": "conflicting: Redfin/ForRent pet-friendly vs Westside Rentals 'No Pets Allowed'"
+  },
+  "parking": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": 40,
+   "stories": 2,
+   "year_built": 1951,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": 60,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": "Expo/Crenshaw (E Line); Farmdale also nearby (per ForRent)",
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Redfin snapshots seen 2026-10-26: 1BR from ~$1,829 (4 units), later 2 units at $1,875.",
+   "website": null,
+   "leasing_phone": "(213) 325-3548"
+  },
+  "evidence": "Westside Rentals: built 1951, 40 units, 2 stories, phone (213) 325-3548 (listing contact, presumed leasing). ForRent: Transit Score 60, ~0.8 mi to Crenshaw Retail Plaza; a tenant review calls management mixed. A 1951 building likely lacks central AC and in-unit W/D, but this is unconfirmed. No fees/amenity data. Walk score, freeway and cafe not researched. Page fetches failed (DNS/proxy refusal) and the shared web-search budget ran out mid-batch; all data from search-result snippets seen 2026-10-26.",
+  "sources": [
+   "https://prod-release.westsiderentals.com/los-angeles-ca/3701-montclair-st-mxvqjll",
+   "https://www.forrentuniversity.com/ca/los-angeles/the-montville/1xvqpl7",
+   "https://www.redfin.com/neighborhood/3958/CA/Los-Angeles/Jefferson-Park/apartments-under-2000-for-rent"
+  ]
+ },
+ {
+  "id": "condo-savoy-100-s-alameda-st-318",
+  "name": "Condo – Savoy, 100 S Alameda St #318",
+  "costs": {
+   "required_fees": [],
+   "utilities": "rental listings in the building: owner pays HOA, which includes water + trash (and parking per one listing); tenant presumably pays electricity/gas (not confirmed)",
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking": {
+   "type": "garage",
+   "ev_charging": "unclear",
+   "guest_parking": "yes"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": 2005,
+   "renovated": null,
+   "elevator": "yes",
+   "gym": "yes",
+   "pool": "yes",
+   "coworking": "yes",
+   "rooftop_or_courtyard": "yes",
+   "controlled_access": "yes",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "in-unit washer/dryer (most building listings)",
+    "~735 sq ft (#318 per sale listing)"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Seen 2026-10-26: no rental listing found for #318, only a for-sale listing ($499,000, 735 sq ft). Other Savoy 1BRs listed at ~$2,350/mo, 2BR $2,890.",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Building facts come from multiple MLS listings for other units: pool/spa, gym and yoga room, business/conference center ('coworking' = business center), screening room, sports lounge, rooftop deck, 24-hr attended lobby, gated subterranean garage with 1-2 spaces (sometimes tandem), secure guest parking. HOA dues ~$653-$743. #318 may be for sale, not for rent, so verify. Freeway/transit/cafe fields not researched (search budget exhausted); left null/unclear. Page fetches failed (DNS/proxy refusal) and the shared web-search budget ran out mid-batch; all data from search-result snippets seen 2026-10-26.",
+  "sources": [
+   "https://www.weichert.com/137299433/",
+   "https://hotpads.com/los-angeles-ca-90012-24d981k/244/pad",
+   "https://theboutiquere.com/properties/retsPdf/25533351/100-S-Alameda-Street"
+  ]
+ },
+ {
+  "id": "condo-cornell-building-746-s-los-angeles-st-402",
+  "name": "Condo – Cornell Building, 746 S Los Angeles St #402",
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking": {
+   "type": "garage",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": 95,
+   "stories": 11,
+   "year_built": 1922,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "yes",
+   "pool": "yes",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "yes",
+   "controlled_access": "yes",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Redfin 90014 condos-for-rent seen 2026-10-26: 'Unit 746-402' $2,100/mo, 1BD/1BA 740 sq ft, parking, fitness center. A separate 738 S Los Angeles St #402 listing: $2,300, 2BD, 810 sq ft, pets allowed, in-unit laundry, which may or may not be the same unit.",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Compass: 11-story, 1922, 95 units. Building listings mention a rooftop pool, spas, basketball court, gym, 24-hr security, and assigned parking in a NEARBY garage with shuttle (so not on-site; parking type marked garage, off-site). In-unit W/D and central AC not confirmed for #402. Freeway/transit/cafe fields not researched (search budget exhausted); left null/unclear. Page fetches failed (DNS/proxy refusal) and the shared web-search budget ran out mid-batch; all data from search-result snippets seen 2026-10-26.",
+  "sources": [
+   "https://www.redfin.com/zipcode/90014/condos-for-rent",
+   "https://compass.com/building/the-cornell-los-angeles-ca/842979973568605413"
+  ]
+ },
+ {
+  "id": "graystone-manor-1425-n-sierra-bonita-ave-207",
+  "name": "Graystone Manor – 1425 N Sierra Bonita Ave #207",
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": 35,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": "12-month option listed"
+  },
+  "pets": {
+   "cats": "no",
+   "dogs": "no",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": "PadMapper: no pets allowed"
+  },
+  "parking": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "yes",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "private balcony (HotPads headline)",
+    "~850 sq ft (#207)"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "ApartmentAdvisor seen 2026-10-26: Unit 207 1BD/1BA 850 sq ft, 'available now', $2,275 (page also shows $2,875 and a $75 price drop, so it is inconsistent); building range $2,275-$2,875 (ForRent/PadMapper).",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "ForRent: $35 application fee per applicant, 12-month lease. PadMapper: no pets. No data on W/D, AC type, parking, year built. Do not confuse with 1355 N Sierra Bonita #207. Freeway/transit/cafe fields not researched (search budget exhausted); left null/unclear. Page fetches failed (DNS/proxy refusal) and the shared web-search budget ran out mid-batch; all data from search-result snippets seen 2026-10-26.",
+  "sources": [
+   "https://www.forrent.com/ca/los-angeles/graystone-manor/x6qzf8m",
+   "https://www.apartmentadvisor.com/details/1425-n-sierra-bonita-ave-los-angeles-ca-90046",
+   "https://www.padmapper.com/address/1425-n-sierra-bonita-ave-los-angeles-ca-90046-usa",
+   "https://hotpads.com/prime-location-%7C-clean-a-great-value-well-appointed-apartments-with-private-balcony-los-angeles-ca-90046-skhjte/pad"
+  ]
+ },
+ {
+  "id": "1206-hayworth-ave-units-3-14",
+  "name": "1206 Hayworth Ave (Units 3 & 14)",
+  "costs": {
+   "required_fees": [],
+   "utilities": "water + trash included (owner pays); tenant pays others (presumed)",
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": "Westside Rentals: pets welcome subject to approval"
+  },
+  "parking": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "yes",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "yes",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "on-site (shared) laundry, no in-unit W/D",
+    "~700 sq ft (one listing)"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Seen 2026-10-26: Rentable 'Unit 14' 1BD/1BA $2,250 available now (YBM Properties); another listing 700 sq ft $2,100, 2 available; Westside Rentals Unit 11 $2,100.",
+   "website": null,
+   "leasing_phone": "(323) 954-8888"
+  },
+  "evidence": "Rentable: managed by YBM Properties, (323) 954-8888; description says NO parking space though amenity list shows attached garage, so parking marked unclear. Shared laundry fails the in-unit W/D requirement. Freeway access: no freeway in WeHo, so within 500 ft is effectively no, but not measured. Freeway/transit/cafe fields not researched (search budget exhausted); left null/unclear. Page fetches failed (DNS/proxy refusal) and the shared web-search budget ran out mid-batch; all data from search-result snippets seen 2026-10-26.",
+  "sources": [
+   "https://www.rentable.co/west-hollywood-ca/hayw14",
+   "https://www.rentable.co/west-hollywood-ca/1206-n-hayworth-ave",
+   "https://www.westsiderentals.com/west-hollywood-ca/1206-hayworth-ave-unit-11-6l0b5kv"
+  ]
+ },
+ {
+  "id": "1834-s-bentley-ave",
+  "name": "1834 S Bentley Ave",
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": "Westside Rentals shows a 1-month lease at $2,200 (unverified)"
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Seen 2026-10-26: Westside Rentals 1BD/1BA $2,200 (undated); Point2Homes studio-2BR 508-996 sq ft, 'ask for pricing', ONE MONTH FREE on all available units.",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Only rent/size snippets found. Amenities, W/D, parking, pets and fees unknown; follow-up search blocked by the search budget. 508-996 sq ft range means some 1BRs may be under 700 sq ft. Freeway/transit/cafe fields not researched (search budget exhausted); left null/unclear. Page fetches failed (DNS/proxy refusal) and the shared web-search budget ran out mid-batch; all data from search-result snippets seen 2026-10-26.",
+  "sources": [
+   "https://www.westsiderentals.com/los-angeles-ca/1834-bentley-5jk12jq",
+   "https://www.point2homes.com/US/Apartment-Buildings/CA/Los-Angeles/West-Los-Angeles/1834-Bentley/136895290.html"
+  ]
+ },
+ {
+  "id": "hayworth-apartments-924-944-n-hayworth-ave",
+  "name": "Hayworth Apartments – 924-944 N Hayworth Ave",
+  "costs": {
+   "required_fees": [],
+   "utilities": "Point2 (possibly a different Hayworth address): residents pay all utilities including water, sewer, trash",
+   "deposit": null,
+   "application_fee": 55,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": "12-month option listed (Westside Rentals)"
+  },
+  "pets": {
+   "cats": "yes",
+   "dogs": "unclear",
+   "pet_rent": 25,
+   "pet_deposit": null,
+   "limits": "max 2 pets; $25/mo per pet; no pet rent for ESA/service animals (ApartmentHomeLiving)"
+  },
+  "parking": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "yes",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "granite/stone counters",
+    "stainless steel appliances",
+    "tile backsplash",
+    "renovated kitchens",
+    "on-site (shared) laundry, no in-unit W/D",
+    "~700 sq ft 1BR"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Seen 2026-10-26: ApartmentHomeLiving 1BD/1BA ~700 sq ft from $2,145; Westside Rentals $2,250-$3,015 (1-2BR).",
+   "website": null,
+   "leasing_phone": "(213) 238-5621"
+  },
+  "evidence": "ApartmentHomeLiving: gated parking, on-site laundry, on-site manager, managed by Statewide Enterprises; Westside Rentals says Property Management Associates. Point2 data (fee, utilities) may refer to 1127 N Hayworth, so treat it as uncertain. Cats marked yes because the property is 'pet-friendly' with pet rent, but the species is not stated; dogs unclear. Parking is 'gated parking' (type unclear). Shared laundry fails the in-unit W/D requirement. Freeway/transit/cafe fields not researched (search budget exhausted); left null/unclear. Page fetches failed (DNS/proxy refusal) and the shared web-search budget ran out mid-batch; all data from search-result snippets seen 2026-10-26.",
+  "sources": [
+   "https://www.apartmenthomeliving.com/apartment-finder/Hayworth-Apartments-West-Hollywood-CA-90046-6157831",
+   "https://www.westsiderentals.com/west-hollywood-ca/hayworth-apartments-v5ltgkg",
+   "https://www.point2homes.com/US/Apartment-Buildings/CA/West-Hollywood/Hayworth-Apartments-F76.html"
+  ]
+ },
+ {
+  "id": "condo-229-oahu-way-placentia-lakes-1br-loft",
+  "name": "Condo – 229 Oahu Way (Placentia Lakes, 1BR+loft)",
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": 2100,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": "12 months"
+  },
+  "pets": {
+   "cats": "no",
+   "dogs": "no",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "yes",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "yes",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "in-unit washer/dryer",
+    "air conditioning",
+    "dishwasher",
+    "fireplace",
+    "patio",
+    "vaulted ceilings",
+    "loft",
+    "916 sq ft"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Apartments.com/Westside Rentals seen 2026-10-26: $2,100 total monthly, 1BD/1BA 916 sq ft, available Aug 1 (likely 2026, so possibly already leased).",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Gated Placentia Lakes community (pools, saunas, hot tubs, tennis per nearby listings). AC type and parking not stated. Freeway/transit/cafe fields not researched (search budget exhausted); left null/unclear. Page fetches failed (DNS/proxy refusal) and the shared web-search budget ran out mid-batch; all data from search-result snippets seen 2026-10-26.",
+  "sources": [
+   "https://www.apartments.com/229-oahu-way-placentia-ca-unit-quiet-oahu/mmjbc9j/",
+   "https://www.westsiderentals.com/placentia-ca/229-oahu-way-unit-quiet-oahu-mmjbc9j"
+  ]
+ },
+ {
+  "id": "condo-221-oahu-way-placentia-lakes",
+  "name": "Condo – 221 Oahu Way (Placentia Lakes)",
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "yes",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "hardwood floors",
+    "central vacuum",
+    "1.5 baths",
+    "air conditioning",
+    "ceiling fans",
+    "dishwasher",
+    "790 sq ft"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "USFCA off-campus housing feed seen 2026-10-26: base rent $1,700, 790 sq ft, 'available now' (undated; may exclude fees).",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "W/D, garage and HOA not found for this unit. Placentia Lakes is gated, with pools/saunas/tennis per other Oahu Way listings, but pool access for #221 is unconfirmed. $1,700 is low for the area, so verify it is real and current. Freeway/transit/cafe fields not researched (search budget exhausted); left null/unclear. Page fetches failed (DNS/proxy refusal) and the shared web-search budget ran out mid-batch; all data from search-result snippets seen 2026-10-26.",
+  "sources": [
+   "https://offcampushousing.usfca.edu/housing/property/chic-1-bed-oasis-with-central-vacuum-and-hardwood-charm-at-221-oahu-way-placentia/1y4yvt6",
+   "https://theboutiquere.com/properties/retsPdf/PW25103857/237-Oahu-Way"
+  ]
+ },
+ {
+  "id": "condo-1541-s-pomona-ave-a33-fullerton",
+  "name": "Condo – 1541 S Pomona Ave #A33 (Fullerton)",
+  "costs": {
+   "required_fees": [],
+   "utilities": "HOA covers trash, water, grounds, pool, clubhouse; tenant likely pays electricity/gas (not stated)",
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": "listed as 'pet-friendly', no details"
+  },
+  "parking": {
+   "type": "garage",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": 1,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "yes",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "in-unit laundry",
+    "dishwasher",
+    "air conditioning",
+    "gas fireplace",
+    "dining room",
+    "pool-view bedroom",
+    "recently remodeled",
+    "single-story"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Apartment List (Propertyware feed) seen 2026-10-26: 1 unit at $2,000/mo, Meredith Manor complex.",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "One assigned space in a shared garage. Square footage, lease term and deposit not shown. 'stories: 1' refers to the unit being single-story per the listing. Freeway/transit/cafe fields not researched (search budget exhausted); left null/unclear. Page fetches failed (DNS/proxy refusal) and the shared web-search budget ran out mid-batch; all data from search-result snippets seen 2026-10-26.",
+  "sources": [
+   "https://www.apartmentlist.com/ca/fullerton/1541-s-pomona-ave-unit-a33"
+  ]
+ },
+ {
+  "id": "condo-919-n-minter-st-unit-m",
+  "name": "Condo – 919 N Minter St Unit M",
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": "Redfin: pets allowed, no details"
+  },
+  "parking": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "air conditioning",
+    "dishwasher",
+    "840 sq ft"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Redfin (CA MLS) seen 2026-10-26: $2,200/mo, 1BD/1BA 840 sq ft.",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Only Redfin neighborhood-page snippets found. W/D, parking, fees unknown. Freeway/transit/cafe fields not researched (search budget exhausted); left null/unclear. Page fetches failed (DNS/proxy refusal) and the shared web-search budget ran out mid-batch; all data from search-result snippets seen 2026-10-26.",
+  "sources": [
+   "https://www.redfin.com/neighborhood/118202/CA/Santa-Ana/Heninger-Park/rentals"
+  ]
+ },
+ {
+  "id": "small-building-unit-2240-franzen-ave-unit-d",
+  "name": "Small-building unit – 2240 Franzen Ave Unit D",
+  "costs": {
+   "required_fees": [],
+   "utilities": "landlord pays water + trash; tenant pays electricity + gas",
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking": {
+   "type": "garage",
+   "ev_charging": "unclear",
+   "guest_parking": "no"
+  },
+  "building": {
+   "units": 4,
+   "stories": 2,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "no",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": "2",
+   "features": [
+    "appliances included",
+    "coin-op shared laundry on site (no in-unit W/D)",
+    "~800 sq ft"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Apartments.com seen 2026-10-26: $2,200/mo, 1BD/1BA ~800 sq ft, available now.",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Apartments.com: second-floor unit in a fourplex, 1 garage, street parking first come (guest parking marked no because only street parking exists). Shared coin laundry fails the in-unit W/D requirement. The contact number appears to be a private landlord's, so it was omitted. 2-story stories value is inferred from the unit being on the second floor of a fourplex. Freeway/transit/cafe fields not researched (search budget exhausted); left null/unclear. Page fetches failed (DNS/proxy refusal) and the shared web-search budget ran out mid-batch; all data from search-result snippets seen 2026-10-26.",
+  "sources": [
+   "https://www.apartments.com/listing/4t5wc2k"
+  ]
+ },
+ {
+  "id": "condo-23232-orange-ave-unit-2",
+  "name": "Condo – 23232 Orange Ave Unit 2",
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": null,
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Not researched: shared web-search budget was exhausted before this listing was reached. All fields null/unclear; see input listing URL. Freeway/transit/cafe fields not researched (search budget exhausted); left null/unclear. Page fetches failed (DNS/proxy refusal) and the shared web-search budget ran out mid-batch; all data from search-result snippets seen 2026-10-26.",
+  "sources": [
+   "https://www.westsiderentals.com/lake-forest-ca/23232-orange-ave-unit-2-rcc0b42"
+  ]
+ },
+ {
+  "id": "condo-23236-orange-ave-4",
+  "name": "Condo – 23236 Orange Ave #4",
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": null,
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Not researched: shared web-search budget was exhausted before this listing was reached. All fields null/unclear; see input listing URL. Freeway/transit/cafe fields not researched (search budget exhausted); left null/unclear. Page fetches failed (DNS/proxy refusal) and the shared web-search budget ran out mid-batch; all data from search-result snippets seen 2026-10-26.",
+  "sources": [
+   "https://www.rentable.co/lake-forest-ca/23236-4-orange-ave"
+  ]
+ }
+]

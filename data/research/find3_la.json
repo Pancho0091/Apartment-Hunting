@@ -1,0 +1,555 @@
+[
+ {
+  "name": "Hikari",
+  "address": "375 E 2nd St, Los Angeles, CA 90012",
+  "area": "Little Tokyo",
+  "lat": 34.0488,
+  "lng": -118.2402,
+  "geocode_note": "approximate coordinates estimated from street location (no geocoder available; page fetches blocked) - verify",
+  "landlord": "company",
+  "owner_type": "institutional REIT",
+  "platform": "Redfin / HotPads / Trulia / ApartmentList (search snippets)",
+  "management_company": "Equity Residential (per search summary; verify)",
+  "year_built": null,
+  "floor_plan": "1BR/1BA (largest plan ~777 sq ft per Redfin range; other sites list only 627 and 681 sq ft)",
+  "sqft": 777,
+  "base_rent": null,
+  "effective_rent": null,
+  "special": "HotPads showed up to 1.5 months free on select homes, but that offer ran through May 2026 (expired); Trulia offer ended Jun 20 2026",
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Redfin 1-bed filter: 627-777 sq ft from $2,205/mo, 6 units (undated). HotPads: 627 sq ft $2,183, 681 sq ft $2,335. Price of the 777 sq ft plan NOT confirmed. HotPads page is tagged 'Income restricted' for at least some units.",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "HotPads/ApartmentList list only 'Air Conditioning'; type not stated",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": "HotPads/ApartmentList list 'package service/receiving'; lockers not described",
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "Only the ~777 sq ft plan meets the 700 sq ft minimum, and its price is unconfirmed",
+   "HotPads labels the listing income-restricted (some units may be affordable-housing only)",
+   "AC type unconfirmed"
+  ],
+  "listing_url": "https://hotpads.com/hikari-los-angeles-ca-90012-skfsr6/pad",
+  "sources": [
+   "https://redfin.com/neighborhood/1385/CA/Los-Angeles/Japantown-Little-Tokyo/1-bedroom-apartments-for-rent",
+   "https://hotpads.com/hikari-los-angeles-ca-90012-skfsr6/pad",
+   "https://trulia.com/building/hikari-375-e-2nd-st-los-angeles-ca-90012-1001484402",
+   "https://apartmentlist.com/ca/los-angeles/hikari",
+   "https://www.forrent.com/ca/los-angeles/hikari/twhdd18",
+   "https://edge.apartmentiq.io/los-angeles-ca/hikari"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": 600,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "yes",
+   "dogs": "yes",
+   "pet_rent": null,
+   "pet_deposit": 500,
+   "limits": "Trulia: optional $500 pet deposit each for dogs and cats"
+  },
+  "parking_detail": {
+   "type": "garage",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Seen 2026-10-26 via undated aggregator snippets: Redfin 6 x 1BR from $2,205 (627-777 sq ft). Trulia deposit $600-$800.",
+   "website": null,
+   "leasing_phone": "(213) 663-1671 (ForRent property phone)"
+  }
+ },
+ {
+  "name": "The Visconti",
+  "address": "1221 W 3rd St, Los Angeles, CA 90017",
+  "area": "Historic Filipinotown / Westlake",
+  "lat": 34.0586,
+  "lng": -118.2588,
+  "geocode_note": "approximate coordinates estimated from street location (no geocoder available; page fetches blocked) - verify",
+  "landlord": "company",
+  "owner_type": "private developer (GH Palmer)",
+  "platform": "Lucid Rents / Redfin / VeryApt (search snippets)",
+  "management_company": "G.H. Palmer Associates",
+  "year_built": null,
+  "floor_plan": "1BR (sq ft not found)",
+  "sqft": null,
+  "base_rent": 2459,
+  "effective_rent": null,
+  "special": "A Redfin 90017 page showed '1 month free' next to a $2,029 1BR (undated; may be a different unit/time)",
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Lucid Rents (Mar 2026 listings): 1BR $2,579-$2,689, median $2,634. Redfin Westlake North page: 1BR $2,459 (undated). VeryApt: from $1,999+ (undated). 297 units, mixed-use, ground-floor retail.",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Not found in snippets",
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "1BR square footage unknown - must confirm >=700 sq ft",
+   "Most recent data (Mar 2026) puts 1BRs at $2,579-$2,689, above the $2,600 ceiling unless a special applies",
+   "Same developer as Medici, whose 1BRs are 617-699 sq ft (too small)"
+  ],
+  "listing_url": "https://lucidrents.com/CA/Los-Angeles/building/downtown/1221-w-3rd-st",
+  "sources": [
+   "https://lucidrents.com/CA/Los-Angeles/building/downtown/1221-w-3rd-st",
+   "https://redfin.com/neighborhood/547484/CA/Los-Angeles/Westlake-North/1-bedroom-apartments-for-rent",
+   "https://www.redfin.com/zipcode/90017/apartments-for-rent",
+   "https://www.veryapt.com/Apartments-L2183-los-angeles-90017?page=2"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": 297,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "washer/dryer in unit",
+    "9 ft ceilings",
+    "large picture windows"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Seen 2026-10-26: Lucid Rents Mar 2026 1BR $2,579-$2,689; Redfin $2,459 undated.",
+   "website": null,
+   "leasing_phone": null
+  }
+ },
+ {
+  "name": "Sixty 1 Eighty",
+  "address": "6180 Aldama St, Los Angeles, CA 90042",
+  "area": "NEW: Highland Park",
+  "lat": 34.117,
+  "lng": -118.185,
+  "geocode_note": "approximate coordinates estimated from street location (no geocoder available; page fetches blocked) - verify",
+  "landlord": "company",
+  "owner_type": "unknown",
+  "platform": "VeryApt (search snippet)",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1BR/2BA",
+  "sqft": null,
+  "base_rent": 2100,
+  "effective_rent": null,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "VeryApt: 1 bed / 2 bath from $2,100+ (undated); VeryApt says it is not currently accepting inquiries for this building, so pricing may be stale or units leased. Low-rise.",
+  "washer_dryer": "yes",
+  "central_ac": "yes",
+  "central_ac_evidence": "VeryApt listing tags 'central A/C' (aggregator tag; verify)",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "Square footage unknown (a 1BR/2BA layout suggests 700+ but unconfirmed)",
+   "Only source is one aggregator page that is not taking inquiries",
+   "Year built unknown"
+  ],
+  "listing_url": "https://www.veryapt.com/Apartments-L1336-los-angeles-highland-park",
+  "sources": [
+   "https://www.veryapt.com/Apartments-L1336-los-angeles-highland-park",
+   "https://www.veryapt.com/Apartments-L7628-los-angeles-90042?page=1"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "yes",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "in-unit washer/dryer",
+    "private balcony",
+    "central A/C (per VeryApt)"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Seen 2026-10-26: VeryApt 1BR/2BA from $2,100+, not accepting inquiries.",
+   "website": null,
+   "leasing_phone": null
+  }
+ },
+ {
+  "name": "One Santa Fe",
+  "address": "300 S Santa Fe Ave, Los Angeles, CA 90013",
+  "area": "Downtown LA – Arts District",
+  "lat": 34.0466,
+  "lng": -118.2313,
+  "geocode_note": "approximate coordinates estimated from street location (no geocoder available; page fetches blocked) - verify",
+  "landlord": "company",
+  "owner_type": "institutional",
+  "platform": "Redfin (search snippet)",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1BR (sq ft not found)",
+  "sqft": null,
+  "base_rent": 2232,
+  "effective_rent": null,
+  "special": "'1 MONTH FREE' banner appeared near the One Santa Fe entry on Redfin's Arts District page, but may belong to a neighboring building",
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Redfin Arts District page: 1BR from $2,232, studio $1,990, 34 units available (undated).",
+  "washer_dryer": "unclear",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Not found in snippets",
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "1BR square footage unknown - starting price likely applies to the smallest 1BR; confirm a 700+ sq ft plan is under $2,600",
+   "Laundry/AC not verified in this pass"
+  ],
+  "listing_url": "https://www.redfin.com/neighborhood/91/CA/Los-Angeles/Arts-District/cheap-apartments-for-rent",
+  "sources": [
+   "https://www.redfin.com/neighborhood/91/CA/Los-Angeles/Arts-District/cheap-apartments-for-rent"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Seen 2026-10-26: Redfin 1BR from $2,232; 34 units available (undated).",
+   "website": null,
+   "leasing_phone": null
+  }
+ },
+ {
+  "name": "6633 Yucca St, Unit 203",
+  "address": "6633 Yucca St #203, Los Angeles, CA 90028",
+  "area": "Hollywood",
+  "lat": 34.104,
+  "lng": -118.3338,
+  "geocode_note": "approximate coordinates estimated from street location (no geocoder available; page fetches blocked) - verify",
+  "landlord": "company",
+  "owner_type": "unknown (multi-unit building, small manager)",
+  "platform": "ApartmentIQ / Rentler / ApartmentAdvisor (search snippets)",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1BR/1BA",
+  "sqft": 750,
+  "base_rent": 2095,
+  "effective_rent": null,
+  "special": "Other listings for this building advertise '1 month free on select units'",
+  "parking_fee": 0,
+  "seen_on": "2026-10-26",
+  "units_note": "ApartmentIQ: Unit 203, 750 sq ft, $2,095, central AC, dishwasher, free parking, private balcony, rooftop pool, cats/dogs OK. Other listings: 850 sq ft at $2,150 and Unit 202 850 sq ft at $2,195. Sizes conflict across sites.",
+  "washer_dryer": "no",
+  "central_ac": "yes",
+  "central_ac_evidence": "ApartmentIQ listing: 'central A/C and heat'",
+  "dishwasher": "yes",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "Laundry appears shared (laundry facilities on every floor) - likely FAILS in-unit W/D; included only for the rare fully-matching size/AC/price combo",
+   "Square footage conflicts between listings (750 vs 850)",
+   "Year built unknown"
+  ],
+  "listing_url": "https://edge.apartmentiq.io/los-angeles-ca/hollywood",
+  "sources": [
+   "https://edge.apartmentiq.io/los-angeles-ca/hollywood",
+   "https://www.apartmentadvisor.com/details/6633-yucca-st-los-angeles-ca-90028",
+   "https://www.rentler.com/places-for-rent/ca/los-angeles/6633-yucca-st/12988132",
+   "https://lucidrents.com/CA/Los-Angeles/building/hollywood/6633-yucca-st"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": 0,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "yes",
+   "dogs": "yes",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "garage",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "yes",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "yes",
+   "controlled_access": "yes",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "yes",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "central A/C and heat",
+    "dishwasher",
+    "private balcony"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Seen 2026-10-26 via undated snippets: #203 750 sq ft $2,095; #202 850 sq ft $2,195.",
+   "website": null,
+   "leasing_phone": null
+  }
+ }
+]

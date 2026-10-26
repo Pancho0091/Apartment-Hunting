@@ -1,0 +1,931 @@
+{
+ "neighborhoods": [
+  {
+   "neighborhood": "West Hollywood",
+   "lat": 34.09,
+   "lng": -118.3617,
+   "freeway": {
+    "score": 3,
+    "nearest": [
+     "US-101 (Highland Ave / Hollywood Bl on-ramps, ~10-12 min from central WeHo)",
+     "I-10 (La Cienega Bl on-ramp, ~12-15 min)"
+    ],
+    "note": "No freeway inside the city; every trip starts on congested surface streets. drive times are estimates from typical routing, not measured"
+   },
+   "traffic": {
+    "score": 3,
+    "note": "Santa Monica Bl, La Cienega, Fairfax, Sunset and Melrose are slow at peak and on weekend nights; La Cienega to I-10 is a chronic crawl."
+   },
+   "coffee": {
+    "score": 8,
+    "cafes": [
+     "Verve Coffee Roasters \u2013 Melrose Ave, walkable, laptop-friendly (Time Out: big indoor-outdoor space full of laptops)",
+     "Alfred Coffee \u2013 Melrose Place, walkable, more scene than workspace",
+     "Strings of Life \u2013 Huntley Dr, free Wi-Fi, limited seating",
+     "La Colombe \u2013 West Hollywood, indoor + outdoor tables",
+     "Urth Caffe \u2013 Melrose Ave, big patio (multi-roaster/organic, busy)"
+    ],
+    "note": "Dense cafe scene along Melrose/Santa Monica Bl; many LA cafes impose 2-3 hr laptop limits on weekends."
+   },
+   "walk": {
+    "score": 8,
+    "walk_score": null,
+    "note": "Walk Score not retrieved (not verified this round (web-search budget exhausted)); WeHo is compact, flat and widely regarded as one of the most walkable parts of LA County."
+   },
+   "quiet": {
+    "score": 3,
+    "note": "Sunset Strip and Santa Monica Bl nightlife, late-night crowds, frequent sirens/helicopters. Quieter pockets: West Hollywood West and residential blocks east of Fairfax/near Formosa, but still urban."
+   },
+   "safety": {
+    "score": 3,
+    "violent_per_1k": 7.7,
+    "property_per_1k": 48.2,
+    "year": "2025",
+    "source": "Eufy blog table (263 violent / 1,642 property reports, pop 34,048) \u2013 per-1k computed by me; commercial blog, verify vs FBI/LASD",
+    "note": "Property crime roughly double the LA city average, inflated by large nightlife visitor population. WeHo Online: 2025 overall crime -12%, aggravated assaults -31% (164\u2192113), robberies ~flat (85\u219287)."
+   },
+   "lax": {
+    "score": 6,
+    "minutes_offpeak": 28,
+    "minutes_peak": 55,
+    "note": "La Cienega Bl south to I-405/Century Bl or straight down La Cienega. drive times are estimates from typical routing, not measured"
+   },
+   "nightlife": {
+    "score": 10,
+    "nearest_district": "Sunset Strip / Santa Monica Bl (in city)",
+    "drive_minutes": 3,
+    "note": "Nightlife is on the doorstep \u2013 great for access, bad for quiet."
+   },
+   "gyms": {
+    "score": 10,
+    "examples": [
+     "Equinox West Hollywood (Sunset)",
+     "Crunch (West Hollywood)",
+     "Barry's / boutique studios on Santa Monica Bl"
+    ]
+   },
+   "services": {
+    "score": 9,
+    "note": "Multiple grocers (Whole Foods, Trader Joe's, Pavilions, Gelson's area) and pharmacies within minutes; Amazon lockers common. Specific branches not verified this round (web-search budget exhausted)."
+   },
+   "rail": {
+    "score": 3,
+    "nearest_station": "D Line Wilshire/La Cienega (~1.5 mi south)",
+    "line": "Metro D Line",
+    "note": "Opening status of D Line section 1 not verified this round (web-search budget exhausted); otherwise bus only (Santa Monica Bl lines)."
+   },
+   "airports_other": "LGB ~40 min, SNA ~55 min off-peak (estimates)",
+   "summary": "Best coffee/walk density and nightlife of this batch, but it fails the client's top weight: freeway access is 10-15 min of stop-and-go, traffic is among the worst on the Westside, and the city has high property-crime rates and nightlife noise. Only works if a quiet side street is found and freeway speed matters less than walkability.",
+   "sources": [
+    "https://www.timeout.com/los-angeles/restaurants/the-best-coffee-shops-in-west-hollywood",
+    "https://www.timeout.com/los-angeles/restaurants/verve-coffee-roasters-melrose",
+    "https://layersofbeauty.com/best-coffee-shops-west-hollywood/",
+    "https://www.eufy.com/blogs/security-system/most-dangerous-cities-in-california",
+    "https://wehoonline.com/west-hollywood-crime-dropped-12-percent-robberies-doubled-2025/",
+    "https://www.zumper.com/rent-research/west-hollywood-ca"
+   ],
+   "extras": {
+    "median_1br_rent": 2550,
+    "rent_source": "Zumper, Jun 2026 (text also says $2,526)",
+    "rent_trend": "+4% YoY 1BR (Zumper Jun 2026); all-unit average -2% YoY (Zumper Sep 2026)",
+    "summer_high_f": null,
+    "marine_layer": "some \u2013 about 8 mi from the coast; some June gloom, warmer than the Westside",
+    "fire_hazard": "CAL FIRE FHSZ: none in the flats; hillside streets north of Sunset are in the VHFHSZ (not verified this round (web-search budget exhausted))",
+    "flood_zone": null,
+    "airport_noise": "none notable from LAX; frequent helicopters (LASD/LAPD/news)",
+    "parks": [
+     "West Hollywood Park",
+     "Plummer Park",
+     "Kings Road Park"
+    ],
+    "farmers_markets": [
+     "Monday West Hollywood Farmers Market (Plummer Park) \u2013 verify day",
+     "Sunday Melrose Place Farmers Market"
+    ],
+    "fiber": "AT&T Fiber / Frontier / Spectrum availability not verified this round (web-search budget exhausted); check address on att.com/fiber",
+    "vibe": "Lively, gay-friendly, walkable and expensive; great cafes, but quiet only on select side streets."
+   }
+  },
+  {
+   "neighborhood": "West LA / Sawtelle",
+   "lat": 34.039,
+   "lng": -118.444,
+   "freeway": {
+    "score": 9,
+    "nearest": [
+     "I-405 (Santa Monica Bl / Wilshire / Olympic ramps, ~2-4 min)",
+     "I-10 (Bundy Dr or Centinela Ave, ~5 min)"
+    ],
+    "note": "Sits right on the 405 and close to the 10. drive times are estimates from typical routing, not measured"
+   },
+   "traffic": {
+    "score": 3,
+    "note": "Adjacent I-405 (Sepulveda Pass / Westside) is among the worst corridors in the region; Santa Monica Bl, Olympic, Bundy and Sawtelle back up at peak. Freeway proximity is excellent, flow is not."
+   },
+   "coffee": {
+    "score": 6,
+    "cafes": [
+     "Coffee Tomo \u2013 Mississippi Ave just off Sawtelle, roasts in-house, small",
+     "10 Speed Coffee \u2013 1947 Sawtelle Bl, walkable (review Nov 2025)",
+     "Alfred Coffee \u2013 Sawtelle (current status unverified)",
+     "Balconi Coffee \u2013 CLOSED per Time Out"
+    ],
+    "note": "Sawtelle Japantown is more ramen/boba/dessert than specialty coffee; 2-3 real options within a 10-min walk."
+   },
+   "walk": {
+    "score": 8,
+    "walk_score": 87,
+    "note": "Redfin neighborhood Walk Score 87; individual addresses on Sawtelle/Santa Monica Bl 89-95."
+   },
+   "quiet": {
+    "score": 5,
+    "note": "405 roar on blocks next to the freeway; Sawtelle Bl crowds at night; side streets between Sawtelle and Bundy are calmer residential."
+   },
+   "safety": {
+    "score": 6,
+    "violent_per_1k": null,
+    "property_per_1k": null,
+    "year": "n/a",
+    "source": "LAPD West LA Area \u2013 no 2025 neighborhood rate found",
+    "note": "Crosstown neighborhood data could not be fetched (DNS failure). Westside generally below city-average violent crime; car break-ins common around Sawtelle restaurants. Score is a judgment, not data."
+   },
+   "lax": {
+    "score": 8,
+    "minutes_offpeak": 20,
+    "minutes_peak": 45,
+    "note": "I-405 south to Century Bl; peak 405 is unpredictable. drive times are estimates from typical routing, not measured"
+   },
+   "nightlife": {
+    "score": 8,
+    "nearest_district": "Sawtelle Japantown (walk) / Santa Monica",
+    "drive_minutes": 10,
+    "note": "Restaurants/bars walkable; Santa Monica and Westwood ~10 min."
+   },
+   "gyms": {
+    "score": 9,
+    "examples": [
+     "Equinox (Westside locations)",
+     "24 Hour Fitness (West LA)",
+     "boutique climbing/fitness on Sawtelle/Olympic \u2013 not verified this round (web-search budget exhausted)"
+    ]
+   },
+   "services": {
+    "score": 9,
+    "note": "Japanese markets (Nijiya/Mitsuwa area), Whole Foods/TJ's/Ralphs nearby on the Westside; specific branches not verified this round (web-search budget exhausted)."
+   },
+   "rail": {
+    "score": 4,
+    "nearest_station": "Expo/Bundy or Expo/Sepulveda (~1-1.5 mi)",
+    "line": "Metro E Line",
+    "note": "Not a 5-min walk; bike/bus."
+   },
+   "airports_other": "LGB ~35-40 min, SNA ~50 min off-peak (estimates)",
+   "summary": "Strong freeway access (405/10 within minutes), walkable Sawtelle strip and close LAX, but the 405 itself is a notorious bottleneck and coffee is thinner than the food scene suggests. Good for a remote worker who drives off-peak.",
+   "sources": [
+    "https://www.redfin.com/neighborhood/9168/CA/Los-Angeles/Sawtelle/mls-listings",
+    "https://www.timeout.com/los-angeles/restaurants/the-best-coffee-shops-in-west-la",
+    "https://www.timeout.com/los-angeles/restaurants/balconi-coffee-company",
+    "https://frankiapp.com/business/10-speed-coffee-223741.md",
+    "https://www.renthop.com/average-rent-in/west-los-angeles/los-angeles-ca",
+    "https://tripalink.com/blog/things-to-know-before-you-move-to-west-la-and-sawtelle-apartments"
+   ],
+   "extras": {
+    "median_1br_rent": 2500,
+    "rent_source": "RentHop, Jun 2026 (West Los Angeles median 1BR)",
+    "rent_trend": "-7.4% YoY (RentHop Jun 2026)",
+    "summer_high_f": null,
+    "marine_layer": "some/strong \u2013 ~3 mi from the ocean; frequent May-June gray, mild summers",
+    "fire_hazard": "CAL FIRE FHSZ: none (flat urban area) \u2013 not verified this round (web-search budget exhausted)",
+    "flood_zone": null,
+    "airport_noise": "none notable from LAX; Santa Monica Airport traffic audible on southern edge (not verified this round (web-search budget exhausted))",
+    "parks": [
+     "Stoner Recreation Center",
+     "Westwood Park"
+    ],
+    "farmers_markets": [
+     "Wednesday Santa Monica Farmers Market (Arizona Ave, ~10 min drive)"
+    ],
+    "fiber": "AT&T Fiber / Frontier / Spectrum availability not verified this round (web-search budget exhausted); check address on att.com/fiber",
+    "vibe": "Busy, food-centric Japantown strip with calm side streets; fast to the 405, but you will live with its traffic."
+   }
+  },
+  {
+   "neighborhood": "Mar Vista / Del Rey",
+   "lat": 34.002,
+   "lng": -118.43,
+   "freeway": {
+    "score": 8,
+    "nearest": [
+     "I-405 (Venice Bl / Washington Bl / Culver Bl ramps, ~3-5 min)",
+     "SR-90 Marina Fwy (~5 min)",
+     "I-10 (Centinela/Bundy, ~6-8 min)"
+    ],
+    "note": "drive times are estimates from typical routing, not measured"
+   },
+   "traffic": {
+    "score": 4,
+    "note": "405 near the 90/10 is congested at peak; Venice Bl, Centinela and Washington slow but moving."
+   },
+   "coffee": {
+    "score": 5,
+    "cafes": [
+     "Alana's Coffee Roasters \u2013 12511 Venice Bl, own micro-batch roaster",
+     "Mavro Kafe \u2013 12224 Venice Bl, stylish, daily 7am-6pm",
+     "Blueys \u2013 12825 Venice Bl, cafe/restaurant"
+    ],
+    "note": "Cluster on Venice Bl near Grand View; walkable only if living near Venice Bl. Del Rey proper is thinner."
+   },
+   "walk": {
+    "score": 7,
+    "walk_score": 75,
+    "note": "Walk Score 75 (ranked ~35th in LA); varies 47-86 by block."
+   },
+   "quiet": {
+    "score": 7,
+    "note": "Mostly single-family/low-rise residential, calm streets; 405 noise near Sepulveda; northern Mar Vista under Santa Monica Airport approach (not verified this round (web-search budget exhausted))."
+   },
+   "safety": {
+    "score": 7,
+    "violent_per_1k": null,
+    "property_per_1k": null,
+    "year": "n/a",
+    "source": "goodmigrations.com (qualitative)",
+    "note": "Described as below-average violent and property crime for LA; no official rate found. A rental site cites 4 violent / 289 property incidents in 90066 over 2 yrs \u2013 implausibly low, not used."
+   },
+   "lax": {
+    "score": 9,
+    "minutes_offpeak": 15,
+    "minutes_peak": 30,
+    "note": "Centinela/Sepulveda or 405 south. drive times are estimates from typical routing, not measured"
+   },
+   "nightlife": {
+    "score": 9,
+    "nearest_district": "Culver City downtown / Abbot Kinney (Venice)",
+    "drive_minutes": 10,
+    "note": "Plus Accomplice Bar on Grand View locally."
+   },
+   "gyms": {
+    "score": 7,
+    "examples": [
+     "gyms in Culver City / Marina del Rey (not verified this round (web-search budget exhausted))"
+    ]
+   },
+   "services": {
+    "score": 8,
+    "note": "Grocers along Venice/Washington and Culver City (Rustic Kitchen Market local; chain branches not verified this round (web-search budget exhausted))."
+   },
+   "rail": {
+    "score": 3,
+    "nearest_station": "Expo/Bundy or Culver City (~2 mi)",
+    "line": "Metro E Line",
+    "note": "Bus-based area (Transit Score 43)."
+   },
+   "airports_other": "LGB ~35 min, SNA ~50 min off-peak (estimates)",
+   "summary": "Quiet, safe-feeling Westside residential area with 405/90 access, the best LAX time here, and a small Venice Bl coffee cluster. Trade-off: 405 congestion and coffee that is only walkable from the Venice Bl side.",
+   "sources": [
+    "https://www.timeout.com/los-angeles/restaurants/mavro-kafe",
+    "https://www.yahoo.com/lifestyle/stroll-mar-vista-155500178.html",
+    "https://www.walkscore.com/score/-Mar Vista--CA",
+    "https://goodmigrations.com/city-guides/los-angeles/mar-vista/",
+    "https://lucidrents.com/CA/Los-Angeles/building/mar-vista/13241-w-lake-st",
+    "https://www.apartments.com/local-guide/mar-vista-los-angeles-ca/",
+    "https://renthop.com/average-rent-in/mar-vista-los-angeles-ca"
+   ],
+   "extras": {
+    "median_1br_rent": null,
+    "rent_source": "No clean 2026 median; sources range $2,300-2,800 (Apartments.com undated $2,316; Lucid Rents 90066 bldg median $2,480 Mar 2026; RentHop $2,800 Feb 2025)",
+    "rent_trend": "Apartments.com shows -9% YoY (undated)",
+    "summer_high_f": null,
+    "marine_layer": "strong \u2013 ~3 mi from the coast; cool summers, frequent June gloom",
+    "fire_hazard": "CAL FIRE FHSZ: none (flats) \u2013 not verified this round (web-search budget exhausted)",
+    "flood_zone": null,
+    "airport_noise": "Santa Monica Airport approaches over northern Mar Vista; LAX departures mostly over the ocean (not verified this round (web-search budget exhausted))",
+    "parks": [
+     "Mar Vista Recreation Center",
+     "Ballona Creek Bike Path"
+    ],
+    "farmers_markets": [
+     "Sunday Mar Vista Farmers Market (Grand View Bl)"
+    ],
+    "fiber": "AT&T Fiber / Frontier / Spectrum availability not verified this round (web-search budget exhausted); check address on att.com/fiber",
+    "vibe": "Low-key, family-ish Westside with cool ocean air and a short walk-to-coffee strip on Venice Bl."
+   }
+  },
+  {
+   "neighborhood": "Jefferson Park / West Adams",
+   "lat": 34.027,
+   "lng": -118.329,
+   "freeway": {
+    "score": 9,
+    "nearest": [
+     "I-10 (Crenshaw / Arlington / Western ramps, ~2-4 min)",
+     "I-110 (~8 min)"
+    ],
+    "note": "drive times are estimates from typical routing, not measured"
+   },
+   "traffic": {
+    "score": 5,
+    "note": "I-10 is congested toward DTLA at peak but not the worst; Crenshaw, Jefferson, Adams are typical LA arterials."
+   },
+   "coffee": {
+    "score": 3,
+    "cafes": [
+     "Highly Likely \u2013 4310 W Jefferson Bl, cafe by day/dinner at night, walkable",
+     "Adams Coffee Shop \u2013 5359 W Adams Bl (status/quality unverified)",
+     "Red Bay Coffee \u2013 announced for Jefferson Park (opening unconfirmed)"
+    ],
+    "note": "Only one confirmed specialty-leaning cafe; Culver City coffee is a ~10 min drive."
+   },
+   "walk": {
+    "score": 7,
+    "walk_score": 76,
+    "note": "Walk Score 76 for West Adams (rank ~31); Jefferson Park not separately retrieved."
+   },
+   "quiet": {
+    "score": 5,
+    "note": "Historic craftsman blocks can be calm, but I-10 freeway noise near the 10, and frequent LAPD helicopters in South/Southwest LA."
+   },
+   "safety": {
+    "score": 3,
+    "violent_per_1k": null,
+    "property_per_1k": 33.4,
+    "year": "2019 (property only)",
+    "source": "Crosstown LA 2019 property-crime table (West Adams 3,338/100k)",
+    "note": "No 2025 rates found. Neighborhood guides describe West Adams as high violent crime and above-average property crime; DoorProfit index 51% above national. Jefferson Park row in Crosstown snippet unlabeled, not used."
+   },
+   "lax": {
+    "score": 7,
+    "minutes_offpeak": 22,
+    "minutes_peak": 40,
+    "note": "La Brea/La Cienega south or I-10\u2192I-405. drive times are estimates from typical routing, not measured"
+   },
+   "nightlife": {
+    "score": 7,
+    "nearest_district": "Culver City / Jefferson Bl strip / DTLA",
+    "drive_minutes": 12,
+    "note": "Local restaurant row on W Jefferson (Highly Likely, Maydan)."
+   },
+   "gyms": {
+    "score": 6,
+    "examples": [
+     "gyms at Baldwin Hills Crenshaw Plaza area (not verified this round (web-search budget exhausted))"
+    ]
+   },
+   "services": {
+    "score": 6,
+    "note": "Grocers on Crenshaw/La Brea and Baldwin Hills Crenshaw Plaza; fewer premium grocers. Specific branches not verified this round (web-search budget exhausted)."
+   },
+   "rail": {
+    "score": 6,
+    "nearest_station": "Expo/Crenshaw or Farmdale (~10-15 min walk)",
+    "line": "Metro E Line / K Line",
+    "note": "Good rail coverage for the price."
+   },
+   "airports_other": "LGB ~30 min, SNA ~45 min off-peak (estimates)",
+   "summary": "Cheapest rents and excellent I-10 access, close to Culver City and LAX, but coffee is sparse and safety data (where findable) is the weakest in this batch. Suits a price-sensitive driver who doesn't need walk-to cafes.",
+   "sources": [
+    "https://www.timeout.com/los-angeles/restaurants/highly-likely",
+    "https://www.gayot.com/restaurants/zipcode-90016-ca_2la.html",
+    "https://xtown.la/2020/01/30/la-property-crime-sharpest-drop-in-a-decade/",
+    "https://www.doorprofit.com/crime-statistics/city/Los_Angeles-CA/neighborhood/jefferson_park/",
+    "https://goodmigrations.com/?p=3886",
+    "https://lucidrents.com/CA/Los-Angeles/building/west-adams/2801-west-blvd",
+    "https://www.renthop.com/average-rent-in/west-adams-los-angeles-ca"
+   ],
+   "extras": {
+    "median_1br_rent": null,
+    "rent_source": "No reliable median: Lucid Rents 90016 HUD FMR 1BR $2,270 / listing medians ~$1,890 (Mar 2026); RentHop $950 (Jun 2026) is an outlier; PadMapper listing $2,495 (Jul 2026)",
+    "rent_trend": null,
+    "summer_high_f": null,
+    "marine_layer": "some \u2013 inland ~8 mi; warmer than the Westside",
+    "fire_hazard": "CAL FIRE FHSZ: none (flats) \u2013 not verified this round (web-search budget exhausted)",
+    "flood_zone": null,
+    "airport_noise": "LAX arrival path lies south (over Inglewood); not usually overhead (not verified this round (web-search budget exhausted)); helicopters frequent",
+    "parks": [
+     "Kenneth Hahn State Recreation Area (~5 min drive)",
+     "Baldwin Hills Scenic Overlook"
+    ],
+    "farmers_markets": [],
+    "fiber": "AT&T Fiber / Frontier / Spectrum availability not verified this round (web-search budget exhausted); check address on att.com/fiber",
+    "vibe": "Historic, rapidly changing neighborhood with grand old houses; affordable, but few walk-to cafes."
+   }
+  },
+  {
+   "neighborhood": "Los Feliz",
+   "lat": 34.107,
+   "lng": -118.288,
+   "freeway": {
+    "score": 8,
+    "nearest": [
+     "US-101 (Vermont Ave / Hollywood Bl, ~3-5 min)",
+     "I-5 (Los Feliz Bl, ~5-7 min)"
+    ],
+    "note": "drive times are estimates from typical routing, not measured"
+   },
+   "traffic": {
+    "score": 4,
+    "note": "101 through Hollywood/DTLA is a chronic peak slog; Los Feliz Bl toward the 5 and Hillhurst/Vermont are busy."
+   },
+   "coffee": {
+    "score": 8,
+    "cafes": [
+     "Maru Coffee \u2013 Los Feliz, minimalist pour-overs, walkable",
+     "Bru Coffeebar \u2013 Los Feliz Village (Vermont), single-origin direct trade, upstairs loft good for lingering",
+     "H Coffee House \u2013 Hillhurst at Kingswell, bungalow patios, Wi-Fi but no outlets",
+     "Gardens Coffee & Tea \u2013 Los Feliz"
+    ],
+    "note": "Plus Silver Lake cafes a few minutes away."
+   },
+   "walk": {
+    "score": 8,
+    "walk_score": null,
+    "note": "Walk Score not retrieved; Los Feliz Village (Vermont/Hillhurst) is very walkable, hillside streets north of Los Feliz Bl are not."
+   },
+   "quiet": {
+    "score": 6,
+    "note": "Bars/restaurants on Vermont and Hillhurst; Griffith Park traffic and helicopters; quiet streets in the flats west of Hillhurst and in the hills."
+   },
+   "safety": {
+    "score": 6,
+    "violent_per_1k": null,
+    "property_per_1k": null,
+    "year": "n/a",
+    "source": "Crosstown LA (only Q1-2019 overall rate found)",
+    "note": "No current per-capita rate found; Q1 2019 overall crime rate 1,333/100k for the quarter, +6% YoY. Car break-ins near Griffith Park trailheads common. Score is a judgment."
+   },
+   "lax": {
+    "score": 5,
+    "minutes_offpeak": 33,
+    "minutes_peak": 60,
+    "note": "101\u2192110\u2192105 or 101\u2192I-10\u2192405. drive times are estimates from typical routing, not measured"
+   },
+   "nightlife": {
+    "score": 10,
+    "nearest_district": "Los Feliz Village / Silver Lake / Hollywood",
+    "drive_minutes": 5,
+    "note": ""
+   },
+   "gyms": {
+    "score": 8,
+    "examples": [
+     "gyms in Los Feliz/Silver Lake (not verified this round (web-search budget exhausted))"
+    ]
+   },
+   "services": {
+    "score": 8,
+    "note": "Grocers along Hillhurst/Vermont and Los Feliz Bl; specific branches not verified this round (web-search budget exhausted)."
+   },
+   "rail": {
+    "score": 6,
+    "nearest_station": "Vermont/Sunset (~5-10 min walk from southern Los Feliz)",
+    "line": "Metro B Line",
+    "note": ""
+   },
+   "airports_other": "LGB ~40 min, SNA ~55 min off-peak (estimates)",
+   "summary": "Top-tier walkable coffee and quick access to the 101/5, with Griffith Park next door; trade-offs are the 101's chronic congestion, long LAX trips and fire risk in the hills.",
+   "sources": [
+    "https://www.timeout.com/los-angeles/restaurants/the-best-coffee-shops-in-los-feliz",
+    "https://www.tryperdiem.com/guide/best-coffee-spots-near-griffith-observatory-los-feliz",
+    "https://thebettervacation.com/los-angeles/best-coffee-shops-in-los-angeles/",
+    "https://xtown.la/2019/05/17/la-crime-rate-falls-in-first-quarter/",
+    "https://www.renthop.com/average-rent-in/los-feliz-los-angeles-ca",
+    "https://edge.apartmentiq.io/los-angeles-ca/los-feliz",
+    "https://www.theeastsiderla.com/news/fire-hazard-zones-may-expand-across-the-eastside-under-new-maps/article_1121ab13-ab36-4610-b176-9687fbefe679.html"
+   ],
+   "extras": {
+    "median_1br_rent": 2300,
+    "rent_source": "RentHop, Jun 2026 (ApartmentIQ $2,250; Apartments.com ~$2,169)",
+    "rent_trend": "-12.5% YoY (RentHop Jun 2026)",
+    "summer_high_f": null,
+    "marine_layer": "little \u2013 inland ~12 mi; hot summer afternoons, AC matters",
+    "fire_hazard": "CAL FIRE FHSZ: very high in the hills (LAFD); new state maps extend the zone to the flats south of Los Feliz Bl (adoption status unconfirmed)",
+    "flood_zone": null,
+    "airport_noise": "none notable from LAX; Burbank traffic occasionally, helicopters common",
+    "parks": [
+     "Griffith Park",
+     "Barnsdall Art Park"
+    ],
+    "farmers_markets": [
+     "Sunday Hollywood Farmers Market (Ivar/Selma, ~10 min)",
+     "Silver Lake Farmers Market (Tue/Sat)"
+    ],
+    "fiber": "AT&T Fiber / Frontier / Spectrum availability not verified this round (web-search budget exhausted); check address on att.com/fiber",
+    "vibe": "Leafy, creative and walkable with excellent cafes; lively on Vermont/Hillhurst, calm a block or two away."
+   }
+  },
+  {
+   "neighborhood": "Atwater Village",
+   "lat": 34.117,
+   "lng": -118.256,
+   "freeway": {
+    "score": 9,
+    "nearest": [
+     "I-5 (Los Feliz Bl / Glendale Bl, ~2-3 min)",
+     "SR-2 (~4-5 min)",
+     "SR-134 (~5-6 min)"
+    ],
+    "note": "drive times are estimates from typical routing, not measured"
+   },
+   "traffic": {
+    "score": 6,
+    "note": "I-5 through Glendale and the 5/134 interchange congest at peak but are not the worst; Glendale Bl and Los Feliz Bl usually move."
+   },
+   "coffee": {
+    "score": 7,
+    "cafes": [
+     "Kaldi Coffee \u2013 Glendale Bl, long-stay laptop spot with window couch",
+     "Proof Bakery \u2013 3156 Glendale Bl, Cognoscenti coffee, no outlets (grab-and-go)",
+     "Black Elephant Coffee \u2013 3195 Glendale Bl, full espresso bar, 7am-6pm",
+     "Trystero Coffee \u2013 small home roaster with open hours (status unverified)"
+    ],
+    "note": "All on the Glendale Bl strip; Silver Lake/Los Feliz cafes ~5-10 min drive."
+   },
+   "walk": {
+    "score": 7,
+    "walk_score": 73,
+    "note": "Walk Score 73 (rank ~34 in LA), Redfin agrees."
+   },
+   "quiet": {
+    "score": 7,
+    "note": "Small-town residential grid; I-5 hum on the west edge by the LA River; Glendale Bl restaurants modest."
+   },
+   "safety": {
+    "score": 5,
+    "violent_per_1k": 9.5,
+    "property_per_1k": null,
+    "year": "2019",
+    "source": "Crosstown LA 2019 table (946/100k, down from 1,026 in 2018)",
+    "note": "Column labels in the snippet were unclear \u2013 this may be violent crime; old data. No 2025 figure found."
+   },
+   "lax": {
+    "score": 5,
+    "minutes_offpeak": 35,
+    "minutes_peak": 65,
+    "note": "I-5\u2192I-10\u2192I-405 or 2\u2192101\u2192110\u2192105. drive times are estimates from typical routing, not measured"
+   },
+   "nightlife": {
+    "score": 9,
+    "nearest_district": "Glendale Bl (walk) / Silver Lake / Los Feliz",
+    "drive_minutes": 8,
+    "note": ""
+   },
+   "gyms": {
+    "score": 7,
+    "examples": [
+     "gyms in Atwater/Glendale (not verified this round (web-search budget exhausted))"
+    ]
+   },
+   "services": {
+    "score": 8,
+    "note": "Glendale big-box retail and Galleria ~5 min; local grocers on Glendale Bl. Specific branches not verified this round (web-search budget exhausted)."
+   },
+   "rail": {
+    "score": 3,
+    "nearest_station": "Glendale Transportation Center (~1.5 mi)",
+    "line": "Metrolink",
+    "note": "No Metro rail nearby."
+   },
+   "airports_other": "Burbank ~15 min; LGB ~40 min, SNA ~55 min off-peak (estimates)",
+   "summary": "Best freeway access of the Eastside picks (5/2/134 within minutes) with a walkable Glendale Bl coffee strip and a quiet village feel. Trade-offs: long LAX drives, hot summers, and only old crime data.",
+   "sources": [
+    "https://www.timeout.com/los-angeles/restaurants/kaldi-coffee",
+    "https://www.timeout.com/los-angeles/restaurants/black-elephant-coffee",
+    "https://www.timeout.com/los-angeles/restaurants/the-best-coffee-shops-in-atwater-village",
+    "https://lamag.com/news/street-smart-atwater-village/",
+    "https://walkscore.com/CA/Los_Angeles/Eagle_Rock",
+    "https://www.redfin.com/neighborhood/104/CA/Los-Angeles/Atwater-Village/views",
+    "https://xtown.la/2019/02/21/angelenos-how-safe-is-your-neighborhood/",
+    "https://www.rentcafe.com/average-rent-market-trends/us/ca/los-angeles/atwater-village/"
+   ],
+   "extras": {
+    "median_1br_rent": 2604,
+    "rent_source": "RentCafe, Jun 2026 (average, not median)",
+    "rent_trend": "+3.5% YoY all units (RentCafe Jun 2026)",
+    "summer_high_f": null,
+    "marine_layer": "little \u2013 inland; hot, dry summer afternoons",
+    "fire_hazard": "CAL FIRE FHSZ: flats mostly none (not verified this round (web-search budget exhausted)); Griffith Park edge is very high",
+    "flood_zone": null,
+    "airport_noise": "Burbank (BUR) approaches occasionally audible; none from LAX",
+    "parks": [
+     "Griffith Park",
+     "LA River Greenway / bike path"
+    ],
+    "farmers_markets": [
+     "Sunday Atwater Village Farmers Market (Glendale Bl) \u2013 verify"
+    ],
+    "fiber": "AT&T Fiber / Frontier / Spectrum availability not verified this round (web-search budget exhausted); check address on att.com/fiber",
+    "vibe": "Quiet small-town feel by the LA River with a walkable coffee/restaurant strip and fast freeway access."
+   }
+  },
+  {
+   "neighborhood": "Highland Park / Eagle Rock",
+   "lat": 34.122,
+   "lng": -118.2,
+   "freeway": {
+    "score": 8,
+    "nearest": [
+     "SR-110 Arroyo Seco Pkwy (Ave 43/52/60, ~3-5 min from Highland Park)",
+     "SR-134 and SR-2 (~3-5 min from Eagle Rock)"
+    ],
+    "note": "drive times are estimates from typical routing, not measured"
+   },
+   "traffic": {
+    "score": 6,
+    "note": "The narrow 110 Arroyo Seco slows heavily toward DTLA at peak; York, Figueroa and Colorado Bl are moderate."
+   },
+   "coffee": {
+    "score": 7,
+    "cafes": [
+     "Cafe de Leche \u2013 Highland Park, own roasting since 2017",
+     "Civil Coffee \u2013 5629 N Figueroa St, Intelligentsia, draws remote workers",
+     "Go Get Em Tiger \u2013 5918 N Figueroa St (listed as opening; confirm)",
+     "Found Coffee \u2013 1355 Colorado Bl, Eagle Rock, pour-over",
+     "Swork Coffee \u2013 2160 Colorado Bl, Eagle Rock, calmer",
+     "\u00c0 Bloc \u2013 coffee bar + cycling shop"
+    ],
+    "note": "Good overall, but split between Figueroa/York (HP) and Colorado Bl (ER); 2-3 within a 10-min walk of any one address."
+   },
+   "walk": {
+    "score": 7,
+    "walk_score": 77,
+    "note": "Highland Park 77 (rank ~28), Eagle Rock 70 (rank ~41-43)."
+   },
+   "quiet": {
+    "score": 7,
+    "note": "Figueroa/York bars on weekends; residential hillsides quiet; helicopters occasional."
+   },
+   "safety": {
+    "score": 6,
+    "violent_per_1k": null,
+    "property_per_1k": null,
+    "year": "n/a",
+    "source": "Crosstown LA (2019 partial-period overall rates only)",
+    "note": "Highland Park Q1-2019 overall rate 1,323/100k (-18%), Eagle Rock H1-2019 1,554/100k (-13%); no violent/property split or 2025 data found. Score is a judgment."
+   },
+   "lax": {
+    "score": 4,
+    "minutes_offpeak": 38,
+    "minutes_peak": 70,
+    "note": "110 south through DTLA to the 105. drive times are estimates from typical routing, not measured"
+   },
+   "nightlife": {
+    "score": 9,
+    "nearest_district": "York Bl / Figueroa (HP), Colorado Bl (ER)",
+    "drive_minutes": 5,
+    "note": ""
+   },
+   "gyms": {
+    "score": 7,
+    "examples": [
+     "gyms in HP/Eagle Rock (not verified this round (web-search budget exhausted))"
+    ]
+   },
+   "services": {
+    "score": 7,
+    "note": "Eagle Rock Plaza and Colorado Bl grocers; Highland Park more limited. Specific branches not verified this round (web-search budget exhausted)."
+   },
+   "rail": {
+    "score": 7,
+    "nearest_station": "Highland Park station (Ave 57/Marmion Way)",
+    "line": "Metro A Line",
+    "note": "Walkable for central Highland Park; Eagle Rock has no rail."
+   },
+   "airports_other": "Burbank ~20 min; LGB ~40 min, SNA ~50 min off-peak (estimates)",
+   "summary": "Good coffee and nightlife, decent freeway access via the 110/134/2, and A Line rail in Highland Park. Downsides for this client: the slowest LAX trips in the batch, very-high fire-zone designations and hot summers.",
+   "sources": [
+    "https://lamag.com/dining/best-coffee-shops-highland-park/",
+    "https://thebettervacation.com/los-angeles/best-coffee-shops-in-los-angeles/",
+    "https://walkscore.com/CA/Los_Angeles/Eagle_Rock",
+    "https://xtown.la/2019/05/17/la-crime-rate-falls-in-first-quarter/",
+    "https://xtown.la/2019/08/08/so-far-la-crime-in-2019-is-dipping/",
+    "https://www.renthop.com/average-rent-in/highland-park-los-angeles-ca",
+    "https://affordwhere.com/usa/los-angeles/neighborhood/highland-park",
+    "https://www.theeastsiderla.com/news/fire-hazard-zones-may-expand-across-the-eastside-under-new-maps/article_1121ab13-ab36-4610-b176-9687fbefe679.html",
+    "https://thelalocal.org/public-safety/fire-hazard-maps-eastside-neighborhood/"
+   ],
+   "extras": {
+    "median_1br_rent": 2295,
+    "rent_source": "RentHop, Jul 2026 (Highland Park; no Eagle Rock figure found)",
+    "rent_trend": "+14.7% YoY (RentHop Jul 2026, Highland Park)",
+    "summer_high_f": null,
+    "marine_layer": "little \u2013 inland valley; hot summers, AC important",
+    "fire_hazard": "CAL FIRE FHSZ: very high \u2013 new state maps put most of HP/ER, including stretches of York and Figueroa, in very-high zones (adoption status unconfirmed)",
+    "flood_zone": null,
+    "airport_noise": "none notable from LAX; occasional Burbank traffic",
+    "parks": [
+     "Ernest E. Debs Regional Park",
+     "Arroyo Seco / Sycamore Grove Park",
+     "Eagle Rock Recreation Center"
+    ],
+    "farmers_markets": [
+     "Tuesday Old LA Farmers Market (Highland Park) \u2013 verify",
+     "Eagle Rock Farmers Market \u2013 verify day"
+    ],
+    "fiber": "AT&T Fiber / Frontier / Spectrum availability not verified this round (web-search budget exhausted); check address on att.com/fiber",
+    "vibe": "Creative, hilly Northeast LA with lots of cafes and bars; quiet up the hills, far from the airport."
+   }
+  },
+  {
+   "neighborhood": "Signal Hill / Lakewood",
+   "lat": 33.83,
+   "lng": -118.14,
+   "freeway": {
+    "score": 9,
+    "nearest": [
+     "I-405 (Cherry Ave / Atlantic, ~2-3 min from Signal Hill)",
+     "I-710 (~5 min)",
+     "I-605 (~5-8 min from Lakewood)"
+    ],
+    "note": "drive times are estimates from typical routing, not measured"
+   },
+   "traffic": {
+    "score": 6,
+    "note": "405 near LGB and the 405/605/22 interchange slow at peak; arterials flow far better than central LA."
+   },
+   "coffee": {
+    "score": 3,
+    "cafes": [
+     "Ziggi's Coffee \u2013 5721 Bellflower Bl, Lakewood (drive-thru chain)",
+     "Long Beach specialty cafes in Bixby Knolls / Retro Row ~5-10 min drive (not verified this round (web-search budget exhausted))"
+    ],
+    "note": "No walkable specialty cafe confirmed in Signal Hill or Lakewood; search found none."
+   },
+   "walk": {
+    "score": 4,
+    "walk_score": null,
+    "note": "Not retrieved; suburban, car-oriented layout (shopping centers)."
+   },
+   "quiet": {
+    "score": 7,
+    "note": "Lakewood is quiet tract housing; Signal Hill residential hilltop is calm but near LGB flight path and 405."
+   },
+   "safety": {
+    "score": 6,
+    "violent_per_1k": 4.0,
+    "property_per_1k": 22.0,
+    "year": "undated (likely FBI 2023-24)",
+    "source": "NeighborhoodScout (Lakewood); Signal Hill est. ~3.4 violent / ~22.7 property per 1k from DoorProfit odds (Sep 2026)",
+    "note": "Roughly at or below LA city averages. Conflicting source: Freedom for All Americans lists Signal Hill total ~60/1k (2024) \u2013 likely retail-theft inflated (Towne Center)."
+   },
+   "lax": {
+    "score": 5,
+    "minutes_offpeak": 30,
+    "minutes_peak": 60,
+    "note": "I-405 north. drive times are estimates from typical routing, not measured"
+   },
+   "nightlife": {
+    "score": 8,
+    "nearest_district": "Bixby Knolls / Downtown Long Beach",
+    "drive_minutes": 12,
+    "note": ""
+   },
+   "gyms": {
+    "score": 7,
+    "examples": [
+     "gyms at Signal Hill / Lakewood Center (not verified this round (web-search budget exhausted))"
+    ]
+   },
+   "services": {
+    "score": 9,
+    "note": "Signal Hill Towne Center big-box retail and Lakewood Center mall \u2013 very convenient by car. Specific stores not verified this round (web-search budget exhausted)."
+   },
+   "rail": {
+    "score": 3,
+    "nearest_station": "Willow St or Wardlow (~1.5-2 mi)",
+    "line": "Metro A Line",
+    "note": ""
+   },
+   "airports_other": "LGB ~5-10 min, SNA ~25 min off-peak (estimates)",
+   "summary": "Excellent freeway access, lower rents and LGB minutes away, with suburban calm; but it misses the client's walk-to specialty coffee priority almost entirely.",
+   "sources": [
+    "https://www.doorprofit.com/crime-statistics/city/Signal_Hill-CA/",
+    "https://freedomforallamericans.org/most-dangerous-cities-in-california/",
+    "https://relocationcoordinates.neighborhoodscout.com/ca/lakewood/crime",
+    "https://whatnow.com/los-angeles/restaurants/ziggis-coffee-opens-in-lakewood-ca",
+    "https://www.rentometer.com/average-rent-in/ca/signal-hill-ca",
+    "https://www.padmapper.com/apartments/long-beach-ca/move-in-special",
+    "https://www.renthop.com/average-rent-in/lakewood-ca",
+    "https://www.trulia.com/for_rent/Lakewood,CA/"
+   ],
+   "extras": {
+    "median_1br_rent": 2060,
+    "rent_source": "PadMapper, Jul 2026 (Signal Hill median); Lakewood RentHop Jun 2026 $2,395",
+    "rent_trend": "Signal Hill +3.1% MoM (PadMapper Jul 2026); Lakewood +29.6% YoY (RentHop Jun 2026, looks noisy)",
+    "summer_high_f": null,
+    "marine_layer": "some \u2013 ~4 mi from the coast; milder than inland LA",
+    "fire_hazard": "CAL FIRE FHSZ: none (urban) \u2013 not verified this round (web-search budget exhausted)",
+    "flood_zone": null,
+    "airport_noise": "LGB airport flight paths cross parts of Signal Hill/Lakewood (not verified this round (web-search budget exhausted))",
+    "parks": [
+     "Hilltop Park (Signal Hill)",
+     "El Dorado Regional Park (Long Beach, nearby)",
+     "Mayfair Park (Lakewood)"
+    ],
+    "farmers_markets": [],
+    "fiber": "AT&T Fiber / Frontier / Spectrum availability not verified this round (web-search budget exhausted); check address on att.com/fiber",
+    "vibe": "Quiet, practical suburbia with easy freeways and parking; coffee and walkability mean driving to Long Beach."
+   }
+  },
+  {
+   "neighborhood": "Los Alamitos / Rossmoor",
+   "lat": 33.799,
+   "lng": -118.072,
+   "freeway": {
+    "score": 9,
+    "nearest": [
+     "I-405 (Seal Beach Bl / Valley View, ~3-5 min)",
+     "I-605 (Katella Ave, ~3 min)",
+     "SR-22 (~5 min)"
+    ],
+    "note": "drive times are estimates from typical routing, not measured"
+   },
+   "traffic": {
+    "score": 5,
+    "note": "405/605/22 interchange and 405 into OC/Long Beach are peak bottlenecks; local arterials (Katella, Los Alamitos Bl) flow."
+   },
+   "coffee": {
+    "score": 4,
+    "cafes": [
+     "Local Grind Coffee + Cafe \u2013 10612 Los Alamitos Bl",
+     "Teofilo Coffee Company \u2013 10525 Los Alamitos Bl",
+     "Blk Dot Coffee \u2013 5247 Katella Ave, Cypress (drive)"
+    ],
+    "note": "Directory listings only; quality/laptop policy unverified. Walkable only from the Los Alamitos Bl corridor."
+   },
+   "walk": {
+    "score": 3,
+    "walk_score": null,
+    "note": "Not retrieved; Rossmoor is a 1.5 sq mi postwar suburb with few shops inside it."
+   },
+   "quiet": {
+    "score": 9,
+    "note": "Very calm residential streets; Joint Forces Training Base Los Alamitos military helicopters at times; 405/605 hum near edges."
+   },
+   "safety": {
+    "score": 7,
+    "violent_per_1k": null,
+    "property_per_1k": null,
+    "year": "n/a",
+    "source": "City-Data crime index 164.1 (undated); SpotCrime monthly counts (undated)",
+    "note": "No clean per-capita rate found; indicators suggest low-to-moderate crime typical of OC suburbs. Score is a judgment."
+   },
+   "lax": {
+    "score": 4,
+    "minutes_offpeak": 38,
+    "minutes_peak": 75,
+    "note": "I-405 north the whole way. drive times are estimates from typical routing, not measured"
+   },
+   "nightlife": {
+    "score": 7,
+    "nearest_district": "Seal Beach Main St / Belmont Shore (Long Beach)",
+    "drive_minutes": 12,
+    "note": ""
+   },
+   "gyms": {
+    "score": 6,
+    "examples": [
+     "gyms on Los Alamitos Bl / Katella (not verified this round (web-search budget exhausted))"
+    ]
+   },
+   "services": {
+    "score": 7,
+    "note": "Shopping centers on Los Alamitos Bl and Katella; Seal Beach and Long Beach retail nearby. Specific stores not verified this round (web-search budget exhausted)."
+   },
+   "rail": {
+    "score": 1,
+    "nearest_station": "none practical",
+    "line": "n/a",
+    "note": ""
+   },
+   "airports_other": "LGB ~12 min, SNA ~20 min off-peak (estimates)",
+   "summary": "The quietest and most suburban pick, with three freeways at hand and close LGB/SNA; weak walkability and coffee and the longest LAX drive make it a poor fit for the client's top coffee/walk weight.",
+   "sources": [
+    "https://www.iexitapp.com/California/I-605/Exit%201B/31621",
+    "https://www.apartmentlist.com/city-guide/ca/rossmoor",
+    "https://spotcrime.com/CA/Los%20Alamitos/trends",
+    "https://www.city-data.com/crime/crime-Hawaiian-Gardens-California.html",
+    "https://crimegrade.org/robbery-los-alamitos-ca/",
+    "https://assets.rentometer.com/average-rent-in/ca/los-alamitos-ca",
+    "https://apartments.com/los-alamitos-CA",
+    "https://www.trulia.com/for_rent/Los_Alamitos,CA/"
+   ],
+   "extras": {
+    "median_1br_rent": null,
+    "rent_source": "No clean median; ~$2,000-2,200 (Apartments.com $2,023-2,191; Trulia Jul 2026 ~$2,000; Rentometer Jan 2026 $1,800s)",
+    "rent_trend": null,
+    "summer_high_f": null,
+    "marine_layer": "some \u2013 ~4 mi inland from Seal Beach; mild summers",
+    "fire_hazard": "CAL FIRE FHSZ: none (urban) \u2013 not verified this round (web-search budget exhausted)",
+    "flood_zone": null,
+    "airport_noise": "military rotorcraft from Joint Forces Training Base Los Alamitos; LGB traffic occasionally",
+    "parks": [
+     "Rossmoor Park",
+     "El Dorado Regional Park (~10 min)"
+    ],
+    "farmers_markets": [],
+    "fiber": "AT&T Fiber / Frontier / Spectrum availability not verified this round (web-search budget exhausted); check address on att.com/fiber",
+    "vibe": "Sleepy, safe-feeling suburb with big trees and easy freeways; plan to drive for good coffee."
+   }
+  }
+ ]
+}

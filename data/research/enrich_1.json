@@ -1,0 +1,1667 @@
+[
+ {
+  "id": "avant",
+  "name": "Avant",
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": 48,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "yes",
+   "dogs": "yes",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking": {
+   "type": "garage",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "yes",
+   "gym": "yes",
+   "pool": "yes",
+   "coworking": "yes",
+   "rooftop_or_courtyard": "yes",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "central heat/AC",
+    "in-unit washer/dryer",
+    "quartz countertops",
+    "stainless steel appliances",
+    "floor-to-ceiling windows"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": "I-110 / I-10 interchange area near Pico Blvd & Figueroa",
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Seen 2026-10-26 in search summaries: Redfin snapshot showed 1BR from ~$2,099 with 21 units available (undated, likely stale); VeryApt 1BR from $2,408; HotPads unit A401 $1,867 (layout unknown). Sizes 502-1,304 sq ft. Promos referencing 2025/5-30-26 dates are expired.",
+   "website": "https://www.essexapartmenthomes.com/apartments/los-angeles/avant",
+   "leasing_phone": null
+  },
+  "evidence": "WebFetch failed for every page (DNS/proxy errors), so this comes from search-result summaries only (searched 2026-10-26). Application fee $48 (ApartmentIQ shows $48 and $38, unlabeled; HotPads $48). Pets allowed per HotPads/corporate-housing listings; no pet fees found. Multi-level garage per corporate housing listing; monthly parking price not found. Amenities from Essex site summary: pool/spa, resident lounge, shared workspace, rooftop sundeck, massage room; aggregators add fitness center, bike storage, elevator. A phone number (425) 230-5675 appeared on ApartmentIQ but is a Washington area code (likely Essex corporate), so not recorded as leasing phone. Fees/utilities not found; check Essex Leasing Info page. Nearest on-ramp is from general map knowledge and not checked; distance left null. ",
+  "sources": [
+   "https://www.redfin.com/CA/Los-Angeles/Avant/apartment/103689741",
+   "https://hotpads.com/avant-los-angeles-ca-90015-wcz4mq/pad",
+   "https://edge.apartmentiq.io/los-angeles-ca/avant",
+   "https://essexapartmenthomes.com/apartments/los-angeles/avant",
+   "https://nationalcorporatehousing.com/node/131900"
+  ]
+ },
+ {
+  "id": "glo",
+  "name": "Glo",
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "yes",
+   "dogs": "yes",
+   "pet_rent": 60,
+   "pet_deposit": 500,
+   "limits": "max 3 pets (one listing says pet fee $45 or $60)"
+  },
+  "parking": {
+   "type": "garage",
+   "ev_charging": "yes",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": 5,
+   "year_built": 2008,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "yes",
+   "pool": "yes",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "yes",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "in-unit washer/dryer",
+    "central AC"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": "I-110 (Harbor Fwy) at Wilshire/6th St",
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Seen 2026-10-26: HotPads showed a 1BR at $2,155 dated 5/29/2026 (stale); listing ranges $2,155-$3,030 and $2,415-$3,533. No current availability confirmed.",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "WebFetch failed for every page (DNS/proxy errors), so this comes from search-result summaries only (searched 2026-10-26). Deposit listed as $600-$800 (range, so left null). Pet deposit $500, pet rent $60 (another listing $45/$60). Underground garage with EV charging per one profile; parking price not found. Year built 2008 from one listing. Unit count conflicts: ApartmentIQ 201 vs rebusinessonline sale report describing 353 units in two five-story buildings joined by a sky bridge, so units left null. Amenities: pool, spa, 24-hr gym, rooftop fire pit, clubhouse. Walk Score not found. Building sits close to the I-110; within-500ft not verified. Nearest on-ramp is from general map knowledge and not checked; distance left null. ",
+  "sources": [
+   "https://apartmentlist.com/ca/los-angeles/glo",
+   "https://edge.apartmentiq.io/los-angeles-ca/glo",
+   "https://hotpads.com/glo-los-angeles-ca-90017-skfrds/pad",
+   "https://www.apartmentadvisor.com/details/1050-wilshire-blvd-los-angeles-ca-90017",
+   "https://rebusinessonline.com/201-unit-multifamily-community-fetches-47-5-million/"
+  ]
+ },
+ {
+  "id": "jia",
+  "name": "Jia",
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "yes",
+   "dogs": "yes",
+   "pet_rent": 55,
+   "pet_deposit": 500,
+   "limits": "max 3 pets; pet rent $55 dog / $45 cat (Apartment List)"
+  },
+  "parking": {
+   "type": "garage",
+   "ev_charging": "yes",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": 280,
+   "stories": 6,
+   "year_built": 2014,
+   "renovated": null,
+   "elevator": "yes",
+   "gym": "yes",
+   "pool": "yes",
+   "coworking": "yes",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "in-unit washer/dryer",
+    "9-ft ceilings",
+    "stainless steel appliances"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": 97,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": "CA-110 / US-101 near Broadway/Hill (Chinatown)",
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": "Chinatown (A Line)",
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Seen 2026-10-26: 1BRs 712-849 sq ft ~$2,400-2,500 (ApartmentIQ, mid-2025); RentHop 712 sq ft 1BR $2,365 (date unclear); ApartmentAdvisor 772 sq ft $3,209 (undated). Current availability not confirmed.",
+   "website": "https://www.equityapartments.com/los-angeles/chinatown/jia-apartments",
+   "leasing_phone": "(213) 335-6659"
+  },
+  "evidence": "WebFetch failed for every page (DNS/proxy errors), so this comes from search-result summaries only (searched 2026-10-26). 280 units, 2014 (AMPAM project page); 6 stories (listing). Walk Score 97 (ApartmentIQ). Pets: $500 deposit, max 3, $55 dog/$45 cat (Apartment List); one RentHop note only mentions dogs. Deposit $600-800 range (left null). Underground garage + EV charging per Equity; parking price not found. 'Business center' counted as coworking. Metro station from general knowledge. Nearest on-ramp is from general map knowledge and not checked; distance left null. ",
+  "sources": [
+   "https://www.equityapartments.com/los-angeles/chinatown/jia-apartments?ILSid=107",
+   "https://apartmentlist.com/ca/los-angeles/jia",
+   "https://edge.apartmentiq.io/los-angeles-ca/jia",
+   "https://ampam.com/project/jia-apartments/",
+   "https://www.renthop.com/listings/639-n-broadway/one-f/76276786"
+  ]
+ },
+ {
+  "id": "urban-village-apartments",
+  "name": "Urban Village Apartments",
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "yes",
+   "dogs": "yes",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Seen 2026-10-26 in Redfin summaries: 1BR ~712 sq ft at $2,262+; snapshots showed 3-12 units available (dates unclear).",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "WebFetch failed for every page (DNS/proxy errors), so this comes from search-result summaries only (searched 2026-10-26). Only Redfin aggregator summaries found ('pets welcome, parking'). No fees, amenities, building facts or parking type found. Address is on the A Line corridor in Long Beach but nearest station not verified.",
+  "sources": [
+   "https://hotpads.com/urban-village-long-beach-ca-90813-ty3895/pad",
+   "https://www.redfin.com/neighborhood/764734/CA/Long-Beach/Sunrise/1-bedroom-apartments-for-rent"
+  ]
+ },
+ {
+  "id": "bixel-at-fifth",
+  "name": "Bixel at Fifth",
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "yes",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking": {
+   "type": "garage",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": 80,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "central AC",
+    "in-unit washer/dryer"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": "I-110 (Harbor Fwy) at 3rd/4th/6th St",
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Seen 2026-10-26: Zillow says rents from $2,000; Redfin showed 1BR ~$2,100 with one month free (date unclear).",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "WebFetch failed for every page (DNS/proxy errors), so this comes from search-result summaries only (searched 2026-10-26). 80 residences designed by Aleks Istanbullu (Zillow description). Attached garage per Zillow; fee not found. Pets: Redfin mostly 'pets welcome', one says cats welcome, so dogs unclear. Year built not found. Close to the I-110; within-500ft not verified. Nearest on-ramp is from general map knowledge and not checked; distance left null. ",
+  "sources": [
+   "https://zillow.com/apartments/los-angeles-ca/bixel-at-fifth/5XjPVB/",
+   "https://www.redfin.com/zipcode/90017/1-bedroom-apartments-for-rent"
+  ]
+ },
+ {
+  "id": "arancia",
+  "name": "Arancia",
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "dishwasher"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Seen 2026-10-26: Redfin showed 8 units available, e.g. studio 492 sq ft $1,850 with $1,200 discount; no 1BR detail found.",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "WebFetch failed for every page (DNS/proxy errors), so this comes from search-result summaries only (searched 2026-10-26). Redfin tags 'Walker's Paradise' (Walk Score 90+ band, exact number not shown). No parking, pet, laundry or fee info found; in-unit W/D unconfirmed.",
+  "sources": [
+   "https://www.westsiderentals.com/los-angeles-ca/arancia-lpjg67d",
+   "https://www.redfin.com/neighborhood/60167/CA/Los-Angeles/McArthur-Park/apartments-for-rent/page-4"
+  ]
+ },
+ {
+  "id": "thurman-lofts",
+  "name": "Thurman Lofts",
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "yes",
+   "dogs": "yes",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": "2 pets per apartment, no weight limit, fees per pet, some breeds prohibited"
+  },
+  "parking": {
+   "type": "garage",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "yes",
+   "pool": "yes",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "yes",
+   "controlled_access": "yes",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "package lockers (building)"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": "Pershing Square (B/D Lines)",
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Seen 2026-10-26: Redfin 1BRs ~$2,241, some '2 months free'; Point2 range $1,888-$3,615 studio-3BR (dates unclear).",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "WebFetch failed for every page (DNS/proxy errors), so this comes from search-result summaries only (searched 2026-10-26). Point2Homes: controlled-access garage, renovated rooftop pool, rooftop lounge/sundeck, fitness center, package lockers; 2 pets/unit, no weight limit. The same source said 21 floors, built 2010, 263 units, which may be wrong for a 'lofts' building on Spring St, so building numbers left null. Fees not found. Metro station from general knowledge.",
+  "sources": [
+   "https://www.point2homes.com/US/Apartment-Buildings/CA/Los-Angeles/Thurman-Lofts1.html",
+   "https://redfin.com/neighborhood/1279/CA/Los-Angeles/Historic-Core/1-bedroom-apartments-for-rent"
+  ]
+ },
+ {
+  "id": "metro-417",
+  "name": "Metro 417",
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "yes",
+   "dogs": "yes",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking": {
+   "type": "garage",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": 277,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "yes",
+   "pool": "yes",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "yes",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "in-unit laundry"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": "Pershing Square (B/D Lines)",
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Seen 2026-10-26: Redfin showed 35-43 units available (dates unclear); no 1BR price captured.",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "WebFetch failed for every page (DNS/proxy errors), so this comes from search-result summaries only (searched 2026-10-26). 277 units (uhomes); former Subway Terminal Building site. Multi-level garage, in-unit laundry, fitness room, pools, hot tub (National Corporate Housing, a short-term listing); sky lounge (uhomes). Pets welcome (Redfin). Fees, parking price, year not found. Metro station from general knowledge.",
+  "sources": [
+   "https://www.westsiderentals.com/los-angeles-ca/metro-417-l1qysxg",
+   "https://en.uhomes.com/us/los-angeles/detail-apartments-1686373",
+   "https://nationalcorporatehousing.com/node/23453"
+  ]
+ },
+ {
+  "id": "fedora-flats",
+  "name": "Fedora Flats",
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": "12-month lease for 'up to 2 months free' special"
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": 50,
+   "stories": 6,
+   "year_built": 2026,
+   "renovated": null,
+   "elevator": "yes",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "yes",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "dishwasher",
+    "disposal",
+    "in-unit washer/dryer (unit 601 listing)"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Seen 2026-10-26: ForRent $1,950-$3,450 studio-2BR; up to 2 months free on select units (12-mo); up to 6 months free parking if you apply within 24h of tour. One listing still said 'coming July 2026'.",
+   "website": null,
+   "leasing_phone": "(213) 269-4161"
+  },
+  "evidence": "WebFetch failed for every page (DNS/proxy errors), so this comes from search-result summaries only (searched 2026-10-26). New 2026 building, 50 units / 6 stories (Westside Rentals). Parking exists (free-parking promo) but price/type not found. Pet policy not found. W/D shown for unit 601 listing only.",
+  "sources": [
+   "https://www.apartments.com/fedora-flats-los-angeles-ca/p8zdv1s/",
+   "https://www.forrent.com/ca/los-angeles/fedora-flats/38zdw1e",
+   "https://www.westsiderentals.com/los-angeles-ca/fedora-flats-p8zdv1s",
+   "https://www.westsiderentals.com/los-angeles-ca/1047-fedora-st-unit-601-ddf35dk"
+  ]
+ },
+ {
+  "id": "wilshire-vermont",
+  "name": "Wilshire Vermont",
+  "costs": {
+   "required_fees": [
+    {
+     "name": "pest control",
+     "amount": 1.5
+    }
+   ],
+   "utilities": "trash billed by usage (Greystar); other utilities not found",
+   "deposit": null,
+   "application_fee": 56,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "yes",
+   "dogs": "yes",
+   "pet_rent": 50,
+   "pet_deposit": 250,
+   "limits": "breed restrictions incl. pit bulls, German shepherds, huskies; dog deposit $250 (Zillow) or $500 (Point2)"
+  },
+  "parking": {
+   "type": "garage",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "yes",
+   "pool": "yes",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "yes",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "yes",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "air conditioning",
+    "in-unit washer/dryer",
+    "patio or balcony"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": "Wilshire/Vermont (B/D Lines)",
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "No current unit list captured (2026-10-26).",
+   "website": "https://www.greystar.com/properties/los-angeles-ca/wilshire-vermont/floorplans",
+   "leasing_phone": "(833) 292-1783"
+  },
+  "evidence": "WebFetch failed for every page (DNS/proxy errors), so this comes from search-result summaries only (searched 2026-10-26). Greystar: $1.50/mo pest control, usage-based trash; Point2: $56 app fee, deposit $600-800 (left null), cat $250/dog $500 deposit, $50 pet rent; three-level underground garage (klein-financial), price not found. Building sits over the Wilshire/Vermont station (general knowledge). Balcony is 'patio or balcony' so may vary by unit.",
+  "sources": [
+   "https://www.greystar.com/properties/los-angeles-ca/wilshire-vermont/floorplans",
+   "https://www.point2homes.com/US/Apartment-Buildings/CA/Los-Angeles/Wilshire-Vermont.html",
+   "https://www.zillow.com/b/-Ch2cPy",
+   "https://klein-financial.com/?p=111"
+  ]
+ },
+ {
+  "id": "616-kenmore",
+  "name": "616 Kenmore",
+  "costs": {
+   "required_fees": [],
+   "utilities": "water, trash and sewer included (Apartments.com)",
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": "13-month lease option"
+  },
+  "pets": {
+   "cats": "no",
+   "dogs": "no",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": "Apartments.com 'No Pets Allowed', Westside Rentals 'pet-free'; VeryApt conflicts (dog friendly)"
+  },
+  "parking": {
+   "type": "garage",
+   "ev_charging": "yes",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": 57,
+   "stories": 6,
+   "year_built": 2018,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "yes",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "yes",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "yes",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "in-unit washer/dryer",
+    "stainless steel appliances",
+    "smart thermostat",
+    "private balcony/patio"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": "Wilshire/Normandie (D Line)",
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Seen 2026-10-26: Westside Rentals 1BR $2,076-$2,238 on 13-mo lease; VeryApt 1BR from $2,350 (dates unclear).",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "WebFetch failed for every page (DNS/proxy errors), so this comes from search-result summaries only (searched 2026-10-26). 2018, 57 units, 6 stories, utilities, garage with reserved parking + EV charging (Apartments.com). Rooftop deck, gym, lounge (VeryApt). Half-block from Wilshire (Westside Rentals). Pets marked no (2 of 3 sources). Parking fee not found. Metro station from general knowledge.",
+  "sources": [
+   "https://www.apartments.com/kenmore-modern-apartments-los-angeles-ca/cgs622f/",
+   "https://www.westsiderentals.com/los-angeles-ca/616-kenmore-cgs622f",
+   "https://www.veryapt.com/Apartments-L7611-los-angeles-90005"
+  ]
+ },
+ {
+  "id": "104-brookstone-apartments",
+  "name": "104 Brookstone Apartments",
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": 750,
+   "application_fee": 35,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "yes",
+   "dogs": "yes",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking": {
+   "type": "covered",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": 184,
+   "stories": 2,
+   "year_built": 1970,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "yes",
+   "pool": "yes",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "yes",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "in-unit W/D claimed by one listing; another says on-site laundry only"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Seen 2026-10-26: 1BR $2,070-$2,220 on one listing, $2,305 on another; some listings stale (Aug 2025).",
+   "website": null,
+   "leasing_phone": "(714) 994-5151"
+  },
+  "evidence": "WebFetch failed for every page (DNS/proxy errors), so this comes from search-result summaries only (searched 2026-10-26). 184 units, 2 stories, 1970; $35 app fee, $750 deposit; 1 covered assigned space (one listing; another lists surface + attached garage). Pool, spa, gym, gated, BBQ. In-unit W/D conflicting, a key requirement to confirm.",
+  "sources": [
+   "https://www.forrent.com/ca/buena-park/104-brookstone-apartments/gbxdpxy",
+   "https://edge.apartmentiq.io/buena-park-ca/7400-artesia-blvd",
+   "https://www.apartmentadvisor.com/details/7400-artesia-blvd-buena-park-ca-90621",
+   "https://www.westsiderentals.com/buena-park-ca/brookstone-tbxdjxb"
+  ]
+ },
+ {
+  "id": "latitude-ii",
+  "name": "Latitude II",
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": 40,
+   "admin_fee": 0,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": 262,
+   "stories": 2,
+   "year_built": 1969,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "yes",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "wood flooring (select units)",
+    "stainless steel stove and dishwasher",
+    "washer/dryer (select units, asterisked)"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Seen 2026-10-26: HotPads $2,295-$3,495 for 1-3BR (dates unclear).",
+   "website": null,
+   "leasing_phone": "(657) 567-3229"
+  },
+  "evidence": "WebFetch failed for every page (DNS/proxy errors), so this comes from search-result summaries only (searched 2026-10-26). HotPads: $40 app fee, $0 admin, in-unit laundry, $600 deposit for 2BR (1BR deposit unknown). Westside Rentals: 1969, 262 units, 2 stories, pool, common-area WiFi; W/D marked with asterisk (select units). Pets and parking not found.",
+  "sources": [
+   "https://www.forrent.com/ca/santa-ana/latitude-ii/zf40z7x",
+   "https://hotpads.com/latitude-ii-santa-ana-ca-92705-sm49jt/pad",
+   "https://www.westsiderentals.com/santa-ana-ca/latitude-ii-bf40r79"
+  ]
+ },
+ {
+  "id": "vista-apartments",
+  "name": "Vista Apartments",
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "yes",
+   "dogs": "yes",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": "max pet count exists (number not given)"
+  },
+  "parking": {
+   "type": "garage",
+   "ev_charging": "yes",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": 1972,
+   "renovated": null,
+   "elevator": "yes",
+   "gym": "yes",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "yes",
+   "onsite_management": "yes",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "granite countertops",
+    "stainless steel appliances",
+    "W/D conflicting (in-unit vs shared laundry room)"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Seen 2026-10-26: Westside Rentals showed $2,481 available in April (likely stale); VeryApt not accepting inquiries.",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "WebFetch failed for every page (DNS/proxy errors), so this comes from search-result summaries only (searched 2026-10-26). VeryApt: garage, gym, elevator, gated, 24-hr front desk, cat+dog friendly. Westside Rentals: 1972, studios/1BRs, EV charger, on-site manager, in-unit W/D listed but also 'laundry facilities'. Laundry conflict is a key thing to confirm.",
+  "sources": [
+   "https://www.apartments.com/vista-apartments-mar-vista-ca/s08hdt4/",
+   "https://www.westsiderentals.com/mar-vista-ca/vista-apartments-s08hdt4",
+   "https://www.veryapt.com/ApartmentReview-a24395-vista-apartments-los-angeles"
+  ]
+ },
+ {
+  "id": "garment-lofts",
+  "name": "Garment Lofts",
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "yes",
+   "dogs": "yes",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": 77,
+   "stories": 12,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "yes",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "yes",
+   "controlled_access": "yes",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "in-unit washer/dryer",
+    "central heat/AC",
+    "concrete floors",
+    "ceilings up to 21 ft",
+    "city views"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Seen 2026-10-26: Point2 $2,010-$3,165 studio-1BR; Redfin ~12 units, from ~$2,085 (dates unclear).",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "WebFetch failed for every page (DNS/proxy errors), so this comes from search-result summaries only (searched 2026-10-26). Point2Homes: 12 stories, 77 apartments, listed 'built 2015' (likely a renovation/conversion year, so left null). Rooftop spa and lounge, gym, package lockers, controlled access. Pets welcome (Redfin). Parking not found.",
+  "sources": [
+   "https://www.point2homes.com/US/Apartment-Buildings/CA/Los-Angeles/Garment-Building-Residential.html",
+   "https://redfin.com/neighborhood/110858/CA/Los-Angeles/Fashion-District/apartments-for-rent"
+  ]
+ },
+ {
+  "id": "eleven-eleven-wilshire",
+  "name": "Eleven Eleven Wilshire",
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": null,
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Not researched: the shared web-search budget ran out (200 calls per turn) before this listing, and page fetches fail, so every field is null/unclear. Needs another pass.",
+  "sources": [
+   "https://www.point2homes.com/US/Apartment-Buildings/CA/Los-Angeles-County/Los-Angeles/Westlake/1111-Wilshire/93058647.html"
+  ]
+ },
+ {
+  "id": "pegasus",
+  "name": "Pegasus",
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": null,
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Not researched: the shared web-search budget ran out (200 calls per turn) before this listing, and page fetches fail, so every field is null/unclear. Needs another pass.",
+  "sources": [
+   "https://www.westsiderentals.com/los-angeles-ca/pegasus-hdpmn63"
+  ]
+ },
+ {
+  "id": "mresidences-olympic-olive",
+  "name": "mResidences Olympic & Olive",
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": null,
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Not researched: the shared web-search budget ran out (200 calls per turn) before this listing, and page fetches fail, so every field is null/unclear. Needs another pass.",
+  "sources": [
+   "https://www.zillow.com/b/-CkBBHZ"
+  ]
+ },
+ {
+  "id": "be-dtla",
+  "name": "Be DTLA",
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": null,
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Not researched: the shared web-search budget ran out (200 calls per turn) before this listing, and page fetches fail, so every field is null/unclear. Needs another pass.",
+  "sources": [
+   "https://hotpads.com/be-dtla-los-angeles-ca-90017-249n5mv/pad"
+  ]
+ },
+ {
+  "id": "1400-fig-apartments",
+  "name": "1400 FIG Apartments",
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": null,
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Not researched: the shared web-search budget ran out (200 calls per turn) before this listing, and page fetches fail, so every field is null/unclear. Needs another pass.",
+  "sources": [
+   "https://www.apartments.com/1400-fig-apartments-los-angeles-ca/838zj23/"
+  ]
+ },
+ {
+  "id": "olympic-by-windsor",
+  "name": "Olympic by Windsor",
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": null,
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Not researched: the shared web-search budget ran out (200 calls per turn) before this listing, and page fetches fail, so every field is null/unclear. Needs another pass.",
+  "sources": [
+   "https://www.point2homes.com/US/Apartment-Buildings/CA/Los-Angeles/Downtown-Los-Angeles/Olympic-by-Windsor/80882183.html"
+  ]
+ }
+]

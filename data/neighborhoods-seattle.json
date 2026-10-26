@@ -1,0 +1,1651 @@
+[
+ {
+  "neighborhood": "Capitol Hill / First Hill",
+  "region": "Seattle",
+  "lat": 47.6205,
+  "lng": -122.32,
+  "freeway": {
+   "score": 8,
+   "nearest": [
+    "I-5 (Olive Way / E Denny Way ramps, ~3-5 min)",
+    "I-90 (via Boren / Rainier, ~8 min)",
+    "SR-520 (via I-5 N, ~8 min)"
+   ],
+   "note": "Sits directly above I-5; I-90 and SR-520 both reachable in under ~10 min (estimate)."
+  },
+  "traffic": {
+   "score": 3,
+   "note": "I-5 through downtown is a chronic peak bottleneck; Seattle ranked 10th most congested US city in INRIX 2025 (68 hrs lost/driver). Local streets (Broadway, Pike/Pine, Madison) are slow and dense."
+  },
+  "coffee": {
+   "score": 10,
+   "cafes": [
+    "Espresso Vivace – 532 Broadway E (flagship) & 321 Broadway E sidewalk bar; walk-friendly",
+    "Victrola Coffee Roasters – 411 15th Ave E (one listing; another places a cafe on E Pike) ; roaster cafe, laptop-friendly per laptop-cafe lists",
+    "Analog Coffee – Summit Ave E; small, espresso/pour-over"
+   ],
+   "note": "Densest specialty-coffee cluster in the list; 3+ verified within a ~10-min walk of central Capitol Hill."
+  },
+  "walk": {
+   "score": 9,
+   "walk_score": 93,
+   "note": "Walk Score rankings: Capitol Hill 93, First Hill 98."
+  },
+  "quiet": {
+   "score": 3,
+   "note": "Pike/Pine bar and venue district is loud late; heavy I-5 noise on west slope, sirens/hospital traffic on First Hill. Quieter pockets: north Capitol Hill near Volunteer Park / 15th Ave E. Some SEA approach traffic reported over Capitol Hill (community claim)."
+  },
+  "safety": {
+   "score": 3,
+   "violent_per_1k": null,
+   "property_per_1k": null,
+   "year": "2025 (trend only)",
+   "source": "SPD year-in-review (Fox13/KIRO); NeighborhoodScout city average",
+   "note": "No neighborhood per-capita rate found. Heat-map descriptions put central Seattle up through Capitol Hill among the highest-crime areas. Compared to Seattle city average (NeighborhoodScout: violent 8.19/1k, property 57.53/1k; undated, FBI-based). SPD 2025: overall reported crime -18%, homicides -36% (37), car thefts -24%, burglaries -18%. Car prowls common; score is qualitative."
+  },
+  "lax": {
+   "score": 7,
+   "minutes_offpeak": 22,
+   "minutes_peak": 40,
+   "note": "SEA. Via I-5 S. Drive times are estimates from distance/typical routing (not measured with a routing tool this round)."
+  },
+  "nightlife": {
+   "score": 10,
+   "nearest_district": "Pike/Pine (in-neighborhood)",
+   "drive_minutes": 0,
+   "note": "Seattle's main nightlife district is walkable - great access, but the trade-off is noise if you live near it."
+  },
+  "gyms": {
+   "score": 9,
+   "examples": [
+    "24 Hour Fitness (downtown Seattle)",
+    "Seattle Athletic Club (downtown)",
+    "many boutique studios on Capitol Hill (examples from general knowledge, not verified this round)"
+   ]
+  },
+  "services": {
+   "score": 9,
+   "note": "Trader Joe's and QFC on Broadway area, Whole Foods nearby (general knowledge, not verified); pharmacies and post office walkable."
+  },
+  "rail": {
+   "score": 10,
+   "nearest_station": "Capitol Hill Station (Broadway & John)",
+   "line": "Link 1 Line",
+   "note": "Also First Hill Streetcar."
+  },
+  "airports_other": "No other commercial airports nearby; Paine Field (PAE, Everett) ~35-45 min estimate.",
+  "summary": "Best coffee and walkability on the list, but it is loud, crime rates are among the city's highest, and I-5 peak traffic is bad. Suits the client only if they find a quiet north-end side street (near Volunteer Park).",
+  "sources": [
+   "https://www.walkscore.com/rankings/Seattle",
+   "https://www.seattlemet.com/eat-and-drink/best-coffee-shops-in-seattle-washington",
+   "https://de.foursquare.com/leeericallen/list/seattle",
+   "https://www.kiro7.com/news/local/seattle-ranked-10th-worst-traffic-country/CTNHTKAOGJAGHOHVNIGNAWHB4Y",
+   "https://www.fox13seattle.com/news/seattle-police-crime-numbers-2025",
+   "https://relocationcoordinates.neighborhoodscout.com/wa/seattle/crime",
+   "https://www.centraldistrictnews.com/?p=137080",
+   "https://www.apartmentlist.com/rentonomics/cost-of-living-in-seattle/",
+   "https://micheleschuler.com/blog/farmers-markets-2026-guide",
+   "https://broadbandmap.com/internet-providers/seattle-wa",
+   "https://www.climate-zone.com/climate/us/seatac/"
+  ],
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "No Capitol Hill 1BR median found; Seattle citywide 1BR median $1,944 (Apartment List, Jul 2026)",
+   "rent_trend": "-2.7% YoY citywide all-units (Apartment List, Jul 2026); no neighborhood trend found",
+   "summer_high_f": 78,
+   "marine_layer": "some – Puget Sound marine air keeps summer mild; frequent cloud in late spring ('June-uary')",
+   "fire_hazard": "CAL FIRE FHSZ: none (CA-only system, not applicable in WA; WA DNR wildfire maps not checked this round - dense urban area)",
+   "flood_zone": "Not in a mapped riverine flood area (hilltop); no FEMA issue found",
+   "airport_noise": "Some: a community post claims SEA north-south traffic overflies Capitol Hill/Central District much of the time (unverified claim)",
+   "parks": [
+    "Volunteer Park",
+    "Cal Anderson Park",
+    "Interlaken Park",
+    "Freeway Park (First Hill edge)"
+   ],
+   "farmers_markets": [
+    "Capitol Hill Farmers Market – Sundays 11am-3pm year-round (E Barbara Bailey Way); also Tuesdays 3-7pm Jun 2-Sep 29, 2026"
+   ],
+   "fiber": "Seattle: Quantum Fiber ~30% and Ziply Fiber ~25% address coverage citywide (broadbandmap.com, third-party); Xfinity/Astound cable widespread. Check the exact address.",
+   "vibe": "Dense, lively and caffeinated; quiet only on the residential north end."
+  },
+  "name": "Capitol Hill / First Hill",
+  "id": "sea-capitol-hill-first-hill",
+  "market": "seattle"
+ },
+ {
+  "neighborhood": "Downtown / Belltown / South Lake Union",
+  "region": "Seattle",
+  "lat": 47.615,
+  "lng": -122.341,
+  "freeway": {
+   "score": 9,
+   "nearest": [
+    "I-5 (Mercer St / Stewart St / Seneca ramps, ~3 min)",
+    "SR-99 tunnel (Mercer/Denny portals, ~3 min)",
+    "I-90 (~8 min)"
+   ],
+   "note": "Best raw highway access in the city; Mercer St approach to I-5 is notoriously backed up."
+  },
+  "traffic": {
+   "score": 2,
+   "note": "Mercer corridor and downtown I-5 among the worst peak conditions in the region (INRIX: Seattle 10th most congested US city 2025)."
+  },
+  "coffee": {
+   "score": 9,
+   "cafes": [
+    "Anchorhead Coffee – Belltown/Denny Triangle (listed as both); specialty",
+    "Espresso Vivace – 227 Yale Ave N (South Lake Union)",
+    "Elm Coffee Roasters – 240 2nd Ave S (Pioneer Square, south edge, longer walk)"
+   ],
+   "note": "Many specialty cafes but which is within 10 min depends heavily on the block."
+  },
+  "walk": {
+   "score": 10,
+   "walk_score": 98,
+   "note": "Walk Score rankings: Belltown 98, South Lake Union 94, Lower Queen Anne 92."
+  },
+  "quiet": {
+   "score": 2,
+   "note": "High-rise urban core: sirens, street activity, construction, SR-99/Aurora and Mercer traffic, Belltown bars. Few quiet streets."
+  },
+  "safety": {
+   "score": 2,
+   "violent_per_1k": null,
+   "property_per_1k": null,
+   "year": "2025 (trend only)",
+   "source": "CrimeGrade (Belltown); SPD dashboard summaries",
+   "note": "CrimeGrade estimates Belltown ~104 total incidents/1k (not split violent/property; visitor-inflated denominator). Downtown core violent crime fell 15% in 2025 per city dashboard. Compared to Seattle city average (NeighborhoodScout: violent 8.19/1k, property 57.53/1k; undated, FBI-based). SPD 2025: overall reported crime -18%, homicides -36% (37), car thefts -24%, burglaries -18%."
+  },
+  "lax": {
+   "score": 7,
+   "minutes_offpeak": 22,
+   "minutes_peak": 40,
+   "note": "SEA. Via I-5 S or SR-99 S. Drive times are estimates from distance/typical routing (not measured with a routing tool this round)."
+  },
+  "nightlife": {
+   "score": 10,
+   "nearest_district": "Belltown / Capitol Hill (walk)",
+   "drive_minutes": 0,
+   "note": "Bars throughout."
+  },
+  "gyms": {
+   "score": 10,
+   "examples": [
+    "Seattle Athletic Club (downtown)",
+    "24 Hour Fitness (downtown)",
+    "many studios in SLU (examples from general knowledge, not verified this round)"
+   ]
+  },
+  "services": {
+   "score": 9,
+   "note": "Whole Foods (Westlake Ave, SLU) and many urban groceries/pharmacies (general knowledge); Amazon lockers plentiful."
+  },
+  "rail": {
+   "score": 10,
+   "nearest_station": "Westlake / Symphony stations",
+   "line": "Link 1 Line; SLU Streetcar; Monorail",
+   "note": "Best transit on the list."
+  },
+  "airports_other": "Paine Field (PAE) ~35-45 min estimate.",
+  "summary": "Unbeatable highway, walkability and coffee, but the loudest, priciest and highest-crime option, with the region's worst peak congestion. Weak fit for a quiet-at-home priority.",
+  "sources": [
+   "https://www.walkscore.com/rankings/Seattle",
+   "https://crimegrade.org/safest-places-in-belltown-seattle-wa/",
+   "https://crimegrade.org/safest-places-in-downtown-seattle-seattle-wa/",
+   "https://www.fox13seattle.com/news/seattle-police-crime-numbers-2025",
+   "https://www.kiro7.com/news/local/seattle-ranked-10th-worst-traffic-country/CTNHTKAOGJAGHOHVNIGNAWHB4Y",
+   "https://www.seattlemet.com/eat-and-drink/best-coffee-shops-in-seattle-washington",
+   "https://www.renthop.com/average-rent-in/98101-seattle-wa",
+   "https://www.apartmentlist.com/rentonomics/cost-of-living-in-seattle/",
+   "https://broadbandmap.com/internet-providers/seattle-wa",
+   "https://www.climate-zone.com/climate/us/seatac/"
+  ],
+  "extras": {
+   "median_1br_rent": 2890,
+   "rent_source": "RentHop ZIP 98101 (downtown/Belltown), 2026 page",
+   "rent_trend": "-1.7% YoY (RentHop 98101)",
+   "summer_high_f": 78,
+   "marine_layer": "some – waterfront marine air; mild summers",
+   "fire_hazard": "CAL FIRE FHSZ: none (CA-only system, not applicable in WA; WA DNR wildfire maps not checked this round - dense urban area)",
+   "flood_zone": "Waterfront/Elliott Bay edges have coastal exposure; specific FEMA zones not checked",
+   "airport_noise": "None notable found (not researched in depth)",
+   "parks": [
+    "Olympic Sculpture Park",
+    "Myrtle Edwards Park",
+    "Lake Union Park",
+    "Denny Park"
+   ],
+   "farmers_markets": [
+    "Pike Place Market (daily farm stalls)"
+   ],
+   "fiber": "Seattle: Quantum Fiber ~30% and Ziply Fiber ~25% address coverage citywide (broadbandmap.com, third-party); Xfinity/Astound cable widespread. Check the exact address. Many newer high-rises are pre-wired for fiber (verify per building).",
+   "vibe": "Big-city core: everything walkable, nothing quiet."
+  },
+  "name": "Downtown / Belltown / South Lake Union",
+  "id": "sea-downtown-belltown-south-lake-union",
+  "market": "seattle"
+ },
+ {
+  "neighborhood": "Queen Anne",
+  "region": "Seattle",
+  "lat": 47.637,
+  "lng": -122.357,
+  "freeway": {
+   "score": 7,
+   "nearest": [
+    "SR-99 (Mercer/Denny portals or Aurora Bridge, ~5 min from upper QA)",
+    "I-5 (via Mercer St, ~6-8 min)"
+   ],
+   "note": "Hilltop location adds a few minutes; Lower QA is close to the SR-99 tunnel."
+  },
+  "traffic": {
+   "score": 4,
+   "note": "Mercer St and the Seattle Center area clog at peak; Queen Anne Ave hill is a slow arterial. INRIX 2025: Seattle 10th most congested US city."
+  },
+  "coffee": {
+   "score": 7,
+   "cafes": [
+    "Ugly Mug Cafe – Queen Anne (local guide)",
+    "Caffe Ladro – original 1994 shop on Upper Queen Anne",
+    "Queen Anne Coffee Co. – praised by The Infatuation",
+    "Caffe Vita / Caffe Umbria – listed by local guide (locations not verified)"
+   ],
+   "note": "Several walkable options on the Queen Anne Ave N spine; specialty depth is moderate."
+  },
+  "walk": {
+   "score": 8,
+   "walk_score": 84,
+   "note": "Walk Score: West QA 84, East QA 82, North QA 74, Lower QA 92 (Upper QA core ~82-84)."
+  },
+  "quiet": {
+   "score": 8,
+   "note": "Upper Queen Anne residential streets are calm; Lower QA near Seattle Center/Climate Pledge Arena is busy and loud on event nights."
+  },
+  "safety": {
+   "score": 6,
+   "violent_per_1k": null,
+   "property_per_1k": null,
+   "year": "2025 (trend only)",
+   "source": "none found at neighborhood level",
+   "note": "No per-capita data found; scored qualitatively (upper QA generally regarded as lower crime than the core; Lower QA higher). Compared to Seattle city average (NeighborhoodScout: violent 8.19/1k, property 57.53/1k; undated, FBI-based). SPD 2025: overall reported crime -18%, homicides -36% (37), car thefts -24%, burglaries -18%."
+  },
+  "lax": {
+   "score": 6,
+   "minutes_offpeak": 28,
+   "minutes_peak": 45,
+   "note": "SEA. Via SR-99 S or I-5 S. Drive times are estimates from distance/typical routing (not measured with a routing tool this round)."
+  },
+  "nightlife": {
+   "score": 9,
+   "nearest_district": "Lower Queen Anne / Belltown",
+   "drive_minutes": 7,
+   "note": "Estimate."
+  },
+  "gyms": {
+   "score": 7,
+   "examples": [
+    "Queen Anne neighborhood studios; downtown clubs ~10 min (examples from general knowledge, not verified this round)"
+   ]
+  },
+  "services": {
+   "score": 7,
+   "note": "Upper Queen Anne has groceries (Metropolitan Market, QFC - general knowledge), pharmacy, post office."
+  },
+  "rail": {
+   "score": 4,
+   "nearest_station": "None on hill; Monorail at Seattle Center (Lower QA)",
+   "line": "Monorail / buses",
+   "note": "No Link light rail."
+  },
+  "airports_other": "Paine Field (PAE) ~35-40 min estimate.",
+  "summary": "Quiet, safe-feeling residential hilltop with decent walkable coffee and quick SR-99 access; the catch is slow Mercer/hill traffic and moderate rents.",
+  "sources": [
+   "https://www.walkscore.com/rankings/Seattle",
+   "https://localwiki.org/seattle/Coffee",
+   "https://www.aaa.com/tripcanvas/article/where-to-find-the-best-coffee-in-seattle-CM798",
+   "https://www.kiro7.com/news/local/seattle-ranked-10th-worst-traffic-country/CTNHTKAOGJAGHOHVNIGNAWHB4Y",
+   "https://www.renthop.com/average-rent-in/98109-seattle-wa",
+   "https://www.apartmentlist.com/rentonomics/cost-of-living-in-seattle/",
+   "https://micheleschuler.com/blog/farmers-markets-2026-guide",
+   "https://broadbandmap.com/internet-providers/seattle-wa",
+   "https://www.climate-zone.com/climate/us/seatac/",
+   "https://relocationcoordinates.neighborhoodscout.com/wa/seattle/crime"
+  ],
+  "extras": {
+   "median_1br_rent": 2427,
+   "rent_source": "RentHop ZIP 98109 (South Lake Union + Queen Anne), 2026 page",
+   "rent_trend": "+2.75% YoY (RentHop 98109)",
+   "summer_high_f": 78,
+   "marine_layer": "some – elevated hill gets breezes; mild summers",
+   "fire_hazard": "CAL FIRE FHSZ: none (CA-only system, not applicable in WA; WA DNR wildfire maps not checked this round - dense urban area)",
+   "flood_zone": "Hilltop; no flood concern found",
+   "airport_noise": "None notable found",
+   "parks": [
+    "Kerry Park",
+    "Kinnear Park",
+    "Queen Anne Boulevard",
+    "Marshall Park"
+   ],
+   "farmers_markets": [
+    "Queen Anne Farmers Market – Thursdays 3-7pm, May 28-Oct 8 (11 W Crockett St)"
+   ],
+   "fiber": "Seattle: Quantum Fiber ~30% and Ziply Fiber ~25% address coverage citywide (broadbandmap.com, third-party); Xfinity/Astound cable widespread. Check the exact address.",
+   "vibe": "Leafy, quiet hilltop village with views and a walkable main street."
+  },
+  "name": "Queen Anne",
+  "id": "sea-queen-anne",
+  "market": "seattle"
+ },
+ {
+  "neighborhood": "Fremont / Wallingford",
+  "region": "Seattle",
+  "lat": 47.656,
+  "lng": -122.342,
+  "freeway": {
+   "score": 8,
+   "nearest": [
+    "SR-99 / Aurora (N 46th or N 38th, ~3 min)",
+    "I-5 (N 45th St / N 50th St ramps, ~5 min)"
+   ],
+   "note": "Two highways within ~5 min (estimate)."
+  },
+  "traffic": {
+   "score": 5,
+   "note": "N 45th St and the Fremont Bridge (drawbridge openings) back up; I-5 and SR-99 are congested at peak but access is quick."
+  },
+  "coffee": {
+   "score": 9,
+   "cafes": [
+    "Milstead & Co. – 770 N 34th St (Fremont); widely called among the city's best",
+    "Lighthouse Roasters – N 43rd St, roasting in upper Fremont since 1993",
+    "Fremont Coffee Company – since 2003, neighborhood hub",
+    "A Muddy Cup Cafe & Roastery / Coffeeholic House – Wallingford (listed)"
+   ],
+   "note": "4+ specialty options; which are within 10 min depends on Fremont vs. Wallingford location."
+  },
+  "walk": {
+   "score": 9,
+   "walk_score": 90,
+   "note": "Walk Score rankings: Fremont 90, Wallingford 85."
+  },
+  "quiet": {
+   "score": 7,
+   "note": "Wallingford side streets are quiet; central Fremont has bars and weekend crowds; SR-99/Aurora and I-5 noise along the edges."
+  },
+  "safety": {
+   "score": 6,
+   "violent_per_1k": null,
+   "property_per_1k": null,
+   "year": "2022 (blog)",
+   "source": "moving-company blog citing SPD map data",
+   "note": "A blog cites Wallingford at 0.45 crimes/1k (2022, method unclear - not used as a rate). No reliable neighborhood per-capita figure; scored qualitatively. Compared to Seattle city average (NeighborhoodScout: violent 8.19/1k, property 57.53/1k; undated, FBI-based). SPD 2025: overall reported crime -18%, homicides -36% (37), car thefts -24%, burglaries -18%."
+  },
+  "lax": {
+   "score": 6,
+   "minutes_offpeak": 27,
+   "minutes_peak": 50,
+   "note": "SEA. Via SR-99 S or I-5 S. Drive times are estimates from distance/typical routing (not measured with a routing tool this round)."
+  },
+  "nightlife": {
+   "score": 9,
+   "nearest_district": "Fremont (walk) / Ballard",
+   "drive_minutes": 5,
+   "note": "Estimate."
+  },
+  "gyms": {
+   "score": 7,
+   "examples": [
+    "Fremont/Wallingford studios; 24 Hour Fitness and others in nearby districts (examples from general knowledge, not verified this round)"
+   ]
+  },
+  "services": {
+   "score": 8,
+   "note": "PCC (Fremont) and QFC/Whole Foods nearby (general knowledge); post office and pharmacies on 45th."
+  },
+  "rail": {
+   "score": 4,
+   "nearest_station": "U District Station (~15-20 min walk from Wallingford east)",
+   "line": "Link 1 Line",
+   "note": "Buses on 45th/Aurora."
+  },
+  "airports_other": "Paine Field (PAE) ~30-35 min estimate.",
+  "summary": "Strong balance for this client: excellent specialty coffee, high walkability, fast SR-99/I-5 access and quiet Wallingford side streets; the trade-off is higher rents and bridge/45th St congestion.",
+  "sources": [
+   "https://www.walkscore.com/rankings/Seattle",
+   "https://www.seattlemet.com/eat-and-drink/best-coffee-shops-in-seattle-washington",
+   "https://www.aaa.com/tripcanvas/article/where-to-find-the-best-coffee-in-seattle-CM798",
+   "https://localwiki.org/seattle/Coffee",
+   "https://www.renthop.com/average-rent-in/98103-seattle-wa",
+   "https://doh.wa.gov/sites/default/files/2026-05/964003-FMNPAuthorizedFarmersMarketsWesternWA.pdf",
+   "https://broadbandmap.com/internet-providers/seattle-wa",
+   "https://www.climate-zone.com/climate/us/seatac/",
+   "https://relocationcoordinates.neighborhoodscout.com/wa/seattle/crime"
+  ],
+  "extras": {
+   "median_1br_rent": 2632,
+   "rent_source": "RentHop ZIP 98103 (Fremont/Wallingford/Green Lake), 2026 page",
+   "rent_trend": "+64% YoY per RentHop 98103 - implausible, likely small sample; treat with caution",
+   "summer_high_f": 78,
+   "marine_layer": "some – near Lake Union; mild summers",
+   "fire_hazard": "CAL FIRE FHSZ: none (CA-only system, not applicable in WA; WA DNR wildfire maps not checked this round - dense urban area)",
+   "flood_zone": "Ship Canal shoreline only; no flood concern found",
+   "airport_noise": "None notable found",
+   "parks": [
+    "Gas Works Park",
+    "Burke-Gilman Trail",
+    "Wallingford Playfield",
+    "Woodland Park (nearby)"
+   ],
+   "farmers_markets": [
+    "Wallingford Farmers Market – Wednesdays 3-7pm, May 27-Sep 30 (Meridian Park)",
+    "Fremont Sunday Market (general knowledge, not verified)"
+   ],
+   "fiber": "Seattle: Quantum Fiber ~30% and Ziply Fiber ~25% address coverage citywide (broadbandmap.com, third-party); Xfinity/Astound cable widespread. Check the exact address.",
+   "vibe": "Quirky, walkable and quiet off the main drags, with some of the city's best coffee."
+  },
+  "name": "Fremont / Wallingford",
+  "id": "sea-fremont-wallingford",
+  "market": "seattle"
+ },
+ {
+  "neighborhood": "Ballard",
+  "region": "Seattle",
+  "lat": 47.668,
+  "lng": -122.385,
+  "freeway": {
+   "score": 5,
+   "nearest": [
+    "SR-99 / Aurora (via N 46th / Market St, ~8-10 min)",
+    "I-5 (via NW Market / N 45th, ~10-12 min)"
+   ],
+   "note": "No highway in Ballard itself; ~8-12 min to the nearest ramps (estimate)."
+  },
+  "traffic": {
+   "score": 4,
+   "note": "15th Ave NW, Ballard Bridge and Market St are slow at peak; crossing to I-5 via 45th is a known crawl."
+  },
+  "coffee": {
+   "score": 8,
+   "cafes": [
+    "Slate Coffee Bar – Ballard; light-roast, hand-brew focused, small",
+    "Ballard Coffee (listed)",
+    "Herkimer (Phinney Ridge roastery nearby)"
+   ],
+   "note": "Good but fewer verified specialty cafes than Capitol Hill/Fremont in this round."
+  },
+  "walk": {
+   "score": 8,
+   "walk_score": null,
+   "note": "Walk Score for Ballard not retrieved; central Ballard is very walkable (estimate 80s, unverified)."
+  },
+  "quiet": {
+   "score": 6,
+   "note": "Ballard Ave bar strip is loud on weekends; residential streets north/west are quiet. Some industrial/maritime noise near the canal."
+  },
+  "safety": {
+   "score": 5,
+   "violent_per_1k": null,
+   "property_per_1k": null,
+   "year": "2025 (trend only)",
+   "source": "none at neighborhood level",
+   "note": "No per-capita data found; scored qualitatively near city average. Compared to Seattle city average (NeighborhoodScout: violent 8.19/1k, property 57.53/1k; undated, FBI-based). SPD 2025: overall reported crime -18%, homicides -36% (37), car thefts -24%, burglaries -18%."
+  },
+  "lax": {
+   "score": 5,
+   "minutes_offpeak": 30,
+   "minutes_peak": 50,
+   "note": "SEA. Via SR-99 S. Drive times are estimates from distance/typical routing (not measured with a routing tool this round)."
+  },
+  "nightlife": {
+   "score": 10,
+   "nearest_district": "Ballard Ave (walk)",
+   "drive_minutes": 0,
+   "note": "One of Seattle's best bar districts."
+  },
+  "gyms": {
+   "score": 8,
+   "examples": [
+    "Olympic Athletic Club (Ballard)",
+    "various studios (examples from general knowledge, not verified this round)"
+   ]
+  },
+  "services": {
+   "score": 8,
+   "note": "Trader Joe's, QFC, Safeway in central Ballard (general knowledge)."
+  },
+  "rail": {
+   "score": 2,
+   "nearest_station": "None (Ballard Link extension planned, not open)",
+   "line": "RapidRide D/E buses",
+   "note": "No light rail."
+  },
+  "airports_other": "Paine Field (PAE) ~30-35 min estimate.",
+  "summary": "Great neighborhood life, coffee and brewery scene, but highway access is mediocre (8-12 min) and SEA is ~30+ min. Choose a block north of Market St for quiet.",
+  "sources": [
+   "https://dailyhive.com/seattle/best-coffee-shops-seattle",
+   "https://localwiki.org/seattle/Coffee",
+   "https://www.kiro7.com/news/local/seattle-ranked-10th-worst-traffic-country/CTNHTKAOGJAGHOHVNIGNAWHB4Y",
+   "https://www.apartmentlist.com/rentonomics/cost-of-living-in-seattle/",
+   "https://micheleschuler.com/blog/farmers-markets-2026-guide",
+   "https://broadbandmap.com/internet-providers/seattle-wa",
+   "https://www.climate-zone.com/climate/us/seatac/",
+   "https://relocationcoordinates.neighborhoodscout.com/wa/seattle/crime"
+  ],
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "No Ballard 1BR median found; Seattle citywide 1BR median $1,944 (Apartment List, Jul 2026)",
+   "rent_trend": "-2.7% YoY citywide all-units (Apartment List, Jul 2026); no neighborhood trend found",
+   "summer_high_f": 78,
+   "marine_layer": "some – near Shilshole/Puget Sound; cooler than inland",
+   "fire_hazard": "CAL FIRE FHSZ: none (CA-only system, not applicable in WA; WA DNR wildfire maps not checked this round - dense urban area)",
+   "flood_zone": "Low-lying canal/Shilshole waterfront edges may have coastal flood exposure; specific FEMA zones not checked",
+   "airport_noise": "None notable found",
+   "parks": [
+    "Golden Gardens Park",
+    "Ballard Locks / Carl English Garden",
+    "Ballard Commons Park"
+   ],
+   "farmers_markets": [
+    "Ballard Farmers Market – Sundays 9am-2pm year-round (Ballard Ave NW)"
+   ],
+   "fiber": "Seattle: Quantum Fiber ~30% and Ziply Fiber ~25% address coverage citywide (broadbandmap.com, third-party); Xfinity/Astound cable widespread. Check the exact address.",
+   "vibe": "Lively, walkable former fishing village; quiet a few blocks off the main strip."
+  },
+  "name": "Ballard",
+  "id": "sea-ballard",
+  "market": "seattle"
+ },
+ {
+  "neighborhood": "University District / Roosevelt",
+  "region": "Seattle",
+  "lat": 47.665,
+  "lng": -122.315,
+  "freeway": {
+   "score": 9,
+   "nearest": [
+    "I-5 (NE 45th / NE 50th / Ravenna Blvd ramps, ~3 min)",
+    "SR-520 (via Montlake, ~6-8 min)"
+   ],
+   "note": "I-5 hugs the west edge; SR-520 close (estimate)."
+  },
+  "traffic": {
+   "score": 4,
+   "note": "I-5 near the ship canal and the 45th St viaduct are congested at peak; 520/Montlake congested."
+  },
+  "coffee": {
+   "score": 8,
+   "cafes": [
+    "Cafe Allegro – U District, long-running espresso bar",
+    "Cafe Solstice – U District, laptop-friendly student cafe",
+    "Santo Coffee Co. – Roosevelt (The Infatuation)",
+    "Broadcast Coffee – Roosevelt (Townie 2025)"
+   ],
+   "note": "4 options, solid but student-heavy."
+  },
+  "walk": {
+   "score": 9,
+   "walk_score": 93,
+   "note": "Walk Score rankings: University District 93, Roosevelt 84."
+  },
+  "quiet": {
+   "score": 5,
+   "note": "Student nightlife and density in U District; Roosevelt residential pockets quieter; I-5 noise on west side."
+  },
+  "safety": {
+   "score": 4,
+   "violent_per_1k": null,
+   "property_per_1k": null,
+   "year": "2025 (trend only)",
+   "source": "CrimeGrade page exists for U District (rate not captured)",
+   "note": "No per-capita figure captured; U District property crime perceived as above average. Compared to Seattle city average (NeighborhoodScout: violent 8.19/1k, property 57.53/1k; undated, FBI-based). SPD 2025: overall reported crime -18%, homicides -36% (37), car thefts -24%, burglaries -18%."
+  },
+  "lax": {
+   "score": 6,
+   "minutes_offpeak": 27,
+   "minutes_peak": 50,
+   "note": "SEA. Via I-5 S, or Link from U District station (~45 min). Drive times are estimates from distance/typical routing (not measured with a routing tool this round)."
+  },
+  "nightlife": {
+   "score": 9,
+   "nearest_district": "U District / Capitol Hill",
+   "drive_minutes": 10,
+   "note": "Estimate."
+  },
+  "gyms": {
+   "score": 8,
+   "examples": [
+    "UW IMA (students/affiliates)",
+    "neighborhood gyms (examples from general knowledge, not verified this round)"
+   ]
+  },
+  "services": {
+   "score": 8,
+   "note": "Whole Foods Roosevelt, Trader Joe's U District (general knowledge)."
+  },
+  "rail": {
+   "score": 10,
+   "nearest_station": "U District Station / Roosevelt Station",
+   "line": "Link 1 Line",
+   "note": "Direct light rail to SEA."
+  },
+  "airports_other": "Paine Field (PAE) ~30 min estimate.",
+  "summary": "Fast I-5 access, light rail to SEA and good cafes; trade-off is student noise and density. Roosevelt is the quieter half.",
+  "sources": [
+   "https://www.walkscore.com/rankings/Seattle",
+   "https://seatoday.6amcity.com/find-best-coffee-shops-seattle-wa",
+   "https://www.theinfatuation.com/seattle/perfect-for/getting-work-done?page=2",
+   "https://townieseattle.beehiiv.com/p/13-must-try-cafes-seattle-2025",
+   "https://www.kiro7.com/news/local/seattle-ranked-10th-worst-traffic-country/CTNHTKAOGJAGHOHVNIGNAWHB4Y",
+   "https://micheleschuler.com/blog/farmers-markets-2026-guide",
+   "https://broadbandmap.com/internet-providers/seattle-wa",
+   "https://www.climate-zone.com/climate/us/seatac/",
+   "https://relocationcoordinates.neighborhoodscout.com/wa/seattle/crime"
+  ],
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "No U District/Roosevelt 1BR median found; Seattle citywide 1BR median $1,944 (Apartment List, Jul 2026)",
+   "rent_trend": "-2.7% YoY citywide all-units (Apartment List, Jul 2026); no neighborhood trend found",
+   "summer_high_f": 78,
+   "marine_layer": "some – mild summers",
+   "fire_hazard": "CAL FIRE FHSZ: none (CA-only system, not applicable in WA; WA DNR wildfire maps not checked this round - dense urban area)",
+   "flood_zone": "No flood concern found",
+   "airport_noise": "None notable found",
+   "parks": [
+    "Ravenna Park",
+    "Cowen Park",
+    "Green Lake (nearby)",
+    "UW campus / Burke-Gilman Trail"
+   ],
+   "farmers_markets": [
+    "University District Farmers Market – Saturdays 9am-2pm year-round (University Way NE, 50th-52nd)"
+   ],
+   "fiber": "Seattle: Quantum Fiber ~30% and Ziply Fiber ~25% address coverage citywide (broadbandmap.com, third-party); Xfinity/Astound cable widespread. Check the exact address.",
+   "vibe": "Busy student district shading into calmer Roosevelt, with light rail at the door."
+  },
+  "name": "University District / Roosevelt",
+  "id": "sea-university-district-roosevelt",
+  "market": "seattle"
+ },
+ {
+  "neighborhood": "Northgate / Lake City",
+  "region": "Seattle",
+  "lat": 47.71,
+  "lng": -122.31,
+  "freeway": {
+   "score": 8,
+   "nearest": [
+    "I-5 (Northgate Way / NE 103rd / NE 130th ramps, ~3-5 min)",
+    "SR-522 Lake City Way toward I-405 (~15 min)"
+   ],
+   "note": "Northgate is right on I-5; Lake City is ~8 min farther (estimate)."
+  },
+  "traffic": {
+   "score": 3,
+   "note": "INRIX 2024 flagged I-5 northbound between Northgate and 128th St SE (~4pm) as the area's busiest corridor; Lake City Way is a congested arterial."
+  },
+  "coffee": {
+   "score": 4,
+   "cafes": [
+    "Cloud City Coffee – 8801 Roosevelt Way NE (Maple Leaf, between Roosevelt and Northgate); highly rated espresso bar",
+    "Lake City: no specialty cafe found this round"
+   ],
+   "note": "Thin specialty coffee within a 10-min walk."
+  },
+  "walk": {
+   "score": 5,
+   "walk_score": null,
+   "note": "Walk Score not retrieved for Northgate/Lake City; Bitter Lake (neighboring) is 70; Northgate core is mall/transit-oriented (estimate 60s-70s, unverified)."
+  },
+  "quiet": {
+   "score": 5,
+   "note": "I-5 noise near Northgate; Lake City Way traffic; residential streets east of Lake City Way quieter."
+  },
+  "safety": {
+   "score": 4,
+   "violent_per_1k": null,
+   "property_per_1k": null,
+   "year": "2025 (trend only)",
+   "source": "none at neighborhood level",
+   "note": "No per-capita data; scored qualitatively (Aurora/Lake City Way corridors have elevated crime reputations). Compared to Seattle city average (NeighborhoodScout: violent 8.19/1k, property 57.53/1k; undated, FBI-based). SPD 2025: overall reported crime -18%, homicides -36% (37), car thefts -24%, burglaries -18%."
+  },
+  "lax": {
+   "score": 5,
+   "minutes_offpeak": 30,
+   "minutes_peak": 55,
+   "note": "SEA. Via I-5 S; Link from Northgate Station (~50 min). Drive times are estimates from distance/typical routing (not measured with a routing tool this round)."
+  },
+  "nightlife": {
+   "score": 7,
+   "nearest_district": "Roosevelt / U District",
+   "drive_minutes": 10,
+   "note": "Estimate."
+  },
+  "gyms": {
+   "score": 7,
+   "examples": [
+    "gyms around Northgate Station area (examples from general knowledge, not verified this round)"
+   ]
+  },
+  "services": {
+   "score": 8,
+   "note": "Northgate Station mall area has big-box groceries and services (general knowledge)."
+  },
+  "rail": {
+   "score": 9,
+   "nearest_station": "Northgate Station",
+   "line": "Link 1 Line",
+   "note": "Lake City relies on buses."
+  },
+  "airports_other": "Paine Field (PAE) ~25 min estimate.",
+  "summary": "Cheaper, car-friendly north end with I-5 and light rail access, but weak walkable coffee and I-5 congestion; not ideal for the coffee/walk priority.",
+  "sources": [
+   "https://hoodline.com/2019/12/the-5-best-spots-to-score-coffee-in-seattle/",
+   "https://www.theinfatuation.com/seattle/perfect-for/getting-work-done?page=2",
+   "https://www.walkscore.com/rankings/Seattle",
+   "https://www.kiro7.com/news/local/seattle-ranked-10th-worst-traffic-country/CTNHTKAOGJAGHOHVNIGNAWHB4Y",
+   "https://micheleschuler.com/blog/farmers-markets-2026-guide",
+   "https://broadbandmap.com/internet-providers/seattle-wa",
+   "https://www.climate-zone.com/climate/us/seatac/",
+   "https://relocationcoordinates.neighborhoodscout.com/wa/seattle/crime"
+  ],
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "No Northgate/Lake City 1BR median found; Seattle citywide 1BR median $1,944 (Apartment List, Jul 2026)",
+   "rent_trend": "-2.7% YoY citywide all-units (Apartment List, Jul 2026); no neighborhood trend found",
+   "summer_high_f": 78,
+   "marine_layer": "some – mild",
+   "fire_hazard": "CAL FIRE FHSZ: none (CA-only system, not applicable in WA; WA DNR wildfire maps not checked this round - dense urban area)",
+   "flood_zone": "Thornton Creek riparian areas have localized flooding; FEMA zones not checked",
+   "airport_noise": "None notable found (historic note: north-flow departures over NE Seattle under an old 1990 FAA plan - not current data)",
+   "parks": [
+    "Thornton Creek / Northgate Park",
+    "Matthews Beach Park",
+    "Meadowbrook Playfield"
+   ],
+   "farmers_markets": [
+    "Lake City Farmers Market – Thursdays 3-7pm, Jun 4-Sep 24, 2026"
+   ],
+   "fiber": "Seattle: Quantum Fiber ~30% and Ziply Fiber ~25% address coverage citywide (broadbandmap.com, third-party); Xfinity/Astound cable widespread. Check the exact address.",
+   "vibe": "Practical, car-and-transit-friendly north end; short on charm and coffee."
+  },
+  "name": "Northgate / Lake City",
+  "id": "sea-northgate-lake-city",
+  "market": "seattle"
+ },
+ {
+  "neighborhood": "Columbia City / Beacon Hill",
+  "region": "Seattle",
+  "lat": 47.56,
+  "lng": -122.29,
+  "freeway": {
+   "score": 6,
+   "nearest": [
+    "I-5 (Columbian Way / Spokane St from Beacon Hill, ~5 min)",
+    "I-90 (Rainier Ave on-ramp, ~8 min from Columbia City)"
+   ],
+   "note": "Beacon Hill is near I-5; Columbia City is ~8-10 min from ramps (estimate)."
+  },
+  "traffic": {
+   "score": 5,
+   "note": "Rainier Ave and MLK are slow at peak; I-5 south of downtown is congested but better than the core."
+  },
+  "coffee": {
+   "score": 6,
+   "cafes": [
+    "Columbia City Bakery – Columbia City; pastries + coffee",
+    "Coffeeholic House – Columbia City (Vietnamese-style specialty)",
+    "Victrola – Beacon Hill location (A+K guide, Jul 2025)"
+   ],
+   "note": "~3 options; specialty depth moderate."
+  },
+  "walk": {
+   "score": 8,
+   "walk_score": 85,
+   "note": "Walk Score: Columbia City 85; Beacon Hill 62 (North Beacon Hill 78)."
+  },
+  "quiet": {
+   "score": 4,
+   "note": "Beacon Hill lies under the main SEA north-flow arrival path (reports: ~3 of 4 arrivals overhead on typical cloudy days; Greener Skies routing). Columbia City is quieter but still near the approach corridor."
+  },
+  "safety": {
+   "score": 4,
+   "violent_per_1k": null,
+   "property_per_1k": null,
+   "year": "2025 (trend only)",
+   "source": "none at neighborhood level",
+   "note": "No current per-capita data. A 2017 Seattle Times analysis found South Beacon Hill had the lowest property crime rate (2015-17, dated). Rainier Valley has had notable shootings (e.g., 2025-26 Rainier Beach incident). Compared to Seattle city average (NeighborhoodScout: violent 8.19/1k, property 57.53/1k; undated, FBI-based). SPD 2025: overall reported crime -18%, homicides -36% (37), car thefts -24%, burglaries -18%."
+  },
+  "lax": {
+   "score": 10,
+   "minutes_offpeak": 15,
+   "minutes_peak": 25,
+   "note": "SEA. Via I-5 S / SR-518, or Link 1 Line direct. Drive times are estimates from distance/typical routing (not measured with a routing tool this round)."
+  },
+  "nightlife": {
+   "score": 8,
+   "nearest_district": "Columbia City (walk) / Capitol Hill",
+   "drive_minutes": 12,
+   "note": "Estimate."
+  },
+  "gyms": {
+   "score": 6,
+   "examples": [
+    "neighborhood gyms in Columbia City (examples from general knowledge, not verified this round)"
+   ]
+  },
+  "services": {
+   "score": 7,
+   "note": "PCC Columbia City, Safeway (general knowledge)."
+  },
+  "rail": {
+   "score": 10,
+   "nearest_station": "Columbia City / Beacon Hill stations",
+   "line": "Link 1 Line",
+   "note": "Direct to SEA."
+  },
+  "airports_other": "Boeing Field (BFI) nearby; Paine Field ~45 min estimate.",
+  "summary": "Closest Seattle option to SEA with light rail, a walkable Columbia City core and relatively good value; trade-offs are aircraft noise on Beacon Hill and mixed safety.",
+  "sources": [
+   "https://www.tryperdiem.com/guide/best-work-friendly-coffee-shops-in-columbia-city",
+   "https://adventuresofaplusk.com/blog/10-must-visit-coffee-shops-in-seattle/",
+   "https://www.walkscore.com/rankings/Seattle",
+   "https://komonews.com/news/local/group-questions-flight-path-impacts-over-beacon-hill",
+   "https://beaconhill.seattle.wa.us/2012/06/12/faa-trial-project-to-change-some-flight-paths-over-beacon-hill/",
+   "https://micheleschuler.com/blog/farmers-markets-2026-guide",
+   "https://broadbandmap.com/internet-providers/seattle-wa",
+   "https://www.climate-zone.com/climate/us/seatac/",
+   "https://www.fox13seattle.com/news/seattle-police-crime-numbers-2025",
+   "https://relocationcoordinates.neighborhoodscout.com/wa/seattle/crime"
+  ],
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "No Columbia City/Beacon Hill 1BR median found; Seattle citywide 1BR median $1,944 (Apartment List, Jul 2026)",
+   "rent_trend": "-2.7% YoY citywide all-units (Apartment List, Jul 2026); no neighborhood trend found",
+   "summer_high_f": 78,
+   "marine_layer": "some – slightly warmer than north Seattle (not quantified)",
+   "fire_hazard": "CAL FIRE FHSZ: none (CA-only system, not applicable in WA; WA DNR wildfire maps not checked this round - dense urban area)",
+   "flood_zone": "Not a riverine flood area; no concern found",
+   "airport_noise": "Significant on Beacon Hill: under SEA north-flow arrival path (KOMO, Beacon Hill Blog; older 2012-2017 reporting)",
+   "parks": [
+    "Jefferson Park",
+    "Seward Park",
+    "Genesee Park",
+    "Cheasty Greenspace"
+   ],
+   "farmers_markets": [
+    "Columbia City Farmers Market – Wednesdays 3-7pm, May 6-Oct 28, 2026 (37th Ave S & S Edmunds)"
+   ],
+   "fiber": "Seattle: Quantum Fiber ~30% and Ziply Fiber ~25% address coverage citywide (broadbandmap.com, third-party); Xfinity/Astound cable widespread. Check the exact address.",
+   "vibe": "Diverse, walkable south-end village with light rail; check for jet noise before signing."
+  },
+  "name": "Columbia City / Beacon Hill",
+  "id": "sea-columbia-city-beacon-hill",
+  "market": "seattle"
+ },
+ {
+  "neighborhood": "West Seattle",
+  "region": "Seattle",
+  "lat": 47.563,
+  "lng": -122.387,
+  "freeway": {
+   "score": 6,
+   "nearest": [
+    "West Seattle Bridge to I-5 / SR-99 (~5-8 min from the Junction)",
+    "SR-509 south (~10 min)"
+   ],
+   "note": "Everything funnels over the West Seattle Bridge (estimate)."
+  },
+  "traffic": {
+   "score": 5,
+   "note": "Single bridge chokepoint; peak backups on the bridge/Spokane St, but SR-99 south to SEA is usually manageable."
+  },
+  "coffee": {
+   "score": 6,
+   "cafes": [
+    "C & P Coffee Company – 5612 California Ave SW; neighborhood hub",
+    "Current Coffee – West Seattle; laptop-friendly per The Infatuation",
+    "Dubsea Coffee – White Center edge"
+   ],
+   "note": "2-3 good options near the Junction."
+  },
+  "walk": {
+   "score": 7,
+   "walk_score": null,
+   "note": "Walk Score not retrieved for West Seattle/Junction; Junction core is walkable (estimate 80s, unverified)."
+  },
+  "quiet": {
+   "score": 8,
+   "note": "Mostly calm residential streets; Alki gets summer crowds/cruising noise."
+  },
+  "safety": {
+   "score": 6,
+   "violent_per_1k": null,
+   "property_per_1k": null,
+   "year": "2025 (trend only)",
+   "source": "moving blogs (North Admiral)",
+   "note": "A blog lists North Admiral at 0.42 crimes/1k (method unclear, not used as a rate). No reliable per-capita data; scored qualitatively. Compared to Seattle city average (NeighborhoodScout: violent 8.19/1k, property 57.53/1k; undated, FBI-based). SPD 2025: overall reported crime -18%, homicides -36% (37), car thefts -24%, burglaries -18%."
+  },
+  "lax": {
+   "score": 8,
+   "minutes_offpeak": 18,
+   "minutes_peak": 30,
+   "note": "SEA. Via SR-99 S / SR-509. Drive times are estimates from distance/typical routing (not measured with a routing tool this round)."
+  },
+  "nightlife": {
+   "score": 6,
+   "nearest_district": "Junction / Alki; Capitol Hill ~20 min",
+   "drive_minutes": 5,
+   "note": "Estimate; modest local bar scene."
+  },
+  "gyms": {
+   "score": 6,
+   "examples": [
+    "West Seattle neighborhood gyms (examples from general knowledge, not verified this round)"
+   ]
+  },
+  "services": {
+   "score": 7,
+   "note": "Whole Foods/Trader Joe's/QFC around the Junction (general knowledge)."
+  },
+  "rail": {
+   "score": 2,
+   "nearest_station": "None (West Seattle Link extension planned)",
+   "line": "RapidRide C; Water Taxi",
+   "note": "No light rail."
+  },
+  "airports_other": "Boeing Field (BFI) ~15 min estimate.",
+  "summary": "Quiet, beachy and fairly close to SEA, with a few good cafes at the Junction; trade-off is the single-bridge bottleneck and no rail.",
+  "sources": [
+   "https://localwiki.org/seattle/Coffee",
+   "https://www.theinfatuation.com/seattle/perfect-for/getting-work-done?page=2",
+   "https://doh.wa.gov/sites/default/files/2026-05/964003-FMNPAuthorizedFarmersMarketsWesternWA.pdf",
+   "https://broadbandmap.com/internet-providers/seattle-wa",
+   "https://www.climate-zone.com/climate/us/seatac/",
+   "https://relocationcoordinates.neighborhoodscout.com/wa/seattle/crime"
+  ],
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "No West Seattle 1BR median found; Seattle citywide 1BR median $1,944 (Apartment List, Jul 2026)",
+   "rent_trend": "-2.7% YoY citywide all-units (Apartment List, Jul 2026); no neighborhood trend found",
+   "summer_high_f": 78,
+   "marine_layer": "strong-to-some – Puget Sound on three sides; cooler, breezier",
+   "fire_hazard": "CAL FIRE FHSZ: none (CA-only system, not applicable in WA; WA DNR wildfire maps not checked this round - dense urban area)",
+   "flood_zone": "Alki/Harbor Ave shoreline coastal exposure; FEMA zones not checked",
+   "airport_noise": "Not researched; possible SEA traffic over southern areas (unverified)",
+   "parks": [
+    "Lincoln Park",
+    "Alki Beach",
+    "Schmitz Preserve Park",
+    "Camp Long"
+   ],
+   "farmers_markets": [
+    "West Seattle Farmers Market – Sundays 10am-2pm year-round (4523 California Ave SW)"
+   ],
+   "fiber": "Seattle: Quantum Fiber ~30% and Ziply Fiber ~25% address coverage citywide (broadbandmap.com, third-party); Xfinity/Astound cable widespread. Check the exact address.",
+   "vibe": "Small-town feel by the water; calm, with a modest coffee scene at the Junction."
+  },
+  "name": "West Seattle",
+  "id": "sea-west-seattle",
+  "market": "seattle"
+ },
+ {
+  "neighborhood": "Bellevue",
+  "region": "Eastside",
+  "lat": 47.615,
+  "lng": -122.201,
+  "freeway": {
+   "score": 10,
+   "nearest": [
+    "I-405 (NE 4th / NE 8th, ~2-3 min from downtown)",
+    "I-90 (~6 min)",
+    "SR-520 (~5 min)"
+   ],
+   "note": "Three highways within ~6 min of downtown Bellevue (estimate)."
+  },
+  "traffic": {
+   "score": 3,
+   "note": "INRIX names NB I-405 between Renton and the I-90 interchange as the region's most congested corridor; downtown Bellevue arterials congest at peak."
+  },
+  "coffee": {
+   "score": 4,
+   "cafes": [
+    "Bellden Cafe – 10527 Main St; quiet, specialty espresso",
+    "Third Culture Coffee – Bellevue (directory)",
+    "Espresso Vivace / Cafe Presse – listed in a Bellevue roundup (low-quality source; unverified)"
+   ],
+   "note": "Few genuine specialty cafes; sources weak."
+  },
+  "walk": {
+   "score": 5,
+   "walk_score": 41,
+   "note": "City average 41 (Redfin); downtown Bellevue is much higher (not retrieved)."
+  },
+  "quiet": {
+   "score": 6,
+   "note": "Downtown high-rises: construction and I-405 noise; residential neighborhoods quiet."
+  },
+  "safety": {
+   "score": 8,
+   "violent_per_1k": 1.23,
+   "property_per_1k": 28.38,
+   "year": "undated (eufy blog) + 2025 counts",
+   "source": "eufy blog (converted from per-100k, undated); Bellevue PD 2025 report",
+   "note": "Bellevue PD 2025: 5,698 reported crimes (-27%), property 4,412 (-33%). Rates from an undated secondary source - treat cautiously. Compared to Seattle city average (NeighborhoodScout: violent 8.19/1k, property 57.53/1k). Retail theft concentrated at malls."
+  },
+  "lax": {
+   "score": 7,
+   "minutes_offpeak": 23,
+   "minutes_peak": 45,
+   "note": "SEA. Via I-405 S / I-90 W + I-5 S. 23 min per Bellevue regional map; peak is an estimate."
+  },
+  "nightlife": {
+   "score": 7,
+   "nearest_district": "Downtown Bellevue / Capitol Hill ~20 min",
+   "drive_minutes": 5,
+   "note": "Estimate."
+  },
+  "gyms": {
+   "score": 10,
+   "examples": [
+    "Pro Club (Bellevue)",
+    "24 Hour Fitness (Bellevue)",
+    "LA Fitness (examples from general knowledge, not verified this round)"
+   ]
+  },
+  "services": {
+   "score": 10,
+   "note": "Whole Foods, Trader Joe's, QFC, Uwajimaya; Bellevue Square (general knowledge)."
+  },
+  "rail": {
+   "score": 7,
+   "nearest_station": "Bellevue Downtown Station",
+   "line": "Link 2 Line",
+   "note": "Cross-lake service status to Seattle not verified this round."
+  },
+  "airports_other": "Renton Municipal (RNT) ~15 min estimate; Paine Field ~35 min.",
+  "summary": "Excellent highway access, safety and services, but thin walkable specialty coffee and heavy I-405 congestion; rents highest on the list.",
+  "sources": [
+   "https://cornercoffeestore.com/best-bellevue-coffee-shops/",
+   "https://bellevuebeatblog.com/2026/02/24/the-2025-annual-crime-report-shows-overall-reported-crime-drops-27-and-property-crimes-fall-33-across-bellevue/",
+   "https://www.eufy.com/blogs/security-system/most-dangerous-washington-cities",
+   "https://www.kiro7.com/news/local/seattle-ranked-10th-worst-traffic-country/CTNHTKAOGJAGHOHVNIGNAWHB4Y",
+   "https://redfin.com/blog/cities-near-seattle-to-live",
+   "https://www.meydenbauer.com/wp-content/uploads/2019/10/Bellevue_Downtown_and_Regional_Map.pdf",
+   "https://www.rentcafe.com/average-rent-market-trends/us/wa/duvall/",
+   "https://doh.wa.gov/sites/default/files/2026-05/964003-FMNPAuthorizedFarmersMarketsWesternWA.pdf",
+   "https://broadbandmap.com/internet-providers/bellevue-wa",
+   "https://www.weatherapi.com/history/august/q/bellevue-2669259"
+  ],
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "No 1BR median found; RentCafe all-units average $2,738-2,778 (Jul/Aug 2026); Zumper 1BR median $2,530 was Oct 2024 (stale)",
+   "rent_trend": null,
+   "summer_high_f": 78,
+   "marine_layer": "little – inland of Lake Washington; warmer and sunnier than Seattle",
+   "fire_hazard": "CAL FIRE FHSZ: none (CA-only system, not applicable in WA; WA DNR wildland-urban-interface maps not checked this round - check edges near greenbelts)",
+   "flood_zone": "Mercer Slough/lakefront low areas; FEMA zones not checked",
+   "airport_noise": "None notable",
+   "parks": [
+    "Downtown Park",
+    "Mercer Slough Nature Park",
+    "Kelsey Creek Park"
+   ],
+   "farmers_markets": [
+    "Bellevue Farmers Market – Thursdays 3-7:30pm, May 21-Oct 1 (1717 Bellevue Way NE)",
+    "Crossroads Bellevue Farmers Market – Tuesdays 12-6pm, Jun 2-Sep 29"
+   ],
+   "fiber": "Bellevue: Quantum Fiber ~52% coverage, Ziply ~24% (another directory says ~12%) - third-party estimates",
+   "vibe": "Polished, safe and convenient; more mall than café culture."
+  },
+  "name": "Bellevue",
+  "id": "sea-bellevue",
+  "market": "seattle"
+ },
+ {
+  "neighborhood": "Kirkland",
+  "region": "Eastside",
+  "lat": 47.677,
+  "lng": -122.206,
+  "freeway": {
+   "score": 7,
+   "nearest": [
+    "I-405 (NE 85th / NE 70th, ~4-6 min from downtown Kirkland)",
+    "SR-520 (~8 min)"
+   ],
+   "note": "Estimate."
+  },
+  "traffic": {
+   "score": 4,
+   "note": "I-405 through Kirkland is chronically congested at peak; local arterials (NE 85th, Market St) moderate."
+  },
+  "coffee": {
+   "score": 5,
+   "cafes": [
+    "Zoka Coffee – Kirkland",
+    "Thruline Coffee – Kirkland; great but busy (Reddit)",
+    "Kitanda Espresso & Acai – Kirkland"
+   ],
+   "note": "2 verified specialty-leaning cafes; walk distance depends on location (downtown best)."
+  },
+  "walk": {
+   "score": 5,
+   "walk_score": 51,
+   "note": "City average 51 (Walk Score/Redfin); downtown Kirkland and Juanita higher."
+  },
+  "quiet": {
+   "score": 8,
+   "note": "Quiet residential lakeside town; downtown waterfront busy on summer weekends."
+  },
+  "safety": {
+   "score": 9,
+   "violent_per_1k": 1.0,
+   "property_per_1k": 23.3,
+   "year": "2025 (SafeWise ranking)",
+   "source": "SafeWise 2025 via Talk 1067",
+   "note": "Kirkland ranked #20 safest WA city; well below Compared to Seattle city average (NeighborhoodScout: violent 8.19/1k, property 57.53/1k)."
+  },
+  "lax": {
+   "score": 5,
+   "minutes_offpeak": 30,
+   "minutes_peak": 55,
+   "note": "SEA. Via I-405 S. Drive times are estimates from distance/typical routing (not measured with a routing tool this round)."
+  },
+  "nightlife": {
+   "score": 6,
+   "nearest_district": "Downtown Kirkland / Bellevue; Capitol Hill ~25 min",
+   "drive_minutes": 5,
+   "note": "Estimate."
+  },
+  "gyms": {
+   "score": 8,
+   "examples": [
+    "24 Hour Fitness",
+    "LA Fitness (Kirkland area) (examples from general knowledge, not verified this round)"
+   ]
+  },
+  "services": {
+   "score": 8,
+   "note": "Whole Foods, Trader Joe's, PCC (general knowledge)."
+  },
+  "rail": {
+   "score": 2,
+   "nearest_station": "None (I-405 Stride BRT planned)",
+   "line": "Buses",
+   "note": "No light rail."
+  },
+  "airports_other": "Paine Field (PAE) ~25 min estimate.",
+  "summary": "Very safe, quiet lakeside town with a couple of good cafes; trade-off is I-405 congestion, a 30+ min SEA run and limited walkability outside downtown.",
+  "sources": [
+   "https://lr.eu.psf.lt/r/redmond/comments/1dx93i0/places_to_study",
+   "https://talk1067.com/ixp/1137/p/safest-cities-washington-2025/",
+   "https://www.walkscore.com/WA",
+   "https://redfin.com/blog/cities-near-seattle-to-live",
+   "https://www.kiro7.com/news/local/seattle-ranked-10th-worst-traffic-country/CTNHTKAOGJAGHOHVNIGNAWHB4Y",
+   "https://www.rentcafe.com/average-rent-market-trends/us/wa/duvall/",
+   "https://doh.wa.gov/sites/default/files/2026-05/964003-FMNPAuthorizedFarmersMarketsWesternWA.pdf",
+   "https://www.weatherapi.com/history/august/q/bellevue-2669259"
+  ],
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "No 1BR median found; RentCafe all-units average $2,551 (Jul 2026); Zumper 1BR median $2,250 was Oct 2024 (stale)",
+   "rent_trend": null,
+   "summer_high_f": 78,
+   "marine_layer": "little – inland, warmer",
+   "fire_hazard": "CAL FIRE FHSZ: none (CA-only system, not applicable in WA; WA DNR wildland-urban-interface maps not checked this round - check edges near greenbelts)",
+   "flood_zone": "Lakefront/Juanita Creek low areas; FEMA zones not checked",
+   "airport_noise": "None notable",
+   "parks": [
+    "Marina Park",
+    "Juanita Beach Park",
+    "Cross Kirkland Corridor",
+    "Houghton Beach Park"
+   ],
+   "farmers_markets": [
+    "Kirkland Downtown and Juanita markets listed (schedules not found)"
+   ],
+   "fiber": "Not researched; Ziply (legacy Frontier) and Xfinity commonly serve the Eastside (general knowledge - verify by address)",
+   "vibe": "Calm, affluent lake town; walkable only near downtown."
+  },
+  "name": "Kirkland",
+  "id": "sea-kirkland",
+  "market": "seattle"
+ },
+ {
+  "neighborhood": "Redmond",
+  "region": "Eastside",
+  "lat": 47.674,
+  "lng": -122.122,
+  "freeway": {
+   "score": 7,
+   "nearest": [
+    "SR-520 (downtown Redmond, ~3 min)",
+    "I-405 (via 520, ~10 min)"
+   ],
+   "note": "SR-520 is quick; I-405 farther (estimate)."
+  },
+  "traffic": {
+   "score": 5,
+   "note": "SR-520 and Redmond Way congest at Microsoft peak; less severe than I-405 core."
+  },
+  "coffee": {
+   "score": 6,
+   "cafes": [
+    "River Trail Roasters – by City Hall, downtown; roaster, study-friendly",
+    "Victor's Coffee – historic Gilman St bldg; no public Wi-Fi",
+    "Caffe Lusso – roastery counter (weekdays)",
+    "Doppio / Five Stones – downtown"
+   ],
+   "note": "Redmond guide: 13 shops incl. 4 local roasters, densest downtown."
+  },
+  "walk": {
+   "score": 3,
+   "walk_score": 33,
+   "note": "City average 33; downtown Redmond much higher (not retrieved)."
+  },
+  "quiet": {
+   "score": 8,
+   "note": "Suburban and quiet; downtown construction."
+  },
+  "safety": {
+   "score": 8,
+   "violent_per_1k": null,
+   "property_per_1k": null,
+   "year": "n/a",
+   "source": "not found",
+   "note": "No current Redmond rate found; scored qualitatively (Eastside suburb, generally low crime). Compared to Seattle city average (NeighborhoodScout: violent 8.19/1k, property 57.53/1k)."
+  },
+  "lax": {
+   "score": 6,
+   "minutes_offpeak": 28,
+   "minutes_peak": 55,
+   "note": "SEA. Via SR-520/I-405/I-5 or I-90. 28 min per rome2rio; peak is an estimate."
+  },
+  "nightlife": {
+   "score": 5,
+   "nearest_district": "Downtown Redmond / Bellevue",
+   "drive_minutes": 15,
+   "note": "Estimate."
+  },
+  "gyms": {
+   "score": 7,
+   "examples": [
+    "24 Hour Fitness",
+    "Pro Club (Bellevue/Redmond border) (examples from general knowledge, not verified this round)"
+   ]
+  },
+  "services": {
+   "score": 8,
+   "note": "Whole Foods, Trader Joe's, QFC (general knowledge)."
+  },
+  "rail": {
+   "score": 7,
+   "nearest_station": "Downtown Redmond / Redmond Technology stations",
+   "line": "Link 2 Line",
+   "note": "Opened 2025 (general knowledge)."
+  },
+  "airports_other": "Paine Field ~35 min estimate.",
+  "summary": "Quiet, safe tech suburb with a surprisingly good downtown coffee cluster; trade-offs are car-dependence and a ~30 min SEA drive.",
+  "sources": [
+   "https://mycoffeeexplorer.com/guides/redmond-wa",
+   "https://lr.eu.psf.lt/r/redmond/comments/1dx93i0/places_to_study",
+   "https://www.walkscore.com/WA",
+   "https://www.kiro7.com/news/local/seattle-ranked-10th-worst-traffic-country/CTNHTKAOGJAGHOHVNIGNAWHB4Y",
+   "https://www.rome2rio.com/s/SeaTac/Redmond-Transit-Center-Bay-4",
+   "https://www.rentcafe.com/average-rent-market-trends/us/wa/duvall/",
+   "https://doh.wa.gov/sites/default/files/2026-05/964003-FMNPAuthorizedFarmersMarketsWesternWA.pdf",
+   "https://www.weatherapi.com/history/august/q/bellevue-2669259"
+  ],
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "No 1BR median found; RentCafe all-units average $2,559-2,592 (Jul/Aug 2026); Zumper 1BR median $2,310 Oct 2024 (stale)",
+   "rent_trend": null,
+   "summer_high_f": 78,
+   "marine_layer": "little – inland, warmest of the list in summer (not quantified)",
+   "fire_hazard": "CAL FIRE FHSZ: none (CA-only system, not applicable in WA; WA DNR wildland-urban-interface maps not checked this round - check edges near greenbelts)",
+   "flood_zone": "Sammamish River floodplain near Marymoor; FEMA zones not checked",
+   "airport_noise": "None notable",
+   "parks": [
+    "Marymoor Park",
+    "Sammamish River Trail",
+    "Redmond Central Connector"
+   ],
+   "farmers_markets": [
+    "Redmond Saturday Market (Willows Rd NE; hours not confirmed)"
+   ],
+   "fiber": "Not researched; Ziply / Quantum / Xfinity in region - verify by address",
+   "vibe": "Suburban, safe and green, with a walkable downtown coffee pocket."
+  },
+  "name": "Redmond",
+  "id": "sea-redmond",
+  "market": "seattle"
+ },
+ {
+  "neighborhood": "Shoreline / Lynnwood",
+  "region": "North & South suburbs",
+  "lat": 47.79,
+  "lng": -122.32,
+  "freeway": {
+   "score": 8,
+   "nearest": [
+    "I-5 (NE 175th / 205th / 44th Ave W, ~3-5 min)",
+    "I-405 (Lynnwood, ~5 min)",
+    "SR-99 (Aurora)"
+   ],
+   "note": "I-5/I-405 junction at Lynnwood (estimate)."
+  },
+  "traffic": {
+   "score": 3,
+   "note": "I-5 northbound Northgate to 128th St SE flagged by INRIX (2024) as the area's busiest corridor - runs right through here."
+  },
+  "coffee": {
+   "score": 3,
+   "cafes": [
+    "Brown's Coffee – Shoreline (Patch; may be dated)",
+    "Caffe Ladro – Lynnwood",
+    "Spotted Cow Coffee – Mill Creek"
+   ],
+   "note": "A local Reddit thread asks why there's no coffee in Shoreline - thin specialty scene."
+  },
+  "walk": {
+   "score": 5,
+   "walk_score": 54,
+   "note": "City averages: Lynnwood 54, Shoreline 50."
+  },
+  "quiet": {
+   "score": 6,
+   "note": "Residential streets are quiet; I-5 and Aurora corridors noisy."
+  },
+  "safety": {
+   "score": 5,
+   "violent_per_1k": 2.9,
+   "property_per_1k": 66.8,
+   "year": "undated (NeighborhoodScout, Lynnwood)",
+   "source": "NeighborhoodScout (Lynnwood only)",
+   "note": "Lynnwood property rate is above Seattle's (Alderwood Mall retail theft likely inflates). Shoreline: no current rate found. Compared to Seattle city average (NeighborhoodScout: violent 8.19/1k, property 57.53/1k)."
+  },
+  "lax": {
+   "score": 4,
+   "minutes_offpeak": 35,
+   "minutes_peak": 60,
+   "note": "SEA. Via I-5 S; Link from Lynnwood City Center (~70 min). Drive times are estimates from distance/typical routing (not measured with a routing tool this round)."
+  },
+  "nightlife": {
+   "score": 5,
+   "nearest_district": "Roosevelt/U District or Capitol Hill",
+   "drive_minutes": 20,
+   "note": "Estimate."
+  },
+  "gyms": {
+   "score": 7,
+   "examples": [
+    "LA Fitness (Lynnwood)",
+    "24 Hour Fitness (examples from general knowledge, not verified this round)"
+   ]
+  },
+  "services": {
+   "score": 8,
+   "note": "Alderwood Mall area big-box retail; Trader Joe's (general knowledge)."
+  },
+  "rail": {
+   "score": 8,
+   "nearest_station": "Lynnwood City Center / Shoreline North 185th / Shoreline South 148th",
+   "line": "Link 1 Line",
+   "note": "Opened 2024 (general knowledge)."
+  },
+  "airports_other": "Paine Field (PAE) ~15 min estimate.",
+  "summary": "Car-friendly and relatively affordable with light rail, but weak specialty coffee and on the region's worst I-5 corridor; a value pick rather than a lifestyle pick.",
+  "sources": [
+   "https://patch.com/washington/shoreline/patch-picks-best-places-to-grab-a-cup-of-coffee",
+   "https://lr.psf.lt/r/Shoreline/comments/1jk28o7/why_is_there_no_coffee",
+   "https://www.seattlenorthcountry.com/blog/5-best-coffee-spots-in-urban-basecamp/",
+   "https://www.walkscore.com/score/-lynnwood--wa",
+   "https://www.walkscore.com/WA",
+   "https://www.neighborhoodscout.com/wa/lynnwood/crime",
+   "https://www.kiro7.com/news/local/seattle-ranked-10th-worst-traffic-country/CTNHTKAOGJAGHOHVNIGNAWHB4Y",
+   "https://www.rentcafe.com/average-rent-market-trends/us/wa/duvall/",
+   "https://doh.wa.gov/sites/default/files/2026-05/964003-FMNPAuthorizedFarmersMarketsWesternWA.pdf",
+   "https://www.climate-zone.com/climate/us/seatac/"
+  ],
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "No 1BR median found; RentCafe all-units average Lynnwood $2,102, Shoreline $2,065 (Jul 2026)",
+   "rent_trend": null,
+   "summer_high_f": 78,
+   "marine_layer": "some – near Puget Sound (Richmond Beach); Sea-Tac normal used as proxy",
+   "fire_hazard": "CAL FIRE FHSZ: none (CA-only system, not applicable in WA; WA DNR wildland-urban-interface maps not checked this round - check edges near greenbelts)",
+   "flood_zone": "No flood concern found",
+   "airport_noise": "Minor: Paine Field (Everett) commercial flights to the north (not quantified)",
+   "parks": [
+    "Richmond Beach Saltwater Park",
+    "Shoreview Park",
+    "Scriber Lake Park (Lynnwood)",
+    "Interurban Trail"
+   ],
+   "farmers_markets": [
+    "Shoreline Farmers Market – Saturdays 10am-2pm, Jun 6-Oct 31, 2026 (18821 Aurora Ave N)"
+   ],
+   "fiber": "Not researched; Ziply (legacy Frontier) common in Snohomish County (general knowledge - verify)",
+   "vibe": "Quiet suburban streets and light rail, but you'll drive for good coffee."
+  },
+  "name": "Shoreline / Lynnwood",
+  "id": "sea-shoreline-lynnwood",
+  "market": "seattle"
+ },
+ {
+  "neighborhood": "Bothell",
+  "region": "North & South suburbs",
+  "lat": 47.76,
+  "lng": -122.205,
+  "freeway": {
+   "score": 7,
+   "nearest": [
+    "I-405 (NE 195th / SR-522, ~5 min)",
+    "SR-522 to Seattle"
+   ],
+   "note": "Estimate."
+  },
+  "traffic": {
+   "score": 4,
+   "note": "I-405 north end and SR-522 congest at peak."
+  },
+  "coffee": {
+   "score": 3,
+   "cafes": [
+    "Woods Coffee – Bothell (rating-based list)",
+    "Gourmet Latte – Bothell",
+    "Caffe Ladro – Bothell area"
+   ],
+   "note": "Mostly regional chains; no clear third-wave cluster found."
+  },
+  "walk": {
+   "score": 3,
+   "walk_score": 29,
+   "note": "City average 29 (Walk Score WA table); downtown addresses 70-81."
+  },
+  "quiet": {
+   "score": 8,
+   "note": "Quiet suburban; I-405 noise along corridor."
+  },
+  "safety": {
+   "score": 9,
+   "violent_per_1k": 1.1,
+   "property_per_1k": 19.6,
+   "year": "2025 (SafeWise ranking)",
+   "source": "SafeWise 2025 via Talk 1067",
+   "note": "Violent up from 0.8 (2024), property down from 22.2. Well below Compared to Seattle city average (NeighborhoodScout: violent 8.19/1k, property 57.53/1k)."
+  },
+  "lax": {
+   "score": 3,
+   "minutes_offpeak": 38,
+   "minutes_peak": 60,
+   "note": "SEA. Via I-405 S. Drive times are estimates from distance/typical routing (not measured with a routing tool this round)."
+  },
+  "nightlife": {
+   "score": 4,
+   "nearest_district": "Downtown Kirkland / Woodinville wineries",
+   "drive_minutes": 15,
+   "note": "Estimate; Capitol Hill ~30 min."
+  },
+  "gyms": {
+   "score": 6,
+   "examples": [
+    "LA Fitness / 24 Hour Fitness (area) (examples from general knowledge, not verified this round)"
+   ]
+  },
+  "services": {
+   "score": 7,
+   "note": "Suburban groceries (general knowledge)."
+  },
+  "rail": {
+   "score": 1,
+   "nearest_station": "None",
+   "line": "Buses / future Stride BRT",
+   "note": "No light rail."
+  },
+  "airports_other": "Paine Field (PAE) ~20 min estimate.",
+  "summary": "Very safe and quiet, but weak coffee/walkability and ~40 min to SEA; fits only if safety and quiet dominate.",
+  "sources": [
+   "https://www.tripadvisor.in/Restaurants-g58362-c8-Bothell_Washington.html",
+   "https://www.walkscore.com/WA",
+   "https://www.walkscore.com/score/-bothell--wa",
+   "https://talk1067.com/ixp/1137/p/safest-cities-washington-2025/",
+   "https://www.kiro7.com/news/local/seattle-ranked-10th-worst-traffic-country/CTNHTKAOGJAGHOHVNIGNAWHB4Y",
+   "https://www.rentcafe.com/average-rent-market-trends/us/wa/duvall/",
+   "https://www.climate-zone.com/climate/us/seatac/"
+  ],
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "No 1BR median found; RentCafe all-units average $2,294 (Jul 2026)",
+   "rent_trend": null,
+   "summer_high_f": 78,
+   "marine_layer": "little – inland",
+   "fire_hazard": "CAL FIRE FHSZ: none (CA-only system, not applicable in WA; WA DNR wildland-urban-interface maps not checked this round - check edges near greenbelts)",
+   "flood_zone": "Sammamish River floodplain near downtown; FEMA zones not checked",
+   "airport_noise": "None notable",
+   "parks": [
+    "Bothell Landing Park",
+    "Sammamish River Trail",
+    "North Creek Forest"
+   ],
+   "farmers_markets": [
+    "Not found this round"
+   ],
+   "fiber": "Not researched; Ziply/Xfinity likely (verify by address)",
+   "vibe": "Quiet, safe, green suburb; car-first."
+  },
+  "name": "Bothell",
+  "id": "sea-bothell",
+  "market": "seattle"
+ },
+ {
+  "neighborhood": "Renton / Tukwila",
+  "region": "North & South suburbs",
+  "lat": 47.48,
+  "lng": -122.215,
+  "freeway": {
+   "score": 10,
+   "nearest": [
+    "I-405 (Renton, ~3 min)",
+    "I-5 (Southcenter, ~3-5 min)",
+    "SR-167 / SR-518"
+   ],
+   "note": "I-5/I-405/SR-167/SR-518 all converge here (estimate)."
+  },
+  "traffic": {
+   "score": 2,
+   "note": "INRIX: NB I-405 Renton-to-I-90 is the region's most congested corridor; Southcenter interchange chronically slow."
+  },
+  "coffee": {
+   "score": 4,
+   "cafes": [
+    "Boon Boona Coffee – 724 S 3rd St, downtown Renton; African-sourced, spacious, laptop-friendly",
+    "Cloudbreak Coffee – Renton (location not confirmed)",
+    "Refuel Cafe – serves Fulcrum beans (location not confirmed)"
+   ],
+   "note": "One strong walkable pick downtown Renton."
+  },
+  "walk": {
+   "score": 3,
+   "walk_score": 40,
+   "note": "City averages: Renton 40, Tukwila 41."
+  },
+  "quiet": {
+   "score": 5,
+   "note": "Freeway noise, Renton airport (Boeing) and SEA proximity; quieter hillside residential areas."
+  },
+  "safety": {
+   "score": 3,
+   "violent_per_1k": 4.0,
+   "property_per_1k": 46.0,
+   "year": "2022 (NeighborhoodScout, Renton)",
+   "source": "NeighborhoodScout (Renton); WASPC 2025 via B-Town Blog (Tukwila)",
+   "note": "Renton approx, 2022 FBI data. Tukwila 2025 total rate 161.2/1k (highest in South King County; Southcenter retail inflates it). Compared to Seattle city average (NeighborhoodScout: violent 8.19/1k, property 57.53/1k)."
+  },
+  "lax": {
+   "score": 10,
+   "minutes_offpeak": 12,
+   "minutes_peak": 20,
+   "note": "SEA. Via I-405/SR-518 or I-5. Drive times are estimates from distance/typical routing (not measured with a routing tool this round)."
+  },
+  "nightlife": {
+   "score": 4,
+   "nearest_district": "Downtown Renton / Capitol Hill ~25 min",
+   "drive_minutes": 10,
+   "note": "Estimate."
+  },
+  "gyms": {
+   "score": 8,
+   "examples": [
+    "LA Fitness (Renton)",
+    "24 Hour Fitness (Southcenter) (examples from general knowledge, not verified this round)"
+   ]
+  },
+  "services": {
+   "score": 9,
+   "note": "Southcenter Mall, Renton Landing big-box (general knowledge)."
+  },
+  "rail": {
+   "score": 5,
+   "nearest_station": "Tukwila International Blvd",
+   "line": "Link 1 Line; Sounder at Tukwila",
+   "note": "Renton has buses/RapidRide F."
+  },
+  "airports_other": "Renton Municipal (RNT) in town; Boeing Field ~10 min estimate.",
+  "summary": "Unbeatable highway and SEA access with lower rents, but the worst I-405 traffic, weak walkability/coffee and elevated crime (esp. Tukwila).",
+  "sources": [
+   "https://mycoffeeexplorer.com/guides/renton-wa",
+   "https://www.walkscore.com/WA",
+   "https://NeighborhoodScout.com/wa/renton/crime",
+   "https://b-townblog.com/?p=251240",
+   "https://www.kiro7.com/news/local/seattle-ranked-10th-worst-traffic-country/CTNHTKAOGJAGHOHVNIGNAWHB4Y",
+   "https://kingcounty.gov/en/dept/dnrp/nature-recreation/environment-ecology-conservation/flood-services/flooding-in-king-county-watersheds/green-duwamish-river-watershed",
+   "https://www.knkx.org/public-health/2025-12-15/evacuation-king-county-green-river-levee-fails-flooding",
+   "https://www.rentcafe.com/average-rent-market-trends/us/wa/duvall/",
+   "https://www.climate-zone.com/climate/us/seatac/"
+  ],
+  "extras": {
+   "median_1br_rent": null,
+   "rent_source": "No 1BR median found; RentCafe all-units average Renton $2,152 (Jul 2026)",
+   "rent_trend": null,
+   "summer_high_f": 78,
+   "marine_layer": "some – Sea-Tac normal used",
+   "fire_hazard": "CAL FIRE FHSZ: none (CA-only system, not applicable in WA; WA DNR wildland-urban-interface maps not checked this round - check edges near greenbelts)",
+   "flood_zone": "Lower Green River floodplain: King County flags Renton/Tukwila residential risk; Dec 15 2025 Desimone levee breach (industrial areas affected). Check FEMA map per address.",
+   "airport_noise": "Notable: adjacent to SEA and Renton Municipal Airport (Boeing 737 flights)",
+   "parks": [
+    "Gene Coulon Memorial Beach Park",
+    "Cedar River Trail",
+    "Fort Dent Park (Tukwila)"
+   ],
+   "farmers_markets": [
+    "Renton Farmers Market – Tuesdays in season (hours not confirmed)"
+   ],
+   "fiber": "Not researched; verify by address",
+   "vibe": "Highway hub near the airport; practical, not quiet or charming."
+  },
+  "name": "Renton / Tukwila",
+  "id": "sea-renton-tukwila",
+  "market": "seattle"
+ }
+]
