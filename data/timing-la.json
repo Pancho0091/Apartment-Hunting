@@ -1,0 +1,466 @@
+{
+ "fixture": true,
+ "updated": "2026-10-26",
+ "seasonality": {
+  "months": [
+   {
+    "m": 1,
+    "rent_vs_avg_pct": -1.6,
+    "concessions": "high",
+    "note": "Fixture note for month 1.",
+    "sources": [
+     "https://example.com/fixture-source-a"
+    ]
+   },
+   {
+    "m": 2,
+    "rent_vs_avg_pct": -1.2,
+    "concessions": "medium",
+    "note": "Fixture note for month 2.",
+    "sources": [
+     "https://example.com/fixture-source-a"
+    ]
+   },
+   {
+    "m": 3,
+    "rent_vs_avg_pct": -0.4,
+    "concessions": "medium",
+    "note": "Fixture note for month 3.",
+    "sources": [
+     "https://example.com/fixture-source-a"
+    ]
+   },
+   {
+    "m": 4,
+    "rent_vs_avg_pct": 0.3,
+    "concessions": "low",
+    "note": "Fixture note for month 4.",
+    "sources": [
+     "https://example.com/fixture-source-a"
+    ]
+   },
+   {
+    "m": 5,
+    "rent_vs_avg_pct": 0.9,
+    "concessions": "low",
+    "note": "Fixture note for month 5.",
+    "sources": [
+     "https://example.com/fixture-source-a"
+    ]
+   },
+   {
+    "m": 6,
+    "rent_vs_avg_pct": 1.5,
+    "concessions": "low",
+    "note": "Fixture note for month 6.",
+    "sources": [
+     "https://example.com/fixture-source-a"
+    ]
+   },
+   {
+    "m": 7,
+    "rent_vs_avg_pct": 1.8,
+    "concessions": "low",
+    "note": "Fixture note for month 7.",
+    "sources": [
+     "https://example.com/fixture-source-a"
+    ]
+   },
+   {
+    "m": 8,
+    "rent_vs_avg_pct": 1.4,
+    "concessions": "low",
+    "note": "Fixture note for month 8.",
+    "sources": [
+     "https://example.com/fixture-source-a"
+    ]
+   },
+   {
+    "m": 9,
+    "rent_vs_avg_pct": 0.6,
+    "concessions": "medium",
+    "note": "Fixture note for month 9.",
+    "sources": [
+     "https://example.com/fixture-source-a"
+    ]
+   },
+   {
+    "m": 10,
+    "rent_vs_avg_pct": -0.2,
+    "concessions": "medium",
+    "note": "Fixture note for month 10.",
+    "sources": [
+     "https://example.com/fixture-source-a"
+    ]
+   },
+   {
+    "m": 11,
+    "rent_vs_avg_pct": -0.9,
+    "concessions": "high",
+    "note": "Fixture note for month 11.",
+    "sources": [
+     "https://example.com/fixture-source-a"
+    ]
+   },
+   {
+    "m": 12,
+    "rent_vs_avg_pct": null,
+    "concessions": null,
+    "note": "Fixture note for month 12.",
+    "sources": [
+     "https://example.com/fixture-source-a"
+    ]
+   }
+  ],
+  "summary": "Fixture summary: rents run below the annual average in winter and peak in summer.",
+  "best_window": "Fixture best window: mid-December to mid-January.",
+  "evidence": "Fixture evidence text.",
+  "sources": [
+   "https://example.com/fixture-source-a",
+   "https://example.org/fixture/b"
+  ]
+ },
+ "timing_effects": [
+  {
+   "title": "Fixture end of month",
+   "finding": "Fixture finding about the last week of a month.",
+   "strength": "moderate",
+   "sources": [
+    "https://example.com/fixture-source-a"
+   ]
+  },
+  {
+   "title": "Fixture end of quarter",
+   "finding": "Fixture finding about quarter ends.",
+   "strength": "weak",
+   "sources": []
+  },
+  {
+   "title": "Fixture end of year",
+   "finding": "Fixture finding about December.",
+   "strength": "strong",
+   "sources": [
+    "https://example.com/fixture-source-a",
+    "https://example.org/fixture/b"
+   ]
+  },
+  {
+   "title": "Fixture weekday",
+   "finding": "Fixture anecdote about tour days.",
+   "strength": "anecdotal",
+   "sources": [
+    "https://example.org/fixture/b"
+   ]
+  }
+ ],
+ "market_now": [
+  {
+   "geo": "Los Angeles",
+   "metric": "Fixture vacancy",
+   "value": "5.0%",
+   "as_of": "2026-09",
+   "source": "https://example.com/fixture-source-a"
+  },
+  {
+   "geo": "Long Beach",
+   "metric": "Fixture median 1BR",
+   "value": "$2,000",
+   "as_of": "2026-09",
+   "source": "https://example.org/fixture/b"
+  },
+  {
+   "geo": "Orange County",
+   "metric": "Fixture rent change, YoY",
+   "value": "-1.0%",
+   "as_of": null,
+   "source": null
+  },
+  {
+   "geo": "Los Angeles",
+   "metric": "Fixture listings with a concession",
+   "value": "30%",
+   "as_of": "2026-10",
+   "source": "https://example.com/fixture-source-a"
+  }
+ ],
+ "forecast": [
+  {
+   "geo": "Los Angeles",
+   "finding": "Fixture forecast: flat rents into spring.",
+   "as_of": "2026-10",
+   "source": "https://example.com/fixture-source-a"
+  },
+  {
+   "geo": "Orange County",
+   "finding": "Fixture forecast line two.",
+   "as_of": null,
+   "source": null
+  }
+ ],
+ "history": [
+  {
+   "period": "2020–2021",
+   "geo": "Los Angeles",
+   "event": "Fixture event one",
+   "effect": "Fixture effect one.",
+   "sources": [
+    "https://example.com/fixture-source-a"
+   ]
+  },
+  {
+   "period": "2023",
+   "geo": "Orange County",
+   "event": "Fixture event two",
+   "effect": "Fixture effect two.",
+   "sources": []
+  },
+  {
+   "period": "2025",
+   "geo": "Long Beach",
+   "event": "Fixture event three",
+   "effect": null,
+   "sources": [
+    "https://example.org/fixture/b"
+   ]
+  }
+ ],
+ "concession_share_history": [
+  {
+   "period": "2024-06",
+   "geo": "Los Angeles",
+   "share_pct": 22,
+   "source": "https://example.com/fixture-source-a"
+  },
+  {
+   "period": "2024-12",
+   "geo": "Los Angeles",
+   "share_pct": 28,
+   "source": "https://example.com/fixture-source-a"
+  },
+  {
+   "period": "2025-06",
+   "geo": "Los Angeles",
+   "share_pct": 26,
+   "source": "https://example.com/fixture-source-a"
+  },
+  {
+   "period": "2025-12",
+   "geo": "Los Angeles",
+   "share_pct": 33,
+   "source": "https://example.com/fixture-source-a"
+  },
+  {
+   "period": "2026-06",
+   "geo": "Los Angeles",
+   "share_pct": 31,
+   "source": "https://example.com/fixture-source-a"
+  },
+  {
+   "period": "2026-09",
+   "geo": "Los Angeles",
+   "share_pct": 35,
+   "source": "https://example.com/fixture-source-a"
+  },
+  {
+   "period": "2025-12",
+   "geo": "Orange County",
+   "share_pct": 18,
+   "source": "https://example.org/fixture/b"
+  },
+  {
+   "period": "2026-09",
+   "geo": "Orange County",
+   "share_pct": 21,
+   "source": "https://example.org/fixture/b"
+  }
+ ],
+ "areas": [
+  {
+   "area_id": "koreatown",
+   "name": "Koreatown",
+   "region": "Los Angeles",
+   "level": "high",
+   "typical_offer": "Fixture: 6–8 weeks free",
+   "driver": "Fixture driver: new supply",
+   "vacancy": "Fixture 7%",
+   "pipeline": "Fixture pipeline",
+   "evidence": "Fixture evidence.",
+   "as_of": "2026-10",
+   "sources": [
+    "https://example.com/fixture-source-a",
+    "https://example.org/fixture/b"
+   ]
+  },
+  {
+   "area_id": "downtown-la-south-park",
+   "name": "Downtown LA – South Park",
+   "region": "Los Angeles",
+   "level": "high",
+   "typical_offer": "Fixture: 2 months free",
+   "driver": "Fixture driver",
+   "vacancy": null,
+   "pipeline": null,
+   "evidence": null,
+   "as_of": "2026-10",
+   "sources": [
+    "https://example.com/fixture-source-a"
+   ]
+  },
+  {
+   "area_id": "long-beach-downtown-east-village",
+   "name": "Long Beach – Downtown / East Village",
+   "region": "Long Beach",
+   "level": "medium",
+   "typical_offer": "Fixture: 1 month free",
+   "driver": "Fixture driver",
+   "vacancy": null,
+   "pipeline": null,
+   "evidence": null,
+   "as_of": null,
+   "sources": []
+  },
+  {
+   "area_id": "costa-mesa",
+   "name": "Costa Mesa",
+   "region": "Orange County",
+   "level": "low",
+   "typical_offer": null,
+   "driver": "Fixture driver: tight supply",
+   "vacancy": null,
+   "pipeline": null,
+   "evidence": null,
+   "as_of": null,
+   "sources": [
+    "https://example.org/fixture/b"
+   ]
+  },
+  {
+   "area_id": null,
+   "name": "Fixture area without id",
+   "region": "Orange County",
+   "level": "unknown",
+   "typical_offer": null,
+   "driver": null,
+   "vacancy": null,
+   "pipeline": null,
+   "evidence": null,
+   "as_of": null,
+   "sources": []
+  }
+ ],
+ "area_summary": "Fixture area summary: concessions concentrate where new buildings are leasing up.",
+ "lease_ups": [
+  {
+   "name": "Fixture Lease-Up One",
+   "address": "100 Fixture St",
+   "area": "Koreatown",
+   "region": "Los Angeles",
+   "operator": "Fixture Operator",
+   "opening": "2026-08",
+   "units": 300,
+   "special_seen": "Fixture: 8 weeks free",
+   "studio_1br_rent": "Fixture $2,100–$2,600",
+   "sources": [
+    "https://example.com/fixture-source-a"
+   ]
+  },
+  {
+   "name": "Fixture Lease-Up Two",
+   "address": null,
+   "area": "Long Beach – Downtown",
+   "region": "Long Beach",
+   "operator": null,
+   "opening": null,
+   "units": null,
+   "special_seen": null,
+   "studio_1br_rent": null,
+   "sources": []
+  }
+ ],
+ "operators": [
+  {
+   "name": "Fixture Operator A",
+   "pricing": "Fixture: revenue-management software",
+   "concession_style": "Fixture: weeks free",
+   "negotiable": "somewhat",
+   "note": "Fixture note.",
+   "sources": [
+    "https://example.com/fixture-source-a"
+   ]
+  },
+  {
+   "name": "Fixture Operator B",
+   "pricing": null,
+   "concession_style": "Fixture: look-and-lease",
+   "negotiable": "no",
+   "note": null,
+   "sources": []
+  },
+  {
+   "name": "Fixture Operator C",
+   "pricing": "Fixture pricing",
+   "concession_style": null,
+   "negotiable": "unknown",
+   "note": null,
+   "sources": [
+    "https://example.org/fixture/b"
+   ]
+  }
+ ],
+ "tactics": [
+  {
+   "title": "Fixture tactic one",
+   "how": "Fixture how.",
+   "why": "Fixture why.",
+   "strength": "strong",
+   "sources": [
+    "https://example.com/fixture-source-a",
+    "https://example.org/fixture/b"
+   ]
+  },
+  {
+   "title": "Fixture tactic two",
+   "how": "Fixture how two.",
+   "why": null,
+   "strength": "anecdotal",
+   "sources": []
+  }
+ ],
+ "pitfalls": [
+  {
+   "title": "Fixture pitfall",
+   "detail": "Fixture detail.",
+   "sources": [
+    "https://example.com/fixture-source-a"
+   ]
+  }
+ ],
+ "rules": [
+  {
+   "name": "Fixture rule",
+   "applies": "Fixture: all of California",
+   "detail": "Fixture detail.",
+   "effective": "2026-01-01",
+   "sources": [
+    "https://example.com/fixture-source-a"
+   ]
+  },
+  {
+   "name": "Fixture rule two",
+   "applies": null,
+   "detail": "Fixture detail two.",
+   "effective": null,
+   "sources": []
+  }
+ ],
+ "anecdotes": [
+  {
+   "summary": "Fixture anecdote one.",
+   "source": "https://example.org/fixture/b"
+  },
+  {
+   "summary": "Fixture anecdote two.",
+   "source": null
+  }
+ ]
+}

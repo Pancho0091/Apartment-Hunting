@@ -1,0 +1,65 @@
+{
+ "fixture": true,
+ "avant": {
+  "pattern": "often",
+  "seen": [
+   {
+    "when": "2026-10",
+    "offer": "Fixture: $1,900 off",
+    "source": "https://example.com/fixture-source-a"
+   },
+   {
+    "when": "2026-06",
+    "offer": "Fixture: 6 weeks free",
+    "source": null
+   }
+  ],
+  "renewal_note": "Fixture renewal note.",
+  "negotiation_note": "Fixture negotiation note.",
+  "evidence": "Fixture evidence.",
+  "sources": [
+   "https://example.com/fixture-source-a",
+   "https://example.org/fixture/b"
+  ]
+ },
+ "fedora-flats": {
+  "pattern": "often",
+  "seen": [
+   {
+    "when": "2026-10",
+    "offer": "Fixture: 2 months free",
+    "source": "https://example.org/fixture/b"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": null,
+  "evidence": null,
+  "sources": []
+ },
+ "wilshire-vermont": {
+  "pattern": "sometimes",
+  "seen": [],
+  "renewal_note": null,
+  "negotiation_note": "Fixture negotiation note.",
+  "evidence": null,
+  "sources": [
+   "https://example.com/fixture-source-a"
+  ]
+ },
+ "616-kenmore": {
+  "pattern": "rarely",
+  "seen": [
+   {
+    "when": null,
+    "offer": "Fixture offer",
+    "source": null
+   }
+  ],
+  "sources": []
+ },
+ "glo": {
+  "pattern": "unknown",
+  "seen": [],
+  "sources": []
+ }
+}
