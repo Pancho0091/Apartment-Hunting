@@ -1,0 +1,1394 @@
+[
+ {
+  "name": "Llewellyn",
+  "address": "1101 N Main St, Los Angeles, CA 90012",
+  "area": "Chinatown",
+  "lat": 34.0668,
+  "lng": -118.2297,
+  "geocode_note": "Estimated from street address (approximate, not geocoded by a service).",
+  "landlord": "company",
+  "owner_type": "institutional (High Street Residential / Principal developed)",
+  "platform": "Greystar site; Redfin",
+  "management_company": "Greystar",
+  "year_built": null,
+  "floor_plan": "1BR/1-2BA",
+  "sqft": "705-1,248 (Redfin range for 1BR)",
+  "base_rent": 2550,
+  "effective_rent": 2159,
+  "special": "8 weeks free (Redfin snapshot); effective rent is my estimate for a 12-month lease = $2,550 x (1 - 56/365)",
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Redfin: 20 units available, 1BR from $2,550 (seen 2026-10-26, undated snapshot)",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Greystar lists Google Nest thermostat (suggests ducted HVAC) but does not say 'central air'",
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": null,
+  "reputation_gist": null,
+  "red_flags": "Greystar prices are 'total monthly leasing price' incl. mandatory fees; near the Gold/A Line tracks and N Main/Spring corridor (noise unclear)",
+  "listing_url": "https://www.greystar.com/properties/los-angeles-ca/llewellyn-apartments/floorplans",
+  "sources": [
+   "https://www.greystar.com/llewellyn-apartments-los-angeles/p_17784",
+   "https://www.greystar.com/properties/los-angeles-ca/llewellyn-apartments/floorplans",
+   "https://www.redfin.com/neighborhood/116570/CA/Los-Angeles/Mission-Junction/1-bedroom-apartments-for-rent",
+   "https://urbanize.la/post/chinatown-llewellyn-apartments-1101-north-main-street",
+   "https://rebusinessonline.com/high-street-residential-principal-real-estate-investors-plan-318-unit-llewellyn-multifamily-property-in-los-angeles/"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "yes",
+   "dogs": "yes",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": "pet friendly; dog spa (details not captured)"
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": 318,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "yes",
+   "pool": "yes",
+   "coworking": "yes",
+   "rooftop_or_courtyard": "yes",
+   "controlled_access": "yes",
+   "onsite_management": "unclear",
+   "smoke_free": "yes"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "stacked GE washer/dryer",
+    "Google Nest thermostat",
+    "balconies/patios in select units"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": "Chinatown (A Line)",
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Redfin: 20 units available, 1BR from $2,550 (seen 2026-10-26, undated snapshot)",
+   "website": "https://www.greystar.com/llewellyn-apartments-los-angeles/p_17784",
+   "leasing_phone": "(213) 279-0452"
+  },
+  "evidence": "Greystar snippet (amenities, phone), Redfin snippet (705-1,248 sq ft, $2,550+, 8 weeks free), 2020 trade press (318 units planned, co-lab, rooftop decks). Pages could not be fetched. Year built not captured (opened ~2020s)."
+ },
+ {
+  "name": "Arrive Wakaba",
+  "address": "232 E 2nd St, Los Angeles, CA 90012",
+  "area": "Little Tokyo",
+  "lat": 34.0487,
+  "lng": -118.2418,
+  "geocode_note": "Estimated from street address (approximate, not geocoded by a service).",
+  "landlord": "company",
+  "owner_type": "institutional",
+  "platform": "Redfin; ApartmentIQ",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1BR/1BA",
+  "sqft": "677-770 (one listed unit 706)",
+  "base_rent": 2485,
+  "effective_rent": 2077,
+  "special": "2 months free (Redfin banner); effective rent is my estimate on a 12-month lease for the 706 sq ft unit at $2,485",
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Redfin: 1BR 677-770 sq ft from $2,425; a 706 sq ft 1BR at $2,485; ~21-28 units available (seen 2026-10-26)",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Not stated in any snippet",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": null,
+  "reputation_gist": null,
+  "red_flags": "ApartmentIQ amenity data dated mid-2025; confirm the 2-months-free applies to 700+ sq ft plans",
+  "listing_url": "https://www.redfin.com/neighborhood/547471/CA/Los-Angeles/Little-Tokyo/1-bedroom-apartments-for-rent",
+  "sources": [
+   "https://www.redfin.com/neighborhood/547471/CA/Los-Angeles/Little-Tokyo/1-bedroom-apartments-for-rent",
+   "https://edge.apartmentiq.io/los-angeles-ca/arrive-wakaba"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "yes",
+   "dogs": "yes",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "garage",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "yes",
+   "pool": "yes",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "yes",
+   "floors_available": null,
+   "features": [
+    "in-unit laundry"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": "Little Tokyo/Arts District (A/E Line)",
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Redfin: 1BR 677-770 sq ft from $2,425; a 706 sq ft 1BR at $2,485; ~21-28 units available (seen 2026-10-26)",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Search snippets only (WebFetch to listing sites failed: DNS errors); figures are aggregator snapshots and may be stale."
+ },
+ {
+  "name": "Amp Lofts",
+  "address": "695 S Santa Fe Ave, Los Angeles, CA 90021",
+  "area": "Downtown LA \u2013 Arts District",
+  "lat": 34.0372,
+  "lng": -118.2308,
+  "geocode_note": "Estimated from street address (approximate, not geocoded by a service).",
+  "landlord": "company",
+  "owner_type": "institutional",
+  "platform": "Redfin; ApartmentList; HotPads; Westside Rentals",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1BR/1-2BA",
+  "sqft": "720-1,131",
+  "base_rent": 2465,
+  "effective_rent": 2181,
+  "special": "Up to 6 weeks free on select units (property listing); effective rent is my estimate on 12 months",
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Redfin: 1BR 720-1,131 sq ft from $2,465 (seen 2026-10-26)",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Listings say 'Air Conditioning' and 'individual climate control' - type not stated",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": null,
+  "reputation_gist": null,
+  "red_flags": "Parking rented separately ('subject to availability'); fee unknown. Near 6th St Viaduct/LA River; I-10/US-101 interchange area - check freeway distance",
+  "listing_url": "https://apartmentlist.com/ca/los-angeles/amp-lofts",
+  "sources": [
+   "https://apartmentlist.com/ca/los-angeles/amp-lofts",
+   "https://hotpads.com/amp-lofts-los-angeles-ca-90021-1n1vq57/pad",
+   "https://www.westsiderentals.com/los-angeles-ca/amp-lofts-x0mc2hq",
+   "https://urbanize.la/post/arts-districts-amp-lofts-heads-towards-finish-line",
+   "https://www.redfin.com/neighborhood/91/CA/Los-Angeles/Arts-District/1-bedroom-apartments-for-rent"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "yes",
+   "dogs": "yes",
+   "pet_rent": 50,
+   "pet_deposit": 500,
+   "limits": "2 pets; 100 lb limit cited"
+  },
+  "parking_detail": {
+   "type": "garage",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "in-home washer & dryer",
+    "air conditioning"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Redfin: 1BR 720-1,131 sq ft from $2,465 (seen 2026-10-26)",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Search snippets only (WebFetch to listing sites failed: DNS errors); figures are aggregator snapshots and may be stale."
+ },
+ {
+  "name": "Garey Building",
+  "address": "905 E 2nd St, Los Angeles, CA 90012",
+  "area": "Downtown LA \u2013 Arts District",
+  "lat": 34.0466,
+  "lng": -118.2352,
+  "geocode_note": "Estimated from street address (approximate, not geocoded by a service).",
+  "landlord": "company",
+  "owner_type": "institutional (Lowe / Alliance cited as developer)",
+  "platform": "Greystar; Redfin; Point2",
+  "management_company": "Greystar",
+  "year_built": 2016,
+  "floor_plan": "1BR/1BA",
+  "sqft": "564-861 (only larger plans qualify)",
+  "base_rent": 2557,
+  "effective_rent": null,
+  "special": "6 weeks free; a later snapshot showed 10 weeks free (Redfin)",
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Redfin: 1BR from $2,542-$2,557, 17-25 units available; 700+ sq ft plan prices not captured (seen 2026-10-26)",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Listing says 'Air Conditioner' - type not stated",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "lockers",
+  "packages_detail": "Package lockers named in a listing",
+  "scam_flags": null,
+  "reputation_gist": null,
+  "red_flags": "Smallest 1BRs are 564 sq ft - confirm a 700+ plan is within budget",
+  "listing_url": "https://www.greystar.com/properties/los-angeles-ca/garey-building/floorplans",
+  "sources": [
+   "https://www.greystar.com/garey-building-los-angeles-ca/p_17520",
+   "https://www.point2homes.com/US/Apartment-Buildings/CA/Los-Angeles/Garey-Building.html",
+   "https://www.multihousingnews.com/lowe-enterprises-gets-artsy-with-new-downtown-la-community/",
+   "https://www.redfin.com/neighborhood/91/CA/Los-Angeles/Arts-District/1-bedroom-apartments-for-rent"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "yes",
+   "dogs": "yes",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": "dog run, pet salon, off-leash park"
+  },
+  "parking_detail": {
+   "type": "garage",
+   "ev_charging": "yes",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": 320,
+   "stories": 5,
+   "year_built": 2016,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "stainless appliances",
+    "dual-pane windows"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": "Little Tokyo/Arts District (A/E Line)",
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Redfin: 1BR from $2,542-$2,557, 17-25 units available; 700+ sq ft plan prices not captured (seen 2026-10-26)",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Search snippets only (WebFetch to listing sites failed: DNS errors); figures are aggregator snapshots and may be stale."
+ },
+ {
+  "name": "Aliso",
+  "address": "950 E 3rd St, Los Angeles, CA 90013",
+  "area": "Downtown LA \u2013 Arts District",
+  "lat": 34.0455,
+  "lng": -118.2362,
+  "geocode_note": "Estimated from street address (approximate, not geocoded by a service).",
+  "landlord": "company",
+  "owner_type": "institutional (Fairfield developed)",
+  "platform": "Greystar; Redfin; RentCafe",
+  "management_company": "Greystar",
+  "year_built": null,
+  "floor_plan": "1BR/1-2BA",
+  "sqft": "656-1,157",
+  "base_rent": 2533,
+  "effective_rent": 2338,
+  "special": "4 weeks free (Redfin); effective rent is my estimate on 12 months",
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Redfin 1BR from $2,491-$2,533; Greystar 13-month lease from $2,677 total; RentCafe total monthly $2,413-$4,725 (seen 2026-10-26)",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "'Air Conditioning & Heating' listed - type not stated",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": null,
+  "reputation_gist": null,
+  "red_flags": "Redfin notes extra fees may apply (package delivery, trash, water, amenities)",
+  "listing_url": "https://www.greystar.com/aliso-apartments-los-angeles-ca/p_20605",
+  "sources": [
+   "https://www.greystar.com/aliso-apartments-los-angeles-ca/p_20605",
+   "https://www.rentcafe.com/apartments/ca/los-angeles/aliso/default.aspx",
+   "https://www.redfin.com/CA/Los-Angeles/Aliso/apartment/177356440",
+   "https://fairfieldresidential.com/apartmentality/the-aliso-in-the-arts-district-los-angeles"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "yes",
+   "dogs": "yes",
+   "pet_rent": 50,
+   "pet_deposit": 500,
+   "limits": "2 pets; Greystar breed restrictions"
+  },
+  "parking_detail": {
+   "type": "covered",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "yes",
+   "pool": "yes",
+   "coworking": "yes",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "electric washer & dryer",
+    "keyless entry",
+    "USB outlets"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Redfin 1BR from $2,491-$2,533; Greystar 13-month lease from $2,677 total; RentCafe total monthly $2,413-$4,725 (seen 2026-10-26)",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Search snippets only (WebFetch to listing sites failed: DNS errors); figures are aggregator snapshots and may be stale."
+ },
+ {
+  "name": "Condo \u2013 Elleven, 1111 S Grand Ave #416",
+  "address": "1111 S Grand Ave #416, Los Angeles, CA 90015",
+  "area": "Downtown LA \u2013 South Park",
+  "lat": 34.0407,
+  "lng": -118.261,
+  "geocode_note": "Estimated from street address (approximate, not geocoded by a service).",
+  "landlord": "private",
+  "owner_type": "individual condo owner",
+  "platform": "Pardee Properties (MLS)",
+  "management_company": null,
+  "year_built": 2005,
+  "floor_plan": "1BR/1BA",
+  "sqft": 950,
+  "base_rent": 2600,
+  "effective_rent": 2600,
+  "special": null,
+  "parking_fee": 0,
+  "seen_on": "2026-10-26",
+  "units_note": "Listed $2,600/mo (listing date not shown; may be stale)",
+  "washer_dryer": "yes",
+  "central_ac": "yes",
+  "central_ac_evidence": "Listing features: 'Central Cooling'",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "front desk",
+  "packages_detail": "Building listings cite 24-hour security and concierge (package handling not explicitly stated)",
+  "scam_flags": null,
+  "reputation_gist": null,
+  "red_flags": "Undated listing; HOA building rules apply",
+  "listing_url": "https://pardeeproperties.com/listings/Los+Angeles/CA/90015/1111++S+Grand+Ave+416%2C+Los+Angeles%2C+CA+90015/232087378",
+  "sources": [
+   "https://pardeeproperties.com/listings/Los+Angeles/CA/90015/1111++S+Grand+Ave+416%2C+Los+Angeles%2C+CA+90015/232087378",
+   "https://www.rubyhome.com/los-angeles/elleven-lofts/",
+   "https://compass.com/building/elleven-los-angeles-ca/838844368702322597"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": 0,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "garage",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": 179,
+   "stories": 13,
+   "year_built": 2005,
+   "renovated": null,
+   "elevator": "yes",
+   "gym": "yes",
+   "pool": "yes",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "yes",
+   "controlled_access": "yes",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "in-unit laundry",
+    "1 parking space included"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": "Pico (A/E Line)",
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Listed $2,600/mo (listing date not shown; may be stale)",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Search snippets only. Pool/spa shared with Evo and Luma; 24-hr security/concierge per building listings. Built 2005 per most listings."
+ },
+ {
+  "name": "Condo \u2013 Elleven, 1111 S Grand Ave #506",
+  "address": "1111 S Grand Ave #506, Los Angeles, CA 90015",
+  "area": "Downtown LA \u2013 South Park",
+  "lat": 34.0407,
+  "lng": -118.261,
+  "geocode_note": "Estimated from street address (approximate, not geocoded by a service).",
+  "landlord": "private",
+  "owner_type": "individual condo owner",
+  "platform": "ApartmentAdvisor",
+  "management_company": null,
+  "year_built": 2005,
+  "floor_plan": "1BR/1BA",
+  "sqft": 1100,
+  "base_rent": 2600,
+  "effective_rent": 2600,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "ApartmentAdvisor: 'available now' $2,600 (undated snapshot)",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Not stated for #506; other Elleven rentals (#416, #1115) list central air",
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "front desk",
+  "packages_detail": "24-hour security/concierge per building listings",
+  "scam_flags": null,
+  "reputation_gist": null,
+  "red_flags": null,
+  "listing_url": "https://www.apartmentadvisor.com/details/1111-s-grand-ave-los-angeles-ca-90015",
+  "sources": [
+   "https://www.apartmentadvisor.com/details/1111-s-grand-ave-los-angeles-ca-90015",
+   "https://compass.com/building/elleven-los-angeles-ca/838844368702322597"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": 179,
+   "stories": 13,
+   "year_built": 2005,
+   "renovated": null,
+   "elevator": "yes",
+   "gym": "yes",
+   "pool": "yes",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "yes",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "yes",
+   "floors_available": null,
+   "features": [
+    "stainless kitchen",
+    "bamboo floors",
+    "washer/dryer inside"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "ApartmentAdvisor: 'available now' $2,600 (undated snapshot)",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Search snippets only (WebFetch to listing sites failed: DNS errors); figures are aggregator snapshots and may be stale."
+ },
+ {
+  "name": "846 S Mariposa Ave #702",
+  "address": "846 S Mariposa Ave #702, Los Angeles, CA 90005",
+  "area": "Koreatown",
+  "lat": 34.0566,
+  "lng": -118.2996,
+  "geocode_note": "Estimated from street address (approximate, not geocoded by a service).",
+  "landlord": "company",
+  "owner_type": "unclear (new 2022 building, MLS-listed)",
+  "platform": "Westside Rentals (MLS 25545065)",
+  "management_company": null,
+  "year_built": 2022,
+  "floor_plan": "1BR/1BA, top floor",
+  "sqft": null,
+  "base_rent": 2300,
+  "effective_rent": null,
+  "special": "Building listings mention 1 month free on approved applications (seen on a 2BR listing)",
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Two listings for #702: $2,100 and $2,300 (top floor, walk-in closet) - undated",
+  "washer_dryer": "yes",
+  "central_ac": "yes",
+  "central_ac_evidence": "Listing: 'central air and heat'",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": null,
+  "reputation_gist": null,
+  "red_flags": "Square footage not found - may be under 700; parking is a separate fee",
+  "listing_url": "https://www.westsiderentals.com/los-angeles-ca/846-s-mariposa-ave-unit-702-6fj729r",
+  "sources": [
+   "https://www.westsiderentals.com/los-angeles-ca/846-s-mariposa-ave-unit-702-6fj729r",
+   "https://prod-release.westsiderentals.com/los-angeles-ca/846-s-mariposa-ave-unit-702-t5742lb",
+   "https://theboutiquere.com/properties/retsPdf/25556915/846-S-Mariposa-Avenue"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": 2022,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "yes",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "yes",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "private balcony",
+    "walk-in closet"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": "Wilshire/Normandie (D Line)",
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Two listings for #702: $2,100 and $2,300 (top floor, walk-in closet) - undated",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Search snippets only (WebFetch to listing sites failed: DNS errors); figures are aggregator snapshots and may be stale."
+ },
+ {
+  "name": "846 S Mariposa Ave #406",
+  "address": "846 S Mariposa Ave #406, Los Angeles, CA 90005",
+  "area": "Koreatown",
+  "lat": 34.0566,
+  "lng": -118.2996,
+  "geocode_note": "Estimated from street address (approximate, not geocoded by a service).",
+  "landlord": "company",
+  "owner_type": "unclear (new 2022 building, MLS-listed)",
+  "platform": "Westside Rentals (MLS 25545223)",
+  "management_company": null,
+  "year_built": 2022,
+  "floor_plan": "1BR/1BA, SW corner",
+  "sqft": null,
+  "base_rent": null,
+  "effective_rent": 2450,
+  "special": "Price shown is 'after applied promotion'",
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "$2,450 after promotion (undated)",
+  "washer_dryer": "yes",
+  "central_ac": "yes",
+  "central_ac_evidence": "Building listings: central air",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": null,
+  "reputation_gist": null,
+  "red_flags": "Square footage not found; parking separate fee",
+  "listing_url": "https://prod-release.westsiderentals.com/los-angeles-ca/846-s-mariposa-ave-unit-406-8gephf3",
+  "sources": [
+   "https://prod-release.westsiderentals.com/los-angeles-ca/846-s-mariposa-ave-unit-406-8gephf3"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": 2022,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "yes",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "yes",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "corner unit",
+    "walk-in closet"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "$2,450 after promotion (undated)",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Search snippets only (WebFetch to listing sites failed: DNS errors); figures are aggregator snapshots and may be stale."
+ },
+ {
+  "name": "Condo \u2013 Luma, 1100 S Hope St #1505",
+  "address": "1100 S Hope St #1505, Los Angeles, CA 90015",
+  "area": "Downtown LA \u2013 South Park",
+  "lat": 34.0411,
+  "lng": -118.2619,
+  "geocode_note": "Estimated from street address (approximate, not geocoded by a service).",
+  "landlord": "private",
+  "owner_type": "individual condo owner",
+  "platform": "Weichert (MLS)",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1BR/1BA, 15th floor",
+  "sqft": null,
+  "base_rent": 2600,
+  "effective_rent": 2600,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Listed $2,600; availability date Aug 5 2026 (already passed - may be leased)",
+  "washer_dryer": "unclear",
+  "central_ac": "yes",
+  "central_ac_evidence": "Listing: central air",
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": "Shares pool/amenities with Elleven/Evo complex; staffing not confirmed for Luma",
+  "scam_flags": null,
+  "reputation_gist": null,
+  "red_flags": "Utility room has W/D HOOKUPS only - machines may not be included; listing likely stale",
+  "listing_url": "https://www.weichert.com/137306882/",
+  "sources": [
+   "https://www.weichert.com/137306882/"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": 100,
+   "pet_deposit": 500,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "yes",
+   "gym": "unclear",
+   "pool": "yes",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Listed $2,600; availability date Aug 5 2026 (already passed - may be leased)",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Search snippets only (WebFetch to listing sites failed: DNS errors); figures are aggregator snapshots and may be stale."
+ },
+ {
+  "name": "5800 Marmion Way",
+  "address": "5800 Marmion Way, Los Angeles, CA 90042",
+  "area": "Highland Park / Eagle Rock",
+  "lat": 34.1093,
+  "lng": -118.1935,
+  "geocode_note": "Estimated from street address (approximate, not geocoded by a service).",
+  "landlord": "company",
+  "owner_type": "unclear",
+  "platform": "VeryApt",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1BR/1BA",
+  "sqft": null,
+  "base_rent": 2550,
+  "effective_rent": null,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "VeryApt: 1BR from $2,550+ ('updated 9 hrs ago' at search time)",
+  "washer_dryer": "unclear",
+  "central_ac": "unclear",
+  "central_ac_evidence": null,
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": null,
+  "reputation_gist": null,
+  "red_flags": "'Laundry' listed without saying in-unit; size unknown; Marmion Way runs beside the A Line tracks",
+  "listing_url": "https://www.veryapt.com/Apartments-L1336-los-angeles-highland-park",
+  "sources": [
+   "https://www.veryapt.com/Apartments-L1336-los-angeles-highland-park",
+   "https://www.veryapt.com/Apartments-L7628-los-angeles-90042?page=1"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "yes",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "yes",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "yes",
+   "storage": "yes",
+   "floors_available": null,
+   "features": [
+    "hardwood floors",
+    "stainless appliances",
+    "walk-in closets",
+    "gas range"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": "Highland Park (A Line)",
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "VeryApt: 1BR from $2,550+ ('updated 9 hrs ago' at search time)",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Search snippets only (WebFetch to listing sites failed: DNS errors); figures are aggregator snapshots and may be stale."
+ },
+ {
+  "name": "3810 Wilshire Blvd #1811",
+  "address": "3810 Wilshire Blvd #1811, Los Angeles, CA 90010",
+  "area": "Koreatown",
+  "lat": 34.0618,
+  "lng": -118.3112,
+  "geocode_note": "Estimated from street address (approximate, not geocoded by a service).",
+  "landlord": "private",
+  "owner_type": "individual condo owner (presumed)",
+  "platform": "search snippet (rental listing)",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1BR",
+  "sqft": 750,
+  "base_rent": 1600,
+  "effective_rent": 1600,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "$1,600 for 750 sq ft with in-unit W/D (undated snippet)",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": null,
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": "Rent ~$700+ below area comps for a 750 sq ft high-rise 1BR - verify owner/agent identity, never pay before touring",
+  "reputation_gist": null,
+  "red_flags": "Low-confidence lead; building age and AC type unknown",
+  "listing_url": null,
+  "sources": [],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "$1,600 for 750 sq ft with in-unit W/D (undated snippet)",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Seen only in a search summary alongside other Koreatown listings; original URL not isolated. Treat as unverified. No source URL available."
+ },
+ {
+  "name": "Versailles Koreatown",
+  "address": "Koreatown, Los Angeles, CA (exact street address not captured)",
+  "area": "Koreatown",
+  "lat": 34.059,
+  "lng": -118.3,
+  "geocode_note": "Street address not captured; coordinates are Koreatown center - verify.",
+  "landlord": "company",
+  "owner_type": "REIT",
+  "platform": "Equity Residential",
+  "management_company": "Equity Residential",
+  "year_built": null,
+  "floor_plan": "1BR loft-style penthouse",
+  "sqft": 728,
+  "base_rent": 2473,
+  "effective_rent": null,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "728 sq ft loft penthouse $2,473; 1BRs 611-728 sq ft; 2026 availability dates (single snapshot)",
+  "washer_dryer": "unclear",
+  "central_ac": "yes",
+  "central_ac_evidence": "Equity amenity list: central AC and heat",
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": null,
+  "reputation_gist": null,
+  "red_flags": "Amenity list says washer/dryer HOOKUPS - in-unit machines not confirmed (likely fails); only the 728 sq ft plan meets size",
+  "listing_url": "https://equityapartments.com/los-angeles/koreatown/versailles-koreatown-apartments",
+  "sources": [
+   "https://equityapartments.com/los-angeles/koreatown/versailles-koreatown-apartments?ILSid=108"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "728 sq ft loft penthouse $2,473; 1BRs 611-728 sq ft; 2026 availability dates (single snapshot)",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Search snippets only (WebFetch to listing sites failed: DNS errors); figures are aggregator snapshots and may be stale."
+ }
+]

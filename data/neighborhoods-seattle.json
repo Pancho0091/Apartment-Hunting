@@ -41,7 +41,7 @@
    "property_per_1k": null,
    "year": "2025 (trend only)",
    "source": "SPD year-in-review (Fox13/KIRO); NeighborhoodScout city average",
-   "note": "No neighborhood per-capita rate found. Heat-map descriptions put central Seattle up through Capitol Hill among the highest-crime areas. Compared to Seattle city average (NeighborhoodScout: violent 8.19/1k, property 57.53/1k; undated, FBI-based). SPD 2025: overall reported crime -18%, homicides -36% (37), car thefts -24%, burglaries -18%. Car prowls common; score is qualitative."
+   "note": "Seattle per-neighborhood SPD per-capita rates not found: SPD dashboard/data.seattle.gov blocked from this environment and no Seattle Times per-capita neighborhood table surfaced in search. Citywide context: SPD reported overall crime -18% in 2025 vs 2024."
   },
   "lax": {
    "score": 7,
@@ -89,9 +89,9 @@
    "https://www.climate-zone.com/climate/us/seatac/"
   ],
   "extras": {
-   "median_1br_rent": null,
-   "rent_source": "No Capitol Hill 1BR median found; Seattle citywide 1BR median $1,944 (Apartment List, Jul 2026)",
-   "rent_trend": "-2.7% YoY citywide all-units (Apartment List, Jul 2026); no neighborhood trend found",
+   "median_1br_rent": 2078,
+   "rent_source": "RentHop Capitol Hill page, Oct 2026 (1BR median; FAQ avg $2,092 from 22 listings)",
+   "rent_trend": "-7.2% YoY (RentHop, $2,240 -> $2,078)",
    "summer_high_f": 78,
    "marine_layer": "some – Puget Sound marine air keeps summer mild; frequent cloud in late spring ('June-uary')",
    "fire_hazard": "CAL FIRE FHSZ: none (CA-only system, not applicable in WA; WA DNR wildfire maps not checked this round - dense urban area)",
@@ -155,7 +155,7 @@
    "property_per_1k": null,
    "year": "2025 (trend only)",
    "source": "CrimeGrade (Belltown); SPD dashboard summaries",
-   "note": "CrimeGrade estimates Belltown ~104 total incidents/1k (not split violent/property; visitor-inflated denominator). Downtown core violent crime fell 15% in 2025 per city dashboard. Compared to Seattle city average (NeighborhoodScout: violent 8.19/1k, property 57.53/1k; undated, FBI-based). SPD 2025: overall reported crime -18%, homicides -36% (37), car thefts -24%, burglaries -18%."
+   "note": "Seattle per-neighborhood SPD per-capita rates not found: SPD dashboard/data.seattle.gov blocked from this environment and no Seattle Times per-capita neighborhood table surfaced in search. Citywide context: SPD reported overall crime -18% in 2025 vs 2024."
   },
   "lax": {
    "score": 7,
@@ -268,7 +268,7 @@
    "property_per_1k": null,
    "year": "2025 (trend only)",
    "source": "none found at neighborhood level",
-   "note": "No per-capita data found; scored qualitatively (upper QA generally regarded as lower crime than the core; Lower QA higher). Compared to Seattle city average (NeighborhoodScout: violent 8.19/1k, property 57.53/1k; undated, FBI-based). SPD 2025: overall reported crime -18%, homicides -36% (37), car thefts -24%, burglaries -18%."
+   "note": "Seattle per-neighborhood SPD per-capita rates not found: SPD dashboard/data.seattle.gov blocked from this environment and no Seattle Times per-capita neighborhood table surfaced in search. Citywide context: SPD reported overall crime -18% in 2025 vs 2024."
   },
   "lax": {
    "score": 6,
@@ -379,7 +379,7 @@
    "property_per_1k": null,
    "year": "2022 (blog)",
    "source": "moving-company blog citing SPD map data",
-   "note": "A blog cites Wallingford at 0.45 crimes/1k (2022, method unclear - not used as a rate). No reliable neighborhood per-capita figure; scored qualitatively. Compared to Seattle city average (NeighborhoodScout: violent 8.19/1k, property 57.53/1k; undated, FBI-based). SPD 2025: overall reported crime -18%, homicides -36% (37), car thefts -24%, burglaries -18%."
+   "note": "Seattle per-neighborhood SPD per-capita rates not found: SPD dashboard/data.seattle.gov blocked from this environment and no Seattle Times per-capita neighborhood table surfaced in search. Citywide context: SPD reported overall crime -18% in 2025 vs 2024."
   },
   "lax": {
    "score": 6,
@@ -476,8 +476,8 @@
   },
   "walk": {
    "score": 8,
-   "walk_score": null,
-   "note": "Walk Score for Ballard not retrieved; central Ballard is very walkable (estimate 80s, unverified)."
+   "walk_score": 90,
+   "note": "Walk Score neighborhood page (walkscore.com, via search snippet; page fetch blocked): Ballard 90 (13th in Seattle), Transit 52, Bike 91; Seattle avg 74."
   },
   "quiet": {
    "score": 6,
@@ -485,11 +485,11 @@
   },
   "safety": {
    "score": 5,
-   "violent_per_1k": null,
-   "property_per_1k": null,
-   "year": "2025 (trend only)",
-   "source": "none at neighborhood level",
-   "note": "No per-capita data found; scored qualitatively near city average. Compared to Seattle city average (NeighborhoodScout: violent 8.19/1k, property 57.53/1k; undated, FBI-based). SPD 2025: overall reported crime -18%, homicides -36% (37), car thefts -24%, burglaries -18%."
+   "violent_per_1k": 4.85,
+   "property_per_1k": 66.18,
+   "year": "typical-year estimate (2024-2026 pages)",
+   "source": "CrimeGrade.org (modeled estimate, NOT SPD)",
+   "note": "Not SPD data: CrimeGrade modeled rates (violent page ~600 days old; property page recent; older CrimeGrade page gave 44.8 property). For comparison an unofficial blog put Seattle citywide at ~6.8 violent / ~52 property per 1k; Ballard roughly below-avg violent, above-avg property (car prowls/theft). Seattle per-neighborhood SPD per-capita rates not found: SPD dashboard/data.seattle.gov blocked from this environment and no Seattle Times per-capita neighborhood table surfaced in search. Citywide context: SPD reported overall crime -18% in 2025 vs 2024."
   },
   "lax": {
    "score": 5,
@@ -533,9 +533,9 @@
    "https://relocationcoordinates.neighborhoodscout.com/wa/seattle/crime"
   ],
   "extras": {
-   "median_1br_rent": null,
-   "rent_source": "No Ballard 1BR median found; Seattle citywide 1BR median $1,944 (Apartment List, Jul 2026)",
-   "rent_trend": "-2.7% YoY citywide all-units (Apartment List, Jul 2026); no neighborhood trend found",
+   "median_1br_rent": 2410,
+   "rent_source": "RentHop Ballard page, Jun 2026 (1BR median; same site's older undated avg $2,069)",
+   "rent_trend": "+47% YoY per RentHop (likely small-sample noise; treat as unreliable)",
    "summer_high_f": 78,
    "marine_layer": "some – near Shilshole/Puget Sound; cooler than inland",
    "fire_hazard": "CAL FIRE FHSZ: none (CA-only system, not applicable in WA; WA DNR wildfire maps not checked this round - dense urban area)",
@@ -598,7 +598,7 @@
    "property_per_1k": null,
    "year": "2025 (trend only)",
    "source": "CrimeGrade page exists for U District (rate not captured)",
-   "note": "No per-capita figure captured; U District property crime perceived as above average. Compared to Seattle city average (NeighborhoodScout: violent 8.19/1k, property 57.53/1k; undated, FBI-based). SPD 2025: overall reported crime -18%, homicides -36% (37), car thefts -24%, burglaries -18%."
+   "note": "Seattle per-neighborhood SPD per-capita rates not found: SPD dashboard/data.seattle.gov blocked from this environment and no Seattle Times per-capita neighborhood table surfaced in search. Citywide context: SPD reported overall crime -18% in 2025 vs 2024."
   },
   "lax": {
    "score": 6,
@@ -643,9 +643,9 @@
    "https://relocationcoordinates.neighborhoodscout.com/wa/seattle/crime"
   ],
   "extras": {
-   "median_1br_rent": null,
-   "rent_source": "No U District/Roosevelt 1BR median found; Seattle citywide 1BR median $1,944 (Apartment List, Jul 2026)",
-   "rent_trend": "-2.7% YoY citywide all-units (Apartment List, Jul 2026); no neighborhood trend found",
+   "median_1br_rent": 1595,
+   "rent_source": "Trulia 98105 ZIP page, ~May 2026 (avg 1BR; Redfin U-District 1BRs from $1,599)",
+   "rent_trend": "Zumper: U District all-unit median $1,499 Aug 2026, -12% YoY",
    "summer_high_f": 78,
    "marine_layer": "some – mild summers",
    "fire_hazard": "CAL FIRE FHSZ: none (CA-only system, not applicable in WA; WA DNR wildfire maps not checked this round - dense urban area)",
@@ -707,7 +707,7 @@
    "property_per_1k": null,
    "year": "2025 (trend only)",
    "source": "none at neighborhood level",
-   "note": "No per-capita data; scored qualitatively (Aurora/Lake City Way corridors have elevated crime reputations). Compared to Seattle city average (NeighborhoodScout: violent 8.19/1k, property 57.53/1k; undated, FBI-based). SPD 2025: overall reported crime -18%, homicides -36% (37), car thefts -24%, burglaries -18%."
+   "note": "Seattle per-neighborhood SPD per-capita rates not found: SPD dashboard/data.seattle.gov blocked from this environment and no Seattle Times per-capita neighborhood table surfaced in search. Citywide context: SPD reported overall crime -18% in 2025 vs 2024."
   },
   "lax": {
    "score": 5,
@@ -750,9 +750,9 @@
    "https://relocationcoordinates.neighborhoodscout.com/wa/seattle/crime"
   ],
   "extras": {
-   "median_1br_rent": null,
-   "rent_source": "No Northgate/Lake City 1BR median found; Seattle citywide 1BR median $1,944 (Apartment List, Jul 2026)",
-   "rent_trend": "-2.7% YoY citywide all-units (Apartment List, Jul 2026); no neighborhood trend found",
+   "median_1br_rent": 1773,
+   "rent_source": "RentHop ZIP 98125 (Northgate/Lake City), Sep 2026; only 6 1BR listings",
+   "rent_trend": "+34.5% YoY per RentHop ($1,318 -> $1,773) — small sample, unreliable",
    "summer_high_f": 78,
    "marine_layer": "some – mild",
    "fire_hazard": "CAL FIRE FHSZ: none (CA-only system, not applicable in WA; WA DNR wildfire maps not checked this round - dense urban area)",
@@ -814,7 +814,7 @@
    "property_per_1k": null,
    "year": "2025 (trend only)",
    "source": "none at neighborhood level",
-   "note": "No current per-capita data. A 2017 Seattle Times analysis found South Beacon Hill had the lowest property crime rate (2015-17, dated). Rainier Valley has had notable shootings (e.g., 2025-26 Rainier Beach incident). Compared to Seattle city average (NeighborhoodScout: violent 8.19/1k, property 57.53/1k; undated, FBI-based). SPD 2025: overall reported crime -18%, homicides -36% (37), car thefts -24%, burglaries -18%."
+   "note": "Seattle per-neighborhood SPD per-capita rates not found: SPD dashboard/data.seattle.gov blocked from this environment and no Seattle Times per-capita neighborhood table surfaced in search. Citywide context: SPD reported overall crime -18% in 2025 vs 2024."
   },
   "lax": {
    "score": 10,
@@ -859,9 +859,9 @@
    "https://relocationcoordinates.neighborhoodscout.com/wa/seattle/crime"
   ],
   "extras": {
-   "median_1br_rent": null,
-   "rent_source": "No Columbia City/Beacon Hill 1BR median found; Seattle citywide 1BR median $1,944 (Apartment List, Jul 2026)",
-   "rent_trend": "-2.7% YoY citywide all-units (Apartment List, Jul 2026); no neighborhood trend found",
+   "median_1br_rent": 1299,
+   "rent_source": "RentHop North Beacon Hill page, Oct 2026 (1BR median; small sample). Columbia City ZIP 98118 showed $2,675 from only 2 listings — not used",
+   "rent_trend": "-15.9% YoY (RentHop North Beacon Hill, $1,545 -> $1,299)",
    "summer_high_f": 78,
    "marine_layer": "some – slightly warmer than north Seattle (not quantified)",
    "fire_hazard": "CAL FIRE FHSZ: none (CA-only system, not applicable in WA; WA DNR wildfire maps not checked this round - dense urban area)",
@@ -924,7 +924,7 @@
    "property_per_1k": null,
    "year": "2025 (trend only)",
    "source": "moving blogs (North Admiral)",
-   "note": "A blog lists North Admiral at 0.42 crimes/1k (method unclear, not used as a rate). No reliable per-capita data; scored qualitatively. Compared to Seattle city average (NeighborhoodScout: violent 8.19/1k, property 57.53/1k; undated, FBI-based). SPD 2025: overall reported crime -18%, homicides -36% (37), car thefts -24%, burglaries -18%."
+   "note": "Seattle per-neighborhood SPD per-capita rates not found: SPD dashboard/data.seattle.gov blocked from this environment and no Seattle Times per-capita neighborhood table surfaced in search. Citywide context: SPD reported overall crime -18% in 2025 vs 2024."
   },
   "lax": {
    "score": 8,
@@ -965,9 +965,9 @@
    "https://relocationcoordinates.neighborhoodscout.com/wa/seattle/crime"
   ],
   "extras": {
-   "median_1br_rent": null,
-   "rent_source": "No West Seattle 1BR median found; Seattle citywide 1BR median $1,944 (Apartment List, Jul 2026)",
-   "rent_trend": "-2.7% YoY citywide all-units (Apartment List, Jul 2026); no neighborhood trend found",
+   "median_1br_rent": 1795,
+   "rent_source": "RentHop West Seattle page, Oct 2026 (1BR median; FAQ avg $1,748 from 38 listings)",
+   "rent_trend": "-10.6% YoY (RentHop, $2,008 -> $1,795)",
    "summer_high_f": 78,
    "marine_layer": "strong-to-some – Puget Sound on three sides; cooler, breezier",
    "fire_hazard": "CAL FIRE FHSZ: none (CA-only system, not applicable in WA; WA DNR wildfire maps not checked this round - dense urban area)",
@@ -1078,9 +1078,9 @@
    "https://www.weatherapi.com/history/august/q/bellevue-2669259"
   ],
   "extras": {
-   "median_1br_rent": null,
-   "rent_source": "No 1BR median found; RentCafe all-units average $2,738-2,778 (Jul/Aug 2026); Zumper 1BR median $2,530 was Oct 2024 (stale)",
-   "rent_trend": null,
+   "median_1br_rent": 2493,
+   "rent_source": "Apartment List Bellevue rent report, Oct 2026 (1BR listing average; all-unit median $2,440)",
+   "rent_trend": "+1.4% YoY all units (Apartment List Oct 2026)",
    "summer_high_f": 78,
    "marine_layer": "little – inland of Lake Washington; warmer and sunnier than Seattle",
    "fire_hazard": "CAL FIRE FHSZ: none (CA-only system, not applicable in WA; WA DNR wildland-urban-interface maps not checked this round - check edges near greenbelts)",
@@ -1187,8 +1187,8 @@
    "https://www.weatherapi.com/history/august/q/bellevue-2669259"
   ],
   "extras": {
-   "median_1br_rent": null,
-   "rent_source": "No 1BR median found; RentCafe all-units average $2,551 (Jul 2026); Zumper 1BR median $2,250 was Oct 2024 (stale)",
+   "median_1br_rent": 2128,
+   "rent_source": "Trulia Kirkland, May 2026 (avg 1BR all types; apts/condos $2,100). Rentometer Jan 2026 gives higher 1BR median $2,420",
    "rent_trend": null,
    "summer_high_f": 78,
    "marine_layer": "little – inland, warmer",
@@ -1253,7 +1253,7 @@
    "property_per_1k": null,
    "year": "n/a",
    "source": "not found",
-   "note": "No current Redmond rate found; scored qualitatively (Eastside suburb, generally low crime). Compared to Seattle city average (NeighborhoodScout: violent 8.19/1k, property 57.53/1k)."
+   "note": "Redmond PD per-capita rates not found within search budget."
   },
   "lax": {
    "score": 6,
@@ -1297,9 +1297,9 @@
    "https://www.weatherapi.com/history/august/q/bellevue-2669259"
   ],
   "extras": {
-   "median_1br_rent": null,
-   "rent_source": "No 1BR median found; RentCafe all-units average $2,559-2,592 (Jul/Aug 2026); Zumper 1BR median $2,310 Oct 2024 (stale)",
-   "rent_trend": null,
+   "median_1br_rent": 2120,
+   "rent_source": "Apartment List Redmond rent report, Jun 2026 (1BR median)",
+   "rent_trend": "+2.3% YoY all units (Apartment List, 2026 — fastest in metro)",
    "summer_high_f": 78,
    "marine_layer": "little – inland, warmest of the list in summer (not quantified)",
    "fire_hazard": "CAL FIRE FHSZ: none (CA-only system, not applicable in WA; WA DNR wildland-urban-interface maps not checked this round - check edges near greenbelts)",
@@ -1408,9 +1408,9 @@
    "https://www.climate-zone.com/climate/us/seatac/"
   ],
   "extras": {
-   "median_1br_rent": null,
-   "rent_source": "No 1BR median found; RentCafe all-units average Lynnwood $2,102, Shoreline $2,065 (Jul 2026)",
-   "rent_trend": null,
+   "median_1br_rent": 1958,
+   "rent_source": "Apartment List Lynnwood 1BR page, Oct 21 2026 (avg 1BR, Lynnwood only; Shoreline not found)",
+   "rent_trend": "-2.3% YoY all units (Apartment List Lynnwood, Jul 2026)",
    "summer_high_f": 78,
    "marine_layer": "some – near Puget Sound (Richmond Beach); Sea-Tac normal used as proxy",
    "fire_hazard": "CAL FIRE FHSZ: none (CA-only system, not applicable in WA; WA DNR wildland-urban-interface maps not checked this round - check edges near greenbelts)",
@@ -1515,8 +1515,8 @@
    "https://www.climate-zone.com/climate/us/seatac/"
   ],
   "extras": {
-   "median_1br_rent": null,
-   "rent_source": "No 1BR median found; RentCafe all-units average $2,294 (Jul 2026)",
+   "median_1br_rent": 2087,
+   "rent_source": "Apartment List Bothell rent report, Oct 2026 (1BR average, base rent excl. fees; all-unit median $2,365)",
    "rent_trend": null,
    "summer_high_f": 78,
    "marine_layer": "little – inland",
@@ -1625,9 +1625,9 @@
    "https://www.climate-zone.com/climate/us/seatac/"
   ],
   "extras": {
-   "median_1br_rent": null,
-   "rent_source": "No 1BR median found; RentCafe all-units average Renton $2,152 (Jul 2026)",
-   "rent_trend": null,
+   "median_1br_rent": 1921,
+   "rent_source": "Apartment List Tukwila 1BR page, 2026 (avg 1BR; another 2026 snapshot $2,020). Renton 1BR apartment figure not found; Renton all-unit median $2,048 Aug 2026",
+   "rent_trend": "Renton all units -1.3% YoY (Apartment List Aug 2026)",
    "summer_high_f": 78,
    "marine_layer": "some – Sea-Tac normal used",
    "fire_hazard": "CAL FIRE FHSZ: none (CA-only system, not applicable in WA; WA DNR wildland-urban-interface maps not checked this round - check edges near greenbelts)",

@@ -1,0 +1,329 @@
+[
+ {
+  "name": "27 Graham Street (Rear, 1BR duplex, 700 sq ft)",
+  "address": "27 Graham St (Rear 3), Jersey City, NJ 07307",
+  "area": "Jersey City",
+  "lat": 40.7505,
+  "lng": -74.0495,
+  "geocode_note": "Approximate, estimated from street location in The Heights (StreetEasy neighborhood tag); ZIP 07307 assumed (one sale listing URL shows 07306).",
+  "landlord": "private",
+  "owner_type": "small owner (2-4 family house; building also appeared as a 2-4 family for-sale listing)",
+  "platform": "StreetEasy / ForRent / Apartments.com / CorporateHousing.com",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1BR/1BA duplex over two levels (bedroom upstairs)",
+  "sqft": 700,
+  "base_rent": 2495,
+  "effective_rent": null,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "StreetEasy + ForRent (search snippets) 2026-10-26",
+  "units_note": "Rear unit #3; StreetEasy history: price increase 4/30/2026, $2,695 and $2,495 entries on 7/14/2026; ForRent 'available now' $2,495; Apartments.com shows $2,295 total monthly price (conflict).",
+  "washer_dryer": "yes",
+  "central_ac": "yes",
+  "central_ac_evidence": "StreetEasy feature list: 'Central air' (search snippet). Ducted vs. ductless not specified; verify.",
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": "Small house; no package room/lockers mentioned.",
+  "scam_flags": "None obvious; price is consistent across 4 platforms (Apartments.com $2,295 vs others $2,495).",
+  "reputation_gist": "No reviews found (small private building).",
+  "red_flags": "Listing has been up since at least Apr 2026 (possibly stale by Jan 2027); parking not mentioned; exactly 700 sq ft (minimum).",
+  "listing_url": "https://streeteasy.com/building/27-graham-street-jersey_city/rear-3",
+  "sources": [
+   "https://streeteasy.com/building/27-graham-street-jersey_city/rear-3",
+   "https://www.forrent.com/nj/jersey-city/27-graham-st/0p9dhq0",
+   "https://www.apartments.com/27-graham-st-jersey-city-nj/np7eczn/",
+   "https://www.corporatehousing.com/nj/jersey-city/27-graham-st/04kwy00",
+   "https://www.madisonadams.com/listings/250016812-27--graham-st-jersey city-nj-07306"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "yes",
+   "dogs": "yes",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "duplex layout",
+    "in-unit laundry"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Rear 3, 1BR 700 sq ft, $2,495 'available now' on ForRent; StreetEasy base-rent entry 7/14/2026 (seen 2026-10-26).",
+   "website": "https://streeteasy.com/building/27-graham-street-jersey_city/rear-3",
+   "leasing_phone": null
+  }
+ },
+ {
+  "name": "The Shoreline - 1BR 756 sq ft (unit # not given)",
+  "address": "2230 Cropsey Ave, Brooklyn, NY 11214",
+  "area": "Bay Ridge / Sunset Park",
+  "lat": 40.5958,
+  "lng": -73.999,
+  "geocode_note": "Approximate. Building is in Bath Beach/Gravesend waterfront (~3 mi SE of Bay Ridge); 'Bay Ridge / Sunset Park' is the closest area in AREAS_nyc.txt.",
+  "landlord": "company",
+  "owner_type": "institutional developer (new-construction market-rate tower)",
+  "platform": "Redfin (price/size); StreetEasy (building)",
+  "management_company": "EXR (leasing team, per search snippet)",
+  "year_built": 2024,
+  "floor_plan": "1BR/1BA",
+  "sqft": 756,
+  "base_rent": 2250,
+  "effective_rent": null,
+  "special": "Other units advertised 1-3 months free on 13-15 month leases (e.g. $3,220 base -> $2,576 net with 3 months free/15 mo).",
+  "parking_fee": null,
+  "seen_on": "Redfin + StreetEasy (search snippets) 2026-10-26",
+  "units_note": "248 units, 31 stories; StreetEasy base rents seen ~$2,800-$5,100; the $2,250/756 sq ft Redfin row has no unit number or date.",
+  "washer_dryer": "yes",
+  "central_ac": "yes",
+  "central_ac_evidence": "StreetEasy unit pages list 'central air' (search snippet). Type of system (ducted vs. VRF/PTAC) not stated - verify; new NYC towers often label PTAC/VRF as central.",
+  "dishwasher": "yes",
+  "parking": "yes",
+  "packages": "package room",
+  "packages_detail": "Developer/StreetEasy: attended lobby, package room.",
+  "scam_flags": "$2,250 for 756 sq ft is ~$550-850 below every other StreetEasy price in this building - likely stale/feed error or mislabeled net-effective price; verify directly with leasing.",
+  "reputation_gist": "New 2024 tower; no review data found.",
+  "red_flags": "Price far below building's market; next to Belt Parkway (Shore Pkwy) - possible freeway noise/air-quality concern; outside client's named neighborhoods.",
+  "listing_url": "https://www.redfin.com/neighborhood/224204/NY/New-York/Midwood/1-bedroom-apartments-for-rent",
+  "sources": [
+   "https://www.redfin.com/neighborhood/224204/NY/New-York/Midwood/1-bedroom-apartments-for-rent",
+   "https://www.redfin.com/neighborhood/224207/NY/New-York/Bensonhurst/1-bedroom-apartments-for-rent",
+   "https://www.streeteasy.com/building/the-shoreline",
+   "https://streeteasy.com/building/the-shoreline/1904",
+   "https://newyorkyimby.com/?p=1947553"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": "13-15 month leases with concessions advertised on StreetEasy"
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "garage",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": 248,
+   "stories": 31,
+   "year_built": 2024,
+   "renovated": null,
+   "elevator": "yes",
+   "gym": "yes",
+   "pool": "yes",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "yes",
+   "controlled_access": "yes",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "yes",
+   "floors_available": null,
+   "features": [
+    "hardwood floors",
+    "in-unit washer/dryer",
+    "dishwasher",
+    "resident storage lockers"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": "Belt Parkway (Shore Pkwy) at Bay Pkwy/Cropsey area",
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Redfin row: 1BR 756 sq ft $2,250 (undated, no unit #), seen 2026-10-26; StreetEasy units ~$2,800+ with concessions.",
+   "website": "https://www.streeteasy.com/building/the-shoreline",
+   "leasing_phone": "(718) 355-8187"
+  }
+ },
+ {
+  "name": "20 Tappen Court (1BR/2BA townhouse, 1,150 sq ft)",
+  "address": "20 Tappen Ct, Staten Island, NY 10304",
+  "area": "St. George / North Shore",
+  "lat": 40.6235,
+  "lng": -74.079,
+  "geocode_note": "Approximate, Stapleton near Tappen Park (Redfin tags it Stapleton).",
+  "landlord": "private",
+  "owner_type": "individual owner (attached single-family townhouse)",
+  "platform": "Redfin",
+  "management_company": null,
+  "year_built": 1989,
+  "floor_plan": "1BR/2BA townhouse",
+  "sqft": 1150,
+  "base_rent": 2200,
+  "effective_rent": null,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "Redfin (search snippet) 2026-10-26",
+  "units_note": "Redfin: 'new renovated 1 bedroom 2 bathroom townhouse', $2,200/mo, 1,150 sq ft, in-unit W/D, front-yard parking space. Undated.",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Rental snippet doesn't state AC; a for-sale listing (DeFalco Realty, $465,000) for 20 Tappen Court says 'central air' - but it describes 2BR/2BA, 1,720 sq ft, so the rental may be a portion of the house; verify.",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": "Townhouse - deliveries to door; nothing stated.",
+  "scam_flags": "Same address simultaneously listed FOR SALE ($465,000) - possible stale or duplicated listing; size/bedroom counts conflict between sale (2BR, 1,720 sq ft) and rental (1BR, 1,150 sq ft). Never wire deposits before seeing the unit.",
+  "reputation_gist": "Private owner; no reviews.",
+  "red_flags": "Sale/rental conflict; Staten Island commute (ferry/SIR); AC type unknown.",
+  "listing_url": "https://www.redfin.com/neighborhood/34009/NY/New-York/Staten-Island/houses-for-rent",
+  "sources": [
+   "https://www.redfin.com/neighborhood/34009/NY/New-York/Staten-Island/houses-for-rent",
+   "https://defalcorealty.statenweb.com/property/2503191-20-tappen-court-staten-island-ny-10304"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "surface",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": 1989,
+   "renovated": null,
+   "elevator": "no",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "renovated",
+    "front-yard parking space",
+    "in-unit washer/dryer"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": "Stapleton (Staten Island Railway)",
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Redfin rental row (undated) seen 2026-10-26; a sale listing for same address also active.",
+   "website": null,
+   "leasing_phone": null
+  }
+ }
+]

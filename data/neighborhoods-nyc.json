@@ -30,8 +30,8 @@
   },
   "walk": {
    "score": 9,
-   "walk_score": null,
-   "note": "Walk Score not retrieved this round; dense grid with groceries every few blocks - expected 90+ (estimate)."
+   "walk_score": 98,
+   "note": "Walk Score neighborhood page (walkscore.com, via search snippet; page fetch blocked): Upper West Side 98 (29th in NYC)."
   },
   "quiet": {
    "score": 7,
@@ -39,11 +39,11 @@
   },
   "safety": {
    "score": 5,
-   "violent_per_1k": null,
-   "property_per_1k": null,
-   "year": "2023",
-   "source": "Furman Center CoreData (Manhattan borough row only)",
-   "note": "MN 07 (UWS) row not retrievable via search; Manhattan borough 2023: violent 5.5, property 14.0 per 1k vs NYC 5.3/9.0. UWS (20th/24th Pcts) generally reads below borough average; Morningside (26th Pct) similar. Scored ~average pending CD data. Furman Center CoreData 2023 community-district rates (columns property_crime_rate, violent_crime_rate; read as per 1,000 residents). NYC average used for comparison: violent 5.3, property 9.0 (Furman 2023). Citywide index crime fell ~3% in 2025 and murders/shootings hit record lows (Vital City / NYPD), so 2025-26 levels are likely a bit lower."
+   "violent_per_1k": 2.4,
+   "property_per_1k": 7.6,
+   "year": "2025 (one snippet labeled 2023)",
+   "source": "NYU Furman Center neighborhood profile (CoreData.nyc), NYPD major-felony 'serious crime' per 1,000 residents — MN07 Upper West Side",
+   "note": "Well below NYC average on both. Morningside Heights is in MN09 (not retrieved). Compare: NYC avg 5.3 violent / 9.0 property per 1k (brief); Furman's own 2025 citywide serious-crime total is 12.3/1k."
   },
   "lax": {
    "score": 7,
@@ -86,9 +86,9 @@
    "https://www.skybriz.com/?p=7861"
   ],
   "extras": {
-   "median_1br_rent": null,
-   "rent_source": "No reliable 2026 1BR median found; Skybriz undated guide lists UWS ~$6,000/mo (unit mix unclear); Manhattan-wide 1BR median ~$4,390 (Skybriz 2026)",
-   "rent_trend": null,
+   "median_1br_rent": 5100,
+   "rent_source": "RentHop NYC neighborhood table (1BR average, not median), Manhattan page ~Apr 2026 (UWS only; Morningside not separated)",
+   "rent_trend": "citywide 1BR median +5.3% YoY to $4,428 (RentHop Jul 2026)",
    "summer_high_f": 83,
    "marine_layer": "little - no marine-layer/June-gloom pattern; harbor/ocean sea breeze gives slight afternoon relief near the water, but summers are humid and central AC matters",
    "fire_hazard": "CAL FIRE FHSZ: none (not applicable - outside California; no meaningful wildfire hazard)",
@@ -140,8 +140,8 @@
   },
   "walk": {
    "score": 9,
-   "walk_score": null,
-   "note": "Walk Score not retrieved; dense grid, groceries/bodegas everywhere (estimate 90+). Hilly in Wash Hts."
+   "walk_score": 97,
+   "note": "Walk Score neighborhood page (walkscore.com, via search snippet; page fetch blocked): Central Harlem 97 (West Harlem also 97); Washington Heights not found."
   },
   "quiet": {
    "score": 5,
@@ -149,11 +149,11 @@
   },
   "safety": {
    "score": 4,
-   "violent_per_1k": null,
-   "property_per_1k": null,
-   "year": "2023",
-   "source": "Furman Center CoreData (borough row only)",
-   "note": "Central Harlem (MN 10) and Wash Hts/Inwood (MN 12) rows not retrievable via search. Manhattan borough 2023 violent 5.5/property 14.0 vs NYC 5.3/9.0; Central/East Harlem historically above the city violent average, Wash Hts/Hudson Hts near or below. Score is a judgment pending CD data. Furman Center CoreData 2023 community-district rates (columns property_crime_rate, violent_crime_rate; read as per 1,000 residents). NYC average used for comparison: violent 5.3, property 9.0 (Furman 2023). Citywide index crime fell ~3% in 2025 and murders/shootings hit record lows (Vital City / NYPD), so 2025-26 levels are likely a bit lower."
+   "violent_per_1k": 5.6,
+   "property_per_1k": 8.7,
+   "year": "2025 (one snippet labeled 2023)",
+   "source": "NYU Furman Center neighborhood profile (CoreData.nyc), NYPD major-felony 'serious crime' per 1,000 residents — MN12 Washington Heights/Inwood",
+   "note": "Washington Heights/Inwood only; Central Harlem (MN10) not retrieved. About NYC average. Compare: NYC avg 5.3 violent / 9.0 property per 1k (brief); Furman's own 2025 citywide serious-crime total is 12.3/1k."
   },
   "lax": {
    "score": 8,
@@ -260,11 +260,11 @@
   },
   "safety": {
    "score": 4,
-   "violent_per_1k": null,
-   "property_per_1k": null,
-   "year": "2023",
-   "source": "Furman Center CoreData (borough row only)",
-   "note": "Clinton/Chelsea (MN 04) and Midtown (MN 05) rows not retrievable; Manhattan borough 2023 violent 5.5/property 14.0 vs NYC 5.3/9.0. Midtown per-resident rates are heavily commuter/tourist-inflated (low residential population). Furman Center CoreData 2023 community-district rates (columns property_crime_rate, violent_crime_rate; read as per 1,000 residents). NYC average used for comparison: violent 5.3, property 9.0 (Furman 2023). Citywide index crime fell ~3% in 2025 and murders/shootings hit record lows (Vital City / NYPD), so 2025-26 levels are likely a bit lower."
+   "violent_per_1k": 6.0,
+   "property_per_1k": 16.6,
+   "year": "2025 (one snippet labeled 2023)",
+   "source": "NYU Furman Center neighborhood profile (CoreData.nyc), NYPD major-felony 'serious crime' per 1,000 residents — MN04 Clinton/Chelsea",
+   "note": "Hell's Kitchen = MN04 Clinton/Chelsea. MN05 Midtown core is far higher (15.9 violent / 73.7 property) because of tiny resident base + commuter/visitor crime. Above NYC average, especially property. Compare: NYC avg 5.3 violent / 9.0 property per 1k (brief); Furman's own 2025 citywide serious-crime total is 12.3/1k."
   },
   "lax": {
    "score": 7,
@@ -308,9 +308,9 @@
    "https://www.skybriz.com/?p=1635"
   ],
   "extras": {
-   "median_1br_rent": null,
-   "rent_source": "No reliable 2026 1BR median found; Skybriz undated lists Hell's Kitchen ~$5,300/mo (unit mix unclear)",
-   "rent_trend": null,
+   "median_1br_rent": 4905,
+   "rent_source": "RentHop NYC neighborhood table (1BR average, not median), citywide page ~Jul 2026 (Midtown; Manhattan page ~Apr 2026 had $4,994)",
+   "rent_trend": "citywide 1BR median +5.3% YoY (RentHop Jul 2026)",
    "summer_high_f": 83,
    "marine_layer": "little - no marine-layer/June-gloom pattern; harbor/ocean sea breeze gives slight afternoon relief near the water, but summers are humid and central AC matters",
    "fire_hazard": "CAL FIRE FHSZ: none (not applicable - outside California; no meaningful wildfire hazard)",
@@ -364,8 +364,8 @@
   },
   "walk": {
    "score": 10,
-   "walk_score": null,
-   "note": "Walk Score not retrieved; extremely walkable (estimate 95+)."
+   "walk_score": 100,
+   "note": "Walk Score neighborhood page (walkscore.com, via search snippet; page fetch blocked): Financial District 100 (10th in NYC)."
   },
   "quiet": {
    "score": 5,
@@ -373,11 +373,11 @@
   },
   "safety": {
    "score": 5,
-   "violent_per_1k": null,
-   "property_per_1k": null,
-   "year": "2023",
-   "source": "Furman Center CoreData (borough row only)",
-   "note": "MN 01 row not retrievable; Manhattan borough 2023 violent 5.5/property 14.0 vs NYC 5.3/9.0. FiDi per-resident rates are commuter-inflated (large daytime population); residential streets generally feel safe. Furman Center CoreData 2023 community-district rates (columns property_crime_rate, violent_crime_rate; read as per 1,000 residents). NYC average used for comparison: violent 5.3, property 9.0 (Furman 2023). Citywide index crime fell ~3% in 2025 and murders/shootings hit record lows (Vital City / NYPD), so 2025-26 levels are likely a bit lower."
+   "violent_per_1k": 3.7,
+   "property_per_1k": 13.8,
+   "year": "2025 (one snippet labeled 2023)",
+   "source": "NYU Furman Center neighborhood profile (CoreData.nyc), NYPD major-felony 'serious crime' per 1,000 residents — MN01 Financial District",
+   "note": "Below-average violent, above-average property (commuter/visitor-inflated, small resident base). Compare: NYC avg 5.3 violent / 9.0 property per 1k (brief); Furman's own 2025 citywide serious-crime total is 12.3/1k."
   },
   "lax": {
    "score": 7,
@@ -420,9 +420,9 @@
    "https://www.weather.gov/media/okx/Climate/CentralPark/DailyMaxTNormals.pdf"
   ],
   "extras": {
-   "median_1br_rent": null,
-   "rent_source": "No reliable 2026 1BR median found; Skybriz undated lists FiDi ~$5,300/mo (unit mix unclear)",
-   "rent_trend": null,
+   "median_1br_rent": 5349,
+   "rent_source": "RentHop NYC neighborhood table (1BR average, not median), citywide page ~Jul 2026 (Manhattan page ~Apr 2026: $5,442)",
+   "rent_trend": "citywide 1BR median +5.3% YoY (RentHop Jul 2026)",
    "summer_high_f": 83,
    "marine_layer": "little - no marine-layer/June-gloom pattern; harbor/ocean sea breeze gives slight afternoon relief near the water, but summers are humid and central AC matters",
    "fire_hazard": "CAL FIRE FHSZ: none (not applicable - outside California; no meaningful wildfire hazard)",
@@ -477,8 +477,8 @@
   },
   "walk": {
    "score": 9,
-   "walk_score": null,
-   "note": "Walk Score not retrieved; very walkable (estimate 90+)."
+   "walk_score": 96,
+   "note": "Walk Score neighborhood page (walkscore.com, via search snippet; page fetch blocked): Williamsburg 96, Greenpoint 96."
   },
   "quiet": {
    "score": 5,
@@ -534,9 +534,9 @@
    "https://www.nyctourism.com/articles/best-farmers-markets-new-york-city/"
   ],
   "extras": {
-   "median_1br_rent": null,
-   "rent_source": "No neighborhood 1BR median found; RentHop Jul 2026 says Williamsburg/Greenpoint are 'catching up' to Manhattan (citywide 1BR median $4,428); zip 11206 (E. Williamsburg/Bushwick) 1BR ~$3,395 (RentHop, Jul 2026)",
-   "rent_trend": null,
+   "median_1br_rent": 4950,
+   "rent_source": "RentHop NYC neighborhood table (1BR average, not median), citywide page ~Jul 2026 (Williamsburg; Greenpoint not separated)",
+   "rent_trend": "citywide 1BR median +5.3% YoY (RentHop Jul 2026)",
    "summer_high_f": 83,
    "marine_layer": "little - no marine-layer/June-gloom pattern; harbor/ocean sea breeze gives slight afternoon relief near the water, but summers are humid and central AC matters",
    "fire_hazard": "CAL FIRE FHSZ: none (not applicable - outside California; no meaningful wildfire hazard)",
@@ -646,9 +646,9 @@
    "https://www.nyctourism.com/articles/best-farmers-markets-new-york-city/"
   ],
   "extras": {
-   "median_1br_rent": null,
-   "rent_source": "No neighborhood median found; York St (F) subway-stop 1BR median $4,840 (RentHop, Jul 2026 - DUMBO edge); a Downtown Brooklyn 1BR listed at $4,115 (RentHop blog, Oct 2026 - single listing)",
-   "rent_trend": null,
+   "median_1br_rent": 4588,
+   "rent_source": "RentHop NYC neighborhood table (1BR average, not median), citywide page ~Jul 2026 (Fort Greene; Downtown Brooklyn not captured)",
+   "rent_trend": "citywide 1BR median +5.3% YoY (RentHop Jul 2026)",
    "summer_high_f": 83,
    "marine_layer": "little - no marine-layer/June-gloom pattern; harbor/ocean sea breeze gives slight afternoon relief near the water, but summers are humid and central AC matters",
    "fire_hazard": "CAL FIRE FHSZ: none (not applicable - outside California; no meaningful wildfire hazard)",
@@ -702,8 +702,8 @@
   },
   "walk": {
    "score": 9,
-   "walk_score": null,
-   "note": "Walk Score not retrieved; estimate 90+."
+   "walk_score": 98,
+   "note": "Walk Score neighborhood page (walkscore.com, via search snippet; page fetch blocked): Park Slope 98 (16th in NYC); Prospect Heights not found."
   },
   "quiet": {
    "score": 8,
@@ -814,8 +814,8 @@
   },
   "walk": {
    "score": 9,
-   "walk_score": null,
-   "note": "Walk Score not retrieved; estimate high 80s-90s."
+   "walk_score": 95,
+   "note": "Walk Score neighborhood page (walkscore.com, via search snippet; page fetch blocked): Bushwick 95 (Transit 98); Bed-Stuy not found."
   },
   "quiet": {
    "score": 5,
@@ -923,8 +923,8 @@
   },
   "walk": {
    "score": 8,
-   "walk_score": null,
-   "note": "Walk Score not retrieved; 3rd/5th Ave corridors very walkable (estimate 85-95)."
+   "walk_score": 94,
+   "note": "Walk Score neighborhood page (walkscore.com, via search snippet; page fetch blocked): Bay Ridge 94 (51st in NYC); Sunset Park not found."
   },
   "quiet": {
    "score": 7,
@@ -1038,8 +1038,8 @@
   },
   "walk": {
    "score": 9,
-   "walk_score": null,
-   "note": "Walk Score not retrieved; estimate 90+."
+   "walk_score": 94,
+   "note": "Walk Score neighborhood page (walkscore.com, via search snippet; page fetch blocked): Astoria 94, Long Island City 95."
   },
   "quiet": {
    "score": 5,
@@ -1047,11 +1047,11 @@
   },
   "safety": {
    "score": 6,
-   "violent_per_1k": null,
-   "property_per_1k": null,
-   "year": "2023",
-   "source": "Furman Center CoreData (Queens borough row only)",
-   "note": "QN 01 (Astoria/LIC) row not retrievable; Queens borough violent 3.9/1k vs NYC 5.3 (property not shown). Area is generally considered around-to-below the city average. Furman Center CoreData 2023 community-district rates (columns property_crime_rate, violent_crime_rate; read as per 1,000 residents). NYC average used for comparison: violent 5.3, property 9.0 (Furman 2023). Citywide index crime fell ~3% in 2025 and murders/shootings hit record lows (Vital City / NYPD), so 2025-26 levels are likely a bit lower."
+   "violent_per_1k": 3.3,
+   "property_per_1k": 6.6,
+   "year": "2025",
+   "source": "NYU Furman Center neighborhood profile (CoreData.nyc), NYPD major-felony 'serious crime' per 1,000 residents — QN01 Astoria",
+   "note": "Astoria only (2023 total 11.7, 2024 11.5, 2025 9.9 — improving). LIC is in QN02 (not retrieved). Below NYC average. Compare: NYC avg 5.3 violent / 9.0 property per 1k (brief); Furman's own 2025 citywide serious-crime total is 12.3/1k."
   },
   "lax": {
    "score": 10,
@@ -1152,8 +1152,8 @@
   },
   "walk": {
    "score": 8,
-   "walk_score": null,
-   "note": "Walk Score not retrieved; Austin St / Queens Blvd / 63rd Dr corridors very walkable (estimate 85-95)."
+   "walk_score": 92,
+   "note": "Walk Score neighborhood page (walkscore.com, via search snippet; page fetch blocked): Forest Hills 92 (Transit 95); Rego Park not found."
   },
   "quiet": {
    "score": 7,
@@ -1161,11 +1161,11 @@
   },
   "safety": {
    "score": 8,
-   "violent_per_1k": null,
-   "property_per_1k": null,
-   "year": "2023",
-   "source": "Furman Center CoreData (Queens borough row only)",
-   "note": "QN 06 row not retrievable; Queens borough violent 3.9/1k vs NYC 5.3. 112th Pct (Forest Hills/Rego Park) is widely regarded as one of NYC's safer precincts, though it saw a car-theft (GLA) jump in late 2023 (Forest Hills Post). Score is a judgment. Furman Center CoreData 2023 community-district rates (columns property_crime_rate, violent_crime_rate; read as per 1,000 residents). NYC average used for comparison: violent 5.3, property 9.0 (Furman 2023). Citywide index crime fell ~3% in 2025 and murders/shootings hit record lows (Vital City / NYPD), so 2025-26 levels are likely a bit lower."
+   "violent_per_1k": 1.7,
+   "property_per_1k": 5.4,
+   "year": "2025",
+   "source": "NYU Furman Center neighborhood profile (CoreData.nyc), NYPD major-felony 'serious crime' per 1,000 residents — QN06 Rego Park/Forest Hills",
+   "note": "Well below NYC average; total 7.4 (2023) -> 7.2 (2024) -> 7.1 (2025). Compare: NYC avg 5.3 violent / 9.0 property per 1k (brief); Furman's own 2025 citywide serious-crime total is 12.3/1k."
   },
   "lax": {
    "score": 9,
@@ -1210,9 +1210,9 @@
    "https://www.grownyc.org/files/gmkt/map.pdf"
   ],
   "extras": {
-   "median_1br_rent": null,
-   "rent_source": "No clean 2026 1BR figure: QNS May 2026 report shows Forest Hills average rising $2,659->$3,101 YoY but the unit type is unclear; Zumper Q2 2023 1BR $2,180 (stale)",
-   "rent_trend": "Possibly +17% YoY (QNS May 2026; unit type unclear)",
+   "median_1br_rent": 3101,
+   "rent_source": "M.N.S. Real Estate Queens rental report via QNS, May 2026 (Forest Hills avg 1BR; a listings site showed $2,485 Aug 2026)",
+   "rent_trend": "Biggest 1BR increase among 11 Queens neighborhoods in May 2026 (M.N.S.)",
    "summer_high_f": 83,
    "marine_layer": "little - no marine-layer/June-gloom pattern; harbor/ocean sea breeze gives slight afternoon relief near the water, but summers are humid and central AC matters",
    "fire_hazard": "CAL FIRE FHSZ: none (not applicable - outside California; no meaningful wildfire hazard)",
@@ -1265,8 +1265,8 @@
   },
   "walk": {
    "score": 8,
-   "walk_score": null,
-   "note": "Walk Score not retrieved; downtown Flushing and Jamaica Ave very walkable, residential edges less so (estimate)."
+   "walk_score": 89,
+   "note": "Walk Score neighborhood page (walkscore.com, via search snippet; page fetch blocked): Flushing 89 (82nd in NYC); Jamaica not found."
   },
   "quiet": {
    "score": 4,
@@ -1274,11 +1274,11 @@
   },
   "safety": {
    "score": 5,
-   "violent_per_1k": null,
-   "property_per_1k": null,
-   "year": "2023",
-   "source": "Furman Center CoreData (Queens borough row only)",
-   "note": "QN 07 (Flushing) and QN 12 (Jamaica) rows not retrievable; Queens borough violent 3.9/1k vs NYC 5.3. Flushing generally below city average; Jamaica (103rd/113th Pcts) higher. Score is a blended judgment. Furman Center CoreData 2023 community-district rates (columns property_crime_rate, violent_crime_rate; read as per 1,000 residents). NYC average used for comparison: violent 5.3, property 9.0 (Furman 2023). Citywide index crime fell ~3% in 2025 and murders/shootings hit record lows (Vital City / NYPD), so 2025-26 levels are likely a bit lower."
+   "violent_per_1k": 4.1,
+   "property_per_1k": 6.4,
+   "year": "2025",
+   "source": "NYU Furman Center neighborhood profile (CoreData.nyc), NYPD major-felony 'serious crime' per 1,000 residents — mean of QN07 Flushing/Whitestone and QN12 Jamaica/Hollis",
+   "note": "Unweighted mean of two districts: Flushing/Whitestone 2.2 violent / 6.9 property; Jamaica/Hollis 5.9 violent / 5.9 property (total 13.4 in 2024 -> 11.8 in 2025). Flushing well below average; Jamaica about average violent. Compare: NYC avg 5.3 violent / 9.0 property per 1k (brief); Furman's own 2025 citywide serious-crime total is 12.3/1k."
   },
   "lax": {
    "score": 10,
@@ -1436,8 +1436,8 @@
    "https://www.nyctourism.com/articles/best-farmers-markets-new-york-city/"
   ],
   "extras": {
-   "median_1br_rent": null,
-   "rent_source": "Only weak-source figure found: latination.com (machine-like, source unclear) cites ~$2,778 avg 1BR in 2026; Zumper lists Riverdale overall median ~$2,040 (all unit types, undated)",
+   "median_1br_rent": 2778,
+   "rent_source": "latination.com citing Apartments.com, 2026 (weak single source; M.N.S. Sep 2025 Riverdale-area grouping avg 1BR $2,521)",
    "rent_trend": null,
    "summer_high_f": 83,
    "marine_layer": "little - no marine-layer/June-gloom pattern; harbor/ocean sea breeze gives slight afternoon relief near the water, but summers are humid and central AC matters",
@@ -1608,11 +1608,11 @@
   },
   "safety": {
    "score": 7,
-   "violent_per_1k": null,
-   "property_per_1k": null,
-   "year": "2023",
-   "source": "Furman Center CoreData (Staten Island borough row only)",
-   "note": "SI 01 row not retrievable; Staten Island borough violent 2.7/1k vs NYC 5.3. North Shore (120th Pct) is higher than the rest of SI - likely near city average. Judgment score. Furman Center CoreData 2023 community-district rates (columns property_crime_rate, violent_crime_rate; read as per 1,000 residents). NYC average used for comparison: violent 5.3, property 9.0 (Furman 2023). Citywide index crime fell ~3% in 2025 and murders/shootings hit record lows (Vital City / NYPD), so 2025-26 levels are likely a bit lower."
+   "violent_per_1k": 4.0,
+   "property_per_1k": 3.7,
+   "year": "2025",
+   "source": "NYU Furman Center neighborhood profile (CoreData.nyc), NYPD major-felony 'serious crime' per 1,000 residents — SI01 St. George/Stapleton",
+   "note": "Property crime well below NYC average, violent somewhat below; total 10.0 (2023) -> 8.7 (2024) -> 7.7 (2025). Median 1BR rent not found. Compare: NYC avg 5.3 violent / 9.0 property per 1k (brief); Furman's own 2025 citywide serious-crime total is 12.3/1k."
   },
   "lax": {
    "score": 6,
@@ -1709,8 +1709,8 @@
   },
   "walk": {
    "score": 9,
-   "walk_score": null,
-   "note": "Walk Score not retrieved; Downtown/Paulus Hook very walkable (estimate 90+); Journal Sq/Heights less so."
+   "walk_score": 87,
+   "note": "Walk Score neighborhood page (walkscore.com, via search snippet; page fetch blocked): Jersey City citywide avg 87 (The Heights 91; Journal Sq/McGinley Sq most walkable). Data page may be dated."
   },
   "quiet": {
    "score": 6,
@@ -1823,8 +1823,8 @@
   },
   "walk": {
    "score": 10,
-   "walk_score": null,
-   "note": "Walk Score not retrieved; compact, very walkable grid (estimate 95+)."
+   "walk_score": 97,
+   "note": "Walk Score neighborhood page (walkscore.com, via search snippet; page fetch blocked): Hoboken citywide avg 97."
   },
   "quiet": {
    "score": 6,

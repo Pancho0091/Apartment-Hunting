@@ -1,0 +1,976 @@
+[
+ {
+  "name": "128 on State",
+  "address": "128 State St S, Kirkland, WA 98033",
+  "area": "Kirkland",
+  "lat": 47.6745,
+  "lng": -122.2063,
+  "geocode_note": "lat/lng estimated from street address (approximate, not geocoded by API)",
+  "landlord": "company",
+  "owner_type": "institutional (Waterton, value-add buyer)",
+  "platform": "VeryApt / HotPads",
+  "management_company": null,
+  "year_built": 2007,
+  "floor_plan": "1BR/1BA",
+  "sqft": 731,
+  "base_rent": 1838,
+  "effective_rent": null,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "WebSearch snippets 2026-10-26",
+  "units_note": "HotPads: 1BR ~731-757 sf, 'large one-bedrooms from $2,550'; VeryApt 1BR from $1,838+ (likely stale). Seen 2026-10-26",
+  "washer_dryer": "yes",
+  "central_ac": "yes",
+  "central_ac_evidence": "VeryApt amenity list says 'Central A/C'; HotPads lists 'A/C'. Built as a condo (2007, steel/concrete) - ducted system plausible but not confirmed by an official source.",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": "Waterton bought (~$63.5-64M) for value-add renovation; units may be under renovation.",
+  "red_flags": [
+   "2007 build (not 2015+)",
+   "rent range wide/dated: $1,838 vs $2,550"
+  ],
+  "listing_url": "https://hotpads.com/128-on-state-kirkland-wa-98033-skfrvj/pad",
+  "sources": [
+   "https://www.veryapt.com/ApartmentReview-a16484-128-on-state-kirkland",
+   "https://hotpads.com/128-on-state-kirkland-wa-98033-skfrvj/pad",
+   "https://rebusinessonline.com/waterton-purchases-128-on-state-apartments-in-kirkland-washington/",
+   "https://www.nationalcorporatehousing.com/node/169147"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "garage",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": 128,
+   "stories": null,
+   "year_built": 2007,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": "I-405 (NE 85th St or NE 70th Pl) - estimate",
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": null,
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Unit count 123 vs 128 conflict. Multi-level garage per NCH. Parking fee/deposit/fees not found."
+ },
+ {
+  "name": "Kirkland Crossing",
+  "address": "10715 NE 37th Ct, Kirkland, WA 98033",
+  "area": "Kirkland",
+  "lat": 47.6425,
+  "lng": -122.1965,
+  "geocode_note": "lat/lng estimated from street address (approximate, not geocoded by API)",
+  "landlord": "company",
+  "owner_type": null,
+  "platform": "Redfin / RentCafe / Point2Homes",
+  "management_company": "Cascadian Property Management",
+  "year_built": null,
+  "floor_plan": "1BR/1BA",
+  "sqft": 748,
+  "base_rent": 2136,
+  "effective_rent": null,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "WebSearch snippets 2026-10-26",
+  "units_note": "1BR 694-748 sf at $2,136+ (Redfin Apr-2025 snapshot); other Redfin page $1,955+ (508-786 sf); RentCafe 1BR $2,280+. Seen 2026-10-26",
+  "washer_dryer": "yes",
+  "central_ac": "yes",
+  "central_ac_evidence": "VeryApt lists 'Central A/C'; Point2Homes feature list does not mention A/C - unconfirmed by official source.",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "year built unknown (likely pre-2015)",
+   "prices from dated snapshots"
+  ],
+  "listing_url": "https://www.point2homes.com/US/Apartment-Buildings/WA/Kirkland/Kirkland-Crossing2.html",
+  "sources": [
+   "https://www.veryapt.com/ApartmentReview-a4991-kirkland-crossing-apartments-kirkland",
+   "https://www.point2homes.com/US/Apartment-Buildings/WA/Kirkland/Kirkland-Crossing2.html",
+   "https://www.redfin.com/neighborhood/182631/WA/Kirkland/Lakeview/1-bedroom-apartments-for-rent",
+   "https://www.rentcafe.com/apartments-for-rent/us/wa/kirkland"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": 500,
+   "application_fee": 45,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "yes",
+   "dogs": "yes",
+   "pet_rent": 50,
+   "pet_deposit": 500,
+   "limits": "2 pets; ~50 lb limit (fragmentary); breed restrictions; $250 one-time pet fee"
+  },
+  "parking_detail": {
+   "type": "garage",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": "I-405 (Houghton/NE 70th Pl area) - estimate, not verified",
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": null,
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Point2Homes: $500 deposit, $45 app fee, pet fees. VeryApt: in-unit W/D, garage. Parking fee unknown."
+ },
+ {
+  "name": "Porch + Park",
+  "address": "16050 Cleveland St, Redmond, WA 98052",
+  "area": "Redmond",
+  "lat": 47.6733,
+  "lng": -122.1232,
+  "geocode_note": "lat/lng estimated from street address (approximate, not geocoded by API)",
+  "landlord": "company",
+  "owner_type": "developer-owned (Mainstreet Property Group financing reported)",
+  "platform": "HotPads / Zumper / Rentable",
+  "management_company": null,
+  "year_built": 2021,
+  "floor_plan": "1BR/1BA",
+  "sqft": 738,
+  "base_rent": 2594,
+  "effective_rent": null,
+  "special": "Up to 8 weeks free on 13+ month lease (listing deadlines 05/31/26 and 08/31/26 - confirm)",
+  "parking_fee": null,
+  "seen_on": "WebSearch snippets 2026-10-26",
+  "units_note": "1BR 738 sf $2,594; others 660-670 sf $2,656-$2,988. Seen 2026-10-26",
+  "washer_dryer": "yes",
+  "central_ac": "no",
+  "central_ac_evidence": "Listings say 'A/C' but a 2022 article on the community says units have mini-split air conditioning -> ductless, does NOT meet central-AC requirement.",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "AC is mini-split (fails central AC)"
+  ],
+  "listing_url": "https://hotpads.com/porch-park-redmond-wa-98052-249j1b8/pad",
+  "sources": [
+   "https://hotpads.com/porch-park-redmond-wa-98052-249j1b8/pad",
+   "https://www.zumper.com/apartment-buildings/p816984/porch-park-downtown-redmond-redmond-wa",
+   "https://www.rentable.co/redmond-wa/porch-park",
+   "https://irei.com/news/mainstreet-property-group-secures-32m-for-luxury-apartment-community-in-redmond-wash/"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "yes",
+   "dogs": "yes",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "garage",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": 2021,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": "Downtown Redmond (2 Line) - estimate",
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": null,
+   "website": null,
+   "leasing_phone": "(425) 585-4248"
+  },
+  "evidence": "Included as a near-miss: size/price fit but cooling is mini-split. Parking fee not found."
+ },
+ {
+  "name": "Central Park East",
+  "address": "15207 NE 16th Pl, Bellevue, WA 98007",
+  "area": "Bellevue",
+  "lat": 47.6245,
+  "lng": -122.141,
+  "geocode_note": "lat/lng estimated from street address (approximate, not geocoded by API)",
+  "landlord": "company",
+  "owner_type": null,
+  "platform": "Redfin / Greystar / VeryApt",
+  "management_company": "Greystar",
+  "year_built": null,
+  "floor_plan": "1BR/1BA",
+  "sqft": 700,
+  "base_rent": 1896,
+  "effective_rent": null,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "WebSearch snippets 2026-10-26",
+  "units_note": "Redfin 1BR 700-888 sf from $1,896+; VeryApt older $1,392+. Seen 2026-10-26",
+  "washer_dryer": "unclear",
+  "central_ac": "yes",
+  "central_ac_evidence": "VeryApt lists 'Central A/C' (VeryApt notes it is not accepting inquiries - possibly stale). Greystar snippet doesn't mention AC.",
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "year built unknown (renovated older complex)",
+   "W/D only 'in some units' per Greystar"
+  ],
+  "listing_url": "https://www.greystar.com/properties/bellevue-wa/central-park-east-apartments/floorplans",
+  "sources": [
+   "https://www.greystar.com/properties/bellevue-wa/central-park-east-apartments/floorplans",
+   "https://www.veryapt.com/ApartmentReview-a16531-central-park-east-bellevue",
+   "https://www.redfin.com/neighborhood/646/WA/Bellevue/Crossroads/1-bedroom-apartments-for-rent"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "yes",
+   "dogs": "yes",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "yes",
+   "pool": "yes",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": null,
+   "website": "https://www.greystar.com/central-park-east-apartments-bellevue/p_12351",
+   "leasing_phone": null
+  },
+  "evidence": "Greystar: newly renovated, pet-friendly, pool, fitness, W/D in some units. Confirm W/D and AC type per unit."
+ },
+ {
+  "name": "Queen Anne Towne",
+  "address": "1900 Queen Anne Ave N, Seattle, WA 98109",
+  "area": "Queen Anne",
+  "lat": 47.6368,
+  "lng": -122.3568,
+  "geocode_note": "lat/lng estimated from street address (approximate, not geocoded by API)",
+  "landlord": "company",
+  "owner_type": null,
+  "platform": "VeryApt",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1BR/1BA",
+  "sqft": null,
+  "base_rent": 2116,
+  "effective_rent": null,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "WebSearch snippets 2026-10-26",
+  "units_note": "VeryApt 1BR from $2,116+ (VeryApt not accepting inquiries - may be stale). sqft unknown. Seen 2026-10-26",
+  "washer_dryer": "yes",
+  "central_ac": "yes",
+  "central_ac_evidence": "VeryApt amenity list: 'Central A/C' (single aggregator source).",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "sqft unknown",
+   "year built unknown",
+   "single stale aggregator source"
+  ],
+  "listing_url": "https://www.veryapt.com/ApartmentReview-a16616-queen-anne-towne-seattle",
+  "sources": [
+   "https://www.veryapt.com/ApartmentReview-a16616-queen-anne-towne-seattle"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "garage",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": null,
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Lead only; needs size, year, current availability."
+ },
+ {
+  "name": "621 129th Pl NE (Wilburton ADU, Unit 2)",
+  "address": "621 129th Pl NE, Bellevue, WA 98005",
+  "area": "Bellevue",
+  "lat": 47.617,
+  "lng": -122.168,
+  "geocode_note": "lat/lng estimated from street address (approximate, not geocoded by API)",
+  "landlord": "private",
+  "owner_type": "individual owner (ADU)",
+  "platform": "Apartments.com / RentCafe / ApartmentList",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1BR/1BA",
+  "sqft": 780,
+  "base_rent": 2388,
+  "effective_rent": null,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "WebSearch snippets 2026-10-26",
+  "units_note": "1BR ADU 780 sf; $2,388 (RentCafe/Apartments.com) vs $2,238 total (another Apartments.com post). Seen 2026-10-26",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Listings say 'air conditioning' in features; type not stated.",
+  "dishwasher": "yes",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "private ADU - no package room likely",
+   "rent/deposit conflict between posts ($3,000 vs $1,000 deposit)"
+  ],
+  "listing_url": "https://www.rentcafe.com/apartments/wa/bellevue/621-129th-pl-ne-unit-2/default.aspx",
+  "sources": [
+   "https://www.rentcafe.com/apartments/wa/bellevue/621-129th-pl-ne-unit-2/default.aspx",
+   "https://www.apartments.com/621-129th-pl-ne-bellevue-wa/ekn1wdn/",
+   "https://www.apartments.com/621-129th-pl-ne-bellevue-wa/7schnyw/",
+   "https://www.apartmentlist.com/wa/bellevue/621-129th-pl-ne"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": "one older post says tenant pays electricity",
+   "deposit": 3000,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": "1-year lease"
+  },
+  "pets": {
+   "cats": "no",
+   "dogs": "no",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "yes"
+  },
+  "unit": {
+   "balcony": "yes",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "private entrance",
+    "deck"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": null,
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Private owner; phone omitted. Confirm AC type, parking and packages."
+ },
+ {
+  "name": "Angeline",
+  "address": "4801 Rainier Ave S, Seattle, WA 98118",
+  "area": "Columbia City / Beacon Hill",
+  "lat": 47.5582,
+  "lng": -122.2848,
+  "geocode_note": "lat/lng estimated from street address (approximate, not geocoded by API)",
+  "landlord": "company",
+  "owner_type": null,
+  "platform": "HotPads / Redfin / VeryApt",
+  "management_company": "Security Properties",
+  "year_built": null,
+  "floor_plan": "1BR/1BA",
+  "sqft": null,
+  "base_rent": null,
+  "effective_rent": null,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "WebSearch snippets 2026-10-26",
+  "units_note": "Building range 539/597-1,233 sf (studio-2BR); 1BR size/rent not broken out. Seen 2026-10-26",
+  "washer_dryer": "unclear",
+  "central_ac": "unclear",
+  "central_ac_evidence": "HotPads lists air conditioning; a VeryApt-sourced snippet lists 'Central A/C' for Security Properties at this address - type unconfirmed.",
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "1BR sqft/rent unknown",
+   "year built not found"
+  ],
+  "listing_url": "https://hotpads.com/angeline-seattle-wa-98118-vzvyv9/pad",
+  "sources": [
+   "https://hotpads.com/angeline-seattle-wa-98118-vzvyv9/pad",
+   "https://www.veryapt.com/Apartments-L2661-seattle-columbia-city"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": "Columbia City (1 Line) - estimate",
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": null,
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Lead only."
+ },
+ {
+  "name": "AVA Ballard",
+  "address": "5555 14th Ave NW, Seattle, WA 98107",
+  "area": "Ballard",
+  "lat": 47.6692,
+  "lng": -122.373,
+  "geocode_note": "lat/lng estimated from street address (approximate, not geocoded by API)",
+  "landlord": "company",
+  "owner_type": "sold by AvalonBay ($105.5M)",
+  "platform": "Redfin / VeryApt",
+  "management_company": null,
+  "year_built": 2013,
+  "floor_plan": "1BR/1BA",
+  "sqft": 700,
+  "base_rent": 2188,
+  "effective_rent": null,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "WebSearch snippets 2026-10-26",
+  "units_note": "Redfin: 1BR 545-700 sf from $2,188, 16 units avail, in-unit laundry. Seen 2026-10-26",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "No source confirms AC for this building (an earlier snippet's 'central A/C' could not be confirmed).",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "AC unconfirmed",
+   "2013 build",
+   "700 sf is max of range"
+  ],
+  "listing_url": "https://www.redfin.ca/neighborhood/121/WA/Seattle/Ballard/1-bedroom-apartments-for-rent",
+  "sources": [
+   "https://www.veryapt.com/ApartmentReview-a5128-ava-ballard-seattle",
+   "https://rebusinessonline.com/avalonbay-communities-sells-ava-ballard-multifamily-property-in-seattle-for-105-5m/"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "garage",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": 265,
+   "stories": null,
+   "year_built": 2013,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": null,
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Near-miss lead; management after sale not confirmed."
+ },
+ {
+  "name": "Sundodger Apartments",
+  "address": "4218 Roosevelt Way NE, Seattle, WA 98105",
+  "area": "University District / Roosevelt",
+  "lat": 47.6582,
+  "lng": -122.3175,
+  "geocode_note": "lat/lng estimated from street address (approximate, not geocoded by API)",
+  "landlord": "company",
+  "owner_type": null,
+  "platform": "Redfin",
+  "management_company": null,
+  "year_built": 2019,
+  "floor_plan": "1BR/1BA",
+  "sqft": null,
+  "base_rent": 2250,
+  "effective_rent": null,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "WebSearch snippets 2026-10-26",
+  "units_note": "Redfin: studio $1,661, 1BR $2,250, 2BR $2,984; 1BR sqft unknown (studios 339-440 sf). Seen 2026-10-26",
+  "washer_dryer": "unclear",
+  "central_ac": "unclear",
+  "central_ac_evidence": "2019 Hoodline article on a studio here: 'expect air conditioning'; an aggregator snippet says central A/C. Type unconfirmed.",
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "1BR likely small - sqft unknown"
+  ],
+  "listing_url": "https://www.redfin.com/neighborhood/36541/WA/Seattle/Northeast-Seattle/1-bedroom-apartments-for-rent/page-2",
+  "sources": [
+   "https://www.commercialmls.com/Search/ListingDetailsFull/711503",
+   "https://hoodline.com/2019/06/renting-in-seattle-what-will-1-800-get-you-1559680844/"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": 110,
+   "stories": 6,
+   "year_built": 2019,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": null,
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Lead only; 1BR size probably under 700 sf."
+ }
+]

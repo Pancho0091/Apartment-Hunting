@@ -1,0 +1,957 @@
+[
+ {
+  "name": "Amerige Pointe Apartments",
+  "address": "1001 Starbuck St, Fullerton, CA 92833",
+  "area": "NEW: Fullerton (west of downtown)",
+  "lat": 33.8705,
+  "lng": -117.9385,
+  "geocode_note": "Estimated from street address (approximate, not geocoded)",
+  "landlord": "company",
+  "owner_type": "institutional apartment community (Greystar-managed)",
+  "platform": "Greystar site / WestsideRentals / ApartmentIQ / Rentable",
+  "management_company": "Greystar",
+  "year_built": 2005,
+  "floor_plan": "A1 1BR/1BA 724 sq ft (A2 690 sq ft is too small)",
+  "sqft": 724,
+  "base_rent": 2487,
+  "effective_rent": 2280,
+  "special": "'One month free base rent on select floorplans' (WestsideRentals copy of Greystar listing, undated); effective = 2487*11/12 \u2248 $2,280 IF A1 qualifies",
+  "parking_fee": null,
+  "seen_on": "2026-10-26 (search snippets; page fetches failed with DNS errors)",
+  "units_note": "A1 724 sq ft $2,487\u2013$3,172; aggregator snapshot shows 724 sq ft 1BRs $2,809\u2013$3,093 with 5 available \u2014 prices undated/conflicting",
+  "washer_dryer": "yes",
+  "central_ac": "yes",
+  "central_ac_evidence": "Greystar floorplan page features list 'central heating and air' (per search snippet)",
+  "dishwasher": "yes",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": null,
+  "reputation_gist": null,
+  "red_flags": "Prices vary widely by source/date; the $2,487 low end and 1-month-free special need live confirmation. Trash fee $46.50/mo.",
+  "listing_url": "https://www.greystar.com/properties/fullerton-ca/amerige-pointe-apartments/floorplans",
+  "sources": [
+   "https://www.greystar.com/amerige-pointe-apartments-fullerton-ca/p_14424",
+   "https://www.greystar.com/properties/fullerton-ca/amerige-pointe-apartments/floorplans",
+   "https://www.westsiderentals.com/fullerton-ca/amerige-pointe-zg4cdhy",
+   "https://edge.apartmentiq.io/fullerton-ca/amerige-pointe",
+   "https://www.rentable.co/fullerton-ca/amerige-pointe"
+  ],
+  "costs": {
+   "required_fees": [
+    {
+     "name": "trash",
+     "amount": 46.5
+    }
+   ],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": "12\u201315 months (listing)"
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": 292,
+   "stories": 4,
+   "year_built": 2005,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "A1/A2 1BRs listed; W1 973 sq ft avail. 'Feb 7' (year unclear). Seen 2026-10-26 via snippets.",
+   "website": "https://www.greystar.com/amerige-pointe-apartments-fullerton-ca/p_14424",
+   "leasing_phone": null
+  },
+  "evidence": "All from WebSearch snippets of Greystar/WestsideRentals/ApartmentIQ; Greystar page fetch failed (DNS). 292 units, 4 stories, built 2005 per Greystar-based listing."
+ },
+ {
+  "name": "Greenhouse Apartments",
+  "address": "1220 Deerpark Dr, Fullerton, CA 92831 (Apartment List gives 1225 Deerpark Dr)",
+  "area": "Fullerton (east, non-downtown)",
+  "lat": 33.889,
+  "lng": -117.895,
+  "geocode_note": "Estimated from street address (approximate, not geocoded)",
+  "landlord": "company",
+  "owner_type": "apartment community",
+  "platform": "Redfin / VeryApt / ApartmentIQ / Apartment List",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1BR/1BA 780 sq ft",
+  "sqft": 780,
+  "base_rent": 2544,
+  "effective_rent": 2544,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26 (search snippets; page fetches failed with DNS errors)",
+  "units_note": "Redfin: 1BR/1BA 780 sq ft; '1 bd: $2,544'",
+  "washer_dryer": "unclear",
+  "central_ac": "unclear",
+  "central_ac_evidence": "VeryApt/ApartmentIQ list 'Air Conditioning' only \u2014 not stated as central",
+  "dishwasher": "yes",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": null,
+  "reputation_gist": null,
+  "red_flags": "Laundry conflict: Redfin says 'Laundry in unit' but VeryApt lists 'in-unit washer/dryer hookups' (may need own machines). Year built unknown; neighboring Deerpark complexes are 1970s.",
+  "listing_url": "https://apartmentlist.com/ca/fullerton/greenhouse",
+  "sources": [
+   "https://redfin.com/neighborhood/38408/CA/Fullerton/Artisan-Walk/1-bedroom-apartments-for-rent",
+   "https://redfin.com/city/7158/CA/Fullerton/pet-friendly-apartments-for-rent",
+   "https://www.veryapt.com/ApartmentReview-a27957-greenhouse-fullerton",
+   "https://apartmentlist.com/ca/fullerton/greenhouse",
+   "https://edge.apartmentiq.io/fullerton-ca/greenhouse"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "garage",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "yes",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "yes",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Redfin snippet showed 1BR at $2,544 (date not shown); seen 2026-10-26",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Snippets only. Garage per VeryApt only. Likely an older (pre-2000) complex \u2014 verify AC type and whether W/D appliances are provided."
+ },
+ {
+  "name": "1701 N Peppertree Ln (renovated upstairs 1BR)",
+  "address": "1701 N Peppertree Ln, Fullerton, CA 92835",
+  "area": "NEW: Fullerton \u2013 Sunny Hills",
+  "lat": 33.889,
+  "lng": -117.935,
+  "geocode_note": "Estimated from street address (approximate, not geocoded)",
+  "landlord": "private",
+  "owner_type": "small multifamily, professionally managed",
+  "platform": "Rentable / PadMapper",
+  "management_company": "Vanguard Property Group Inc.",
+  "year_built": null,
+  "floor_plan": "1BR/1BA upstairs, completely renovated",
+  "sqft": null,
+  "base_rent": 2295,
+  "effective_rent": 2295,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26 (search snippets; page fetches failed with DNS errors)",
+  "units_note": "1 unit, 'Available Now'; 1BR sq ft not given (2BRs in building 920\u2013950 sq ft; neighboring 1700 Peppertree 1BR is 700 sq ft)",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Not mentioned in listing snippets",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": null,
+  "reputation_gist": null,
+  "red_flags": "Sq ft unknown \u2014 may be under 700. Requires 675 credit, 2.5x income, 1-year lease.",
+  "listing_url": "https://www.rentable.co/fullerton-ca/1701-peppertree-ln",
+  "sources": [
+   "https://www.rentable.co/fullerton-ca/1701-peppertree-ln",
+   "https://www.padmapper.com/address/1701-n-peppertree-ln-fullerton-ca-92835-usa",
+   "https://edge.apartmentiq.io/fullerton-ca/1700-peppertree-ln"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": 2295,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": "1 year"
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "garage",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Available now as of snippet (undated); will likely be gone by Jan 2027 \u2014 watch for repeats",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Snippets only (rentable fetch failed). Garage parking listed among amenities."
+ },
+ {
+  "name": "2200 Cheyenne Way (renovated 1BR condo)",
+  "address": "2200 Cheyenne Way, Fullerton, CA 92833 (unit # not captured)",
+  "area": "NEW: Fullerton (west)",
+  "lat": 33.886,
+  "lng": -117.962,
+  "geocode_note": "Estimated from street address (approximate, not geocoded)",
+  "landlord": "private",
+  "owner_type": "individually owned condo",
+  "platform": "MLS (RS25128695) via The Boutique RE",
+  "management_company": null,
+  "year_built": 1983,
+  "floor_plan": "1BR/1BA condo",
+  "sqft": null,
+  "base_rent": 2600,
+  "effective_rent": 2600,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26 (search snippets; page fetches failed with DNS errors)",
+  "units_note": "MLS RS25128695 (2025) \u2014 may be leased/stale",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": null,
+  "dishwasher": "yes",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": null,
+  "reputation_gist": null,
+  "red_flags": "Built 1983 (below 1985 condo preference); sq ft not given; at top of stretch range; listing likely from 2025.",
+  "listing_url": "https://theboutiquere.com/properties/retsPdf/RS25128695/2200-Cheyenne-Way",
+  "sources": [
+   "https://theboutiquere.com/properties/retsPdf/RS25128695/2200-Cheyenne-Way",
+   "https://www.weichert.com/137308723/"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": "HOA covers water, trash, landscaping",
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": 1983,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "yes",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "new Samsung/LG appliances",
+    "gas range",
+    "private covered patio"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": null,
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Snippet only; MLS page fetch failed. A 2BR in same complex (#118) is 932 sq ft."
+ },
+ {
+  "name": "284 S Oak St (remodeled single-story 1BR)",
+  "address": "284 S Oak St, Orange, CA 92866",
+  "area": "Orange \u2013 Old Towne area",
+  "lat": 33.785,
+  "lng": -117.847,
+  "geocode_note": "Estimated from street address (approximate, not geocoded)",
+  "landlord": "private",
+  "owner_type": "small multifamily",
+  "platform": "Zillow",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1BR/1BA single-story",
+  "sqft": null,
+  "base_rent": null,
+  "effective_rent": null,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26 (search snippets; page fetches failed with DNS errors)",
+  "units_note": "Zillow building page; price and sq ft not in snippet",
+  "washer_dryer": "yes",
+  "central_ac": "yes",
+  "central_ac_evidence": "Zillow building page lists central air (per snippet)",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": null,
+  "reputation_gist": null,
+  "red_flags": "Rent and sq ft unknown; washer/dryer is 'in the kitchen'; older small building; preferred 700+ credit.",
+  "listing_url": "https://www.zillow.com/b/284-s-oak-st-orange-ca-Ch68bn/",
+  "sources": [
+   "https://www.zillow.com/b/284-s-oak-st-orange-ca-Ch68bn/"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": "listing says pet-friendly"
+  },
+  "parking_detail": {
+   "type": "covered",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": null,
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Parking = single covered carport + one tandem space. Snippets only."
+ },
+ {
+  "name": "Monaco townhouse-condo \u2013 7912 E Monte Carlo Ave",
+  "address": "7912 E Monte Carlo Ave, Anaheim, CA 92808",
+  "area": "NEW: Anaheim Hills",
+  "lat": 33.857,
+  "lng": -117.733,
+  "geocode_note": "Estimated from street address (approximate, not geocoded)",
+  "landlord": "private",
+  "owner_type": "individually owned tri-level condo",
+  "platform": "Rentable / USFCA off-campus housing",
+  "management_company": "Eli Real Estate",
+  "year_built": 1995,
+  "floor_plan": "1BR/1.5BA tri-level townhouse with attached 2-car garage",
+  "sqft": 865,
+  "base_rent": 2333,
+  "effective_rent": 2333,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26 (search snippets; page fetches failed with DNS errors)",
+  "units_note": "Rentable showed $2,333, 1 unit available; a similar 865 sq ft 1BR/1.5BA Anaheim Hills townhouse showed $2,599 \u2014 likely same/sister unit; undated",
+  "washer_dryer": "unclear",
+  "central_ac": "unclear",
+  "central_ac_evidence": null,
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": null,
+  "reputation_gist": null,
+  "red_flags": "Laundry described as hookups in garage \u2014 verify appliances. Unit was also listed FOR SALE ($649k, 2025), so rental may be stale. 1995 build OK.",
+  "listing_url": "https://www.rentable.co/anaheim-ca/charming-anaheim-hills-condo",
+  "sources": [
+   "https://www.rentable.co/anaheim-ca/charming-anaheim-hills-condo",
+   "https://offcampushousing.usfca.edu/housing/property/charming-1-bed-1-5-bath-in-anaheim-hills/swz5vc5",
+   "https://mlslistings.com/property/crpw25055332"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "garage",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": 1995,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "yes",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "fireplace",
+    "attached 2-car garage"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": null,
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Snippets only; price conflict $2,333 vs $2,599."
+ },
+ {
+  "name": "17858 Linda Dr #35",
+  "address": "17858 Linda Dr #35, Yorba Linda, CA 92886",
+  "area": "NEW: Yorba Linda",
+  "lat": 33.888,
+  "lng": -117.799,
+  "geocode_note": "Estimated from street address (approximate, not geocoded)",
+  "landlord": "private",
+  "owner_type": "individually owned condo",
+  "platform": "Apartment List",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1BR",
+  "sqft": null,
+  "base_rent": 1904,
+  "effective_rent": 1904,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26 (search snippets; page fetches failed with DNS errors)",
+  "units_note": "Marked 'available now', no date shown",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Listing says 'air conditioning' only; a sale listing in the same complex (17844 Linda Dr #33) says central air",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": null,
+  "reputation_gist": null,
+  "red_flags": "Sq ft unknown; listing date unknown (possibly stale); low price \u2014 verify listing is real before any deposit.",
+  "listing_url": "https://www.apartmentlist.com/ca/yorba-linda/17858-linda-dr-35",
+  "sources": [
+   "https://www.apartmentlist.com/ca/yorba-linda/17858-linda-dr-35",
+   "https://www.rubyhome.com/idx/17844-linda-dr-yorba-linda-ca-92886/420955076_spid/"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": null,
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Snippets only. Sister unit in complex has indoor laundry, central air, garage."
+ },
+ {
+  "name": "Orange Plaza Apartments",
+  "address": "1450 E Del Mar Ave, Orange, CA 92865",
+  "area": "NEW: Orange (north)",
+  "lat": 33.818,
+  "lng": -117.839,
+  "geocode_note": "Estimated from street address (approximate, not geocoded)",
+  "landlord": "company",
+  "owner_type": "apartment community",
+  "platform": "Redfin",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1BR/1BA 845 sq ft",
+  "sqft": 845,
+  "base_rent": 2295,
+  "effective_rent": 2104,
+  "special": "Possible '1 month free' badge (placement ambiguous on Redfin); effective \u2248 $2,104 if it applies",
+  "parking_fee": null,
+  "seen_on": "2026-10-26 (search snippets; page fetches failed with DNS errors)",
+  "units_note": "Redfin 92865 1BR page; undated",
+  "washer_dryer": "unclear",
+  "central_ac": "unclear",
+  "central_ac_evidence": null,
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": null,
+  "reputation_gist": null,
+  "red_flags": "Laundry/AC unknown; likely an older complex \u2014 weak lead, verify in-unit W/D first.",
+  "listing_url": "https://www.redfin.com/zipcode/92865/1-bedroom-apartments-for-rent",
+  "sources": [
+   "https://www.redfin.com/zipcode/92865/1-bedroom-apartments-for-rent"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": null,
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Single Redfin snippet."
+ },
+ {
+  "name": "461\u2013463 N Citrus St",
+  "address": "461-463 N Citrus St, Orange, CA 92868",
+  "area": "NEW: Orange (west)",
+  "lat": 33.793,
+  "lng": -117.869,
+  "geocode_note": "Estimated from street address (approximate, not geocoded)",
+  "landlord": "private",
+  "owner_type": "small multifamily",
+  "platform": "Zillow",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1BR",
+  "sqft": null,
+  "base_rent": null,
+  "effective_rent": null,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26 (search snippets; page fetches failed with DNS errors)",
+  "units_note": null,
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": null,
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": null,
+  "reputation_gist": null,
+  "red_flags": "Price, size and AC unknown \u2014 weak lead.",
+  "listing_url": "https://www.zillow.com/b/461-463-n-citrus-st.-orange-ca-CjhsLm/",
+  "sources": [
+   "https://www.zillow.com/b/461-463-n-citrus-st.-orange-ca-CjhsLm/"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "stacked washer & dryer in unit"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": null,
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Single Zillow snippet ('In Unit: Stacked Washer & Dryer')."
+ }
+]
