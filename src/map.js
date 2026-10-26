@@ -850,7 +850,7 @@ position:relative;height:clamp(440px,78vh,760px);background:#ece6d8;border:1px s
         const p = t.p, b = p.b, sc = ctx.score ? ctx.score(b) : null, ar = p.area ? shortArea(p.area.name) : (b.region || "");
         return `<p class="k">Specimen · ${esc(ar)}</p><p class="n">${esc(b.name)}</p>` +
           `<div class="g"><span><b>${esc(ctx.money(p.rent))}</b><i>per month</i></span><span><b>${b.sqft ? esc(Math.round(b.sqft)) : "—"}</b><i>sq ft</i></span>` +
-          `<span><b>${sc == null || isNaN(sc) ? "—" : (Math.round(sc * 10) / 10).toFixed(1)}</b><i>match</i></span></div>` +
+          `<span><b>${sc == null || isNaN(sc) ? "—" : Math.round(sc)}</b><i>match /100</i></span></div>` +
           `<p class="v" style="color:${VCOL[p.v]}">${VLABEL[p.v]}<span class="hint">${t.touch ? "" : "Click to open"}</span></p>`;
       }
       if (t.type === "cluster") {

@@ -153,8 +153,8 @@
   const regionEmblem = (name, cls) => art("emblem " + (cls || ""), ill("region", name));
   // Liquid travel inside the jar's 36x48 grid (top 18.5 → bottom 42.9).
   const JAR_TRAVEL = 24.4;
-  function jar(s, cls) {
-    const v = s == null ? 0 : Math.max(0, Math.min(1, s / 10)), q = Math.round(v * 20) / 20;
+  function jar(s, cls, max = 100) {
+    const v = s == null ? 0 : Math.max(0, Math.min(1, s / max)), q = Math.round(v * 20) / 20;
     const m = ill("jar", q, { tint: "green" });
     if (!m) return h("span", { class: "meter " + (cls || ""), "aria-hidden": "true" }, h("i", { style: { "--w": v * 100 + "%" } }));
     const el = art("jar " + (cls || ""), m);
@@ -174,12 +174,31 @@
     return w ? t / w : null;
   }
   const repScore = b => b.reviews && typeof b.reviews.reputation_score === "number" ? b.reviews.reputation_score : null;
-  function score(b) {
+  // Weighted 0–10 blend of neighborhood factors and building reviews.
+  function rawScore(b) {
     const a = areaScore(S.areaById.get(b.area_id)), r = repScore(b);
     const wa = FACTORS.reduce((t, f) => t + (Number(S.weights[f.key]) || 0), 0), wr = Number(S.weights.rep) || 0;
     if (a == null) return r; if (r == null || !wr) return a;
     return (a * wa + r * wr) / (wa + wr);
   }
+  // Match: rawScore rescaled to 0–100 across every listing (best = 100, lowest = 0), so small
+  // differences in neighborhood scores become readable. Recomputed when weights or listings change.
+  let matchCache = { key: "", list: null, min: 0, max: 0 };
+  function matchRange() {
+    const key = JSON.stringify(S.weights);
+    if (matchCache.key !== key || matchCache.list !== S.buildings || matchCache.n !== S.buildings.length) {
+      const vals = S.buildings.map(rawScore).filter(v => v != null && !isNaN(v));
+      matchCache = { key, list: S.buildings, n: S.buildings.length, min: vals.length ? Math.min(...vals) : 0, max: vals.length ? Math.max(...vals) : 0 };
+    }
+    return matchCache;
+  }
+  function score(b) {
+    const r = rawScore(b);
+    if (r == null || isNaN(r)) return null;
+    const { min, max } = matchRange();
+    return max > min ? ((r - min) / (max - min)) * 100 : 100;
+  }
+  const fm = n => n == null || isNaN(n) ? "—" : String(Math.round(n));
   const rentOf = b => b.effective_rent ?? b.base_rent;
   const allIn = b => { const r = rentOf(b); return r == null ? null : r + (Number(b.parking_fee) || 0); };
   const ppsf = b => rentOf(b) && b.sqft ? rentOf(b) / b.sqft : null;
@@ -283,7 +302,7 @@
     ledger.inViewSub.textContent = S.loaded ? `of ${S.buildings.length} listings` : "";
     tween(ledger.meet, meet, int, 620);
     if (med == null) { cancelAnimationFrame(ledger.med._raf); ledger.med._tv = null; ledger.med.textContent = "—"; } else tween(ledger.med, Math.round(med), money, 620);
-    const topId = top ? top.id + "|" + f1(score(top)) : "";
+    const topId = top ? top.id + "|" + fm(score(top)) : "";
     if (ledger.topId !== topId) {
       const first = ledger.topId == null;
       ledger.topId = topId;
@@ -291,7 +310,7 @@
       const hadFocus = ledger.topSlot.contains(document.activeElement);
       ledger.topSlot.replaceChildren(node);
       if (hadFocus && node.focus) node.focus({ preventScroll: true });
-      ledger.topSub.textContent = top ? [areaName(top), money(rentOf(top)), "match " + f1(score(top))].filter(Boolean).join(" · ") : "";
+      ledger.topSub.textContent = top ? [areaName(top), money(rentOf(top)), "match " + fm(score(top))].filter(Boolean).join(" · ") : "";
       if (!first) [node, ledger.topSub].forEach((el, i) => anim(el, [{ opacity: 0, transform: "translateY(6px)" }, { opacity: 1, transform: "none" }], { duration: 320, delay: i * 40, easing: EASE.quint, fill: "backwards" }));
     }
   }
@@ -649,7 +668,7 @@
      the existing elements (FLIP) instead of re-parsing every illustration. */
   const listCache = { cards: new Map(), rows: new Map() };
   function keyedListing(mode, b, i) {
-    const cache = listCache[mode], sc = score(b), scK = f1(sc);
+    const cache = listCache[mode], sc = score(b), scK = fm(sc);
     const c = cache.get(b.id);
     if (c && c.b === b && c.sc === scK) {
       if (c.i !== i) { c.i = i; c.num.textContent = pad2(i + 1); }
@@ -720,7 +739,7 @@
         reqRow(b),
         fails.length ? h("p", { class: "specimen-fails", text: fails.join(" · ") }) : null,
         h("footer", { class: "specimen-foot" },
-          h("div", { class: "match", title: "Best-match score out of 10, using your ranking weights" }, jar(sc), h("span", { class: "match-k", text: "Match" }), h("b", { class: "match-v", text: f1(sc) })),
+          h("div", { class: "match", title: "Match out of 100 against all listings, using your ranking weights. Best = 100, lowest = 0." }, jar(sc), h("span", { class: "match-k", text: "Match" }), h("b", { class: "match-v", text: fm(sc) })),
           savingsEl(b)),
         (() => { const t = flagTags(b, true); return t.length ? h("div", { class: "tags" }, ...t) : null; })()));
   }
@@ -735,7 +754,7 @@
       reqRow(b, "compact"),
       h("span", { class: "rowitem-rent", text: money(rentOf(b)) }),
       h("span", { class: "rowitem-num rowitem-size", text: b.sqft ? Math.round(b.sqft) + " ft²" : "—" }),
-      h("span", { class: "rowitem-match" }, jar(sc, "xs"), h("b", { text: f1(sc) })),
+      h("span", { class: "rowitem-match" }, jar(sc, "xs"), h("b", { text: fm(sc) })),
       savingsEl(b, "rowitem-save") || h("span", { class: "rowitem-num", text: "—" }));
   }
 
@@ -748,7 +767,7 @@
     { k: "sqft", t: "Sq ft", num: true, v: b => b.sqft, cell: b => h("td", { class: "num", text: b.sqft != null ? Math.round(b.sqft) : "—" }) },
     { k: "ppsf", t: "$/sq ft", num: true, v: ppsf, cell: b => h("td", { class: "num", text: ppsf(b) ? ppsf(b).toFixed(2) : "—" }) },
     { k: "save", t: "vs. Jayne", num: true, v: savingsOf, cell: b => { const d = savingsOf(b); return h("td", { class: "num " + (d == null ? "" : d >= 0 ? "pos" : "neg"), text: d == null ? "—" : (d >= 0 ? "+" : "−") + money(Math.abs(d)) }); } },
-    { k: "score", t: "Match", num: true, v: score, cell: b => h("td", { class: "num" }, h("span", { class: "t-match" }, score(b) == null ? null : h("span", { class: "meter xs", "aria-hidden": "true" }, h("i", { style: { "--w": score(b) * 10 + "%" } })), f1(score(b)))) },
+    { k: "score", t: "Match", num: true, v: score, cell: b => h("td", { class: "num" }, h("span", { class: "t-match" }, score(b) == null ? null : h("span", { class: "meter xs", "aria-hidden": "true" }, h("i", { style: { "--w": score(b) + "%" } })), fm(score(b)))) },
     { k: "rep", t: "Reviews", num: true, v: repScore, cell: b => h("td", { class: "num", text: repScore(b) ?? "—" }) },
     { k: "req", t: "Requirements", v: b => REQS.filter(r => reqVal(b, r.key) === "yes").length, cell: b => h("td", null, h("span", { class: "dots" }, ...REQS.map(r => h("i", { class: reqVal(b, r.key), title: r.name + ": " + REQ_WORD[reqVal(b, r.key)].toLowerCase() })))) },
     { k: "landlord", t: "Landlord", v: b => b.landlord || "company", cell: b => h("td", { class: "t-text", text: b.landlord === "private" ? "Private" : "Company" }) },
@@ -905,7 +924,7 @@
     if (!picks.length) return root.append(emptyState("Open any listing and choose Compare to line up to four side by side.", "Nothing on the bench yet", true));
     const rows = [
       ["Neighborhood", b => areaName(b) || "—"],
-      ["Best match", b => f1(score(b)), score, 1],
+      ["Match (of 100)", b => fm(score(b)), score, 1],
       ["Rent", b => money(rentOf(b)), rentOf, -1],
       ["Size", b => b.sqft ? Math.round(b.sqft) + " sq ft" : "—", b => b.sqft, 1],
       ["$ per sq ft", b => ppsf(b) ? "$" + ppsf(b).toFixed(2) : "—", ppsf, -1],
@@ -1310,7 +1329,7 @@
       h("div", { class: "hero-figs" },
         h("div", { class: "hero-fig" }, h("span", { class: "fig-k", text: "Rent" }), h("b", { class: "serif", text: money(rentOf(b)) }), h("span", { class: "hero-sub", text: b.base_rent && rentOf(b) < b.base_rent ? money(b.base_rent) + " list" : "per month" })),
         h("div", { class: "hero-fig" }, h("span", { class: "fig-k", text: "Size" }), h("b", { class: "serif", text: b.sqft ? Math.round(b.sqft) : "—" }), h("span", { class: "hero-sub", text: p ? "sq ft · $" + p.toFixed(2) + "/ft²" : "sq ft" })),
-        h("div", { class: "hero-fig" }, h("span", { class: "fig-k", text: "Match" }), h("b", { class: "serif" }, f1(sc)), h("span", { class: "hero-sub" }, jar(sc, "xs"), "of 10, your weights")),
+        h("div", { class: "hero-fig" }, h("span", { class: "fig-k", text: "Match" }), h("b", { class: "serif" }, fm(sc)), h("span", { class: "hero-sub" }, jar(sc, "xs"), "of 100, vs. all listings")),
         h("div", { class: "hero-fig " + (d == null ? "" : d >= 0 ? "pos" : "neg") }, h("span", { class: "fig-k", text: d == null || d >= 0 ? "Saves vs. The Jayne" : "Costs vs. The Jayne" }), h("b", { class: "serif", text: d == null ? "—" : money(Math.abs(d)) }), h("span", { class: "hero-sub", text: d == null ? "rent unknown" : `a month · ${money(Math.abs(d) * 12)} a year, with parking` }))),
       b.scam_flags ? h("p", { class: "callout bad" }, h("b", { text: "Scam warning. " }), b.scam_flags) : null,
       h("div", { class: "dossier-actions" }, cmpBtn,
@@ -1363,7 +1382,7 @@
         h("div", { class: "dossier-kicker" }, h("span", { text: a.region })),
         h("h2", { class: "dossier-name", id: "drawerTitle", text: a.name })),
       h("div", { class: "hero-figs two" },
-        h("div", { class: "hero-fig" }, h("span", { class: "fig-k", text: "Neighborhood score" }), h("b", { class: "serif", text: f1(sc) }), h("span", { class: "hero-sub" }, jar(sc, "xs"), "of 10, your weights")),
+        h("div", { class: "hero-fig" }, h("span", { class: "fig-k", text: "Neighborhood score" }), h("b", { class: "serif", text: f1(sc) }), h("span", { class: "hero-sub" }, jar(sc, "xs", 10), "of 10, your weights")),
         h("div", { class: "hero-fig" }, h("span", { class: "fig-k", text: "Listings here" }), h("b", { class: "serif", text: bs.length }), h("span", { class: "hero-sub", text: bs.filter(matches).length + " in view" }))),
       a.summary ? h("p", { class: "dossier-summary", text: a.summary }) : null,
       factorBars(a, "in-drawer"),
