@@ -289,6 +289,7 @@
     return out;
   }
   const trueCost = b => costOf(b).total;
+  const compareCount = () => S.buildings.filter(b => S.compare.has(b.id)).length;
   const savingsOf = b => { const c = trueCost(b); return c == null ? null : JAYNE.allIn - c; };
   const allIn = trueCost;
   /* Particulars: the dossier fields, grouped. The completeness meter is the share of these found. */
@@ -746,10 +747,11 @@
       btn.setAttribute("aria-pressed", on ? "true" : "false");
       if (k === "compare") {
         let n = btn.querySelector(".seg-n");
-        if (S.compare.size) {
+        const nc = compareCount();
+        if (nc) {
           if (!n) { n = h("span", { class: "seg-n" }); btn.append(n); anim(n, [{ transform: "scale(.3)", opacity: 0 }, { transform: "none", opacity: 1 }], { duration: 320, easing: EASE.spring }); }
-          else if (n.textContent !== String(S.compare.size)) anim(n, [{ transform: "scale(1.35)" }, { transform: "none" }], { duration: 320, easing: EASE.spring });
-          n.textContent = S.compare.size;
+          else if (n.textContent !== String(nc)) anim(n, [{ transform: "scale(1.35)" }, { transform: "none" }], { duration: 320, easing: EASE.spring });
+          n.textContent = nc;
         } else if (n) n.remove();
       }
     });
@@ -1232,7 +1234,7 @@
               if (tied.filter(Boolean).length < picks.length) tied.forEach((t, i) => t && bestSet.add(i));
             }
           }
-          return h("tr", null, h("th", { scope: "row", class: "compare-k" }, reqKey ? reqIcon(reqKey) : null, label), ...picks.map((b, i) => {
+          return h("tr", null, h("th", { scope: "row", class: "compare-k" }, reqKey && reqKey !== "tri" ? reqIcon(reqKey) : null, label), ...picks.map((b, i) => {
             const t = String(fmt(b));
             if (reqKey) return h("td", null, h("span", { class: "reqword " + t }, h("i", { "aria-hidden": "true" }), reqKey === "tri" ? ({ yes: "Yes", no: "No", unclear: "Not confirmed" })[t] : REQ_WORD[t]));
             return h("td", { class: bestSet.has(i) ? "best" : null }, t, bestSet.has(i) ? h("span", { class: "sr", text: " (best)" }) : null);
@@ -1256,12 +1258,15 @@
       h("header", { class: "accession-head" },
         h("p", { class: "mono-label", text: "Accession form" }),
         h("h2", { class: "accession-title", text: "Add a specimen" }),
-        h("p", { class: "accession-lede", text: "Found something on Zillow, Craigslist or a walk around the block? Add it and it will be scored with its neighborhood." })),
+        h("p", { class: "accession-lede", text: `Found something in ${marketInfo().name} on Zillow, Craigslist or a walk around the block? Add it and it will be scored with its neighborhood.` })),
       h("div", { class: "accession-section" },
         h("p", { class: "section-k" }, h("span", { text: "I" }), "Where"),
         field("a-name", "Building or address", h("input", { id: "a-name", required: true, autocomplete: "off" })),
-        field("a-area", "Neighborhood", h("select", { id: "a-area", class: "select", required: true }, h("option", { value: "", text: "Choose…" }),
-          ...REGIONS.map(r => h("optgroup", { label: r }, ...S.areas.filter(a => a.region === r).map(a => h("option", { value: a.id, text: a.name }))))))),
+        S.areas.length
+          ? field("a-area", "Neighborhood", h("select", { id: "a-area", class: "select", required: true }, h("option", { value: "", text: "Choose…" }),
+              ...REGIONS.map(r => h("optgroup", { label: r }, ...S.areas.filter(a => a.region === r).map(a => h("option", { value: a.id, text: a.name }))))))
+          : field("a-area", "Neighborhood", h("select", { id: "a-area", class: "select", disabled: true }, h("option", { value: "", text: "No neighborhoods surveyed yet" })),
+              `${marketInfo().name} neighborhoods have not been surveyed, so this listing will not be scored or mapped yet.`)),
       h("div", { class: "accession-section" },
         h("p", { class: "section-k" }, h("span", { text: "II" }), "Measures"),
         h("div", { class: "grid2" },
@@ -1288,7 +1293,7 @@
       const b = { id: "you-" + Date.now().toString(36), name: v("a-name"), area_id: area ? area.id : null, region: area ? area.region : null,
         lat: area ? area.lat + j() : null, lng: area ? area.lng + j() : null, base_rent: n("a-base"), effective_rent: n("a-eff") ?? n("a-base"),
         sqft: n("a-sqft"), parking_fee: n("a-park"), req: Object.fromEntries(REQS.map(r => [r.key, radio("a-" + r.key)])), landlord: v("a-landlord"),
-        listing_url: v("a-url") || null, notes: v("a-note"), source: "you", my_status: "watch", added_at: new Date().toISOString() };
+        listing_url: v("a-url") || null, notes: v("a-note"), source: "you", my_status: "watch", added_at: new Date().toISOString(), market: S.market };
       const saved = await saveBuilding(b, true);
       form.reset(); S.view = "list"; ls.set("view", "list"); renderToolbar(); renderResults(); openBuilding(b);
       if (saved) toast("Listing added");
@@ -1306,6 +1311,32 @@
       h("p", { class: "empty-title", text: loading ? "Loading listings…" : title || "Nothing in the cabinet" }),
       loading ? null : h("p", { class: "empty-text", text: msg || "No listing matches this search and these filters. Try a broader search, or start over." }),
       loading || noClear ? null : h("button", { class: "btn ghost", type: "button", text: "Clear all filters", onclick: clearAll }));
+  }
+
+  /* A market whose research has not run: say so plainly, show what it will be checked against. */
+  const REQ_LIST = () => [
+    ["sqft", `${MIN_SQFT}+ sq ft`, "One bedroom"], ["rent", `Rent ≤ ${money(RENT_CAP)}`, "after specials"],
+    ...REQS.map(r => [r.key, r.name, "confirmed by research"]),
+  ];
+  function marketEmpty(where) {
+    const mi = marketInfo(), nA = S.areas.length;
+    const title = where === "areas" ? `${mi.name} neighborhoods haven't been surveyed yet` : `${mi.name} research hasn't run yet`;
+    const text = where === "areas"
+      ? `There are no neighborhood reports for ${mi.name} yet. When they arrive, each one is scored on the same factors and weights as Los Angeles.`
+      : `No ${mi.name} listings have been gathered${nA ? `, though ${plural(nA, "neighborhood")} ${nA === 1 ? "is" : "are"} surveyed` : ""}. When they arrive, each listing is checked against the same requirements:`;
+    return h("section", { class: "unsurveyed", "aria-labelledby": "unsurveyedTitle" },
+      h("div", { class: "unsurveyed-art" }, art("empty-art", ill("empty")) || h("span", { class: "empty-art empty-fallback", "aria-hidden": "true" }),
+        h("p", { class: "mono-label", text: `Drawer ${mi.numeral} · ${mi.name}` })),
+      h("div", { class: "unsurveyed-body" },
+        h("p", { class: "eyebrow", text: "Not yet surveyed" }),
+        h("h2", { class: "unsurveyed-title", id: "unsurveyedTitle", text: title }),
+        h("p", { class: "unsurveyed-text", text: text }),
+        where === "areas" ? null : h("ul", { class: "unsurveyed-reqs", "aria-label": "Requirements" }, ...REQ_LIST().map(([k, name, sub]) =>
+          h("li", null, reqIcon(k) || h("span", { class: "unsurveyed-glyph", "aria-hidden": "true", text: k === "rent" ? "$" : "ft²" }), h("span", null, h("b", { text: name }), h("small", { text: sub }))))),
+        where === "areas" ? null : h("p", { class: "unsurveyed-text small", text: `Ranked with your weights and compared with renewing at The Jayne (${money(JAYNE.allIn)} a month), the same as every market.` }),
+        h("div", { class: "unsurveyed-actions" },
+          S.view !== "map" ? h("button", { class: "btn", type: "button", text: `Open the ${mi.name} atlas`, onclick: () => setView("map") }) : null,
+          h("button", { class: "btn ghost", type: "button", text: "Back to Los Angeles", onclick: () => setMarket("la") }))));
   }
 
   /* ==========================================================================
@@ -1448,9 +1479,9 @@
     }
     countEls.real.textContent = list.length;
     countEls.n.style.setProperty("--n", list.length);
-    countEls.of.textContent = ` of ${S.buildings.length} listings`;
+    countEls.of.textContent = S.buildings.length ? ` of ${S.buildings.length} listings` : ` listings in ${marketInfo().name} yet`;
     countEls.q.textContent = S.q ? ` matching “${S.q}”` : "";
-    countEls.meet.textContent = ` · ${meet} meet everything`;
+    countEls.meet.textContent = S.buildings.length ? ` · ${meet} meet everything` : "";
   }
 
   /* ==========================================================================
@@ -1464,7 +1495,7 @@
     renderStats(list);
     if (opts.summaryOnly) return;
     const root = $("view");
-    const switching = root.dataset.view !== S.view || !!opts.fade;
+    const switching = root.dataset.view !== S.view || root.dataset.market !== S.market || !!opts.fade;
     if (switching && booted) {
       // keep the toolbar in place: if it is stuck, start the new view at its top
       const main = $("results"), top = main.getBoundingClientRect().top + scrollY - 6;
@@ -1472,8 +1503,11 @@
       if (opts.fade) root.replaceChildren();
     }
     root.dataset.view = S.view;
+    root.dataset.market = S.market;
     const ctx = { switching, initial: !booted };
-    ({ list: renderList, table: renderTable, map: renderMap, areas: renderAreas, compare: renderCompare, add: renderAdd }[S.view] || renderList)(root, list, ctx);
+    if (S.loaded && !S.buildings.length && (S.view === "list" || S.view === "table")) {
+      if (switching || !root.querySelector(":scope > .unsurveyed")) root.replaceChildren(marketEmpty("list"));
+    } else ({ list: renderList, table: renderTable, map: renderMap, areas: renderAreas, compare: renderCompare, add: renderAdd }[S.view] || renderList)(root, list, ctx);
     if (switching && booted) {
       const dx = opts.dir ? opts.dir * 18 : 0;
       if (root._sw) root._sw.cancel();
@@ -1578,6 +1612,52 @@
     parking: b => b.parking_fee ? money(b.parking_fee) + "/mo" : reqVal(b, "parking") === "yes" ? "Available, fee unknown" : null,
     packages: b => b.packages_detail,
   };
+  /* Particulars dossier: every field, value or a dash. "Not confirmed" for yes/no fields research
+     could not settle. */
+  const feeMoney = n => n % 1 ? "$" + n.toFixed(2) : money(n);
+  const PARK_LONG = { garage: "Garage", covered: "Covered", surface: "Surface lot", tandem: "Tandem", street: "Street only" };
+  function pval(b, g, k, kind) {
+    const v = dget(b, g, k);
+    if (kind === "tri") { const t = triOf(v); return h("span", { class: "pv tri " + t }, h("i", { "aria-hidden": "true" }), t === "yes" ? "Yes" : t === "no" ? "No" : "Not confirmed"); }
+    if (v == null || v === "" || (Array.isArray(v) && !v.length) || v === "unclear") return h("span", { class: "pv unk", title: "Not found" }, "—", h("span", { class: "sr", text: "not found" }));
+    if (k === "required_fees") return h("span", { class: "pv" }, v.map(x => `${x.name.charAt(0).toUpperCase() + x.name.slice(1)}: ${x.amount == null ? "amount not found" : feeMoney(x.amount) + "/mo"}`).join("; "));
+    if (k === "type" && g === "parking") return h("span", { class: "pv", text: PARK_LONG[v] || v });
+    if (kind === "url") return h("span", { class: "pv" }, linkOut(v));
+    if (kind === "tel") return h("span", { class: "pv" }, h("a", { href: "tel:" + String(v).replace(/[^\d+]/g, ""), text: v }));
+    if (Array.isArray(v)) return h("span", { class: "pv", text: v.join(", ") });
+    if (typeof kind === "function" && typeof v === "number") return h("span", { class: "pv", text: kind(v) });
+    return h("span", { class: "pv", text: String(v) });
+  }
+  function particulars(b) {
+    const pct = docPct(b);
+    const cards = PARTICULARS.map(([g, title, fields]) => {
+      const known = fields.filter(([k]) => isKnown(dget(b, g, k))).length;
+      return h("section", { class: "pcard" },
+        h("header", { class: "pcard-head" }, h("h4", { text: title }), h("span", { class: "pcard-n", text: `${known} of ${fields.length}` })),
+        h("dl", { class: "pkv" }, ...fields.flatMap(([k, label, kind]) => [h("dt", { text: label }), h("dd", null, pval(b, g, k, kind))])));
+    });
+    const c = costOf(b), loc = D(b).location || {}, w = walkOf(b);
+    return section("Particulars",
+      h("div", { class: "pmeter" },
+        h("div", { class: "pmeter-fig" }, h("b", { class: "serif", text: pct + "%" }), h("span", { class: "fig-k", text: "documented" })),
+        h("div", { class: "pmeter-main" },
+          h("span", { class: "pmeter-bar", "aria-hidden": "true" }, h("i", { style: { "--w": pct + "%" } })),
+          h("p", { class: "hint", text: `Research found ${Math.round(docShare(b) * DOC_TOTAL)} of ${DOC_TOTAL} particulars. A dash means not found; ask the leasing office.` }))),
+      h("div", { class: "costbox" },
+        h("p", { class: "fig-k", text: "True monthly cost" }),
+        h("div", { class: "costbox-sum" },
+          h("span", null, h("small", { text: "Rent after specials" }), h("b", { text: money(c.rent) })), h("i", { "aria-hidden": "true", text: "+" }),
+          h("span", { class: c.park == null ? "unk" : "" }, h("small", { text: "Parking" }), h("b", { text: c.park == null ? "?" : c.park === 0 ? "$0" : money(c.park) })), h("i", { "aria-hidden": "true", text: "+" }),
+          h("span", { class: c.fees == null ? "unk" : "" }, h("small", { text: "Required fees" }), h("b", { text: c.fees == null ? "?" : feeMoney(c.fees) })), h("i", { "aria-hidden": "true", text: "=" }),
+          h("span", { class: "total" }, h("small", { text: c.missing.length ? "At least" : "Total" }), h("b", { class: "serif", text: c.total == null ? "—" : money(c.total) }))),
+        c.missing.length ? h("p", { class: "hint", text: `Not found: ${c.missing.join(", ")}. The total counts them as $0, so the real cost may be higher.` }) : null),
+      h("div", { class: "pgrid" }, ...cards),
+      kv([["Freeway distance", b.freeway_band ? b.freeway_band + " (rough estimate)" : "—"],
+        ["Walk Score used", w.v == null ? "—" : `${w.v} (${w.src === "area" ? "neighborhood" : "this address"})`],
+        ["Internet note", b.internet && b.internet !== "unverified" ? b.internet : null]]),
+      D(b).evidence ? h("div", { class: "evidence" }, h("p", { class: "mono-label", text: "Research caveats" }), h("p", { text: D(b).evidence })) : null,
+      sources(b.detail_sources, "Particulars sources"));
+  }
   function openBuilding(b) {
     const a = S.areaById.get(b.area_id), v = verdict(b), c = allIn(b), d = savingsOf(b), sc = score(b), rank = S.rank.get(b.id), p = ppsf(b);
     const statusGroup = h("div", { class: "statuses", role: "radiogroup", "aria-label": "Status" }, ...STATUSES.map(st =>
@@ -1587,7 +1667,7 @@
         h("span", { text: st.name }))));
     const note = h("textarea", { id: "d-note", rows: 4, disabled: !S.canWrite, placeholder: "Tour impressions, questions for the leasing office…" }, b.my_note || "");
     let t; note.addEventListener("input", () => { clearTimeout(t); t = setTimeout(() => { b = { ...b, my_note: note.value }; saveBuilding(b).then(ok => ok && toast("Note saved")); }, 900); });
-    const cmpBtn = h("button", { class: "btn ghost sm", type: "button", disabled: !S.compare.has(b.id) && S.compare.size >= 4,
+    const cmpBtn = h("button", { class: "btn ghost sm", type: "button", disabled: !S.compare.has(b.id) && compareCount() >= 4,
       text: S.compare.has(b.id) ? "Remove from compare" : "Add to compare",
       onclick: e => { S.compare.has(b.id) ? S.compare.delete(b.id) : S.compare.add(b.id); ls.set("compare", [...S.compare]); e.currentTarget.textContent = S.compare.has(b.id) ? "Remove from compare" : "Add to compare"; renderToolbar(); renderResults(); } });
     drawer(rank ? `Specimen No. ${pad2(rank)} of ${S.rank.size}` : "Specimen",
@@ -1596,15 +1676,16 @@
         h("h2", { class: "dossier-name", id: "drawerTitle", text: b.name }),
         b.address ? h("p", { class: "dossier-addr", text: b.address }) : null,
         h("div", { class: "dossier-verdict" },
-          h("span", { class: "tag " + (v === "all" ? "ok" : v === "fail" ? "bad" : "amber"), text: VERDICTS[v] }),
+          h("span", { class: "tag " + (v === "all" ? "ok" : v === "fail" ? "bad" : "amber"), text: verdictLabel(b) }),
           ...flagTags(b, false),
           v === "fail" ? h("span", { class: "muted small", text: failReasons(b).join(" · ") }) : null),
         v === "all" ? seal() : null),
-      h("div", { class: "hero-figs" },
+      h("div", { class: "hero-figs five" },
         h("div", { class: "hero-fig" }, h("span", { class: "fig-k", text: "Rent" }), h("b", { class: "serif", text: money(rentOf(b)) }), h("span", { class: "hero-sub", text: b.base_rent && rentOf(b) < b.base_rent ? money(b.base_rent) + " list" : "per month" })),
+        (() => { const cc = costOf(b); return h("div", { class: "hero-fig" }, h("span", { class: "fig-k", text: "True monthly" }), h("b", { class: "serif" }, costValue(b)), h("span", { class: "hero-sub", text: cc.missing.length ? costNote(cc) : "rent, parking, fees" })); })(),
         h("div", { class: "hero-fig" }, h("span", { class: "fig-k", text: "Size" }), h("b", { class: "serif", text: b.sqft ? Math.round(b.sqft) : "—" }), h("span", { class: "hero-sub", text: p ? "sq ft · $" + p.toFixed(2) + "/ft²" : "sq ft" })),
         h("div", { class: "hero-fig" }, h("span", { class: "fig-k", text: "Match" }), h("b", { class: "serif" }, fm(sc)), h("span", { class: "hero-sub" }, jar(sc, "xs"), "of 100, vs. all listings")),
-        h("div", { class: "hero-fig " + (d == null ? "" : d >= 0 ? "pos" : "neg") }, h("span", { class: "fig-k", text: d == null || d >= 0 ? "Saves vs. The Jayne" : "Costs vs. The Jayne" }), h("b", { class: "serif", text: d == null ? "—" : money(Math.abs(d)) }), h("span", { class: "hero-sub", text: d == null ? "rent unknown" : `a month · ${money(Math.abs(d) * 12)} a year, with parking` }))),
+        h("div", { class: "hero-fig " + (d == null ? "" : d >= 0 ? "pos" : "neg") }, h("span", { class: "fig-k", text: d == null || d >= 0 ? "Saves vs. Jayne" : "Costs vs. Jayne" }), h("b", { class: "serif", text: d == null ? "—" : money(Math.abs(d)) }), h("span", { class: "hero-sub", text: d == null ? "rent unknown" : `${costOf(b).missing.length ? (d >= 0 ? "at most, " : "at least, ") : ""}a month · ${money(Math.abs(d) * 12)} a year` }))),
       b.scam_flags ? h("p", { class: "callout bad" }, h("b", { text: "Scam warning. " }), b.scam_flags) : null,
       h("div", { class: "dossier-actions" }, cmpBtn,
         b.listing_url ? h("a", { class: "btn ghost sm", href: b.listing_url, target: "_blank", rel: "noopener" }, "Open listing", h("span", { "aria-hidden": "true", text: " ↗" })) : null,
@@ -1622,51 +1703,91 @@
           h("p", { class: "mono-label", id: "d-status-l", text: "Status" }), statusGroup,
           h("label", { class: "mono-label", for: "d-note", text: "Notes" }), note,
           h("p", { class: "hint", text: "Saved in this browser. Use Export notes at the bottom of the page to back up." }))),
-      section("Particulars",
+      particulars(b),
+      section("Listing",
         kv([
           ["List rent", b.base_rent ? money(b.base_rent) : null], ["Special", b.special || "None listed"],
-          ["All-in", c == null ? null : money(c) + "/mo with parking"],
-          ["Built", b.year_built], ["Landlord", b.landlord === "private" ? [b.owner_type || "Private owner", b.platform && "on " + b.platform].filter(Boolean).join(", ") : (b.reviews && b.reviews.management_company) || "Management company"],
+          ["Landlord", b.landlord === "private" ? [b.owner_type || "Private owner", b.platform && "on " + b.platform].filter(Boolean).join(", ") : (b.reviews && b.reviews.management_company) || "Management company"],
           ["Rent control", b.rent_control], ["Complex", b.hoa_amenities],
-          ["Internet", b.internet], ["Location", b.location_note], ["Watch out for", b.red_flags], ["Last checked", b.checked_on],
+          ["Location", b.location_note], ["Watch out for", b.red_flags], ["Last checked", b.checked_on],
         ]),
         b.notes ? h("p", { class: "research-note", text: b.notes }) : null),
       reviewSection(b),
       a ? section("Neighborhood",
+        areaFacts(a, b),
         h("div", { class: "nb-head" }, h("p", null, h("b", { class: "serif nb-name", text: a.name }), h("span", { class: "muted small", text: " · score " + f1(areaScore(a)) + " / 10" }))),
         factorBars(a, "in-drawer"),
         h("button", { class: "linkbtn", type: "button", text: "Open the full neighborhood report →", onclick: () => openArea(a) })) : null,
       sources(b.sources));
   }
+  /* Neighborhood extras. Rent is compared with this market's listings (in this area and overall). */
+  function rentCompare(a) {
+    const x = extrasOf(a), typ = x.median_1br_rent;
+    const here = median(S.buildings.filter(b => b.area_id === a.id).map(rentOf)), all = median(S.buildings.map(rentOf));
+    const vs = (m, what) => m == null || typ == null ? null : `${what} ${money(m)}, ${money(Math.abs(typ - m))} ${typ >= m ? "below" : "above"} typical`;
+    return [vs(here, "Listings here: median"), vs(all, `All ${marketInfo().name} listings: median`)].filter(Boolean).join(". ") || null;
+  }
+  function areaFacts(a) {
+    const x = extrasOf(a);
+    return h("div", { class: "afacts" },
+      h("span", null, h("small", { class: "fig-k", text: "Typical 1BR" }), h("b", { text: x.median_1br_rent == null ? "—" : money(x.median_1br_rent) })),
+      h("span", null, h("small", { class: "fig-k", text: "Summer high" }), h("b", { text: x.summer_high_f == null ? "—" : Math.round(x.summer_high_f) + "°F" })),
+      h("span", null, h("small", { class: "fig-k", text: "Marine layer" }), h("b", { class: "afacts-txt", text: x.marine_layer ? x.marine_layer.split(":")[0] : "—" })));
+  }
+  const listOrDash = xs => xs && xs.length ? ul(xs) : h("span", { class: "pv unk" }, "—", h("span", { class: "sr", text: "none found" }));
+  function areaExtras(a) {
+    const x = extrasOf(a);
+    const t = v => v == null || v === "" ? h("span", { class: "pv unk" }, "—", h("span", { class: "sr", text: "not found" })) : h("span", { text: v });
+    const srcNotes = [["Rent", x.rent_source], ["Summer high", x.summer_source]].filter(([, v]) => v);
+    return section("Local conditions",
+      h("div", { class: "pkv-wide" },
+        h("dl", { class: "pkv" },
+          h("dt", { text: "Typical 1BR rent" }), h("dd", null, t(x.median_1br_rent == null ? null : money(x.median_1br_rent) + (x.rent_trend ? " · " + x.rent_trend : ""))),
+          h("dt", { text: "vs. these listings" }), h("dd", null, t(rentCompare(a))),
+          h("dt", { text: "Summer high" }), h("dd", null, t(x.summer_high_f == null ? null : Math.round(x.summer_high_f) + "°F average August high")),
+          h("dt", { text: "Marine layer" }), h("dd", null, t(x.marine_layer)),
+          h("dt", { text: "Fire hazard" }), h("dd", null, t(x.fire_hazard)),
+          h("dt", { text: "Flood zone" }), h("dd", null, t(x.flood_zone)),
+          h("dt", { text: "Airport noise" }), h("dd", null, t(x.airport_noise)),
+          h("dt", { text: "Parks" }), h("dd", null, listOrDash(x.parks)),
+          h("dt", { text: "Farmers markets" }), h("dd", null, listOrDash(x.farmers_markets)),
+          h("dt", { text: "Fiber internet" }), h("dd", null, t(x.fiber)))),
+      srcNotes.length ? h("details", { class: "srcs" }, h("summary", null, h("span", { text: `Source notes (${srcNotes.length})` })),
+        h("ol", null, ...srcNotes.map(([k, v]) => h("li", null, h("b", { text: k + ": " }), v)))) : null);
+  }
   const AREA_ICON = { Freeways: "drive", Traffic: "drive", "Specialty coffee": "coffee", Walkability: "coffee", Quiet: "quiet", Safety: "safety", LAX: "lax", Nightlife: "extras", Gyms: "extras", Errands: "extras", Rail: "drive" };
   function openArea(a) {
     const bs = S.buildings.filter(b => b.area_id === a.id);
     const blocks = [
-      ["Freeways", a.freeway, x => ul(x.nearest)], ["Traffic", a.traffic], ["Specialty coffee", a.coffee, x => ul(x.cafes)],
+      [marketInfo().roadsShort, a.freeway, x => ul(x.nearest), "drive"], ["Traffic", a.traffic], ["Specialty coffee", a.coffee, x => ul(x.cafes)],
       ["Walkability", a.walk, x => x.walk_score != null ? h("p", { text: "Walk Score " + x.walk_score }) : null], ["Quiet", a.quiet],
       ["Safety", a.safety, x => h("p", { text: [x.violent_per_1k != null && `Violent ${x.violent_per_1k}/1k`, x.property_per_1k != null && `Property ${x.property_per_1k}/1k`, x.year, x.source].filter(Boolean).join(" · ") })],
-      ["LAX", a.lax, x => h("p", { text: `${x.minutes_offpeak ?? "?"} min off-peak · ${x.minutes_peak ?? "?"} min at peak` })],
+      [marketInfo().airport, a.lax, x => h("p", { text: `${x.minutes_offpeak ?? "?"} min off-peak · ${x.minutes_peak ?? "?"} min at peak` }), "lax"],
       ["Nightlife", a.nightlife, x => h("p", { text: [x.nearest_district, x.drive_minutes != null && x.drive_minutes + " min drive"].filter(Boolean).join(" · ") })],
       ["Gyms", a.gyms, x => ul(x.examples)], ["Errands", a.services], ["Rail", a.rail, x => h("p", { text: [x.nearest_station, x.line].filter(Boolean).join(" · ") })],
     ].filter(([, x]) => x);
-    const sc = areaScore(a);
+    const sc = areaScore(a), ex = extrasOf(a);
     drawer("Atlas · " + a.region,
       h("div", { class: "dossier-head area-head" },
         regionEmblem(a.region, "lg"),
         h("div", { class: "dossier-kicker" }, h("span", { text: a.region })),
         h("h2", { class: "dossier-name", id: "drawerTitle", text: a.name })),
-      h("div", { class: "hero-figs two" },
-        h("div", { class: "hero-fig" }, h("span", { class: "fig-k", text: "Neighborhood score" }), h("b", { class: "serif", text: f1(sc) }), h("span", { class: "hero-sub" }, jar(sc, "xs", 10), "of 10, your weights")),
-        h("div", { class: "hero-fig" }, h("span", { class: "fig-k", text: "Listings here" }), h("b", { class: "serif", text: bs.length }), h("span", { class: "hero-sub", text: bs.filter(matches).length + " in view" }))),
+      h("div", { class: "hero-figs" },
+        h("div", { class: "hero-fig" }, h("span", { class: "fig-k", text: "Score" }), h("b", { class: "serif", text: f1(sc) }), h("span", { class: "hero-sub" }, jar(sc, "xs", 10), "of 10, your weights")),
+        h("div", { class: "hero-fig" }, h("span", { class: "fig-k", text: "Listings here" }), h("b", { class: "serif", text: bs.length }), h("span", { class: "hero-sub", text: bs.filter(matches).length + " in view" })),
+        h("div", { class: "hero-fig" }, h("span", { class: "fig-k", text: "Typical 1BR" }), h("b", { class: "serif", text: ex.median_1br_rent == null ? "—" : money(ex.median_1br_rent) }), h("span", { class: "hero-sub", text: ex.median_1br_rent == null ? "not found" : "area median rent" })),
+        h("div", { class: "hero-fig" + (ex.summer_high_f >= 90 ? " neg" : "") }, h("span", { class: "fig-k", text: "Summer high" }), h("b", { class: "serif", text: ex.summer_high_f == null ? "—" : Math.round(ex.summer_high_f) + "°" }), h("span", { class: "hero-sub", text: ex.summer_high_f == null ? "not found" : "°F, August average" }))),
       a.summary ? h("p", { class: "dossier-summary", text: a.summary }) : null,
+      ex.vibe ? h("p", { class: "vibe" }, h("span", { class: "mono-label", text: "Vibe" }), ex.vibe) : null,
       factorBars(a, "in-drawer"),
       a.airports_other ? h("p", { class: "muted small", text: "Other airports: " + a.airports_other }) : null,
       bs.length ? section(`Listings here`,
         h("ul", { class: "minilist" }, ...bs.map(b => h("li", null, h("button", { type: "button", class: "minilist-btn v-" + verdict(b), onclick: () => openBuilding(b) },
           h("span", { class: "minilist-name", text: b.name }), h("span", { class: "minilist-rent", text: money(rentOf(b)) }), h("span", { class: "minilist-arrow", "aria-hidden": "true", text: "→" })))))) : null,
+      areaExtras(a),
       section("Field notes",
-        h("div", { class: "fieldnotes" }, ...blocks.map(([name, x, extra]) => h("div", { class: "fieldnote" },
-          h("header", { class: "fieldnote-head" }, factorIcon(AREA_ICON[name]), h("span", { class: "fieldnote-name", text: name }), h("span", { class: "fieldnote-v" }, x.score != null ? h("span", { class: "meter xs", "aria-hidden": "true" }, h("i", { style: { "--w": x.score * 10 + "%" } })) : null, x.score != null ? x.score + "/10" : "—")),
+        h("div", { class: "fieldnotes" }, ...blocks.map(([name, x, extra, icoKey]) => h("div", { class: "fieldnote" },
+          h("header", { class: "fieldnote-head" }, factorIcon(icoKey || AREA_ICON[name]), h("span", { class: "fieldnote-name", text: name }), h("span", { class: "fieldnote-v" }, x.score != null ? h("span", { class: "meter xs", "aria-hidden": "true" }, h("i", { style: { "--w": x.score * 10 + "%" } })) : null, x.score != null ? x.score + "/10" : "—")),
           extra ? extra(x) : null, x.note ? h("p", { class: "fieldnote-note", text: x.note }) : null)))),
       sources(a.sources));
   }
@@ -1675,6 +1796,11 @@
      Data (embedded; personal edits live in this browser)
      ========================================================================== */
   const DATA = JSON.parse(document.getElementById("data").textContent);
+  const MARKETS = DATA.markets || { la: { label: "Los Angeles", buildings: DATA.buildings || [], neighborhoods: DATA.neighborhoods || [], geo: DATA.geo } };
+  const MARKET_KEYS = Object.keys(MARKET_INFO).filter(k => MARKETS[k]).concat(Object.keys(MARKETS).filter(k => !MARKET_INFO[k]));
+  if (!MARKETS[S.market]) S.market = "la";
+  function marketData(k) { return MARKETS[k || S.market] || { buildings: [], neighborhoods: [] }; }
+  function marketInfo(k) { k = k || S.market; return MARKET_INFO[k] || { name: (MARKETS[k] && MARKETS[k].label) || k, numeral: "", regions: [], roads: "Highways and traffic", roadsShort: "Highways", airport: "Airport" }; }
   let EDITS = {};
   async function saveBuilding(b, isNew) {
     const i = S.buildings.findIndex(x => x.id === b.id);
@@ -1690,7 +1816,7 @@
     for (const [id, p] of Object.entries(edits || {})) {
       const i = S.buildings.findIndex(x => x.id === id);
       if (i >= 0) S.buildings[i] = { ...S.buildings[i], ...p };
-      else if (p && p.name) S.buildings.push(p);
+      else if (p && p.name && (p.market || "la") === S.market) S.buildings.push(p);
     }
   }
   /* Research notes sometimes describe the research tooling rather than the place.
@@ -1710,6 +1836,52 @@
     S.areaById = new Map(S.areas.map(a => [a.id, a]));
     S.buildings = buildings.map(b => ({ ...b })); S.loaded = true;
   }
+  /* Regions present in the market, in the expected order first; labels for roads and airport. */
+  function applyMarketMeta() {
+    const mi = marketInfo(), present = new Set([...S.areas.map(a => a.region), ...S.buildings.map(b => (S.areaById.get(b.area_id) || {}).region || b.region)].filter(Boolean));
+    REGIONS = mi.regions.filter(r => present.has(r)).concat([...present].filter(r => !mi.regions.includes(r)).sort());
+    FACTORS.find(f => f.key === "drive").name = mi.roads;
+    FACTORS.find(f => f.key === "lax").name = mi.airport;
+    document.documentElement.dataset.market = S.market;
+    $("mastRegions").textContent = (REGIONS.length ? REGIONS : mi.regions).join(" · ");
+  }
+  function loadMarket() {
+    const M = marketData();
+    setData(M.buildings || [], M.neighborhoods || []);
+    applyEdits(EDITS);
+    applyMarketMeta();
+  }
+  /* Market tabs: three drawer labels. Built once; state moves with aria-pressed. */
+  let marketBtns = null;
+  function renderMarkets() {
+    if (!marketBtns) {
+      marketBtns = MARKET_KEYS.map(k => {
+        const mi = marketInfo(k), M = marketData(k), nB = (M.buildings || []).length, nA = (M.neighborhoods || []).length;
+        return h("button", { type: "button", class: "mkt", "data-market": k, onclick: () => setMarket(k) },
+          h("span", { class: "mkt-no", "aria-hidden": "true", text: mi.numeral }),
+          h("span", { class: "mkt-name", text: mi.name }),
+          h("span", { class: "mkt-sub", text: nB ? `${plural(nB, "listing")} · ${plural(nA, "area")}` : nA ? `${plural(nA, "area")} · no listings yet` : "Not surveyed yet" }));
+      });
+      $("markets").replaceChildren(...marketBtns);
+      $("markets").addEventListener("keydown", e => {
+        if (!["ArrowLeft", "ArrowRight"].includes(e.key)) return;
+        const i = marketBtns.indexOf(document.activeElement); if (i < 0) return;
+        e.preventDefault();
+        const j = (i + (e.key === "ArrowRight" ? 1 : -1) + marketBtns.length) % marketBtns.length;
+        marketBtns[j].focus(); setMarket(MARKET_KEYS[j]);
+      });
+    }
+    marketBtns.forEach(btn => btn.setAttribute("aria-pressed", btn.dataset.market === S.market ? "true" : "false"));
+  }
+  function setMarket(k) {
+    if (!MARKETS[k] || k === S.market) return;
+    S.market = k; ls.set("market", k);
+    if (drawerState) drawerState.close();
+    ledger && (ledger.topId = undefined);
+    loadMarket();
+    renderMarkets(); renderFilters(); renderToolbar(); renderResults({ fade: true });
+    toast(`${marketInfo().name}: ${S.buildings.length ? plural(S.buildings.length, "listing") : "no listings yet"}`);
+  }
   function exportEdits() {
     const blob = new Blob([JSON.stringify({ app: "apartment-search-2027", exported: new Date().toISOString(), edits: EDITS, compare: [...S.compare] }, null, 1)], { type: "application/json" });
     const a = h("a", { href: URL.createObjectURL(blob), download: "apartment-search-notes-" + new Date().toISOString().slice(0, 10) + ".json" });
@@ -1724,7 +1896,7 @@
         if (!d || typeof d.edits !== "object") throw new Error("bad file");
         const merged = Object.assign(EDITS, d.edits);
         ls.set("edits", merged);
-        setData(DATA.buildings, DATA.neighborhoods); applyEdits(merged);
+        loadMarket();
         if (Array.isArray(d.compare)) { S.compare = new Set(d.compare); ls.set("compare", d.compare); }
         renderAll(); toast("Notes imported");
       } catch { toast("That file isn't an Apartment Search export."); }
@@ -1776,9 +1948,9 @@
   function boot() {
     renderArt();
     renderDates();
-    setData(DATA.buildings, DATA.neighborhoods);
     EDITS = ls.get("edits", {}) || {};
-    applyEdits(EDITS);
+    loadMarket();
+    renderMarkets();
     S.canWrite = true;
     $("dataDate").textContent = "Data updated " + DATA.updated;
     $("mastDate").textContent = "Updated " + DATA.updated;
