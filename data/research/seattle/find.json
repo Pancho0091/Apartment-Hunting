@@ -1,0 +1,2165 @@
+[
+ {
+  "name": "Aspect at Totem Lake",
+  "address": "12540 120th Ave NE, Kirkland, WA 98034",
+  "area": "Kirkland",
+  "lat": 47.7146,
+  "lng": -122.183,
+  "geocode_note": "Estimated from street address (approximate block-level; not geocoded by a service).",
+  "landlord": "company",
+  "owner_type": "institutional / managed building",
+  "platform": "Redfin / Point2Homes / ApartmentSearch",
+  "management_company": "Fairfield Residential",
+  "year_built": 2022,
+  "floor_plan": "1 bed / 1 bath (plans 667-818/822 sq ft)",
+  "sqft": 818,
+  "base_rent": 2225,
+  "effective_rent": 2225,
+  "special": "Redfin snapshot: 6 weeks free (terms unverified)",
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "1BR plans 667-818 sq ft (Redfin also shows 667-822); 1BR from $2,225+ (another snapshot $2,420+). Which size goes with which price not shown; a >=700 sq ft unit <=$2,600 is plausible but NOT confirmed. Seen via search 2026-10-26.",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Point2Homes: 'Air conditioning with programmable thermostat' plus ceiling fans. System type (ducted vs ductless) not stated.",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "lockers",
+  "packages_detail": "Hub by Amazon package lockers, 24/7 access (Point2Homes).",
+  "scam_flags": [],
+  "reputation_gist": "No review content found in searches.",
+  "red_flags": [
+   "size/price pairing unverified"
+  ],
+  "listing_url": "https://www.point2homes.com/US/Apartment-Buildings/WA/Kirkland/Aspect-Totem-Lake-Apartments.html",
+  "sources": [
+   "https://www.point2homes.com/US/Apartment-Buildings/WA/Kirkland/Aspect-Totem-Lake-Apartments.html",
+   "https://www.redfin.com/neighborhood/9803/WA/Kirkland/Totem-Lake/1-bedroom-apartments-for-rent",
+   "https://www.apartmentsearch.com/apartments/washington/kirkland/aspect-at-totem-lake"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "yes",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": "Pet spa and fenced dog park listed; fees not found"
+  },
+  "parking_detail": {
+   "type": "garage",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": 406,
+   "stories": 7,
+   "year_built": 2022,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "in-home washer/dryer",
+    "air conditioning w/ programmable thermostat",
+    "ceiling fans"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": "I-405 at NE 124th St / Totem Lake (estimated, not measured)",
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "1BR plans 667-818 sq ft (Redfin also shows 667-822); 1BR from $2,225+ (another snapshot $2,420+). Which size goes with which price not shown; a >=700 sq ft unit <=$2,600 is plausible but NOT confirmed. Seen via search 2026-10-26.",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Built from WebSearch result snippets only; all page fetches failed (DNS). Prices/availability are aggregator snapshots and may be stale."
+ },
+ {
+  "name": "Avalon Alderwood Place",
+  "address": "18602 Alderwood Mall Pkwy, Lynnwood, WA 98037",
+  "area": "Shoreline / Lynnwood",
+  "lat": 47.835,
+  "lng": -122.269,
+  "geocode_note": "Estimated from street address (approximate block-level; not geocoded by a service).",
+  "landlord": "company",
+  "owner_type": "REIT-managed building",
+  "platform": "avaloncommunities.com (via search snippet) / Redfin / VeryApt",
+  "management_company": "AvalonBay Communities",
+  "year_built": null,
+  "floor_plan": "1 bed / 1 bath, 733 sq ft plan",
+  "sqft": 733,
+  "base_rent": 2235,
+  "effective_rent": 2235,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Avalon site snippet: 1BR 664 sq ft from $2,180 and 733 sq ft from $2,235 (12-mo lease); Redfin: 733 sq ft $2,225; 1BR range 597-907 sq ft. Undated snapshots. Seen via search 2026-10-26.",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Avalon official page: 'air-conditioned homes'; Redfin tag 'A/C'. Type (central/ducted vs other) not stated.",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": "VeryApt/Avalon list 'package receiving' (method not specified).",
+  "scam_flags": [],
+  "reputation_gist": "VeryApt shows 0 reviews; Avalon page markets 'brand new' apartments (year not confirmed).",
+  "red_flags": [],
+  "listing_url": "https://www.avaloncommunities.com/washington/lynnwood-apartments/avalon-alderwood-place/",
+  "sources": [
+   "https://www.avaloncommunities.com/washington/lynnwood-apartments/avalon-alderwood-place/",
+   "https://redfin.com/city/10421/WA/Lynnwood/1-bedroom-apartments-for-rent",
+   "https://www.veryapt.com/ApartmentReview-a32779-avalon-alderwood-place-lynnwood"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": "listed as pet-friendly; details not found"
+  },
+  "parking_detail": {
+   "type": "garage",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "yes",
+   "gym": "yes",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "in-unit washer/dryer",
+    "A/C"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": "I-5 at 196th St SW / Alderwood Mall area (estimated)",
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Avalon site snippet: 1BR 664 sq ft from $2,180 and 733 sq ft from $2,235 (12-mo lease); Redfin: 733 sq ft $2,225; 1BR range 597-907 sq ft. Undated snapshots. Seen via search 2026-10-26.",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Built from WebSearch result snippets only; all page fetches failed (DNS). Prices/availability are aggregator snapshots and may be stale."
+ },
+ {
+  "name": "The Spoke",
+  "address": "17565 NE 67th Ct, Redmond, WA 98052",
+  "area": "Redmond",
+  "lat": 47.666,
+  "lng": -122.105,
+  "geocode_note": "Estimated from street address (approximate block-level; not geocoded by a service).",
+  "landlord": "company",
+  "owner_type": "managed building",
+  "platform": "Zillow / HotPads",
+  "management_company": "Insite Property Solutions (per listings)",
+  "year_built": null,
+  "floor_plan": "1 bed / 1 bath, 776 sq ft (unit 537A)",
+  "sqft": 776,
+  "base_rent": 2505,
+  "effective_rent": 2505,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Zillow: unit 537A 776 sq ft $2,505, avail May 25 (stale); HotPads same size $2,668. Other 1BR 595 sq ft $2,328, 651 sq ft $2,568. Building likely completed ~2024 (retail flyer Q3 2024 target) - not confirmed. Seen via search 2026-10-26.",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "HotPads highlights: 'A/C' (type not stated).",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": "Not mentioned in results.",
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "776 sq ft price differs by source ($2,505 vs $2,668)"
+  ],
+  "listing_url": "https://zillow.com/apartments/redmond-wa/the-spoke/CjPdmG/",
+  "sources": [
+   "https://zillow.com/apartments/redmond-wa/the-spoke/CjPdmG/",
+   "https://hotpads.com/the-spoke-redmond-wa-98052-245te48/pad",
+   "https://cbaimage.commercialmls.com/content/upload/photos/pdf/FL/698378d8ba07f30d178115de_redmond_the_spoke_retail_opportunity.pdf"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "yes",
+   "dogs": "yes",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "garage",
+   "ev_charging": "yes",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": 211,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "yes",
+   "gym": "yes",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "yes",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "in-unit W/D",
+    "A/C"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": "SR-520 at Union Hill Rd / Redmond Way (estimated)",
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": "Marymoor Village (Line 2) - near, distance not measured",
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Zillow: unit 537A 776 sq ft $2,505, avail May 25 (stale); HotPads same size $2,668. Other 1BR 595 sq ft $2,328, 651 sq ft $2,568. Building likely completed ~2024 (retail flyer Q3 2024 target) - not confirmed. Seen via search 2026-10-26.",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Built from WebSearch result snippets only; all page fetches failed (DNS). Prices/availability are aggregator snapshots and may be stale."
+ },
+ {
+  "name": "9200 Redmond Place",
+  "address": "9200 Redmond-Woodinville Rd NE, Redmond, WA 98052",
+  "area": "Redmond",
+  "lat": 47.686,
+  "lng": -122.132,
+  "geocode_note": "Estimated from street address (approximate block-level; not geocoded by a service).",
+  "landlord": "company",
+  "owner_type": "managed building",
+  "platform": "Zillow / ApartmentIQ / Redfin / VeryApt",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1 bed / 1 bath, 750 sq ft",
+  "sqft": 750,
+  "base_rent": 2100,
+  "effective_rent": 2100,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Zillow: A-105 750 sq ft $2,100 and D-429 $2,155 (available now at snapshot); ApartmentIQ 750 sq ft $1,985-2,150; Redfin 750-850 sq ft from $2,025. Snapshots partly 2025. Seen via search 2026-10-26.",
+  "washer_dryer": "yes",
+  "central_ac": "yes",
+  "central_ac_evidence": "VeryApt amenity list: 'Living Room - Central A/C'. Not confirmed by Zillow/Redfin - verify with leasing.",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": "VeryApt has a review page; content not retrieved.",
+  "red_flags": [],
+  "listing_url": "https://www.zillow.com/apartments/redmond-wa/9200-redmond-place/5XkK7k/",
+  "sources": [
+   "https://www.zillow.com/apartments/redmond-wa/9200-redmond-place/5XkK7k/",
+   "https://edge.apartmentiq.io/redmond-wa/9200-redmond-place",
+   "https://www.veryapt.com/ApartmentReview-a5019-9200-redmond-place-redmond"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": "listed as pet-friendly"
+  },
+  "parking_detail": {
+   "type": "garage",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "yes",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "in-unit W/D",
+    "central A/C (VeryApt)"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Zillow: A-105 750 sq ft $2,100 and D-429 $2,155 (available now at snapshot); ApartmentIQ 750 sq ft $1,985-2,150; Redfin 750-850 sq ft from $2,025. Snapshots partly 2025. Seen via search 2026-10-26.",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Built from WebSearch result snippets only; all page fetches failed (DNS). Prices/availability are aggregator snapshots and may be stale."
+ },
+ {
+  "name": "Elan Redmond",
+  "address": "16325 Cleveland St, Redmond, WA 98052",
+  "area": "Redmond",
+  "lat": 47.6735,
+  "lng": -122.1215,
+  "geocode_note": "Estimated from street address (approximate block-level; not geocoded by a service).",
+  "landlord": "company",
+  "owner_type": "managed building",
+  "platform": "HotPads / ApartmentIQ",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1 bed / 1 bath, 826 sq ft",
+  "sqft": 826,
+  "base_rent": 2566,
+  "effective_rent": 2566,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "ApartmentIQ: 1BR 826 sq ft $2,566-2,731 ('updated over 1 month ago'); HotPads: unit 307 818 sq ft $2,684 avail 6/18/2026 (stale), 665 sq ft from ~$2,282. Seen via search 2026-10-26.",
+  "washer_dryer": "unclear",
+  "central_ac": "unclear",
+  "central_ac_evidence": "HotPads 'A/C'; ApartmentIQ 'Air Conditioning' - not stated as central.",
+  "dishwasher": "unclear",
+  "parking": "no",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "HotPads lists 'No parking' / Parking Type: none - fails parking requirement",
+   "Only the low end of the 826 sq ft price range is <= $2,600",
+   "year built unconfirmed (nearby Elan Town Center projected 2013)"
+  ],
+  "listing_url": "https://hotpads.com/elan-redmond-redmond-wa-98052-tbjwjx/pad",
+  "sources": [
+   "https://hotpads.com/elan-redmond-redmond-wa-98052-tbjwjx/pad",
+   "https://edge.apartmentiq.io/redmond-wa/elan-redmond",
+   "https://rebusinessonline.com/?p=108579"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "yes",
+   "dogs": "yes",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "ApartmentIQ: 1BR 826 sq ft $2,566-2,731 ('updated over 1 month ago'); HotPads: unit 307 818 sq ft $2,684 avail 6/18/2026 (stale), 665 sq ft from ~$2,282. Seen via search 2026-10-26.",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Built from WebSearch result snippets only; all page fetches failed (DNS). Prices/availability are aggregator snapshots and may be stale."
+ },
+ {
+  "name": "Windsor House condo #107 (private)",
+  "address": "401 100th Ave NE #107, Bellevue, WA 98004",
+  "area": "Bellevue",
+  "lat": 47.615,
+  "lng": -122.2065,
+  "geocode_note": "Estimated from street address (approximate block-level; not geocoded by a service).",
+  "landlord": "private",
+  "owner_type": "individual condo owner",
+  "platform": "Redfin",
+  "management_company": null,
+  "year_built": 1980,
+  "floor_plan": "1 bed / 1.5 bath, 847 sq ft",
+  "sqft": 847,
+  "base_rent": 2400,
+  "effective_rent": 2400,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Redfin rental tags: 'Laundry in unit - A/C - Dishwasher', $2,400/mo (snippet ambiguous on which price belongs to which unit). Building Windsor House, built 1980 (from #314 sale listing). Seen via search 2026-10-26.",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Redfin tag 'A/C' only; 1980 condo - likely not ducted central; verify.",
+  "dishwasher": "yes",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "price/unit pairing ambiguous in snippet",
+   "parking not mentioned"
+  ],
+  "listing_url": "https://www.redfin.com/city/1387/WA/Bellevue/condos-for-rent",
+  "sources": [
+   "https://www.redfin.com/neighborhood/182869/WA/Bellevue/Northwest-Bellevue/condos-for-rent",
+   "https://www.pnwresidences.com/property-search/detail/69/2566887/401-100th-ave-ne-bellevue-wa-98004/"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": 1980,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": "I-405 at NE 4th/NE 8th (estimated)",
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Redfin rental tags: 'Laundry in unit - A/C - Dishwasher', $2,400/mo (snippet ambiguous on which price belongs to which unit). Building Windsor House, built 1980 (from #314 sale listing). Seen via search 2026-10-26.",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Built from WebSearch result snippets only; all page fetches failed (DNS). Prices/availability are aggregator snapshots and may be stale."
+ },
+ {
+  "name": "10401 NE 32nd Pl Unit A202 (private condo)",
+  "address": "10401 NE 32nd Pl Unit A202, Bellevue, WA 98004",
+  "area": "Bellevue",
+  "lat": 47.638,
+  "lng": -122.201,
+  "geocode_note": "Estimated from street address (approximate block-level; not geocoded by a service).",
+  "landlord": "private",
+  "owner_type": "individual condo owner",
+  "platform": "Redfin",
+  "management_company": null,
+  "year_built": 1980,
+  "floor_plan": "1 bed (per search summary) - verify",
+  "sqft": 827,
+  "base_rent": 2500,
+  "effective_rent": 2500,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Redfin: A202 827 sq ft $2,500 'Pets welcome - Laundry in unit - Parking'; another unit A-10 $2,575 with parking + water/sewer/garbage included. Building year 1980 (from A101 sale listing). Seen via search 2026-10-26.",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Sale listing for A101 in same building: cooling 'Forced Air, None'; heating baseboard. Likely no central AC.",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "bedroom count not confirmed in snippet",
+   "AC likely absent"
+  ],
+  "listing_url": "https://www.redfin.com/zipcode/98004/condos-for-rent",
+  "sources": [
+   "https://www.redfin.com/neighborhood/182869/WA/Bellevue/Northwest-Bellevue/condos-for-rent",
+   "https://bestinwest.roveridx.com/wa/bellevue/downtown/10401-ne-32nd-place-a101/"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": "'Pets welcome' tag"
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": 1980,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Redfin: A202 827 sq ft $2,500 'Pets welcome - Laundry in unit - Parking'; another unit A-10 $2,575 with parking + water/sewer/garbage included. Building year 1980 (from A101 sale listing). Seen via search 2026-10-26.",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Built from WebSearch result snippets only; all page fetches failed (DNS). Prices/availability are aggregator snapshots and may be stale."
+ },
+ {
+  "name": "9525 NE 180th St #306 (condo unit)",
+  "address": "9525 NE 180th St #306, Bothell, WA 98011",
+  "area": "Bothell",
+  "lat": 47.76,
+  "lng": -122.21,
+  "geocode_note": "Estimated from street address (approximate block-level; not geocoded by a service).",
+  "landlord": "private",
+  "owner_type": "individual unit via property manager",
+  "platform": "Rentler",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1 bed / 1 bath, 740 sq ft, top floor",
+  "sqft": 740,
+  "base_rent": 1900,
+  "effective_rent": 1900,
+  "special": null,
+  "parking_fee": 0,
+  "seen_on": "2026-10-26",
+  "units_note": "Rentler: $1,900, move-in 6/17/2026 (stale - confirm). Redfin shows other units 105/205/305 at same address. Seen via search 2026-10-26.",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Not mentioned in listing snippet.",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [],
+  "listing_url": "https://www.rentler.com/places-for-rent/wa/bothell/9525-ne-180th-st/12960929",
+  "sources": [
+   "https://www.rentler.com/places-for-rent/wa/bothell/9525-ne-180th-st/12960929"
+  ],
+  "costs": {
+   "required_fees": [
+    {
+     "name": "resident benefit package",
+     "amount": 29
+    }
+   ],
+   "utilities": "trash included",
+   "deposit": 1900,
+   "application_fee": 55,
+   "admin_fee": 250,
+   "parking_fee": 0,
+   "lease_terms": "12 months"
+  },
+  "pets": {
+   "cats": "yes",
+   "dogs": "no",
+   "pet_rent": null,
+   "pet_deposit": 250,
+   "limits": "cats negotiable only"
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "yes"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Rentler: $1,900, move-in 6/17/2026 (stale - confirm). Redfin shows other units 105/205/305 at same address. Seen via search 2026-10-26.",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Built from WebSearch result snippets only; all page fetches failed (DNS). Prices/availability are aggregator snapshots and may be stale."
+ },
+ {
+  "name": "The (104)",
+  "address": "18414 104th Ave NE, Bothell, WA 98011",
+  "area": "Bothell",
+  "lat": 47.762,
+  "lng": -122.204,
+  "geocode_note": "Estimated from street address (approximate block-level; not geocoded by a service).",
+  "landlord": "company",
+  "owner_type": "managed building",
+  "platform": "HotPads / Rentable / Redfin",
+  "management_company": null,
+  "year_built": 2013,
+  "floor_plan": "1 bed / 1 bath, 770 sq ft (unit 121)",
+  "sqft": 770,
+  "base_rent": 1779,
+  "effective_rent": 1779,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "HotPads: unit 121 770 sq ft $1,779; 1BR 688-770 (Rentable 692-760, Redfin 690-870). Seen via search 2026-10-26.",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "No cooling mentioned; amenities list 'Electronic Thermostat'. 2013 build - AC not confirmed.",
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [],
+  "listing_url": "https://hotpads.com/the-(104)-bothell-wa-98011-skmr8k/pad",
+  "sources": [
+   "https://hotpads.com/the-(104)-bothell-wa-98011-skmr8k/pad",
+   "https://www.rentable.co/bothell-wa/18414-104th-ave-ne",
+   "https://www.redfin.com/WA/Bothell/The-104/apartment/22088667"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": 2013,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "yes",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "yes",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "in-unit W/D",
+    "patio"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "HotPads: unit 121 770 sq ft $1,779; 1BR 688-770 (Rentable 692-760, Redfin 690-870). Seen via search 2026-10-26.",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Built from WebSearch result snippets only; all page fetches failed (DNS). Prices/availability are aggregator snapshots and may be stale."
+ },
+ {
+  "name": "17431 3rd Ave SE Unit A",
+  "address": "17431 3rd Ave SE Unit A, Bothell, WA 98012",
+  "area": "Bothell",
+  "lat": 47.842,
+  "lng": -122.224,
+  "geocode_note": "Estimated from street address (approximate block-level; not geocoded by a service).",
+  "landlord": "private",
+  "owner_type": "unknown (small multi-unit)",
+  "platform": "Redfin",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1 bed / 1 bath, 800 sq ft",
+  "sqft": 800,
+  "base_rent": 1995,
+  "effective_rent": 1995,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Redfin Bothell A/C rentals page: $1,995/mo, 800 sq ft, dogs welcome, laundry in unit, A/C. Snapshot Oct 2025-Jan 2026; address-specific search found nothing further. Seen via search 2026-10-26.",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Redfin tag 'A/C' only (type not stated).",
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "only one aggregator snippet; address not corroborated",
+   "possibly stale"
+  ],
+  "listing_url": "https://www.redfin.com/city/29439/WA/Bothell/rentals/page-3",
+  "sources": [
+   "https://www.redfin.com/city/29439/WA/Bothell/rentals/page-3"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "yes",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Redfin Bothell A/C rentals page: $1,995/mo, 800 sq ft, dogs welcome, laundry in unit, A/C. Snapshot Oct 2025-Jan 2026; address-specific search found nothing further. Seen via search 2026-10-26.",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Built from WebSearch result snippets only; all page fetches failed (DNS). Prices/availability are aggregator snapshots and may be stale."
+ },
+ {
+  "name": "2007 172nd Pl SE Unit A",
+  "address": "2007 172nd Pl SE Unit A, Bothell, WA 98012",
+  "area": "Bothell",
+  "lat": 47.844,
+  "lng": -122.201,
+  "geocode_note": "Estimated from street address (approximate block-level; not geocoded by a service).",
+  "landlord": "private",
+  "owner_type": "unknown",
+  "platform": "Redfin",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1 bed / 1 bath, 1,400 sq ft (as listed)",
+  "sqft": 1400,
+  "base_rent": 1000,
+  "effective_rent": 1000,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Redfin: Unit A $1,000/mo 1,400 sq ft; Unit B $900/mo 1,300 sq ft; laundry in unit, parking, A/C. Snapshot Oct 2025-Jan 2026. Seen via search 2026-10-26.",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Redfin tag 'A/C' only.",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [
+   "rent ~50% below market for size (1BR 1,400 sq ft at $1,000)",
+   "1,400 sq ft for a 1BR is atypical - possible data error or bait listing",
+   "do not send money before an in-person tour and ownership check"
+  ],
+  "reputation_gist": null,
+  "red_flags": [
+   "likely stale or erroneous"
+  ],
+  "listing_url": "https://www.redfin.com/city/29439/WA/Bothell/rentals/page-3",
+  "sources": [
+   "https://www.redfin.com/city/29439/WA/Bothell/rentals/page-3"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Redfin: Unit A $1,000/mo 1,400 sq ft; Unit B $900/mo 1,300 sq ft; laundry in unit, parking, A/C. Snapshot Oct 2025-Jan 2026. Seen via search 2026-10-26.",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Built from WebSearch result snippets only; all page fetches failed (DNS). Prices/availability are aggregator snapshots and may be stale."
+ },
+ {
+  "name": "Olympic Condominiums #309",
+  "address": "1100 Harrington Ave NE #309, Renton, WA 98056",
+  "area": "Renton / Tukwila",
+  "lat": 47.4955,
+  "lng": -122.183,
+  "geocode_note": "Estimated from street address (approximate block-level; not geocoded by a service).",
+  "landlord": "private",
+  "owner_type": "individual condo owner",
+  "platform": "Redfin",
+  "management_company": null,
+  "year_built": 1983,
+  "floor_plan": "1 bed / 1 bath, 835 sq ft",
+  "sqft": 835,
+  "base_rent": 1900,
+  "effective_rent": 1900,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Redfin: #309 $1,900 835 sq ft 'Pets welcome - Laundry in unit - A/C'. Undated. Seen via search 2026-10-26.",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Redfin tag 'A/C'. Other units: #205 sale listing has 'high-efficiency mini-split AC' (not central); #211 cooling 'None'. #309 likely mini-split or none.",
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": "Sale listings call it a well-managed, pet-friendly complex with secure lobby, elevator, gym, indoor pool and sauna.",
+  "red_flags": [],
+  "listing_url": "https://www.redfin.com/neighborhood/184425/WA/Renton/Sunset/condos-for-rent",
+  "sources": [
+   "https://www.redfin.com/neighborhood/184425/WA/Renton/Sunset/condos-for-rent",
+   "https://bestinwest.roveridx.com/wa/renton/highlands/1100-harrington-avenue-ne-205/",
+   "https://bestinwest.roveridx.com/wa/renton/highlands/1100-ave-ne-harrington-avenue-ne-211/"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": "'Pets welcome' tag"
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": 1983,
+   "renovated": null,
+   "elevator": "yes",
+   "gym": "yes",
+   "pool": "yes",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "yes",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Redfin: #309 $1,900 835 sq ft 'Pets welcome - Laundry in unit - A/C'. Undated. Seen via search 2026-10-26.",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Built from WebSearch result snippets only; all page fetches failed (DNS). Prices/availability are aggregator snapshots and may be stale."
+ },
+ {
+  "name": "Jet Vista Apt",
+  "address": "201 Taylor Ave NW, Renton, WA 98057",
+  "area": "Renton / Tukwila",
+  "lat": 47.483,
+  "lng": -122.2195,
+  "geocode_note": "Estimated from street address (approximate block-level; not geocoded by a service).",
+  "landlord": "company",
+  "owner_type": "managed building (small)",
+  "platform": "ApartmentIQ",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1 bed / 1 bath, 700 sq ft",
+  "sqft": 700,
+  "base_rent": 1495,
+  "effective_rent": 1495,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "ApartmentIQ: 1BR/1BA 700 sq ft $1,495 with in-unit W/D. Date not shown. Seen via search 2026-10-26.",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Not mentioned.",
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "exactly 700 sq ft (minimum)",
+   "near Renton Municipal Airport - possible noise"
+  ],
+  "listing_url": "https://edge.apartmentiq.io/renton-wa/jet-vista-apt",
+  "sources": [
+   "https://edge.apartmentiq.io/renton-wa/jet-vista-apt"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "ApartmentIQ: 1BR/1BA 700 sq ft $1,495 with in-unit W/D. Date not shown. Seen via search 2026-10-26.",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Built from WebSearch result snippets only; all page fetches failed (DNS). Prices/availability are aggregator snapshots and may be stale."
+ },
+ {
+  "name": "Heritage Ridge",
+  "address": "Lynnwood, WA (street address not captured in search results)",
+  "area": "Shoreline / Lynnwood",
+  "lat": 47.8209,
+  "lng": -122.3151,
+  "geocode_note": "Street address not found in snippets; lat/lng is the Lynnwood city-center approximation, NOT the building.",
+  "landlord": "company",
+  "owner_type": "REIT-managed building",
+  "platform": "Equity Residential site (snippet) / Redfin",
+  "management_company": "Equity Residential",
+  "year_built": 2000,
+  "floor_plan": "1 bed / 1 bath, 741 sq ft",
+  "sqft": 741,
+  "base_rent": 1820,
+  "effective_rent": 1820,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Equity site: 741 sq ft 1BR, 1 available as of 10/20/2026, $1,820 (12-mo). Seen via search 2026-10-26.",
+  "washer_dryer": "unclear",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Not mentioned in any result.",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "laundry-in-unit conflicting across Redfin listings",
+   "2000 build - central AC unlikely"
+  ],
+  "listing_url": "https://equityapartments.com/seattle/lynnwood/heritage-ridge-apartments",
+  "sources": [
+   "https://equityapartments.com/seattle/lynnwood/heritage-ridge-apartments",
+   "https://edge.apartmentiq.io/lynnwood-wa/heritage-ridge",
+   "https://redfin.com/city/10421/WA/Lynnwood/1-bedroom-apartments-for-rent"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": "'Pets welcome' tag"
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": 2000,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Equity site: 741 sq ft 1BR, 1 available as of 10/20/2026, $1,820 (12-mo). Seen via search 2026-10-26.",
+   "website": "https://equityapartments.com/seattle/lynnwood/heritage-ridge-apartments",
+   "leasing_phone": null
+  },
+  "evidence": "Built from WebSearch result snippets only; all page fetches failed (DNS). Prices/availability are aggregator snapshots and may be stale."
+ },
+ {
+  "name": "4540 45th Ave SW #402 (Junction condo)",
+  "address": "4540 45th Ave SW #402, Seattle, WA 98116",
+  "area": "West Seattle",
+  "lat": 47.5615,
+  "lng": -122.388,
+  "geocode_note": "Estimated from street address (approximate block-level; not geocoded by a service).",
+  "landlord": "private",
+  "owner_type": "individual condo owner via property manager",
+  "platform": "Rentler / Rentable",
+  "management_company": "Seattle Rental Management",
+  "year_built": null,
+  "floor_plan": "1 bed / 1 bath, 703 sq ft",
+  "sqft": 703,
+  "base_rent": 2000,
+  "effective_rent": 2000,
+  "special": null,
+  "parking_fee": 0,
+  "seen_on": "2026-10-26",
+  "units_note": "Rentler: $2,000, available 9/11/2026; Rentable: 'available now'. Seen via search 2026-10-26.",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Neither listing mentions AC (wood-burning fireplace listed).",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "no AC mentioned"
+  ],
+  "listing_url": "https://www.rentler.com/places-for-rent/wa/seattle/4540-45th-ave-sw/13614528",
+  "sources": [
+   "https://www.rentler.com/places-for-rent/wa/seattle/4540-45th-ave-sw/13614528",
+   "https://www.rentable.co/seattle-wa/4540-45th-ave"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": "water/sewer/garbage included; tenant pays electricity + internet",
+   "deposit": 1850,
+   "application_fee": 60,
+   "admin_fee": 150,
+   "parking_fee": 0,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": 50,
+   "pet_deposit": null,
+   "limits": "pets allowed with deposit"
+  },
+  "parking_detail": {
+   "type": "garage",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "yes",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "west-facing balcony w/ Puget Sound view",
+    "wood-burning fireplace",
+    "in-unit laundry"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": 96,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Rentler: $2,000, available 9/11/2026; Rentable: 'available now'. Seen via search 2026-10-26.",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Built from WebSearch result snippets only; all page fetches failed (DNS). Prices/availability are aggregator snapshots and may be stale."
+ },
+ {
+  "name": "9416 1st Ave NE (Northgate condo)",
+  "address": "9416 1st Ave NE, Seattle, WA 98115",
+  "area": "Northgate / Lake City",
+  "lat": 47.6985,
+  "lng": -122.327,
+  "geocode_note": "Estimated from street address (approximate block-level; not geocoded by a service).",
+  "landlord": "private",
+  "owner_type": "individual condo owner via property manager",
+  "platform": "PadMapper / ApartmentList / Northeastern aptsearch",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1 bed / 1 bath, ~750 sq ft",
+  "sqft": 750,
+  "base_rent": 1795,
+  "effective_rent": 1795,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Listings show $1,795, $1,995 and $2,095 (+$40/mo resident benefit package) - different dates/units. Seen via search 2026-10-26.",
+  "washer_dryer": "yes",
+  "central_ac": "no",
+  "central_ac_evidence": "Listing: portable AC unit (not central).",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "portable AC only - fails central AC"
+  ],
+  "listing_url": "https://www.padmapper.com/rentals/28895200p/1-bedroom-1-bath-apartment-at-9416-1st-ave-ne-seattle-wa-98115",
+  "sources": [
+   "https://www.padmapper.com/rentals/28895200p/1-bedroom-1-bath-apartment-at-9416-1st-ave-ne-seattle-wa-98115",
+   "https://www.apartmentlist.com/wa/seattle/spacious-modern-northgate-condo-w-quartz-kitchen-secure-parking-pool-light-rail-access"
+  ],
+  "costs": {
+   "required_fees": [
+    {
+     "name": "resident benefit package",
+     "amount": 40
+    }
+   ],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "yes",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "quartz kitchen",
+    "in-unit W/D",
+    "portable AC"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": "Northgate (1 Line) - near, not measured",
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Listings show $1,795, $1,995 and $2,095 (+$40/mo resident benefit package) - different dates/units. Seen via search 2026-10-26.",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Built from WebSearch result snippets only; all page fetches failed (DNS). Prices/availability are aggregator snapshots and may be stale."
+ },
+ {
+  "name": "The Beacon",
+  "address": "1410 S Columbian Way, Seattle, WA 98144",
+  "area": "Columbia City / Beacon Hill",
+  "lat": 47.5645,
+  "lng": -122.315,
+  "geocode_note": "Estimated from street address (approximate block-level; not geocoded by a service).",
+  "landlord": "company",
+  "owner_type": "managed building",
+  "platform": "HotPads / ApartmentList / Redfin",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1 bed / 1 bath, 725 sq ft",
+  "sqft": 725,
+  "base_rent": 1650,
+  "effective_rent": 1650,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "HotPads: 725 sq ft $1,650 dated 5/9/2026 (stale); other snapshot $1,399; Redfin 1BR 850 sq ft. Seen via search 2026-10-26.",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "No A/C in any amenity list found.",
+  "dishwasher": "yes",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [],
+  "listing_url": "https://hotpads.com/the-beacon-seattle-wa-98144-24vvycj/pad",
+  "sources": [
+   "https://hotpads.com/the-beacon-seattle-wa-98144-24vvycj/pad",
+   "https://www.apartmentlist.com/wa/seattle/the-beacon--1",
+   "https://www.rentcafe.com/apartments/wa/seattle/the-beacon-hill/default.aspx"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "yes",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "HotPads: 725 sq ft $1,650 dated 5/9/2026 (stale); other snapshot $1,399; Redfin 1BR 850 sq ft. Seen via search 2026-10-26.",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Built from WebSearch result snippets only; all page fetches failed (DNS). Prices/availability are aggregator snapshots and may be stale."
+ },
+ {
+  "name": "Melody Jabooda",
+  "address": "2101 S Grand St, Seattle, WA 98144",
+  "area": "Columbia City / Beacon Hill",
+  "lat": 47.592,
+  "lng": -122.305,
+  "geocode_note": "Estimated from street address (approximate block-level; not geocoded by a service).",
+  "landlord": "company",
+  "owner_type": "managed building",
+  "platform": "ApartmentIQ / Redfin / Apartments.com",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1 bed / 1 bath, 701 sq ft",
+  "sqft": 701,
+  "base_rent": 2495,
+  "effective_rent": 2495,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "ApartmentIQ: 1BR 701 sq ft $2,495-2,525 (mid-2025 data); Apartments.com: 1BR 530-712 sq ft from $1,725+. Construction Nov 2020 -> move-ins from June 2022 (contractor page; inferred ~2022). Seen via search 2026-10-26.",
+  "washer_dryer": "unclear",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Redfin lists A/C for the building. A condensate-pump maker (Aspen Pumps) features the project, which suggests ductless/mini-split units - unconfirmed.",
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "AC possibly ductless",
+   "W/D unconfirmed",
+   "701 sq ft price above $2,300 target"
+  ],
+  "listing_url": "https://edge.apartmentiq.io/seattle-wa/melody-jabooda",
+  "sources": [
+   "https://edge.apartmentiq.io/seattle-wa/melody-jabooda",
+   "https://www.redfin.com/city/16163/WA/Seattle/luxury-2-bedroom-apartment/page-9",
+   "https://aspenpumps.com/en-gb/big-foot-and-san-andreas-fault-line"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": "I-90 / I-5 via Rainier Ave S (estimated)",
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": "Judkins Park (Line 2) - near, not measured",
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "ApartmentIQ: 1BR 701 sq ft $2,495-2,525 (mid-2025 data); Apartments.com: 1BR 530-712 sq ft from $1,725+. Construction Nov 2020 -> move-ins from June 2022 (contractor page; inferred ~2022). Seen via search 2026-10-26.",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Built from WebSearch result snippets only; all page fetches failed (DNS). Prices/availability are aggregator snapshots and may be stale."
+ },
+ {
+  "name": "Colina",
+  "address": "2709 17th Ave S, Seattle, WA 98144",
+  "area": "Columbia City / Beacon Hill",
+  "lat": 47.5795,
+  "lng": -122.3105,
+  "geocode_note": "Estimated from street address (approximate block-level; not geocoded by a service).",
+  "landlord": "company",
+  "owner_type": "institutional (Swig Co. / Rise Properties Trust)",
+  "platform": "Apartments.com (via search) / Point2Homes / Swig Co.",
+  "management_company": null,
+  "year_built": 2021,
+  "floor_plan": "1 bed / 1 bath (plans 514-719 sq ft)",
+  "sqft": 719,
+  "base_rent": 2083,
+  "effective_rent": 2083,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Apartments.com snippet: 1BR 514-719 sq ft from $2,083+, A/C listed, 25 units available. Price of the 719 sq ft plan NOT shown. Seen via search 2026-10-26.",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Apartments.com summary lists 'A/C'; building-level sources do not mention AC.",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": "LEED Gold, transit-oriented, next to Beacon Hill light rail; sold for $65.5M in 2022.",
+  "red_flags": [
+   "only 39 parking spots for 139 units",
+   "719 sq ft price unverified"
+  ],
+  "listing_url": "https://www.apartments.com/north-beacon-hill-seattle-wa/1-bedrooms/",
+  "sources": [
+   "https://www.apartments.com/north-beacon-hill-seattle-wa/1-bedrooms/",
+   "https://kidder.com/news/2022/08/kidder-mathews-sells-139-unit-colina-apartments-in-seattle-for-65-5m/",
+   "https://www.point2homes.com/US/Apartment-Buildings/WA/Seattle/North-Beacon-Hill/Colina/153134934.html"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "yes",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": 139,
+   "stories": 6,
+   "year_built": 2021,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": "I-5 / I-90 (estimated)",
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": "Beacon Hill (1 Line) - adjacent",
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "Apartments.com snippet: 1BR 514-719 sq ft from $2,083+, A/C listed, 25 units available. Price of the 719 sq ft plan NOT shown. Seen via search 2026-10-26.",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Built from WebSearch result snippets only; all page fetches failed (DNS). Prices/availability are aggregator snapshots and may be stale."
+ },
+ {
+  "name": "Foster Creek",
+  "address": "15110 Macadam Rd S, Tukwila, WA 98188",
+  "area": "Renton / Tukwila",
+  "lat": 47.468,
+  "lng": -122.262,
+  "geocode_note": "Estimated from street address (approximate block-level; not geocoded by a service).",
+  "landlord": "company",
+  "owner_type": "managed building",
+  "platform": "HotPads",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1 bed (plans ~550-720 sq ft)",
+  "sqft": 720,
+  "base_rent": 1504,
+  "effective_rent": 1504,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "HotPads snapshot: 1BR ~550-720 sq ft, $1,419-1,504; pairing of size to price not shown. Seen via search 2026-10-26.",
+  "washer_dryer": "yes",
+  "central_ac": "no",
+  "central_ac_evidence": "Listing excerpt mentions only ceiling fans for cooling.",
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "no AC",
+   "size/price pairing unverified"
+  ],
+  "listing_url": "https://hotpads.com/foster-creek-tukwila-wa-98188-24hf3f6/pad",
+  "sources": [
+   "https://hotpads.com/foster-creek-tukwila-wa-98188-24hf3f6/pad"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": "I-5 / I-405 Southcenter (estimated)",
+   "onramp_miles": null,
+   "freeway_within_500ft": "unclear",
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null
+  },
+  "availability": {
+   "units_note": "HotPads snapshot: 1BR ~550-720 sq ft, $1,419-1,504; pairing of size to price not shown. Seen via search 2026-10-26.",
+   "website": null,
+   "leasing_phone": null
+  },
+  "evidence": "Built from WebSearch result snippets only; all page fetches failed (DNS). Prices/availability are aggregator snapshots and may be stale."
+ }
+]
