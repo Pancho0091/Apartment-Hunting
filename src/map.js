@@ -40,10 +40,10 @@
       ],
     },
     seattle: {
-      plate: "Plate II", title: "Seattle <em>and the</em> Eastside", line: "Seattle city limit", excl: "Ruled out", exclLegend: "Ruled out",
+      plate: "Plate II", title: "Seattle <em>and the</em> Eastside", line: "City limit", excl: "Ruled out", exclLegend: "Ruled out",
       major: ["Downtown", "Bellevue", "Capitol Hill", "Ballard", "Redmond", "Renton"],
       water: [
-        { t: "Puget Sound", lng: -122.435, lat: 47.70, cls: "water big" },
+        { t: "Puget Sound", lng: -122.445, lat: 47.615, cls: "water" },
         { t: "Elliott Bay", lng: -122.375, lat: 47.603, cls: "water" },
         { t: "Lake Washington", lng: -122.258, lat: 47.655, cls: "water" },
         { t: "Lake Sammamish", lng: -122.09, lat: 47.59, cls: "water" },

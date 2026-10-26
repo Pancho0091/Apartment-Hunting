@@ -48,7 +48,7 @@
 </section>
 
 <div class="shell layout">
-  <aside class="sidebar" id="sidebar" aria-label="Filters">
+  <section class="sidebar" id="sidebar" aria-label="Filters">
     <div class="sheet-head">
       <p class="sheet-title">Filters</p>
       <button class="iconbtn" type="button" id="closeFilters" aria-label="Close filters">
@@ -57,7 +57,7 @@
     </div>
     <div class="filters" id="filters"></div>
     <div class="sheet-foot"><button class="btn block" type="button" id="applyFilters">Show results</button></div>
-  </aside>
+  </section>
   <div class="sheet-scrim" id="sheetScrim" hidden></div>
 
   <main class="main" id="results">
@@ -76,6 +76,7 @@
         </label>
       </div>
     </div>
+    <div class="viewnote" id="viewNote" role="status" hidden></div>
     <section id="view" class="view" aria-labelledby="resultsTitle"></section>
   </main>
 </div>

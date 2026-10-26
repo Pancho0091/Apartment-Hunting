@@ -278,13 +278,14 @@
     const rent = rentOf(b), c = D(b).costs || {}, missing = [];
     let park = dget(b, "costs", "parking_fee");
     park = park == null || isNaN(+park) ? null : +park;
-    if (park == null) { if (reqVal(b, "parking") === "no" || parkType(b) === "street") park = 0; else missing.push("parking fee"); }
+    let noPark = false;
+    if (park == null) { if (reqVal(b, "parking") === "no" || parkType(b) === "street") { park = 0; noPark = true; } else missing.push("parking fee"); }
     const list = Array.isArray(c.required_fees) ? c.required_fees : [];
     let fees = null;
     if (b.required_fees_total != null && !isNaN(+b.required_fees_total)) { fees = +b.required_fees_total; if (list.some(x => x.amount == null)) missing.push("some fees"); }
     else if (list.length && list.some(x => x.amount != null)) { fees = list.reduce((t, x) => t + (+x.amount || 0), 0); if (list.some(x => x.amount == null)) missing.push("some fees"); }
     else missing.push("required fees");
-    const out = { rent, park, fees, list, missing, total: rent == null ? null : rent + (park || 0) + (fees || 0) };
+    const out = { rent, park, fees, list, missing, noPark, total: rent == null ? null : rent + (park || 0) + (fees || 0) };
     costCache.set(b, out);
     return out;
   }
@@ -814,7 +815,7 @@
       h("span", { class: "save-k", text: k }), h("b", { text: money(Math.abs(d)) }), h("span", { class: "save-k", text: "/mo" }));
   }
   /* "True monthly $2,221+" with the parts that make it up; "+" marks a floor. */
-  const costParts = c => [c.park != null && c.park > 0 ? money(c.park) + " parking" : c.park === 0 ? "parking included" : null,
+  const costParts = c => [c.park != null && c.park > 0 ? money(c.park) + " parking" : c.park === 0 ? (c.noPark ? "no parking" : "parking included") : null,
     c.fees != null && c.fees > 0 ? money(c.fees) + " fees" : null].filter(Boolean);
   const costNote = c => c.missing.length ? c.missing.join(" and ") + " not found" : "all parts known";
   function costValue(b, cls) {
@@ -960,13 +961,13 @@
   const triCell = v => h("td", { class: "t-tri " + v, title: v === "unclear" ? "Not confirmed" : null }, h("span", { class: "sr", text: v === "unclear" ? "not confirmed" : "" }), h("span", { "aria-hidden": v === "unclear" ? "true" : null, text: triWord(v) }));
   const petsKey = b => { const c = triOf(dget(b, "pets", "cats")), d = triOf(dget(b, "pets", "dogs")); return (c === "yes") + (d === "yes") * 2 - (c === "no") - (d === "no"); };
   const numCell = (v, f) => h("td", { class: "num" + (v == null ? " unk" : ""), text: v == null ? "—" : f ? f(v) : v });
-  const PARK_WORD = { garage: "Garage", covered: "Covered", surface: "Surface", tandem: "Tandem", street: "Street", unclear: "?" };
+  const PARK_WORD = { garage: "Garage", covered: "Covered", surface: "Surface", tandem: "Tandem", street: "Street", unclear: "—" };
   /* Table columns. `fixed` cannot be hidden; `def` is on by default; the picker remembers the rest. */
   const TCOLS = [
     { k: "name", t: "Building", fixed: true, v: b => b.name.toLowerCase(), cell: b => h("td", { class: "t-name" }, h("span", { class: "t-title" }, openBtn(b.name)), h("span", { class: "t-sub", text: whereText(b) })) },
     { k: "rent", t: "Rent", grp: "Cost", def: true, num: true, v: rentOf, cell: b => h("td", { class: "num strong", text: money(rentOf(b)) }) },
     { k: "cost", t: "True monthly", grp: "Cost", def: true, num: true, v: trueCost, cell: b => { const c = costOf(b); return h("td", { class: "num strong", title: c.total == null ? null : ["rent " + money(c.rent), ...costParts(c)].join(" + ") + (c.missing.length ? ". " + costNote(c) + "." : "") }, costValue(b)); } },
-    { k: "save", t: "vs. Jayne", grp: "Cost", def: true, num: true, v: savingsOf, cell: b => { const d = savingsOf(b), part = costOf(b).missing.length; return h("td", { class: "num " + (d == null ? "" : d >= 0 ? "pos" : "neg"), text: d == null ? "—" : (d >= 0 ? "+" : "−") + money(Math.abs(d)) + (part ? (d >= 0 ? "≤" : "≥") : "") }); } },
+    { k: "save", t: "vs. Jayne", grp: "Cost", def: true, num: true, v: savingsOf, cell: b => { const d = savingsOf(b), part = costOf(b).missing.length; return h("td", { class: "num " + (d == null ? "" : d >= 0 ? "pos" : "neg"), title: part ? (d >= 0 ? "Up to this much saved; some costs not found" : "At least this much more; some costs not found") : null, text: d == null ? "—" : (part ? (d >= 0 ? "≤ " : "≥ ") : "") + (d >= 0 ? "+" : "−") + money(Math.abs(d)) }); } },
     { k: "deposit", t: "Deposit", grp: "Cost", num: true, v: b => dget(b, "costs", "deposit"), cell: b => numCell(dget(b, "costs", "deposit"), money) },
     { k: "sqft", t: "Sq ft", grp: "Unit", def: true, num: true, v: b => b.sqft, cell: b => numCell(b.sqft, Math.round) },
     { k: "ppsf", t: "$/sq ft", grp: "Unit", num: true, v: ppsf, cell: b => numCell(ppsf(b), x => x.toFixed(2)) },
@@ -974,7 +975,7 @@
     { k: "rep", t: "Reviews", grp: "Ranking", num: true, v: repScore, cell: b => numCell(repScore(b)) },
     { k: "req", t: "Requirements", grp: "Ranking", def: true, v: b => REQS.filter(r => reqVal(b, r.key) === "yes").length, cell: b => h("td", null, h("span", { class: "dots" }, ...REQS.map(r => h("i", { class: reqVal(b, r.key), title: r.name + ": " + REQ_WORD[reqVal(b, r.key)].toLowerCase() })))) },
     { k: "pets", t: "Cats · Dogs", grp: "Building", def: true, v: petsKey, cell: b => { const c = triOf(dget(b, "pets", "cats")), d = triOf(dget(b, "pets", "dogs")); return h("td", { class: "t-pets", title: `Cats: ${REQ_WORD[c].toLowerCase()}. Dogs: ${REQ_WORD[d].toLowerCase()}.` }, h("span", { class: "pill " + c, text: "Cats " + triWord(c) }), h("span", { class: "pill " + d, text: "Dogs " + triWord(d) })); } },
-    { k: "park", t: "Parking", grp: "Building", def: true, v: b => { const c = costOf(b); return (parkType(b) === "unclear" ? "z" : parkType(b)) + (c.park == null ? 9999 : c.park); }, cell: b => { const c = costOf(b), t = parkType(b); return h("td", { class: "t-text" + (t === "unclear" && c.park == null ? " unk" : "") }, PARK_WORD[t] || t, h("span", { class: "t-sub", text: c.park == null ? "fee not found" : c.park === 0 ? "included" : money(c.park) + "/mo" })); } },
+    { k: "park", t: "Parking", grp: "Building", def: true, v: b => { const c = costOf(b); return (parkType(b) === "unclear" ? "z" : parkType(b)) + (c.park == null ? 9999 : c.park); }, cell: b => { const c = costOf(b), t = parkType(b); return h("td", { class: "t-text" + (t === "unclear" && c.park == null ? " unk" : "") }, PARK_WORD[t] || t, h("span", { class: "t-sub", text: c.park == null ? "fee not found" : c.park === 0 ? (c.noPark ? "no parking" : "included") : money(c.park) + "/mo" })); } },
     { k: "year", t: "Built", grp: "Building", def: true, num: true, v: yearOf, cell: b => numCell(yearOf(b)) },
     { k: "units", t: "Units", grp: "Building", num: true, v: b => dget(b, "building", "units"), cell: b => numCell(dget(b, "building", "units")) },
     { k: "amen", t: "Gym · Pool", grp: "Building", v: b => (dget(b, "building", "gym") === "yes") + (dget(b, "building", "pool") === "yes"), cell: b => { const g = triOf(dget(b, "building", "gym")), q = triOf(dget(b, "building", "pool")); return h("td", { class: "t-pets" }, h("span", { class: "pill " + g, text: "Gym " + triWord(g) }), h("span", { class: "pill " + q, text: "Pool " + triWord(q) })); } },
@@ -1166,7 +1167,7 @@
     const diff = r != null && mkt != null ? r - mkt : null;
     const cell = (k, v, sub, cls) => h("div", { class: "px " + (cls || "") }, h("dt", { class: "fig-k", text: k }), h("dd", null, h("b", { text: v }), sub ? h("span", { text: sub }) : null));
     return h("dl", { class: "plate-extras" },
-      cell("Typical 1BR", r == null ? "—" : money(r), diff == null ? "not found" : diff >= 0 ? `${money(diff)} over listings` : `${money(-diff)} under listings`),
+      cell("Typical 1BR", r == null ? "—" : money(r), diff == null ? "not found" : diff >= 0 ? `${money(diff)} above listing median` : `${money(-diff)} below listing median`),
       cell("Summer high", t == null ? "—" : Math.round(t) + "°F", t == null ? "not found" : t >= 90 ? "hot" : t >= 84 ? "warm" : "mild", t >= 90 ? "hot" : ""),
       cell("Walk Score", w == null ? "—" : String(w), w == null ? "not found" : "neighborhood"));
   }
@@ -1199,7 +1200,7 @@
       ["Reviews", b => repScore(b) == null ? "—" : repScore(b) + "/10", repScore, 1],
       ...REQS.map(r => [r.name, b => reqVal(b, r.key), null, 0, r.key]),
       ["Cats", tri("pets", "cats"), null, 0, "tri"], ["Dogs", tri("pets", "dogs"), null, 0, "tri"],
-      ["Parking", b => { const c = costOf(b), t = parkType(b); return (t === "unclear" ? "Type not found" : PARK_WORD[t]) + " · " + (c.park == null ? "fee not found" : c.park === 0 ? "included" : money(c.park) + "/mo"); }],
+      ["Parking", b => { const c = costOf(b), t = parkType(b); return (t === "unclear" ? "Type not found" : PARK_WORD[t]) + " · " + (c.park == null ? "fee not found" : c.park === 0 ? (c.noPark ? "no parking" : "included") : money(c.park) + "/mo"); }],
       ["Year built", b => yearOf(b) ?? "—", yearOf, 1],
       ["Units", b => dget(b, "building", "units") ?? "—"],
       ["Gym", tri("building", "gym"), null, 0, "tri"], ["Pool", tri("building", "pool"), null, 0, "tri"],
@@ -1313,6 +1314,26 @@
       loading || noClear ? null : h("button", { class: "btn ghost", type: "button", text: "Clear all filters", onclick: clearAll }));
   }
 
+  /* When nothing in a market meets every requirement, say so above the results and offer the
+     near-misses (listings that fail, most often only on rent) instead of an empty-looking list. */
+  function renderNote(list) {
+    const el = $("viewNote");
+    const show = S.loaded && S.buildings.length && ["list", "table", "map"].includes(S.view) && !S.buildings.some(b => verdict(b) === "all");
+    if (!show) { el.hidden = true; el.replaceChildren(); return; }
+    const mi = marketInfo(), n = { check: 0, fail: 0, over: 0 };
+    for (const b of S.buildings) { const v = verdict(b); n[v]++; if (v === "fail" && overBudgetOnly(b)) n.over++; }
+    const hidden = S.buildings.length - list.length;
+    const nearOff = !S.f.verdicts.includes("fail") || S.f.maxRent < 2600;
+    el.hidden = false;
+    el.replaceChildren(
+      h("span", { class: "viewnote-mark", "aria-hidden": "true", text: "0" }),
+      h("div", { class: "viewnote-body" },
+        h("p", { class: "viewnote-title", text: `No ${mi.name} listing meets every requirement yet.` }),
+        h("p", { class: "viewnote-text", text: `${plural(n.check, "listing")} could, once the leasing office confirms what research could not find. ${n.fail ? `${n.fail} fail${n.over ? `, ${n.over} only on rent` : ""}.` : ""}${hidden ? ` ${hidden} hidden by your filters.` : ""}` })),
+      nearOff && n.fail ? h("button", { class: "btn ghost sm", type: "button", text: "Show near-misses too", onclick: () => {
+        if (!S.f.verdicts.includes("fail")) S.f.verdicts.push("fail"); S.f.maxRent = 2600; saveF(); syncFilters(); renderResults(); toast("Showing listings that fail a requirement, up to $2,600");
+      } }) : null);
+  }
   /* A market whose research has not run: say so plainly, show what it will be checked against. */
   const REQ_LIST = () => [
     ["sqft", `${MIN_SQFT}+ sq ft`, "One bedroom"], ["rent", `Rent ≤ ${money(RENT_CAP)}`, "after specials"],
@@ -1333,7 +1354,7 @@
         h("p", { class: "unsurveyed-text", text: text }),
         where === "areas" ? null : h("ul", { class: "unsurveyed-reqs", "aria-label": "Requirements" }, ...REQ_LIST().map(([k, name, sub]) =>
           h("li", null, reqIcon(k) || h("span", { class: "unsurveyed-glyph", "aria-hidden": "true", text: k === "rent" ? "$" : "ft²" }), h("span", null, h("b", { text: name }), h("small", { text: sub }))))),
-        where === "areas" ? null : h("p", { class: "unsurveyed-text small", text: `Ranked with your weights and compared with renewing at The Jayne (${money(JAYNE.allIn)} a month), the same as every market.` }),
+        where === "areas" ? null : h("p", { class: "unsurveyed-text small", text: `Ranked with your weights and compared with renewing at The Jayne ($${JAYNE.allIn.toLocaleString("en-US", { minimumFractionDigits: 2 })} a month), the same as every market.` }),
         h("div", { class: "unsurveyed-actions" },
           S.view !== "map" ? h("button", { class: "btn", type: "button", text: `Open the ${mi.name} atlas`, onclick: () => setView("map") }) : null,
           h("button", { class: "btn ghost", type: "button", text: "Back to Los Angeles", onclick: () => setMarket("la") }))));
@@ -1493,9 +1514,10 @@
     S.rank = new Map(list.map((b, i) => [b.id, i + 1]));
     renderCount(list);
     renderStats(list);
+    renderNote(list);
     if (opts.summaryOnly) return;
     const root = $("view");
-    const switching = root.dataset.view !== S.view || root.dataset.market !== S.market || !!opts.fade;
+    const switching = root.dataset.view !== S.view || root.dataset.mkt !== S.market || !!opts.fade;
     if (switching && booted) {
       // keep the toolbar in place: if it is stuck, start the new view at its top
       const main = $("results"), top = main.getBoundingClientRect().top + scrollY - 6;
@@ -1503,7 +1525,7 @@
       if (opts.fade) root.replaceChildren();
     }
     root.dataset.view = S.view;
-    root.dataset.market = S.market;
+    root.dataset.mkt = S.market;
     const ctx = { switching, initial: !booted };
     if (S.loaded && !S.buildings.length && (S.view === "list" || S.view === "table")) {
       if (switching || !root.querySelector(":scope > .unsurveyed")) root.replaceChildren(marketEmpty("list"));
@@ -1842,7 +1864,7 @@
     REGIONS = mi.regions.filter(r => present.has(r)).concat([...present].filter(r => !mi.regions.includes(r)).sort());
     FACTORS.find(f => f.key === "drive").name = mi.roads;
     FACTORS.find(f => f.key === "lax").name = mi.airport;
-    document.documentElement.dataset.market = S.market;
+    document.documentElement.dataset.mkt = S.market;
     $("mastRegions").textContent = (REGIONS.length ? REGIONS : mi.regions).join(" · ");
   }
   function loadMarket() {
@@ -1860,7 +1882,7 @@
         return h("button", { type: "button", class: "mkt", "data-market": k, onclick: () => setMarket(k) },
           h("span", { class: "mkt-no", "aria-hidden": "true", text: mi.numeral }),
           h("span", { class: "mkt-name", text: mi.name }),
-          h("span", { class: "mkt-sub", text: nB ? `${plural(nB, "listing")} · ${plural(nA, "area")}` : nA ? `${plural(nA, "area")} · no listings yet` : "Not surveyed yet" }));
+          h("span", { class: "mkt-sub" }, nB ? plural(nB, "listing") : nA ? "No listings yet" : "Not surveyed yet", nA ? h("span", { class: "mkt-areas", text: " · " + plural(nA, "area") }) : null));
       });
       $("markets").replaceChildren(...marketBtns);
       $("markets").addEventListener("keydown", e => {
@@ -1880,7 +1902,6 @@
     ledger && (ledger.topId = undefined);
     loadMarket();
     renderMarkets(); renderFilters(); renderToolbar(); renderResults({ fade: true });
-    toast(`${marketInfo().name}: ${S.buildings.length ? plural(S.buildings.length, "listing") : "no listings yet"}`);
   }
   function exportEdits() {
     const blob = new Blob([JSON.stringify({ app: "apartment-search-2027", exported: new Date().toISOString(), edits: EDITS, compare: [...S.compare] }, null, 1)], { type: "application/json" });

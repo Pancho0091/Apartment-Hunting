@@ -24,10 +24,12 @@ report.hscroll_desktop = await p.evaluate(() => document.documentElement.scrollW
 const toResults = async () => { await p.evaluate(() => { const r = document.getElementById("results"); scrollTo({ top: r.getBoundingClientRect().top + scrollY - 8, behavior: "instant" }); }); await p.waitForTimeout(300); };
 if (want("list")) await p.screenshot({ path: `${out}/list.png` });
 if (want("list")) await p.screenshot({ path: `${out}/list-full.png`, fullPage: true });
+const jsClick = sel => p.evaluate(s => document.querySelector(s).click(), sel);
 const clickView = async name => { const btn = p.locator(`[data-view="${name}"]`); if (await btn.count()) { await btn.first().click(); await p.waitForTimeout(700); return true; } return false; };
 for (const v of ["table", "map", "areas", "compare"]) if (want(v)) {
   report["view_" + v] = await clickView(v);
-  if (v === "table") { await toResults(); report.table_cols = await p.locator(".ledger-table thead th").count(); }
+  await toResults();
+  if (v === "table") { report.table_cols = await p.locator(".ledger-table thead th").count(); }
   await p.screenshot({ path: `${out}/${v}.png` });
   await p.evaluate(() => scrollTo({ top: 0, behavior: "instant" }));
 }
@@ -42,7 +44,7 @@ if (want("detail")) {
   if (await row.count()) {
     await row.click(); await p.waitForTimeout(900); await p.screenshot({ path: `${out}/detail.png` });
     const sec = p.locator(".drawer .pgrid");
-    if (await sec.count()) { await p.evaluate(() => { const d = document.querySelector(".drawer"), s = document.querySelector(".drawer .pmeter"); d.scrollTop = s.offsetTop - 60; }); await p.waitForTimeout(300); await p.screenshot({ path: `${out}/detail-particulars.png` }); report.particulars_cards = await p.locator(".drawer .pcard").count(); }
+    if (await sec.count()) { await p.evaluate(() => { document.querySelector(".drawer .pmeter").closest(".dsec").scrollIntoView({ block: "start" }); document.querySelector(".drawer").scrollTop -= 60; }); await p.waitForTimeout(300); await p.screenshot({ path: `${out}/detail-particulars.png` }); report.particulars_cards = await p.locator(".drawer .pcard").count(); }
     await p.keyboard.press("Escape"); await p.waitForTimeout(400);
   } else report.detail = "no [data-listing] element";
 }
@@ -51,7 +53,7 @@ if (want("area")) {
   const plate = p.locator(".plate").first();
   if (await plate.count()) {
     await plate.click(); await p.waitForTimeout(900); await p.screenshot({ path: `${out}/area.png` });
-    await p.evaluate(() => { const d = document.querySelector(".drawer"), s = [...document.querySelectorAll(".drawer .dsec")].find(x => /Local conditions/i.test(x.textContent)); if (s) d.scrollTop = s.offsetTop - 60; });
+    await p.evaluate(() => { const d = document.querySelector(".drawer"), s = [...document.querySelectorAll(".drawer .dsec")].find(x => /Local conditions/i.test(x.textContent)); if (s) { s.scrollIntoView({ block: "start" }); d.scrollTop -= 60; } });
     await p.waitForTimeout(300); await p.screenshot({ path: `${out}/area-extras.png` });
     await p.keyboard.press("Escape"); await p.waitForTimeout(400);
   }
@@ -65,18 +67,18 @@ if (want("filters")) {
   await p.screenshot({ path: `${out}/filters.png` });
   // a three-state filter and a range filter actually filter
   const before = await p.textContent("#count .count-real");
-  await p.locator('input[data-tri="cats"][value="yes"]').check({ force: true }); await p.waitForTimeout(500);
+  await jsClick('input[data-tri="cats"][value="yes"]'); await p.waitForTimeout(500);
   report.filter_cats_yes = [before, await p.textContent("#count .count-real")];
-  await p.locator('input[data-tri="cats"][value="maybe"]').check({ force: true }); await p.waitForTimeout(500);
+  await jsClick('input[data-tri="cats"][value="maybe"]'); await p.waitForTimeout(500);
   report.filter_cats_maybe = await p.textContent("#count .count-real");
-  await p.locator('input[data-tri="cats"][value="any"]').check({ force: true }); await p.waitForTimeout(500);
+  await jsClick('input[data-tri="cats"][value="any"]'); await p.waitForTimeout(500);
   await p.evaluate(() => document.querySelectorAll("#filters details.fgroup").forEach(d => { d.open = false; }));
 }
 if (want("perf")) { // long tasks during filter changes (target < 100 ms)
   await clickView("list");
   await p.evaluate(() => { window.__lt = []; new PerformanceObserver(l => l.getEntries().forEach(e => window.__lt.push(Math.round(e.duration)))).observe({ type: "longtask", buffered: false }); });
   for (const sel of ['input[data-tri="gym"][value="yes"]', 'input[data-tri="gym"][value="any"]', 'input[data-tri="pool"][value="maybe"]', 'input[data-tri="pool"][value="any"]']) {
-    await p.locator(sel).check({ force: true }); await p.waitForTimeout(450);
+    await jsClick(sel); await p.waitForTimeout(450);
   }
   const chip = p.locator(".chip").first(); await chip.click(); await p.waitForTimeout(450); await chip.click(); await p.waitForTimeout(900);
   report.filter_long_tasks_ms = await p.evaluate(() => window.__lt);
@@ -115,7 +117,7 @@ if (want("mobile")) {
   report.hscroll_mobile_markets = mk;
   const row = m.locator("[data-listing]").first();
   if (await row.count()) { await row.click(); await m.waitForTimeout(900); await m.screenshot({ path: `${out}/mobile-detail.png` });
-    await m.evaluate(() => { const d = document.querySelector(".drawer"), s = document.querySelector(".drawer .pmeter"); if (s) d.scrollTop = s.offsetTop - 60; }); await m.waitForTimeout(300);
+    await m.evaluate(() => { const s = document.querySelector(".drawer .pmeter"); if (s) { s.closest(".dsec").scrollIntoView({ block: "start" }); document.querySelector(".drawer").scrollTop -= 60; } }); await m.waitForTimeout(300);
     await m.screenshot({ path: `${out}/mobile-particulars.png` });
     report.hscroll_mobile_drawer = await m.evaluate(() => { const d = document.querySelector(".drawer"); return d ? d.scrollWidth > d.clientWidth : null; });
     await m.keyboard.press("Escape"); await m.waitForTimeout(400); }
