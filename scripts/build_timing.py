@@ -51,6 +51,24 @@ def main():
     conc, unknown = {}, []
     for f in sorted(SRC.glob("concessions_*.json")):
         for c in json.loads(f.read_text()):
+            if str(c.get("id")).startswith("_operator:"):
+                # Operator-level pattern from a property pass: fold into the operators list.
+                op = {
+                    "name": c["name"].split(" (")[0], "pricing": c.get("negotiation_note"),
+                    "concession_style": "; ".join(f"{s['when']}: {s['offer']}" for s in c.get("seen", [])[:5]),
+                    "note": " ".join(x for x in [c.get("renewal_note"), c.get("evidence")] if x),
+                    "sources": c.get("sources") or [s["source"] for s in c.get("seen", []) if s.get("source")]}
+                ops = timing.setdefault("operators", [])
+                key = " ".join(op["name"].lower().split()[:2])
+                prev = next((o for o in ops if o.get("name", "").lower().startswith(key)), None)
+                if prev:  # fill what the operator pass left unknown
+                    for k in ("pricing", "concession_style", "note"):
+                        if op.get(k) and (not prev.get(k) or "unknown" in str(prev[k]).lower()[:40]):
+                            prev[k] = op[k]
+                    prev["sources"] = list(dict.fromkeys((prev.get("sources") or []) + op["sources"]))
+                else:
+                    ops.append({**op, "negotiable": "unknown"})
+                continue
             if c.get("id") not in listing_ids:
                 unknown.append(c.get("id"))
                 continue
