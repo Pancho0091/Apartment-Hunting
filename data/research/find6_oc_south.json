@@ -1,0 +1,1505 @@
+[
+ {
+  "name": "Woodbridge Pines Apartment Homes",
+  "address": "115 Pinestone, Irvine, CA 92604",
+  "area": "NEW: Irvine \u2013 Woodbridge",
+  "lat": 33.676,
+  "lng": -117.792,
+  "geocode_note": "Estimated from street address (approximate; not geocoded by a service).",
+  "landlord": "company",
+  "owner_type": "Irvine Company (institutional owner-operator)",
+  "platform": "Redfin; WestsideRentals",
+  "management_company": "Irvine Company Apartment Communities",
+  "year_built": null,
+  "floor_plan": "1 bed / 1 bath",
+  "sqft": 797,
+  "base_rent": 2485,
+  "effective_rent": 2485,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Redfin snapshot (search result, seen 2026-10-26): 1BR 797 sq ft from $2,485+/mo. WestsideRentals ranges for all plans $2,535\u2013$6,480 / $2,645\u2013$6,350 (conflicting snapshots).",
+  "washer_dryer": "yes",
+  "central_ac": "yes",
+  "central_ac_evidence": "WestsideRentals listing text: 'in-home full-size washer and dryer' and 'central air conditioning and heat' (via search snippet; page not fetched).",
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": "Irvine Company communities commonly have package lockers; not confirmed for this property.",
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "1BR price from a Redfin search snippet; WestsideRentals snapshot suggests all-plan floor of $2,535\u2013$2,645, so $2,485 may be stale."
+  ],
+  "listing_url": "https://prod-release.westsiderentals.com/irvine-ca/woodbridge-pines-apartment-homes-j1kbzv6",
+  "sources": [
+   "https://prod-release.westsiderentals.com/irvine-ca/woodbridge-pines-apartment-homes-j1kbzv6",
+   "https://www.westsiderentals.com/irvine-ca/115-pinestone-j1kbzv6",
+   "https://www.redfin.com/neighborhood/3031/CA/Irvine/Westpark-II/1-bedroom-apartments-for-rent"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null,
+   "freeway_within_500ft": "unclear"
+  },
+  "availability": {
+   "units_note": "Redfin snapshot (search result, seen 2026-10-26): 1BR 797 sq ft from $2,485+/mo. WestsideRentals ranges for all plans $2,535\u2013$6,480 / $2,645\u2013$6,350 (conflicting snapshots).",
+   "website": "https://prod-release.westsiderentals.com/irvine-ca/woodbridge-pines-apartment-homes-j1kbzv6",
+   "leasing_phone": null
+  },
+  "evidence": "Built from WebSearch result summaries only; WebFetch failed (DNS) for apartments.com/veryapt. Prices are aggregator snapshots \u2014 verify."
+ },
+ {
+  "name": "Park West Apartment Homes",
+  "address": "3883 Parkview Ln, Irvine, CA 92612",
+  "area": "NEW: Irvine \u2013 University Park / Turtle Rock edge",
+  "lat": 33.664,
+  "lng": -117.836,
+  "geocode_note": "Estimated from street address (approximate; not geocoded by a service).",
+  "landlord": "company",
+  "owner_type": "Irvine Company (institutional owner-operator) \u2014 presumed from name/address, not confirmed in sources",
+  "platform": "Redfin",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1 bed / 1 bath",
+  "sqft": 795,
+  "base_rent": 2445,
+  "effective_rent": 2445,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Redfin snapshot via search (seen 2026-10-26): 1BR 795 sq ft $2,445+/mo.",
+  "washer_dryer": "unclear",
+  "central_ac": "unclear",
+  "central_ac_evidence": "No amenity data found in the search results.",
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "No amenity confirmation (W/D, AC) \u2014 must verify.",
+   "Lat/lng is a rough estimate."
+  ],
+  "listing_url": "https://www.redfin.com/neighborhood/3031/CA/Irvine/Westpark-II/1-bedroom-apartments-for-rent",
+  "sources": [
+   "https://www.redfin.com/neighborhood/3031/CA/Irvine/Westpark-II/1-bedroom-apartments-for-rent"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null,
+   "freeway_within_500ft": "unclear"
+  },
+  "availability": {
+   "units_note": "Redfin snapshot via search (seen 2026-10-26): 1BR 795 sq ft $2,445+/mo.",
+   "website": "https://www.redfin.com/neighborhood/3031/CA/Irvine/Westpark-II/1-bedroom-apartments-for-rent",
+   "leasing_phone": null
+  },
+  "evidence": "Built from WebSearch result summaries only; WebFetch failed (DNS) for apartments.com/veryapt. Prices are aggregator snapshots \u2014 verify."
+ },
+ {
+  "name": "Woodbury Lane Apartment Homes",
+  "address": "100 Simplicity, Irvine, CA 92620",
+  "area": "NEW: Irvine \u2013 Woodbury",
+  "lat": 33.7015,
+  "lng": -117.755,
+  "geocode_note": "Estimated from street address (approximate; not geocoded by a service).",
+  "landlord": "company",
+  "owner_type": "Irvine Company (institutional owner-operator) \u2014 presumed",
+  "platform": "Redfin",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1 bed / 1 bath",
+  "sqft": "790-894",
+  "base_rent": 2485,
+  "effective_rent": 2485,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Redfin snapshot via search (seen 2026-10-26): 1BR 790\u2013894 sq ft $2,485+/mo.",
+  "washer_dryer": "unclear",
+  "central_ac": "unclear",
+  "central_ac_evidence": "VeryApt lists in-unit W/D and 'Air Conditioning' for an Irvine Company Woodbury property (1000 Virtuoso) \u2014 not specifically this building; 'central' not stated.",
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "Amenities not confirmed for this specific building."
+  ],
+  "listing_url": "https://www.redfin.com/neighborhood/3114/CA/Irvine/Woodbury/1-bedroom-apartments-for-rent",
+  "sources": [
+   "https://www.redfin.com/neighborhood/3114/CA/Irvine/Woodbury/1-bedroom-apartments-for-rent",
+   "https://www.veryapt.com/Apartments-L4752-los-angeles-woodbury"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null,
+   "freeway_within_500ft": "unclear"
+  },
+  "availability": {
+   "units_note": "Redfin snapshot via search (seen 2026-10-26): 1BR 790\u2013894 sq ft $2,485+/mo.",
+   "website": "https://www.redfin.com/neighborhood/3114/CA/Irvine/Woodbury/1-bedroom-apartments-for-rent",
+   "leasing_phone": null
+  },
+  "evidence": "Built from WebSearch result summaries only; WebFetch failed (DNS) for apartments.com/veryapt. Prices are aggregator snapshots \u2014 verify."
+ },
+ {
+  "name": "Cypress Village Apartment Homes",
+  "address": "100 Grand Canal, Irvine, CA 92620",
+  "area": "NEW: Irvine \u2013 Cypress Village",
+  "lat": 33.7,
+  "lng": -117.762,
+  "geocode_note": "Estimated from street address (approximate; not geocoded by a service).",
+  "landlord": "company",
+  "owner_type": "Irvine Company (institutional owner-operator)",
+  "platform": "Redfin; VeryApt",
+  "management_company": "Irvine Company Apartment Communities",
+  "year_built": null,
+  "floor_plan": "1 bed / 1\u20131.5 bath (larger plans only meet 700 sq ft)",
+  "sqft": "553-810",
+  "base_rent": 2480,
+  "effective_rent": 2480,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Redfin snapshots (seen 2026-10-26 via search): 1BR from $2,480 (106 units available) and from $2,610 (1 unit) in another snapshot; 1BR range 553\u2013810 sq ft \u2014 need a 700+ plan, which may price above the floor.",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "VeryApt lists 'Washer/Dryer In Unit' and 'Air Conditioning' (type not stated).",
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "Cheapest 1BRs are likely the sub-700 sq ft plans; 700+ plan price unknown."
+  ],
+  "listing_url": "https://www.redfin.com/neighborhood/4652/CA/Irvine/Cypress-Village/apartments-for-rent",
+  "sources": [
+   "https://www.redfin.com/neighborhood/4652/CA/Irvine/Cypress-Village/apartments-for-rent",
+   "https://www.veryapt.com/Apartments-L4751-los-angeles-cypress-village"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null,
+   "freeway_within_500ft": "unclear"
+  },
+  "availability": {
+   "units_note": "Redfin snapshots (seen 2026-10-26 via search): 1BR from $2,480 (106 units available) and from $2,610 (1 unit) in another snapshot; 1BR range 553\u2013810 sq ft \u2014 need a 700+ plan, which may price above the floor.",
+   "website": "https://www.redfin.com/neighborhood/4652/CA/Irvine/Cypress-Village/apartments-for-rent",
+   "leasing_phone": null
+  },
+  "evidence": "Built from WebSearch result summaries only; WebFetch failed (DNS) for apartments.com/veryapt. Prices are aggregator snapshots \u2014 verify."
+ },
+ {
+  "name": "Northwood Park Apartment Homes",
+  "address": "1300 Hayes St, Irvine, CA 92620",
+  "area": "NEW: Irvine \u2013 Northwood",
+  "lat": 33.712,
+  "lng": -117.77,
+  "geocode_note": "Estimated from street address (approximate; not geocoded by a service).",
+  "landlord": "company",
+  "owner_type": "Irvine Company (presumed)",
+  "platform": "Redfin",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1 bed / 1 bath",
+  "sqft": "668-757",
+  "base_rent": null,
+  "effective_rent": null,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Redfin snapshot via search (seen 2026-10-26): 1BR 668\u2013757 sq ft; price truncated in snippet.",
+  "washer_dryer": "unclear",
+  "central_ac": "unclear",
+  "central_ac_evidence": null,
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "Price unknown; only the largest 1BR plan clears 700 sq ft.",
+   "Amenities unconfirmed."
+  ],
+  "listing_url": "https://www.redfin.com/zipcode/92620/1-bedroom-apartments-for-rent",
+  "sources": [
+   "https://www.redfin.com/zipcode/92620/1-bedroom-apartments-for-rent"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null,
+   "freeway_within_500ft": "unclear"
+  },
+  "availability": {
+   "units_note": "Redfin snapshot via search (seen 2026-10-26): 1BR 668\u2013757 sq ft; price truncated in snippet.",
+   "website": "https://www.redfin.com/zipcode/92620/1-bedroom-apartments-for-rent",
+   "leasing_phone": null
+  },
+  "evidence": "Built from WebSearch result summaries only; WebFetch failed (DNS) for apartments.com/veryapt. Prices are aggregator snapshots \u2014 verify."
+ },
+ {
+  "name": "Villa Solana (Equity Residential)",
+  "address": "26033 Moulton Pkwy, Laguna Hills, CA 92653",
+  "area": "NEW: Laguna Hills",
+  "lat": 33.605,
+  "lng": -117.715,
+  "geocode_note": "Estimated from street address (approximate; not geocoded by a service).",
+  "landlord": "company",
+  "owner_type": "REIT (Equity Residential)",
+  "platform": "Redfin; ApartmentIQ; VeryApt; ApartmentAdvisor",
+  "management_company": "Equity Residential",
+  "year_built": 1983,
+  "floor_plan": "1 bed / 1 bath (two plans: 709 and 841 sq ft)",
+  "sqft": "709-841",
+  "base_rent": 2391,
+  "effective_rent": 2391,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Redfin (seen 2026-10-26 via search): 1BR 709\u2013841 sq ft from $2,391+/mo; VeryApt snapshots $2,530+ / $2,625+; another Redfin page (as 'Creekside Laguna') 1BR $2,546.",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Listings say 'Air conditioning' (ApartmentAdvisor/ApartmentIQ); central not stated.",
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "Built 1983 (older than the ~2000+ preference).",
+   "Price snapshots conflict ($2,391\u2013$2,625)."
+  ],
+  "listing_url": "https://edge.apartmentiq.io/laguna-hills-ca/villa-solana",
+  "sources": [
+   "https://edge.apartmentiq.io/laguna-hills-ca/villa-solana",
+   "https://www.redfin.com/city/9956/CA/Laguna-Hills/1-bedroom-apartments-for-rent",
+   "https://www.apartmentadvisor.com/details/26033-moulton-pkwy-laguna-hills-ca-92653",
+   "https://www.veryapt.com/Apartments-L2422-los-angeles-laguna-hills"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": 1983,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "yes",
+   "pool": "yes",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null,
+   "freeway_within_500ft": "unclear"
+  },
+  "availability": {
+   "units_note": "Redfin 1BR from $2,391 (seen 2026-10-26 via search)",
+   "website": "https://edge.apartmentiq.io/laguna-hills-ca/villa-solana",
+   "leasing_phone": "(949) 818-8630"
+  },
+  "evidence": "Built from WebSearch result summaries only; WebFetch failed (DNS) for apartments.com/veryapt. Prices are aggregator snapshots \u2014 verify."
+ },
+ {
+  "name": "Sofi Laguna Hills",
+  "address": "24555 Los Alisos Blvd, Laguna Hills, CA 92653",
+  "area": "NEW: Laguna Hills",
+  "lat": 33.617,
+  "lng": -117.701,
+  "geocode_note": "Estimated from street address (approximate; not geocoded by a service).",
+  "landlord": "company",
+  "owner_type": "Institutional (Sofi brand)",
+  "platform": "Redfin",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1 bed / 1 bath",
+  "sqft": 739,
+  "base_rent": 2309,
+  "effective_rent": 2309,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Redfin snapshots (seen 2026-10-26 via search): 1BR 739 sq ft at $2,309+ and $2,401/mo.",
+  "washer_dryer": "unclear",
+  "central_ac": "unclear",
+  "central_ac_evidence": null,
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "W/D and AC not confirmed in any result."
+  ],
+  "listing_url": "https://www.redfin.com/neighborhood/111929/CA/Laguna-Hills/Central-Laguna-Hills/1-bedroom-apartments-for-rent",
+  "sources": [
+   "https://www.redfin.com/neighborhood/111929/CA/Laguna-Hills/Central-Laguna-Hills/1-bedroom-apartments-for-rent",
+   "https://www.redfin.com/zipcode/92653/1-bedroom-apartments-for-rent"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null,
+   "freeway_within_500ft": "unclear"
+  },
+  "availability": {
+   "units_note": "Redfin snapshots (seen 2026-10-26 via search): 1BR 739 sq ft at $2,309+ and $2,401/mo.",
+   "website": "https://www.redfin.com/neighborhood/111929/CA/Laguna-Hills/Central-Laguna-Hills/1-bedroom-apartments-for-rent",
+   "leasing_phone": null
+  },
+  "evidence": "Built from WebSearch result summaries only; WebFetch failed (DNS) for apartments.com/veryapt. Prices are aggregator snapshots \u2014 verify."
+ },
+ {
+  "name": "ARTA Apartments",
+  "address": "23592 Windsong, Aliso Viejo, CA 92656",
+  "area": "NEW: Aliso Viejo",
+  "lat": 33.57,
+  "lng": -117.713,
+  "geocode_note": "Estimated from street address (approximate; not geocoded by a service).",
+  "landlord": "company",
+  "owner_type": "Institutional",
+  "platform": "Redfin; Zillow; Greystar",
+  "management_company": "Greystar",
+  "year_built": 1990,
+  "floor_plan": "1 bed / 1 bath",
+  "sqft": 954,
+  "base_rent": 2406,
+  "effective_rent": 2406,
+  "special": "Redfin tagged Aliso Viejo results 'DEAL' (details not seen)",
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Redfin (seen 2026-10-26 via search): 1BR 954 sq ft from $2,406+, 23 units available; Zillow shows 1BR 954 sq ft at $2,835 total monthly price (includes fees).",
+  "washer_dryer": "unclear",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Greystar lists 'air conditioner' and 'full-size washer/dryer connection'; Zillow says in-unit laundry for some or all units.",
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "W/D may be hookups only.",
+   "Zillow total monthly ($2,835) far above Redfin base \u2014 required fees may be large."
+  ],
+  "listing_url": "https://www.greystar.com/arta-apartments-aliso-viejo/p_20316",
+  "sources": [
+   "https://www.greystar.com/arta-apartments-aliso-viejo/p_20316",
+   "https://www.zillow.com/b/-5XjTNY",
+   "https://www.redfin.com/city/224/CA/Aliso-Viejo/1-bedroom-apartments-for-rent"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": 1990,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null,
+   "freeway_within_500ft": "unclear"
+  },
+  "availability": {
+   "units_note": "Redfin (seen 2026-10-26 via search): 1BR 954 sq ft from $2,406+, 23 units available; Zillow shows 1BR 954 sq ft at $2,835 total monthly price (includes fees).",
+   "website": "https://www.greystar.com/arta-apartments-aliso-viejo/p_20316",
+   "leasing_phone": null
+  },
+  "evidence": "Built from WebSearch result summaries only; WebFetch failed (DNS) for apartments.com/veryapt. Prices are aggregator snapshots \u2014 verify."
+ },
+ {
+  "name": "Aliso Creek Apartments",
+  "address": "24152 Hollyoak, Aliso Viejo, CA 92656",
+  "area": "NEW: Aliso Viejo",
+  "lat": 33.566,
+  "lng": -117.722,
+  "geocode_note": "Estimated from street address (approximate; not geocoded by a service).",
+  "landlord": "company",
+  "owner_type": "Institutional",
+  "platform": "Redfin; ApartmentIQ; Point2Homes; ApartmentList",
+  "management_company": null,
+  "year_built": 1984,
+  "floor_plan": "1 bed / 1 bath",
+  "sqft": 795,
+  "base_rent": 2458,
+  "effective_rent": 2458,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Redfin (seen 2026-10-26 via search): 1BR 795 sq ft $2,458\u2013$2,479+, 21 units available; ApartmentIQ range $2,280\u2013$2,704.",
+  "washer_dryer": "unclear",
+  "central_ac": "yes",
+  "central_ac_evidence": "Point2Homes: 'Central Air Conditioning and Heating'.",
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "Sources conflict on laundry: ApartmentIQ/Point2 say W/D connections + on-site laundry; ApartmentList says in-unit.",
+   "Built 1984."
+  ],
+  "listing_url": "https://hotpads.com/aliso-creek-apartments-aliso-viejo-ca-92656-skhk3r/pad",
+  "sources": [
+   "https://edge.apartmentiq.io/aliso-viejo-ca/aliso-creek",
+   "https://www.point2homes.com/US/Apartment-Buildings/CA/Aliso-Viejo/Aliso-Creek.html",
+   "https://hotpads.com/aliso-creek-apartments-aliso-viejo-ca-92656-skhk3r/pad",
+   "https://www.redfin.com/city/224/CA/Aliso-Viejo/1-bedroom-apartments-for-rent"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": 1984,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null,
+   "freeway_within_500ft": "unclear"
+  },
+  "availability": {
+   "units_note": "Redfin (seen 2026-10-26 via search): 1BR 795 sq ft $2,458\u2013$2,479+, 21 units available; ApartmentIQ range $2,280\u2013$2,704.",
+   "website": "https://hotpads.com/aliso-creek-apartments-aliso-viejo-ca-92656-skhk3r/pad",
+   "leasing_phone": null
+  },
+  "evidence": "Built from WebSearch result summaries only; WebFetch failed (DNS) for apartments.com/veryapt. Prices are aggregator snapshots \u2014 verify."
+ },
+ {
+  "name": "La Hacienda condo units (10300 La Hacienda Ave)",
+  "address": "10300 La Hacienda Ave (Units J08, H02, J11), Fountain Valley, CA 92708",
+  "area": "NEW: Fountain Valley",
+  "lat": 33.715,
+  "lng": -117.955,
+  "geocode_note": "Estimated from street address (approximate; not geocoded by a service).",
+  "landlord": "private",
+  "owner_type": "Individually owned condo units (owner/agent rentals)",
+  "platform": "Redfin",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1 bed / 1 bath",
+  "sqft": 753,
+  "base_rent": 2460,
+  "effective_rent": 2460,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Redfin (snapshot, seen 2026-10-26 via search): J08 $2,460; H02 $2,480 (avail 12/24); J11 $2,530 (avail 01/10). All 753 sq ft, laundry in unit, parking, pets welcome. Dates may be stale.",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Redfin tags do not mention A/C.",
+  "dishwasher": "unclear",
+  "parking": "yes",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "Availability dates likely from an older snapshot; verify which units are still listed.",
+   "AC unconfirmed."
+  ],
+  "listing_url": "https://www.redfin.com/neighborhood/14790/CA/Fountain-Valley/Colonia-Juarez/1-bedroom-apartments-for-rent",
+  "sources": [
+   "https://www.redfin.com/neighborhood/14790/CA/Fountain-Valley/Colonia-Juarez/1-bedroom-apartments-for-rent",
+   "https://redfin.com/city/6539/CA/Fountain-Valley/1-bedroom-apartments-for-rent",
+   "https://www.redfin.com/city/6539/CA/Fountain-Valley/luxury-1-bedroom-apartment"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "yes",
+   "dogs": "yes",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null,
+   "freeway_within_500ft": "unclear"
+  },
+  "availability": {
+   "units_note": "Redfin (snapshot, seen 2026-10-26 via search): J08 $2,460; H02 $2,480 (avail 12/24); J11 $2,530 (avail 01/10). All 753 sq ft, laundry in unit, parking, pets welcome. Dates may be stale.",
+   "website": "https://www.redfin.com/neighborhood/14790/CA/Fountain-Valley/Colonia-Juarez/1-bedroom-apartments-for-rent",
+   "leasing_phone": null
+  },
+  "evidence": "Built from WebSearch result summaries only; WebFetch failed (DNS) for apartments.com/veryapt. Prices are aggregator snapshots \u2014 verify."
+ },
+ {
+  "name": "The Grand Costa Mesa",
+  "address": "2855 Pinecreek Dr, Costa Mesa, CA 92626",
+  "area": "Costa Mesa",
+  "lat": 33.68,
+  "lng": -117.896,
+  "geocode_note": "Estimated from street address (approximate; not geocoded by a service).",
+  "landlord": "company",
+  "owner_type": "Institutional (sold late 2023 to Advanced Real Estate per CoStar)",
+  "platform": "ApartmentAdvisor; ApartmentIQ; WestsideRentals",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1 bed / 1 bath (unit E-216)",
+  "sqft": 726,
+  "base_rent": 2360,
+  "effective_rent": 2360,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "ApartmentAdvisor (seen 2026-10-26 via search): unit E-216 1BR 726 sq ft $2,360. ApartmentIQ 2025 snapshot 1BR $2,055\u2013$2,705.",
+  "washer_dryer": "yes",
+  "central_ac": "yes",
+  "central_ac_evidence": "ApartmentAdvisor description: 'in-unit washer and dryer units, central AC'.",
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "714-unit complex; age not confirmed (pre-2000 likely).",
+   "Price snapshot date unclear."
+  ],
+  "listing_url": "https://www.apartmentadvisor.com/details/2855-pinecreek-dr-costa-mesa-ca-92626",
+  "sources": [
+   "https://www.apartmentadvisor.com/details/2855-pinecreek-dr-costa-mesa-ca-92626",
+   "https://prod-release.westsiderentals.com/costa-mesa-ca/the-grand-costa-mesa-sgw4066",
+   "https://costar.com/article/704041089/major-multifamily-property-sells-in-one-of-californias-largest-apartment-deals-of-past-year"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": 714,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null,
+   "freeway_within_500ft": "unclear"
+  },
+  "availability": {
+   "units_note": "ApartmentAdvisor (seen 2026-10-26 via search): unit E-216 1BR 726 sq ft $2,360. ApartmentIQ 2025 snapshot 1BR $2,055\u2013$2,705.",
+   "website": "https://www.apartmentadvisor.com/details/2855-pinecreek-dr-costa-mesa-ca-92626",
+   "leasing_phone": null
+  },
+  "evidence": "Built from WebSearch result summaries only; WebFetch failed (DNS) for apartments.com/veryapt. Prices are aggregator snapshots \u2014 verify."
+ },
+ {
+  "name": "Beach & Ocean",
+  "address": "19891 Beach Blvd, Huntington Beach, CA 92648",
+  "area": "Huntington Beach",
+  "lat": 33.6735,
+  "lng": -117.988,
+  "geocode_note": "Estimated from street address (approximate; not geocoded by a service).",
+  "landlord": "company",
+  "owner_type": "Institutional",
+  "platform": "Redfin; Zillow",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1 bed / 1 bath",
+  "sqft": "654-713",
+  "base_rent": 2599,
+  "effective_rent": 2599,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Redfin (seen 2026-10-26 via search): 1BR from $2,599, 8 units, laundry in unit. Zillow (older): 1BR 654\u2013713 sq ft $2,612\u2013$2,856.",
+  "washer_dryer": "yes",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Not mentioned in results.",
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "At the $2,600 ceiling; only the 713 sq ft plan clears 700 sq ft and may cost more.",
+   "Fronts Beach Blvd (traffic noise)."
+  ],
+  "listing_url": "https://www.zillow.com/b/-5gqC5m",
+  "sources": [
+   "https://www.zillow.com/b/-5gqC5m",
+   "https://www.redfin.com/zipcode/92648/1-bedroom-apartments-for-rent"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": [
+    "quartz countertops",
+    "stainless appliances",
+    "custom cabinetry"
+   ]
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null,
+   "freeway_within_500ft": "unclear"
+  },
+  "availability": {
+   "units_note": "Redfin (seen 2026-10-26 via search): 1BR from $2,599, 8 units, laundry in unit. Zillow (older): 1BR 654\u2013713 sq ft $2,612\u2013$2,856.",
+   "website": "https://www.zillow.com/b/-5gqC5m",
+   "leasing_phone": null
+  },
+  "evidence": "Built from WebSearch result summaries only; WebFetch failed (DNS) for apartments.com/veryapt. Prices are aggregator snapshots \u2014 verify."
+ },
+ {
+  "name": "Park Newport",
+  "address": "1 Park Newport, Newport Beach, CA 92660",
+  "area": "Newport Beach",
+  "lat": 33.623,
+  "lng": -117.873,
+  "geocode_note": "Estimated from street address (approximate; not geocoded by a service).",
+  "landlord": "company",
+  "owner_type": "Institutional",
+  "platform": "Homes.com",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1 bed (size unconfirmed)",
+  "sqft": null,
+  "base_rent": 2369,
+  "effective_rent": 2369,
+  "special": null,
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Homes.com via search (seen 2026-10-26): renovated homes with in-unit laundry and AC, 'starting at $2,369' (studio\u20133BR; 1BR price/size not shown).",
+  "washer_dryer": "unclear",
+  "central_ac": "unclear",
+  "central_ac_evidence": "Listing says 'AC' in renovated homes; type not stated.",
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "$2,369 is likely the studio price; 1BR size and price unknown.",
+   "Older large complex (1970s era, not confirmed)."
+  ],
+  "listing_url": "https://www.homes.com/newport-beach-ca/homes-for-rent/under-2500/",
+  "sources": [
+   "https://www.homes.com/newport-beach-ca/homes-for-rent/under-2500/"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null,
+   "freeway_within_500ft": "unclear"
+  },
+  "availability": {
+   "units_note": "Homes.com via search (seen 2026-10-26): renovated homes with in-unit laundry and AC, 'starting at $2,369' (studio\u20133BR; 1BR price/size not shown).",
+   "website": "https://www.homes.com/newport-beach-ca/homes-for-rent/under-2500/",
+   "leasing_phone": null
+  },
+  "evidence": "Built from WebSearch result summaries only; WebFetch failed (DNS) for apartments.com/veryapt. Prices are aggregator snapshots \u2014 verify."
+ },
+ {
+  "name": "Rancho Mariposa Apartment Homes",
+  "address": "13211 Myford Rd, Tustin, CA 92782",
+  "area": "NEW: Tustin \u2013 Tustin Ranch",
+  "lat": 33.737,
+  "lng": -117.801,
+  "geocode_note": "Estimated from street address (approximate; not geocoded by a service).",
+  "landlord": "company",
+  "owner_type": "Institutional",
+  "platform": "Zillow; Redfin",
+  "management_company": null,
+  "year_built": null,
+  "floor_plan": "1 bed",
+  "sqft": null,
+  "base_rent": 2330,
+  "effective_rent": null,
+  "special": "Zillow showed a special (details not seen)",
+  "parking_fee": null,
+  "seen_on": "2026-10-26",
+  "units_note": "Zillow snapshots (seen 2026-10-26 via search): 1BR $2,330+ with special; another $2,525+; Redfin 1BR $2,355.",
+  "washer_dryer": "unclear",
+  "central_ac": "unclear",
+  "central_ac_evidence": null,
+  "dishwasher": "unclear",
+  "parking": "unclear",
+  "packages": "unclear",
+  "packages_detail": null,
+  "scam_flags": [],
+  "reputation_gist": null,
+  "red_flags": [
+   "Sq ft, W/D and AC all unconfirmed."
+  ],
+  "listing_url": "https://www.zillow.com/tustin-ca-92782/rentals",
+  "sources": [
+   "https://www.zillow.com/tustin-ca-92782/rentals",
+   "https://www.veryapt.com/ApartmentReview-a38625-rancho-mariposa-apartment-homes-tustin",
+   "https://www.redfin.com/neighborhood/498143/CA/Tustin/Tustin-Ranch/1-bedroom-apartments-for-rent"
+  ],
+  "costs": {
+   "required_fees": [],
+   "utilities": null,
+   "deposit": null,
+   "application_fee": null,
+   "admin_fee": null,
+   "parking_fee": null,
+   "lease_terms": null
+  },
+  "pets": {
+   "cats": "unclear",
+   "dogs": "unclear",
+   "pet_rent": null,
+   "pet_deposit": null,
+   "limits": null
+  },
+  "parking_detail": {
+   "type": "unclear",
+   "ev_charging": "unclear",
+   "guest_parking": "unclear"
+  },
+  "building": {
+   "units": null,
+   "stories": null,
+   "year_built": null,
+   "renovated": null,
+   "elevator": "unclear",
+   "gym": "unclear",
+   "pool": "unclear",
+   "coworking": "unclear",
+   "rooftop_or_courtyard": "unclear",
+   "controlled_access": "unclear",
+   "onsite_management": "unclear",
+   "smoke_free": "unclear"
+  },
+  "unit": {
+   "balcony": "unclear",
+   "storage": "unclear",
+   "floors_available": null,
+   "features": []
+  },
+  "internet": {
+   "fiber": "unclear",
+   "providers": []
+  },
+  "location": {
+   "walk_score": null,
+   "transit_score": null,
+   "bike_score": null,
+   "nearest_onramp": null,
+   "onramp_miles": null,
+   "nearest_specialty_cafe": null,
+   "cafe_walk_min": null,
+   "nearest_grocery": null,
+   "grocery_walk_min": null,
+   "nearest_metro": null,
+   "metro_walk_min": null,
+   "nearest_gym": null,
+   "gym_minutes": null,
+   "lax_drive_min_offpeak": null,
+   "freeway_within_500ft": "unclear"
+  },
+  "availability": {
+   "units_note": "Zillow snapshots (seen 2026-10-26 via search): 1BR $2,330+ with special; another $2,525+; Redfin 1BR $2,355.",
+   "website": "https://www.zillow.com/tustin-ca-92782/rentals",
+   "leasing_phone": null
+  },
+  "evidence": "Built from WebSearch result summaries only; WebFetch failed (DNS) for apartments.com/veryapt. Prices are aggregator snapshots \u2014 verify."
+ }
+]
