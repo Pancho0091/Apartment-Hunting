@@ -1,5 +1,8 @@
 # Apartment Search 2027
 
+Markets: **Los Angeles** (120 listings, 46 neighborhoods), **Seattle** (20 / 15) and **New York** (11 / 17),
+switchable with the tabs at the top of the tool. Same requirements everywhere.
+
 A web app for finding a 1BR (700+ sq ft, rent ≤ $2,300 after specials, in-unit W/D, central AC,
 dishwasher, parking, package handling) in LA, Long Beach and Orange County, before The Jayne lease
 ends on 2027-01-29.
@@ -28,6 +31,8 @@ browser; use Export / Import at the bottom of the page to back them up or move t
 - `data/research/` — raw research: neighborhood reports (`out_*`), requirement checks (`verified_*`),
   resident reviews (`reviews_out_*`).
 - `scripts/build_data.py` — merges the above: `python3 -I scripts/build_data.py data/research`.
+- Seattle / New York: research in `data/research/<market>/`, merged by `scripts/build_market_data.py <market>`
+  into `data/buildings-<market>.json` and `data/neighborhoods-<market>.json`; maps from `scripts/build_geo_market.py`.
 - Rebuild the tool after any data change: `python3 -I scripts/build_html.py`.
 
 ## Data limits (Oct 15 2026)
