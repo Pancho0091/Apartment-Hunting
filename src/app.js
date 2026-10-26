@@ -14,7 +14,7 @@
      Scoring model
      ========================================================================== */
   const FACTORS = [
-    { key: "drive",  name: "Freeway and traffic",  parts: ["freeway", "traffic"], def: 30 },
+    { key: "drive",  name: "Freeway and traffic",  parts: ["freeway", "traffic"], def: 30 },  // name follows the market (setMarket)
     { key: "coffee", name: "Coffee and walking",   parts: ["coffee", "walk"], def: 30 },
     { key: "quiet",  name: "Quiet",                parts: ["quiet"], def: 15 },
     { key: "safety", name: "Safety",               parts: ["safety"], def: 15 },
@@ -31,10 +31,20 @@
   ];
   const REVIEW_PARTS = [["management", "Management"], ["maintenance", "Maintenance"], ["cleanliness", "Cleanliness"], ["noise", "Noise"], ["security", "Security"], ["pests", "Pests"], ["costs", "Fees and renewals"]];
   const STATUSES = [{ key: "new", name: "Not reviewed" }, { key: "watch", name: "Watching" }, { key: "tour", name: "Tour" }, { key: "applied", name: "Applied" }, { key: "pass", name: "Passed on" }];
-  const REGIONS = ["Los Angeles", "Long Beach", "Orange County"];
+  /* Markets. Requirements, deadlines, the Jayne baseline, weights and statuses are shared;
+     listings, neighborhoods, map, regions and match scaling belong to each market. */
+  const MARKET_INFO = {
+    la: { name: "Los Angeles", numeral: "I", regions: ["Los Angeles", "Long Beach", "Orange County"], roads: "Freeway and traffic", roadsShort: "Freeways", airport: "LAX" },
+    seattle: { name: "Seattle", numeral: "II", regions: ["Seattle", "Eastside", "North & South suburbs"], roads: "Highways and traffic", roadsShort: "Highways", airport: "Airport (SEA)" },
+    nyc: { name: "New York", numeral: "III", regions: ["Manhattan", "Brooklyn", "Queens", "Bronx", "Staten Island", "New Jersey"], roads: "Highways and traffic", roadsShort: "Highways", airport: "Airport (JFK · LGA · EWR)" },
+  };
+  let REGIONS = MARKET_INFO.la.regions.slice();   // regions present in the current market (setMarket)
   const VERDICTS = { all: "Meets everything", check: "Needs checks", fail: "Fails a requirement" };
+  const FWY_BANDS = [["under 1 mi", "Under 1 mi"], ["1–2 mi", "1 to 2 mi"], ["over 2 mi", "Over 2 mi"], ["unknown", "Not found"]];
+  /* Three-state filters where "not confirmed" matters: any / confirmed yes / yes or not confirmed. */
+  const TRI_MODES = [["any", "Any"], ["yes", "Yes"], ["maybe", "Not ruled out"]];
   const LANDLORDS = { company: "Management company", private: "Private owner" };
-  const SORTS = [["score", "Best match"], ["value", "Best match per dollar"], ["rent", "Lowest rent"], ["sqft", "Largest"], ["ppsf", "Lowest $/sq ft"], ["reviews", "Best reviewed"], ["name", "Name"]];
+  const SORTS = [["score", "Best match"], ["value", "Best match per dollar"], ["rent", "Lowest rent"], ["cost", "Lowest true monthly cost"], ["sqft", "Largest"], ["ppsf", "Lowest $/sq ft"], ["reviews", "Best reviewed"], ["name", "Name"]];
   const VIEWS = [["list", "Specimens"], ["table", "Table"], ["map", "Map"], ["areas", "Neighborhoods"], ["compare", "Compare"], ["add", "Add"]];
   const ROMAN = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"];
 
@@ -45,20 +55,33 @@
     get(k, d) { try { const v = localStorage.getItem("aps27b:" + k); return v == null ? d : JSON.parse(v); } catch { return d; } },
     set(k, v) { try { localStorage.setItem("aps27b:" + k, JSON.stringify(v)); return true; } catch { return false; } },
   };
+  const COST_MAX = 3000, YEAR_MIN = 1920, HEAT_MAX = 100;
   const DEFAULT_FILTERS = {
-    maxRent: RENT_CAP, minSqft: MIN_SQFT, minRep: 0,
-    regions: REGIONS.slice(), verdicts: ["all", "check"], landlords: ["company", "private"],
+    maxRent: RENT_CAP, minSqft: MIN_SQFT, minRep: 0, maxCost: COST_MAX,
+    hideRegions: [], verdicts: ["all", "check"], landlords: ["company", "private"],
     statuses: ["new", "watch", "tour", "applied"], mustHave: [], hideScam: true, newOnly: false,
+    cats: "any", dogs: "any", garage: "any", ev: "any", gym: "any", pool: "any", elevator: "any", access: "any", balcony: "any",
+    minYear: YEAR_MIN, yearUnknown: true, fwy: FWY_BANDS.map(([k]) => k), maxHeat: HEAT_MAX, minWalk: 0, walkUnknown: true, minDoc: 0,
   };
   const freshFilters = () => JSON.parse(JSON.stringify(DEFAULT_FILTERS));
+  /* Saved filters from earlier versions kept an allow-list of LA regions; keep only what is hidden,
+     so a region that does not exist in another market can never filter everything out. */
+  function loadFilters() {
+    const saved = ls.get("filters", {}) || {};
+    if (Array.isArray(saved.regions)) { if (!saved.hideRegions) saved.hideRegions = MARKET_INFO.la.regions.filter(r => !saved.regions.includes(r)); delete saved.regions; }
+    const f = Object.assign(freshFilters(), saved);
+    for (const k of Object.keys(DEFAULT_FILTERS)) if (Array.isArray(DEFAULT_FILTERS[k]) && !Array.isArray(f[k])) f[k] = DEFAULT_FILTERS[k].slice();
+    return f;
+  }
   const defaultWeights = Object.fromEntries(FACTORS.concat(REP).map(f => [f.key, f.def]));
   const S = {
-    buildings: [], areas: [], areaById: new Map(),
-    f: Object.assign(freshFilters(), ls.get("filters", {})),
+    buildings: [], areas: [], areaById: new Map(), market: ls.get("market", "la"),
+    f: loadFilters(),
     weights: Object.assign({}, defaultWeights, ls.get("weights", {})),
     q: "", view: ls.get("view", "list"), sort: ls.get("sort", "score"),
     density: ls.get("density", "cards"),
     tsort: ls.get("tsort", { key: "score", dir: -1 }),
+    tcols: ls.get("tcols", null),
     compare: new Set(ls.get("compare", [])),
     rank: new Map(),
     db: null, canWrite: false, loaded: false,
