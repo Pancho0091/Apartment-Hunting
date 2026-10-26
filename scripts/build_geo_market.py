@@ -16,6 +16,7 @@ from pathlib import Path
 
 from shapely.geometry import box, shape, LineString, MultiLineString, Polygon, MultiPolygon, GeometryCollection
 from shapely.ops import unary_union
+import shapely
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC = Path(sys.argv[1])
@@ -107,16 +108,19 @@ for geom in src.get("geometries") or [f["geometry"] for f in src["features"]]:
     g = shape(geom)
     for part in getattr(g, "geoms", [g]):
         if part.intersects(CLIP):
-            if not part.is_valid:
-                part = part.buffer(0)
-            land.append(part.intersection(CLIP))
+            # clip_by_rect is fast and tolerates invalid input; repair only the small clipped piece.
+            piece = shapely.clip_by_rect(part, *CLIP.bounds)
+            if not piece.is_valid:
+                piece = piece.buffer(0)
+            land.append(piece)
 land = unary_union(land)
-lakes = unary_union([g for _, g in clipped(load("ne_10m_lakes.geojson")["features"])])
+# Keep only large lakes (Lake Washington, Sammamish); Natural Earth's small lakes are coarse triangles.
+lakes = unary_union([g for _, g in clipped(load("ne_10m_lakes.geojson")["features"]) if g.area >= 0.003])
 if not lakes.is_empty:
     land = land.difference(lakes)
 
 
-def fill_small(g, min_area=1.5e-5):
+def fill_small(g, min_area=6e-5):
     if isinstance(g, Polygon):
         return Polygon(g.exterior, [r for r in g.interiors if Polygon(r).area >= min_area])
     return unary_union([fill_small(x, min_area) for x in getattr(g, "geoms", [])])
@@ -135,7 +139,8 @@ hoods_d = geom_d(unary_union([g.boundary for g in hood_polys]).intersection(land
 if cfg.get("county_file"):
     county = unary_union([g.boundary for _, g in clipped(load(cfg["county_file"])["features"])])
 elif cfg.get("county_from_hoods"):
-    county = unary_union(hood_polys).boundary
+    # Dissolve neighborhoods into one outline (close tiny gaps first) so only the city limit is drawn.
+    county = unary_union([g.buffer(0.0004) for g in hood_polys]).buffer(-0.0004).boundary
 else:
     county = GeometryCollection()
 county_d = geom_d(county.intersection(land.buffer(-0.0015)).simplify(TOL))
