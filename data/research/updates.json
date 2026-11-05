@@ -185,5 +185,16 @@
   "name": "Sakura Crossing",
   "source": "Round 4 research 2026-10-26",
   "note": "Round 4: Zillow shows washer/dryers in only some units and tags the building income-restricted. Confirm both."
+ },
+ {
+  "name": "Gas Company Lofts",
+  "source": "Availability page screenshots shared by Daniel, 2026-11-05",
+  "req": {
+   "wd": "yes"
+  },
+  "base_rent": 2437,
+  "effective_rent": 2437,
+  "sqft": 1181,
+  "note": "Nov 5 (building's availability page): washer/dryer is listed only on some units, so pick one of those. 1BRs with W/D: #0502 1,181 sq ft $2,437 (available 12/07), #0601 1,160 sq ft $2,447 (11/10), #0501 1,160 sq ft $2,537 (11/04). #0221 1BR 924 sq ft $1,969 (12/05) does NOT list a W/D; floor 2 has a shared laundry room. Studios with a bedroom nook, no W/D listed: #0911 867 sq ft $1,547 (12/18), #0222 830 sq ft $1,917, #0219 717 sq ft $1,697 (01/01/2027). Prices are starting base rent and vary by lease term and move-in date. Mandatory fees: LA Systematic Code Enforcement Program $2.83/mo + ConService billing $3.32/mo; utilities, parking, storage and pets are extra. If Zillow's 'lease-signing savings up to $2,550' still applies, #0502 nets about $2,225/mo on 12 months. Not shown on the page: central AC, dishwasher, parking price; confirm."
  }
 ]

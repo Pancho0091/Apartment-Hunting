@@ -26485,9 +26485,9 @@
   "lat": 34.0478,
   "lng": -118.26,
   "location_note": "approximate block-level coordinates from street address (not verified with a geocoder)",
-  "sqft": 837.0,
-  "base_rent": 2027.0,
-  "effective_rent": 1814.0,
+  "sqft": 1181,
+  "base_rent": 2437,
+  "effective_rent": 2437,
   "special": "Zillow: lease-signing savings up to $2,550; Redfin snapshot: 6 weeks free (unit type unclear)",
   "parking_fee": null,
   "year_built": null,
@@ -26502,7 +26502,7 @@
   "ac_evidence": "Listing features: 'Central A / C, Heat: Forced Air' (aggregator snippet)",
   "red_flags": "Year built/conversion year not confirmed (1920s-era building per listings); 53 of 251 units are affordable (not all market rate); some listings also mention shared building laundry so confirm W/D in the specific unit; parking fee unknown.",
   "internet": null,
-  "notes": "Plan Open One Bedroom Loft (1BR/1BA); sqft: 924-1,180 (one source) or 837-1,160 (another); building range 588-1,305. Open 1BR loft quoted $2,027-$2,077; other snippets: 1BR from $2,039, Zillow 1BR $2,017 and $2,499; unit 1208 (1,193 sq ft) $2,818. Dates unclear. Seen on 2026-11-05 (search snippets; listing dates often unclear).",
+  "notes": "Nov 5 (building's availability page): washer/dryer is listed only on some units, so pick one of those. 1BRs with W/D: #0502 1,181 sq ft $2,437 (available 12/07), #0601 1,160 sq ft $2,447 (11/10), #0501 1,160 sq ft $2,537 (11/04). #0221 1BR 924 sq ft $1,969 (12/05) does NOT list a W/D; floor 2 has a shared laundry room. Studios with a bedroom nook, no W/D listed: #0911 867 sq ft $1,547 (12/18), #0222 830 sq ft $1,917, #0219 717 sq ft $1,697 (01/01/2027). Prices are starting base rent and vary by lease term and move-in date. Mandatory fees: LA Systematic Code Enforcement Program $2.83/mo + ConService billing $3.32/mo; utilities, parking, storage and pets are extra. If Zillow's 'lease-signing savings up to $2,550' still applies, #0502 nets about $2,225/mo on 12 months. Not shown on the page: central AC, dishwasher, parking price; confirm.\n\nPlan Open One Bedroom Loft (1BR/1BA); sqft: 924-1,180 (one source) or 837-1,160 (another); building range 588-1,305. Open 1BR loft quoted $2,027-$2,077; other snippets: 1BR from $2,039, Zillow 1BR $2,017 and $2,499; unit 1208 (1,193 sq ft) $2,818. Dates unclear. Seen on 2026-11-05 (search snippets; listing dates often unclear).",
   "listing_url": "https://www.apartments.com/gas-company-lofts-los-angeles-ca/3ygw8sd/",
   "sources": [
    "https://www.apartments.com/gas-company-lofts-los-angeles-ca/3ygw8sd/",
@@ -26526,7 +26526,7 @@
     "summary": "Thin review data: VeryApt 6.5/10 (2 reviews, mgmt 6.0); 2019 ForRent review praised sense of community; Lucid Rents has 17 reviews (only one positive excerpt seen)."
    }
   },
-  "checked_on": "2026-10-26",
+  "checked_on": "Availability page screenshots shared by Daniel, 2026-11-05",
   "source": "claude",
   "my_status": "new",
   "my_note": "",
