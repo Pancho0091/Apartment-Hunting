@@ -107,7 +107,7 @@
     statuses: ["new", "watch", "tour", "applied"], mustHave: [], hideScam: true, newOnly: false,
     cats: "any", dogs: "any", garage: "any", ev: "any", gym: "any", pool: "any", elevator: "any", access: "any", balcony: "any",
     minYear: YEAR_MIN, yearUnknown: true, fwy: FWY_BANDS.map(([k]) => k), maxHeat: HEAT_MAX, minWalk: 0, walkUnknown: true, minDoc: 0,
-    specials: "any", dtla: false,
+    specials: "any", dtla: false, place: "", placeLabel: "",
   };
   const freshFilters = () => JSON.parse(JSON.stringify(DEFAULT_FILTERS));
   /* Saved filters from earlier versions kept an allow-list of LA regions; keep only what is hidden,
@@ -301,6 +301,10 @@
   const isNew = b => b.batch === "dtla-nov05";   // latest search round
   /* Downtown LA focus: the DTLA sub-districts plus Little Tokyo and Chinatown (LA market only). */
   const isDTLA = b => { const n = areaName(b); return n.startsWith("Downtown LA") || n === "Little Tokyo" || n === "Chinatown"; };
+  /* Downtown guide places: "area:<id>" (a scored neighborhood) or "sub:<name>" (a sub-district that is not a scored
+     neighborhood; its listings sit in the nearest scored area and their location note says so). */
+  const filedFrom = (b, name) => typeof b.location_note === "string" && b.location_note.includes(name + " is not a scored neighborhood");
+  const inPlace = (b, place) => place.startsWith("area:") ? b.area_id === place.slice(5) : filedFrom(b, place.slice(4));
   const statusName = k => (STATUSES.find(s => s.key === (k || "new")) || STATUSES[0]).name;
   /* Specials history (concessions research, LA): how often this building has run a special. */
   const PATTERN_WORD = { often: "Often", sometimes: "Sometimes", rarely: "Rarely", unknown: "—" };
@@ -410,6 +414,7 @@
     if (f.minWalk > 0) { const w = walkOf(b).v; if (w == null ? !f.walkUnknown : w < f.minWalk) return false; }
     if (f.minDoc > 0 && docPct(b) < f.minDoc) return false;
     if (f.dtla && S.market === "la" && !isDTLA(b)) return false;
+    if (f.place && S.market === "la" && !inPlace(b, f.place)) return false;
     if (f.specials !== "any" && S.hasConc) { const p = patternOf(b); if (f.specials === "often" ? p !== "often" : p !== "often" && p !== "sometimes") return false; }
     if (q) { const hs = haystack(b); for (const t of q.split(/\s+/)) if (t && !hs.includes(t)) return false; }
     return true;
@@ -554,6 +559,7 @@
     n += f.mustHave.length; if (f.hideScam !== d.hideScam) n++; if (f.newOnly) n++;
     if (f.specials !== "any" && S.hasConc) n++;
     if (f.dtla && S.market === "la") n++;
+    if (f.place && S.market === "la") n++;
     return n;
   }
   function tagList(id, items, arr, onChange, countMap, iconFn, field) {
@@ -1246,8 +1252,14 @@
     });
     const sub = `${plural(list.length, "region")} of the atlas, ranked by your weights. Listing counts follow the current filters.`;
     const atlas = root.querySelector(":scope > .atlas");
-    if (atlas) { root.querySelector(".viewhead-sub").textContent = sub; morph(atlas, plates, { enter: "pop" }); return; }
+    if (atlas) {
+      root.querySelector(".viewhead-sub").textContent = sub;
+      const g = root.querySelector(":scope > .dguide");
+      if (g && !GUIDE()) g.remove(); else if (g) guideCounts(g); else if (GUIDE()) root.prepend(dtlaGuide());
+      morph(atlas, plates, { enter: "pop" }); return;
+    }
     root.replaceChildren(
+      ...(GUIDE() ? [dtlaGuide()] : []),
       h("div", { class: "viewhead" },
         h("h2", { class: "viewhead-title" }, "Atlas of neighborhoods"),
         h("p", { class: "viewhead-sub", text: sub })),
@@ -1453,6 +1465,209 @@
         h("div", { class: "unsurveyed-actions" },
           S.view !== "map" ? h("button", { class: "btn", type: "button", text: `Open the ${mi.name} atlas`, onclick: () => setView("map") }) : null,
           h("button", { class: "btn ghost", type: "button", text: "Back to Los Angeles", onclick: () => setMarket("la") }))));
+  }
+
+  /* ==========================================================================
+     Downtown LA guide (LA market): twelve sub-districts, streets and edges, trends
+     ========================================================================== */
+  const GUIDE = () => (S.market === "la" && MARKETS.la && MARKETS.la.dtla && (MARKETS.la.dtla.subdistricts || []).length) ? MARKETS.la.dtla : null;
+  // Score strip in the order of the stated priorities; quiet and safety last.
+  const G_KEYS = [["coffee", "Coffee"], ["walk", "Walk"], ["freeway", "Freeway"], ["nightlife", "Nightlife"], ["errands", "Errands"], ["quiet", "Quiet"], ["safety", "Safety"]];
+  const G_LOW = new Set(["quiet", "safety"]);
+  const G_SORTS = [["guide", "Guide score"], ["coffee", "Coffee"], ["freeway", "Freeway"]];
+  const gslug = t => "dg-" + String(t).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  const UNVER = /\s*\((?:not verified this round; general knowledge, check before relying|verify per building)\)/g;
+  /* Guide score: the seven scores blended with the ranking weights (freeway from the roads weight, coffee and walk
+     share the coffee-and-walking weight, nightlife and errands share the nightlife-gyms-errands weight). */
+  function guideWeights() {
+    const w = S.weights;
+    return { freeway: w.drive || 0, coffee: (w.coffee || 0) / 2, walk: (w.coffee || 0) / 2, nightlife: (w.extras || 0) / 2, errands: (w.extras || 0) / 2, quiet: w.quiet || 0, safety: w.safety || 0 };
+  }
+  function guideScore(sd) {
+    const sc = sd.scores || {}, w = guideWeights();
+    let t = 0, n = 0;
+    for (const [k] of G_KEYS) { const v = sc[k]; if (typeof v === "number" && w[k] > 0) { t += v * w[k]; n += w[k]; } }
+    return n ? t / n : null;
+  }
+  const areaByName = name => S.areas.find(a => a.name === name) || null;
+  /* Listings in a sub-district's mapped area, or, for a sub-district that is not a scored neighborhood, the
+     listings whose location note says they were filed from it. */
+  function subPlace(sd) {
+    const a = areaByName(sd.maps_to_area);
+    if (a) return { a, key: "area:" + a.id, list: S.buildings.filter(b => b.area_id === a.id), label: a.name };
+    return { a: null, key: "sub:" + sd.maps_to_area, list: S.buildings.filter(b => filedFrom(b, sd.maps_to_area)), label: sd.name };
+  }
+  const shortHood = n => String(n || "").replace(/^Downtown LA – /, "");
+  function filterToPlace(sd) {
+    const p = subPlace(sd);
+    S.f.place = p.key; S.f.placeLabel = p.a ? shortHood(p.a.name) : sd.name;
+    saveF(); syncFilters();
+    if (drawerState) drawerState.close();
+    if (S.view === "areas" || S.view === "timeline" || S.view === "add" || S.view === "compare") setView("list"); else renderResults();
+    const r = $("results"); scrollTo({ top: r.getBoundingClientRect().top + scrollY - 6, behavior: reduceMotion() ? "auto" : "smooth" });
+    toast(`Showing listings in ${S.f.placeLabel}`);
+  }
+  function clearPlace() { S.f.place = ""; S.f.placeLabel = ""; saveF(); syncFilters(); renderResults(); }
+  /* Open the guide (Neighborhoods view, LA), optionally at one sub-district's card. */
+  function openGuide(name) {
+    if (drawerState) drawerState.close();
+    if (S.market !== "la") setMarket("la");
+    if (S.view !== "areas") setView("areas"); else renderResults();
+    requestAnimationFrame(() => {
+      const card = name ? document.getElementById(gslug(name)) : null, target = card || $("dguide");
+      if (!target) return;
+      target.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" });
+      if (card) {
+        const det = card.querySelector(".dg-more"); if (det) det.open = true;
+        card.classList.remove("flash"); void card.offsetWidth; card.classList.add("flash");
+        const t = card.querySelector(".dg-name"); if (t) t.focus({ preventScroll: true });
+      } else { const t = $("dguideTitle"); if (t) t.focus({ preventScroll: true }); }
+    });
+  }
+  /* A guide text: strips the research's "not verified" remark and shows it as a tag instead. */
+  function gtext(t, cls) {
+    if (t == null || t === "") return unk();
+    const str = String(t), un = UNVER.test(str); UNVER.lastIndex = 0;
+    return h("span", { class: cls || null }, str.replace(UNVER, ""), un ? h("span", { class: "tag unv", title: "Not verified in this research round; general knowledge", text: "Not verified" }) : null);
+  }
+  function gitems(xs) {
+    xs = (Array.isArray(xs) ? xs : [xs]).filter(x => x != null && x !== "");
+    if (!xs.length) return unk();
+    return h("ul", { class: "dg-items" }, ...xs.map(x => typeof x === "string" ? h("li", null, gtext(x))
+      : h("li", null, gtext(x.name || "—", "dg-item-n"), x.address ? h("span", { class: "dg-item-a", text: x.address }) : null)));
+  }
+  function gStrip(sc, cls) {
+    sc = sc || {};
+    const cell = ([k, t]) => {
+      const v = typeof sc[k] === "number" ? sc[k] : null;
+      return h("li", { class: "dg-s" + (G_LOW.has(k) ? " low" : ""), title: k === "safety" ? "Researcher's judgement from news and anecdotes, not crime data" : null },
+        h("span", { class: "dg-s-k", text: t }),
+        h("b", { class: "dg-s-v" }, v == null ? "—" : String(v), h("span", { class: "sr", text: v == null ? " not scored" : " out of 10" })),
+        h("span", { class: "dg-s-bar", "aria-hidden": "true" }, h("i", { style: { "--w": (v ?? 0) * 10 + "%" } })));
+    };
+    return h("div", { class: "dg-strip " + (cls || "") },
+      h("ul", { class: "dg-strip-hi", "aria-label": "Your priorities, scores out of 10" }, ...G_KEYS.filter(([k]) => !G_LOW.has(k)).map(cell)),
+      h("ul", { class: "dg-strip-lo", "aria-label": "Low priority, scores out of 10" }, ...G_KEYS.filter(([k]) => G_LOW.has(k)).map(cell)));
+  }
+  function guideCard(sd) {
+    const sc = guideScore(sd), place = subPlace(sd);
+    const countSlot = h("div", { class: "dg-count" });
+    const rows = [["Groceries", sd.groceries, 1], ["Gyms", sd.gyms, 1], ["Parks", sd.parks, 1], ["Metro", sd.metro, 1], ["Freeways", sd.freeways], ["Nightlife", sd.nightlife],
+      ["Noise", sd.noise], ["Safety", sd.safety], ["Homelessness", sd.homelessness], ["Cleanliness", sd.cleanliness], ["Who lives here", sd.residents], ["2026–28 changes", sd.changes_2026_28]];
+    const el = h("li", { class: "dg-card", id: gslug(sd.name), "data-key": gslug(sd.name) },
+      h("header", { class: "dg-head" },
+        h("span", { class: "dg-rank", "aria-hidden": "true" }),
+        h("div", { class: "dg-id" },
+          h("h4", { class: "dg-name", tabindex: "-1", text: sd.name }),
+          h("p", { class: "dg-area mono-label", text: place.a ? shortHood(place.a.name) : "Not a scored neighborhood" })),
+        h("div", { class: "dg-score", title: "Guide score: the seven scores blended with your ranking weights. Not the listing match." },
+          h("b", { text: f1(sc) }), h("span", { text: "Guide score" }))),
+      sd.vibe ? h("p", { class: "dg-vibe", text: sd.vibe }) : null,
+      sd.advice ? h("p", { class: "dg-advice" }, h("span", { class: "mono-label", text: "Advice" }), gtext(sd.advice)) : null,
+      gStrip(sd.scores),
+      h("details", { class: "dg-more srcs" },
+        h("summary", null, h("span", { text: "Coffee, errands, transit and conditions" })),
+        h("div", { class: "dg-detail" },
+          h("div", { class: "dg-coffee" }, h("p", { class: "mono-label", text: "Coffee" }), gitems(sd.coffee)),
+          h("dl", { class: "pkv dg-kv" }, ...rows.flatMap(([k, v, list]) => [h("dt", { text: k }), h("dd", null, list ? gitems(v) : gtext(v))]))),
+        srcLinks(sd.sources)),
+      countSlot);
+    el._sd = sd;
+    fillCount(countSlot, sd, place);
+    return el;
+  }
+  function fillCount(slot, sd, place) {
+    place = place || subPlace(sd);
+    const n = place.list.length, shown = place.list.filter(matches).length;
+    const where = place.a ? shortHood(place.a.name) : "the nearest scored area";
+    slot.replaceChildren(n
+      ? h("button", { type: "button", class: "dg-count-btn", "data-place": place.key, onclick: () => filterToPlace(sd) },
+          h("b", { text: n }), h("span", null, place.a ? ` ${n === 1 ? "listing" : "listings"} in ${where}` : ` ${n === 1 ? "listing" : "listings"} filed under ${where}`),
+          h("span", { class: "dg-count-sub", text: ` · ${shown} in view` }), h("span", { class: "minilist-arrow", "aria-hidden": "true", text: "→" }))
+      : h("p", { class: "dg-count-none", text: place.a ? `No listings in ${where} yet` : "No listings filed from here yet" }));
+  }
+  function guideCounts(g) { g.querySelectorAll(".dg-card").forEach(c => fillCount(c.querySelector(".dg-count"), c._sd)); }
+  function guideOrder(subs, k) {
+    const key = k === "coffee" || k === "freeway" ? sd => (sd.scores || {})[k] ?? -1 : sd => guideScore(sd) ?? -1;
+    return subs.map((sd, i) => [key(sd), guideScore(sd) ?? -1, i, sd]).sort((a, b) => b[0] - a[0] || b[1] - a[1] || a[2] - b[2]).map(x => x[3]);
+  }
+  function dtlaGuide() {
+    const G = GUIDE(), subs = G.subdistricts;
+    let gsort = ls.get("guide-sort", "guide"); if (!G_SORTS.some(([k]) => k === gsort)) gsort = "guide";
+    const cards = new Map(subs.map(sd => [sd, guideCard(sd)]));
+    const list = h("ol", { class: "dg-list", "aria-label": "Sub-districts" });
+    const number = order => order.forEach((sd, i) => { cards.get(sd).querySelector(".dg-rank").textContent = pad2(i + 1); });
+    const sortBtns = G_SORTS.map(([k, t]) => h("button", { type: "button", class: "seg-btn", "data-gsort": k, "aria-pressed": k === gsort ? "true" : "false", onclick: () => apply(k) }, h("span", { class: "seg-label", text: t })));
+    const ind = h("span", { class: "seg-ind", "aria-hidden": "true" });
+    const seg = h("div", { class: "seg dg-sort", role: "group", "aria-label": "Sort sub-districts" }, ind, ...sortBtns);
+    function apply(k) {
+      gsort = k; ls.set("guide-sort", k);
+      sortBtns.forEach(b => b.setAttribute("aria-pressed", b.dataset.gsort === k ? "true" : "false"));
+      placeIndicator(seg, ind, true);
+      const order = guideOrder(subs, k); number(order);
+      morph(list, order.map(sd => cards.get(sd)), { lazy: false, ghosts: false });
+    }
+    const order = guideOrder(subs, gsort); number(order);
+    list.append(...order.map(sd => cards.get(sd)));
+    const w = S.weights, edges = nonEmpty(G.edges), trends = nonEmpty(G.trends);
+    const wtxt = `Guide score blends the seven scores with your ranking weights: freeway ${w.drive || 0}, coffee and walking ${w.coffee || 0}, nightlife and errands ${w.extras || 0}, quiet ${w.quiet || 0}, safety ${w.safety || 0}. It ranks places, not listings, so it is separate from Match.`;
+    const sec = h("section", { class: "dguide", id: "dguide", "aria-labelledby": "dguideTitle" },
+      h("header", { class: "dguide-head" },
+        h("p", { class: "eyebrow", text: `Los Angeles · Downtown · ${plural(subs.length, "sub-district")}` }),
+        h("h2", { class: "viewhead-title", id: "dguideTitle", tabindex: "-1", text: "Downtown LA guide" }),
+        G.summary ? lede(G.summary) : null,
+        h("nav", { class: "tr-nav", "aria-label": "Guide sections" }, ...[["dg-subs", "Sub-districts"], ["dg-edges", "Streets and edges"], ["dg-trends", "Trends"]].filter(([id]) => id === "dg-subs" || (id === "dg-edges" ? edges : trends)).map(([id, t], i) =>
+          h("a", { href: "#" + id, class: "tr-navlink", onclick: e => { e.preventDefault(); const el = document.getElementById(id); if (el) el.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); } }, h("span", { class: "mono-label", text: ROMAN[i] }), t)))),
+      h("p", { class: "callout plain dg-caveat" }, h("b", { text: "About the safety scores. " }), "They are the researcher's judgement from news reports and anecdotes, not crime data."),
+      h("div", { class: "dg-subs", id: "dg-subs" },
+        h("div", { class: "dg-bar" }, h("span", { class: "mono-label", text: "Sort" }), seg, h("p", { class: "dg-weights", text: wtxt })),
+        list),
+      edges ? h("section", { class: "dg-edges", id: "dg-edges", "aria-labelledby": "dgEdgesTitle" },
+        h("header", { class: "dg-sechead" }, h("h3", { class: "rsub-title", id: "dgEdgesTitle", text: "Streets and edges" }), h("span", { class: "tag amber", text: "Walking-route advice" })),
+        h("p", { class: "muted small", text: "Blocks and boundaries to know when choosing a walking route. This is advice about routes, not a rating of the buildings on them." }),
+        h("ol", { class: "dg-edgelist" }, ...edges.map(x => h("li", null,
+          h("p", { class: "dg-where", text: x.where || "—" }), x.note ? h("p", { class: "dg-note", text: x.note }) : null, srcLinks(x.sources))))) : null,
+      trends ? h("section", { class: "dg-trends", id: "dg-trends", "aria-labelledby": "dgTrendsTitle" },
+        h("header", { class: "dg-sechead" }, h("h3", { class: "rsub-title", id: "dgTrendsTitle", text: "Trends" })),
+        h("ol", { class: "hist dg-trendlist" }, ...trends.slice().sort((a, b) => String(b.as_of || "").localeCompare(String(a.as_of || ""))).map(x => h("li", null,
+          h("span", { class: "hist-p", text: x.as_of || "Date —" }),
+          h("div", null, h("p", { class: "hist-e" }, h("b", { text: x.topic || "—" })), x.finding ? h("p", { class: "hist-x", text: x.finding }) : null, srcLinks(x.source)))))) : null);
+    requestAnimationFrame(() => placeIndicator(seg, ind, false));
+    if (window.ResizeObserver) new ResizeObserver(() => { if (seg.isConnected) { ind._x = null; placeIndicator(seg, ind, false); } }).observe(seg);
+    return sec;
+  }
+  /* Neighborhood drawer: the guide's sub-districts in this neighborhood, plus any non-scored sub-district whose
+     listings were filed here. */
+  function areaGuide(a) {
+    const G = GUIDE(); if (!G) return null;
+    const mapped = G.subdistricts.filter(sd => sd.maps_to_area === a.name);
+    const filed = G.subdistricts.filter(sd => !areaByName(sd.maps_to_area) && S.buildings.some(b => b.area_id === a.id && filedFrom(b, sd.maps_to_area)));
+    if (!mapped.length && !filed.length) return null;
+    const row = (sd, isFiled) => {
+      const n = isFiled ? S.buildings.filter(b => b.area_id === a.id && filedFrom(b, sd.maps_to_area)).length : 0;
+      return h("li", { class: "dg-mini" },
+        h("div", { class: "dg-mini-head" },
+          h("button", { type: "button", class: "linkish dg-mini-name", "data-guide-link": sd.name, onclick: () => openGuide(sd.name), text: sd.name }),
+          h("span", { class: "dg-mini-score" }, h("b", { text: f1(guideScore(sd)) }), h("span", { class: "mono-label", text: "Guide score" }))),
+        isFiled ? h("p", { class: "muted small", text: `Not a scored neighborhood. ${plural(n, "listing")} from here ${n === 1 ? "is" : "are"} filed under ${shortHood(a.name)}.` }) : null,
+        sd.advice ? h("p", { class: "dg-mini-t" }, gtext(firstSentence(sd.advice))) : sd.vibe ? h("p", { class: "dg-mini-t", text: firstSentence(sd.vibe) }) : null,
+        gStrip(sd.scores, "sm"));
+    };
+    return section("Downtown guide",
+      h("p", { class: "muted small", text: "Sub-districts from the Downtown LA guide in this neighborhood. Safety scores are the researcher's judgement, not crime data." }),
+      h("ul", { class: "dg-minis" }, ...mapped.map(sd => row(sd, false)), ...filed.map(sd => row(sd, true))));
+  }
+  /* Results header: a Downtown link while the Downtown chip is on, and the active guide place with a way out. */
+  function renderGuideNote() {
+    const el = $("guideNote");
+    const show = S.market === "la" && !!GUIDE() && (S.f.dtla || S.f.place) && ["list", "table", "map"].includes(S.view);
+    if (!show) { el.hidden = true; el.replaceChildren(); return; }
+    el.hidden = false;
+    el.replaceChildren(
+      h("span", { class: "mono-label gnote-k", text: S.f.place ? "Place" : "Downtown LA" }),
+      S.f.place ? h("span", { class: "gnote-place" }, h("span", { text: S.f.placeLabel || "One area" }),
+        h("button", { type: "button", class: "gnote-x", "aria-label": `Remove the ${S.f.placeLabel || "place"} filter`, onclick: clearPlace, text: "×" })) : null,
+      h("button", { type: "button", class: "gnote-link", "data-open-guide": "1", onclick: () => openGuide() }, "Open the Downtown guide", h("span", { class: "minilist-arrow", "aria-hidden": "true", text: "→" })));
   }
 
   /* ==========================================================================
@@ -2165,6 +2380,7 @@
     renderCount(list);
     renderStats(list);
     renderNote(list);
+    renderGuideNote();
     if (opts.summaryOnly) return;
     const root = $("view");
     const switching = root.dataset.view !== S.view || root.dataset.mkt !== S.market || !!opts.fade;
@@ -2256,7 +2472,8 @@
   }
   function reviewSection(b) {
     const r = b.reviews;
-    if (!r || (r.reputation_score == null && !(r.complaints || []).length && !(r.praise || []).length && !(r.management && r.management.summary)))
+    const news = r && nonEmpty(r.news), reddit = r && nonEmpty(r.reddit);
+    if (!r || (r.reputation_score == null && !(r.complaints || []).length && !(r.praise || []).length && !(r.management && r.management.summary) && !news && !reddit))
       return section("What residents say", h("p", { class: "muted", text: "No resident reviews found yet." }));
     const parts = REVIEW_PARTS.filter(([k]) => r[k] && (r[k].summary || r[k].score != null));
     return section("What residents say",
@@ -2275,6 +2492,10 @@
         h("div", { class: "subscore" },
           h("div", { class: "subscore-head" }, h("span", { text: label }), h("span", { class: "subscore-v" }, r[k].score != null ? h("span", { class: "meter xs", "aria-hidden": "true" }, h("i", { style: { "--w": r[k].score * 10 + "%" } })) : null, r[k].score != null ? r[k].score + "/10" : "")),
           r[k].summary ? h("p", { text: r[k].summary }) : null))) : null,
+      news ? h("div", { class: "rev-feed" }, h("p", { class: "mono-label", text: "In the news" }),
+        h("ul", { class: "rlist" }, ...news.map(x => h("li", null, h("p", { class: "rlist-k mono-label", text: x.when ? String(x.when) : "Date not found" }), h("p", { text: x.summary || "—" }), srcLinks(x.source))))) : null,
+      reddit ? h("div", { class: "rev-feed" }, h("p", { class: "mono-label", text: "On Reddit" }),
+        h("ul", { class: "rlist anec" }, ...reddit.map(x => h("li", null, h("span", { class: "strength anec", text: "Anecdotal" }), h("p", { text: x.summary || "—" }), srcLinks(x.source))))) : null,
       sources(r.sources, "Review sources"));
   }
   const REQ_DETAIL = {
@@ -2483,6 +2704,7 @@
       ex.vibe ? h("p", { class: "vibe" }, h("span", { class: "mono-label", text: "Vibe" }), ex.vibe) : null,
       factorBars(a, "in-drawer"),
       a.airports_other ? h("p", { class: "muted small", text: "Other airports: " + a.airports_other }) : null,
+      areaGuide(a),
       bs.length ? section(`Listings here`,
         h("ul", { class: "minilist" }, ...bs.map(b => h("li", null, h("button", { type: "button", class: "minilist-btn v-" + verdict(b), onclick: () => openBuilding(b) },
           h("span", { class: "minilist-name", text: b.name }), h("span", { class: "minilist-rent", text: money(rentOf(b)) }), h("span", { class: "minilist-arrow", "aria-hidden": "true", text: "→" })))))) : null,

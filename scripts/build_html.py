@@ -11,6 +11,9 @@ Embedded as DATA.markets = { la: {label, buildings, neighborhoods, geo}, seattle
 Rent timing research (optional): data/timing-la.json is embedded as DATA.markets.la.timing; its `areas`
 entries with an `area_id` are attached to LA neighborhoods as `a.concessions`. data/concessions-la.json
 ({listing id: {pattern, seen, ...}}) is attached to LA listings as `b.concessions`.
+
+Downtown LA guide (optional): data/dtla-guide.json ({subdistricts, edges, trends, summary}) is embedded as
+DATA.markets.la.dtla.
 """
 import datetime
 import json
@@ -89,6 +92,13 @@ if isinstance(timing, dict):
     timing = prune(timing)
     if timing:
         markets["la"]["timing"] = timing
+
+# Downtown LA sub-district guide (optional).
+guide = load("dtla-guide.json", None)
+if isinstance(guide, dict):
+    guide = prune(guide)
+    if guide.get("subdistricts"):
+        markets["la"]["dtla"] = guide
 
 counts = {}
 for key, m in markets.items():
