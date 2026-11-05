@@ -1578,7 +1578,7 @@ html.view-timeline .sidebar, html.view-timeline .filters-btn, html.view-timeline
 .dg-strip.sm .dg-s-v { font-size: 1.05rem; }
 .grow .dg-s-bar i { animation: barGrow 640ms var(--ease-glide) both; }
 .dg-more { padding-top: 10px; }
-.dg-more summary { min-height: 32px; }
+.dg-more summary { min-height: 40px; }
 .dg-detail { display: grid; gap: 12px; margin-top: 10px; }
 .dg-items { list-style: none; display: grid; gap: 6px; }
 .dg-items li { display: grid; gap: 1px; font-size: .82rem; color: var(--ink); }
@@ -1610,12 +1610,13 @@ html.view-timeline .sidebar, html.view-timeline .filters-btn, html.view-timeline
 .dg-minis { list-style: none; display: grid; gap: 10px; }
 .dg-mini { display: grid; gap: 8px; padding: 12px 14px; background: var(--panel); border: 1px solid var(--hairline-strong); border-radius: var(--r-2); }
 .dg-mini-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
-.dg-mini-name { font-size: 1.25rem; min-height: 32px; display: inline-flex; align-items: center; }
+.dg-mini-name { font-size: 1.25rem; min-height: 40px; display: inline-flex; align-items: center; }
 .dg-mini-score { display: inline-flex; align-items: baseline; gap: 6px; }
 .dg-mini-score b { font: 400 1.4rem/1 var(--font-serif); color: var(--green); }
 .dg-mini-t { font-size: .84rem; color: var(--ink-2); }
 .guidenote { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin-bottom: 14px; padding: 8px 10px 8px 16px; background: var(--green-wash); border: 1px solid color-mix(in srgb, var(--green) 35%, transparent); border-radius: var(--r-2); }
 .gnote-k { color: var(--green); }
+.gnote-t { font-size: .84rem; color: var(--ink-2); }
 .gnote-place { display: inline-flex; align-items: center; gap: 4px; padding-left: 10px; font: 400 1.1rem/1 var(--font-serif); color: var(--ink); border-left: 1px solid color-mix(in srgb, var(--green) 35%, transparent); }
 .gnote-x { all: unset; cursor: pointer; display: inline-grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; font-size: 1.1rem; color: var(--muted); }
 .gnote-x:hover { color: var(--ink); background: var(--panel); }

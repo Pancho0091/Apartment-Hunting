@@ -206,7 +206,11 @@ if (want("guide")) { // Downtown LA guide: chip link, cards, expand, sort, listi
   g.drawer_closed = await p.locator(".drawer").count() === 0;
   // listing reviews: news (dated) and Reddit (anecdotal)
   await clickView("list");
-  const rid = await p.evaluate(() => { const D = JSON.parse(document.getElementById("data").textContent); const b = D.markets.la.buildings.find(x => x.reviews && x.reviews.news && x.reviews.reddit); return b ? b.id : null; });
+  await p.evaluate(() => { const x = document.querySelector("#guideNote .gnote-x"); if (x) x.click(); }); await p.waitForTimeout(500);
+  g.place_cleared = await p.textContent("#count .count-real");
+  const ids = await p.evaluate(() => JSON.parse(document.getElementById("data").textContent).markets.la.buildings.filter(x => x.reviews && x.reviews.news && x.reviews.reddit).map(x => x.id));
+  const rid = (await p.evaluate(ids => { const shown = new Set([...document.querySelectorAll("#view [data-listing]")].map(e => e.dataset.listing)); return ids.find(i => shown.has(i)) || ids[0] || null; }, ids));
+  g.reviewed_with_news_and_reddit = ids.length;
   if (rid) {
     await p.evaluate(() => { document.getElementById("q").value = ""; });
     const name = await p.evaluate(id => JSON.parse(document.getElementById("data").textContent).markets.la.buildings.find(x => x.id === id).name, rid);

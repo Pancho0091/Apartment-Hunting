@@ -1558,7 +1558,7 @@
       h("header", { class: "dg-head" },
         h("span", { class: "dg-rank", "aria-hidden": "true" }),
         h("div", { class: "dg-id" },
-          h("h4", { class: "dg-name", tabindex: "-1", text: sd.name }),
+          h("h3", { class: "dg-name", tabindex: "-1", text: sd.name }),
           h("p", { class: "dg-area mono-label", text: place.a ? shortHood(place.a.name) : "Not a scored neighborhood" })),
         h("div", { class: "dg-score", title: "Guide score: the seven scores blended with your ranking weights. Not the listing match." },
           h("b", { text: f1(sc) }), h("span", { text: "Guide score" }))),
@@ -1663,11 +1663,12 @@
     const show = S.market === "la" && !!GUIDE() && (S.f.dtla || S.f.place) && ["list", "table", "map"].includes(S.view);
     if (!show) { el.hidden = true; el.replaceChildren(); return; }
     el.hidden = false;
-    el.replaceChildren(
+    el.replaceChildren(...[
       h("span", { class: "mono-label gnote-k", text: S.f.place ? "Place" : "Downtown LA" }),
       S.f.place ? h("span", { class: "gnote-place" }, h("span", { text: S.f.placeLabel || "One area" }),
         h("button", { type: "button", class: "gnote-x", "aria-label": `Remove the ${S.f.placeLabel || "place"} filter`, onclick: clearPlace, text: "×" })) : null,
-      h("button", { type: "button", class: "gnote-link", "data-open-guide": "1", onclick: () => openGuide() }, "Open the Downtown guide", h("span", { class: "minilist-arrow", "aria-hidden": "true", text: "→" })));
+      S.f.place ? null : h("span", { class: "gnote-t", text: "Sub-district scores, streets to avoid on foot, and trends." }),
+      h("button", { type: "button", class: "gnote-link", "data-open-guide": "1", onclick: () => openGuide() }, "Open the Downtown guide", h("span", { class: "minilist-arrow", "aria-hidden": "true", text: "→" }))].filter(Boolean));
   }
 
   /* ==========================================================================
@@ -2470,9 +2471,12 @@
     if (!list || !list.length) return null;
     return h("details", { class: "srcs" }, h("summary", null, h("span", { text: `${label || "Sources"} (${list.length})` })), h("ol", null, ...list.map(u => h("li", null, linkOut(u)))));
   }
+  const newsKey = x => /^\d{4}/.test(String(x.when || "")) ? String(x.when) : "";
+  const newsWhen = x => { const w = String(x.when || "").trim(); return !w || /^undated$/i.test(w) ? "Date not found" : w; };
+  const webSrc = v => (Array.isArray(v) ? v : [v]).filter(u => u && hostOf(u));
   function reviewSection(b) {
     const r = b.reviews;
-    const news = r && nonEmpty(r.news), reddit = r && nonEmpty(r.reddit);
+    const news = r && nonEmpty(r.news) && r.news.slice().sort((a, b) => newsKey(b).localeCompare(newsKey(a))), reddit = r && nonEmpty(r.reddit);
     if (!r || (r.reputation_score == null && !(r.complaints || []).length && !(r.praise || []).length && !(r.management && r.management.summary) && !news && !reddit))
       return section("What residents say", h("p", { class: "muted", text: "No resident reviews found yet." }));
     const parts = REVIEW_PARTS.filter(([k]) => r[k] && (r[k].summary || r[k].score != null));
@@ -2493,9 +2497,9 @@
           h("div", { class: "subscore-head" }, h("span", { text: label }), h("span", { class: "subscore-v" }, r[k].score != null ? h("span", { class: "meter xs", "aria-hidden": "true" }, h("i", { style: { "--w": r[k].score * 10 + "%" } })) : null, r[k].score != null ? r[k].score + "/10" : "")),
           r[k].summary ? h("p", { text: r[k].summary }) : null))) : null,
       news ? h("div", { class: "rev-feed" }, h("p", { class: "mono-label", text: "In the news" }),
-        h("ul", { class: "rlist" }, ...news.map(x => h("li", null, h("p", { class: "rlist-k mono-label", text: x.when ? String(x.when) : "Date not found" }), h("p", { text: x.summary || "—" }), srcLinks(x.source))))) : null,
+        h("ul", { class: "rlist" }, ...news.map(x => h("li", null, h("p", { class: "rlist-k mono-label", text: newsWhen(x) }), h("p", { text: x.summary || "—" }), srcLinks(webSrc(x.source)))))) : null,
       reddit ? h("div", { class: "rev-feed" }, h("p", { class: "mono-label", text: "On Reddit" }),
-        h("ul", { class: "rlist anec" }, ...reddit.map(x => h("li", null, h("span", { class: "strength anec", text: "Anecdotal" }), h("p", { text: x.summary || "—" }), srcLinks(x.source))))) : null,
+        h("ul", { class: "rlist anec" }, ...reddit.map(x => h("li", null, h("span", { class: "strength anec", text: "Anecdotal" }), h("p", { text: x.summary || "—" }), srcLinks(webSrc(x.source)))))) : null,
       sources(r.sources, "Review sources"));
   }
   const REQ_DETAIL = {
