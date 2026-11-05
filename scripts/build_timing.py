@@ -5,7 +5,8 @@ Reads data/research/timing/*.json (written by the research passes):
   timing_areas.json    concessions by submarket + lease-up buildings
   tactics.json         operators, tactics, pitfalls, California rules, anecdotes
   concessions_*.json   per-listing specials history (arrays keyed by listing id)
-Writes data/timing-la.json and data/concessions-la.json.
+Writes data/timing-la.json and data/concessions-la.json; also data/dtla-guide.json from
+data/research/dtla/dtla_guide.json.
 
 Usage: python3 -I scripts/build_timing.py
 """
@@ -22,7 +23,7 @@ def load(name, default):
 
 
 # Research notes were written about "the client"; the tool speaks to the reader.
-WORDING = [("per client list", "per our listing data"), ("client list", "our listing data"), ("Client list", "Our listing data"),
+WORDING = [("for this client", "for you"), ("per client list", "per our listing data"), ("client list", "our listing data"), ("Client list", "Our listing data"),
            ("above client budget", "above your budget"), ("outside client's", "outside your"),
            ("the client list's", "the listing's"), ("The client's", "Your"), ("the client's", "your"),
            ("The client", "You"), ("the client", "you")]
@@ -91,6 +92,9 @@ def main():
 
     (ROOT / "data/timing-la.json").write_text(dumps(timing))
     (ROOT / "data/concessions-la.json").write_text(dumps(conc))
+    guide = ROOT / "data/research/dtla/dtla_guide.json"
+    if guide.exists():  # Downtown LA sub-district guide (Nov 2026 deep dive)
+        (ROOT / "data/dtla-guide.json").write_text(dumps(json.loads(guide.read_text())))
     linked = sum(1 for a in area_rows if a.get("area_id"))
     print(f"timing-la.json: {len(area_rows)} areas ({linked} linked), {len(timing.get('lease_ups') or [])} lease-ups, "
           f"{len(timing.get('operators') or [])} operators · concessions-la.json: {len(conc)} listings"
