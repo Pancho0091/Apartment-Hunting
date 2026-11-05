@@ -107,7 +107,7 @@
     statuses: ["new", "watch", "tour", "applied"], mustHave: [], hideScam: true, newOnly: false,
     cats: "any", dogs: "any", garage: "any", ev: "any", gym: "any", pool: "any", elevator: "any", access: "any", balcony: "any",
     minYear: YEAR_MIN, yearUnknown: true, fwy: FWY_BANDS.map(([k]) => k), maxHeat: HEAT_MAX, minWalk: 0, walkUnknown: true, minDoc: 0,
-    specials: "any",
+    specials: "any", dtla: false,
   };
   const freshFilters = () => JSON.parse(JSON.stringify(DEFAULT_FILTERS));
   /* Saved filters from earlier versions kept an allow-list of LA regions; keep only what is hidden,
@@ -298,7 +298,9 @@
   const areaName = b => { const a = S.areaById.get(b.area_id); return a ? a.name : ""; };
   /* Shown place name; never guesses a region the listing does not have (regionOf defaults for filtering only). */
   const whereText = b => areaName(b) || b.region || "Neighborhood not set";
-  const isNew = b => b.batch === "new-oct15" || b.batch === "private-oct15";
+  const isNew = b => b.batch === "dtla-nov05";   // latest search round
+  /* Downtown LA focus: the DTLA sub-districts plus Little Tokyo and Chinatown (LA market only). */
+  const isDTLA = b => { const n = areaName(b); return n.startsWith("Downtown LA") || n === "Little Tokyo" || n === "Chinatown"; };
   const statusName = k => (STATUSES.find(s => s.key === (k || "new")) || STATUSES[0]).name;
   /* Specials history (concessions research, LA): how often this building has run a special. */
   const PATTERN_WORD = { often: "Often", sometimes: "Sometimes", rarely: "Rarely", unknown: "—" };
@@ -407,6 +409,7 @@
     if (f.maxHeat < HEAT_MAX) { const t = summerHigh(b); if (t != null && t > f.maxHeat) return false; }
     if (f.minWalk > 0) { const w = walkOf(b).v; if (w == null ? !f.walkUnknown : w < f.minWalk) return false; }
     if (f.minDoc > 0 && docPct(b) < f.minDoc) return false;
+    if (f.dtla && S.market === "la" && !isDTLA(b)) return false;
     if (f.specials !== "any" && S.hasConc) { const p = patternOf(b); if (f.specials === "often" ? p !== "often" : p !== "often" && p !== "sometimes") return false; }
     if (q) { const hs = haystack(b); for (const t of q.split(/\s+/)) if (t && !hs.includes(t)) return false; }
     return true;
@@ -496,6 +499,7 @@
      ========================================================================== */
   const sameSet = (a, b) => a.length === b.length && a.every(x => b.includes(x));
   const CHIPS = [
+    { k: "dtla", t: "Downtown LA", on: f => f.dtla, set: (f, on) => { f.dtla = on; } },
     { k: "all", t: "Meets everything", on: f => sameSet(f.verdicts, ["all"]), set: (f, on) => { f.verdicts = on ? ["all"] : DEFAULT_FILTERS.verdicts.slice(); } },
     { k: "ac", t: "Central AC confirmed", on: f => f.mustHave.includes("ac"), set: (f, on) => toggleIn(f.mustHave, "ac", on) },
     { k: "wd", t: "Washer/dryer confirmed", on: f => f.mustHave.includes("wd"), set: (f, on) => toggleIn(f.mustHave, "wd", on) },
@@ -519,6 +523,7 @@
       $("chips").replaceChildren(...chipEls.map(x => x.el));
     }
     for (const { c, el, n: nEl } of chipEls) {
+      el.hidden = c.k === "dtla" && S.market !== "la";
       const on = c.on(S.f);
       const trial = JSON.parse(JSON.stringify(S.f)); c.set(trial, !on);
       const n = S.buildings.filter(b => matchesWith(b, trial, S.q)).length;
@@ -548,6 +553,7 @@
     for (const t of TRI_FILTERS) if (f[t.k] !== "any") n++;
     n += f.mustHave.length; if (f.hideScam !== d.hideScam) n++; if (f.newOnly) n++;
     if (f.specials !== "any" && S.hasConc) n++;
+    if (f.dtla && S.market === "la") n++;
     return n;
   }
   function tagList(id, items, arr, onChange, countMap, iconFn, field) {
