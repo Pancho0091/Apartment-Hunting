@@ -1645,3 +1645,25 @@ html.view-timeline .sidebar, html.view-timeline .filters-btn, html.view-timeline
   .specimen .seal { transform: rotate(-10deg); }
   .count-n { transition: none; }
 }
+
+/* ---------- hero idle: slow, subtle motion after the draw-in (app.js drawHero adds .hero-live) ---------- */
+.hz-sway, .hz-swell, .hz-foam { transform-box: view-box; }
+.hz-palm1 { transform-origin: 818px 226px; }
+.hz-palm2 { transform-origin: 892px 226px; }
+.hz-sage { transform-origin: 646px 212px; }
+.hz-bop { transform-origin: 990px 224px; }
+.hz-branch { transform-origin: 1206px 4px; }
+.hero-live .hz-palm1 { animation: hz-sway 9s cubic-bezier(.45,0,.55,1) infinite alternate; }
+.hero-live .hz-palm2 { animation: hz-sway 11s cubic-bezier(.45,0,.55,1) -3s infinite alternate-reverse; }
+.hero-live .hz-sage { animation: hz-sway-sm 7s cubic-bezier(.45,0,.55,1) -2s infinite alternate; }
+.hero-live .hz-bop { animation: hz-sway-sm 8s cubic-bezier(.45,0,.55,1) -5s infinite alternate-reverse; }
+.hero-live .hz-branch { animation: hz-branch 10s cubic-bezier(.45,0,.55,1) infinite alternate; }
+.hero-live .hz-swell { animation: hz-drift 14s ease-in-out infinite alternate; }
+.hero-live .hz-foam { animation: hz-foam 6s ease-in-out infinite alternate; }
+.hero-paused * { animation-play-state: paused !important; }
+@keyframes hz-sway { from { transform: rotate(-.6deg); } to { transform: rotate(.6deg); } }
+@keyframes hz-sway-sm { from { transform: rotate(-1deg); } to { transform: rotate(1deg); } }
+@keyframes hz-branch { from { transform: rotate(-.5deg); } to { transform: rotate(.7deg); } }
+@keyframes hz-drift { from { transform: translateX(-4px); } to { transform: translateX(4px); } }
+@keyframes hz-foam { from { opacity: .55; } to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .hero-live .hz-sway, .hero-live .hz-swell, .hero-live .hz-foam { animation: none; } }

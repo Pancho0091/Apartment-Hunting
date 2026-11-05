@@ -1,5 +1,5 @@
 // Visual + functional check for the built tool.
-// Usage: PW=$(npm root -g)/playwright/index.mjs node scripts/check.mjs <out_dir> [--views=list,table,map,areas,compare,detail,area,filters,markets,perf,search,timeline,mobile]
+// Usage: PW=$(npm root -g)/playwright/index.mjs node scripts/check.mjs <out_dir> [--views=list,table,map,areas,compare,detail,area,filters,markets,perf,search,timeline,guide,mobile]
 // Prints JSON (counts, horizontal-scroll flags, per-market counts, filter timing, console errors) and writes screenshots.
 const { chromium } = await import(process.env.PW || "playwright");
 const out = process.argv[2] || "shots";
@@ -149,6 +149,84 @@ if (want("timeline")) { // Timeline view: chart, checklist, calendar download, r
   await clickView("list");
   report.timeline = t;
 }
+if (want("guide")) { // Downtown LA guide: chip link, cards, expand, sort, listing-count link, drawer section, reviews
+  const g = {};
+  await p.locator('[data-market="la"]').click(); await p.waitForTimeout(500);
+  await clickView("list"); await p.evaluate(() => scrollTo({ top: 0, behavior: "instant" }));
+  const chip = p.locator(".chip", { hasText: "Downtown LA" }).first();
+  await chip.click(); await p.waitForTimeout(600);
+  g.chip_count = await p.textContent("#count .count-real");
+  g.chip_link = await p.locator("#guideNote [data-open-guide]").count() > 0;
+  await p.locator("#guideNote [data-open-guide]").click(); await p.waitForTimeout(1200);
+  g.opened_from_chip = await p.getAttribute('[data-view="areas"]', "aria-pressed");
+  g.cards = await p.locator(".dg-card").count();
+  g.strip_order = await p.locator(".dg-card").first().locator(".dg-s-k").allTextContents();
+  g.edges = await p.locator(".dg-edgelist > li").count();
+  g.trends = await p.locator(".dg-trendlist > li").count();
+  g.caveat = await p.locator(".dg-caveat").count();
+  g.order_guide = await p.evaluate(() => [...document.querySelectorAll(".dg-card")].sort((a, b) => (+a.style.order || 0) - (+b.style.order || 0)).map(c => c.querySelector(".dg-name").textContent).slice(0, 3));
+  await p.evaluate(() => { const r = document.getElementById("dguide"); scrollTo({ top: r.getBoundingClientRect().top + scrollY - 70, behavior: "instant" }); }); await p.waitForTimeout(400);
+  await p.screenshot({ path: `${out}/guide.png` });
+  const card = p.locator(".dg-card").first();
+  await card.locator(".dg-more > summary").click(); await p.waitForTimeout(400);
+  g.expanded = await card.locator(".dg-more").evaluate(d => d.open);
+  g.detail_items = await card.locator(".dg-detail li").count();
+  await card.scrollIntoViewIfNeeded(); await p.evaluate(() => scrollBy(0, -70)); await p.waitForTimeout(300);
+  await p.screenshot({ path: `${out}/guide-card.png` });
+  await card.locator(".dg-more > summary").click(); await p.waitForTimeout(200);
+  await p.locator('[data-gsort="freeway"]').click(); await p.waitForTimeout(900);
+  g.order_freeway = await p.evaluate(() => [...document.querySelectorAll(".dg-card")].sort((a, b) => (+a.style.order || 0) - (+b.style.order || 0)).map(c => c.querySelector(".dg-name").textContent + " " + c.querySelectorAll(".dg-s-v")[2].firstChild.textContent).slice(0, 3));
+  await p.locator('[data-gsort="coffee"]').click(); await p.waitForTimeout(900);
+  g.order_coffee = await p.evaluate(() => [...document.querySelectorAll(".dg-card")].sort((a, b) => (+a.style.order || 0) - (+b.style.order || 0)).map(c => c.querySelector(".dg-name").textContent).slice(0, 3));
+  await p.evaluate(() => { const r = document.getElementById("dg-subs"); scrollTo({ top: r.getBoundingClientRect().top + scrollY - 70, behavior: "instant" }); }); await p.waitForTimeout(300);
+  await p.screenshot({ path: `${out}/guide-sorted.png` });
+  await p.evaluate(() => { const r = document.getElementById("dg-edges"); scrollTo({ top: r.getBoundingClientRect().top + scrollY - 70, behavior: "instant" }); }); await p.waitForTimeout(300);
+  await p.screenshot({ path: `${out}/guide-edges.png` });
+  await p.locator('[data-gsort="guide"]').click(); await p.waitForTimeout(600);
+  const lt = p.locator("#dg-little-tokyo .dg-count-btn");
+  g.lt_link = (await lt.textContent()).replace(/\s+/g, " ").trim();
+  await lt.click(); await p.waitForTimeout(1000);
+  g.lt_view = await p.getAttribute('[data-view="list"]', "aria-pressed");
+  g.lt_count = await p.textContent("#count .count-real");
+  g.lt_listings_areas = await p.evaluate(() => [...document.querySelectorAll("#view [data-listing]")].filter(e => e.offsetParent).length);
+  g.place_note = (await p.textContent("#guideNote")).replace(/\s+/g, " ").trim();
+  await toResults(); await p.screenshot({ path: `${out}/guide-filtered.png` });
+  // drawer guide section for Little Tokyo
+  await clickView("areas");
+  await p.evaluate(() => { const pl = [...document.querySelectorAll(".plate")].find(x => x.querySelector(".plate-name").textContent.trim() === "Little Tokyo"); pl.scrollIntoView({ block: "center" }); });
+  await p.waitForTimeout(300);
+  await p.evaluate(() => [...document.querySelectorAll(".plate")].find(x => x.querySelector(".plate-name").textContent.trim() === "Little Tokyo").click());
+  await p.waitForTimeout(900);
+  g.drawer_guide = await p.evaluate(() => { const s = [...document.querySelectorAll(".drawer .dsec")].find(x => /Downtown guide/.test(x.querySelector(".dsec-title").textContent)); return s ? [...s.querySelectorAll(".dg-mini-name")].map(b => b.textContent) : null; });
+  await p.evaluate(() => { const s = [...document.querySelectorAll(".drawer .dsec")].find(x => /Downtown guide/.test(x.querySelector(".dsec-title").textContent)); if (s) { s.scrollIntoView({ block: "start" }); document.querySelector(".drawer").scrollTop -= 70; } });
+  await p.waitForTimeout(300);
+  await p.screenshot({ path: `${out}/guide-drawer.png` });
+  await p.locator(".drawer [data-guide-link]").first().click(); await p.waitForTimeout(1000);
+  g.drawer_link_target = await p.evaluate(() => { const c = document.querySelector(".dg-card.flash"); return c ? c.querySelector(".dg-name").textContent : null; });
+  g.drawer_closed = await p.locator(".drawer").count() === 0;
+  // listing reviews: news (dated) and Reddit (anecdotal)
+  await clickView("list");
+  const rid = await p.evaluate(() => { const D = JSON.parse(document.getElementById("data").textContent); const b = D.markets.la.buildings.find(x => x.reviews && x.reviews.news && x.reviews.reddit); return b ? b.id : null; });
+  if (rid) {
+    await p.evaluate(() => { document.getElementById("q").value = ""; });
+    const name = await p.evaluate(id => JSON.parse(document.getElementById("data").textContent).markets.la.buildings.find(x => x.id === id).name, rid);
+    await p.locator("#q").fill(name.toLowerCase()); await p.waitForTimeout(500);
+    const row = p.locator(`[data-listing="${rid}"]`);
+    if (await row.count()) {
+      await row.first().click(); await p.waitForTimeout(900);
+      g.reviews_news = await p.locator(".drawer .rev-feed .rlist:not(.anec) li").count();
+      g.reviews_reddit = await p.locator(".drawer .rev-feed .rlist.anec li").count();
+      await p.evaluate(() => { const s = document.querySelector(".drawer .rev-feed"); if (s) { s.scrollIntoView({ block: "start" }); document.querySelector(".drawer").scrollTop -= 70; } });
+      await p.waitForTimeout(300); await p.screenshot({ path: `${out}/guide-reviews.png` });
+      await p.keyboard.press("Escape"); await p.waitForTimeout(400);
+    } else g.reviews = "listing hidden by filters: " + rid;
+    await p.locator("#q").fill(""); await p.waitForTimeout(300);
+  }
+  await p.evaluate(() => { const x = document.querySelector("#guideNote .gnote-x"); if (x) x.click(); });
+  await p.locator(".chip", { hasText: "Downtown LA" }).first().click(); await p.waitForTimeout(500);
+  g.hscroll = await p.evaluate(() => document.documentElement.scrollWidth > innerWidth);
+  report.guide = g;
+}
 if (want("mobile")) {
   const m = await page({ width: 390, height: 844 }, 2);
   report.hscroll_mobile = await m.evaluate(() => document.documentElement.scrollWidth > innerWidth);
@@ -177,6 +255,17 @@ if (want("mobile")) {
     await m.evaluate(() => { const r = document.querySelector(".tresearch"); scrollTo({ top: r.getBoundingClientRect().top + scrollY - 8, behavior: "instant" }); }); await m.waitForTimeout(400);
     await m.screenshot({ path: `${out}/mobile-timeline-research.png` });
     report.timeline_mobile.hscroll_research = await m.evaluate(() => document.documentElement.scrollWidth > innerWidth);
+    await m.locator('[data-view="list"]').first().click(); await m.waitForTimeout(500);
+    await m.evaluate(() => scrollTo({ top: 0, behavior: "instant" }));
+  }
+  if (want("guide")) { // Downtown guide at phone width
+    await m.locator('[data-market="la"]').click(); await m.waitForTimeout(500);
+    await m.locator('[data-view="areas"]').first().click(); await m.waitForTimeout(900);
+    await m.evaluate(() => { const r = document.getElementById("dg-subs"); scrollTo({ top: r.getBoundingClientRect().top + scrollY - 64, behavior: "instant" }); }); await m.waitForTimeout(400);
+    await m.screenshot({ path: `${out}/mobile-guide.png` });
+    await m.locator(".dg-card .dg-more > summary").first().click(); await m.waitForTimeout(300);
+    report.guide_mobile = { hscroll: await m.evaluate(() => document.documentElement.scrollWidth > innerWidth), cards: await m.locator(".dg-card").count() };
+    await m.screenshot({ path: `${out}/mobile-guide-card.png`, fullPage: false });
     await m.locator('[data-view="list"]').first().click(); await m.waitForTimeout(500);
     await m.evaluate(() => scrollTo({ top: 0, behavior: "instant" }));
   }

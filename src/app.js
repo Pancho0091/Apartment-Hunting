@@ -2854,16 +2854,20 @@
     const span = Math.max(1, maxX - minX);
     for (const it of items) {
       const t = (it.x - minX) / span;                 // 0 at left .. 1 at right
-      const delay = 40 + t * 380;
+      const delay = 60 + t * 570;                       // 50% slower than the first cut
       if (it.stroked && it.len > 4) {
         const L = (it.len + 2).toFixed(1);
         it.el.style.strokeDasharray = `${L} ${L}`;
-        const a = it.el.animate([{ strokeDashoffset: L }, { strokeDashoffset: 0 }], { duration: 760, delay, easing: "cubic-bezier(.45,.05,.25,1)", fill: "backwards" });
+        const a = it.el.animate([{ strokeDashoffset: L }, { strokeDashoffset: 0 }], { duration: 1140, delay, easing: "cubic-bezier(.33,0,.15,1)", fill: "backwards" });
         a.onfinish = () => { it.el.style.strokeDasharray = ""; };
       } else {
-        it.el.animate([{ opacity: 0 }, { opacity: getComputedStyle(it.el).opacity }], { duration: 520, delay: delay + 260, easing: "ease-out", fill: "backwards" });
+        it.el.animate([{ opacity: 0 }, { opacity: getComputedStyle(it.el).opacity }], { duration: 900, delay: delay + 390, easing: "cubic-bezier(.33,0,.15,1)", fill: "backwards" });
       }
     }
+    // Once drawn, let the scene idle: palms and plants sway, the swell drifts (CSS, section "hero idle").
+    setTimeout(() => svg.classList.add("hero-live"), 60 + 570 + 1140 + 200);
+    // Pause the idle motion while the header is off screen.
+    if ("IntersectionObserver" in window) new IntersectionObserver(es => es.forEach(e => svg.classList.toggle("hero-paused", !e.isIntersecting))).observe(svg);
   }
   function renderArt() {
     const hero = ill("hero");

@@ -107,6 +107,10 @@ for key, m in markets.items():
         b["location_note"] = clean_note(b.get("location_note"))
     for a in m["neighborhoods"]:
         a["market"] = key
+        # Not shown anywhere in the tool: the remote-work notes, and a copy of the name.
+        a.pop("remote_work", None)
+        if a.get("neighborhood") == a.get("name"):
+            a.pop("neighborhood", None)
     m["buildings"] = [prune(b) for b in m["buildings"]]
     m["neighborhoods"] = [prune(a) for a in m["neighborhoods"]]
     counts[key] = len(m["buildings"])
