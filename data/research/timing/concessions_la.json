@@ -1,0 +1,626 @@
+[
+ {
+  "id": "avant",
+  "name": "Avant",
+  "pattern": "often",
+  "seen": [
+   {
+    "when": "2025-04",
+    "offer": "Up to $2,500 savings, lease start by 4/5/25 (Essex page)",
+    "source": "https://essexapartmenthomes.com/apartments/los-angeles/avant"
+   },
+   {
+    "when": "2025-06",
+    "offer": "Save up to $2,500 off rent plus an additional week free for leases starting by 6/28/2025 (select units, 12-month leases)",
+    "source": "https://edge.apartmentiq.io/los-angeles-ca/avant"
+   },
+   {
+    "when": "2026-10 (per client list)",
+    "offer": "Up to $1,900 off, applied to month 3 (select units, OAC)",
+    "source": "LIST_LA.tsv"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": "Specials are tied to lease-start deadlines; ask whether a similar credit will apply for a late-Jan/Feb start.",
+  "evidence": "Essex has run dollar-off specials at Avant repeatedly (spring 2025, summer 2025, Oct 2026); format is a flat dollar credit rather than weeks free, sometimes with an extra week free for a deadline lease start.",
+  "sources": [
+   "https://essexapartmenthomes.com/apartments/los-angeles/avant",
+   "https://edge.apartmentiq.io/los-angeles-ca/avant"
+  ]
+ },
+ {
+  "id": "glo",
+  "name": "Glo",
+  "pattern": "often",
+  "seen": [
+   {
+    "when": "2025-02",
+    "offer": "Up to 1 month free on select homes, through Feb 22, 2025",
+    "source": "https://apartmentlist.com/ca/los-angeles/glo"
+   },
+   {
+    "when": "spring 2026",
+    "offer": "Up to 1.5 months free on select homes, new residents only, through May 9, 2026",
+    "source": "https://hotpads.com/glo-los-angeles-ca-90017-skfrds/pad"
+   },
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "1.5 MONTHS FREE badge (3BR, Redfin)",
+    "source": "https://www.redfin.com/city/11203/CA/Los-Angeles/3-bedroom-apartments-for-rent/page-9"
+   },
+   {
+    "when": "2026-10 (per client list)",
+    "offer": "Up to 1 month free on select homes through Oct 24, 2026",
+    "source": "LIST_LA.tsv"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": "Offers expire on fixed dates and get renewed (often at a different size); if the current one lapses, ask when the next will post. Operator-level (Equity Residential): earnings-call summaries say EQR started using concessions in LA in early 2024 and in Q2 2025 concessions averaged ~7 days per move-in, expected to continue in parts of LA (https://fintool.com/app/research/companies/EQR/earnings/Q1 2024 ; https://fintool.com/app/research/companies/EQR/earnings/Q3 2024 ; https://nz.finance.yahoo.com/news/equity-residential-eqr-q1-2024-071414445.html). Equity offers follow a recurring format: 'Up to X months free on select homes, new residents only, transfers excluded, offer good thru <date>'.",
+  "evidence": "Recurring 'up to X months free, new residents only' offers in Feb 2025, spring 2026 and Oct 2026; wording matches Equity Residential's template, supporting Equity management. A Jan 2026 Matthews offering memorandum for 1050 Wilshire suggests the property was marketed for sale in 2026 (possible ownership change).",
+  "sources": [
+   "https://apartmentlist.com/ca/los-angeles/glo",
+   "https://hotpads.com/glo-los-angeles-ca-90017-skfrds/pad",
+   "https://www.redfin.com/city/11203/CA/Los-Angeles/3-bedroom-apartments-for-rent/page-9",
+   "https://cms.matthews.com/wp-content/uploads/2026/01/1050-Wilshire-Blvd-Los-Angeles-CA-OM.pdf"
+  ]
+ },
+ {
+  "id": "jia",
+  "name": "Jia",
+  "pattern": "often",
+  "seen": [
+   {
+    "when": "spring 2026",
+    "offer": "Up to 1 month free on select homes, new residents only, through May 23, 2026",
+    "source": "https://hotpads.com/jia-los-angeles-ca-90012-249n450/pad"
+   },
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "1 MONTH FREE on studios ($1,893+) and 1BR ($2,325+, 686-849 sq ft); none on 2BR (Redfin)",
+    "source": "https://www.redfin.com/neighborhood/483/CA/Los-Angeles/Chinatown/1-bedroom-apartments-for-rent"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": null,
+  "evidence": "Equity template offers seen spring 2026 and on undated Redfin snapshots; client list shows a current undisclosed 'Special Offer' on several 1BRs. Operator-level (Equity Residential): earnings-call summaries say EQR started using concessions in LA in early 2024 and in Q2 2025 concessions averaged ~7 days per move-in, expected to continue in parts of LA (https://fintool.com/app/research/companies/EQR/earnings/Q1 2024 ; https://fintool.com/app/research/companies/EQR/earnings/Q3 2024 ; https://nz.finance.yahoo.com/news/equity-residential-eqr-q1-2024-071414445.html). Equity offers follow a recurring format: 'Up to X months free on select homes, new residents only, transfers excluded, offer good thru <date>'.",
+  "sources": [
+   "https://hotpads.com/jia-los-angeles-ca-90012-249n450/pad",
+   "https://www.redfin.com/neighborhood/483/CA/Los-Angeles/Chinatown/1-bedroom-apartments-for-rent",
+   "https://www.renthop.com/listings/639-n-broadway/one-e/71606227"
+  ]
+ },
+ {
+  "id": "pegasus",
+  "name": "Pegasus",
+  "pattern": "often",
+  "seen": [
+   {
+    "when": "spring 2026",
+    "offer": "Up to 1.5 months free on select homes, new residents only, through May 23, 2026",
+    "source": "https://hotpads.com/pegasus-los-angeles-ca-90017-skfw9x/pad"
+   },
+   {
+    "when": "2026-10 (per client list)",
+    "offer": "Up to 1/2 month free, ended Oct 24, 2026",
+    "source": "LIST_LA.tsv"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": null,
+  "evidence": "Concession shrank from 1.5 months (spring 2026) to 0.5 month (Oct 2026), then ended. Operator-level (Equity Residential): earnings-call summaries say EQR started using concessions in LA in early 2024 and in Q2 2025 concessions averaged ~7 days per move-in, expected to continue in parts of LA (https://fintool.com/app/research/companies/EQR/earnings/Q1 2024 ; https://fintool.com/app/research/companies/EQR/earnings/Q3 2024 ; https://nz.finance.yahoo.com/news/equity-residential-eqr-q1-2024-071414445.html). Equity offers follow a recurring format: 'Up to X months free on select homes, new residents only, transfers excluded, offer good thru <date>'.",
+  "sources": [
+   "https://hotpads.com/pegasus-los-angeles-ca-90017-skfw9x/pad",
+   "https://www.padmapper.com/buildings/p12886/pegasus-apartments-at-612-s-flower-st-los-angeles-ca-90017"
+  ]
+ },
+ {
+  "id": "hikari",
+  "name": "Hikari",
+  "pattern": "often",
+  "seen": [
+   {
+    "when": "spring 2026",
+    "offer": "Up to 1.5 months free on select homes, new residents only, through May 23, 2026",
+    "source": "https://hotpads.com/hikari-los-angeles-ca-90012-skfsr6/pad"
+   },
+   {
+    "when": "2026-06",
+    "offer": "Same 1.5-months wording with June 20, 2026 end date",
+    "source": "https://trulia.com/building/hikari-375-e-2nd-st-los-angeles-ca-90012-1001484402"
+   },
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "1 MONTH FREE on studios/1BR (Redfin)",
+    "source": "https://www.redfin.com/neighborhood/1385/CA/Los-Angeles/Japantown-Little-Tokyo/studio-apartments-for-rent"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": null,
+  "evidence": "Equity template offers through spring/early summer 2026, extended once (May 23 -> June 20). Client list says these ended mid-2026. Operator-level (Equity Residential): earnings-call summaries say EQR started using concessions in LA in early 2024 and in Q2 2025 concessions averaged ~7 days per move-in, expected to continue in parts of LA (https://fintool.com/app/research/companies/EQR/earnings/Q1 2024 ; https://fintool.com/app/research/companies/EQR/earnings/Q3 2024 ; https://nz.finance.yahoo.com/news/equity-residential-eqr-q1-2024-071414445.html). Equity offers follow a recurring format: 'Up to X months free on select homes, new residents only, transfers excluded, offer good thru <date>'.",
+  "sources": [
+   "https://hotpads.com/hikari-los-angeles-ca-90012-skfsr6/pad",
+   "https://trulia.com/building/hikari-375-e-2nd-st-los-angeles-ca-90012-1001484402",
+   "https://www.redfin.com/neighborhood/1385/CA/Los-Angeles/Japantown-Little-Tokyo/studio-apartments-for-rent"
+  ]
+ },
+ {
+  "id": "eleven-eleven-wilshire",
+  "name": "Eleven Eleven Wilshire",
+  "pattern": "often",
+  "seen": [
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Up to 3 months free on select homes; offerings vary by floor plan (Point2)",
+    "source": "https://www.point2homes.com/US/Apartment-Buildings/CA/Los-Angeles-County/Los-Angeles/Westlake/1111-Wilshire/93058647.html"
+   },
+   {
+    "when": "2026-10 (per client list)",
+    "offer": "Up to 6 weeks free on select homes, move-in by Nov 13, 2026",
+    "source": "LIST_LA.tsv"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": null,
+  "evidence": "Two different offer sizes seen (up to 3 months vs up to 6 weeks), so concessions recur but vary.",
+  "sources": [
+   "https://www.point2homes.com/US/Apartment-Buildings/CA/Los-Angeles-County/Los-Angeles/Westlake/1111-Wilshire/93058647.html"
+  ]
+ },
+ {
+  "id": "wilshire-vermont",
+  "name": "Wilshire Vermont",
+  "pattern": "sometimes",
+  "seen": [
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "1 month off base rent + 6 months free internet + extra $500 look-and-lease bonus on selected units (Zillow)",
+    "source": "https://www.zillow.com/b/-Ch2cPy"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": "Look-and-lease bonus ($500) means applying same day after a tour is rewarded.",
+  "evidence": "Zillow listing shows concession plus look-and-lease; Greystar's own page showed no special at search time.",
+  "sources": [
+   "https://www.zillow.com/b/-Ch2cPy",
+   "https://www.greystar.com/wilshire-vermont-los-angeles-ca/p_12701"
+  ]
+ },
+ {
+  "id": "thurman-lofts",
+  "name": "Thurman Lofts",
+  "pattern": "often",
+  "seen": [
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "2 MONTHS FREE, 1BR $2,241+ (840-950 sq ft), 2BR $3,021 (Redfin, multiple snapshots)",
+    "source": "https://www.redfin.com/zipcode/90014/rentals"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": null,
+  "evidence": "Redfin snapshots (5-7 units available) consistently show 2 months free, matching the client list's current 'ask about 2 months free'.",
+  "sources": [
+   "https://www.redfin.com/zipcode/90014/rentals",
+   "https://www.redfin.com/neighborhood/1279/CA/Los-Angeles/Historic-Core/2-bedroom-apartments-for-rent"
+  ]
+ },
+ {
+  "id": "wilshire-valencia",
+  "name": "Wilshire Valencia",
+  "pattern": "often",
+  "seen": [
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Up to 2 months free, restrictions apply (Westside Rentals, older snapshot)",
+    "source": "https://prod-release.westsiderentals.com/los-angeles-ca/wilshire-valencia-h4511e3"
+   },
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "1 MONTH FREE, studios $1,779+, 1BR $2,094+ (Redfin Central LA)",
+    "source": "https://www.redfin.com/neighborhood/108660/CA/Los-Angeles/Central-LA/rentals/page-3"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": null,
+  "evidence": "Seen at 1 month and up to 2 months on different snapshots; another Redfin page showed $1,780+ with no concession.",
+  "sources": [
+   "https://prod-release.westsiderentals.com/los-angeles-ca/wilshire-valencia-h4511e3",
+   "https://www.redfin.com/neighborhood/108660/CA/Los-Angeles/Central-LA/rentals/page-3",
+   "https://www.redfin.com/zipcode/90017/apartments-for-rent"
+  ]
+ },
+ {
+  "id": "onyx",
+  "name": "Onyx",
+  "pattern": "often",
+  "seen": [
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "6 weeks free on select studios, 4 weeks free on select 1BRs (Point2)",
+    "source": "https://www.point2homes.com/US/Apartment-Buildings/CA/Los-Angeles/Onyx1.html"
+   },
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Up to 8 weeks free on select units (ApartmentIQ)",
+    "source": "https://edge.apartmentiq.io/los-angeles-ca/onyx"
+   },
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "8 weeks free on select units + $1,000 move-in special (Westside Rentals)",
+    "source": "https://www.westsiderentals.com/los-angeles-ca/onyx-8ever23"
+   },
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "1 MONTH FREE (Redfin South Park studios)",
+    "source": "https://www.redfin.com/neighborhood/116776/CA/Los-Angeles/South-Park/studio-apartments-for-rent"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": "Since 8 weeks has been advertised before, ask for 8 weeks on a 1BR instead of the current 4.",
+  "evidence": "Free rent seen at 4, 6 and 8 weeks plus a $1,000 move-in special across sources; SRG Residential appears to keep some concession running continuously.",
+  "sources": [
+   "https://www.point2homes.com/US/Apartment-Buildings/CA/Los-Angeles/Onyx1.html",
+   "https://edge.apartmentiq.io/los-angeles-ca/onyx",
+   "https://www.westsiderentals.com/los-angeles-ca/onyx-8ever23",
+   "https://www.redfin.com/neighborhood/116776/CA/Los-Angeles/South-Park/studio-apartments-for-rent"
+  ]
+ },
+ {
+  "id": "llewellyn",
+  "name": "Llewellyn",
+  "pattern": "often",
+  "seen": [
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "8 Weeks Free Base Rent on select units; restrictions and minimum lease terms apply (HotPads)",
+    "source": "https://hotpads.com/llewellyn-los-angeles-ca-90012-2455s68/pad"
+   },
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "8 WEEKS FREE badge on studio and 2BR listings (Redfin)",
+    "source": "https://www.redfin.com/neighborhood/14685/CA/Los-Angeles/New-Chinatown/2-bedroom-apartments-for-rent"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": null,
+  "evidence": "Consistent 8-weeks-free across HotPads and Redfin; Greystar's site lists 12-month base rent from $2,175 without mentioning the special. Large inventory (Redfin: 20 studios, 44 2BRs available) suggests a lease-up and continued concessions.",
+  "sources": [
+   "https://hotpads.com/llewellyn-los-angeles-ca-90012-2455s68/pad",
+   "https://www.redfin.com/neighborhood/14685/CA/Los-Angeles/New-Chinatown/2-bedroom-apartments-for-rent",
+   "https://www.greystar.com/llewellyn-apartments-los-angeles-ca/p_17784"
+  ]
+ },
+ {
+  "id": "1000-grand-by-windsor",
+  "name": "1000 Grand by Windsor",
+  "pattern": "sometimes",
+  "seen": [
+   {
+    "when": "undated, 'move in by 12/31' (year not stated)",
+    "offer": "Up to 3 months free parking & storage (not rent); parking from $190/mo",
+    "source": "https://engrain.windsorcommunities.com/properties/1000-grand-by-windsor/floorplans/"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": null,
+  "evidence": "Windsor's floorplan page advertised a year-end parking/storage special; client list cites a Redfin '3 months free' rent badge. A year-end-deadline offer is relevant to a late-December signing.",
+  "sources": [
+   "https://engrain.windsorcommunities.com/properties/1000-grand-by-windsor/floorplans/"
+  ]
+ },
+ {
+  "id": "da-vinci",
+  "name": "Da Vinci",
+  "pattern": "often",
+  "seen": [
+   {
+    "when": "September (year not stated)",
+    "offer": "One month free + deposit discount (Westside Rentals 'September Specials')",
+    "source": "https://www.westsiderentals.com/los-angeles-ca/davinci-bj5n538"
+   },
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "10 weeks free + free parking, new residents only (HotPads)",
+    "source": "https://hotpads.com/da-vinci-los-angeles-ca-90012-ssg396/pad"
+   },
+   {
+    "when": "2026-10 (per client list)",
+    "offer": "Up to 2 months free + $1,000 off + 50% off deposit (October special)",
+    "source": "LIST_LA.tsv"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": "Monthly specials mean a December special will likely exist; also ask about free parking and a reduced deposit.",
+  "evidence": "G.H. Palmer posts a named monthly special ('September Specials', 'October special'), usually free rent plus deposit discount; sizes seen 1 month to 10 weeks. Same pattern noted at sister building The Orsini (client list: Sept one month free + 50% off deposit).",
+  "sources": [
+   "https://www.westsiderentals.com/los-angeles-ca/davinci-bj5n538",
+   "https://hotpads.com/da-vinci-los-angeles-ca-90012-ssg396/pad"
+  ]
+ },
+ {
+  "id": "hana",
+  "name": "Hana",
+  "pattern": "often",
+  "seen": [
+   {
+    "when": "undated, ending 'Wednesday, 4/1' (year not stated)",
+    "offer": "Up to 1.5 months free on a 15-month lease + $1,000 Look & Lease bonus",
+    "source": "https://tripalink.com/blog/your-ultimate-guide-to-koreatown-apartments-best-rentals-in-la"
+   },
+   {
+    "when": "2026-10 (per client list)",
+    "offer": "Up to 4 weeks free + $500 Look & Lease bonus for 1BR",
+    "source": "LIST_LA.tsv"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": "Bigger offers have needed longer leases (15 months); Look & Lease bonus needs a same-day application.",
+  "evidence": "Tripalink runs time-boxed free rent plus a Look & Lease bonus (apply same day) at Koreatown buildings; other Tripalink buildings seen with 8 weeks free on 12-14 month leases (Nari, ending 6/1) and 6 weeks for June move-ins.",
+  "sources": [
+   "https://tripalink.com/blog/your-ultimate-guide-to-koreatown-apartments-best-rentals-in-la",
+   "https://tripalink.com/apartments/los-angeles/koreatown/50000207"
+  ]
+ },
+ {
+  "id": "kara",
+  "name": "Kara",
+  "pattern": "sometimes",
+  "seen": [
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Tripalink page marked FULLY RENTED OUT (no offer)",
+    "source": "https://tripalink.com/apartments/los-angeles/koreatown-housing/50000072"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": null,
+  "evidence": "Same operator pattern as Hana (Tripalink time-boxed free weeks + Look & Lease). The Kara page was fully leased at one point, so concessions come and go with vacancy.",
+  "sources": [
+   "https://tripalink.com/blog/experience-stylish-comfort-at-kara-apartments-in-koreatown"
+  ]
+ },
+ {
+  "id": "luna-on-wilshire",
+  "name": "Luna On Wilshire",
+  "pattern": "often",
+  "seen": [
+   {
+    "when": "undated, ending 'Sunday, 12/1' (year not stated)",
+    "offer": "1 month free on 13 months or 2 months free on 15 months + 1 free parking (Tripalink)",
+    "source": "https://tripalink.com/apartments/los-angeles/koreatown-housing/50000105"
+   },
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Up to 4 weeks free + $1,000 Look and Lease (HotPads; Redfin 4-weeks tag, 9 units)",
+    "source": "https://hotpads.com/luna-los-angeles-ca-90010-249jzr1/pad"
+   },
+   {
+    "when": "2026-10 (per client list)",
+    "offer": "Up to 6 weeks free + $500 Look & Lease on 1BR",
+    "source": "LIST_LA.tsv"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": "Free months have scaled with lease length (13 vs 15 months).",
+  "evidence": "Concessions seen across at least three snapshots, including a December-deadline offer of up to 2 months free on a 15-month lease.",
+  "sources": [
+   "https://tripalink.com/apartments/los-angeles/koreatown-housing/50000105",
+   "https://hotpads.com/luna-los-angeles-ca-90010-249jzr1/pad"
+  ]
+ },
+ {
+  "id": "30sixty",
+  "name": "30Sixty",
+  "pattern": "often",
+  "seen": [
+   {
+    "when": "undated, ending 'Friday, 5/1' (year not stated)",
+    "offer": "Up to 1.5 months free on 15-month lease + 1 free parking + $2,000 look-and-lease (Tripalink/Zillow)",
+    "source": "https://zillow.com/apartments/los-angeles-ca/30sixty/Cjgtyz/"
+   },
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Up to 6 weeks free + $1,000 Look & Lease, select units/terms (Zillow)",
+    "source": "https://www.zillow.com/b/-9Ty82G"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": "Listed prices may already be net effective; ask for the gross rent, since renewals are priced off it.",
+  "evidence": "Recurring free weeks plus large look-and-lease bonuses ($1,000-$2,000); Zillow prices shown net of the discount.",
+  "sources": [
+   "https://zillow.com/apartments/los-angeles-ca/30sixty/Cjgtyz/",
+   "https://www.zillow.com/b/-9Ty82G",
+   "https://tripalink.com/apartments/los-angeles/koreatown-housing/10020007?source=ocr"
+  ]
+ },
+ {
+  "id": "broadway-palace",
+  "name": "Broadway Palace",
+  "pattern": "often",
+  "seen": [
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "2 MONTHS FREE, 1BR $1,979 / 2BR $2,599, 46 units available (Redfin 90055)",
+    "source": "https://www.redfin.com/zipcode/90055/apartments-for-rent"
+   },
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "2 MONTHS FREE, 1BR $2,139+, 41 units available (Redfin DTLA)",
+    "source": "https://www.redfin.com/neighborhood/290722/CA/Los-Angeles/Downtown-Los-Angeles/1-bedroom-apartments-for-rent/page-2"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": "High vacancy (40+ units) gives leverage.",
+  "evidence": "Two Redfin snapshots both show 2 months free with 40+ units vacant; ApartmentAdvisor lists 1BR $2,455 (758 sq ft) with no concession, probably the gross price.",
+  "sources": [
+   "https://www.redfin.com/zipcode/90055/apartments-for-rent",
+   "https://www.redfin.com/neighborhood/290722/CA/Los-Angeles/Downtown-Los-Angeles/1-bedroom-apartments-for-rent/page-2",
+   "https://www.apartmentadvisor.com/details/1026-s-broadway-los-angeles-ca-90015"
+  ]
+ },
+ {
+  "id": "fedora-flats",
+  "name": "Fedora Flats",
+  "pattern": "often",
+  "seen": [
+   {
+    "when": "undated (listing labelled July 2026 opening)",
+    "offer": "1 month free on 12-month lease; base rent $2,695 (Westside Rentals unit 601)",
+    "source": "https://www.westsiderentals.com/los-angeles-ca/1047-fedora-st-unit-601-ddf35dk"
+   },
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Up to 2 months free on select units (12-month) + up to 6 months free parking if you apply within 24 hrs of tour (ForRent)",
+    "source": "https://www.forrent.com/ca/los-angeles/fedora-flats/38zdw1e"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": "Lease-up building; look-and-lease parking bonus needs an application within 24 hours.",
+  "evidence": "New lease-up: concession grew from 1 month (around the July 2026 opening) to up to 2 months.",
+  "sources": [
+   "https://www.westsiderentals.com/los-angeles-ca/1047-fedora-st-unit-601-ddf35dk",
+   "https://www.forrent.com/ca/los-angeles/fedora-flats/38zdw1e"
+  ]
+ },
+ {
+  "id": "aliso",
+  "name": "Aliso",
+  "pattern": "often",
+  "seen": [
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Up to 4 weeks free + save $1,000 on base rent, min term, select units (RentCafe)",
+    "source": "https://www.rentcafe.com/apartments/ca/los-angeles/aliso/default.aspx"
+   },
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "4 WEEKS FREE (Redfin, multiple snapshots, 28-45 units available)",
+    "source": "https://redfin.com/neighborhood/11721/CA/Los-Angeles/Wholesale-District-Skid-Row/1-bedroom-apartments-for-rent"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": null,
+  "evidence": "Consistently 4 weeks free, once with an extra $1,000 off.",
+  "sources": [
+   "https://www.rentcafe.com/apartments/ca/los-angeles/aliso/default.aspx",
+   "https://redfin.com/neighborhood/11721/CA/Los-Angeles/Wholesale-District-Skid-Row/1-bedroom-apartments-for-rent",
+   "https://www.greystar.com/aliso-apartments-los-angeles-ca/p_20605"
+  ]
+ },
+ {
+  "id": "garey-building",
+  "name": "Garey Building",
+  "pattern": "often",
+  "seen": [
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Up to 2 weeks free on select units (Westside Rentals)",
+    "source": "https://www.westsiderentals.com/los-angeles-ca/garey-building-rqdqd22"
+   },
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Up to 4 weeks free on base rent, select units (Point2)",
+    "source": "https://www.point2homes.com/US/Apartment-Buildings/CA/Los-Angeles/Garey-Building.html"
+   },
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "6 weeks free (Redfin Arts District, 13-17 units available)",
+    "source": "https://www.redfin.com/neighborhood/91/CA/Los-Angeles/Arts-District/2-bedroom-apartments-for-rent"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": "Offers have ranged from 2 to 10 weeks; ask for the high end.",
+  "evidence": "Free rent seen at 2, 4, 6 and (per client list) 10 weeks; Greystar site shows 12-month leases from about $2,383 without the special.",
+  "sources": [
+   "https://www.westsiderentals.com/los-angeles-ca/garey-building-rqdqd22",
+   "https://www.point2homes.com/US/Apartment-Buildings/CA/Los-Angeles/Garey-Building.html",
+   "https://www.redfin.com/neighborhood/91/CA/Los-Angeles/Arts-District/2-bedroom-apartments-for-rent",
+   "https://www.greystar.com/garey-building-los-angeles-ca/p_17520"
+  ]
+ },
+ {
+  "id": "arrive-wakaba",
+  "name": "Arrive Wakaba",
+  "pattern": "sometimes",
+  "seen": [
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "2 months free; studio $2,045, 517 sq ft, 23 units available (Redfin)",
+    "source": "https://www.redfin.com/neighborhood/1385/CA/Los-Angeles/Japantown-Little-Tokyo/studio-apartments-for-rent"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": null,
+  "evidence": "Only Redfin badges seen; no dates.",
+  "sources": [
+   "https://www.redfin.com/neighborhood/1385/CA/Los-Angeles/Japantown-Little-Tokyo/studio-apartments-for-rent"
+  ]
+ },
+ {
+  "id": "amp-lofts",
+  "name": "Amp Lofts",
+  "pattern": "sometimes",
+  "seen": [
+   {
+    "when": "February (year not stated)",
+    "offer": "'feb spe' up to 6 weeks free on select apartment homes (Apartment List)",
+    "source": "https://apartmentlist.com/ca/los-angeles/amp-lofts"
+   },
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "'DEAL' tag, no weeks figure (Redfin)",
+    "source": "https://www.redfin.com/neighborhood/91/CA/Los-Angeles/Arts-District/apartments-for-rent"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": null,
+  "evidence": "A February special of 6 weeks free matches the current listing; Redfin shows only a DEAL tag.",
+  "sources": [
+   "https://apartmentlist.com/ca/los-angeles/amp-lofts",
+   "https://www.redfin.com/neighborhood/91/CA/Los-Angeles/Arts-District/apartments-for-rent"
+  ]
+ },
+ {
+  "id": "616-kenmore",
+  "name": "616 Kenmore",
+  "pattern": "often",
+  "seen": [
+   {
+    "when": "May (year not stated)",
+    "offer": "May Special: 8 weeks free on a 15-month lease; 1BR $2,292-$2,395 (Apartments.com)",
+    "source": "https://www.apartments.com/kenmore-modern-apartments-los-angeles-ca/cgs622f/"
+   },
+   {
+    "when": "2026-10 (per client list)",
+    "offer": "October special: 8 weeks free (select units)",
+    "source": "LIST_LA.tsv"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": "Confirm whether 8 weeks requires a 15-month lease (a 15-month lease from Jan 30 ends late April).",
+  "evidence": "Named monthly specials (May, October), both 8 weeks free; the May one needed a 15-month lease.",
+  "sources": [
+   "https://www.apartments.com/kenmore-modern-apartments-los-angeles-ca/cgs622f/",
+   "https://www.westsiderentals.com/los-angeles-ca/616-kenmore-cgs622f"
+  ]
+ },
+ {
+  "id": "south-park-by-windsor",
+  "name": "South Park by Windsor",
+  "pattern": "unknown",
+  "seen": [
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "'3 MONTHS FREE' badge near the entry on Redfin, but it may belong to the neighbouring listing",
+    "source": "https://www.redfin.com/neighborhood/108660/CA/Los-Angeles/Central-LA/rentals/page-4"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": null,
+  "evidence": "Ambiguous; Point2 and VeryApt show no concession. Sister building 1000 Grand by Windsor ran a 'move in by 12/31' parking/storage special.",
+  "sources": [
+   "https://www.redfin.com/neighborhood/108660/CA/Los-Angeles/Central-LA/rentals/page-4",
+   "https://www.point2homes.com/US/Apartment-Buildings/CA/Los-Angeles/Downtown-Los-Angeles/South-Park-by-Windsor/93060290.html"
+  ]
+ }
+]

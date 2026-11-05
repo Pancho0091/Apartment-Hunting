@@ -1,5 +1,5 @@
 // Visual + functional check for the built tool.
-// Usage: PW=$(npm root -g)/playwright/index.mjs node scripts/check.mjs <out_dir> [--views=list,table,map,areas,compare,detail,area,filters,markets,perf,search,mobile]
+// Usage: PW=$(npm root -g)/playwright/index.mjs node scripts/check.mjs <out_dir> [--views=list,table,map,areas,compare,detail,area,filters,markets,perf,search,timeline,guide,mobile]
 // Prints JSON (counts, horizontal-scroll flags, per-market counts, filter timing, console errors) and writes screenshots.
 const { chromium } = await import(process.env.PW || "playwright");
 const out = process.argv[2] || "shots";
@@ -10,7 +10,7 @@ const fs = await import("node:fs"); fs.mkdirSync(out, { recursive: true });
 const b = await chromium.launch();
 const errs = [];
 const page = async (vp, scale = 1) => {
-  const ctx = await b.newContext({ viewport: vp, deviceScaleFactor: scale, reducedMotion: "no-preference" });
+  const ctx = await b.newContext({ viewport: vp, deviceScaleFactor: scale, reducedMotion: "no-preference", acceptDownloads: true });
   const p = await ctx.newPage();
   p.on("pageerror", e => errs.push("pageerror: " + e.message));
   p.on("console", m => { if (m.type() === "error") errs.push("console: " + m.text()); });
@@ -102,6 +102,135 @@ if (want("markets")) { // each market tab: list + map
   }
   await p.locator('[data-market="la"]').click(); await p.waitForTimeout(600); await clickView("list");
 }
+if (want("timeline")) { // Timeline view: chart, checklist, calendar download, research, Seattle note
+  const t = {};
+  await p.locator('[data-market="la"]').click(); await p.waitForTimeout(500);
+  t.opened = await clickView("timeline");
+  await toResults(); await p.waitForTimeout(500);
+  t.rows = await p.locator(".tl-chart .tl-row[data-phase]").count();
+  t.flags = await p.locator(".tl-flag").count();
+  t.today_marker = await p.locator(".tl-todayline, .tl-today").count() > 0;
+  t.hscroll = await p.evaluate(() => document.documentElement.scrollWidth > innerWidth);
+  await p.screenshot({ path: `${out}/timeline.png` });
+  const box = p.locator(".tl-check input").first();
+  const before = await p.textContent("[data-prog-all]");
+  await p.locator(".tl-check").first().click(); await p.waitForTimeout(300);
+  t.check_toggled = await box.isChecked();
+  t.progress = [before, await p.textContent("[data-prog-all]")];
+  t.check_saved = await p.evaluate(() => Object.keys(localStorage).filter(k => k.startsWith("aps27b:check:") && localStorage.getItem(k) === "true").length);
+  await p.locator(".tl-check").first().click(); await p.waitForTimeout(200);
+  const [dl] = await Promise.all([p.waitForEvent("download", { timeout: 5000 }), p.locator("#icsBtn").click()]);
+  t.ics_name = dl.suggestedFilename();
+  const ics = fs.readFileSync(await dl.path(), "utf8");
+  t.ics_events = (ics.match(/BEGIN:VEVENT/g) || []).length;
+  t.ics_ok = ics.startsWith("BEGIN:VCALENDAR") && ics.includes("DTSTART;VALUE=DATE:20261230");
+  await p.evaluate(() => { const r = document.querySelector(".tresearch"); scrollTo({ top: r.getBoundingClientRect().top + scrollY - 8, behavior: "instant" }); });
+  await p.waitForTimeout(500);
+  t.research = await p.locator(".tresearch .rsec").count();
+  t.season_cols = await p.locator(".schart .c-col").count();
+  t.share_charts = await p.locator(".share-svg").count();
+  await p.locator(".schart-svg").hover({ position: { x: 300, y: 80 } }); await p.waitForTimeout(250);
+  t.season_tip = await p.locator(".schart .ctip:not([hidden])").count() > 0;
+  await p.screenshot({ path: `${out}/timeline-research.png` });
+  await p.evaluate(() => { const r = document.getElementById("tr-where"); scrollTo({ top: r.getBoundingClientRect().top + scrollY - 8, behavior: "instant" }); }); await p.waitForTimeout(400);
+  await p.screenshot({ path: `${out}/timeline-where.png` });
+  await p.evaluate(() => { const r = document.getElementById("tr-who"); scrollTo({ top: r.getBoundingClientRect().top + scrollY - 8, behavior: "instant" }); }); await p.waitForTimeout(400);
+  await p.screenshot({ path: `${out}/timeline-who.png` });
+  const spec = p.locator(".spec-btn").first();
+  if (await spec.count()) { await spec.click(); await p.waitForTimeout(900); t.drawer_specials = await p.locator(".drawer .spec-pattern").count() > 0;
+    await p.evaluate(() => { const s = document.querySelector(".drawer .spec-pattern"); if (s) { s.closest(".dsec").scrollIntoView({ block: "start" }); document.querySelector(".drawer").scrollTop -= 60; } }); await p.waitForTimeout(300);
+    await p.screenshot({ path: `${out}/detail-specials.png` }); await p.keyboard.press("Escape"); await p.waitForTimeout(400); }
+  await p.evaluate(() => scrollTo({ top: 0, behavior: "instant" })); await p.waitForTimeout(200);
+  await p.locator(".deadline-link").nth(1).click(); await p.waitForTimeout(600);
+  t.masthead_link = await p.getAttribute('[data-view="timeline"]', "aria-pressed");
+  await p.locator('[data-market="seattle"]').click(); await p.waitForTimeout(800);
+  t.seattle_note = await p.locator(".tresearch-note").textContent().catch(() => null);
+  await p.locator('[data-market="la"]').click(); await p.waitForTimeout(600);
+  await clickView("list");
+  report.timeline = t;
+}
+if (want("guide")) { // Downtown LA guide: chip link, cards, expand, sort, listing-count link, drawer section, reviews
+  const g = {};
+  await p.locator('[data-market="la"]').click(); await p.waitForTimeout(500);
+  await clickView("list"); await p.evaluate(() => scrollTo({ top: 0, behavior: "instant" }));
+  const chip = p.locator(".chip", { hasText: "Downtown LA" }).first();
+  await chip.click(); await p.waitForTimeout(600);
+  g.chip_count = await p.textContent("#count .count-real");
+  g.chip_link = await p.locator("#guideNote [data-open-guide]").count() > 0;
+  await p.locator("#guideNote [data-open-guide]").click(); await p.waitForTimeout(1200);
+  g.opened_from_chip = await p.getAttribute('[data-view="areas"]', "aria-pressed");
+  g.cards = await p.locator(".dg-card").count();
+  g.strip_order = await p.locator(".dg-card").first().locator(".dg-s-k").allTextContents();
+  g.edges = await p.locator(".dg-edgelist > li").count();
+  g.trends = await p.locator(".dg-trendlist > li").count();
+  g.caveat = await p.locator(".dg-caveat").count();
+  g.order_guide = await p.evaluate(() => [...document.querySelectorAll(".dg-card")].sort((a, b) => (+a.style.order || 0) - (+b.style.order || 0)).map(c => c.querySelector(".dg-name").textContent).slice(0, 3));
+  await p.evaluate(() => { const r = document.getElementById("dguide"); scrollTo({ top: r.getBoundingClientRect().top + scrollY - 70, behavior: "instant" }); }); await p.waitForTimeout(400);
+  await p.screenshot({ path: `${out}/guide.png` });
+  const card = p.locator(".dg-card").first();
+  await card.locator(".dg-more > summary").click(); await p.waitForTimeout(400);
+  g.expanded = await card.locator(".dg-more").evaluate(d => d.open);
+  g.detail_items = await card.locator(".dg-detail li").count();
+  await card.scrollIntoViewIfNeeded(); await p.evaluate(() => scrollBy(0, -70)); await p.waitForTimeout(300);
+  await p.screenshot({ path: `${out}/guide-card.png` });
+  await card.locator(".dg-more > summary").click(); await p.waitForTimeout(200);
+  await p.locator('[data-gsort="freeway"]').click(); await p.waitForTimeout(900);
+  g.order_freeway = await p.evaluate(() => [...document.querySelectorAll(".dg-card")].sort((a, b) => (+a.style.order || 0) - (+b.style.order || 0)).map(c => c.querySelector(".dg-name").textContent + " " + c.querySelectorAll(".dg-s-v")[2].firstChild.textContent).slice(0, 3));
+  await p.locator('[data-gsort="coffee"]').click(); await p.waitForTimeout(900);
+  g.order_coffee = await p.evaluate(() => [...document.querySelectorAll(".dg-card")].sort((a, b) => (+a.style.order || 0) - (+b.style.order || 0)).map(c => c.querySelector(".dg-name").textContent).slice(0, 3));
+  await p.evaluate(() => { const r = document.getElementById("dg-subs"); scrollTo({ top: r.getBoundingClientRect().top + scrollY - 70, behavior: "instant" }); }); await p.waitForTimeout(300);
+  await p.screenshot({ path: `${out}/guide-sorted.png` });
+  await p.evaluate(() => { const r = document.getElementById("dg-edges"); scrollTo({ top: r.getBoundingClientRect().top + scrollY - 70, behavior: "instant" }); }); await p.waitForTimeout(300);
+  await p.screenshot({ path: `${out}/guide-edges.png` });
+  await p.locator('[data-gsort="guide"]').click(); await p.waitForTimeout(600);
+  const lt = p.locator("#dg-little-tokyo .dg-count-btn");
+  g.lt_link = (await lt.textContent()).replace(/\s+/g, " ").trim();
+  await lt.click(); await p.waitForTimeout(1000);
+  g.lt_view = await p.getAttribute('[data-view="list"]', "aria-pressed");
+  g.lt_count = await p.textContent("#count .count-real");
+  g.lt_listings_areas = await p.evaluate(() => [...document.querySelectorAll("#view [data-listing]")].filter(e => e.offsetParent).length);
+  g.place_note = (await p.textContent("#guideNote")).replace(/\s+/g, " ").trim();
+  await toResults(); await p.screenshot({ path: `${out}/guide-filtered.png` });
+  // drawer guide section for Little Tokyo
+  await clickView("areas");
+  await p.evaluate(() => { const pl = [...document.querySelectorAll(".plate")].find(x => x.querySelector(".plate-name").textContent.trim() === "Little Tokyo"); pl.scrollIntoView({ block: "center" }); });
+  await p.waitForTimeout(300);
+  await p.evaluate(() => [...document.querySelectorAll(".plate")].find(x => x.querySelector(".plate-name").textContent.trim() === "Little Tokyo").click());
+  await p.waitForTimeout(900);
+  g.drawer_guide = await p.evaluate(() => { const s = [...document.querySelectorAll(".drawer .dsec")].find(x => /Downtown guide/.test(x.querySelector(".dsec-title").textContent)); return s ? [...s.querySelectorAll(".dg-mini-name")].map(b => b.textContent) : null; });
+  await p.evaluate(() => { const s = [...document.querySelectorAll(".drawer .dsec")].find(x => /Downtown guide/.test(x.querySelector(".dsec-title").textContent)); if (s) { s.scrollIntoView({ block: "start" }); document.querySelector(".drawer").scrollTop -= 70; } });
+  await p.waitForTimeout(300);
+  await p.screenshot({ path: `${out}/guide-drawer.png` });
+  await p.locator(".drawer [data-guide-link]").first().click(); await p.waitForTimeout(1000);
+  g.drawer_link_target = await p.evaluate(() => { const c = document.querySelector(".dg-card.flash"); return c ? c.querySelector(".dg-name").textContent : null; });
+  g.drawer_closed = await p.locator(".drawer").count() === 0;
+  // listing reviews: news (dated) and Reddit (anecdotal)
+  await clickView("list");
+  await p.evaluate(() => { const x = document.querySelector("#guideNote .gnote-x"); if (x) x.click(); }); await p.waitForTimeout(500);
+  g.place_cleared = await p.textContent("#count .count-real");
+  const ids = await p.evaluate(() => JSON.parse(document.getElementById("data").textContent).markets.la.buildings.filter(x => x.reviews && x.reviews.news && x.reviews.reddit).map(x => x.id));
+  const rid = (await p.evaluate(ids => { const shown = new Set([...document.querySelectorAll("#view [data-listing]")].map(e => e.dataset.listing)); return ids.find(i => shown.has(i)) || ids[0] || null; }, ids));
+  g.reviewed_with_news_and_reddit = ids.length;
+  if (rid) {
+    await p.evaluate(() => { document.getElementById("q").value = ""; });
+    const name = await p.evaluate(id => JSON.parse(document.getElementById("data").textContent).markets.la.buildings.find(x => x.id === id).name, rid);
+    await p.locator("#q").fill(name.toLowerCase()); await p.waitForTimeout(500);
+    const row = p.locator(`[data-listing="${rid}"]`);
+    if (await row.count()) {
+      await row.first().click(); await p.waitForTimeout(900);
+      g.reviews_news = await p.locator(".drawer .rev-feed .rlist:not(.anec) li").count();
+      g.reviews_reddit = await p.locator(".drawer .rev-feed .rlist.anec li").count();
+      await p.evaluate(() => { const s = document.querySelector(".drawer .rev-feed"); if (s) { s.scrollIntoView({ block: "start" }); document.querySelector(".drawer").scrollTop -= 70; } });
+      await p.waitForTimeout(300); await p.screenshot({ path: `${out}/guide-reviews.png` });
+      await p.keyboard.press("Escape"); await p.waitForTimeout(400);
+    } else g.reviews = "listing hidden by filters: " + rid;
+    await p.locator("#q").fill(""); await p.waitForTimeout(300);
+  }
+  await p.evaluate(() => { const x = document.querySelector("#guideNote .gnote-x"); if (x) x.click(); });
+  await p.locator(".chip", { hasText: "Downtown LA" }).first().click(); await p.waitForTimeout(500);
+  g.hscroll = await p.evaluate(() => document.documentElement.scrollWidth > innerWidth);
+  report.guide = g;
+}
 if (want("mobile")) {
   const m = await page({ width: 390, height: 844 }, 2);
   report.hscroll_mobile = await m.evaluate(() => document.documentElement.scrollWidth > innerWidth);
@@ -121,6 +250,29 @@ if (want("mobile")) {
     await m.screenshot({ path: `${out}/mobile-particulars.png` });
     report.hscroll_mobile_drawer = await m.evaluate(() => { const d = document.querySelector(".drawer"); return d ? d.scrollWidth > d.clientWidth : null; });
     await m.keyboard.press("Escape"); await m.waitForTimeout(400); }
+  if (want("timeline")) { // vertical timeline at phone width
+    await m.locator('[data-market="la"]').click(); await m.waitForTimeout(500);
+    await m.locator('[data-view="timeline"]').first().click(); await m.waitForTimeout(800);
+    await m.evaluate(() => { const r = document.getElementById("results"); scrollTo({ top: r.getBoundingClientRect().top + scrollY - 8, behavior: "instant" }); }); await m.waitForTimeout(400);
+    report.timeline_mobile = { hscroll: await m.evaluate(() => document.documentElement.scrollWidth > innerWidth), chart_hidden: await m.locator(".tl-chart").isHidden(), items: await m.locator(".tl-item").count() };
+    await m.screenshot({ path: `${out}/mobile-timeline.png` });
+    await m.evaluate(() => { const r = document.querySelector(".tresearch"); scrollTo({ top: r.getBoundingClientRect().top + scrollY - 8, behavior: "instant" }); }); await m.waitForTimeout(400);
+    await m.screenshot({ path: `${out}/mobile-timeline-research.png` });
+    report.timeline_mobile.hscroll_research = await m.evaluate(() => document.documentElement.scrollWidth > innerWidth);
+    await m.locator('[data-view="list"]').first().click(); await m.waitForTimeout(500);
+    await m.evaluate(() => scrollTo({ top: 0, behavior: "instant" }));
+  }
+  if (want("guide")) { // Downtown guide at phone width
+    await m.locator('[data-market="la"]').click(); await m.waitForTimeout(500);
+    await m.locator('[data-view="areas"]').first().click(); await m.waitForTimeout(900);
+    await m.evaluate(() => { const r = document.getElementById("dg-subs"); scrollTo({ top: r.getBoundingClientRect().top + scrollY - 64, behavior: "instant" }); }); await m.waitForTimeout(400);
+    await m.screenshot({ path: `${out}/mobile-guide.png` });
+    await m.locator(".dg-card .dg-more > summary").first().click(); await m.waitForTimeout(300);
+    report.guide_mobile = { hscroll: await m.evaluate(() => document.documentElement.scrollWidth > innerWidth), cards: await m.locator(".dg-card").count() };
+    await m.screenshot({ path: `${out}/mobile-guide-card.png`, fullPage: false });
+    await m.locator('[data-view="list"]').first().click(); await m.waitForTimeout(500);
+    await m.evaluate(() => scrollTo({ top: 0, behavior: "instant" }));
+  }
   await m.locator("#toggleFilters").click(); await m.waitForTimeout(700);
   await m.screenshot({ path: `${out}/mobile-filters.png` });
 }

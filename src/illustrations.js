@@ -461,7 +461,7 @@
         x2 += L + gap;
       }
     }
-    out += P(sw, 'stroke-width=".5" opacity=".55"');
+    out += G(P(sw, 'stroke-width=".5" opacity=".55"'), 'class="hz-swell"');
     // shoreline with foam scallops
     var shore = "M470 220C520 213 600 206 700 204S820 202 900 205S1060 210 1200 206";
     out += P(shore + "V220Z", 'fill="' + T.bg + '" stroke="none"') + P(shore, 'stroke-width=".8"');
@@ -470,16 +470,16 @@
       var fy = fx < 700 ? 214 - (fx - 600) * 0.1 : fx < 900 ? 203.2 + Math.sin(fx / 40) * 0.6 : 205 + (fx - 900) * 0.02;
       foam += "M" + r1(fx) + " " + r1(fy - 2.2) + "q4 -2.2 8 0";
     }
-    out += P(foam, 'stroke-width=".5" opacity=".6"');
+    out += G(P(foam, 'stroke-width=".5" opacity=".6"'), 'class="hz-foam"');
     out += stipple(900, 214, 300, 6, 160, 9, [0, 1], 'stroke-width=".9" opacity=".45"');
 
     // white sage, far left of the planting
-    out += G(sage(646, 212, 1.12, 21));
+    out += G(sage(646, 212, 1.12, 21), 'class="hz-sway hz-sage"');
     // tall Washingtonia robusta and its shorter companion
-    out += palm(818, 226, 836, 58, { R: 46, w0: 8.5, w1: 5.2, lean: 6, seed: 4, skirt: 30 });
-    out += palm(892, 226, 914, 96, { R: 36, w0: 7, w1: 4.4, lean: -4, seed: 9, skirt: 20, angs: [-84, -50, -116, -20, -150, 14, 168] });
+    out += G(palm(818, 226, 836, 58, { R: 46, w0: 8.5, w1: 5.2, lean: 6, seed: 4, skirt: 30 }), 'class="hz-sway hz-palm1"');
+    out += G(palm(892, 226, 914, 96, { R: 36, w0: 7, w1: 4.4, lean: -4, seed: 9, skirt: 20, angs: [-84, -50, -116, -20, -150, 14, 168] }), 'class="hz-sway hz-palm2"');
     // bird-of-paradise
-    out += strelitzia(990, 224, 1.08);
+    out += G(strelitzia(990, 224, 1.08), 'class="hz-sway hz-bop"');
     // orange branch entering from the upper right corner
     var ob = "";
     var br = [[1206, 4], [1176, 16], [1148, 32], [1118, 44], [1090, 50], [1066, 52]];
@@ -500,7 +500,7 @@
     ob += orange(1121, 68, 13.5, 32, { rings: 5 });
     ob += blossom(1064, 60, 13, 0.4);
     ob += bud(1090, 50, deg(70), 9) + bud(1086, 50, deg(115), 7);
-    out += G(ob, 'transform="translate(0 13)"');
+    out += G(G(ob, 'class="hz-sway hz-branch"'), 'transform="translate(0 13)"');
     heroCache = out;
     return out;
   }

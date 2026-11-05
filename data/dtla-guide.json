@@ -1,0 +1,1199 @@
+{
+ "subdistricts": [
+  {
+   "name": "South Park / LA Live",
+   "maps_to_area": "Downtown LA – South Park",
+   "vibe": "Newest, most 'finished' part of DTLA: glassy 2008–2024 towers, LA Live/Crypto.com Arena/Convention Center entertainment campus, wide streets, lots of dog-walkers. Feels like a planned urban district rather than a gritty one.",
+   "residents": "Young professionals, couples and remote workers in amenity towers; many corporate/short-stay units; some USC and FIDM-type students toward the south end. Densest concentration of new rentals downtown.",
+   "coffee": [
+    {
+     "name": "Verve Coffee Roasters (Spring St; on the Historic Core/South Park/Fashion District edge)",
+     "address": "833 S Spring St, Los Angeles, CA 90014"
+    },
+    {
+     "name": "Stumptown (South Park listing; Foursquare only, verify still open)",
+     "address": "801 S Hope St Ste A, Los Angeles, CA"
+    },
+    {
+     "name": "Cognoscenti Coffee (South Park location; address not confirmed)",
+     "address": null
+    },
+    {
+     "name": "Document Coffee Bar (South Park listing; details not confirmed)",
+     "address": null
+    }
+   ],
+   "groceries": [
+    {
+     "name": "Whole Foods Market (8th St & Grand Ave; opened Nov 2015)",
+     "address": "8th St & Grand Ave"
+    },
+    {
+     "name": "Ralphs Fresh Fare (9th St & Flower St)",
+     "address": "9th St & Flower St"
+    },
+    {
+     "name": "Target at FIGat7th",
+     "address": "FIGat7th, 7th St & Figueroa St"
+    },
+    {
+     "name": "Smart & Final Extra (between FIGat7th and LA Live)",
+     "address": null
+    },
+    {
+     "name": "Erewhon (planned; Urbanize Feb 2026, opening date unknown)",
+     "address": "940 S Hill St"
+    }
+   ],
+   "gyms": [
+    {
+     "name": "Barry's DTLA (HIIT studio)",
+     "address": "1200 S Hill St, Los Angeles, CA 90015"
+    },
+    {
+     "name": "Equinox Downtown LA (FiDi/Bunker Hill, ~10-15 min walk)",
+     "address": "444 S Flower St, Los Angeles, CA 90071"
+    },
+    {
+     "name": "24 Hour Fitness (several downtown locations; specific addresses not confirmed)",
+     "address": null
+    },
+    {
+     "name": "Nearest climbing: LA Boulders, Arts District (drive/ride ~10 min)",
+     "address": "1375 E 6th St #8, Los Angeles, CA 90021"
+    }
+   ],
+   "parks": [
+    {
+     "name": "Grand Hope Park (9th & Hope) (not verified this round; general knowledge, check before relying)",
+     "address": null
+    },
+    {
+     "name": "No dedicated dog park confirmed in South Park this round; most towers have rooftop dog runs (verify per building)",
+     "address": null
+    }
+   ],
+   "nightlife": "Strongest mainstream nightlife in DTLA: LA Live bars/restaurants, Crypto.com Arena and Peacock Theater shows, hotel rooftop bars, sports bars on Lakers/Clippers-era nights (Clippers moved to Inglewood in 2024; Lakers/Kings/concerts remain). Less indie/dive character than the Historic Core or Arts District.",
+   "metro": [
+    "Pico (A/E lines) (not verified this round; general knowledge, check before relying)",
+    "7th St/Metro Center (A, E, B, D lines; ~10 min walk from mid-South Park) (not verified this round; general knowledge, check before relying)",
+    "Regional Connector (2023) means the A and E lines run through 7th St/Metro Center and Pico without transfer"
+   ],
+   "freeways": "Best freeway access in DTLA: 110 (Harbor/Pasadena) ramps along Figueroa/Flower/9th/Olympic/Pico area, I-10 (Santa Monica Fwy) at the south edge via the 110/10 interchange, 101 a few minutes north via the 110. 5 and 60 reached via 10 east. (not verified this round; general knowledge, check before relying)",
+   "noise": "Arena/convention event nights (crowds, traffic, rideshare honking, post-game noise), helicopters (police/news, especially during big events and chases), construction (Convention Center $2.6B expansion broke ground Oct 2025; must pause for the Olympics and finish ~2029), 110/10 freeway hum for units on the west/south edge, sirens. Higher floors facing away from Figueroa/the freeway are quieter.",
+   "safety": "Generally regarded (anecdotally) as the most comfortable part of the core for daily life, with private 'clean and safe' patrols, but not immune: Downtown led the city in reported vehicle break-ins in early 2023 (959 in Q1 2023, Crosstown), and an older LA Times-sourced report noted rises in violent crime and car break-ins around LA Live. Never leave anything visible in a car, use secured garages. Edges to watch: east of Main St/Los Angeles St toward Skid Row, tents under/near the 110 and 10 overpasses, Pico/Olympic east of Hill late at night. Citywide homicides fell ~19% in 2025 (lowest since 1966); no Central Division-specific 2025 figures were found this round.",
+   "homelessness": "Visible but lighter than the Historic Core: individuals and some tents along freeway edges and underpasses, near Pershing Square/7th St, and further east toward Main. Not comparable to Skid Row blocks.",
+   "cleanliness": "Best in DTLA alongside Bunker Hill: BID-cleaned sidewalks, newer streetscape; event nights leave litter around LA Live.",
+   "changes_2026_28": "Convention Center expansion (ground broken Oct 2025; Olympic-ready target Mar 2028; schedule/financing risk, pause during Games, finish ~2029). Convention Center hosts fencing/taekwondo/judo/wrestling/table tennis, Crypto.com Arena hosts gymnastics in July 2028 -> expect security perimeters and road closures summer 2028 (after a Feb 2027–Feb 2028 lease ends). Oceanwide Plaza (stalled towers across from LA Live) has a buyer as of Feb 2026. Erewhon planned at 940 S Hill. Dataland museum slated for spring 2026 (Grand Ave).",
+   "advice": "Default pick for you: best freeway access, best errands (Whole Foods, Ralphs, Target all walkable), solid gyms and coffee; pick a high floor away from Figueroa/the 110 to blunt event and freeway noise. Scores reflect: walkable groceries/gyms, 110/10 ramps within minutes, middling quiet because of events and construction.",
+   "scores": {
+    "coffee": 7,
+    "walk": 8,
+    "nightlife": 8,
+    "errands": 10,
+    "freeway": 10,
+    "quiet": 4,
+    "safety": 7
+   },
+   "sources": [
+    "https://thecoffeevine.com/reviews/cafes/usa/los-angeles/verve-coffee-roasters-dtla-los-angeles-us/",
+    "https://lv.foursquare.com/kaler/list/la-coffee",
+    "https://sprudge.com/?p=106928",
+    "https://www.bisnow.com/news/los-angeles/retail/whole-foods-opens-in-downtown-la-wed-nov-4-51872",
+    "https://pbssocal.org/history-society/will-downtown-l-a-get-its-holy-grail-of-grocery-stores",
+    "https://la.urbanize.city/?page=11",
+    "https://xtown.la/2023/04/26/los-angeles-car-break-ins-december-january-new-highs/",
+    "https://www.inkl.com/news/dramatic-rise-in-crime-casts-a-shadow-on-downtown-l-a-s-gentrification",
+    "https://abc7.com/post/los-angeles-break-ground-massive-262-billion-expansion-la-convention-center/17917557/",
+    "https://www.thesportsexaminer.com/lane-one-la28-suffers-the-ultimate-irony-as-its-no-build-games-now-subject-to-l-a-citys-risky-2-62-billion-convention-center-expansion/",
+    "https://downtownla.com/article/dtla-2025-highlights-and-2026-outlook",
+    "https://www.insidehook.com/culture-los-angeles/eleven-la-gyms-decoded",
+    "https://startpage.mapquest.com/us/california/equinox-downtown-la-303420377",
+    "https://laist.com/news/criminal-justice/homicides-fall-to-lowest-level-since-1966-in-city-of-la"
+   ]
+  },
+  {
+   "name": "Financial District",
+   "maps_to_area": "Downtown LA – Historic Core / Financial District / Bunker Hill",
+   "vibe": "Office towers between Figueroa, Flower and Hope from ~3rd to 8th St; busy on weekdays, very quiet nights/weekends. Underground/plaza-level retail (FIGat7th, The Bloc).",
+   "residents": "Fewer residents than South Park but growing via conversions; professionals in towers along Flower/Hope/7th, Wilshire and Figueroa.",
+   "coffee": [
+    {
+     "name": "Stumptown (801 S Hope; Foursquare listing)",
+     "address": "801 S Hope St Ste A, Los Angeles, CA"
+    },
+    {
+     "name": "Go Get Em Tiger (downtown outpost, Bunker Hill/Grand Ave)",
+     "address": "135 N Grand Ave"
+    },
+    {
+     "name": "Verve Coffee Roasters (~15 min walk)",
+     "address": "833 S Spring St, Los Angeles, CA 90014"
+    },
+    {
+     "name": "Many chain cafés in office lobbies; Starbucks closed several DTLA stores in 2025 (DTLA Weekly)",
+     "address": null
+    }
+   ],
+   "groceries": [
+    {
+     "name": "Target at FIGat7th",
+     "address": "FIGat7th, 7th St & Figueroa St"
+    },
+    {
+     "name": "Ralphs Fresh Fare",
+     "address": "9th St & Flower St"
+    },
+    {
+     "name": "Whole Foods Market",
+     "address": "8th St & Grand Ave"
+    }
+   ],
+   "gyms": [
+    {
+     "name": "Equinox Downtown LA",
+     "address": "444 S Flower St, Los Angeles, CA 90071"
+    },
+    {
+     "name": "Ketchum-Downtown YMCA (Bunker Hill) (not verified this round; general knowledge, check before relying)",
+     "address": null
+    },
+    {
+     "name": "24 Hour Fitness (downtown locations; not confirmed)",
+     "address": null
+    }
+   ],
+   "parks": [
+    {
+     "name": "Pershing Square (phase 1A of revamp completed Dec 2025; more phases pending)",
+     "address": "532 S Olive St area"
+    },
+    {
+     "name": "Grand Hope Park (not verified this round; general knowledge, check before relying)",
+     "address": null
+    },
+    {
+     "name": "No dog park confirmed",
+     "address": null
+    }
+   ],
+   "nightlife": "Hotel rooftops and after-work bars (e.g. around 7th/Flower and The Bloc); dead after ~9pm on weeknights and on weekends compared with South Park or the Historic Core.",
+   "metro": [
+    "7th St/Metro Center (A, E, B, D) (not verified this round; general knowledge, check before relying)",
+    "Pershing Square (B/D) (not verified this round; general knowledge, check before relying)",
+    "Grand Av Arts/Bunker Hill (A/E; Regional Connector, opened Jun 2023) at 2nd Pl & Hope St"
+   ],
+   "freeways": "Excellent: 110 ramps at 3rd/4th/6th/9th St area and the 110/101 four-level interchange just north; 10 via 110 south. (not verified this round; general knowledge, check before relying)",
+   "noise": "Office-area daytime traffic, delivery trucks, construction (conversions such as 1055 W 7th St), helicopters; very quiet nights.",
+   "safety": "Weekday foot traffic makes daytime fine; empty streets at night and on weekends feel less comfortable. Pershing Square/7th St Metro portals and 5th/6th St east of Olive see more disorder. Garage break-ins and car break-ins common downtown (2023 Crosstown data). No sub-district 2025-26 LAPD numbers were found.",
+   "homelessness": "Moderate: individuals sleeping in plazas, doorways and Metro entrances, especially Pershing Square and 5th/6th east of Olive; tents near the 110 edge.",
+   "cleanliness": "Good on the main office blocks (BID cleaning); patchier around Pershing Square and the 5th/6th corridors.",
+   "changes_2026_28": "Office-to-residential conversions accelerating under LA's citywide adaptive-reuse ordinance (enacted Feb 2026): Jamison's 33-story 1055 W 7th St (~686–691 units, $195M financing), the World Trade Center at Figueroa & 3rd (512 affordable units, Urbanize Apr 2026). Expect construction noise and new residents. Pershing Square revamp continuing.",
+   "advice": "Good value play if a conversion offers big concessions, but expect a ghost-town feel after hours; freeway access and transit are top-tier. Scores: errands and freeway very high, nightlife/quiet mixed because it is dead at night.",
+   "scores": {
+    "coffee": 6,
+    "walk": 8,
+    "nightlife": 5,
+    "errands": 8,
+    "freeway": 10,
+    "quiet": 6,
+    "safety": 6
+   },
+   "sources": [
+    "https://lv.foursquare.com/kaler/list/la-coffee",
+    "https://www.insidehook.com/food/best-coffee-shops-los-angeles/amp",
+    "https://startpage.mapquest.com/us/california/equinox-downtown-la-303420377",
+    "https://urbanize.la/post/checking-phase-1a-pershing-square-revamp",
+    "https://therealdeal.com/la/2026/02/13/los-angeles-enacts-commercial-to-housing-conversion-law",
+    "https://www.commercialsearch.com/blog/?p=6069",
+    "https://www.pulse.bot/construction/news/la-world-trade-center-to-be-converted-to-512-apartments-80693191-5c59-4283-bd76-8e15cae1f63d/",
+    "https://dtlaweekly.com/?p=28049",
+    "https://xtown.la/2023/04/26/los-angeles-car-break-ins-december-january-new-highs/",
+    "https://en.wikipedia.org/wiki/Regional_Connector"
+   ]
+  },
+  {
+   "name": "Bunker Hill",
+   "maps_to_area": "Downtown LA – Historic Core / Financial District / Bunker Hill",
+   "vibe": "Cultural acropolis: Disney Hall, The Broad, MOCA, Music Center, The Grand (Gehry); plazas, Angels Flight, high-rise residential towers. Polished and calm, hilly and somewhat isolated from street life below.",
+   "residents": "Older professionals and affluent renters in 1980s–2020s towers; condo owners; some long-time senior residents in older towers.",
+   "coffee": [
+    {
+     "name": "Go Get Em Tiger (Grand Ave)",
+     "address": "135 N Grand Ave"
+    },
+    {
+     "name": "G&B Coffee at Grand Central Market (down Angels Flight)",
+     "address": "Grand Central Market, Broadway/Hill St at 3rd-4th"
+    },
+    {
+     "name": "Verve (~15 min walk)",
+     "address": "833 S Spring St, Los Angeles, CA 90014"
+    }
+   ],
+   "groceries": [
+    {
+     "name": "Whole Foods (8th & Grand, ~15 min walk)",
+     "address": "8th St & Grand Ave"
+    },
+    {
+     "name": "Target FIGat7th (~10 min)",
+     "address": "FIGat7th"
+    },
+    {
+     "name": "Grand Central Market vendors (produce/specialty)",
+     "address": null
+    }
+   ],
+   "gyms": [
+    {
+     "name": "Equinox Downtown LA",
+     "address": "444 S Flower St, Los Angeles, CA 90071"
+    },
+    {
+     "name": "Ketchum-Downtown YMCA (not verified this round; general knowledge, check before relying)",
+     "address": null
+    }
+   ],
+   "parks": [
+    {
+     "name": "Grand Park (Civic Center, adjacent)",
+     "address": null
+    },
+    {
+     "name": "California Plaza / Disney Hall gardens (private-public plazas)",
+     "address": null
+    },
+    {
+     "name": "No dog park confirmed",
+     "address": null
+    }
+   ],
+   "nightlife": "Concerts and theater (Disney Hall, Music Center), hotel bars at The Grand/nearby; walk down to the Historic Core for bars.",
+   "metro": [
+    "Grand Av Arts/Bunker Hill (A/E; Regional Connector) at 2nd Pl & Hope St",
+    "Pershing Square (B/D) and Civic Center/Grand Park (B/D) (not verified this round; general knowledge, check before relying)",
+    "Angels Flight funicular to Hill St"
+   ],
+   "freeways": "Excellent: 110 and 101 ramps within a few minutes via 3rd/4th St and Temple. (not verified this round; general knowledge, check before relying)",
+   "noise": "Quietest core sub-district at night; event crowds at Disney Hall/Music Center, helicopters, Grand Ave traffic.",
+   "safety": "Perceived (anecdotally) as one of the most secure parts of downtown; towers have staffed lobbies. The 2nd/3rd St tunnels and stairs down to Hill St and Pershing Square are the weaker edges at night.",
+   "homelessness": "Low on top of the hill; individuals around Pershing Square, the 4th St and 2nd St tunnels and plaza edges.",
+   "cleanliness": "Very clean (institutional and BID upkeep).",
+   "changes_2026_28": "Dataland (immersive art/AI museum) at The Grand slated spring 2026; continued tower conversions in adjacent FiDi; Olympics-era events at Grand Park/Music Center likely.",
+   "advice": "Quietest, most polished option with top freeway access; trade-off is fewer everyday errands at your door and a hilly walk. Scores reflect very high freeway/transit and quiet relative to the core, groceries 10-15 min away.",
+   "scores": {
+    "coffee": 7,
+    "walk": 7,
+    "nightlife": 5,
+    "errands": 6,
+    "freeway": 10,
+    "quiet": 7,
+    "safety": 8
+   },
+   "sources": [
+    "https://www.insidehook.com/food/best-coffee-shops-los-angeles/amp",
+    "https://standardhotels.com/culture/Standard-Guide-Downtown-LA-Coffee-Drinks",
+    "https://www.foxla.com/news/la-metro-opens-3-new-underground-stations",
+    "https://startpage.mapquest.com/us/california/equinox-downtown-la-303420377",
+    "https://downtownla.com/article/dtla-2025-highlights-and-2026-outlook",
+    "https://en.wikivoyage.org/wiki/Los_Angeles/Downtown"
+   ]
+  },
+  {
+   "name": "Historic Core",
+   "maps_to_area": "Downtown LA – Historic Core / Financial District / Bunker Hill",
+   "vibe": "Beaux-Arts and Art Deco office buildings converted to lofts along Spring and Main (\"Gallery Row\"), Grand Central Market, bars and restaurants. Most 'New York-like' street life, but storefront vacancy rose sharply in 2025.",
+   "residents": "Loft renters: creatives, young professionals, long-time downtown pioneers from the 2000s adaptive-reuse wave; buildings like Rowan, Security Building, Thurman Lofts, Metro 417.",
+   "coffee": [
+    {
+     "name": "G&B Coffee (Grand Central Market)",
+     "address": "Grand Central Market"
+    },
+    {
+     "name": "Verve Coffee Roasters",
+     "address": "833 S Spring St, Los Angeles, CA 90014"
+    },
+    {
+     "name": "Go Get Em Tiger (Grand Ave, uphill ~10 min)",
+     "address": "135 N Grand Ave"
+    }
+   ],
+   "groceries": [
+    {
+     "name": "Whole Foods (8th & Grand, ~10-15 min)",
+     "address": "8th St & Grand Ave"
+    },
+    {
+     "name": "Grand Central Market (produce, specialty)",
+     "address": null
+    },
+    {
+     "name": "Rite Aid closed its last downtown stores Nov 2025 -> pharmacy gap",
+     "address": null
+    },
+    {
+     "name": "Erewhon planned 940 S Hill (date unknown)",
+     "address": "940 S Hill St"
+    }
+   ],
+   "gyms": [
+    {
+     "name": "Equinox (444 S Flower, ~10 min)",
+     "address": "444 S Flower St, Los Angeles, CA 90071"
+    },
+    {
+     "name": "Independent boutique studios; not verified",
+     "address": null
+    }
+   ],
+   "parks": [
+    {
+     "name": "Pershing Square (revamp phase 1A done Dec 2025)",
+     "address": null
+    },
+    {
+     "name": "Spring Street Park (small lawn; NOT a designated dog park)",
+     "address": "Spring St between 4th and 5th (not verified this round; general knowledge, check before relying)"
+    }
+   ],
+   "nightlife": "Strong bar/restaurant scene, though hit by 2025 closures: Cole's and Broadway Bar (Aug 2025), Le Petit Paris (Oct 2025), Clifton's announced closure. Still the best walkable bar crawl in the core with spots along Spring/Main/4th.",
+   "metro": [
+    "Historic Broadway (A/E; Regional Connector) at 2nd St & Broadway",
+    "Pershing Square (B/D) (not verified this round; general knowledge, check before relying)"
+   ],
+   "freeways": "Good: 110 and 101 within ~5 min; 10 via Main/Los Angeles St southbound. (not verified this round; general knowledge, check before relying)",
+   "noise": "Sirens and street noise (car alarms, buses), helicopters, nightlife on Spring/Main, film shoots. Older lofts have single-pane windows; expect less insulation than South Park towers.",
+   "safety": "Mixed. Day is busy; night thins out. Main St and especially east of Main is the western Skid Row boundary (Main–Alameda, 3rd–7th). 5th and 6th St east of Spring are the roughest walking routes. Car break-ins common on street parking. The New York Post (Aug 2025, unverified mirror) counted 100+ vacant storefronts. Anecdotal: residents call areas near Grand Central Market fine.",
+   "homelessness": "High at the eastern edge: Main St marks the start of the Skid Row zone; tents and open drug use on blocks east of Main, especially 5th/6th St. West of Spring is noticeably better.",
+   "cleanliness": "Variable: Spring St fairly well kept by the BID; Main and the cross streets east of it are dirtier (urine, trash).",
+   "changes_2026_28": "Continued retail churn (2025 closures listed above); Erewhon at 940 S Hill might help; adaptive reuse ordinance may bring more office-to-loft conversions; Olympics-era activation unclear.",
+   "advice": "Pick for character and bars only if you are comfortable with gritty edges; stay west of Main and north of 7th. Safety score is lowered by the Skid Row boundary at Main St and 2025 retail vacancy.",
+   "scores": {
+    "coffee": 8,
+    "walk": 9,
+    "nightlife": 8,
+    "errands": 6,
+    "freeway": 8,
+    "quiet": 3,
+    "safety": 4
+   },
+   "sources": [
+    "https://dtlaweekly.com/?p=28049",
+    "https://www.aol.com/news/downtown-los-angeles-became-boarded-213705013.html",
+    "https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Skid_Row%2C_Los_Angeles",
+    "https://lachamber.com/clientuploads/LUCH_committee/102208_Homeless_brochure.pdf",
+    "https://www.ascelasection.org/assets/awards/LA_Times_Article.pdf",
+    "https://urbanize.la/post/checking-phase-1a-pershing-square-revamp",
+    "https://thecoffeevine.com/reviews/cafes/usa/los-angeles/verve-coffee-roasters-dtla-los-angeles-us/",
+    "https://standardhotels.com/culture/Standard-Guide-Downtown-LA-Coffee-Drinks",
+    "https://en.wikivoyage.org/wiki/Los_Angeles/Downtown",
+    "https://la.urbanize.city/?page=11"
+   ]
+  },
+  {
+   "name": "Broadway Theatre District",
+   "maps_to_area": "Downtown LA – Historic Core / Financial District / Bunker Hill",
+   "vibe": "Broadway from ~3rd to Olympic: historic movie palaces (Orpheum, Palace, Los Angeles, Theatre at Ace Hotel), Ace Hotel, discount retail; lively by day, mixed at night.",
+   "residents": "Loft residents in converted buildings (e.g. Broadway Lofts, Broadway Palace), plus older SRO/affordable housing; Latino retail clientele by day.",
+   "coffee": [
+    {
+     "name": "Verve Coffee Roasters (Spring at 9th, 1 block)",
+     "address": "833 S Spring St, Los Angeles, CA 90014"
+    },
+    {
+     "name": "G&B Coffee (Grand Central Market, Broadway at 3rd)",
+     "address": "Grand Central Market"
+    }
+   ],
+   "groceries": [
+    {
+     "name": "Whole Foods (8th & Grand, ~5-10 min)",
+     "address": "8th St & Grand Ave"
+    },
+    {
+     "name": "Ralphs (9th & Flower, ~10 min)",
+     "address": "9th St & Flower St"
+    },
+    {
+     "name": "Erewhon planned 940 S Hill",
+     "address": "940 S Hill St"
+    }
+   ],
+   "gyms": [
+    {
+     "name": "Barry's DTLA",
+     "address": "1200 S Hill St, Los Angeles, CA 90015"
+    },
+    {
+     "name": "Equinox (444 S Flower)",
+     "address": "444 S Flower St, Los Angeles, CA 90071"
+    }
+   ],
+   "parks": [
+    {
+     "name": "Pershing Square (2 blocks west)",
+     "address": null
+    },
+    {
+     "name": "No dog park confirmed",
+     "address": null
+    }
+   ],
+   "nightlife": "Concerts/film at the Orpheum, Theatre at Ace Hotel, Palace; rooftop bars; Broadway Bar closed Aug 2025.",
+   "metro": [
+    "Historic Broadway (A/E; Regional Connector) at 2nd & Broadway",
+    "Pershing Square (B/D) (not verified this round; general knowledge, check before relying)",
+    "7th St/Metro Center (A/E/B/D) (not verified this round; general knowledge, check before relying)"
+   ],
+   "freeways": "Good: 110 and 10 within ~5 min via Olympic/9th; 101 via the 110. (not verified this round; general knowledge, check before relying)",
+   "noise": "Street retail by day (music, vendors), theater crowds, sirens, helicopters; Broadway is a bus-heavy street.",
+   "safety": "Daytime busy and generally OK; after stores close (~7pm) it empties and feels rough on some blocks. Foot Locker cited theft/security costs when it closed in Oct 2025. Avoid walking east from Broadway toward Main/Los Angeles St between 5th and 7th at night.",
+   "homelessness": "Moderate to high; closer to Skid Row (Main St is 1 block east of Spring).",
+   "cleanliness": "Fair: retail trash, some boarded storefronts.",
+   "changes_2026_28": "2025 retail closures (Adidas flagship Jun 2025, Foot Locker Oct 2025) left vacancies; Erewhon planned on Hill; theater programming continues.",
+   "advice": "Great buildings and transit, but a lot of 2025 vacancy; tour at night before signing. Safety score reflects proximity to Skid Row and thin night foot traffic.",
+   "scores": {
+    "coffee": 7,
+    "walk": 9,
+    "nightlife": 7,
+    "errands": 7,
+    "freeway": 8,
+    "quiet": 3,
+    "safety": 4
+   },
+   "sources": [
+    "https://dtlaweekly.com/?p=28049",
+    "https://www.aol.com/news/downtown-los-angeles-became-boarded-213705013.html",
+    "https://thecoffeevine.com/reviews/cafes/usa/los-angeles/verve-coffee-roasters-dtla-los-angeles-us/",
+    "https://en.wikipedia.org/wiki/Regional_Connector",
+    "https://www.insidehook.com/culture-los-angeles/eleven-la-gyms-decoded"
+   ]
+  },
+  {
+   "name": "Jewelry District",
+   "maps_to_area": "Downtown LA – Historic Core / Financial District / Bunker Hill",
+   "vibe": "Hill St/Broadway/6th–8th around St. Vincent Court: wholesale jewelry marts, daytime commerce, shuttered and very quiet after hours.",
+   "residents": "Few residents; a handful of loft conversions; mostly a commercial district.",
+   "coffee": [
+    {
+     "name": "Verve Coffee Roasters (~5-10 min)",
+     "address": "833 S Spring St, Los Angeles, CA 90014"
+    },
+    {
+     "name": "Stumptown (801 S Hope; Foursquare listing)",
+     "address": "801 S Hope St Ste A, Los Angeles, CA"
+    }
+   ],
+   "groceries": [
+    {
+     "name": "Whole Foods (8th & Grand, ~5 min)",
+     "address": "8th St & Grand Ave"
+    },
+    {
+     "name": "Target FIGat7th (~10 min)",
+     "address": "FIGat7th"
+    }
+   ],
+   "gyms": [
+    {
+     "name": "Equinox (444 S Flower)",
+     "address": "444 S Flower St, Los Angeles, CA 90071"
+    },
+    {
+     "name": "Barry's DTLA",
+     "address": "1200 S Hill St, Los Angeles, CA 90015"
+    }
+   ],
+   "parks": [
+    {
+     "name": "Pershing Square (adjacent)",
+     "address": null
+    }
+   ],
+   "nightlife": "Very little in the district itself; walk to the Historic Core or South Park.",
+   "metro": [
+    "Pershing Square (B/D) (not verified this round; general knowledge, check before relying)",
+    "7th St/Metro Center (A/E/B/D) (not verified this round; general knowledge, check before relying)"
+   ],
+   "freeways": "Good: 110 within ~5 min. (not verified this round; general knowledge, check before relying)",
+   "noise": "Daytime trade traffic, armored trucks; quiet nights; helicopters.",
+   "safety": "LAPD Central Division minutes (Jan 2026) note a heavy holiday-season focus on the Jewelry District with CHP help, i.e. robbery/theft targeting the trade. Empty after hours.",
+   "homelessness": "Moderate, around Pershing Square and 6th/7th St edges.",
+   "cleanliness": "Fair.",
+   "changes_2026_28": "No specific projects found this round.",
+   "advice": "Only consider for a specific loft deal; essentially a daytime trade district. Scores driven by good proximity to South Park errands but poor evening life.",
+   "scores": {
+    "coffee": 6,
+    "walk": 8,
+    "nightlife": 4,
+    "errands": 8,
+    "freeway": 8,
+    "quiet": 6,
+    "safety": 5
+   },
+   "sources": [
+    "https://lapdonlinestrgeacc.blob.core.usgovcloudapi.net/lapdonlinemedia/Cent-SEPTcpabmin071725.pdf",
+    "https://thecoffeevine.com/reviews/cafes/usa/los-angeles/verve-coffee-roasters-dtla-los-angeles-us/",
+    "https://www.bisnow.com/news/los-angeles/retail/whole-foods-opens-in-downtown-la-wed-nov-4-51872"
+   ]
+  },
+  {
+   "name": "Fashion District",
+   "maps_to_area": "Downtown LA – Fashion District",
+   "vibe": "~90 blocks of garment wholesale, Santee Alley, California Market Center, the Flower District; frantic by day, shuttered at night. Pockets of loft living (e.g. Garment Lofts, Cornell Building).",
+   "residents": "About 5,700 residents (Fashion District BID 2023 annual report); loft renters, garment-trade workers, some SRO/affordable housing.",
+   "coffee": [
+    {
+     "name": "Verve Coffee Roasters (Spring at 9th)",
+     "address": "833 S Spring St, Los Angeles, CA 90014"
+    },
+    {
+     "name": "Few specialty cafés deeper in the district; none confirmed this round",
+     "address": null
+    }
+   ],
+   "groceries": [
+    {
+     "name": "Whole Foods (8th & Grand, ~10-15 min)",
+     "address": "8th St & Grand Ave"
+    },
+    {
+     "name": "Ralphs (9th & Flower, ~15 min)",
+     "address": "9th St & Flower St"
+    },
+    {
+     "name": "Produce/flower wholesale (Flower Market) by day",
+     "address": null
+    }
+   ],
+   "gyms": [
+    {
+     "name": "Barry's DTLA (1200 S Hill)",
+     "address": "1200 S Hill St, Los Angeles, CA 90015"
+    },
+    {
+     "name": "LA Boulders (Arts District, ~10 min drive)",
+     "address": "1375 E 6th St #8, Los Angeles, CA 90021"
+    }
+   ],
+   "parks": [
+    {
+     "name": "None of note in the district; no dog park confirmed",
+     "address": null
+    }
+   ],
+   "nightlife": "Thin: a few bars near 8th/9th and Spring/Main; mostly dead at night.",
+   "metro": [
+    "Pico (A/E) and 7th St/Metro Center (west edge) (not verified this round; general knowledge, check before relying)",
+    "San Pedro St (A line, Washington Blvd) at the south edge (not verified this round; general knowledge, check before relying)"
+   ],
+   "freeways": "Good: I-10 runs along the south edge (ramps at Main/Los Angeles/San Pedro area), 110 to the west, 5/60 via the 10 east. (not verified this round; general knowledge, check before relying)",
+   "noise": "Early-morning trucks and loading (wholesale starts before dawn), Flower Market activity from ~2-3am, street vendors, helicopters, 10 freeway at the south edge.",
+   "safety": "BID 2023: violent crime relatively low vs. the city spike but a rise in property crime (burglaries, vehicle thefts). Santee Alley area has long been the burglary hot spot (2006 report). The northern edge (7th St from Main to San Pedro) touches Skid Row. Parts of the district south of the 10/Washington may fall under LAPD Newton Division; no Newton-specific 2024–26 numbers were found this round.",
+   "homelessness": "High on the north/east edges abutting Skid Row (7th St, San Pedro, Wall, Maple); lower in the south-west corner.",
+   "cleanliness": "Poor to fair: daytime trade trash, cardboard, vendor waste; BID cleans but volume is high.",
+   "changes_2026_28": "No major residential openings confirmed; 2025 immigration raids hit the district's businesses (LA Times, \"After raids, Fashion District hopes for a Black Friday boon\"). Adaptive reuse ordinance could enable loft conversions.",
+   "advice": "Cheapest lofts but weakest daily-life fit; only consider the Spring/Main-at-9th corner near Verve, not east of Los Angeles St. Scores reflect early-morning trade noise and Skid Row proximity.",
+   "scores": {
+    "coffee": 5,
+    "walk": 7,
+    "nightlife": 3,
+    "errands": 5,
+    "freeway": 9,
+    "quiet": 2,
+    "safety": 3
+   },
+   "sources": [
+    "https://issuu.com/lafashiondistrict/docs/2023_annual_report_final-reduced",
+    "https://www.apparelnews.net/news/2006/apr/07/cmc-security-stops-showroom-burglary/",
+    "https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Skid_Row%2C_Los_Angeles",
+    "https://thecoffeevine.com/reviews/cafes/usa/los-angeles/verve-coffee-roasters-dtla-los-angeles-us/"
+   ]
+  },
+  {
+   "name": "Arts District",
+   "maps_to_area": "Downtown LA – Arts District",
+   "vibe": "Former industrial warehouses between Alameda and the LA River: galleries (Hauser & Wirth), breweries, design-forward restaurants, Soho Warehouse, murals; car-oriented and spread out.",
+   "residents": "Creatives, tech/media workers, young professionals in loft conversions and new mid-rises (One Santa Fe, Amp Lofts, Aliso, Garey Building); higher incomes than surrounding blocks.",
+   "coffee": [
+    {
+     "name": "Blue Bottle Coffee (Arts District)",
+     "address": "582 Mateo St, Los Angeles, CA"
+    },
+    {
+     "name": "Stumptown Coffee Roasters",
+     "address": "806 S Santa Fe Ave, Los Angeles, CA"
+    },
+    {
+     "name": "Maru Coffee (across from Soho Warehouse; address 1019 S Santa Fe Ave from a garbled source, verify)",
+     "address": null
+    },
+    {
+     "name": "Blacktop Coffee",
+     "address": null
+    },
+    {
+     "name": "Go Get Em Tiger: no Arts District location found this round",
+     "address": null
+    }
+   ],
+   "groceries": [
+    {
+     "name": "Urban Radish (Arts District market; current status unknown)",
+     "address": null
+    },
+    {
+     "name": "Whole Foods / Ralphs / Target are a drive or ride away (~5-10 min) in South Park",
+     "address": null
+    },
+    {
+     "name": "Little Tokyo grocers (Tokyo Central at Weller Court) for the north end",
+     "address": null
+    }
+   ],
+   "gyms": [
+    {
+     "name": "LA Boulders (Touchstone bouldering gym, opened 2013)",
+     "address": "1375 E 6th St #8, Los Angeles, CA 90021"
+    },
+    {
+     "name": "Boutique studios; not verified",
+     "address": null
+    }
+   ],
+   "parks": [
+    {
+     "name": "Arts District Park (small) (not verified this round; general knowledge, check before relying)",
+     "address": null
+    },
+    {
+     "name": "Sixth Street Viaduct (bridge) and planned PARC park beneath it (not verified this round; general knowledge, check before relying)",
+     "address": null
+    },
+    {
+     "name": "No dedicated dog park confirmed",
+     "address": null
+    }
+   ],
+   "nightlife": "Breweries (Angel City, Arts District Brewing (not verified this round; general knowledge, check before relying)), cocktail bars, restaurants (e.g. Brick Lane modern Indian, opened Jun 2026), Soho Warehouse; lively weekends, quieter weeknights.",
+   "metro": [
+    "Little Tokyo/Arts District (A/E; Regional Connector rebuilt it underground at 1st & Central) at the north edge",
+    "No station in the core; a future Arts District/6th St station on the A line extension is proposed (not verified this round; general knowledge, check before relying)"
+   ],
+   "freeways": "Very good to the east: 101, I-10, I-5 and CA-60 interchange is just across the river (4th/6th/7th St bridges); 110 is ~5-10 min west. (not verified this round; general knowledge, check before relying)",
+   "noise": "Freight/rail along the LA River (Metrolink/Amtrak/freight and the Division 20 rail yard), Sixth Street Viaduct street takeovers and stunts (widely reported since 2022), bar crowds on weekends, construction, helicopters.",
+   "safety": "An older LA Times-sourced piece reported big jumps in violent crime and double-digit rises in thefts/car break-ins in the Arts District and LA Live. Car break-ins are the chronic problem; never park on the street with anything visible. The western edge (Alameda, Central, San Pedro, 4th–7th) borders Skid Row and industrial blocks with encampments. The Arts District is mostly in LAPD Central Division; the river/Boyle Heights side is Hollenbeck. No 2024–26 Arts District-specific figures were found.",
+   "homelessness": "Moderate: encampments on industrial blocks and under bridges near the river and along Alameda/Mateo edges; less than the Historic Core/Skid Row.",
+   "cleanliness": "Fair: graffiti is part of the aesthetic; dumping on industrial blocks.",
+   "changes_2026_28": "New restaurant openings continue (Brick Lane Jun 2026; a steakhouse chain planned). One long-running Arts District restaurant-bar closed after 11 years (2026). Sixth Street Viaduct park and an A-line Arts District station remain longer-term. Soho House/Hauser & Wirth anchor the area.",
+   "advice": "Best coffee concentration and character, good freeway access east and south; downsides are no walkable full-size supermarket and car break-ins. Score basis: excellent coffee, freeway access to the 101/5/10/60, weak walkable errands.",
+   "scores": {
+    "coffee": 9,
+    "walk": 6,
+    "nightlife": 8,
+    "errands": 4,
+    "freeway": 9,
+    "quiet": 5,
+    "safety": 5
+   },
+   "sources": [
+    "https://redirect.foursquare.com/jonhmchan/list/arts-district-la",
+    "https://www.sohohouse.com/notes/a-guide-to-dtla-arts-district-by-olivia-lopez",
+    "https://alloyla-com.pages.dev/blog/arts-district-coffee-breakfast-brunch/index.html",
+    "https://www.laconservancy.org/locations/hauser-wirth-los-angeles",
+    "https://touchstoneclimbing.com/la-boulders/",
+    "https://www.finedininglovers.com/explore/lists/best-restaurant-openings-los-angeles-june-2026",
+    "https://www.inkl.com/news/dramatic-rise-in-crime-casts-a-shadow-on-downtown-l-a-s-gentrification",
+    "https://en.wikipedia.org/wiki/Regional_Connector",
+    "https://pbssocal.org/history-society/will-downtown-l-a-get-its-holy-grail-of-grocery-stores"
+   ]
+  },
+  {
+   "name": "Little Tokyo",
+   "maps_to_area": "Little Tokyo",
+   "vibe": "Historic Japanese American neighborhood around 1st/2nd St and Japanese Village Plaza: ramen, izakayas, Japanese grocers, JANM, temples; tight-knit and walkable, busy at weekends.",
+   "residents": "Japanese American seniors (affordable/senior housing), young professionals in newer complexes (Sakura Crossing, Hikari, Arrive Wakaba), Arts District spillover.",
+   "coffee": [
+    {
+     "name": "Cafe Demitasse (Little Tokyo)",
+     "address": null
+    },
+    {
+     "name": "Blue Bottle / Stumptown in the Arts District (~10-15 min walk)",
+     "address": null
+    },
+    {
+     "name": "Go Get Em Tiger, 135 N Grand Ave (~15 min)",
+     "address": "135 N Grand Ave"
+    }
+   ],
+   "groceries": [
+    {
+     "name": "Tokyo Central (Marukai) at Weller Court",
+     "address": "123 Onizuka St (Weller Court), Los Angeles, CA 90012"
+    },
+    {
+     "name": "Nijiya Market (Japanese Village Plaza)",
+     "address": null
+    },
+    {
+     "name": "Woori Market (Little Tokyo Galleria)",
+     "address": null
+    },
+    {
+     "name": "No Whole Foods/Trader Joe's within walking distance; Whole Foods 8th & Grand ~10 min drive",
+     "address": null
+    }
+   ],
+   "gyms": [
+    {
+     "name": "LA Boulders (Arts District, ~10 min)",
+     "address": "1375 E 6th St #8, Los Angeles, CA 90021"
+    },
+    {
+     "name": "Equinox (444 S Flower; ~10 min by A/E line to Grand Av)",
+     "address": "444 S Flower St, Los Angeles, CA 90071"
+    }
+   ],
+   "parks": [
+    {
+     "name": "Grand Park (Civic Center, ~10 min walk)",
+     "address": null
+    },
+    {
+     "name": "Japanese American National Museum plaza / Noguchi Plaza (not verified this round; general knowledge, check before relying)",
+     "address": null
+    },
+    {
+     "name": "No dog park confirmed",
+     "address": null
+    }
+   ],
+   "nightlife": "Izakayas, karaoke, sake/whisky bars, Far Bar (not verified this round; general knowledge, check before relying); Arts District bars a short walk east.",
+   "metro": [
+    "Little Tokyo/Arts District (A/E; underground Regional Connector station at 1st & Central, opened Jun 2023)",
+    "Civic Center/Grand Park (B/D) ~10 min (not verified this round; general knowledge, check before relying)"
+   ],
+   "freeways": "Very good: 101 at Alameda/Los Angeles St a few minutes north; 110 via 1st/3rd/4th; 10/5/60 via the river bridges. (not verified this round; general knowledge, check before relying)",
+   "noise": "Weekend crowds, construction (Go For Broke/232 Judge John Aiso St affordable project, 118 S Onizuka condos), helicopters (LAPD HQ and Civic Center are next door), rail at the 1st/Alameda portal.",
+   "safety": "Day/evening generally comfortable (anecdotal). The southern edge (3rd–4th St, San Pedro/Central/Alameda) is the northern boundary of Skid Row (3rd St); walking south on San Pedro or Central past 3rd at night is the main risk.",
+   "homelessness": "Noticeable at the 3rd St edge and in some doorways; heavier south of 3rd (Skid Row).",
+   "cleanliness": "Good on 1st/2nd St and in the plazas; declines south of 2nd/3rd.",
+   "changes_2026_28": "232 Judge John Aiso St: 248 affordable apartments plus Go For Broke National Education Center space nearing completion (Feb 2026). 118 S Onizuka St: 77-unit condo tower. The Regional Connector station plaza/joint development at 1st & Alameda continues.",
+   "advice": "Charming, walkable and well connected (A/E lines and the 101); live north of 2nd St. Scores: strong transit and freeway, good food/nightlife, weaker specialty-coffee density and big-box errands.",
+   "scores": {
+    "coffee": 6,
+    "walk": 8,
+    "nightlife": 7,
+    "errands": 6,
+    "freeway": 9,
+    "quiet": 5,
+    "safety": 6
+   },
+   "sources": [
+    "https://rafumarket.com/post/j-town-beat-the-importance-of-supermarkets",
+    "https://la.urbanize.city/?page=11",
+    "https://www.foxla.com/news/la-metro-opens-3-new-underground-stations",
+    "https://www.insidehook.com/food/best-coffee-shops-los-angeles/amp",
+    "https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Skid_Row%2C_Los_Angeles"
+   ]
+  },
+  {
+   "name": "Chinatown",
+   "maps_to_area": "Chinatown",
+   "vibe": "Older Chinese/Vietnamese commercial core on Broadway/Hill plus Central Plaza and Far East Plaza; a quieter, more residential feel, next to LA State Historic Park and Dodger Stadium.",
+   "residents": "Older Chinese and Southeast Asian residents (many in affordable housing), plus young renters in newer complexes (Jia, The Orsini nearby, Llewellyn).",
+   "coffee": [
+    {
+     "name": "Endorffeine (Far East Plaza; street address not confirmed)",
+     "address": null
+    },
+    {
+     "name": "Go Get Em Tiger (Grand Ave, ~15 min)",
+     "address": "135 N Grand Ave"
+    }
+   ],
+   "groceries": [
+    {
+     "name": "No full-service supermarket: Ai Hoa and G&G closed 2019; Yue Wa Market closed in 2025 citing burglaries, rent, raids",
+     "address": null
+    },
+    {
+     "name": "Gu Grocery planned but delayed; not full-service",
+     "address": null
+    },
+    {
+     "name": "Nearest big stores: Target FIGat7th / Whole Foods 8th & Grand by car (~10 min)",
+     "address": null
+    }
+   ],
+   "gyms": [
+    {
+     "name": "No climbing gym nearby; LA Boulders ~10 min drive",
+     "address": "1375 E 6th St #8, Los Angeles, CA 90021"
+    },
+    {
+     "name": "Equinox (444 S Flower; ~10 min via A line)",
+     "address": "444 S Flower St, Los Angeles, CA 90071"
+    }
+   ],
+   "parks": [
+    {
+     "name": "Los Angeles State Historic Park (large, adjacent)",
+     "address": null
+    },
+    {
+     "name": "Elysian Park (adjacent; large hiking park) (not verified this round; general knowledge, check before relying)",
+     "address": null
+    },
+    {
+     "name": "No dog park confirmed",
+     "address": null
+    }
+   ],
+   "nightlife": "A few cocktail bars and art galleries on Chung King Road (not verified this round; general knowledge, check before relying); Dodger game nights spill over.",
+   "metro": [
+    "Chinatown (A line) (not verified this round; general knowledge, check before relying)",
+    "Union Station (B/D, A/L, Metrolink) ~10-15 min walk (not verified this round; general knowledge, check before relying)"
+   ],
+   "freeways": "Excellent: 110 (Pasadena Fwy) ramps at Hill St/Broadway, 101 and the 5 within minutes. (not verified this round; general knowledge, check before relying)",
+   "noise": "Dodger Stadium game and concert traffic, fireworks nights, the 110 freeway along the west edge, A-line trains on the elevated track, helicopters.",
+   "safety": "Quieter than the core; property crime and burglaries affected small businesses (Yue Wa cited burglaries). Broadway/Spring at Cesar Chavez and the North Broadway corridor can be rough at night. No 2024–26 area figures found.",
+   "homelessness": "Moderate: encampments near the 110, along Spring St by the State Historic Park and near Cesar Chavez.",
+   "cleanliness": "Fair.",
+   "changes_2026_28": "1457 N Main St modular complex (354 apartments) in its final phase (Urbanize Mar 2026). Grocery gap persists.",
+   "advice": "Good for quiet, parks and the 110/101/5, but no supermarket and thin coffee; pair with a car. Score basis: grocery desert and limited coffee vs. excellent freeway access and parks.",
+   "scores": {
+    "coffee": 5,
+    "walk": 6,
+    "nightlife": 5,
+    "errands": 3,
+    "freeway": 10,
+    "quiet": 6,
+    "safety": 6
+   },
+   "sources": [
+    "https://thecounter.org/los-angeles-chinatown-growing-destination-eating-out-yet-local-residents-dont-have-supermarket/",
+    "https://abc7.com/post/yue-wa-market-beloved-chinatown-grocery-store-closing-18-years/17514638/",
+    "https://laist.com/news/food/chinatown-grocery-store-cant-open-permit-delays",
+    "https://urbanize.la/post/new-apartments-coming-chinatown",
+    "https://www.insidehook.com/food/best-coffee-shops-los-angeles/amp"
+   ]
+  },
+  {
+   "name": "Civic Center",
+   "maps_to_area": "Downtown LA – Civic Center",
+   "vibe": "Government core: City Hall, courthouses, LAPD HQ, federal buildings, Grand Park. Busy by weekday, very quiet nights; few residential buildings.",
+   "residents": "Very few residents; small number of apartments on the edges (toward Little Tokyo/Bunker Hill).",
+   "coffee": [
+    {
+     "name": "Go Get Em Tiger (Grand Ave)",
+     "address": "135 N Grand Ave"
+    },
+    {
+     "name": "Little Tokyo cafés (~5 min)",
+     "address": null
+    },
+    {
+     "name": "G&B Coffee, Grand Central Market (~10 min)",
+     "address": "Grand Central Market"
+    }
+   ],
+   "groceries": [
+    {
+     "name": "Little Tokyo grocers (Tokyo Central, Nijiya)",
+     "address": null
+    },
+    {
+     "name": "Whole Foods 8th & Grand (~15-20 min walk)",
+     "address": "8th St & Grand Ave"
+    }
+   ],
+   "gyms": [
+    {
+     "name": "Equinox (444 S Flower)",
+     "address": "444 S Flower St, Los Angeles, CA 90071"
+    },
+    {
+     "name": "Ketchum-Downtown YMCA (not verified this round; general knowledge, check before relying)",
+     "address": null
+    }
+   ],
+   "parks": [
+    {
+     "name": "Grand Park (12 acres, City Hall to Music Center) (not verified this round; general knowledge, check before relying)",
+     "address": null
+    },
+    {
+     "name": "No dog park confirmed",
+     "address": null
+    }
+   ],
+   "nightlife": "Minimal; Grand Park and Music Center events.",
+   "metro": [
+    "Civic Center/Grand Park (B/D) (not verified this round; general knowledge, check before relying)",
+    "Historic Broadway (A/E) and Little Tokyo/Arts District (A/E) nearby (Regional Connector)"
+   ],
+   "freeways": "Excellent: 101 runs along the north edge; 110 via Temple/3rd. (not verified this round; general knowledge, check before relying)",
+   "noise": "Protests and rallies at City Hall, LAPD/news helicopters, sirens, event crowds in Grand Park; 101 freeway on the north edge.",
+   "safety": "Weekday police presence; deserted after hours; encampments have recurred around City Hall/federal plazas and the 101 edges.",
+   "homelessness": "Moderate: around plazas, federal buildings and freeway edges.",
+   "cleanliness": "Good to fair.",
+   "changes_2026_28": "Likely ceremonial/Olympic events at Grand Park/City Hall in 2028; no residential projects confirmed this round.",
+   "advice": "Not really a place to rent; consider adjacent Bunker Hill or Little Tokyo instead. Score basis: few homes, dead at night, strong transit/freeway.",
+   "scores": {
+    "coffee": 6,
+    "walk": 7,
+    "nightlife": 3,
+    "errands": 5,
+    "freeway": 10,
+    "quiet": 5,
+    "safety": 6
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Regional_Connector",
+    "https://www.insidehook.com/food/best-coffee-shops-los-angeles/amp"
+   ]
+  },
+  {
+   "name": "City West (Central City West)",
+   "maps_to_area": "Downtown LA – City West",
+   "vibe": "West of the 110 between Temple, Wilshire and Lucas Ave (\"the West Bank\"): newer mid-rise complexes (Da Vinci, Bixel at Fifth, Be DTLA, Glo, Eleven Eleven Wilshire, The Piero), hospitals, Good Samaritan; cut off from the core by the freeway.",
+   "residents": "Young professionals and medical workers in amenity complexes; Westlake/Echo Park-adjacent Latino working families on the edges.",
+   "coffee": [
+    {
+     "name": "Few specialty cafés found west of the 110; nearest confirmed ones are in FiDi/Bunker Hill (Stumptown 801 S Hope, Go Get Em Tiger 135 N Grand) ~15-20 min walk",
+     "address": null
+    }
+   ],
+   "groceries": [
+    {
+     "name": "Target FIGat7th (~14 min walk from Bixel at Fifth per listing)",
+     "address": "FIGat7th"
+    },
+    {
+     "name": "Ralphs (9th & Flower) ~15 min",
+     "address": null
+    },
+    {
+     "name": "Grocery Outlet mentioned in an unreliable source; unverified",
+     "address": null
+    }
+   ],
+   "gyms": [
+    {
+     "name": "Equinox (444 S Flower), across the 110",
+     "address": "444 S Flower St, Los Angeles, CA 90071"
+    },
+    {
+     "name": "Most complexes have in-building gyms",
+     "address": null
+    }
+   ],
+   "parks": [
+    {
+     "name": "Vista Hermosa Park (north edge) (not verified this round; general knowledge, check before relying)",
+     "address": null
+    },
+    {
+     "name": "MacArthur Park (west, Westlake) (not verified this round; general knowledge, check before relying)",
+     "address": null
+    },
+    {
+     "name": "No dog park confirmed",
+     "address": null
+    }
+   ],
+   "nightlife": "Thin; walk/ride across the 110 to FiDi/South Park; Echo Park bars by car.",
+   "metro": [
+    "7th St/Metro Center (across the 110) (not verified this round; general knowledge, check before relying)",
+    "Westlake/MacArthur Park (B/D) at the west edge (not verified this round; general knowledge, check before relying)"
+   ],
+   "freeways": "Excellent: 110 and 101 ramps at its doorstep (3rd, 4th, 6th St, Temple); 10 a few minutes south. Note CARB's 500-ft freeway-proximity air/noise concern for buildings along the 110. (not verified this round; general knowledge, check before relying)",
+   "noise": "110 freeway noise and air quality for buildings near the trench; hospital sirens (Good Samaritan); helicopters.",
+   "safety": "Quieter residential blocks; Westlake/MacArthur Park to the west has significant open drug activity and is the edge to avoid on foot; car break-ins as elsewhere downtown. No sub-district crime data found.",
+   "homelessness": "Moderate: tents along the 110 edges and toward MacArthur Park.",
+   "cleanliness": "Fair; better within complexes.",
+   "changes_2026_28": "Excluded from the DTLA 2040 plan area and from some DTLA Alliance inventories; no major openings confirmed. Conversions on the Wilshire corridor nearby.",
+   "advice": "Often cheaper with the best freeway access in DTLA, but weak walkable coffee and nightlife; good for someone who drives most errands. Score basis: freeway at the doorstep, but the 110 isolates it from core amenities.",
+   "scores": {
+    "coffee": 3,
+    "walk": 6,
+    "nightlife": 3,
+    "errands": 6,
+    "freeway": 10,
+    "quiet": 5,
+    "safety": 6
+   },
+   "sources": [
+    "https://en.wikipedia.org/wiki/Central_City_West,_Los_Angeles",
+    "https://www.westsiderentals.com/los-angeles-ca/1311-w-5th-st-k8f6kkc",
+    "https://issuu.com/dtla/docs/2023-residential-report-v8-opt",
+    "https://lv.foursquare.com/kaler/list/la-coffee"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "where": "Main St to Alameda St, between 3rd St and 7th St",
+   "note": "Official Skid Row boundaries (2006 Jones v. City of LA settlement). Densest homeless concentration in LA County (3,791 people, 2,112 unsheltered in the 2024 count; RAND found continued growth ~4%/yr and 87% of tents in its study areas here by Jan 2026). Avoid as a walking route, especially San Julian, Crocker, Towne, Wall and San Pedro between 4th and 6th.",
+   "sources": [
+    "https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Skid_Row%2C_Los_Angeles",
+    "https://lachamber.com/clientuploads/LUCH_committee/102208_Homeless_brochure.pdf",
+    "https://spectrumlocalnews.com/ca/california/homelessness/2024/08/12/la-county-reports-progress-in-housing-residents-on-skid-row",
+    "https://smdp.com/rough-sleeping-hits-4-year-high-in-l-a-despite-flat-overall-homeless-numbers-rand-finds/"
+   ]
+  },
+  {
+   "where": "5th St and 6th St east of Spring/Main",
+   "note": "Main connector streets into Skid Row; roughest walking routes out of the Historic Core and Broadway Theatre District. Use 4th or 7th west of Main, or the Metro, instead.",
+   "sources": [
+    "https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Skid_Row%2C_Los_Angeles"
+   ]
+  },
+  {
+   "where": "Alameda St, Central Ave and San Pedro St between 3rd and 7th",
+   "note": "Walking between Little Tokyo/Arts District and South Park/Fashion District cuts through Skid Row. Take the A/E line or ride instead; walk via 1st/2nd St to the Arts District.",
+   "sources": [
+    "https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Skid_Row%2C_Los_Angeles",
+    "https://en.wikipedia.org/wiki/Regional_Connector"
+   ]
+  },
+  {
+   "where": "7th St from Main to Central; Fashion District north edge (San Pedro, Wall, Maple at 7th–8th)",
+   "note": "Southern Skid Row boundary bleeding into the Fashion District; heavy encampments. Stay west of Los Angeles St.",
+   "sources": [
+    "https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Skid_Row%2C_Los_Angeles",
+    "https://issuu.com/lafashiondistrict/docs/2023_annual_report_final-reduced"
+   ]
+  },
+  {
+   "where": "Pershing Square and 7th St/Metro Center portals",
+   "note": "Disorder and drug use around entrances; park revamp phase 1A completed Dec 2025. Fine in daytime, avoid lingering at night.",
+   "sources": [
+    "https://urbanize.la/post/checking-phase-1a-pershing-square-revamp"
+   ]
+  },
+  {
+   "where": "Broadway between 5th and 9th after ~7pm",
+   "note": "Retail closes and foot traffic disappears; 2025 vacancies (Adidas, Foot Locker) worsened the night feel.",
+   "sources": [
+    "https://dtlaweekly.com/?p=28049"
+   ]
+  },
+  {
+   "where": "110 and 10 freeway underpasses/edges (South Park west and south edges, City West, Chinatown)",
+   "note": "Encampments and debris under overpasses; also the CARB 500-ft freeway air/noise concern for buildings next to the trench.",
+   "sources": [
+    "https://en.wikivoyage.org/wiki/Los_Angeles/Downtown"
+   ]
+  },
+  {
+   "where": "Street parking anywhere downtown, especially Arts District, LA Live, Historic Core",
+   "note": "Downtown led the city in reported vehicle break-ins (959 in Q1 2023, Crosstown). Use a secured garage and leave nothing visible.",
+   "sources": [
+    "https://xtown.la/2023/04/26/los-angeles-car-break-ins-december-january-new-highs/",
+    "https://www.inkl.com/news/dramatic-rise-in-crime-casts-a-shadow-on-downtown-l-a-s-gentrification"
+   ]
+  },
+  {
+   "where": "Sixth Street Viaduct and Arts District river edge",
+   "note": "Repeated street takeovers/stunts and late-night noise reported since the 2022 opening (general knowledge, not re-verified this round).",
+   "sources": []
+  },
+  {
+   "where": "Westlake/MacArthur Park (west of City West, Alvarado St)",
+   "note": "Open-air drug market reputation; avoid walking west of Lucas Ave/Union Ave at night (general knowledge, not re-verified this round).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Central_City_West,_Los_Angeles"
+   ]
+  },
+  {
+   "where": "North Broadway/Spring St around Cesar Chavez Ave and the 110 (Chinatown south edge)",
+   "note": "Thin foot traffic and encampments near the freeway and the State Historic Park edge at night (anecdotal/general knowledge).",
+   "sources": []
+  }
+ ],
+ "trends": [
+  {
+   "topic": "Citywide violent crime",
+   "finding": "LA homicides fell ~19% in 2025 (284 to 230), lowest since 1966; shooting victims down 8% (981 to 899). Homicides involving unhoused people rose 20% to 61.",
+   "as_of": "2026-01",
+   "source": "https://laist.com/news/criminal-justice/homicides-fall-to-lowest-level-since-1966-in-city-of-la"
+  },
+  {
+   "topic": "Downtown violent incidents",
+   "finding": "Two random violent attacks downtown (one fatal) in spring 2026 put downtown safety back under scrutiny (Spectrum News). A '743% higher crime' claim in that coverage is unverified.",
+   "as_of": "2026-04",
+   "source": "https://spectrumnews1.com/ca/la/public-safety/2026/04/24/downtown-la-safety-violent-crime"
+  },
+  {
+   "topic": "LAPD Central Division deployment",
+   "finding": "Central Division used extra patrol, bike units, foot beats and Mounted Unit in hot spots, with a heavy holiday focus on the Jewelry District with CHP help.",
+   "as_of": "2026-01",
+   "source": "https://lapdonlinestrgeacc.blob.core.usgovcloudapi.net/lapdonlinemedia/Cent-SEPTcpabmin071725.pdf"
+  },
+  {
+   "topic": "Car break-ins",
+   "finding": "Downtown had the most vehicle break-ins of any LA neighborhood (959 in Q1 2023, vs 262 in Hollywood). No 2025–26 downtown-specific numbers were found this round.",
+   "as_of": "2023-04",
+   "source": "https://xtown.la/2023/04/26/los-angeles-car-break-ins-december-january-new-highs/"
+  },
+  {
+   "topic": "Homelessness",
+   "finding": "2025 LAHSA count: unsheltered homelessness down 7.9% in the City of LA (17.5% over two years), down 9.5% countywide. RAND: Skid Row was the only study area with continuous growth (~4%/yr), the official count captured only 61% of Skid Row's unsheltered population, and 87% of remaining tents in its three study areas were in Skid Row by Jan 2026.",
+   "as_of": "2026-01",
+   "source": "https://smdp.com/rough-sleeping-hits-4-year-high-in-l-a-despite-flat-overall-homeless-numbers-rand-finds/"
+  },
+  {
+   "topic": "Downtown population",
+   "finding": "DTLA Alliance's 2026 Outlook cites 80,000+ residents, 323,000 jobs and 17M+ annual visitors. Its 'Downtown Reimagined' page says 90,000+ (geographies differ; City West is excluded from some inventories). ~91% residential occupancy.",
+   "as_of": "2026-03",
+   "source": "https://downtownla.com/article/event-recap-dtla-2026-trends-and-outlook-breakfast"
+  },
+  {
+   "topic": "Residential pipeline",
+   "finding": "~33,000 units in the pipeline (Q1 2025); population projected to exceed 103,000. 31,828 units built since 2010.",
+   "as_of": "2025",
+   "source": "https://therealdeal.com/data/la/2025/downtown-la-plans-33000-new-apartments/"
+  },
+  {
+   "topic": "Fashion District residents",
+   "finding": "About 5,700 residents in the Fashion District BID area; violent crime relatively low but property crime (burglary, vehicle theft) spiked.",
+   "as_of": "2023",
+   "source": "https://issuu.com/lafashiondistrict/docs/2023_annual_report_final-reduced"
+  },
+  {
+   "topic": "Retail closures",
+   "finding": "2025 closures: Adidas Broadway flagship (Jun), Cole's and Broadway Bar (Aug), Le Petit Paris (Oct), Foot Locker Broadway (Oct, citing theft/security costs), last downtown Rite Aids (Nov, pharmacy gap). Historic Core reportedly 100+ vacant storefronts (Aug 2025, unverified).",
+   "as_of": "2025-12",
+   "source": "https://dtlaweekly.com/?p=28049"
+  },
+  {
+   "topic": "Office-to-residential conversions",
+   "finding": "LA enacted a citywide commercial-to-housing conversion law (Feb 2026). Downtown projects: 1055 W 7th St (~686–691 units), the World Trade Center at Figueroa & 3rd (512 affordable units).",
+   "as_of": "2026-04",
+   "source": "https://therealdeal.com/la/2026/02/13/los-angeles-enacts-commercial-to-housing-conversion-law"
+  },
+  {
+   "topic": "Olympics 2028 / Convention Center",
+   "finding": "$2.62B LA Convention Center expansion broke ground Oct 2025; Olympic-ready target Mar 31 2028; work must pause during the Games and finish ~2029; financing/schedule risk reported.",
+   "as_of": "2025-10",
+   "source": "https://abc7.com/post/los-angeles-break-ground-massive-262-billion-expansion-la-convention-center/17917557/"
+  },
+  {
+   "topic": "Groceries",
+   "finding": "Erewhon planning a store at 940 S Hill St. No downtown Trader Joe's found. Chinatown has had no full-service supermarket since 2019 and lost Yue Wa Market in 2025.",
+   "as_of": "2026-02",
+   "source": "https://la.urbanize.city/?page=11"
+  },
+  {
+   "topic": "Noise",
+   "finding": "Viral Sept 2026 account of a new downtown resident describing nightly helicopters, fireworks/explosions and tire screeching (anecdotal).",
+   "as_of": "2026-09",
+   "source": "https://dailydot.com/man-moves-to-downtown-la-says-helicopters-explosions-and-screeching-tires-make-every-night-feel-like-a-war-zone"
+  }
+ ],
+ "summary": "For a remote worker who drives and wants walkable coffee, gyms and errands for one year (Feb 2027–early 2028), South Park/LA Live is the safest default: Whole Foods, Ralphs and Target are walkable, the 110/10 are minutes away, and it is the cleanest core district. The main costs are event and Convention Center construction noise. Bunker Hill is the quiet, polished alternative with the same freeway access but fewer errands. The Arts District has the best coffee (Blue Bottle, Stumptown, Maru) and is close to the 101/5/10/60, but has no walkable full-size supermarket and car break-ins are common. Little Tokyo is a well-connected middle ground if you live north of 2nd St. The Historic Core and Broadway Theatre District have the most character but sit against the Skid Row boundary (Main–Alameda, 3rd–7th) and lost several anchor businesses in 2025. Fashion District, Jewelry District and Civic Center are weak residential fits. City West and Chinatown give excellent freeway access and quiet but thin coffee and errands (Chinatown has no supermarket). Citywide violent crime fell sharply in 2025 and unsheltered homelessness fell ~8% in the city, but Skid Row itself kept growing (RAND). No Central/Newton/Hollenbeck division-level 2025–26 figures were retrievable this round, so the safety scores are judgements from reporting and anecdotes. Items marked 'not verified this round' come from general knowledge, not the 30 searches. The Olympics (July 2028) fall after the lease ends, but 2027 will bring pre-Games construction around LA Live and the Convention Center."
+}

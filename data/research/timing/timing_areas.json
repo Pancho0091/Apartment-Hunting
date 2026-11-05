@@ -1,0 +1,479 @@
+{
+  "areas": [
+    {
+      "area_id": "downtown-la-south-park",
+      "name": "Downtown LA – South Park",
+      "region": "Los Angeles",
+      "level": "high",
+      "typical_offer": "4–10 weeks free is widely advertised; Redfin listing banners showed JosephineDTLA 10 weeks free (2BR from $3,480+), G12 (1200 S Grand) 10 weeks free on one page vs 4 weeks free on its own listing (studios ~ $2,089, page updated 10/13), Olympic by Windsor 3 months free, Onyx (424 W Pico) 8 weeks free (studio $2,195), Alina (700 W 9th St) 8 weeks free, Wren up to 4 weeks free if move in within 30 days (page updated 10/08), E on Grand and Packard Lofts 1 month free.",
+      "driver": "Concentration of recently delivered high-rise lease-ups (Olympic, Josephine, Wren, G12, Circa etc.) plus continued Downtown deliveries; Matthews ranks Downtown LA among the most active construction submarkets (2.5% of inventory under construction, Q2 2026). Downtown has a long history of elevated vacancy (12% in 2019; 10.9% in Q3 2025 per Matthews).",
+      "vacancy": "Downtown LA 10.9% in Q3 2025 (Matthews); metro LA 4.5–5.7% in Q2 2026 depending on source (Matthews 4.52%, CBRE 4.6%, Lee & Associates 5.7%).",
+      "pipeline": "Downtown LA ~2.5% of inventory under construction (Matthews Q2 2026). CIM's 34-story, 525-unit 888 S Hope St under construction (no completion date found). South Park Towers (1600 S Flower) status unclear. The Bloc residential tower not before ~2030.",
+      "evidence": "Redfin South Park neighborhood listing pages (snapshots, mostly undated; some listing pages show 'updated 10/13' and '10/08', presumably Oct 2026). Matthews Q3 2025 report: landlords increasingly offered concessions, particularly in Downtown LA where vacancy reached 10.9%. Essex TENTEN Downtown advertised up to 6 weeks free for lease starts by 3/14/26 (expired).",
+      "as_of": "Listing snapshots ~Oct 2026 (undated, verify live); vacancy Q3 2025; pipeline Q2 2026",
+      "sources": [
+        "https://www.redfin.com/neighborhood/116776/CA/Los-Angeles/South-Park/2-bedroom-apartments-for-rent",
+        "https://www.redfin.com/neighborhood/116776/CA/Los-Angeles/South-Park/studio-apartments-for-rent",
+        "https://www.redfin.com/CA/Los-Angeles/G12/apartment/79041754",
+        "https://www.redfin.com/CA/Los-Angeles/WREN/apartment/177354779",
+        "https://www.matthews.com/insights/los-angeles-ca-multifamily-market-report-q3-2025",
+        "https://www.matthews.com/insights/los-angeles-multifamily-q2-2026",
+        "https://prd0.essexapartmenthomes.com/apartments/los-angeles/tenten-downtown",
+        "https://www.multihousingnews.com/cim-starts-building-downtown-la-apartment-tower/"
+      ]
+    },
+    {
+      "area_id": "downtown-la-arts-district",
+      "name": "Downtown LA – Arts District",
+      "region": "Los Angeles",
+      "level": "high",
+      "typical_offer": "1–10 weeks free; Redfin banners: Alloy (525 S Santa Fe Ave) 10 weeks free on studios/1BR/2BR; AVA Arts District (1540 Industrial St) 1.5–2 months free; Garey Building (905 E 2nd St) 6 weeks free; Aliso (950 E 3rd St) 4 weeks free; One Santa Fe 1 month free; Walnut Building and RiverFront Lofts 2–6 weeks free.",
+      "driver": "Large stock of 2015–2025 luxury deliveries competing with South Park/DTLA high-rises; Downtown vacancy elevated (10.9% Q3 2025, Matthews).",
+      "vacancy": "Downtown LA 10.9% in Q3 2025 (Matthews); no Arts-District-specific figure found.",
+      "pipeline": "Large proposals (e.g., ~1,000-unit 787 S Alameda St) are not near-term; no specific Dec 2026–Feb 2027 Arts District opening found.",
+      "evidence": "Redfin Arts District neighborhood pages with 'NEW 9–29 HRS AGO' tags; amounts differ between pages for the same building.",
+      "as_of": "Listing snapshots ~Oct 2026 (undated)",
+      "sources": [
+        "https://www.redfin.com/neighborhood/91/CA/Los-Angeles/Arts-District/luxury-apartments-for-rent",
+        "https://www.redfin.com/neighborhood/91/CA/Los-Angeles/Arts-District/1-bedroom-apartments-for-rent",
+        "https://www.redfin.com/neighborhood/91/CA/Los-Angeles/Arts-District/apartments-for-rent",
+        "https://www.redfin.com/zipcode/90021/cheap-apartments-for-rent",
+        "https://www.matthews.com/insights/los-angeles-ca-multifamily-market-report-q3-2025"
+      ]
+    },
+    {
+      "area_id": "downtown-la-historic-core-financial-district-bunker-hill",
+      "name": "Downtown LA – Historic Core / Financial District / Bunker Hill",
+      "region": "Los Angeles",
+      "level": "high",
+      "typical_offer": "~1 month to 6 weeks free: Red Oak 620 Main St #502 1BR loft $2,950 with 1 month free (applied month 3 of 13-month lease) + $500 credit if apply within 24h; Essex TENTEN (1010 Wilshire) up to 6 weeks free (expired 3/14/26); Pacific Electric Lofts special expired 4/19/25.",
+      "driver": "Same Downtown oversupply/elevated vacancy as South Park; older converted lofts compete with new towers.",
+      "vacancy": "Downtown LA 10.9% (Q3 2025, Matthews).",
+      "pipeline": null,
+      "evidence": "Westside Rentals listing for 620 Main St (current-looking, undated); Essex listing pages with dated (expired) specials show the operator's recurring pattern of 6-week offers.",
+      "as_of": "2025–Oct 2026 (listing dates vary)",
+      "sources": [
+        "https://www.westsiderentals.com/los-angeles-ca/620-main-st-unit-502-pr8gxts",
+        "https://prd0.essexapartmenthomes.com/apartments/los-angeles/tenten-downtown",
+        "https://essexapartmenthomes.com/apartments/los-angeles/pacific-electric-lofts",
+        "https://www.matthews.com/insights/los-angeles-ca-multifamily-market-report-q3-2025"
+      ]
+    },
+    {
+      "area_id": "chinatown",
+      "name": "Chinatown",
+      "region": "Los Angeles",
+      "level": "medium",
+      "typical_offer": "The Orsini (550 N Figueroa St) advertised 3 months free on a Redfin Arts District page.",
+      "driver": "Large Downtown-adjacent luxury complexes competing with DTLA lease-ups.",
+      "vacancy": null,
+      "pipeline": null,
+      "evidence": "Single Redfin listing banner; no submarket data found.",
+      "as_of": "Listing snapshot ~Oct 2026 (undated)",
+      "sources": ["https://www.redfin.com/neighborhood/91/CA/Los-Angeles/Arts-District/luxury-apartments-for-rent"]
+    },
+    {
+      "area_id": "koreatown",
+      "name": "Koreatown",
+      "region": "Los Angeles",
+      "level": "high",
+      "typical_offer": "1 month to 8 weeks free. The Boutique (707 S Berendo St, built 2026): 8 weeks free on 15-month lease, base rent $2,575–$2,725. Fedora Flats (1047 Fedora St, 'coming July 2026'): 1 month free on 12-month lease, base $2,695. Nova on Wilshire: 1 month free on 13-month lease if start within two weeks. 501 S Kingsley Dr: 2nd month free on 12 months, 1BR $1,738–$1,920 net. Nari Koreatown (3150 Wilshire): 8 weeks free on 12–14 months, 1BR ~$2,113–$2,455 (offer ended 6/1, year unclear).",
+      "driver": "RealPage: Mid-Wilshire (incl. Koreatown) has LA's largest 2026 delivery load, nearly 3,000 units (~2.4% inventory growth), part of a record ~12,300-unit LA year. Matthews Q2 2026: Mid-Wilshire 2.6% of inventory under construction.",
+      "vacancy": "No Koreatown-specific figure found; metro LA 4.5–5.7% (Q2 2026).",
+      "pipeline": "2026: ~3,000 units in Mid-Wilshire (RealPage). Near-term: Hudson (640 S St Andrews Pl, 230 units, finishing mid-2026), ~250 units above retail at 3016–3020 W Wilshire (built 2026). Later: 638 S Berendo (343 units, planning), 3800 W 6th St (219 units, application).",
+      "evidence": "Listing pages (Boutique RE PDFs, Westside Rentals, Redfin, PadMapper, Tripalink) plus RealPage supply analysis.",
+      "as_of": "RealPage forecast for 2026 (published 2025); listings mid–late 2026",
+      "sources": [
+        "https://www.realpage.com/analytics/los-angeles-peak-supply-2025/",
+        "https://www.theboutiquere.com/properties/retsPdf/26662213/707-S-Berendo-Street",
+        "https://www.theboutiquere.com/properties/retsPdf/26662187/707-S-Berendo-Street",
+        "https://www.westsiderentals.com/los-angeles-ca/1047-fedora-st-unit-601-ddf35dk",
+        "https://www.redfin.com/neighborhood/10732/CA/Los-Angeles/Wilshire-Center-Koreatown/apartments-under-1500-for-rent",
+        "https://www.padmapper.com/buildings/p1320974/welcome-home-apply-now-newly-remodeled-apartments-at-515-s-kingsley-dr-los-angeles-ca-90020",
+        "https://tripalink.com/apartments/los-angeles/koreatown/50000207",
+        "https://hoodline.com/2026/06/koreatown-s-new-230-unit-hudson-steps-into-view-by-wilshire-western/",
+        "https://www.matthews.com/insights/los-angeles-multifamily-q2-2026"
+      ]
+    },
+    {
+      "area_id": "mid-city-miracle-mile",
+      "name": "Mid-City / Miracle Mile",
+      "region": "Los Angeles",
+      "level": "medium",
+      "typical_offer": null,
+      "driver": "Likely within RealPage's Mid-Wilshire submarket (nearly 3,000 units delivering in 2026) — inferred; submarket boundary not confirmed in sources.",
+      "vacancy": null,
+      "pipeline": "Part of Mid-Wilshire 2026 supply peak (RealPage).",
+      "evidence": "No neighborhood-level concession listings found; rating is inferred from submarket supply only.",
+      "as_of": "2026 forecast",
+      "sources": ["https://www.realpage.com/analytics/los-angeles-peak-supply-2025/"]
+    },
+    {
+      "area_id": "hollywood",
+      "name": "Hollywood",
+      "region": "Los Angeles",
+      "level": "high",
+      "typical_offer": "2–8 weeks free: 1600 Vine up to 6 weeks free + $1,000 look-and-lease (studios from $2,899); Sunset Vine Tower (1480 Vine) up to 4 weeks free; Whitley Courtyard (1861 Whitley) 8 weeks (from $1,549+); Cherokee Villas 3 weeks (1BR $2,486); 1746 N Cherokee 2 weeks (1BR $1,820); Modera Hollywood (6775 Selma) 2 weeks (1BR from $3,011); Bleu (6565 Fountain) 1 month (1BR $1,895+). Redfin Central Hollywood pages carry '1 MONTH FREE' banners.",
+      "driver": "RealPage: Hollywood is LA's #2 supply submarket in 2026 with 1,398 units scheduled.",
+      "vacancy": null,
+      "pipeline": "1,398 units in 2026 (RealPage). Later: 7441 Sunset (15 stories, planning), 6336 Sunset (153 units, Sares-Regis, planning), 6800 Sunset 42-story tower approved, 1833 N Wilton (48 affordable units).",
+      "evidence": "Redfin 90028 listing pages, Point2Homes and HotPads listings (undated snapshots) plus RealPage supply data.",
+      "as_of": "2026 forecast; listing snapshots undated (~2026)",
+      "sources": [
+        "https://www.realpage.com/analytics/los-angeles-peak-supply-2025/",
+        "https://hotpads.com/1600-vine-los-angeles-ca-90028-24pbwwh/pad",
+        "https://www.point2homes.com/US/Apartment-Buildings/CA/Los-Angeles/Sunset-Vine-Tower-0.html",
+        "https://www.redfin.com/neighborhood/547464/CA/Los-Angeles/Central-Hollywood/studio-apartments-for-rent",
+        "https://www.redfin.com/neighborhood/11017/CA/Los-Angeles/Hollywood/studio-apartments-for-rent/page-2",
+        "https://urbanize.la/post/153-apartments-retail-planned-sunset-vine"
+      ]
+    },
+    {
+      "area_id": "los-feliz",
+      "name": "Los Feliz",
+      "region": "Los Angeles",
+      "level": "medium",
+      "typical_offer": "Redfin Griffith Park/Los Feliz 'apartments under $2,000' page showed a '6 WEEKS FREE' banner (building not identified in snippet).",
+      "driver": "Spillover from Hollywood/East Hollywood lease-ups (e.g., new 5420 Sunset community) — inferred.",
+      "vacancy": null,
+      "pipeline": null,
+      "evidence": "Single undated listing banner; weak evidence.",
+      "as_of": "Undated snapshot (~2026)",
+      "sources": [
+        "https://www.redfin.com/neighborhood/1167/CA/Los-Angeles/Griffith-Park-Los-Feliz/apartments-under-2000-for-rent",
+        "https://www.apartmentlist.com/ca/los-angeles/5420-sunset"
+      ]
+    },
+    {
+      "area_id": "west-hollywood",
+      "name": "West Hollywood",
+      "region": "Los Angeles",
+      "level": "unknown",
+      "typical_offer": "Rae on Sunset advertised up to 6 weeks free for move-in by 5/15/2025 (expired).",
+      "driver": null,
+      "vacancy": null,
+      "pipeline": null,
+      "evidence": "Only an expired 2025 special found.",
+      "as_of": "2025",
+      "sources": ["https://prod-release.westsiderentals.com/los-angeles-ca/rae-on-sunset-p4y4m1v"]
+    },
+    {
+      "area_id": "culver-city-palms",
+      "name": "Culver City / Palms",
+      "region": "Los Angeles",
+      "level": "low",
+      "typical_offer": null,
+      "driver": "Supply-constrained: a broker said only 338 apartments are scheduled for delivery in Culver City over the next three years (IPA, Feb 2026).",
+      "vacancy": null,
+      "pipeline": "338 units in Culver City over ~3 years; NMS@Culver City (121 units) under construction; 86-unit Dunn Dr project planned (Palms).",
+      "evidence": "No concession listings found for new buildings; low supply implies limited landlord pressure (inference).",
+      "as_of": "Feb 2026",
+      "sources": [
+        "https://www.institutionalpropertyadvisors.com/news-events/2026/02/institutional-property-advisors-closes-multifamily-asset-sale-in-west-los-angeles",
+        "https://urbanize.la/post/more-multi-family-action-palmsculver-city-border"
+      ]
+    },
+    {
+      "area_id": "long-beach-downtown-east-village",
+      "name": "Long Beach – Downtown / East Village",
+      "region": "Long Beach",
+      "level": "high",
+      "typical_offer": "6–8 weeks free at Pine Ave buildings: Volta on Pine 8 weeks free; Griffis Pine Avenue 6 weeks free (Redfin DTLB pages). Smaller buildings: 1st month free + $500 deposit (321 Chestnut), up to $500 off first 3 months (44 Alamitos), 3 months free parking (229 W 6th).",
+      "driver": "Downtown Long Beach's recent wave of mid/high-rise deliveries plus Alexan West End (~600 units) arriving fall 2026–2027.",
+      "vacancy": "Long Beach city rental vacancy 3.9% (Point2, may lag); no downtown-specific figure found.",
+      "pipeline": "Alexan West End, 600 W Broadway, ~600 units (Trammell Crow Residential): marketing site says opening Fall 2026; earlier target initial occupancy May 2026, final completion March 2027; Hoodline (Jul 2026) says delivery pushing to next year.",
+      "evidence": "Redfin Downtown Long Beach listing banners (undated) and Alexan West End coverage.",
+      "as_of": "Listings ~2026 (undated); Alexan status July 2026",
+      "sources": [
+        "https://www.redfin.com/neighborhood/9754/CA/Long-Beach/Downtown-Long-Beach/studio-apartments-for-rent",
+        "https://www.rentler.com/places-for-rent/ca/long-beach/321-chestnut-ave/13328513",
+        "https://www.padmapper.com/address/44-alamitos-ave-long-beach-ca-90802-usa",
+        "https://hoodline.com/2026/07/600-new-rentals-set-to-flip-a-downtown-long-beach-superblock-7073083/",
+        "https://longbeachize.com/articles/alexan-west-end-long-beachs-largest-residential-projects-scores-funds-to-finally-break-ground/",
+        "https://www.point2homes.com/US/Average-Rent/CA/Long-Beach.html"
+      ]
+    },
+    {
+      "area_id": "long-beach-alamitos-beach",
+      "name": "Long Beach – Alamitos Beach",
+      "region": "Long Beach",
+      "level": "medium",
+      "typical_offer": "44 Alamitos Ave: up to $500 off first three months; Shoreline Gateway (777 E Ocean) listed but no special seen.",
+      "driver": "Adjacent to downtown lease-up competition (inferred).",
+      "vacancy": null,
+      "pipeline": null,
+      "evidence": "Small listing-level evidence only.",
+      "as_of": "Undated (~2026)",
+      "sources": ["https://www.padmapper.com/address/44-alamitos-ave-long-beach-ca-90802-usa"]
+    },
+    {
+      "area_id": "irvine-spectrum-irvine-business-complex",
+      "name": "Irvine (Spectrum / Irvine Business Complex)",
+      "region": "Orange County",
+      "level": "high",
+      "typical_offer": "1–2 months free at new IBC luxury buildings: Broadstone Edition (1100 Steely) 2-month concession on a 1BR; Aurum (2055 Main St) 1 month free, 1BR ~$4,050–$5,565 (above client budget). Irvine Company specials typically reduced deposits/waived app fees (move-ins by 8/31/2026, expired).",
+      "driver": "OC's 2026 delivery wave (~4,400 units, most in a decade, Northmarq) is concentrated in Irvine; Kidder Mathews: IBC and Santa Ana are the most active construction submarkets; Matthews Q1 2026: new deliveries introduce competitive lease-up concessions; CoStar Q2 2026: new completions pushed overall vacancy higher.",
+      "vacancy": "OC overall Q2 2026: 4.3% (Kidder Mathews), 3.64% (Matthews), 96.4% occupancy (CBRE). Older OCBJ reporting cited Irvine vacancy up to 8% (date unclear).",
+      "pipeline": "Berkadia: ~5,100 units in 9 Irvine communities to deliver by YE2026; Kidder: 3,258 OC units delivered 1H 2026, led by two large Irvine Company projects; CBRE: North Irvine absorbed 1,316 units in Q2 2026.",
+      "evidence": "Broker reports (Kidder, Matthews, Northmarq, CBRE, Berkadia) + ApartmentFinder listings (undated).",
+      "as_of": "Q2 2026 reports; listings undated",
+      "sources": [
+        "https://kidder.com/wp-content/uploads/market_report/multifamily-market-research-orange-county-2026-2q.pdf",
+        "https://www.matthews.com/insights/orange-county-multifamily-q1-2026",
+        "https://www.northmarq.com/insights/insights/new-supply-jumps-rents-continue-rise-orange-countys-multifamily-market-q1-2026",
+        "https://www.cbre.com/insights/figures/orange-county-multifamily-figures-q2-2026",
+        "https://www.costar.com/article/916281638/orange-county-apartment-demand-rises-but-new-supply-lifts-overall-vacancy",
+        "https://www.berkadia.com/wp-content/uploads/2024/12/Berkadia-2025-Forecast-Orange-County-CA.pdf",
+        "https://www.apartmentfinder.com/California/Irvine/Irvine-Business-Complex-Neighborhood-Apartments/1-Bedroom",
+        "https://www.irvinecompanyoffice.com/locations/orange-county/airport-area/2712-mcgaw/customer.html"
+      ]
+    },
+    {
+      "area_id": "santa-ana-south-coast-metro-macarthur-area",
+      "name": "Santa Ana – South Coast Metro / MacArthur area",
+      "region": "Orange County",
+      "level": "medium",
+      "typical_offer": null,
+      "driver": "Kidder Mathews (Q2 2026): Santa Ana is one of the two most active OC construction submarkets. Conflicting: an investor article describes the South Coast Metro submarket as relatively supply-constrained.",
+      "vacancy": "OC 3.6–4.3% (Q2 2026).",
+      "pipeline": "Park & Paseo (Red Hill/Barranca, Alliance Residential, 1,221 units total; Broadstone Atlas 483 units – Urbanize reports final phase wrapped, so likely past lease-up); Met at South Coast 284 units proposed (no start date).",
+      "evidence": "Broker report statements; no unit-level specials found.",
+      "as_of": "Q2 2026",
+      "sources": [
+        "https://kidder.com/wp-content/uploads/market_report/multifamily-market-research-orange-county-2026-2q.pdf",
+        "https://www.sdbj.com/?p=104673",
+        "https://urbanize.la/post/final-phase-park-paseo-wraps-work-2590-s-red-hill-avenue-santa-ana",
+        "https://www.ocbj.com/?p=30863"
+      ]
+    },
+    {
+      "area_id": "anaheim-platinum-triangle-packing-district-area",
+      "name": "Anaheim – Platinum Triangle / Packing District area",
+      "region": "Orange County",
+      "level": "medium",
+      "typical_offer": "~1 month free: 1818 Platinum Triangle (built 2009) up to 1 month free on base rent + $500 look-and-lease on select 2x2s; Citron (901 E South St, Anaheim, new) 1 month free.",
+      "driver": "Nearly 2,000 apartments opened in the Platinum Triangle in recent years; ongoing build-out.",
+      "vacancy": null,
+      "pipeline": "More apartments proposed (OCBJ); no confirmed Dec 2026–Feb 2027 opening found.",
+      "evidence": "Point2/Zillow/Redfin listings (undated) and OCBJ coverage (dates unreliable).",
+      "as_of": "Undated (~2026)",
+      "sources": [
+        "https://www.point2homes.com/US/Apartment-Buildings/CA/Anaheim/Platinum-Triangle/1818-Platinum-Triangle/115580702.html",
+        "https://www.zillow.com/b/-5XkCqC",
+        "https://www.redfin.com/neighborhood/110631/CA/Anaheim/Platinum-Triangle/1-bedroom-apartments-for-rent",
+        "https://www.ocbj.com/real-estate/more-apartments-eyed-platinum-triangle/"
+      ]
+    },
+    {
+      "area_id": "tustin-tustin-legacy-old-town",
+      "name": "Tustin – Tustin Legacy / Old Town",
+      "region": "Orange County",
+      "level": "low",
+      "typical_offer": null,
+      "driver": "No near-term lease-ups found; next big project (Terracina, 338 affordable units) leases 2H 2028.",
+      "vacancy": null,
+      "pipeline": "Terracina at Tustin Legacy 338 units, leasing 2H 2028; Irvine Co. land for ~1,336 apts and Legacy Village 1,208 units (no dates).",
+      "evidence": "OCBJ / Bisnow / Traded.",
+      "as_of": "2026",
+      "sources": ["https://www.ocbj.com/?p=154153", "https://traded.co/blog/irvine-co-usa-properties-break-ground-on-175m-terracina-at-tustin-legacy/"]
+    },
+    {
+      "area_id": "fullerton-east-non-downtown",
+      "name": "Fullerton (east, non-downtown)",
+      "region": "Orange County",
+      "level": "low",
+      "typical_offer": null,
+      "driver": "No current lease-up found; Fullerton Town Center conversion (329 units) slated for 2027.",
+      "vacancy": null,
+      "pipeline": "329 units at Fullerton Town Center (Orangethorpe/Lemon), completion 2027.",
+      "evidence": "OCBJ.",
+      "as_of": "2026 (article date uncertain)",
+      "sources": ["https://www.ocbj.com/oc-homepage/apartment-conversion-begins-at-fullerton-town-center/"]
+    },
+    {
+      "area_id": "costa-mesa",
+      "name": "Costa Mesa",
+      "region": "Orange County",
+      "level": "unknown",
+      "typical_offer": "Historic: The Enclave advertised up to 6 weeks free on 14+ month leases during its lease-up (old article, likely pre-2023).",
+      "driver": null,
+      "vacancy": null,
+      "pipeline": null,
+      "evidence": "Only old data found.",
+      "as_of": "Old (pre-2023, date uncertain)",
+      "sources": ["https://www.ocbj.com/news/apartment-owners-offer-free-rent-to-attract/"]
+    },
+    {
+      "area_id": null,
+      "name": "Southeast Los Angeles submarket",
+      "region": "Los Angeles",
+      "level": "medium",
+      "typical_offer": null,
+      "driver": "RealPage: #3 LA supply submarket in 2026 with 1,372 units.",
+      "vacancy": null,
+      "pipeline": "1,372 units in 2026.",
+      "evidence": "Supply data only; outside client's target list (context).",
+      "as_of": "2026 forecast",
+      "sources": ["https://www.realpage.com/analytics/los-angeles-peak-supply-2025/"]
+    },
+    {
+      "area_id": null,
+      "name": "Los Angeles metro (context)",
+      "region": "Los Angeles",
+      "level": "medium",
+      "typical_offer": "Zillow: 32.5% of LA listings offered a concession in June 2026 (31.2% in spring); national 39.7%. RealPage national: 16.9% of stabilized units offer concessions, avg ~10.9% discount (May 2026). CoStar (Sep 2026): new LA developments often lean on free rent amid elevated vacancy and luxury openings.",
+      "driver": "Record ~12,300 completions scheduled in 2026 (RealPage); pipeline 'falls off a cliff' after 2026 (Colliers) — concessions likely to fade later in 2027 as lease-ups finish.",
+      "vacancy": "Q2 2026: 4.52% (Matthews), 4.6% (CBRE), 5.7% (Lee & Associates); Q1 2026 5.6% (Registry headline).",
+      "pipeline": "~18,000 units under construction (Lee & Associates Q2 2026); Matthews forecasts trailing-12-month completions moderating to ~7,280 by YE2026.",
+      "evidence": "Zillow June 2026 rent report; broker Q2 2026 reports; RealPage.",
+      "as_of": "Q2 2026 / June 2026",
+      "sources": [
+        "https://www.zillow.com/research/june-2026-rent-report/",
+        "https://zillow.mediaroom.com/2026-05-27-Its-a-renters-market-2-in-5-listings-come-with-a-deal-this-spring",
+        "https://www.lee-associates.com/wp-content/uploads/2026/07/2026-Q2-Los-Angeles-CA-Multifamily.pdf",
+        "https://www.matthews.com/insights/los-angeles-multifamily-q2-2026",
+        "https://mktgdocs.cbre.com/2299/075383d6-3fda-4c74-85e8-78fa4ab3e142-1177531437/Los_Angeles_Multifamily_Snapsh.pdf",
+        "https://rebusinessonline.com/multifamily-resets-for-a-high-velocity-recovery-in-los-angeles/",
+        "https://www.realpage.com/analytics/los-angeles-peak-supply-2025/"
+      ]
+    },
+    {
+      "area_id": null,
+      "name": "Orange County (context) / North Irvine",
+      "region": "Orange County",
+      "level": "medium",
+      "typical_offer": null,
+      "driver": "2026 deliveries ~4,400 units, highest in 10+ years, nearly all significant ones in Irvine (Northmarq); owners favor occupancy over rent hikes as lease-ups offer concessions (Matthews Q1 2026).",
+      "vacancy": "Q2 2026: 4.3% (Kidder), 3.64% (Matthews), 96.4% occupancy (CBRE); asking rent $2,727 (Kidder) / $2,944 (CBRE).",
+      "pipeline": "Construction pipeline reportedly down about half YoY (BiggerPockets note citing Kidder/CoStar — secondhand).",
+      "evidence": "Broker reports.",
+      "as_of": "Q1–Q2 2026",
+      "sources": [
+        "https://www.northmarq.com/insights/insights/new-supply-jumps-rents-continue-rise-orange-countys-multifamily-market-q1-2026",
+        "https://www.matthews.com/insights/orange-county-multifamily-q1-2026",
+        "https://kidder.com/wp-content/uploads/market_report/multifamily-market-research-orange-county-2026-2q.pdf",
+        "https://www.cbre.com/insights/figures/orange-county-multifamily-figures-q2-2026",
+        "https://www.biggerpockets.com/posts/7281694"
+      ]
+    }
+  ],
+  "lease_ups": [
+    {
+      "name": "Alexan West End",
+      "address": "600 W Broadway, Long Beach, CA",
+      "area": "Long Beach – Downtown / East Village",
+      "region": "Long Beach",
+      "operator": "Trammell Crow Residential (developer)",
+      "opening": "Marketing site: 'Opening Fall 2026'; developer earlier targeted initial occupancy May 2026 and final completion March 2027; Hoodline (Jul 2026) says delivery is pushing to next year — likely in initial lease-up during Dec 2026–Feb 2027.",
+      "units": 600,
+      "special_seen": null,
+      "studio_1br_rent": null,
+      "sources": [
+        "https://hoodline.com/2026/07/600-new-rentals-set-to-flip-a-downtown-long-beach-superblock-7073083/",
+        "https://longbeachize.com/articles/alexan-west-end-long-beachs-largest-residential-projects-scores-funds-to-finally-break-ground/",
+        "https://www.apartments.com/alexan-west-end-long-beach-ca/3btcmcd/",
+        "https://www.cbre.com/press-releases/cbre-secures-200-million-in-financing-for-multifamily-project-in-long-beach"
+      ]
+    },
+    {
+      "name": "Hudson",
+      "address": "640 S St Andrews Pl, Los Angeles, CA 90005 (Wilshire/Western)",
+      "area": "Koreatown",
+      "region": "Los Angeles",
+      "operator": "Jamison",
+      "opening": "Units in finishing phase as of June 2026; leasing site up; no move-in date confirmed.",
+      "units": 230,
+      "special_seen": null,
+      "studio_1br_rent": null,
+      "sources": ["https://hoodline.com/2026/06/koreatown-s-new-230-unit-hudson-steps-into-view-by-wilshire-western/"]
+    },
+    {
+      "name": "3016–3020 W Wilshire Blvd (residential above retail)",
+      "address": "3016–3020 W Wilshire Blvd, Los Angeles, CA 90010",
+      "area": "Koreatown",
+      "region": "Los Angeles",
+      "operator": null,
+      "opening": "Year built 2026 (retail listing); apartment leasing status unconfirmed.",
+      "units": 250,
+      "special_seen": null,
+      "studio_1br_rent": null,
+      "sources": ["https://www.cityfeet.com/cont/listing/3016-3020-w-wilshire-blvd-los-angeles-ca-90010/cs40805640"]
+    },
+    {
+      "name": "The Boutique",
+      "address": "707 S Berendo St, Los Angeles, CA 90005",
+      "area": "Koreatown",
+      "region": "Los Angeles",
+      "operator": null,
+      "opening": "New building, built 2026, currently leasing.",
+      "units": null,
+      "special_seen": "8 weeks free on a 15-month lease (advertised price is prorated net).",
+      "studio_1br_rent": "Base rents seen $2,575 and $2,725 (unit types not specified in snippet).",
+      "sources": [
+        "https://www.theboutiquere.com/properties/retsPdf/26662213/707-S-Berendo-Street",
+        "https://www.theboutiquere.com/properties/retsPdf/26662187/707-S-Berendo-Street"
+      ]
+    },
+    {
+      "name": "Fedora Flats",
+      "address": "1047 Fedora St, Los Angeles, CA 90006",
+      "area": "Koreatown",
+      "region": "Los Angeles",
+      "operator": null,
+      "opening": "Listed as 'coming July 2026'.",
+      "units": null,
+      "special_seen": "1 month free on a 12-month lease.",
+      "studio_1br_rent": "Unit 601 base $2,695/mo (unit type not given in snippet).",
+      "sources": ["https://www.westsiderentals.com/los-angeles-ca/1047-fedora-st-unit-601-ddf35dk"]
+    },
+    {
+      "name": "888 S Hope St tower",
+      "address": "888 S Hope St, Los Angeles, CA 90017",
+      "area": "Downtown LA – South Park",
+      "region": "Los Angeles",
+      "operator": "CIM Group",
+      "opening": "Under construction; completion date not found (article date unclear) — probably not leasing by Feb 2027.",
+      "units": 525,
+      "special_seen": null,
+      "studio_1br_rent": null,
+      "sources": ["https://www.multihousingnews.com/cim-starts-building-downtown-la-apartment-tower/"]
+    },
+    {
+      "name": "Avella (new phase), Cypress Village",
+      "address": "Cypress Village, Irvine, CA",
+      "area": "Irvine (North Irvine, near Spectrum)",
+      "region": "Orange County",
+      "operator": "Irvine Company",
+      "opening": "Now leasing as of Feb 2, 2026; move-ins from spring 2026 (may still have lease-up inventory in winter).",
+      "units": null,
+      "special_seen": null,
+      "studio_1br_rent": null,
+      "sources": ["https://www.irvinecompanyapartments.com/rental-living/more-room-to-roam-discover-brand-new-apartments-homes-in-irvine/"]
+    },
+    {
+      "name": "Broadstone Edition",
+      "address": "1100 Steely, Irvine, CA (Irvine Business Complex)",
+      "area": "Irvine (Spectrum / Irvine Business Complex)",
+      "region": "Orange County",
+      "operator": "Alliance Residential (Broadstone brand)",
+      "opening": "Recently delivered/leasing (date not confirmed).",
+      "units": null,
+      "special_seen": "2-month concession on a 1BR (ApartmentFinder, undated).",
+      "studio_1br_rent": null,
+      "sources": ["https://www.apartmentfinder.com/California/Irvine/Irvine-Business-Complex-Neighborhood-Apartments/1-Bedroom"]
+    },
+    {
+      "name": "Fullerton Town Center apartment conversion",
+      "address": "Near Orangethorpe Ave & Lemon St, Fullerton, CA",
+      "area": "Fullerton",
+      "region": "Orange County",
+      "operator": null,
+      "opening": "Completion slated for 2027 (likely after client's window).",
+      "units": 329,
+      "special_seen": null,
+      "studio_1br_rent": null,
+      "sources": ["https://www.ocbj.com/oc-homepage/apartment-conversion-begins-at-fullerton-town-center/"]
+    }
+  ],
+  "summary": "Best winter-2026/27 deal hunting grounds, in order: (1) Downtown LA – South Park and Arts District: the deepest, most widespread specials seen anywhere (6–10 weeks free, some 2–3 months, e.g., Josephine/G12/Alloy 10 weeks, Olympic by Windsor 3 months, Onyx 8 weeks with studios ~ $2,195), driven by a glut of lease-up towers and Downtown vacancy that hit 10.9% in Q3 2025; Historic Core/FiDi and Chinatown (Orsini 3 months) also show 1 month+. (2) Koreatown/Mid-Wilshire: RealPage puts ~3,000 units delivering in 2026 (LA's largest), with new buildings offering 1 month to 8 weeks free (The Boutique 8 wks on 15 months, Fedora Flats 1 month), plus Hudson (230 units) and ~250 units at 3016 Wilshire likely in lease-up this winter; net 1BRs near the client's $2,300 cap are plausible here. (3) Hollywood: 1,398 units delivering in 2026; specials of 2–8 weeks (1600 Vine up to 6 wks + $1,000; Whitley Courtyard 8 wks; Bleu 1 month with 1BR from ~$1,895). (4) Downtown Long Beach: Pine Ave buildings at 6–8 weeks free (Volta on Pine, Griffis Pine Ave), and Alexan West End (~600 units) should be in early lease-up Dec–Feb, the prime target for opening specials. (5) Irvine IBC/North Irvine: OC's record 2026 delivery wave (~4,400 units, mostly Irvine) produces 1–2 months free at new luxury buildings, but rents (e.g., Aurum 1BR ~ $4,050+) mostly exceed the client's budget even after concessions. Anaheim Platinum Triangle shows ~1 month free. Low-concession areas: Culver City/Palms (only ~338 units due over 3 years), Tustin (next big project 2028), Fullerton (2027), and most small-building neighborhoods (Silver Lake, Echo Park, Highland Park, Belmont Shore, etc.), where no evidence of meaningful specials turned up. Caveats: most specials come from undated listing snapshots (verify live); no 2026 submarket-level concession percentages (CoStar/RealPage) were accessible; LA metro concession share was 32.5% of Zillow listings in June 2026, and supply falls sharply after 2026, so lease-up-driven deals are likely to be at or near peak this winter and to thin out through 2027."
+}

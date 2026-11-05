@@ -319,14 +319,22 @@ def main():
                             "complaints": [], "praise": [], "dealbreakers": "", "recent_trend": "unknown",
                             "management": {"score": None, "summary": c.get("reputation_gist") or ""}},
                 "checked_on": CHECKED_ON, "source": "claude", "my_status": "new", "my_note": "",
-                "batch": "recent-oct26" if f.name.startswith(("find3", "find4", "find6")) else "private-oct15" if f.name.startswith("find_p") else "new-oct15",
+                "batch": "dtla-nov05" if f.name.startswith("find8") else "recent-oct26" if f.name.startswith(("find3", "find4", "find6")) else "private-oct15" if f.name.startswith("find_p") else "new-oct15",
                 "landlord": c.get("landlord") or ("private" if f.name.startswith("find_p") else "company"),
                 "owner_type": c.get("owner_type"), "platform": c.get("platform"),
                 "hoa_amenities": c.get("hoa_amenities"), "rent_control": c.get("rent_control"),
                 "scam_flags": c.get("scam_flags") or "",
             })
-            if f.name.startswith(("find3", "find4", "find6")):
+            if f.name.startswith(("find3", "find4", "find6", "find8")):
                 enrich.setdefault(slug(c["name"]), {**c, "parking": c.get("parking_detail")})
+
+    # Deep review passes (reviews_dtla*.json) keyed by listing id; they replace thinner earlier reviews.
+    by_id = {b["id"]: b for b in buildings}
+    for f in sorted(RESEARCH.glob("reviews_dtla*.json")):
+        for v in json.loads(f.read_text()):
+            b = by_id.get(v.get("id")) or by_id.get(slug(v.get("name") or ""))
+            if b:
+                b["reviews"] = {**(b.get("reviews") or {}), **{k: x for k, x in v.items() if k != "id" and x not in (None, [], "")}}
 
     DETAIL_KEYS = ("costs", "pets", "parking", "building", "unit", "internet", "location", "availability", "evidence")
     for b in buildings:

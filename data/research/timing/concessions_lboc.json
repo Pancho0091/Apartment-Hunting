@@ -1,0 +1,607 @@
+[
+ {
+  "id": "_operator:irvine-company",
+  "name": "Irvine Company Apartment Communities (operator-level pattern; not a TSV listing)",
+  "pattern": "sometimes",
+  "seen": [
+   {
+    "when": "2025-12 (deadline)",
+    "offer": "Stanford Court: reduced $99 security deposit when you lease by Dec 31, 2025",
+    "source": "https://offcampus.housing.uci.edu/housing/property/stanford-court-apartments/bcfb9eb"
+   },
+   {
+    "when": "2026-04 (deadline)",
+    "offer": "Stanford Court: $99 security deposit when you lease by Apr 13, 2026",
+    "source": "https://offcampushousing.chapman.edu/housing/property/stanford-court-apartments/bcfb9eb"
+   },
+   {
+    "when": "2026-07 / 2026-08 (deadlines)",
+    "offer": "Harvard-Cornell: reduced security deposit when you lease by Jul 20, 2026, later Aug 31, 2026",
+    "source": "https://offcampus.housing.uci.edu/housing/property/harvard-cornell-apartment-homes/t21zxc8"
+   },
+   {
+    "when": "2026-08 (deadline)",
+    "offer": "Park Place: reduced security deposit when you lease by Aug 3, 2026",
+    "source": "https://www.forrentuniversity.com/ca/irvine/park-place-apartment-homes/592dzvq"
+   },
+   {
+    "when": "2025-05 (deadline)",
+    "offer": "Portola Court: reduced $99 security deposit when you lease by May 12, 2025",
+    "source": "https://prod-release.westsiderentals.com/irvine-ca/portola-court-apartment-homes-spr6pl4"
+   },
+   {
+    "when": "c. 2008 (inferred; article undated)",
+    "offer": "The Enclave (Costa Mesa): up to 6 weeks free on leases of 14+ months, advertised on TV during lease-up",
+    "source": "https://www.ocbj.com/news/apartment-owners-offer-free-rent-to-attract/"
+   },
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Redfin 'LOWERED FEES' flags across Irvine Co listings (Spectrum, 92620)",
+    "source": "https://www.redfin.com/zipcode/92620/1-bedroom-apartments-for-rent"
+   }
+  ],
+  "renewal_note": "Anecdotal (TalkIrvine forum, mostly undated/older; one r/irvine mirror post, undated): renewal offers of ~6.7% (tenant offset by negotiating a 10-month lease), attempts at 7%+ negotiated to ~4%, a ~9% renewal increase question on r/irvine with no outcome shown, and one tenant told Irvine Co would not lower a $2,260 2BR renewal. Month-to-month reportedly quoted at rent + 30% (one TalkIrvine post).",
+  "negotiation_note": "Forum advice (anecdotal): compare your renewal quote to current listed prices for vacant comparable units and ask for the new-resident price; lease length is negotiable (16->12, 10-month leases mentioned); leverage mostly comes from being genuinely ready to move. Irvine Co specials are typically reduced security deposits ($99 / reduced deposit 'when you lease by <date>') and lowered fees rather than weeks free; the only large free-rent example found is up to 6 weeks free at The Enclave (Costa Mesa) on 14+ month leases, c. 2008 lease-up (OCBJ, date inferred).",
+  "evidence": "Recurring pattern: rolling 'reduced/$99 security deposit when you lease by <date>' offers that are renewed with new deadlines every few months (Dec 2025, Apr 2026, Jul/Aug 2026), plus 'lowered fees' tags; free-rent weeks are rare (only lease-up example found is c. 2008). Could NOT confirm from any source that Irvine Co uses daily pricing or a specific revenue-management system, nor how its lease-term pricing is structured; searches for its site disclaimers returned nothing. Industry context: Yardi Revenue IQ docs say longer leases are often priced lower and prices depend on move-in date and lease length (general, not Irvine-specific). No source tied Irvine Co to the RealPage litigation.",
+  "sources": [
+   "https://offcampus.housing.uci.edu/housing/property/stanford-court-apartments/bcfb9eb",
+   "https://offcampushousing.chapman.edu/housing/property/stanford-court-apartments/bcfb9eb",
+   "https://offcampus.housing.uci.edu/housing/property/harvard-cornell-apartment-homes/t21zxc8",
+   "https://www.forrentuniversity.com/ca/irvine/park-place-apartment-homes/592dzvq",
+   "https://prod-release.westsiderentals.com/irvine-ca/portola-court-apartment-homes-spr6pl4",
+   "https://www.ocbj.com/news/apartment-owners-offer-free-rent-to-attract/",
+   "https://www.talkirvine.com/threads/iac-apartment-rates.5178/latest",
+   "https://www.talkirvine.com/threads/rental-market-in-irvine.14565/page-7",
+   "https://www.talkirvine.com/threads/iac-lease-negotiation.89",
+   "https://www.talkirvine.com/threads/should-i-relocate-to-another-iac-complex.5950/latest",
+   "https://reddit.sudovanilla.org/r/irvine",
+   "https://www.talkirvine.com/threads/short-ish-term-lease.16830/latest",
+   "https://www.yardi.com/news/legal-news/how-revenue-iq-apartment-unit-pricing-works/"
+  ]
+ },
+ {
+  "id": "woodbridge-pines-apartment-homes",
+  "name": "Woodbridge Pines Apartment Homes",
+  "pattern": "sometimes",
+  "seen": [
+   {
+    "when": "2025-08 (deadline)",
+    "offer": "$99 security deposit, limited time, for leases signed by Aug 31, 2025",
+    "source": "https://prod-release.westsiderentals.com/irvine-ca/woodbridge-pines-apartment-homes-j1kbzv6"
+   }
+  ],
+  "renewal_note": "See Irvine Company operator entry (anecdotal 4-9% renewal increases).",
+  "negotiation_note": "Forum advice (anecdotal): compare your renewal quote to current listed prices for vacant comparable units and ask for the new-resident price; lease length is negotiable (16->12, 10-month leases mentioned); leverage mostly comes from being genuinely ready to move. Irvine Co specials are typically reduced security deposits ($99 / reduced deposit 'when you lease by <date>') and lowered fees rather than weeks free; the only large free-rent example found is up to 6 weeks free at The Enclave (Costa Mesa) on 14+ month leases, c. 2008 lease-up (OCBJ, date inferred).",
+  "evidence": "Only deposit-type special found; matches Irvine Co pattern of rolling reduced-deposit offers.",
+  "sources": [
+   "https://prod-release.westsiderentals.com/irvine-ca/woodbridge-pines-apartment-homes-j1kbzv6"
+  ]
+ },
+ {
+  "id": "the-village-at-irvine-spectrum-center",
+  "name": "The Village at Irvine Spectrum Center",
+  "pattern": "sometimes",
+  "seen": [
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Redfin 'LOWERED FEES' tag; 1BR listed $2,595, 85 units available",
+    "source": "https://www.redfin.com/neighborhood/114689/CA/Irvine/Irvine-Spectrum/cheap-apartments-for-rent"
+   }
+  ],
+  "renewal_note": "Anecdotal TalkIrvine post (undated, likely years old): tenant at 'The Village' said Irvine Co would not lower a $2,260 2BR renewal; only leverage was threatening to move. See operator entry.",
+  "negotiation_note": "Forum advice (anecdotal): compare your renewal quote to current listed prices for vacant comparable units and ask for the new-resident price; lease length is negotiable (16->12, 10-month leases mentioned); leverage mostly comes from being genuinely ready to move. Irvine Co specials are typically reduced security deposits ($99 / reduced deposit 'when you lease by <date>') and lowered fees rather than weeks free; the only large free-rent example found is up to 6 weeks free at The Enclave (Costa Mesa) on 14+ month leases, c. 2008 lease-up (OCBJ, date inferred).",
+  "evidence": "No weeks-free offer found; fee/deposit reductions only. Large availability (85 units on one Redfin snapshot) suggests room to compare unit prices.",
+  "sources": [
+   "https://www.redfin.com/neighborhood/114689/CA/Irvine/Irvine-Spectrum/cheap-apartments-for-rent",
+   "https://www.talkirvine.com/threads/should-i-relocate-to-another-iac-complex.5950/latest"
+  ]
+ },
+ {
+  "id": "resa-long-beach",
+  "name": "Resa Long Beach",
+  "pattern": "often",
+  "seen": [
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Official site: up to 2 months free on select lease terms + $1,500 Look & Lease, restrictions apply",
+    "source": "https://www.hollandresidential.com/ca/long-beach/resa"
+   },
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Redfin: 2 MONTHS FREE, 1BR from ~$2,670, ~123-124 units available",
+    "source": "https://www.redfin.com/neighborhood/14621/CA/Long-Beach/Vista-del-Mar/luxury-apartments-for-rent"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": "Look & Lease $1,500 suggests same-day signing is rewarded; ask which lease terms get the full 2 months.",
+  "evidence": "New 271-unit Holland Partner Group building in lease-up with 120+ units available -> aggressive concessions. Opening date not confirmed.",
+  "sources": [
+   "https://www.hollandresidential.com/ca/long-beach/resa",
+   "https://www.forrentuniversity.com/ca/long-beach/resa-long-beach/h735sb1",
+   "https://longbeachize.com/articles/wooden-frame-begins-to-go-up-on-271-unit-development-at-3rd-pacific-in-dtlb"
+  ]
+ },
+ {
+  "id": "ocean-center-residences",
+  "name": "Ocean Center (residences)",
+  "pattern": "often",
+  "seen": [
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Redfin: 8 WEEKS FREE",
+    "source": "https://www.redfin.com/neighborhood/9754/CA/Long-Beach/Downtown-Long-Beach/studio-apartments-for-rent"
+   },
+   {
+    "when": "summer, year not stated (sweepstakes Aug 5 deadline)",
+    "offer": "8 weeks free + $1,000 off for leasing same day; summer sweepstakes",
+    "source": "https://www.forrentuniversity.com/ca/long-beach/ocean-center/yhz81pv"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": "Same-day lease bonus ($1,000) seen.",
+  "evidence": "80-unit 14-story office-to-residential conversion (redeveloped 2023), described as early in lease-up.",
+  "sources": [
+   "https://www.redfin.com/neighborhood/9754/CA/Long-Beach/Downtown-Long-Beach/studio-apartments-for-rent",
+   "https://www.forrentuniversity.com/ca/long-beach/ocean-center/yhz81pv",
+   "https://platform.reverecre.com/project/b11a06df-98ef-4935-892a-4e8efe694ce0"
+  ]
+ },
+ {
+  "id": "the-magnolia",
+  "name": "The Magnolia",
+  "pattern": "often",
+  "seen": [
+   {
+    "when": "summer, year not stated ('Beat the Summer Heat')",
+    "offer": "Up to 8 weeks free",
+    "source": "https://www.zumper.com/apartment-buildings/p772935/the-magnolia-downtown-long-beach-long-beach-ca"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": null,
+  "evidence": "Opened 2022 (46% leased after <3 months per LBBJ July 2022; later 76% leased). Still advertising 4-8 weeks free in 2026 per TSV, so concessions have persisted well past lease-up.",
+  "sources": [
+   "https://www.zumper.com/apartment-buildings/p772935/the-magnolia-downtown-long-beach-long-beach-ca",
+   "https://lbbusinessjournal.com/news/the-magnolia-a-new-142-unit-residential-project-in-downtown-is-46-leased",
+   "https://lbbusinessjournal.com/news/the-magnolia-a-142-unit-mixed-use-building-celebrates-downtown-opening"
+  ]
+ },
+ {
+  "id": "volta-on-pine",
+  "name": "Volta on Pine",
+  "pattern": "often",
+  "seen": [
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Up to 8 weeks free on select units, base rent, minimum lease term applies; 6-15 month leases",
+    "source": "https://www.westsiderentals.com/long-beach-ca/volta-on-pine-fvp71zr"
+   },
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Redfin: 8 weeks / 1 month free tags",
+    "source": "https://www.redfin.com/neighborhood/117979/CA/Long-Beach/West-Village/studio-apartments-for-rent"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": "Offers 6-15 month terms; concession tied to minimum term.",
+  "evidence": "Greystar-managed; concessions seen at multiple sizes (1 month to 8 weeks) on different aggregators.",
+  "sources": [
+   "https://www.westsiderentals.com/long-beach-ca/volta-on-pine-fvp71zr",
+   "https://www.greystar.com/volta-on-pine-long-beach-ca/p_22157"
+  ]
+ },
+ {
+  "id": "oceanaire",
+  "name": "Oceanaire",
+  "pattern": "often",
+  "seen": [
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Greystar: one month free on select homes",
+    "source": "https://www.greystar.com/oceanaire-long-beach-ca/p_18079"
+   },
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Point2: 6 weeks free on all units + $500 look & lease on select units",
+    "source": "https://www.point2homes.com/US/Apartment-Buildings/CA/Long-Beach/West-End-Long-Beach/Oceanaire/139623099.html"
+   },
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Westside Rentals (older version): 4 weeks free on studios",
+    "source": "https://www.westsiderentals.com/long-beach-ca/oceanaire-mz21qgj"
+   },
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Westside Rentals (later version): 8 weeks free + waived application fee, limited time",
+    "source": "https://prod-release.westsiderentals.com/long-beach-ca/oceanaire-mz21qgj"
+   },
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "HotPads: up to 1 month free base rent on select units",
+    "source": "https://hotpads.com/oceanaire-long-beach-ca-90802-249h8tw/pad"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": "Range from 4 to 8 weeks across versions -> concession size flexes; ask for best current and application-fee waiver.",
+  "evidence": "Five distinct concession versions found, indicating near-continuous specials of varying size.",
+  "sources": [
+   "https://www.greystar.com/oceanaire-long-beach-ca/p_18079",
+   "https://www.point2homes.com/US/Apartment-Buildings/CA/Long-Beach/West-End-Long-Beach/Oceanaire/139623099.html",
+   "https://www.westsiderentals.com/long-beach-ca/oceanaire-mz21qgj",
+   "https://hotpads.com/oceanaire-long-beach-ca-90802-249h8tw/pad"
+  ]
+ },
+ {
+  "id": "griffis-pine-avenue",
+  "name": "Griffis Pine Avenue",
+  "pattern": "sometimes",
+  "seen": [
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Redfin: 6 WEEKS FREE, studios from $2,194, 18 units available",
+    "source": "https://www.redfin.com/neighborhood/9754/CA/Long-Beach/Downtown-Long-Beach/studio-apartments-for-rent"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": null,
+  "evidence": "Single aggregator snapshot.",
+  "sources": [
+   "https://www.redfin.com/neighborhood/9754/CA/Long-Beach/Downtown-Long-Beach/studio-apartments-for-rent"
+  ]
+ },
+ {
+  "id": "the-pacific",
+  "name": "The Pacific",
+  "pattern": "sometimes",
+  "seen": [
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Redfin: 4 WEEKS FREE (230 W 3rd St)",
+    "source": "https://www.redfin.com/neighborhood/117991/CA/Long-Beach/St-Mary/1-bedroom-apartments-for-rent"
+   },
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Westside Rentals: 3 weeks free, subject to change (address match uncertain)",
+    "source": "https://www.westsiderentals.com/long-beach-ca/the-pacific-6k8p0nr"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": null,
+  "evidence": "Sares Regis-developed, 163 units; HG Living manages. Modest 3-4 week offers.",
+  "sources": [
+   "https://www.westsiderentals.com/long-beach-ca/the-pacific-6k8p0nr",
+   "https://www.sares-regis.com/post/the-pacific-apartments-opening-soon-in-long-beachs-west-gateway-neighborhood"
+  ]
+ },
+ {
+  "id": "eleven12-1112-locust",
+  "name": "Eleven12 (1112 Locust)",
+  "pattern": "often",
+  "seen": [
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Redfin: 2 MONTHS FREE (studio $2,250, 1BR $2,750)",
+    "source": "https://www.redfin.com/neighborhood/117991/CA/Long-Beach/St-Mary/apartments-for-rent"
+   },
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Redfin 90832 page: 1 MONTH FREE",
+    "source": "https://www.redfin.com/zipcode/90832/studio-apartments-for-rent"
+   },
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "HotPads: 1 month free on a 13-month lease",
+    "source": "https://hotpads.com/1112-locust-long-beach-ca-90813-24a3ng4/pad"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": "Ask which lease length unlocks 2 months vs 1 month.",
+  "evidence": "Conflicting 1-vs-2-month offers across aggregators.",
+  "sources": [
+   "https://hotpads.com/1112-locust-long-beach-ca-90813-24a3ng4/pad",
+   "https://www.redfin.com/neighborhood/117991/CA/Long-Beach/St-Mary/apartments-for-rent"
+  ]
+ },
+ {
+  "id": "urban-village-apartments",
+  "name": "Urban Village Apartments",
+  "pattern": "rarely",
+  "seen": [
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Zumper 'Price drop' tag; rent ranges shifting between snapshots ($1,938-$4,851 / $2,281-$3,654 / $2,197-$4,232)",
+    "source": "https://www.zumper.com/apartments-for-rent/8498201/2-bedroom-downtown-long-beach-long-beach-ca"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": null,
+  "evidence": "No explicit weeks-free special found; price-drop tag only.",
+  "sources": [
+   "https://www.zumper.com/apartments-for-rent/8498201/2-bedroom-downtown-long-beach-long-beach-ca"
+  ]
+ },
+ {
+  "id": "the-paramount-platinum-triangle",
+  "name": "The Paramount Platinum Triangle",
+  "pattern": "often",
+  "seen": [
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Redfin: 1 MONTH FREE",
+    "source": "https://www.redfin.com/neighborhood/14752/CA/Anaheim/South-Anaheim/apartments-for-rent"
+   },
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Redfin: $1,500 OFF (rents ~$2,250-$2,930)",
+    "source": "https://www.redfin.com/neighborhood/14752/CA/Anaheim/South-Anaheim/cheap-apartments-for-rent"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": null,
+  "evidence": "Alternates between 1 month free and $1,500 off on different snapshots; TSV shows up to 6 weeks free now.",
+  "sources": [
+   "https://www.redfin.com/neighborhood/14752/CA/Anaheim/South-Anaheim/apartments-for-rent",
+   "https://www.redfin.com/neighborhood/14752/CA/Anaheim/South-Anaheim/cheap-apartments-for-rent"
+  ]
+ },
+ {
+  "id": "revo-formerly-griffis-platinum-triangle",
+  "name": "REVO (formerly Griffis Platinum Triangle)",
+  "pattern": "often",
+  "seen": [
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Apartments.com (Griffis-era listing): up to one month free on select homes",
+    "source": "https://www.apartments.com/griffis-platinum-triangle-anaheim-ca/g9xdtdy/"
+   },
+   {
+    "when": "after 2024-11 (Gables management)",
+    "offer": "1 month free when you look & lease",
+    "source": "https://www.westsiderentals.com/anaheim-ca/revo-g9xdtdy"
+   },
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Zillow: up to 8 weeks free on select units",
+    "source": "https://www.zillow.com/b/revo-anaheim-ca-B67phC/"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": "Look & lease condition attached to the 1-month offer.",
+  "evidence": "Concessions under both Griffis and Gables. Note Zillow gives REVO address as 1800 E Gene Autry Way vs TSV 1912 S Jacaranda St - verify same building.",
+  "sources": [
+   "https://www.apartments.com/griffis-platinum-triangle-anaheim-ca/g9xdtdy/",
+   "https://www.westsiderentals.com/anaheim-ca/revo-g9xdtdy",
+   "https://www.zillow.com/b/revo-anaheim-ca-B67phC/"
+  ]
+ },
+ {
+  "id": "the-vivere-flats",
+  "name": "The Vivere Flats",
+  "pattern": "sometimes",
+  "seen": [
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Up to one month free rent, restrictions apply (rents $2,340-$3,180)",
+    "source": "https://www.westsiderentals.com/anaheim-ca/the-vivere-flats-n42kzlm"
+   },
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Redfin: 1 MONTH FREE, 1BR $2,470+",
+    "source": "https://www.redfin.com/zipcode/92805/studio-apartments-for-rent"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": null,
+  "evidence": "Consistent one-month offer across two aggregators.",
+  "sources": [
+   "https://www.westsiderentals.com/anaheim-ca/the-vivere-flats-n42kzlm",
+   "https://www.redfin.com/zipcode/92805/studio-apartments-for-rent"
+  ]
+ },
+ {
+  "id": "parallel",
+  "name": "Parallel",
+  "pattern": "unknown",
+  "seen": [
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "'Call us and ask about our specials' (no terms published)",
+    "source": "https://www.westsiderentals.com/anaheim-ca/parallel-zy2x21x"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": "Specials apparently given on request - ask directly.",
+  "evidence": "Greystar 12-mo lease from $2,533 in one snapshot, $2,278 in an older one.",
+  "sources": [
+   "https://www.westsiderentals.com/anaheim-ca/parallel-zy2x21x",
+   "https://www.greystar.com/s/orange-county-metro/anaheim-fullerton-placentia"
+  ]
+ },
+ {
+  "id": "nineteen01",
+  "name": "Nineteen01",
+  "pattern": "sometimes",
+  "seen": [
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Redfin: 1 MONTH FREE (1BR $2,412, 2BR $2,732)",
+    "source": "https://www.redfin.com/neighborhood/508/CA/Santa-Ana/City-Center/1-bedroom-apartments-for-rent"
+   },
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Redfin: 'DEAL' tag, 1BR $2,694+ (no free-rent stated)",
+    "source": "https://www.redfin.com/zipcode/92725/1-bedroom-apartments-for-rent"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": null,
+  "evidence": "Apartment List shows 1BR $2,446 with no concession; specials come and go.",
+  "sources": [
+   "https://www.redfin.com/neighborhood/508/CA/Santa-Ana/City-Center/1-bedroom-apartments-for-rent",
+   "https://apartmentlist.com/ca/santa-ana/nineteen-01"
+  ]
+ },
+ {
+  "id": "bloom-south-coast-metro",
+  "name": "Bloom (South Coast Metro)",
+  "pattern": "often",
+  "seen": [
+   {
+    "when": "2025-06 (move in by 06/15/2025)",
+    "offer": "Up to 6 weeks free on select apartment homes",
+    "source": "https://www.westsiderentals.com/santa-ana-ca/bloom-qvztgmx"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": null,
+  "evidence": "226-unit Legacy Partners/DWS new build; 6 weeks free in mid-2025, 3 weeks free per TSV in 2026 -> concession shrinking as lease-up matures.",
+  "sources": [
+   "https://www.westsiderentals.com/santa-ana-ca/bloom-qvztgmx",
+   "https://www.multihousingnews.com/legacy-partners-jv-opens-leasing-for-california-community/"
+  ]
+ },
+ {
+  "id": "baker-block",
+  "name": "Baker Block",
+  "pattern": "sometimes",
+  "seen": [
+   {
+    "when": "c. 2025-07 (listing showed July 2025 availability)",
+    "offer": "2 weeks free on select units",
+    "source": "https://edge.apartmentiq.io/costa-mesa-ca/baker-block"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": null,
+  "evidence": "2 weeks in 2025 vs 6 weeks free per TSV snapshot (Redfin attribution ambiguous).",
+  "sources": [
+   "https://edge.apartmentiq.io/costa-mesa-ca/baker-block"
+  ]
+ },
+ {
+  "id": "amerige-pointe-apartments",
+  "name": "Amerige Pointe Apartments",
+  "pattern": "often",
+  "seen": [
+   {
+    "when": "c. 2024 (page shows 2024 data)",
+    "offer": "1 month free base rent on select floorplans, minimum lease term",
+    "source": "https://www.westsiderentals.com/fullerton-ca/amerige-pointe-zg4cdhy"
+   },
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Zumper: up to 1 month free base rent on select floorplans",
+    "source": "https://www.zumper.com/apartment-buildings/p58466/amerige-pointe-fullerton-ca"
+   },
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Redfin: 1 MONTH FREE",
+    "source": "https://www.redfin.com/neighborhood/547250/CA/Fullerton/Amerige-Heights/apartments-for-rent"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": null,
+  "evidence": "Same 1-month offer appearing from ~2024 onward suggests a standing concession.",
+  "sources": [
+   "https://www.westsiderentals.com/fullerton-ca/amerige-pointe-zg4cdhy",
+   "https://www.zumper.com/apartment-buildings/p58466/amerige-pointe-fullerton-ca"
+  ]
+ },
+ {
+  "id": "wilshire-promenade",
+  "name": "Wilshire Promenade",
+  "pattern": "sometimes",
+  "seen": [
+   {
+    "when": "2025-06 (lease start by 6/28/2025)",
+    "offer": "Savings up to $600 + an additional week free",
+    "source": "https://edge.apartmentiq.io/fullerton-ca/wilshire-promenade"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": "Essex sister property Pinnacle at Fullerton advertised 'an extra 1 week free' (undated) - Essex uses small $-off + 1-week offers.",
+  "evidence": "Essex specials tend to be modest ($ off + 1 week).",
+  "sources": [
+   "https://edge.apartmentiq.io/fullerton-ca/wilshire-promenade",
+   "https://www.essexapartmenthomes.com/apartments/fullerton/pinnacle-at-fullerton"
+  ]
+ },
+ {
+  "id": "villa-solana-equity-residential",
+  "name": "Villa Solana (Equity Residential)",
+  "pattern": "sometimes",
+  "seen": [
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Redfin: $1,000 OFF (another snapshot shows no special)",
+    "source": "https://www.redfin.com/neighborhood/111929/CA/Laguna-Hills/Central-Laguna-Hills/apartments-for-rent"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": null,
+  "evidence": "1BR asking ~$2,368-$2,536 across snapshots.",
+  "sources": [
+   "https://www.redfin.com/neighborhood/111929/CA/Laguna-Hills/Central-Laguna-Hills/apartments-for-rent"
+  ]
+ },
+ {
+  "id": "arta-apartments",
+  "name": "ARTA Apartments",
+  "pattern": "sometimes",
+  "seen": [
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Zillow/Point2: up to 2 weeks free base rent on select units",
+    "source": "https://www.zillow.com/b/-5XjTNY"
+   },
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Redfin: $1,000 OFF",
+    "source": "https://www.redfin.com/city/224/CA/Aliso-Viejo/cheap-1-bedroom-apartment"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": null,
+  "evidence": "Small concessions; Greystar total monthly price from ~$3,102 (12-mo).",
+  "sources": [
+   "https://www.zillow.com/b/-5XjTNY",
+   "https://www.redfin.com/city/224/CA/Aliso-Viejo/cheap-1-bedroom-apartment"
+  ]
+ },
+ {
+  "id": "avila-at-rancho-santa-margarita",
+  "name": "Avila at Rancho Santa Margarita",
+  "pattern": "unknown",
+  "seen": [
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "Redfin 'DEAL' tag (terms not shown), 1BR $2,491+",
+    "source": "https://www.redfin.com/city/15422/CA/Rancho-Santa-Margarita/luxury-1-bedroom-apartment"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": null,
+  "evidence": "TSV notes 50% off deposit; no rent concession found.",
+  "sources": [
+   "https://www.redfin.com/city/15422/CA/Rancho-Santa-Margarita/luxury-1-bedroom-apartment"
+  ]
+ },
+ {
+  "id": "eaves-south-coast",
+  "name": "eaves South Coast",
+  "pattern": "unknown",
+  "seen": [
+   {
+    "when": "undated (seen 2026-10)",
+    "offer": "AvalonBay specials page reviewed: no free-rent shown (2BR from $3,185 on 12-mo lease); 'quoted rent, specials... subject to change without notice'",
+    "source": "https://www.avaloncommunities.com/california/costa-mesa-apartments/eaves-south-coast/specials"
+   }
+  ],
+  "renewal_note": null,
+  "negotiation_note": "AvalonBay prices vary by move-in date and lease term (site disclaimer).",
+  "evidence": "TSV's Redfin '1 month free' not corroborated by AvalonBay's own specials page.",
+  "sources": [
+   "https://www.avaloncommunities.com/california/costa-mesa-apartments/eaves-south-coast/specials"
+  ]
+ }
+]

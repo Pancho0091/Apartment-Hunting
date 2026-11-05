@@ -32,6 +32,7 @@ browser; use Export / Import at the bottom of the page to back them up or move t
   resident reviews (`reviews_out_*`).
 - `scripts/build_data.py` — merges the above: `python3 -I scripts/build_data.py data/research`.
 - Seattle / New York: research in `data/research/<market>/`, merged by `scripts/build_market_data.py <market>`
+- Rent timing and specials history: research in `data/research/timing/`, assembled by `python3 -I scripts/build_timing.py` into `data/timing-la.json` and `data/concessions-la.json` (shown in the Timeline view and listing drawers).
   into `data/buildings-<market>.json` and `data/neighborhoods-<market>.json`; maps from `scripts/build_geo_market.py`.
 - Rebuild the tool after any data change: `python3 -I scripts/build_html.py`.
 
