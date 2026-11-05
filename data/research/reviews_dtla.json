@@ -1,0 +1,2441 @@
+[
+ {
+  "id": "thurman-lofts",
+  "name": "Thurman Lofts",
+  "management_company": "Unconfirmed: input notes Berkshire Communities (unverified) since Sept 2025. Owner: Fifteen Group / Laguna Point Properties JV (former 'SB Tower', 263 units) per 2023 reports.",
+  "reputation_score": 4,
+  "confidence": "medium",
+  "ratings": [
+   {
+    "site": "Apartments.com",
+    "rating": 4.5,
+    "count": 12,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   },
+   {
+    "site": "ForRent",
+    "rating": 4.5,
+    "count": "11-12",
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   },
+   {
+    "site": "Apartment List",
+    "rating": 2.0,
+    "count": 1,
+    "as_of": "2024-10 (review date)",
+    "scale": "5"
+   },
+   {
+    "site": "RentCafe (company rating)",
+    "rating": 4.0,
+    "count": "~1.8K",
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5; company-level, not building"
+   }
+  ],
+  "management": {
+   "score": 3,
+   "summary": "Conflicting. Oct 2024 Apartment List review calls management 'very bad'. Dec 2024 ForRent reviews split: one says 'complete turnaround' under a new owner, another says 'horrible management' since the takeover and that the 'building is falling apart'. Owner history is the bigger worry (see news). The Sept 2025 management change could not be verified."
+  },
+  "maintenance": {
+   "score": 3,
+   "summary": "Light-bulb repair outstanding ~2 months (Oct 2024). Dec 2024 review reports frequent elevator outages and a parking gate that often fails."
+  },
+  "cleanliness": {
+   "score": null,
+   "summary": "No direct evidence; one 2024 review says the building is 'falling apart'."
+  },
+  "noise": {
+   "score": null,
+   "summary": "No reviews on noise found. Historic Core / Spring St location suggests street and nightlife noise (inference, unverified)."
+  },
+  "security": {
+   "score": 2,
+   "summary": "Dec 2024 review: 'security is a joke' and 'the garage is constantly broken into'. Gate often broken."
+  },
+  "pests": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "costs": {
+   "score": null,
+   "summary": "No fee or deposit disputes found for this building."
+  },
+  "reddit": [
+   {
+    "summary": "No Reddit threads surfaced (reddit.com was not reachable through the search tool). An unverified Change.org petition titled 'The Horrors of Living at SB Buildings DTLA' covers the former SB portfolio, which includes this building.",
+    "source": "https://raindrop.io/mydjtl/sb-tower-34620235"
+   }
+  ],
+  "news": [
+   {
+    "when": "2022-04",
+    "summary": "Barry and Rommy Shy sold the five-building SB portfolio (SB Tower at 600 S Spring included) to Laguna Point Properties for $402M.",
+    "source": "https://globest.com/2022/04/25/dtla-multifamily-portfolio-trades-for-402m"
+   },
+   {
+    "when": "2023-03",
+    "summary": "Laguna Point fell behind on the $329M acquisition loan.",
+    "source": "https://therealdeal.com/la/2023/03/02/laguna-point-falls-behind-on-329m-loan-for-dtla-apartments"
+   },
+   {
+    "when": "2023-04",
+    "summary": "Miami-based Fifteen Group recapitalized or bought the troubled portfolio (~$315M per Bisnow; price unclear per The Real Deal), and LLC '600 S Spring Owner' was formed. The Real Deal noted Fifteen 'has failed to turn [troubled portfolios] around before'. MF1 Capital was the lender.",
+    "source": "https://therealdeal.com/la/2023/04/03/fifteen-group-buys-troubled-dtla-apartment-portfolio"
+   },
+   {
+    "when": "undated",
+    "summary": "A tenant-blog headline says the city deemed sister building SB Main (111 W 7th) uninhabitable. Unverified, and about a different building.",
+    "source": "https://raindrop.io/mydjtl/sb-tower-34620235"
+   }
+  ],
+  "praise": [
+   "Some 2024 reviewers report noticeable improvement under new ownership",
+   "High Apartments.com score (4.5, 12 reviews)"
+  ],
+  "complaints": [
+   "Elevator outages",
+   "Garage break-ins",
+   "Broken parking gate",
+   "Slow repairs",
+   "Dismissive management"
+  ],
+  "dealbreakers": "Possible dealbreaker: the owner has a distressed-portfolio history (missed $329M loan in 2023, recapitalized by a firm with a weak turnaround record), and 2024 reviews report garage break-ins and elevator outages. Ask about the current owner and lender status, the garage camera setup, and the elevator service record before signing.",
+  "recent_trend": "unknown",
+  "sources": [
+   "https://forrentuniversity.com/ca/los-angeles/thurman-lofts/p97w2nt",
+   "https://www.apartments.com/thurman-lofts-los-angeles-ca/397w5nf/",
+   "https://apartmentlist.com/ca/los-angeles/thurman-lofts",
+   "https://therealdeal.com/la/2023/04/03/fifteen-group-buys-troubled-dtla-apartment-portfolio",
+   "https://bisnow.com/los-angeles/news/multifamily/laguna-point-downtown-apartment-portfolio-fifteen-group-118388",
+   "https://therealdeal.com/la/2023/03/02/laguna-point-falls-behind-on-329m-loan-for-dtla-apartments",
+   "https://globest.com/2022/04/25/dtla-multifamily-portfolio-trades-for-402m",
+   "https://raindrop.io/mydjtl/sb-tower-34620235"
+  ]
+ },
+ {
+  "id": "pegasus",
+  "name": "Pegasus",
+  "management_company": "Equity Residential",
+  "reputation_score": 6,
+  "confidence": "low",
+  "ratings": [
+   {
+    "site": "Equity Residential site",
+    "rating": 4.9,
+    "count": 3,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   },
+   {
+    "site": "Apartments.com",
+    "rating": 4.9,
+    "count": 3,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   },
+   {
+    "site": "Lucid Rents",
+    "rating": "unclear",
+    "count": 25,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5; review count only"
+   }
+  ],
+  "management": {
+   "score": 7,
+   "summary": "Thin evidence. Reviews on Equity's site praise the office staff, and an old Lucid Rents review (~14 years) calls management 'fantastic'."
+  },
+  "maintenance": {
+   "score": 4,
+   "summary": "Feb 2023 review: elevators not functioning, 'expect 1 working elevator'."
+  },
+  "cleanliness": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "noise": {
+   "score": null,
+   "summary": "No direct reviews. One reviewer mentions 'unpleasant street conditions' downtown."
+  },
+  "security": {
+   "score": null,
+   "summary": "Gated in-building parking is listed. No break-in reports found."
+  },
+  "pests": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "costs": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "reddit": [
+   {
+    "summary": "No r/LosAngeles or r/DTLA threads naming this building surfaced. reddit.com cannot be searched directly with this tool (domain blocked), and general searches returned none.",
+    "source": "n/a"
+   }
+  ],
+  "news": [
+   {
+    "when": "undated",
+    "summary": "Equity Residential bought the 322-unit, 13-story building for ~$100M after a Buchanan/KOR renovation (trade press).",
+    "source": "https://www.multihousingnews.com/deal-of-the-day-322-unit-rental-community-recapitalized-at-100m/"
+   }
+  ],
+  "praise": [
+   "Office staff",
+   "Location (Financial District)",
+   "Rooftop pool"
+  ],
+  "complaints": [
+   "Elevator outages (2023)",
+   "Street conditions"
+  ],
+  "dealbreakers": "None confirmed. Ask about elevator reliability (2023 complaint). Very few reviews.",
+  "recent_trend": "unknown",
+  "sources": [
+   "https://equityapartments.com/los-angeles/financial-district/pegasus-apartments-reviews",
+   "https://www.apartments.com/pegasus-los-angeles-ca/hdpmn63/",
+   "https://lucidrents.com/CA/Los-Angeles/building/los-angeles/612-s-flower-st-90017/reviews?page=2",
+   "https://www.multihousingnews.com/deal-of-the-day-322-unit-rental-community-recapitalized-at-100m/"
+  ]
+ },
+ {
+  "id": "da-vinci",
+  "name": "Da Vinci",
+  "management_company": "G.H. Palmer Associates (GHP Management)",
+  "reputation_score": 5,
+  "confidence": "medium",
+  "ratings": [
+   {
+    "site": "Lucid Rents (overall grade)",
+    "rating": 4.6,
+    "count": 102,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "10; grade blends violations/complaints/reviews; review avg 5.0/10"
+   },
+   {
+    "site": "VeryApt (GH Palmer company mgmt)",
+    "rating": 6.0,
+    "count": 65,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "10; company-level"
+   }
+  ],
+  "management": {
+   "score": 4,
+   "summary": "Split. Some reviewers call management rude and error-prone ('something is always broken'). Others praise leasing staff. G.H. Palmer Associates / GHP Management: VeryApt company-level management rating 6.0 (65 reviews, undated). $12.5M deposit-withholding class-action settlement (date not confirmed in snippet). No BBB profile surfaced."
+  },
+  "maintenance": {
+   "score": 4,
+   "summary": "'Something is always broken' (one 2BR review). No elevator outage reports found."
+  },
+  "cleanliness": {
+   "score": 5,
+   "summary": "Neighbors leave trash in hallways (one review)."
+  },
+  "noise": {
+   "score": 5,
+   "summary": "Next to the 110 freeway. Units facing it hear traffic, though double-pane windows make it 'manageable'. Also inconsiderate neighbors. Being under 500 ft from the freeway is an air-quality consideration too."
+  },
+  "security": {
+   "score": null,
+   "summary": "No break-in reports found in this round."
+  },
+  "pests": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "costs": {
+   "score": 4,
+   "summary": "Tandem parking and high cost come up repeatedly. Company-level deposit-withholding settlement."
+  },
+  "reddit": [
+   {
+    "summary": "No r/LosAngeles or r/DTLA threads naming this building surfaced. reddit.com cannot be searched directly with this tool (domain blocked), and general searches returned none.",
+    "source": "n/a"
+   }
+  ],
+  "news": [
+   {
+    "when": "2014-12",
+    "summary": "The Da Vinci complex burned during construction in a massive fire (later determined to be arson) and was rebuilt.",
+    "source": "https://laist.com/news/developer-behind-incinerated-dtla-a"
+   },
+   {
+    "when": "date not shown in snippet (LA Times / NBC 7 reporting)",
+    "summary": "GHP Management Corp. (G.H. Palmer subsidiary) agreed to pay $12.5M to settle a class action alleging security deposits were withheld from 19,000+ former tenants; NBC 7 separately found 2+ dozen small-claims suits over deposits/charges.",
+    "source": "https://www.aol.com/news/didnt-security-deposits-back-now-200924366.html"
+   }
+  ],
+  "praise": [
+   "Amenities",
+   "Location (City West, freeway access)",
+   "'Rent is fair for what you get'"
+  ],
+  "complaints": [
+   "Freeway noise",
+   "Rude or error-prone management",
+   "Tandem parking",
+   "Hallway trash"
+  ],
+  "dealbreakers": "None outright. Palmer's company-wide deposit-withholding history makes it essential to document move-in condition (photos/video).",
+  "recent_trend": "unknown",
+  "sources": [
+   "https://veryapt.com/ApartmentReview-a15905-da-vinci-los-angeles",
+   "https://www.veryapt.com/m1081-gh-palmer-associates",
+   "https://www.lucidrents.com/CA/Los-Angeles/building/downtown/909-w-temple-st/reviews",
+   "https://laist.com/news/developer-behind-incinerated-dtla-a",
+   "https://www.bisnow.com/news/los-angeles/multifamily/geoff-palmers-controversial-da-vinci-back-at-work-48705",
+   "https://www.aol.com/news/didnt-security-deposits-back-now-200924366.html",
+   "https://www.nbcsandiego.com/news/local/billionaire-trump-donor-accused-of-ripping-tenants-off/4502/"
+  ]
+ },
+ {
+  "id": "the-piero",
+  "name": "The Piero",
+  "management_company": "G.H. Palmer Associates (GHP Management)",
+  "reputation_score": 5.5,
+  "confidence": "medium",
+  "ratings": [
+   {
+    "site": "Apartments.com",
+    "rating": 4.6,
+    "count": 11,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   },
+   {
+    "site": "Birdeye",
+    "rating": 3.7,
+    "count": 329,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   },
+   {
+    "site": "Lucid Rents (Palmer St Paul Properties landlord avg)",
+    "rating": 4.3,
+    "count": "unclear",
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   }
+  ],
+  "management": {
+   "score": 5,
+   "summary": "Mixed. Lucid Rents comments praise staff. A 2023 Apartments.com review says 'They really don't care about the residents here.' G.H. Palmer Associates / GHP Management: VeryApt company-level management rating 6.0 (65 reviews, undated). $12.5M deposit-withholding class-action settlement (date not confirmed in snippet). No BBB profile surfaced."
+  },
+  "maintenance": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "cleanliness": {
+   "score": 6,
+   "summary": "One long-term resident calls it 'secure, clean, and quiet'."
+  },
+  "noise": {
+   "score": 6,
+   "summary": "Described as quiet in one 28-month-tenant review. No other noise data."
+  },
+  "security": {
+   "score": 5,
+   "summary": "Low-reliability site (atly) alleges unsafe parking and stolen packages. A Lucid Rents reviewer calls it secure."
+  },
+  "pests": {
+   "score": 4,
+   "summary": "Cockroaches and rats alleged on atly (low-reliability source). Not corroborated."
+  },
+  "costs": {
+   "score": null,
+   "summary": "Company-level deposit-withholding settlement (see news)."
+  },
+  "reddit": [
+   {
+    "summary": "No r/LosAngeles or r/DTLA threads naming this building surfaced. reddit.com cannot be searched directly with this tool (domain blocked), and general searches returned none.",
+    "source": "n/a"
+   }
+  ],
+  "news": [
+   {
+    "when": "date not shown in snippet (LA Times / NBC 7 reporting)",
+    "summary": "GHP Management Corp. (G.H. Palmer subsidiary) agreed to pay $12.5M to settle a class action alleging security deposits were withheld from 19,000+ former tenants; NBC 7 separately found 2+ dozen small-claims suits over deposits/charges.",
+    "source": "https://www.aol.com/news/didnt-security-deposits-back-now-200924366.html"
+   }
+  ],
+  "praise": [
+   "Staff",
+   "Gym and pool",
+   "Location"
+  ],
+  "complaints": [
+   "Not 'luxury' as marketed",
+   "Pests (unverified)",
+   "Package theft (unverified)"
+  ],
+  "dealbreakers": "None confirmed. Ask about pest control and package-room access. Document move-in condition because of Palmer's deposit history.",
+  "recent_trend": "unknown",
+  "sources": [
+   "https://www.apartments.com/the-piero-los-angeles-ca/13pkvp6/",
+   "https://birdeye.com/the-piero-apartments-158048911610213",
+   "https://lucidrents.com/CA/Los-Angeles/landlord/palmer-st-paul-properties/reviews",
+   "https://www.atly.com/location/ThePieroApartments",
+   "https://www.veryapt.com/ApartmentReview-a15948-the-piero-los-angeles"
+  ]
+ },
+ {
+  "id": "hikari",
+  "name": "Hikari",
+  "management_company": "Equity Residential (owner/manager per equityapartments.com)",
+  "reputation_score": 6.5,
+  "confidence": "medium",
+  "ratings": [
+   {
+    "site": "Equity Residential site",
+    "rating": 4.3,
+    "count": 842,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5; owner-curated testimonials"
+   },
+   {
+    "site": "Birdeye",
+    "rating": 4.0,
+    "count": 68,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   },
+   {
+    "site": "Rentable/ApartmentIQ",
+    "rating": 3.6,
+    "count": 3,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   }
+  ],
+  "management": {
+   "score": 6,
+   "summary": "Few independent reviews. A featured review praises prompt repairs. Equity Residential: large REIT; its own site shows curated high ratings. No company-level scandal surfaced in these searches."
+  },
+  "maintenance": {
+   "score": 7,
+   "summary": "'Staff were always punctual in assisting when things needed to be fixed' (featured review; dated 2016, old)."
+  },
+  "cleanliness": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "noise": {
+   "score": null,
+   "summary": "No data. The building faces 2nd St and the Little Tokyo/Arts District station."
+  },
+  "security": {
+   "score": 4,
+   "summary": "Birdeye review alleges car thefts and break-ins, and that management does not disclose incidents (single review, unverified)."
+  },
+  "pests": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "costs": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "reddit": [
+   {
+    "summary": "No r/LosAngeles or r/DTLA threads naming this building surfaced. reddit.com cannot be searched directly with this tool (domain blocked), and general searches returned none.",
+    "source": "n/a"
+   }
+  ],
+  "news": [],
+  "praise": [
+   "Walkability and transit (across from the Little Tokyo/Arts District station)",
+   "Freeway access",
+   "Responsive repairs"
+  ],
+  "complaints": [
+   "Garage car theft and break-ins (one review)"
+  ],
+  "dealbreakers": "None confirmed. Ask about garage security and incident history. Some units are income-restricted.",
+  "recent_trend": "unknown",
+  "sources": [
+   "https://equityapartments.com/los-angeles/little-tokyo/hikari-apartments-reviews",
+   "https://reviews.birdeye.com/hikari-apartments-149467615012710",
+   "https://www.rentable.co/los-angeles-ca/hikari",
+   "https://trulia.com/building/hikari-375-e-2nd-st-los-angeles-ca-90012-1001484402"
+  ]
+ },
+ {
+  "id": "one-santa-fe",
+  "name": "One Santa Fe",
+  "management_company": "Berkshire Communities per VeryApt (may be stale: JLL later marketed a Berkshire portfolio sale that included One Santa Fe, closing date not shown)",
+  "reputation_score": 5.5,
+  "confidence": "low",
+  "ratings": [
+   {
+    "site": "RentCafe",
+    "rating": 3.5,
+    "count": 10,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   },
+   {
+    "site": "Apartments.com",
+    "rating": 4.7,
+    "count": 7,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   }
+  ],
+  "management": {
+   "score": 6,
+   "summary": "RentCafe sub-scores rate maintenance and staff highest. Few written reviews surfaced."
+  },
+  "maintenance": {
+   "score": 6,
+   "summary": "Rated among the higher RentCafe sub-scores (no numbers in snippet)."
+  },
+  "cleanliness": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "noise": {
+   "score": null,
+   "summary": "No resident noise reviews found. Location next to rail tracks and the LA River suggests train and truck noise (inference, unverified)."
+  },
+  "security": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "pests": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "costs": {
+   "score": 4,
+   "summary": "Value and amenities were the lowest RentCafe sub-scores."
+  },
+  "reddit": [
+   {
+    "summary": "No r/LosAngeles or r/DTLA threads naming this building surfaced. reddit.com cannot be searched directly with this tool (domain blocked), and general searches returned none.",
+    "source": "n/a"
+   }
+  ],
+  "news": [
+   {
+    "when": "2016-06",
+    "summary": "Berkshire Group bought the 438-unit complex (~$200M).",
+    "source": "https://therealdeal.com/la/2016/06/06/berkshire-group-buys-massive-one-santa-fe-development-in-arts-district/"
+   },
+   {
+    "when": "undated",
+    "summary": "JLL announced it closed a sale of One Santa Fe as the final tranche of a 13-property Berkshire portfolio. Buyer and date not shown, so current owner and manager may differ.",
+    "source": "https://www.multifamilypress.com/categories/property-acquisitions/2355-jll-closes-sale-of-los-angeles-apartment-community"
+   }
+  ],
+  "praise": [
+   "Staff",
+   "Maintenance"
+  ],
+  "complaints": [
+   "Value",
+   "Amenities"
+  ],
+  "dealbreakers": "None found. Confirm the current owner and manager, since a sale may have changed them.",
+  "recent_trend": "unknown",
+  "sources": [
+   "https://www.veryapt.com/ApartmentReview-a15966-one-santa-fe-los-angeles",
+   "https://www.rentcafe.com/apartments/ca/los-angeles/one-santa-fe-residential/default.aspx",
+   "https://www.apartments.com/profile/4q9v7cl/",
+   "https://therealdeal.com/la/2016/06/06/berkshire-group-buys-massive-one-santa-fe-development-in-arts-district/",
+   "https://www.multifamilypress.com/categories/property-acquisitions/2355-jll-closes-sale-of-los-angeles-apartment-community"
+  ]
+ },
+ {
+  "id": "the-lofts-at-the-security-building-2br",
+  "name": "The Lofts at the Security Building (2BR)",
+  "management_company": "Simpson Property Group (per Birdeye listing)",
+  "reputation_score": 5.5,
+  "confidence": "medium",
+  "ratings": [
+   {
+    "site": "RentCafe",
+    "rating": 3.5,
+    "count": 16,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   },
+   {
+    "site": "Yelp (via MapQuest)",
+    "rating": 3.0,
+    "count": 60,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   },
+   {
+    "site": "Birdeye",
+    "rating": "3.9-4.6",
+    "count": "103-194",
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5; inconsistent across pages"
+   }
+  ],
+  "management": {
+   "score": 6,
+   "summary": "Staff described as 'friendliest management team' with a community feel. Some unresolved requests."
+  },
+  "maintenance": {
+   "score": 4,
+   "summary": "Pending repair requests. Leaks reported by the reviewer and neighbors."
+  },
+  "cleanliness": {
+   "score": 7,
+   "summary": "Praised for cleanliness in one review."
+  },
+  "noise": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "security": {
+   "score": 7,
+   "summary": "Security is praised in reviews."
+  },
+  "pests": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "costs": {
+   "score": 4,
+   "summary": "Deposit dispute: a former resident never got the $100 'security deposit' back."
+  },
+  "reddit": [
+   {
+    "summary": "No r/LosAngeles or r/DTLA threads naming this building surfaced. reddit.com cannot be searched directly with this tool (domain blocked), and general searches returned none.",
+    "source": "n/a"
+   }
+  ],
+  "news": [],
+  "praise": [
+   "Location",
+   "Security",
+   "Friendly staff",
+   "Community feel"
+  ],
+  "complaints": [
+   "Leaks",
+   "Slow repairs",
+   "Deposit not returned"
+  ],
+  "dealbreakers": "None outright. Ask about leak history in the specific unit (historic building).",
+  "recent_trend": "unknown",
+  "sources": [
+   "https://www.rentcafe.com/apartments/ca/los-angeles/the-lofts-at-the-security-building/default.aspx",
+   "https://birdeye.com/the-lofts-at-the-security-building-apartments-148822177653010",
+   "https://startpage.mapquest.com/us/california/the-lofts-at-the-security-building-apartments-416255666",
+   "https://www.veryapt.com/ApartmentReview-a20946-the-lofts-at-the-security-building-los-angeles"
+  ]
+ },
+ {
+  "id": "josephinedtla",
+  "name": "JosephineDTLA",
+  "management_company": "Kablan Management Inc. (per ForRent). Formerly listed as '8th & Hope' at the same address.",
+  "reputation_score": 6,
+  "confidence": "low",
+  "ratings": [
+   {
+    "site": "Apartments.com",
+    "rating": 4.7,
+    "count": 12,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   },
+   {
+    "site": "ForRent",
+    "rating": 4.7,
+    "count": 12,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   },
+   {
+    "site": "Apartment List",
+    "rating": 5.0,
+    "count": 1,
+    "as_of": "2024-08-15",
+    "scale": "5"
+   }
+  ],
+  "management": {
+   "score": 5,
+   "summary": "One Dec 2023 review cites unprofessional management and subpar amenities. Otherwise high scores on a small sample."
+  },
+  "maintenance": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "cleanliness": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "noise": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "security": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "pests": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "costs": {
+   "score": null,
+   "summary": "Heavy concessions advertised: Zillow says up to 10 weeks free plus a $1,500 look-and-lease credit, and HotPads says free parking plus up to 8 weeks free. Good for year-1 net rent, but it may signal weak occupancy. Check year-2 renewal pricing."
+  },
+  "reddit": [
+   {
+    "summary": "No r/LosAngeles or r/DTLA threads naming this building surfaced. reddit.com cannot be searched directly with this tool (domain blocked), and general searches returned none.",
+    "source": "n/a"
+   }
+  ],
+  "news": [],
+  "praise": [
+   "High aggregate rating"
+  ],
+  "complaints": [
+   "Unprofessional management (2023)",
+   "Pet policy confusion"
+  ],
+  "dealbreakers": "None found. Thin evidence; the rename/rebrand and the new manager mean older reviews may not apply.",
+  "recent_trend": "unknown",
+  "sources": [
+   "https://www.apartments.com/josephine-dtla-los-angeles-ca/spddm74",
+   "https://forrent.com/ca/los-angeles/josephine-dtla/dpddl7h",
+   "https://apartmentlist.com/ca/los-angeles/josephine-dtla",
+   "https://www.apartmentlist.com/ca/los-angeles/8th-and-hope",
+   "https://www.zillow.com/apartments/los-angeles-ca/josephinedtla/5Yy5r2"
+  ]
+ },
+ {
+  "id": "1000-grand-by-windsor",
+  "name": "1000 Grand by Windsor",
+  "management_company": "Windsor Communities (GID)",
+  "reputation_score": 6.5,
+  "confidence": "medium",
+  "ratings": [
+   {
+    "site": "Apartments.com",
+    "rating": 4.4,
+    "count": 79,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   },
+   {
+    "site": "Lucid Rents",
+    "rating": "unclear",
+    "count": 93,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5; review count only; landlord 'One Thousand Grand Avenue Hold' avg 4.5"
+   }
+  ],
+  "management": {
+   "score": 6,
+   "summary": "Mostly positive about leasing and maintenance staff. One reviewer says 'mgmt team just keeps going downhill', and another cites 'recent cuts' to quality-of-life perks (rated 6/10). Windsor Communities (GID): VeryApt company management rating 7.8 from 131 reviews; one Lucid Rents reviewer calls it 'corporate, detached from residents' while praising on-site staff."
+  },
+  "maintenance": {
+   "score": 7,
+   "summary": "Verified renter praises the maintenance team."
+  },
+  "cleanliness": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "noise": {
+   "score": 7,
+   "summary": "'Relatively quiet street'."
+  },
+  "security": {
+   "score": 7,
+   "summary": "'Lots of South Park security patrolling 24/7'."
+  },
+  "pests": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "costs": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "reddit": [
+   {
+    "summary": "No r/LosAngeles or r/DTLA threads naming this building surfaced. reddit.com cannot be searched directly with this tool (domain blocked), and general searches returned none.",
+    "source": "n/a"
+   }
+  ],
+  "news": [],
+  "praise": [
+   "Leasing and maintenance staff",
+   "Security patrols",
+   "Quiet street"
+  ],
+  "complaints": [
+   "Amenity and perk cuts",
+   "Management slipping (one review)"
+  ],
+  "dealbreakers": "None found.",
+  "recent_trend": "declining",
+  "sources": [
+   "https://apartments.com/1000-grand-by-windsor-los-angeles-ca/5e2dqkp",
+   "https://lucidrents.com/CA/Los-Angeles/building/downtown/1000-s-grand-ave/reviews?page=4",
+   "https://lucidrents.com/CA/Los-Angeles/landlord/one-thousand-grand-avenue-hold/reviews",
+   "https://veryapt.com/ApartmentReview-a15971-1000-grand-by-windsor-los-angeles"
+  ]
+ },
+ {
+  "id": "broadway-lofts",
+  "name": "Broadway Lofts",
+  "management_company": "SRG Residential (per RentCafe)",
+  "reputation_score": 5,
+  "confidence": "low",
+  "ratings": [
+   {
+    "site": "Apartments.com",
+    "rating": 4.7,
+    "count": 4,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   },
+   {
+    "site": "ForRent",
+    "rating": 4.7,
+    "count": 4,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   }
+  ],
+  "management": {
+   "score": 4,
+   "summary": "'Not worth the management' (Apartments.com). ForRent review dated 2023-05-24: 'I would avoid'."
+  },
+  "maintenance": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "cleanliness": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "noise": {
+   "score": 4,
+   "summary": "Loud neighbors and music 'really ruins it'. This is a 1907 building, so sound insulation is likely weak (inference)."
+  },
+  "security": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "pests": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "costs": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "reddit": [
+   {
+    "summary": "No r/LosAngeles or r/DTLA threads naming this building surfaced. reddit.com cannot be searched directly with this tool (domain blocked), and general searches returned none.",
+    "source": "n/a"
+   }
+  ],
+  "news": [],
+  "praise": [
+   "Beautiful historic building (1907, Broadway Theatre District)"
+  ],
+  "complaints": [
+   "Management",
+   "Neighbor noise"
+  ],
+  "dealbreakers": "None confirmed. Noise could be a problem in a 1907 conversion. Only 4 reviews.",
+  "recent_trend": "unknown",
+  "sources": [
+   "https://www.apartments.com/the-broadway-lofts-los-angeles-ca/22zzxhb/",
+   "https://forrent.com/ca/los-angeles/broadway-lofts/q2zzthy",
+   "https://www.rentcafe.com/apartments/ca/los-angeles/broadway-lofts0/default.aspx",
+   "https://www.yardimatrix.com/property-types/multifamily/metrolosangeles/the-broadway-lofts-430-broadway-ca-90013--13986"
+  ]
+ },
+ {
+  "id": "llewellyn",
+  "name": "Llewellyn",
+  "management_company": "Greystar",
+  "reputation_score": 7.5,
+  "confidence": "medium",
+  "ratings": [
+   {
+    "site": "Apartments.com",
+    "rating": 4.5,
+    "count": 21,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   },
+   {
+    "site": "ForRent",
+    "rating": 4.5,
+    "count": 22,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   },
+   {
+    "site": "Lucid Rents",
+    "rating": 4.2,
+    "count": 64,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   }
+  ],
+  "management": {
+   "score": 7,
+   "summary": "Positive. The manager responds to reviews, and a 2024-12-12 review praises the building as a home. Greystar: largest US manager; reputation varies building to building. No DTLA-specific Greystar news surfaced this round."
+  },
+  "maintenance": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "cleanliness": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "noise": {
+   "score": 7,
+   "summary": "Downtown noise 'shut out well' with windows closed."
+  },
+  "security": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "pests": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "costs": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "reddit": [
+   {
+    "summary": "No r/LosAngeles or r/DTLA threads naming this building surfaced. reddit.com cannot be searched directly with this tool (domain blocked), and general searches returned none.",
+    "source": "n/a"
+   }
+  ],
+  "news": [],
+  "praise": [
+   "Co-working space with coffee",
+   "Well-equipped units",
+   "Pool and gym",
+   "Near the Chinatown Metro and State Historic Park"
+  ],
+  "complaints": [
+   "Few detailed critical reviews surfaced"
+  ],
+  "dealbreakers": "None found.",
+  "recent_trend": "stable",
+  "sources": [
+   "https://apartments.com/llewellyn-los-angeles-ca/0qln4g0",
+   "https://www.forrent.com/ca/los-angeles/llewellyn/nqln3gm",
+   "https://www.lucidrents.com/CA/Los-Angeles/building/downtown/1101-n-main-st",
+   "https://www.greystar.com/llewellyn-apartments-los-angeles/p_17784"
+  ]
+ },
+ {
+  "id": "arrive-wakaba",
+  "name": "Arrive Wakaba",
+  "management_company": "Unconfirmed: Arrive-branded operator. Owner entity 'CP6 Wakaba LLC' per Lucid Rents. A resident reports an ownership and management change since 2022.",
+  "reputation_score": 7,
+  "confidence": "medium",
+  "ratings": [
+   {
+    "site": "Apartments.com",
+    "rating": 4.6,
+    "count": 45,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   },
+   {
+    "site": "ForRent",
+    "rating": 4.6,
+    "count": 18,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   },
+   {
+    "site": "Birdeye (as Wakaba LA)",
+    "rating": 4.1,
+    "count": 224,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   }
+  ],
+  "management": {
+   "score": 7,
+   "summary": "Responsive. A resident since 2022 says the ownership/management change was 'quite an improvement'."
+  },
+  "maintenance": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "cleanliness": {
+   "score": 7,
+   "summary": "Property described as clean."
+  },
+  "noise": {
+   "score": 5,
+   "summary": "Can be noisy, especially units facing the street."
+  },
+  "security": {
+   "score": 6,
+   "summary": "Some worry about the proximity to Skid Row. A 2024 reviewer says homelessness concerns proved unfounded."
+  },
+  "pests": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "costs": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "reddit": [
+   {
+    "summary": "No r/LosAngeles or r/DTLA threads naming this building surfaced. reddit.com cannot be searched directly with this tool (domain blocked), and general searches returned none.",
+    "source": "n/a"
+   }
+  ],
+  "news": [],
+  "praise": [
+   "Responsive staff",
+   "Gym and work area",
+   "Little Tokyo location"
+  ],
+  "complaints": [
+   "Street-facing noise"
+  ],
+  "dealbreakers": "None found. Ask for a courtyard-facing unit for quiet.",
+  "recent_trend": "improving",
+  "sources": [
+   "https://www.apartments.com/arrive-wakaba-los-angeles-ca/d2ystwk/",
+   "https://forrent.com/ca/los-angeles/arrive-wakaba/s2ysxw6",
+   "https://reviews.birdeye.com/wakaba-la-apartments-156774655235493",
+   "https://lucidrents.com/CA/Los-Angeles/landlord/cp6-wakaba-llc/reviews"
+  ]
+ },
+ {
+  "id": "amp-lofts",
+  "name": "Amp Lofts",
+  "management_company": "Unconfirmed. Lucid Rents landlord entity 'GUGV Arts District LA Property' (avg 4.3).",
+  "reputation_score": 6.5,
+  "confidence": "medium",
+  "ratings": [
+   {
+    "site": "ApartmentRatings",
+    "rating": 4.4,
+    "count": 78,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   },
+   {
+    "site": "Lucid Rents",
+    "rating": "4.7/10 (10 reviews shown)",
+    "count": 120,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "10; counts inconsistent; 13 recorded violations"
+   }
+  ],
+  "management": {
+   "score": 7,
+   "summary": "Leasing and property staff praised for responsiveness and move-in help. One outlier review calls management unresponsive."
+  },
+  "maintenance": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "cleanliness": {
+   "score": 6,
+   "summary": "'Well kept', but one review cites pet waste on the grounds."
+  },
+  "noise": {
+   "score": 6,
+   "summary": "One review mentions noisy residents and frequent fire-alarm problems."
+  },
+  "security": {
+   "score": 6,
+   "summary": "After-hours on-site security patrols (reviews). One review alleges burglaries."
+  },
+  "pests": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "costs": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "reddit": [
+   {
+    "summary": "No r/LosAngeles or r/DTLA threads naming this building surfaced. reddit.com cannot be searched directly with this tool (domain blocked), and general searches returned none.",
+    "source": "n/a"
+   }
+  ],
+  "news": [
+   {
+    "when": "undated",
+    "summary": "Lucid Rents shows 13 recorded violations (type not shown).",
+    "source": "https://lucidrents.com/CA/Los-Angeles/building/los-angeles/695-s-santa-fe-ave"
+   }
+  ],
+  "praise": [
+   "Staff",
+   "Arts District location (coffee, bars, restaurants)",
+   "Night security patrol"
+  ],
+  "complaints": [
+   "Burglaries (one review)",
+   "Fire alarms",
+   "Pet waste"
+  ],
+  "dealbreakers": "None confirmed.",
+  "recent_trend": "unknown",
+  "sources": [
+   "https://roommates.apartmentratings.com/ca/los-angeles/amp-lofts_9199332346275186075",
+   "https://lucidrents.com/CA/Los-Angeles/building/los-angeles/695-s-santa-fe-ave",
+   "https://lucidrents.com/CA/Los-Angeles/landlord/gugv-arts-district-la-property/reviews"
+  ]
+ },
+ {
+  "id": "garey-building",
+  "name": "Garey Building",
+  "management_company": "Greystar (VeryApt lists Alliance Residential, likely stale)",
+  "reputation_score": 7.5,
+  "confidence": "medium",
+  "ratings": [
+   {
+    "site": "RentCafe",
+    "rating": 4.5,
+    "count": 11,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   },
+   {
+    "site": "ForRent/aggregate",
+    "rating": 4.8,
+    "count": 99,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   },
+   {
+    "site": "Lucid Rents",
+    "rating": 4.3,
+    "count": 6,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5; grade A; 0/6 recommend, which conflicts with the score"
+   }
+  ],
+  "management": {
+   "score": 7,
+   "summary": "Positive; community events. Greystar: largest US manager; reputation varies building to building. No DTLA-specific Greystar news surfaced this round."
+  },
+  "maintenance": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "cleanliness": {
+   "score": 8,
+   "summary": "Clean (multiple reviews)."
+  },
+  "noise": {
+   "score": 8,
+   "summary": "Quiet, respectful residents."
+  },
+  "security": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "pests": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "costs": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "reddit": [
+   {
+    "summary": "No r/LosAngeles or r/DTLA threads naming this building surfaced. reddit.com cannot be searched directly with this tool (domain blocked), and general searches returned none.",
+    "source": "n/a"
+   }
+  ],
+  "news": [],
+  "praise": [
+   "Clean",
+   "Quiet",
+   "Community events",
+   "Walkable Arts District / Little Tokyo"
+  ],
+  "complaints": [
+   "None substantive surfaced"
+  ],
+  "dealbreakers": "None found.",
+  "recent_trend": "stable",
+  "sources": [
+   "https://www.rentcafe.com/apartments/ca/los-angeles/garey-building/default.aspx",
+   "https://forrent.com/ca/los-angeles/garey-building/eqdqc2p",
+   "https://lucidrents.com/CA/Los-Angeles/building/downtown/905-e-2nd-st",
+   "https://veryapt.com/ApartmentReview-a15935-the-garey-building-los-angeles"
+  ]
+ },
+ {
+  "id": "aliso",
+  "name": "Aliso",
+  "management_company": "Greystar",
+  "reputation_score": 6.5,
+  "confidence": "low",
+  "ratings": [
+   {
+    "site": "RentCafe",
+    "rating": 4.5,
+    "count": 28,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5; Location/Amenities 5.0; Parking/Value 4.0"
+   },
+   {
+    "site": "Apartments.com",
+    "rating": 4.7,
+    "count": 23,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   },
+   {
+    "site": "Lucid Rents",
+    "rating": 3.0,
+    "count": 4,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "10; grade D; 0/4 recommend"
+   }
+  ],
+  "management": {
+   "score": null,
+   "summary": "No written reviews surfaced. Greystar: largest US manager; reputation varies building to building. No DTLA-specific Greystar news surfaced this round."
+  },
+  "maintenance": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "cleanliness": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "noise": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "security": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "pests": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "costs": {
+   "score": 6,
+   "summary": "Value scored 4.0/5 on RentCafe."
+  },
+  "reddit": [
+   {
+    "summary": "No r/LosAngeles or r/DTLA threads naming this building surfaced. reddit.com cannot be searched directly with this tool (domain blocked), and general searches returned none.",
+    "source": "n/a"
+   }
+  ],
+  "news": [],
+  "praise": [
+   "Location",
+   "Amenities"
+  ],
+  "complaints": [
+   "Lucid Rents D grade (tiny sample; may reflect violations)"
+  ],
+  "dealbreakers": "None found. Thin evidence.",
+  "recent_trend": "unknown",
+  "sources": [
+   "https://www.rentcafe.com/apartments/ca/los-angeles/aliso/default.aspx",
+   "https://www.apartments.com/aliso-los-angeles-ca/kjeqsmb",
+   "https://lucidrents.com/CA/Los-Angeles/building/downtown/950-e-3rd-st"
+  ]
+ },
+ {
+  "id": "broadway-palace",
+  "name": "Broadway Palace",
+  "management_company": "G.H. Palmer Associates (GHP Management)",
+  "reputation_score": 4.5,
+  "confidence": "medium",
+  "ratings": [
+   {
+    "site": "Apartments.com (renter rating)",
+    "rating": 1.7,
+    "count": 10,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   },
+   {
+    "site": "Apartments.com (property page)",
+    "rating": 4.4,
+    "count": 10,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5; conflicts with the renter rating"
+   },
+   {
+    "site": "RentCafe",
+    "rating": 4.5,
+    "count": 15,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   },
+   {
+    "site": "VeryApt (GH Palmer mgmt)",
+    "rating": 6.0,
+    "count": 65,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "10; company-level"
+   }
+  ],
+  "management": {
+   "score": 3,
+   "summary": "'Management is not dependable!' (2023). 'Not super helpful'. 'Find somewhere else to live'. G.H. Palmer Associates / GHP Management: VeryApt company-level management rating 6.0 (65 reviews, undated). $12.5M deposit-withholding class-action settlement (date not confirmed in snippet). No BBB profile surfaced."
+  },
+  "maintenance": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "cleanliness": {
+   "score": 4,
+   "summary": "'Not the cleanest or most well kept'."
+  },
+  "noise": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "security": {
+   "score": 5,
+   "summary": "Unhoused people sleeping in the adjacent walkway. ASU's housing page cites 24/7 on-site security plus a mobile patrol app (ASU appears to house students here, so expect some student-heavy floors)."
+  },
+  "pests": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "costs": {
+   "score": 5,
+   "summary": "Good price for the amenities, though some call it expensive. Company-level deposit-withholding settlement."
+  },
+  "reddit": [
+   {
+    "summary": "No r/LosAngeles or r/DTLA threads naming this building surfaced. reddit.com cannot be searched directly with this tool (domain blocked), and general searches returned none.",
+    "source": "n/a"
+   }
+  ],
+  "news": [
+   {
+    "when": "date not shown in snippet (LA Times / NBC 7 reporting)",
+    "summary": "GHP Management Corp. (G.H. Palmer subsidiary) agreed to pay $12.5M to settle a class action alleging security deposits were withheld from 19,000+ former tenants; NBC 7 separately found 2+ dozen small-claims suits over deposits/charges.",
+    "source": "https://www.aol.com/news/didnt-security-deposits-back-now-200924366.html"
+   }
+  ],
+  "praise": [
+   "Many amenities for the price",
+   "Near the Ace Hotel / South Broadway"
+  ],
+  "complaints": [
+   "Unreliable management",
+   "Upkeep",
+   "Street conditions"
+  ],
+  "dealbreakers": "None outright. Palmer's deposit history plus the 1.7 renter rating are red flags. Document move-in condition.",
+  "recent_trend": "unknown",
+  "sources": [
+   "https://www.apartments.com/broadway-palace-apartments-los-angeles-ca/38jgl5g/",
+   "https://www.rentcafe.com/apartments/ca/los-angeles/broadway-palace-southapartments/default.aspx",
+   "https://www.veryapt.com/ApartmentReview-a15946-broadway-palace-apartments-los-angeles",
+   "https://housing.asu.edu/housing-communities/residential-colleges/broadway-palace",
+   "https://www.veryapt.com/m1081-gh-palmer-associates"
+  ]
+ },
+ {
+  "id": "avant",
+  "name": "Avant",
+  "management_company": "Essex Property Trust",
+  "reputation_score": 7,
+  "confidence": "low",
+  "ratings": [
+   {
+    "site": "Apartments.com",
+    "rating": 4.6,
+    "count": 7,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   },
+   {
+    "site": "VeryApt",
+    "rating": 8.6,
+    "count": 5,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "10"
+   }
+  ],
+  "management": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "maintenance": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "cleanliness": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "noise": {
+   "score": null,
+   "summary": "No resident noise reviews. It sits on the LA Live/arena corridor (game-night crowds) and near the 10/110 (inference)."
+  },
+  "security": {
+   "score": null,
+   "summary": "Controlled access and a courtesy/night patrol are listed amenities (not resident evidence)."
+  },
+  "pests": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "costs": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "reddit": [
+   {
+    "summary": "No r/LosAngeles or r/DTLA threads naming this building surfaced. reddit.com cannot be searched directly with this tool (domain blocked), and general searches returned none.",
+    "source": "n/a"
+   }
+  ],
+  "news": [],
+  "praise": [
+   "High scores on small samples"
+  ],
+  "complaints": [
+   "None surfaced"
+  ],
+  "dealbreakers": "None found. Thin evidence.",
+  "recent_trend": "unknown",
+  "sources": [
+   "https://www.apartments.com/avant-los-angeles-ca/dzvg37h",
+   "https://www.veryapt.com/ApartmentReview-a15998-avant-los-angeles",
+   "https://www.zillow.com/apartments/los-angeles-ca/avant/65XVFk",
+   "https://essexapartmenthomes.com/apartments/los-angeles/avant"
+  ]
+ },
+ {
+  "id": "glo",
+  "name": "Glo",
+  "management_company": "Equity Residential (registered owner EQR GLO APARTMENTS LP per Lucid Rents)",
+  "reputation_score": 4,
+  "confidence": "medium",
+  "ratings": [
+   {
+    "site": "Lucid Rents",
+    "rating": 2.3,
+    "count": 67,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "10; grade D; 191 recorded violations"
+   },
+   {
+    "site": "VeryApt",
+    "rating": 6.9,
+    "count": 7,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "10; mgmt 7.0"
+   }
+  ],
+  "management": {
+   "score": 3,
+   "summary": "'Mgmt staff has always been bad, but recently it got even worse' (Lucid Rents). Reviewers warn against the management company."
+  },
+  "maintenance": {
+   "score": 3,
+   "summary": "'Plumbing is terrible' (ForRent review)."
+  },
+  "cleanliness": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "noise": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "security": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "pests": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "costs": {
+   "score": 6,
+   "summary": "Cheaper than surrounding buildings."
+  },
+  "reddit": [
+   {
+    "summary": "No r/LosAngeles or r/DTLA threads naming this building surfaced. reddit.com cannot be searched directly with this tool (domain blocked), and general searches returned none.",
+    "source": "n/a"
+   }
+  ],
+  "news": [
+   {
+    "when": "undated",
+    "summary": "191 recorded violations per Lucid Rents (types not shown). Check LADBS/LAHD records.",
+    "source": "https://lucidrents.com/CA/Los-Angeles/building/downtown/1050-wilshire-blvd"
+   },
+   {
+    "when": "2009-03",
+    "summary": "A Holland Partners JV acquired the property in 2009 (price and unit count not confirmed for Glo). The registered owner is now an EQR entity.",
+    "source": "https://www.globest.com/amp/2009/03/31/buyer-of-48m-complex-bullish-on-downtown/"
+   }
+  ],
+  "praise": [
+   "Price",
+   "Amenities"
+  ],
+  "complaints": [
+   "Management",
+   "Plumbing",
+   "Many recorded violations"
+  ],
+  "dealbreakers": "Possible dealbreaker: the high violation count (191) and plumbing complaints. Verify on LAHD/LADBS before considering.",
+  "recent_trend": "declining",
+  "sources": [
+   "https://lucidrents.com/CA/Los-Angeles/building/downtown/1050-wilshire-blvd",
+   "https://veryapt.com/ApartmentReview-a2569-glo-los-angeles",
+   "https://www.forrent.com/ca/los-angeles/glo/t9l2fpb",
+   "https://www.lucidrents.com/CA/Los-Angeles/landlord/eqr-glo-apartments-lp"
+  ]
+ },
+ {
+  "id": "eleven-eleven-wilshire",
+  "name": "Eleven Eleven Wilshire",
+  "management_company": "Holland Residential (inferred, unconfirmed)",
+  "reputation_score": 6,
+  "confidence": "medium",
+  "ratings": [
+   {
+    "site": "RentCafe",
+    "rating": 4.0,
+    "count": 83,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   },
+   {
+    "site": "ApartmentIQ",
+    "rating": 4.8,
+    "count": 22,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   },
+   {
+    "site": "Lucid Rents",
+    "rating": 4.4,
+    "count": "unclear",
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "10"
+   }
+  ],
+  "management": {
+   "score": 4,
+   "summary": "The most common complaint: 'extremely disappointing', 'not the most helpful', bureaucratic leasing office. The front desk is liked. The manager replied to a Jan 2025 critical review."
+  },
+  "maintenance": {
+   "score": 7,
+   "summary": "Renters cite good maintenance (RentCafe summary)."
+  },
+  "cleanliness": {
+   "score": 7,
+   "summary": "Cleanliness praised."
+  },
+  "noise": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "security": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "pests": {
+   "score": 7,
+   "summary": "One reviewer reports no pest problems."
+  },
+  "costs": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "reddit": [
+   {
+    "summary": "No r/LosAngeles or r/DTLA threads naming this building surfaced. reddit.com cannot be searched directly with this tool (domain blocked), and general searches returned none.",
+    "source": "n/a"
+   }
+  ],
+  "news": [],
+  "praise": [
+   "Clean",
+   "Maintenance",
+   "Front desk",
+   "Pet park"
+  ],
+  "complaints": [
+   "Leasing/management responsiveness"
+  ],
+  "dealbreakers": "None found.",
+  "recent_trend": "unknown",
+  "sources": [
+   "https://www.rentcafe.com/apartments/ca/los-angeles/1111-wilshire/default.aspx",
+   "https://edge.apartmentiq.io/los-angeles-ca/1111-wilshire",
+   "https://lucidrents.com/CA/Los-Angeles/building/los-angeles/1111-wilshire-blvd",
+   "https://www.corporatehousing.com/ca/los-angeles/eleven-eleven-wilshire/9jz5337",
+   "https://www.veryapt.com/ApartmentReview-a26210-1111-wilshire-los-angeles"
+  ]
+ },
+ {
+  "id": "metro-417",
+  "name": "Metro 417",
+  "management_company": "Brookfield Properties (per its rental site)",
+  "reputation_score": 5,
+  "confidence": "low",
+  "ratings": [
+   {
+    "site": "Apartments.com",
+    "rating": 4.9,
+    "count": 38,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   },
+   {
+    "site": "RentCafe",
+    "rating": 3.0,
+    "count": 5,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5; Maintenance 2.5, Amenities 2.5, Location 4.5"
+   },
+   {
+    "site": "Yelp",
+    "rating": "unclear",
+    "count": "~68",
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   },
+   {
+    "site": "Lucid Rents",
+    "rating": 0.0,
+    "count": "unclear",
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "10; grade F, violation/complaint-driven"
+   }
+  ],
+  "management": {
+   "score": 6,
+   "summary": "Staff praised by some. One recent reviewer advises against moving in."
+  },
+  "maintenance": {
+   "score": 4,
+   "summary": "Lowest RentCafe sub-score (2.5)."
+  },
+  "cleanliness": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "noise": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "security": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "pests": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "costs": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "reddit": [
+   {
+    "summary": "No r/LosAngeles or r/DTLA threads naming this building surfaced. reddit.com cannot be searched directly with this tool (domain blocked), and general searches returned none.",
+    "source": "n/a"
+   }
+  ],
+  "news": [
+   {
+    "when": "undated",
+    "summary": "Lucid Rents grades it F (0.0/10) based on violations/complaints. Details not shown; check LADBS/LAHD.",
+    "source": "https://lucidrents.com/CA/Los-Angeles/building/los-angeles/417-s-hill-st"
+   }
+  ],
+  "praise": [
+   "Historic Subway Terminal Building",
+   "Location near the Pershing Sq Metro"
+  ],
+  "complaints": [
+   "Maintenance",
+   "Recorded violations"
+  ],
+  "dealbreakers": "Possible: the F violation grade. Verify the city records.",
+  "recent_trend": "unknown",
+  "sources": [
+   "https://www.rentcafe.com/apartments/ca/los-angeles/metro-417/default.aspx",
+   "https://rent.brookfieldproperties.com/properties/metro-417.html",
+   "https://lucidrents.com/CA/Los-Angeles/building/los-angeles/417-s-hill-st",
+   "https://phoenix.aws.mapquest.com/us/california/metro-417-434642016"
+  ]
+ },
+ {
+  "id": "garment-lofts",
+  "name": "Garment Lofts",
+  "management_company": null,
+  "reputation_score": null,
+  "confidence": "low",
+  "ratings": [
+   {
+    "site": "Point2Homes",
+    "rating": "unclear",
+    "count": 9,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   }
+  ],
+  "management": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "maintenance": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "cleanliness": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "noise": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "security": {
+   "score": null,
+   "summary": "Package lockers and controlled-access entry are listed amenities only."
+  },
+  "pests": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "costs": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "reddit": [
+   {
+    "summary": "No r/LosAngeles or r/DTLA threads naming this building surfaced. reddit.com cannot be searched directly with this tool (domain blocked), and general searches returned none.",
+    "source": "n/a"
+   }
+  ],
+  "news": [],
+  "praise": [],
+  "complaints": [],
+  "dealbreakers": "Unknown. No resident reviews found.",
+  "recent_trend": "unknown",
+  "sources": [
+   "https://www.point2homes.com/US/Apartment-Buildings/CA/Los-Angeles/Garment-Building-Residential.html"
+  ]
+ },
+ {
+  "id": "olympic-by-windsor",
+  "name": "Olympic by Windsor",
+  "management_company": "Windsor Communities",
+  "reputation_score": 7,
+  "confidence": "low",
+  "ratings": [
+   {
+    "site": "VeryApt",
+    "rating": 7.8,
+    "count": 6,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "10"
+   },
+   {
+    "site": "Lucid Rents",
+    "rating": "unclear",
+    "count": 25,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   }
+  ],
+  "management": {
+   "score": 7,
+   "summary": "Windsor Communities (GID): VeryApt company management rating 7.8 from 131 reviews; one Lucid Rents reviewer calls it 'corporate, detached from residents' while praising on-site staff."
+  },
+  "maintenance": {
+   "score": 8,
+   "summary": "Maintenance team available 24/7."
+  },
+  "cleanliness": {
+   "score": 7,
+   "summary": "Clean."
+  },
+  "noise": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "security": {
+   "score": 7,
+   "summary": "'Clean safe building'."
+  },
+  "pests": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "costs": {
+   "score": 4,
+   "summary": "Reviewer warns of ~9% rent hikes every year. Matters for renewal, though the client stays only one year."
+  },
+  "reddit": [
+   {
+    "summary": "No r/LosAngeles or r/DTLA threads naming this building surfaced. reddit.com cannot be searched directly with this tool (domain blocked), and general searches returned none.",
+    "source": "n/a"
+   }
+  ],
+  "news": [],
+  "praise": [
+   "Safe",
+   "Clean",
+   "Gym",
+   "24/7 maintenance"
+  ],
+  "complaints": [
+   "Aggressive annual rent increases"
+  ],
+  "dealbreakers": "None found.",
+  "recent_trend": "unknown",
+  "sources": [
+   "https://www.veryapt.com/ApartmentReview-a15911-olympic-by-windsor-los-angeles",
+   "https://lucidrents.com/CA/Los-Angeles/building/los-angeles/936-s-olive-st/reviews?page=2",
+   "https://www.veryapt.com/m821-windsor-communities"
+  ]
+ },
+ {
+  "id": "south-park-by-windsor",
+  "name": "South Park by Windsor",
+  "management_company": "Windsor Communities",
+  "reputation_score": 6.5,
+  "confidence": "low",
+  "ratings": [
+   {
+    "site": "VeryApt",
+    "rating": 8.0,
+    "count": "unclear",
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "10; single reviewer score"
+   },
+   {
+    "site": "Lucid Rents",
+    "rating": "unclear",
+    "count": 93,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   }
+  ],
+  "management": {
+   "score": 6,
+   "summary": "Split. One reviewer 'never had any problems with management', another calls it 'absolutely Atrocious' (older). Windsor Communities (GID): VeryApt company management rating 7.8 from 131 reviews; one Lucid Rents reviewer calls it 'corporate, detached from residents' while praising on-site staff."
+  },
+  "maintenance": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "cleanliness": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "noise": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "security": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "pests": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "costs": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "reddit": [
+   {
+    "summary": "No r/LosAngeles or r/DTLA threads naming this building surfaced. reddit.com cannot be searched directly with this tool (domain blocked), and general searches returned none.",
+    "source": "n/a"
+   }
+  ],
+  "news": [],
+  "praise": [
+   "Staff",
+   "Location"
+  ],
+  "complaints": [
+   "One strongly negative older review"
+  ],
+  "dealbreakers": "None found.",
+  "recent_trend": "unknown",
+  "sources": [
+   "https://www.veryapt.com/ApartmentReview-a15959-south-park-by-windsor-los-angeles",
+   "https://lucidrents.com/CA/Los-Angeles/building/downtown/939-s-hill-st/reviews?page=8"
+  ]
+ },
+ {
+  "id": "the-orsini",
+  "name": "The Orsini",
+  "management_company": "GHP Management (G.H. Palmer Associates)",
+  "reputation_score": 4.5,
+  "confidence": "medium",
+  "ratings": [
+   {
+    "site": "Apartments.com",
+    "rating": 4.3,
+    "count": 21,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   },
+   {
+    "site": "Birdeye",
+    "rating": 4.0,
+    "count": 914,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   },
+   {
+    "site": "VeryApt (GH Palmer mgmt)",
+    "rating": 6.0,
+    "count": 65,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "10; company-level"
+   }
+  ],
+  "management": {
+   "score": 3,
+   "summary": "VeryApt: rude, error-prone management. Rent and parking charges often miscalculated, office unresponsive. G.H. Palmer Associates / GHP Management: VeryApt company-level management rating 6.0 (65 reviews, undated). $12.5M deposit-withholding class-action settlement (date not confirmed in snippet). No BBB profile surfaced."
+  },
+  "maintenance": {
+   "score": 3,
+   "summary": "2026 RentCafe review: 'elevators that are always broken' and fire alarms that are 'always on'."
+  },
+  "cleanliness": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "noise": {
+   "score": 4,
+   "summary": "June 2026 resident rates noise 3/5, 'very noisy' outside and in hallways. A 2024 resident cites loud music and children in the halls. Next to the 110/101 interchange (freeway noise not explicitly reported)."
+  },
+  "security": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "pests": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "costs": {
+   "score": 3,
+   "summary": "Billing errors on rent and parking (VeryApt). Company-level deposit-withholding settlement."
+  },
+  "reddit": [
+   {
+    "summary": "No r/LosAngeles or r/DTLA threads naming this building surfaced. reddit.com cannot be searched directly with this tool (domain blocked), and general searches returned none.",
+    "source": "n/a"
+   }
+  ],
+  "news": [
+   {
+    "when": "date not shown in snippet (LA Times / NBC 7 reporting)",
+    "summary": "GHP Management Corp. (G.H. Palmer subsidiary) agreed to pay $12.5M to settle a class action alleging security deposits were withheld from 19,000+ former tenants; NBC 7 separately found 2+ dozen small-claims suits over deposits/charges.",
+    "source": "https://www.aol.com/news/didnt-security-deposits-back-now-200924366.html"
+   }
+  ],
+  "praise": [
+   "Location (Chinatown / Civic Center edge)",
+   "Some praise for individual managers"
+  ],
+  "complaints": [
+   "Broken elevators (2026)",
+   "Fire alarms",
+   "Billing errors",
+   "Hallway noise"
+  ],
+  "dealbreakers": "Possible dealbreaker: 2026 reports of chronically broken elevators plus billing errors and Palmer's deposit history. Note there are multiple Orsini phases (I/II/III), so confirm which phase each review covers.",
+  "recent_trend": "declining",
+  "sources": [
+   "https://www.veryapt.com/ApartmentReview-a15897-the-orsini-los-angeles",
+   "https://www.rentcafe.com/apartments/ca/los-angeles/orsini-ii-0/default.aspx",
+   "https://birdeye.com/the-orsini-158048910763633?page=3",
+   "https://www.corporatehousing.com/ca/los-angeles/the-orsini/c1q1lqg",
+   "https://www.aol.com/news/didnt-security-deposits-back-now-200924366.html"
+  ]
+ },
+ {
+  "id": "onyx",
+  "name": "Onyx",
+  "management_company": "SRG Residential (per RentCafe)",
+  "reputation_score": 5.5,
+  "confidence": "low",
+  "ratings": [
+   {
+    "site": "Apartments.com",
+    "rating": 4.1,
+    "count": 37,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   },
+   {
+    "site": "RentCafe",
+    "rating": 5.0,
+    "count": 1,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   }
+  ],
+  "management": {
+   "score": 4,
+   "summary": "2024 review: 'this place has gone down the drain'; residents didn't know whom to contact."
+  },
+  "maintenance": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "cleanliness": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "noise": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "security": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "pests": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "costs": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "reddit": [
+   {
+    "summary": "No r/LosAngeles or r/DTLA threads naming this building surfaced. reddit.com cannot be searched directly with this tool (domain blocked), and general searches returned none.",
+    "source": "n/a"
+   }
+  ],
+  "news": [
+   {
+    "when": "undated",
+    "summary": "JLL has an investment-sale listing for 'Onyx South Park'. An ownership change is possible; date not confirmed.",
+    "source": "https://invest.jll.com/ch/en/listings/living-multi-housing/onyx-south-park"
+   }
+  ],
+  "praise": [
+   "Gated, 24-hour access"
+  ],
+  "complaints": [
+   "Decline after management change (2024)"
+  ],
+  "dealbreakers": "None confirmed. Ask about ownership status (a JLL sale listing exists).",
+  "recent_trend": "declining",
+  "sources": [
+   "https://www.apartments.com/onyx-los-angeles-ca/8ever23",
+   "https://www.rentcafe.com/apartments/ca/los-angeles/onyx1/default.aspx",
+   "https://www.veryapt.com/ApartmentReview-a24154-onyx-apartments-los-angeles",
+   "https://invest.jll.com/ch/en/listings/living-multi-housing/onyx-south-park"
+  ]
+ },
+ {
+  "id": "be-dtla",
+  "name": "Be DTLA",
+  "management_company": "Greystar (with The Souferian Group)",
+  "reputation_score": 6,
+  "confidence": "medium",
+  "ratings": [
+   {
+    "site": "Apartments.com",
+    "rating": 4.7,
+    "count": 85,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   },
+   {
+    "site": "RentCafe",
+    "rating": 4.0,
+    "count": 83,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5; Parking 4.0, Staff 4.5, Noise 3.5"
+   },
+   {
+    "site": "VeryApt",
+    "rating": 7.7,
+    "count": 6,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "10; mgmt 5.8-6.1"
+   }
+  ],
+  "management": {
+   "score": 6,
+   "summary": "'Not super helpful, but do try' (2024). Management blames previous management."
+  },
+  "maintenance": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "cleanliness": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "noise": {
+   "score": 5,
+   "summary": "RentCafe noise sub-score 3.5. Complaints of 'constant noise'."
+  },
+  "security": {
+   "score": 3,
+   "summary": "Oct 2025 review: no garage cameras, non-residents get in, and the reviewer's and roommate's cars were broken into with no support from management. Also stolen packages. Source is a test domain of the property site, so authenticity is uncertain."
+  },
+  "pests": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "costs": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "reddit": [
+   {
+    "summary": "No r/LosAngeles or r/DTLA threads naming this building surfaced. reddit.com cannot be searched directly with this tool (domain blocked), and general searches returned none.",
+    "source": "n/a"
+   }
+  ],
+  "news": [],
+  "praise": [
+   "High aggregate ratings",
+   "Staff"
+  ],
+  "complaints": [
+   "Garage break-ins",
+   "Package theft",
+   "Noise"
+  ],
+  "dealbreakers": "Possible dealbreaker if the garage-security reports hold. Ask whether garage cameras were added and how packages are handled.",
+  "recent_trend": "unknown",
+  "sources": [
+   "https://www.apartments.com/be-dtla-los-angeles-ca/m6z036j",
+   "https://www.rentcafe.com/apartments/ca/los-angeles/bedtla/default.aspx",
+   "https://www.veryapt.com/ApartmentReview-a24657-be-dtla-los-angeles",
+   "https://bedtla.test.jonahsystems.com/reviews/",
+   "https://lucidrents.com/CA/Los-Angeles/building/los-angeles/1120-w-6th-st/reviews?page=5"
+  ]
+ },
+ {
+  "id": "mresidences-olympic-olive",
+  "name": "mResidences Olympic & Olive",
+  "management_company": "Greystar (unconfirmed by search); owner Mapletree (originally Oakwood corporate housing)",
+  "reputation_score": 7,
+  "confidence": "low",
+  "ratings": [
+   {
+    "site": "Apartments.com",
+    "rating": 4.7,
+    "count": 25,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   },
+   {
+    "site": "Apartment List",
+    "rating": 5.0,
+    "count": 1,
+    "as_of": "2024-08",
+    "scale": "5"
+   },
+   {
+    "site": "atly",
+    "rating": 7.5,
+    "count": "unclear",
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "10"
+   }
+  ],
+  "management": {
+   "score": 6,
+   "summary": "One reviewer calls management good and responsive. Another says promised services aren't maintained (the manager responded)."
+  },
+  "maintenance": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "cleanliness": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "noise": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "security": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "pests": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "costs": {
+   "score": null,
+   "summary": "Guest parking is hard to find."
+  },
+  "reddit": [
+   {
+    "summary": "No r/LosAngeles or r/DTLA threads naming this building surfaced. reddit.com cannot be searched directly with this tool (domain blocked), and general searches returned none.",
+    "source": "n/a"
+   }
+  ],
+  "news": [],
+  "praise": [
+   "Spacious units",
+   "Walk Score 95"
+  ],
+  "complaints": [
+   "Services not maintained (one review)",
+   "Guest parking"
+  ],
+  "dealbreakers": "None found.",
+  "recent_trend": "unknown",
+  "sources": [
+   "https://www.apartments.com/mresidences-olympic-olive-los-angeles-ca/8pm7sc0",
+   "https://www.apartmentlist.com/ca/los-angeles/mresidences-olympic-olive",
+   "https://www.veryapt.com/ApartmentReview-a30101-oakwood-studios-los-angeles-olympic-olive-los-angeles",
+   "https://mapletreelogisticstrust.com/All-Properties/MIPL/USA/mResidences Olympic and Olive.aspx"
+  ]
+ },
+ {
+  "id": "jia",
+  "name": "Jia",
+  "management_company": "Equity Residential",
+  "reputation_score": 7,
+  "confidence": "medium",
+  "ratings": [
+   {
+    "site": "Yelp",
+    "rating": 4.0,
+    "count": 242,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   },
+   {
+    "site": "VeryApt",
+    "rating": "5-star single review",
+    "count": 1,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   }
+  ],
+  "management": {
+   "score": 7,
+   "summary": "Responsive and communicative (older Equity review). Oct 2025 Yelp review praises leasing agents but criticizes a maintenance staffer and the security team."
+  },
+  "maintenance": {
+   "score": 6,
+   "summary": "'Top notch' (older review). Mixed in 2025."
+  },
+  "cleanliness": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "noise": {
+   "score": 7,
+   "summary": "'Safe and quiet' (VeryApt)."
+  },
+  "security": {
+   "score": 5,
+   "summary": "Residents wish for 24/7 security. Oct 2025 complaint about the security team."
+  },
+  "pests": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "costs": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "reddit": [
+   {
+    "summary": "No r/LosAngeles or r/DTLA threads naming this building surfaced. reddit.com cannot be searched directly with this tool (domain blocked), and general searches returned none.",
+    "source": "n/a"
+   }
+  ],
+  "news": [],
+  "praise": [
+   "Leasing staff",
+   "Quiet",
+   "Spacious units",
+   "Chinatown Metro"
+  ],
+  "complaints": [
+   "Security coverage",
+   "Maintenance staffer (2025)"
+  ],
+  "dealbreakers": "None found.",
+  "recent_trend": "unknown",
+  "sources": [
+   "https://startpage.mapquest.com/us/california/jia-apartments-290356236",
+   "https://veryapt.com/ApartmentReview-a2585-jia-los-angeles",
+   "https://equityapartments.com/los-angeles/chinatown/jia-apartments-reviews"
+  ]
+ },
+ {
+  "id": "bixel-at-fifth",
+  "name": "Bixel at Fifth",
+  "management_company": null,
+  "reputation_score": 6,
+  "confidence": "low",
+  "ratings": [
+   {
+    "site": "Apartments.com",
+    "rating": 5.0,
+    "count": 1,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   }
+  ],
+  "management": {
+   "score": 7,
+   "summary": "'Extremely responsive' on-site management, but the review is old (~2012)."
+  },
+  "maintenance": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "cleanliness": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "noise": {
+   "score": 7,
+   "summary": "'Super quiet' (2012)."
+  },
+  "security": {
+   "score": 7,
+   "summary": "Visible evening security guard (older review)."
+  },
+  "pests": {
+   "score": 6,
+   "summary": "Ants reported, and management treated them (older review)."
+  },
+  "costs": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "reddit": [
+   {
+    "summary": "No r/LosAngeles or r/DTLA threads naming this building surfaced. reddit.com cannot be searched directly with this tool (domain blocked), and general searches returned none.",
+    "source": "n/a"
+   }
+  ],
+  "news": [],
+  "praise": [
+   "Quiet",
+   "Responsive management (old)"
+  ],
+  "complaints": [
+   "Ants"
+  ],
+  "dealbreakers": "None found. Evidence is about 14 years old.",
+  "recent_trend": "unknown",
+  "sources": [
+   "https://lucidrents.com/CA/Los-Angeles/building/downtown/1311-w-5th-st",
+   "https://www.apartments.com/bixel-at-fifth-los-angeles-ca/k8f6kkc/",
+   "https://forrent.com/ca/los-angeles/bixel-at-fifth/78f6nkz"
+  ]
+ },
+ {
+  "id": "1400-fig-apartments",
+  "name": "1400 FIG Apartments",
+  "management_company": null,
+  "reputation_score": 6.5,
+  "confidence": "low",
+  "ratings": [
+   {
+    "site": "Apartments.com",
+    "rating": 4.9,
+    "count": 4,
+    "as_of": "2026-11-05 (search snippet)",
+    "scale": "5"
+   }
+  ],
+  "management": {
+   "score": 5,
+   "summary": "One April 2023 review: 'terrible, seems very unreliable'. No later reviews surfaced."
+  },
+  "maintenance": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "cleanliness": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "noise": {
+   "score": null,
+   "summary": "No data. The building is on the Figueroa/LA Live corridor (inference)."
+  },
+  "security": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "pests": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "costs": {
+   "score": null,
+   "summary": "No evidence found in this round's searches."
+  },
+  "reddit": [
+   {
+    "summary": "No r/LosAngeles or r/DTLA threads naming this building surfaced. reddit.com cannot be searched directly with this tool (domain blocked), and general searches returned none.",
+    "source": "n/a"
+   }
+  ],
+  "news": [],
+  "praise": [
+   "Newer building (2020, 110 units)"
+  ],
+  "complaints": [
+   "Unreliable management (2023, single review)"
+  ],
+  "dealbreakers": "None found.",
+  "recent_trend": "unknown",
+  "sources": [
+   "https://www.apartments.com/1400-fig-apartments-los-angeles-ca/838zj23/",
+   "https://www.rentcafe.com/apartments/ca/los-angeles/1400-fig-apartments/default.aspx"
+  ]
+ }
+]
